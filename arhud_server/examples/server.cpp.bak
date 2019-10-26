@@ -1,0 +1,377 @@
+// single thread 
+#include "server.hpp"
+#include <stdlib.h>
+#include <sys/socket.h>
+#include <sys/time.h>
+#include <netinet/in.h>
+#include <arpa/inet.h>
+#include <unistd.h>
+#include <pthread.h>
+#include <chrono>
+#include <thread>
+#include <iomanip>
+#include <queue>
+#include <fstream>
+#include <map>
+#include <iterator>
+//curl files
+#include <iostream>
+#include <string>
+#include <curl/curl.h>
+#include <chrono>
+#include <stdio.h>
+#include <unistd.h>
+typedef std::chrono::high_resolution_clock Clock;
+
+extern "C" {
+#include "detector.h"
+}
+#define MESSAGE_ECHO 0
+#define EDGE 1
+#define IMAGE_DETECT 2
+#define BOUNDARY 2
+#define PORT 52727
+#define PACKET_SIZE 60000
+#define RES_SIZE 528
+#define TRAIN
+
+using namespace std;
+using namespace cv;
+
+struct sockaddr_in localAddr;
+struct sockaddr_in remoteAddr;
+struct sockaddr_in remoteAddr1;
+struct sockaddr_in frontAddr;
+socklen_t addrlen = sizeof(remoteAddr);
+
+queue<frameBuffer> frames;
+queue<resBuffer> resultss;
+int recognizedMarkerID;
+
+map<string, int> mapOfDevices;
+
+double wallclock (void)
+{
+  struct timeval tv;
+  gettimeofday(&tv, NULL);
+  return (double)tv.tv_sec*1000 + (double)tv.tv_usec * 0.001;
+}
+
+double what_time_is_it_now()
+{
+    struct timeval time;
+    if (gettimeofday(&time,NULL)){
+        return 0;
+    }
+    return (double)time.tv_sec*1000 + (double)time.tv_usec * 0.001;
+}
+
+
+void *ThreadReceiverFunction(void *socket) {
+    cout<<"Receiver Thread Created!"<<endl;
+    char tmp[4];
+    char Tmp[8];
+    char buffer[PACKET_SIZE];
+    int sock = *((int*)socket);
+    cout << " sock is  " << sock << "\n" ;
+    int device_ind = 1; 
+    int len =20;
+    char str[len];
+    char str_front[len];
+    double time_register_start;
+    double time_to_register;
+    double time_receivepic;
+    double imageDelay;
+    double time_test;
+
+    ofstream output_receive ("test_receive_delay.txt");
+
+
+    cout<<"Process Thread Created!"<<endl;
+    recognizedMarker marker;
+    bool objectDetected = false;
+    result* res;
+    double time_process_start;
+    double time_process;
+
+    ofstream output_process("test_process_delay.txt");
+    //ofstream output_process_delay("test_processdelay.txt");
+    load_params();
+
+    cout << "Sender Thread Created!" << endl;
+    char buffer_res[RES_SIZE];
+    double time_sendresult;
+    ofstream output_send ("test_send.txt");
+    ofstream output_send_time ("test_send_time.txt");
+
+    //output_send_time <<  " ID "  <<  "send time from mobile"  <<  " time_sendresult  " << " sizeof(buffer_res) " << endl;
+
+    while (1) {
+        memset(buffer, 0, sizeof(buffer));
+        recvfrom(sock, buffer, PACKET_SIZE, 0, (struct sockaddr *)&frontAddr, &addrlen);
+        time_receivepic = what_time_is_it_now();
+	std::chrono::time_point<std::chrono::system_clock> now = std::chrono::system_clock::now();
+	//auto duration = now.time_since_epoch();
+	//auto milliseconds = std::chrono::duration_cast<std::chrono::milliseconds>(duration);
+        //cout<<" receive at "<<setprecision(15)<< milliseconds.count()  <<endl;
+        frameBuffer curFrame;    
+        memcpy(tmp, buffer, 4);
+        curFrame.frmID = *(int*)tmp;        
+        memcpy(tmp, &(buffer[4]), 4);
+        curFrame.dataType = *(int*)tmp;
+        FILE *fd;
+        if(curFrame.dataType == MESSAGE_ECHO) {
+            cout<<"echo message!"<<endl;
+            charint echoID;
+            echoID.i = curFrame.frmID;
+            char echo[4];
+            memcpy(echo, echoID.b, 4);
+
+            inet_ntop(AF_INET, &(frontAddr.sin_addr), str_front, len);
+            if (mapOfDevices.find(string(str_front)) != mapOfDevices.end()) {
+                //output_receive<<"receiving from an old " << (device_ind-1) << " device, whose ip is " << str_front << endl;
+                //cout<<"receiving from an old  " << (device_ind-1) << " device, whose ip is " << str_front << endl;
+                continue;}
+            //cout<<"receiving from the " << device_ind << " device, whose ip is " << str_front << endl;
+            //pair<map<int, string>::iterator,bool> ret;
+            mapOfDevices.insert(pair<string, int>(string(str_front), device_ind));
+            device_ind += 1; 
+            printf("device_ind now has increased to %d\n", device_ind); 
+            map<string, int>::iterator it_device = mapOfDevices.begin();
+            while(it_device != mapOfDevices.end()){
+                //output_receive << it_device->first << " "  << it_device->second << "\n" ;
+                //cout << it_device->first << " "  << it_device->second << "\n" ;
+                it_device ++;}
+            continue;
+
+        }
+        memcpy(Tmp, &(buffer[8]), 8);
+        curFrame.timeCaptured = *(double*)Tmp;
+        //curFrame.longtitude = *(double*)Tmp;
+        memcpy(Tmp, &(buffer[16]), 8);
+        curFrame.timeSend = *(double*)Tmp;
+        memcpy(tmp, &(buffer[24]), 4);
+        curFrame.bufferSize = *(int*)tmp;
+        if (curFrame.bufferSize==0) { continue;}
+         
+        //output_receive <<  time_receivepic - curFrame.timeSend << endl;
+        //output_receive_time << std::fixed << std::setprecision(15) << curFrame.timeCaptured << "  " << std::fixed << std::setprecision(15)<<curFrame.timeSend  << "  " <<  std::fixed << std::setprecision(15) << time_receivepic << "  " << time_test - time_receivepic << "  " << curFrame.bufferSize << endl;
+        //output_delay << imageDelay << endl;
+        //cout<<"frame "<<curFrame.frmID<<" received, filesize: "<<curFrame.bufferSize << endl;
+        curFrame.buffer = new char[curFrame.bufferSize];
+        memset(curFrame.buffer, 0, curFrame.bufferSize);
+        memcpy(curFrame.buffer, &(buffer[28]), curFrame.bufferSize);
+
+        frames.push(curFrame);
+        //delete curFrame.buffer;
+        //}
+
+
+
+        //processing process 
+
+        if(frames.empty()) {
+            this_thread::sleep_for(chrono::milliseconds(1));
+            continue;
+        }
+
+        frameBuffer curFrame_process = frames.front();
+        frames.pop();
+         
+
+        int frmID = curFrame_process.frmID;
+        int frmDataType = curFrame_process.dataType;
+        // pengzhou:currently, device send the timestamp of image instead of geolocation, therefore we use 0 to temporarily for location.
+        //double latitude = curFrame_process.latitude;
+        //double longtitude = curFrame_process.longtitude;
+        double latitude = 0;
+        double longtitude = 0;
+        int frmSize = curFrame_process.bufferSize;
+        char* frmdata = curFrame_process.buffer;
+        
+        if(frmDataType == IMAGE_DETECT) {
+            // last change
+            ofstream file("received.jpg", ios::out | ios::binary);
+            //char picname[20];
+            //sprintf(picname, "%d_received.jpg", frmID);
+            //ofstream file(picname, ios::out | ios::binary);
+            if(file.is_open()) {
+                file.write(frmdata, frmSize);
+                file.close();
+
+                time_process_start = what_time_is_it_now();
+                //res = detect(frmID);
+                res = detect();
+                //output_process <<  what_time_is_it_now() - time_process_start << endl;
+                objectDetected = true;
+                //output_process << "resultss: " << res->num << endl;
+                //cout << "resultss: " << res->num << endl;
+            } 
+        } else if(frmDataType == EDGE) {
+             cout << frmdata << endl;
+             continue;
+        }
+        for(int i = 0; i < sizeof(curFrame_process.buffer); i++)
+        {
+            curFrame_process.buffer[i] = rand();
+        }
+
+        for(int i = 0; i < sizeof(frmdata); i++)
+        {
+            frmdata[i] = rand();
+        }
+        //memset(curFrame_process.buffer,1,sizeof(curFrame_process.buffer));
+        //memset(frmdata,1,sizeof(frmdata));
+        int personNum = 0;
+        int carNum = 0;
+
+        resBuffer curRes_process;
+        if(objectDetected) {
+            charfloat p;
+            charint ci;
+            curRes_process.resID.i = frmID;
+            curRes_process.resLatitude.d = curFrame_process.timeSend;
+            curRes_process.resLongtitude.d = curFrame_process.timeSend;
+            curRes_process.resType.i = BOUNDARY;
+            if(res->num <= 5)
+                curRes_process.markerNum.i = res->num;
+            else
+                curRes_process.markerNum.i = 5;
+            curRes_process.buffer = new char[100 * curRes_process.markerNum.i];
+
+            for(int i = 0; i < curRes_process.markerNum.i; i++) {
+                int pointer = 100 * i;
+                struct object *cur = &(res->objects[i]); 
+
+                p.f = cur->prob;
+                memcpy(&(curRes_process.buffer[pointer]), p.b, 4);
+                pointer += 4;
+                ci.i = cur->left;
+                memcpy(&(curRes_process.buffer[pointer]), ci.b, 4);
+                pointer += 4;
+                ci.i = cur->right;
+                memcpy(&(curRes_process.buffer[pointer]), ci.b, 4);
+                pointer += 4;
+                ci.i = cur->top;
+                memcpy(&(curRes_process.buffer[pointer]), ci.b, 4);
+                pointer += 4;
+                ci.i = cur->bot;
+                memcpy(&(curRes_process.buffer[pointer]), ci.b, 4);
+                pointer += 4;
+
+                memcpy(&(curRes_process.buffer[pointer]), cur->name, strlen(cur->name));
+                pointer += strlen(cur->name);
+                curRes_process.buffer[pointer] = '.';
+            }
+        }
+        else {
+            curRes_process.resID.i = frmID;
+            curRes_process.markerNum.i = 0;
+        }
+        resultss.push(curRes_process);
+        //free(res->objects);
+        delete res->objects;
+        res->objects = NULL;
+
+
+
+
+        //sender process 
+
+        if(resultss.empty()) {
+            this_thread::sleep_for(chrono::milliseconds(1));
+            continue;
+        }
+
+        resBuffer curRes = resultss.front();
+        resultss.pop();
+    
+        memset(buffer_res, 0, sizeof(buffer_res));
+        memcpy(buffer_res, curRes.resID.b, 4);
+        memcpy(&(buffer_res[4]), curRes.resType.b, 4);
+        memcpy(&(buffer_res[8]), curRes.resLatitude.b, 8);
+        // pengzhou:currently, use longtitue to transfer the timestamp of result sent out by ES.
+        // it shoud be written as timeSend etc., however keeping current state to save efforts... 
+        //curRes.resLongtitude.d = what_time_is_it_now();
+        memcpy(&(buffer_res[16]), curRes.resLongtitude.b, 8);
+        memcpy(&(buffer_res[24]), curRes.markerNum.b, 4);
+        if(curRes.markerNum.i != 0)
+            memcpy(&(buffer_res[28]), curRes.buffer, 100 * curRes.markerNum.i);
+        map<string, int>::iterator it_device = mapOfDevices.begin();
+        //while(it_device != mapOfDevices.end()){
+            memset((char*)&remoteAddr, 0, sizeof(remoteAddr));
+            remoteAddr.sin_family = AF_INET;
+            remoteAddr.sin_addr.s_addr = inet_addr((it_device->first).c_str());
+            remoteAddr.sin_port = htons(51919);
+            time_sendresult = what_time_is_it_now();
+	    std::chrono::time_point<std::chrono::system_clock> now2 = std::chrono::system_clock::now();
+            //cout<<"frame "<<curRes.resID.i<<" res sent, "<<"marker#: "<<curRes.markerNum.i;
+            //output_send << "sending to the " << it_device->second<< " device, whose ip is "<< it_device->first << endl ;
+	    //cout << "receive frameID : " << curFrame.frmID << ", at time : " <<  std::fixed << time_receivepic << " chrono time " << milliseconds.count() << ", sent out from vehicle at time: " << curFrame.timeSend <<  ", has size: "<< curFrame.bufferSize << ", transmission delay: '" << time_receivepic - curFrame.timeSend << "' nanoseconds" << endl;
+            sendto(sock, buffer_res, sizeof(buffer_res), 0, (struct sockaddr *)&remoteAddr, addrlen);
+            //output_send << "send_result of frameID of: " << curRes.resID.i << " sent by observer at time: " << std::fixed << std::setprecision(15) << curRes.resLongtitude.d << " whose size is: " << sizeof(buffer_res) << endl;
+            //output_send_time <<  curRes.resID.i << " " << std::fixed  << curRes.resLongtitude.d <<  "  " <<   time_sendresult << " " << sizeof(buffer_res) << endl;
+            //cout << "time_process_pic of frameid of: " << frmID << " takes: " <<  what_time_is_it_now() - time_process_start << " milliseconds" << endl;
+            //cout << "send_result of frameID of: " << curRes.resID.i << " sent by observer at time: " << curRes.resLongtitude.d << " whose size is: " << sizeof(buffer_res) << endl;
+            //auto duration2 = now2.time_since_epoch();
+            //auto milliseconds2 = std::chrono::duration_cast<std::chrono::milliseconds>(duration2);
+            //cout<<frmID <<" takes "<<setprecision(15)<< milliseconds2.count() - milliseconds.count() <<  " receive at  " <<  setprecision(15)<< milliseconds.count() << " send at " <<  setprecision(15)<< milliseconds2.count()<< " capture at " << curFrame.timeSend <<endl;
+            //output_process <<   what_time_is_it_now()- time_receivepic << endl;
+
+
+
+
+
+    }
+    output_receive.close();
+    //output_delay.close();
+    //output_send.close();
+
+    output_process.close();
+    //output_process_delay.close();
+}
+
+int main(int argc, char *argv[])
+{
+    pthread_t senderThread, receiverThread, processThread, annotationThread;
+    int ret1, ret2, ret3, ret4;
+    //char buffer[PACKET_SIZE];
+    char fileid[4];
+    int status = 0;
+    int sockTCP, sockUDP;
+   
+
+    memset((char*)&localAddr, 0, sizeof(localAddr));
+    localAddr.sin_family = AF_INET;
+    localAddr.sin_addr.s_addr = htonl(INADDR_ANY);
+    localAddr.sin_port = htons(PORT);
+
+    memset((char*)&remoteAddr, 0, sizeof(remoteAddr));
+    remoteAddr.sin_family = AF_INET;
+    //remoteAddr.sin_addr.s_addr = inet_addr("192.168.12.42");
+    remoteAddr.sin_addr.s_addr = inet_addr("INADDR_ANY");
+    remoteAddr.sin_port = htons(51919);
+
+    if((sockUDP = socket(AF_INET, SOCK_DGRAM, 0)) < 0) {
+        cout<<"ERROR opening udp socket"<<endl;
+        exit(1);
+    }
+    if(bind(sockUDP, (struct sockaddr *)&localAddr, sizeof(localAddr)) < 0) {
+        cout<<"ERROR on udp binding"<<endl;
+        exit(1);
+    }
+    cout << endl << "========server started, waiting for clients==========" << endl;
+
+    //ret4 = pthread_create(&receiverThread_echo, NULL, ThreadReceiverFunction_echo, (void *)&sockUDP);
+    ret1 = pthread_create(&receiverThread, NULL, ThreadReceiverFunction, (void *)&sockUDP);
+    //ret2 = pthread_create(&processThread, NULL, ThreadProcessFunction, NULL);
+    //ret3 = pthread_create(&senderThread, NULL, ThreadSenderFunction, (void *)&sockUDP);
+
+    //pthread_join(receiverThread_echo, NULL);
+    pthread_join(receiverThread, NULL);
+    //pthread_join(processThread, NULL);
+    //pthread_join(senderThread, NULL);
+
+    return 0;
+}
+

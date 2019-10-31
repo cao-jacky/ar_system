@@ -62,7 +62,6 @@ public class ARManager {
 
     private void initConnection() {
         File sdcard = Environment.getExternalStorageDirectory();
-        //pengzhou: the config file of ip and port
         File file = new File(sdcard,"CloudAR/cloudConfig.txt");
         try {
             BufferedReader br = new BufferedReader(new FileReader(file));
@@ -133,6 +132,14 @@ public class ARManager {
             taskReceiving.updateLatestSentID(frameID);
         }
     }
+    //------------------pengzhou: location-------------------
+    /*public void recognizeLocation(int frameID, byte[] frameData, double latitude, double longtitude) {
+        if(ARManager.isCloudBased) {
+            taskTransmission.setData(frameID, frameData, latitude, longtitude);
+            handlerNetwork.post(taskTransmission);
+            taskReceiving.updateLatestSentID(frameID);
+        }
+    }*/
     //------------------pengzhou: timestamp-------------------
     public void recognizeTime(int frameID, byte[] frameData, double timeCaptured, double timeSend) {
         if(ARManager.isCloudBased) {

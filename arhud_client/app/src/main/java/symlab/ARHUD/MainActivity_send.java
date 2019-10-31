@@ -11,6 +11,10 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.hardware.Camera;
+import android.hardware.Sensor;
+import android.hardware.SensorEvent;
+import android.hardware.SensorEventListener;
+import android.hardware.SensorManager;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
@@ -24,22 +28,16 @@ import android.view.SurfaceView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.hardware.Sensor;
-import android.hardware.SensorEvent;
-import android.hardware.SensorEventListener;
-import android.hardware.SensorManager;
-
 
 import symlab.CloudAR.ARManager;
 import symlab.CloudAR.Constants;
 import symlab.CloudAR.Detected;
-import java.text.DecimalFormat;
 
 //-----------pengzhou---------------
 //-----------pengzhou---------------
 
 
-public class MainActivity extends Activity implements LocationListener, SensorEventListener, View.OnTouchListener {
+public class MainActivity_send extends Activity implements LocationListener, SensorEventListener, View.OnTouchListener {
 
     private SurfaceView mPreview;
     private SurfaceHolder mPreviewHolder;
@@ -101,7 +99,7 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         mPreviewHolder.addCallback(surfaceCallback);
         mPreview.setZOrderMediaOverlay(false);
         // pengzhou: following command enable ontouch
-        mPreview.setOnTouchListener(this);
+        //mPreview.setOnTouchListener(this);
 
         if (Constants.Show2DView) {
             mDraw = new DrawOnTop(this);
@@ -171,6 +169,20 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
 
         mCamera = Camera.open();
         ARManager.getInstance().start();
+        //-----------------------------------pengzhou: proximity service--------------------------
+        /*if (mProximity != null) {
+        mSensorManager.registerListener(this, mProximity, SensorManager.SENSOR_DELAY_FASTEST);}
+        //-----------------------------------pengzhou: orientation service--------------------------
+        Sensor accelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        if (accelerometer != null) {
+            mSensorManager.registerListener(this, accelerometer,
+                    SensorManager.SENSOR_DELAY_NORMAL, SensorManager.SENSOR_DELAY_UI);
+        }
+        Sensor magneticField = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        if (magneticField != null) {
+            mSensorManager.registerListener(this, magneticField,
+                    SensorManager.SENSOR_DELAY_NORMAL, SensorManager.SENSOR_DELAY_UI);
+        }*/
     }
 
     @Override
@@ -218,7 +230,7 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
 
     @Override
     public boolean onTouch(View v, MotionEvent event) {
-        recoFlag = true;
+        //recoFlag = true;
         return this.onTouchEvent(event);
     }
 
@@ -272,12 +284,25 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
             mCamera.addCallbackBuffer(callbackBuffer);
 
             frameID++;
+            //pengzhou: in this mode, device only receives and never sends out images
+            recoFlag = false;
+            //pengzhou : about 0.1 seconds for each pic process, 10pic/second, using 4 phones now, each phone could
+            // at most send 2 pic per second.
+            //if(frameID % 3 == 0) recoFlag = true;
 
-            long time= System.currentTimeMillis();
-            timeCaptured = (double)time;
-            timeSend = (double)time;
-            ARManager.getInstance().recognizeTime(frameID, data, timeCaptured, timeSend);
-            ARManager.getInstance().driveFrame(data);
+            if (recoFlag) {
+                //String currentDateTimeString = DateFormat.getDateTimeInstance().format(new Date());
+                long time= System.currentTimeMillis();
+                timeCaptured = (double)time;
+                timeSend = (double)time;
+
+                //ARManager.getInstance().recognize(frameID, data s);
+                //------------------pengzhou: location---------------------------
+                ARManager.getInstance().recognizeTime(frameID, data, timeCaptured, timeSend);
+                recoFlag = false;
+            } else {
+                ARManager.getInstance().driveFrame(data);
+            }
             mDraw.invalidate();
         }
     };
@@ -292,7 +317,7 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         private boolean ShowEdge = true;
         private boolean ShowName = true;
         private int preFrameID;
-        private float dispScale = Constants.recoScale;
+        private float dispScale = (float)(Constants.recoScale*1.4);
         //private int dispScale = Constants.recoScale;
         private Detected[] detecteds;
         private double distance;
@@ -378,14 +403,53 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         @Override
         protected void onDraw(final Canvas canvas) {
             super.onDraw(canvas);
-
+            Bitmap b_cup =BitmapFactory.decodeResource(getResources(), R.drawable.cup);
+            Bitmap b_car = BitmapFactory.decodeResource(getResources(),R.drawable.car);
+            Bitmap b_bus = BitmapFactory.decodeResource(getResources(),R.drawable.bus);
+            Bitmap b_pedestrian = BitmapFactory.decodeResource(getResources(),R.drawable.pedestrian);
+            Bitmap b_stopsign = BitmapFactory.decodeResource(getResources(),R.drawable.stopsign);
 
 
             if(detecteds != null) {
                 for (Detected detected : detecteds) {
-                    canvas.drawText(detected.name +  ". Prob: " + detected.prob, (detected.left-2)*dispScale, (detected.top-2)*dispScale, paintWord);
-
-                    canvas.drawRect(detected.left*dispScale, detected.top*dispScale, detected.right*dispScale, detected.bot*dispScale, paintLine);
+                    int width =  Math.round(Math.abs((detected.left - detected.right)) * dispScale);
+                    int height = Math.round(Math.abs((detected.bot - detected.top)) * dispScale);
+                    if(detected.name=="cup"){
+                        Bitmap scaled_cup = Bitmap.createScaledBitmap(b_cup, width, height, true);
+                        canvas.drawBitmap(scaled_cup, detected.left*dispScale, detected.top*dispScale, null);
+                        //free up Bitmap data
+                        scaled_cup.recycle();}
+                    if(detected.name.equals("car")){
+                        Bitmap scaled_car = Bitmap.createScaledBitmap(b_car, width, height, true);
+                        canvas.drawBitmap(scaled_car, detected.left*dispScale, detected.top*dispScale, null);
+                        //free up Bitmap data
+                        scaled_car.recycle();}
+                    else if(detected.name.equals("person")){
+                        Bitmap scaled_pedestrian = Bitmap.createScaledBitmap(b_pedestrian, width, height, true);
+                        canvas.drawBitmap(scaled_pedestrian, detected.left*dispScale, detected.top*dispScale, null);
+                        //free up Bitmap data
+                        scaled_pedestrian.recycle();}
+                    else if(detected.name.equals("bus")){
+                        Bitmap scaled_bus = Bitmap.createScaledBitmap(b_bus, width, height, true);
+                        canvas.drawBitmap(scaled_bus, detected.left*dispScale, detected.top*dispScale, null);
+                        //free up Bitmap data
+                        scaled_bus.recycle();}
+                    else if(detected.name.equals("stop sign")){
+                        Bitmap scaled_stopsign = Bitmap.createScaledBitmap(b_stopsign, width, height, true);
+                        canvas.drawBitmap(scaled_stopsign, detected.left*dispScale, detected.top*dispScale, null);
+                        //free up Bitmap data
+                        scaled_stopsign.recycle();}
+                    else canvas.drawRect(detected.left*dispScale, detected.top*dispScale, detected.right*dispScale, detected.bot*dispScale, paintLine);
+                    // pengzhou : printing probability of object
+                    //canvas.drawText(detected.name +  ". Prob: " + detected.prob, (detected.left-2)*dispScale, (detected.top-2)*dispScale, paintWord);
+                    // pengzhou: print gps of the camera who captures the object
+                    //canvas.drawText(detected.name + ": " + (int)detected.lati + "," + (int)detected.longti, (detected.left-2)*dispScale, (detected.top-2)*dispScale, paintWord);
+                    // pengzhou : print distance of camera
+                    //canvas.drawRect(detected.left*dispScale, detected.top*dispScale, detected.right*dispScale, detected.bot*dispScale, paintLine);
+                    //distance = distanceInKmBetweenEarthCoordinates(latitude, longitude, detected.lati, detected.longti);
+                    //canvas.drawText(detected.name + ", d: " + new DecimalFormat("##.##").format(distance) + ", o: " +  bearing, detected.left*dispScale, detected.top*dispScale, paintWord);
+                    //canvas.drawText(detected.name + ": " + (int)distance, width/2, height/2, paintWord);
+                    canvas.drawText(detected.name, detected.left*dispScale, detected.top*dispScale, paintWord);
 
 
                 }

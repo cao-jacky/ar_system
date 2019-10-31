@@ -18,6 +18,9 @@ import java.io.BufferedWriter;
 import symlab.CloudAR.Constants;
 import symlab.CloudAR.Detected;
 
+/**
+ * Created by st0rm23 on 2017/2/20.
+ */
 
 public class ReceivingTask implements Runnable{
 
@@ -38,6 +41,8 @@ public class ReceivingTask implements Runnable{
     private int recoTrackRatio = Constants.scale / Constants.recoScale;
 
     private DatagramChannel datagramChannel;
+    private double time;
+    private double resultdelay;
 
 
     public ReceivingTask(DatagramChannel datagramChannel){
@@ -54,7 +59,7 @@ public class ReceivingTask implements Runnable{
         try {
             if (datagramChannel.receive(resPacket) != null) {
                 res = resPacket.array();
-                Log.v(Constants.TAG, "something received");
+                //Log.v(Constants.TAG, "something received");
             } else {
                 res = null;
             }
@@ -67,6 +72,7 @@ public class ReceivingTask implements Runnable{
 
 
         if (res != null) {
+            time= System.currentTimeMillis();
             System.arraycopy(res, 0, tmp, 0, 4);
             int resultID = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
 
@@ -81,9 +87,17 @@ public class ReceivingTask implements Runnable{
             System.arraycopy(res, 24, tmp, 0, 4);
             newMarkerNum = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
 
-            double time= (double)System.currentTimeMillis();
-            double resultdelay = time - resultTimesend;
+            resultdelay = time - resultTimesend;
+            //Log.d(Constants.Eval, String.valueOf(resultdelay));
+            try{BufferedWriter bw =
+                    new BufferedWriter(new FileWriter(file, true));
+                bw.write(Double.toString(resultdelay));
+                bw.newLine();
+                bw.flush();}
+            catch (Exception e){
+                e.printStackTrace();
 
+            }
 
             if (newMarkerNum >= 0) {
                 Log.d(Constants.Eval, "" + newMarkerNum + " res " + resultID + " received ");

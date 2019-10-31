@@ -16,6 +16,9 @@ import java.nio.channels.DatagramChannel;
 
 import symlab.CloudAR.Constants;
 
+/**
+ * Created by st0rm23 on 2017/2/20.
+ */
 
 public class TransmissionTask implements Runnable {
 
@@ -53,6 +56,15 @@ public class TransmissionTask implements Runnable {
         GrayScaled = new Mat(Constants.previewHeight / Constants.recoScale, Constants.previewWidth / Constants.recoScale, CvType.CV_8UC1);
     }
 
+    /*public void setData(int frmID, byte[] frameData, double latitude, double longtitude){
+        this.frmID = frmID;
+        this.frameData = frameData;
+        this.latitude = latitude;
+        this.longtitude = longtitude;
+
+        if (this.frmID <= 5) dataType = MESSAGE_META;
+        else dataType = IMAGE_DETECT;
+    }*/
     public void setData(int frmID, byte[] frameData, double timeCaptured, double timeSend){
         this.frmID = frmID;
         this.frameData = frameData;
@@ -111,10 +123,10 @@ public class TransmissionTask implements Runnable {
             buffer.flip();
             datagramChannel.send(buffer, serverAddress);
 
-            if (dataType == MESSAGE_META)
-                Log.d(Constants.Eval, "metadata " + frmID + " sent ");
-            else
-                Log.d(Constants.Eval, "frame " + frmID + " sent ");
+            //if (dataType == MESSAGE_META)
+            //    Log.d(Constants.Eval, "metadata " + frmID + " sent ");
+            //else
+            //    Log.d(Constants.Eval, "frame " + frmID + " sent ");
         } catch (IOException e) {
             e.printStackTrace();
         }

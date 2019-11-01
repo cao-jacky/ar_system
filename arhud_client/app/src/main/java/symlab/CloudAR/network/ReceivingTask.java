@@ -100,7 +100,8 @@ public class ReceivingTask implements Runnable{
             }
 
             if (newMarkerNum >= 0) {
-                Log.d(Constants.Eval, "" + newMarkerNum + " res " + resultID + " received ");
+                Log.d(Constants.Eval, "" + newMarkerNum + " res for frame " + resultID +
+                        " received at " + System.currentTimeMillis());
                 Detected detected[] = new Detected[newMarkerNum];
 
                 try{BufferedWriter bw =

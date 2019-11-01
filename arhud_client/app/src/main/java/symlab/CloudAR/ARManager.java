@@ -9,6 +9,7 @@ import android.os.Environment;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Process;
+import android.telephony.TelephonyManager;
 import android.util.Log;
 
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -42,6 +43,8 @@ public class ARManager {
     private SocketAddress serverAddr;
     private String ip;
     private int port;
+
+    private String networkType;
 
     private static boolean isCloudBased;
 

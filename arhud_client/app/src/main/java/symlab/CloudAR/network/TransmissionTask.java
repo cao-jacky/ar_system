@@ -123,10 +123,10 @@ public class TransmissionTask implements Runnable {
             buffer.flip();
             datagramChannel.send(buffer, serverAddress);
 
-            //if (dataType == MESSAGE_META)
-            //    Log.d(Constants.Eval, "metadata " + frmID + " sent ");
-            //else
-            //    Log.d(Constants.Eval, "frame " + frmID + " sent ");
+            if (dataType == MESSAGE_META)
+                Log.d(Constants.Eval, "metadata " + frmID + " sent ");
+            else
+                Log.d(Constants.Eval, "Frame " + frmID + " sent at " + System.currentTimeMillis());
         } catch (IOException e) {
             e.printStackTrace();
         }

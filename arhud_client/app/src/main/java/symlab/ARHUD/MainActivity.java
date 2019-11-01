@@ -35,6 +35,8 @@ import symlab.CloudAR.Constants;
 import symlab.CloudAR.Detected;
 import java.text.DecimalFormat;
 
+import symlab.ARHUD.NetworkUtils;
+
 //-----------pengzhou---------------
 //-----------pengzhou---------------
 
@@ -53,6 +55,8 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
     private boolean recoFlag = false;
     private int frameID;
     public byte[] locationbyte;
+
+    private int curr_network_type;
 
     //-----------------------------------pengzhou: location service---------------------------------
     protected LocationManager locationManager;
@@ -118,6 +122,7 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
             }
         });
     }
+
     //-----------------------------------pengzhou: location service---------------------------------
     @Override
     protected void attachBaseContext(Context context) {
@@ -127,6 +132,17 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
 
     @Override
     public void onLocationChanged(Location location) {
+        // If location change is detected, output the location and connection type
+        Log.d(Constants.TAG, "At " + System.currentTimeMillis() + " location is " +
+                location.getLatitude() + " (latitude), and " + location.getLongitude() +
+                " (longitude)");
+        if (NetworkUtils.isWifiConnection(this) ){
+            Log.d(Constants.TAG, "Connected to WiFi");
+        } else {
+            curr_network_type = NetworkUtils.getNetworkType(this);
+            Log.d(Constants.TAG, "Connected to mobile network " + curr_network_type);
+        }
+
         txtLat = findViewById(R.id.text1);
         txtLat.setText("Latitude:" + location.getLatitude() + ", Longitude:" + location.getLongitude());
         String locationstring = txtLat.getText().toString();

@@ -12,7 +12,7 @@ CURL=1
 #      -gencode arch=compute_20,code=[sm_20,sm_21] \ This one is deprecated?
 
 # This is what I use, uncomment if you know your arch and want to specify
-# ARCH= -gencode arch=compute_52,code=compute_52
+ARCH= -gencode arch=compute_75,code=compute_75
 
 VPATH=./src/:./examples
 SLIB=libdarknet.so

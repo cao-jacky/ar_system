@@ -62,7 +62,7 @@ public class ARManager {
 
     private void initConnection() {
         File sdcard = Environment.getExternalStorageDirectory();
-        File file = new File(sdcard,"CloudAR/cloudConfig.txt");
+        File file = new File(sdcard,"CloudAR/cloudConfigarhud.txt");
         try {
             BufferedReader br = new BufferedReader(new FileReader(file));
 
@@ -76,6 +76,7 @@ public class ARManager {
             // pengzhou: the receiving phone needs the following sentence
             dataChannel.bind(new InetSocketAddress(51919));
             //dataChannel.socket().connect(serverAddr);
+            Log.d(Constants.TAG, "Server bound to IP " + ip + " and port " + port);
         } catch (IOException e) {
             Log.d(Constants.TAG, "config file error");
         } catch (Exception e) {}

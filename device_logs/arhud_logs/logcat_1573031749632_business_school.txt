@@ -1,0 +1,2262 @@
+--------- beginning of main
+11-06 11:15:49.643 29849 29849 W logcat  : type=1400 audit(0.0:34669): avc: granted { create } for name="logcat_1573031749632.txt" scontext=u:r:untrusted_app:s0:c149,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0:c149,c256,c512,c768 tclass=file
+11-06 11:15:49.646 29826 29826 I MultiDex: Installing application
+11-06 11:15:49.646 29826 29826 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+--------- beginning of system
+11-06 11:15:49.649 29826 29826 V ActivityThread: callActivityOnCreate
+11-06 11:15:49.649 29826 29826 I Poster  :  onCreate() called.
+11-06 11:15:49.653 29826 29826 I HwApsImpl: APS: new HwApsImpl created
+11-06 11:15:49.659 29826 29826 V HwWidgetFactory: : successes to get AllImpl object and return....
+11-06 11:15:49.665 29826 29826 D OpenGLRenderer: Skia GL Pipeline
+11-06 11:15:49.688 29826 29826 D Poster  : Server bound to IP 193.166.28.132 and port 52727
+11-06 11:15:49.692 29826 29860 D Evaluation: metadata 0 sent 
+11-06 11:15:49.693 29826 29826 D ActivityThread: add activity client record, r= ActivityRecord{fd66872 token=android.os.BinderProxy@8cd3ec5 {symlab.cloudridar.arhud/symlab.ARHUD.MainActivity}} token= android.os.BinderProxy@8cd3ec5
+11-06 11:15:49.695 29826 29826 I Poster  :  onStart() called.
+11-06 11:15:49.695 29826 29826 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-06 11:15:49.697 29826 29826 I Poster  :  onResume() called.
+11-06 11:15:49.700 29826 29826 I PermissionManager: camera remind result:true
+11-06 11:15:49.700 29826 29826 I Camera  : open camera: 0, package name: symlab.cloudridar.arhud
+11-06 11:15:49.701 29826 29826 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 29826 ,uidOf3RdApk: 10149 ,permType: 0 ,permCfg: 1
+11-06 11:15:49.701 29826 29826 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = true
+11-06 11:15:49.715 29826 29826 D ActivityThread: isOptEnabled=false isWechatScanOpt=false
+11-06 11:15:49.716 29826 29826 I HwSecImmHelper: mSecurityInputMethodService is null
+11-06 11:15:49.723 29826 29826 D OpenGLRenderer:   HWUI Binary is  enabled
+11-06 11:15:49.735 29826 29878 D HiTouch_PressGestureDetector: onAttached, package=symlab.cloudridar.arhud, windowType=1, mHiTouchRestricted=false
+11-06 11:15:49.746 29826 29877 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-06 11:15:49.746 29826 29877 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-06 11:15:49.746 29826 29877 I iGraphics: [0020080c] pn: symlab.cloudridar.arhud, p: 29826
+11-06 11:15:49.746 29826 29877 I OpenGLRenderer: Initialized EGL, version 1.4, mEglDisplay 0x1
+11-06 11:15:49.746 29826 29877 D OpenGLRenderer: Swap behavior 2
+11-06 11:15:49.757 29826 29877 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+11-06 11:15:49.766 29826 29826 I Poster  :  surfaceCreated() called.
+11-06 11:15:49.766 29826 29826 I Poster  : initPreview() called
+11-06 11:15:49.770 29826 29826 I PermissionManager: camera remind result:true
+11-06 11:15:49.776 29826 29826 I Poster  :  surfaceChanged() called.
+11-06 11:15:49.792 29826 29826 W InputMethodManager: startInputReason = 1
+11-06 11:15:49.803 29826 29826 W InputMethodManager: startInputReason = 5
+11-06 11:15:50.052 29826 29860 D Evaluation: metadata 1 sent 
+11-06 11:15:50.083 29826 29860 D Evaluation: metadata 2 sent 
+11-06 11:15:50.120 29826 29860 D Evaluation: metadata 3 sent 
+11-06 11:15:50.156 29826 29860 D Evaluation: metadata 4 sent 
+11-06 11:15:50.193 29826 29860 D Evaluation: metadata 5 sent 
+11-06 11:15:50.240 29826 29860 D Evaluation: Frame 6 sent at 1573031750240
+11-06 11:15:50.264 29826 29860 D Evaluation: Frame 7 sent at 1573031750264
+11-06 11:15:50.298 29826 29860 D Evaluation: Frame 8 sent at 1573031750298
+11-06 11:15:50.333 29826 29826 D Poster  : At 1573031750333 location is 65.05993756346251 (latitude), and 25.468542873142063 (longitude)
+11-06 11:15:50.335 29826 29860 D Evaluation: Frame 9 sent at 1573031750335
+11-06 11:15:50.336 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:15:50.371 29826 29860 D Evaluation: Frame 10 sent at 1573031750371
+11-06 11:15:50.399 29826 29860 D Evaluation: Frame 11 sent at 1573031750399
+11-06 11:15:50.433 29826 29860 D Evaluation: Frame 12 sent at 1573031750433
+11-06 11:15:50.470 29826 29860 D Evaluation: Frame 13 sent at 1573031750470
+11-06 11:15:50.504 29826 29860 D Evaluation: Frame 14 sent at 1573031750504
+11-06 11:15:50.538 29826 29860 D Evaluation: Frame 15 sent at 1573031750538
+11-06 11:15:50.570 29826 29837 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:15:50.571 29826 29860 D Evaluation: Frame 16 sent at 1573031750571
+11-06 11:15:50.605 29826 29860 D Evaluation: Frame 17 sent at 1573031750605
+11-06 11:15:50.635 29826 29860 D Evaluation: Frame 18 sent at 1573031750635
+11-06 11:15:50.668 29826 29860 D Evaluation: Frame 19 sent at 1573031750668
+11-06 11:15:50.706 29826 29860 D Evaluation: Frame 20 sent at 1573031750706
+11-06 11:15:50.739 29826 29860 D Evaluation: Frame 21 sent at 1573031750739
+11-06 11:15:50.773 29826 29860 D Evaluation: Frame 22 sent at 1573031750773
+11-06 11:15:50.806 29826 29860 D Evaluation: Frame 23 sent at 1573031750806
+11-06 11:15:50.840 29826 29860 D Evaluation: Frame 24 sent at 1573031750840
+11-06 11:15:50.873 29826 29860 D Evaluation: Frame 25 sent at 1573031750873
+11-06 11:15:50.904 29826 29860 D Evaluation: Frame 26 sent at 1573031750904
+11-06 11:15:50.951 29826 29860 D Evaluation: Frame 27 sent at 1573031750951
+11-06 11:15:50.979 29826 29860 D Evaluation: Frame 28 sent at 1573031750978
+11-06 11:15:51.022 29826 29860 D Evaluation: Frame 29 sent at 1573031751022
+11-06 11:15:51.056 29826 29860 D Evaluation: Frame 30 sent at 1573031751056
+11-06 11:15:51.097 29826 29860 D Evaluation: Frame 31 sent at 1573031751097
+11-06 11:15:51.118 29826 29860 D Evaluation: Frame 32 sent at 1573031751118
+11-06 11:15:51.153 29826 29860 D Evaluation: Frame 33 sent at 1573031751153
+11-06 11:15:51.180 29826 29860 D Evaluation: Frame 34 sent at 1573031751180
+11-06 11:15:51.222 29826 29860 D Evaluation: Frame 35 sent at 1573031751222
+11-06 11:15:51.252 29826 29860 D Evaluation: Frame 36 sent at 1573031751252
+11-06 11:15:51.293 29826 29860 D Evaluation: Frame 37 sent at 1573031751292
+11-06 11:15:51.328 29826 29860 D Evaluation: Frame 38 sent at 1573031751328
+11-06 11:15:51.330 29826 29826 D Poster  : At 1573031751330 location is 65.05993756346251 (latitude), and 25.468542873142063 (longitude)
+11-06 11:15:51.333 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:15:51.369 29826 29860 D Evaluation: Frame 39 sent at 1573031751369
+11-06 11:15:51.389 29826 29860 D Evaluation: Frame 40 sent at 1573031751389
+11-06 11:15:51.423 29826 29860 D Evaluation: Frame 41 sent at 1573031751423
+11-06 11:15:51.457 29826 29860 D Evaluation: Frame 42 sent at 1573031751457
+11-06 11:15:51.498 29826 29860 D Evaluation: Frame 43 sent at 1573031751498
+11-06 11:15:51.545 29826 29860 D Evaluation: Frame 44 sent at 1573031751545
+11-06 11:15:51.566 29826 29860 D Evaluation: Frame 45 sent at 1573031751566
+11-06 11:15:51.609 29826 29860 D Evaluation: Frame 46 sent at 1573031751609
+11-06 11:15:51.637 29826 29860 D Evaluation: Frame 47 sent at 1573031751637
+11-06 11:15:51.671 29826 29860 D Evaluation: Frame 48 sent at 1573031751671
+11-06 11:15:51.707 29826 29860 D Evaluation: Frame 49 sent at 1573031751707
+11-06 11:15:51.738 29826 29860 D Evaluation: Frame 50 sent at 1573031751738
+11-06 11:15:51.765 29826 29860 D Evaluation: Frame 51 sent at 1573031751765
+11-06 11:15:51.813 29826 29860 D Evaluation: Frame 52 sent at 1573031751813
+11-06 11:15:51.842 29826 29860 D Evaluation: Frame 53 sent at 1573031751842
+11-06 11:15:51.867 29826 29860 D Evaluation: Frame 54 sent at 1573031751867
+11-06 11:15:51.899 29826 29860 D Evaluation: Frame 55 sent at 1573031751899
+11-06 11:15:51.931 29826 29860 D Evaluation: Frame 56 sent at 1573031751931
+11-06 11:15:51.960 29826 29860 D Evaluation: Frame 57 sent at 1573031751960
+11-06 11:15:51.996 29826 29860 D Evaluation: Frame 58 sent at 1573031751996
+11-06 11:15:52.035 29826 29860 D Evaluation: Frame 59 sent at 1573031752035
+11-06 11:15:52.079 29826 29860 D Evaluation: Frame 60 sent at 1573031752079
+11-06 11:15:52.107 29826 29860 D Evaluation: Frame 61 sent at 1573031752107
+11-06 11:15:52.142 29826 29860 D Evaluation: Frame 62 sent at 1573031752142
+11-06 11:15:52.176 29826 29860 D Evaluation: Frame 63 sent at 1573031752176
+11-06 11:15:52.206 29826 29860 D Evaluation: Frame 64 sent at 1573031752206
+11-06 11:15:52.242 29826 29860 D Evaluation: Frame 65 sent at 1573031752242
+11-06 11:15:52.272 29826 29860 D Evaluation: Frame 66 sent at 1573031752272
+11-06 11:15:52.307 29826 29860 D Evaluation: Frame 67 sent at 1573031752307
+11-06 11:15:52.307 29826 29837 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:15:52.330 29826 29826 D Poster  : At 1573031752330 location is 65.05993804951085 (latitude), and 25.46853710810738 (longitude)
+11-06 11:15:52.331 29826 29860 D Evaluation: Frame 68 sent at 1573031752331
+11-06 11:15:52.332 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:15:52.371 29826 29860 D Evaluation: Frame 69 sent at 1573031752371
+11-06 11:15:52.406 29826 29860 D Evaluation: Frame 70 sent at 1573031752406
+11-06 11:15:52.446 29826 29860 D Evaluation: Frame 71 sent at 1573031752446
+11-06 11:15:52.485 29826 29860 D Evaluation: Frame 72 sent at 1573031752485
+11-06 11:15:52.509 29826 29860 D Evaluation: Frame 73 sent at 1573031752509
+11-06 11:15:52.537 29826 29860 D Evaluation: Frame 74 sent at 1573031752537
+11-06 11:15:52.602 29826 29860 D Evaluation: Frame 75 sent at 1573031752601
+11-06 11:15:52.634 29826 29860 D Evaluation: Frame 76 sent at 1573031752634
+11-06 11:15:52.670 29826 29860 D Evaluation: Frame 77 sent at 1573031752670
+11-06 11:15:52.725 29826 29860 D Evaluation: Frame 78 sent at 1573031752725
+11-06 11:15:52.753 29826 29860 D Evaluation: Frame 79 sent at 1573031752753
+11-06 11:15:52.776 29826 29860 D Evaluation: Frame 80 sent at 1573031752776
+11-06 11:15:52.811 29826 29860 D Evaluation: Frame 81 sent at 1573031752811
+11-06 11:15:52.845 29826 29860 D Evaluation: Frame 82 sent at 1573031752845
+11-06 11:15:52.883 29826 29860 D Evaluation: Frame 83 sent at 1573031752883
+11-06 11:15:52.920 29826 29860 D Evaluation: Frame 84 sent at 1573031752920
+11-06 11:15:52.954 29826 29860 D Evaluation: Frame 86 sent at 1573031752954
+11-06 11:15:52.973 29826 29860 D Evaluation: Frame 86 sent at 1573031752973
+11-06 11:15:53.006 29826 29860 D Evaluation: Frame 87 sent at 1573031753006
+11-06 11:15:53.046 29826 29860 D Evaluation: Frame 88 sent at 1573031753045
+11-06 11:15:53.083 29826 29860 D Evaluation: Frame 89 sent at 1573031753083
+11-06 11:15:53.114 29826 29860 D Evaluation: Frame 90 sent at 1573031753114
+11-06 11:15:53.141 29826 29860 D Evaluation: Frame 91 sent at 1573031753141
+11-06 11:15:53.186 29826 29860 D Evaluation: Frame 92 sent at 1573031753186
+11-06 11:15:53.219 29826 29860 D Evaluation: Frame 93 sent at 1573031753219
+11-06 11:15:53.248 29826 29860 D Evaluation: Frame 94 sent at 1573031753248
+11-06 11:15:53.276 29826 29860 D Evaluation: Frame 95 sent at 1573031753276
+11-06 11:15:53.311 29826 29860 D Evaluation: Frame 96 sent at 1573031753311
+11-06 11:15:53.346 29826 29826 D Poster  : At 1573031753346 location is 65.05994173487817 (latitude), and 25.468538868258367 (longitude)
+11-06 11:15:53.348 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:15:53.349 29826 29860 D Evaluation: Frame 97 sent at 1573031753349
+11-06 11:15:53.382 29826 29860 D Evaluation: Frame 98 sent at 1573031753382
+11-06 11:15:53.411 29826 29860 D Evaluation: Frame 99 sent at 1573031753411
+11-06 11:15:53.442 29826 29860 D Evaluation: Frame 100 sent at 1573031753442
+11-06 11:15:53.486 29826 29860 D Evaluation: Frame 101 sent at 1573031753486
+11-06 11:15:53.527 29826 29860 D Evaluation: Frame 102 sent at 1573031753527
+11-06 11:15:53.556 29826 29860 D Evaluation: Frame 103 sent at 1573031753556
+11-06 11:15:53.594 29826 29860 D Evaluation: Frame 104 sent at 1573031753594
+11-06 11:15:53.617 29826 29860 D Evaluation: Frame 105 sent at 1573031753617
+11-06 11:15:53.639 29826 29860 D Evaluation: Frame 106 sent at 1573031753639
+11-06 11:15:53.682 29826 29860 D Evaluation: Frame 107 sent at 1573031753681
+11-06 11:15:53.716 29826 29860 D Evaluation: Frame 108 sent at 1573031753716
+11-06 11:15:53.759 29826 29860 D Evaluation: Frame 110 sent at 1573031753759
+11-06 11:15:53.778 29826 29860 D Evaluation: Frame 110 sent at 1573031753778
+11-06 11:15:53.816 29826 29860 D Evaluation: Frame 111 sent at 1573031753816
+11-06 11:15:53.864 29826 29860 D Evaluation: Frame 112 sent at 1573031753864
+11-06 11:15:53.902 29826 29860 D Evaluation: Frame 113 sent at 1573031753902
+11-06 11:15:53.934 29826 29860 D Evaluation: Frame 114 sent at 1573031753934
+11-06 11:15:53.968 29826 29860 D Evaluation: Frame 115 sent at 1573031753968
+11-06 11:15:54.036 29826 29860 D Evaluation: Frame 116 sent at 1573031754036
+11-06 11:15:54.060 29826 29860 D Evaluation: Frame 117 sent at 1573031754060
+11-06 11:15:54.094 29826 29860 D Evaluation: Frame 118 sent at 1573031754094
+11-06 11:15:54.121 29826 29860 D Evaluation: Frame 119 sent at 1573031754121
+11-06 11:15:54.162 29826 29837 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:15:54.162 29826 29860 D Evaluation: Frame 120 sent at 1573031754162
+11-06 11:15:54.188 29826 29860 D Evaluation: Frame 121 sent at 1573031754188
+11-06 11:15:54.226 29826 29860 D Evaluation: Frame 122 sent at 1573031754226
+11-06 11:15:54.262 29826 29860 D Evaluation: Frame 123 sent at 1573031754262
+11-06 11:15:54.291 29826 29860 D Evaluation: Frame 124 sent at 1573031754290
+11-06 11:15:54.323 29826 29860 D Evaluation: Frame 125 sent at 1573031754323
+11-06 11:15:54.332 29826 29826 D Poster  : At 1573031754332 location is 65.05994506737194 (latitude), and 25.468549847489477 (longitude)
+11-06 11:15:54.335 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:15:54.365 29826 29860 D Evaluation: Frame 126 sent at 1573031754365
+11-06 11:15:54.385 29826 29860 D Evaluation: Frame 127 sent at 1573031754385
+11-06 11:15:54.418 29826 29860 D Evaluation: Frame 128 sent at 1573031754418
+11-06 11:15:54.457 29826 29860 D Evaluation: Frame 129 sent at 1573031754457
+11-06 11:15:54.495 29826 29860 D Evaluation: Frame 130 sent at 1573031754495
+11-06 11:15:54.536 29826 29860 D Evaluation: Frame 132 sent at 1573031754536
+11-06 11:15:54.553 29826 29860 D Evaluation: Frame 132 sent at 1573031754553
+11-06 11:15:54.584 29826 29860 D Evaluation: Frame 133 sent at 1573031754584
+11-06 11:15:54.616 29826 29860 D Evaluation: Frame 134 sent at 1573031754616
+11-06 11:15:54.630 29826 29826 I AwareBitmapCacher: init lrucache size: 2097152 pid=29826
+11-06 11:15:54.655 29826 29860 D Evaluation: Frame 135 sent at 1573031754655
+11-06 11:15:54.683 29826 29860 D Evaluation: Frame 136 sent at 1573031754683
+11-06 11:15:54.729 29826 29860 D Evaluation: Frame 137 sent at 1573031754729
+11-06 11:15:54.764 29826 29860 D Evaluation: Frame 138 sent at 1573031754764
+11-06 11:15:54.790 29826 29860 D Evaluation: Frame 139 sent at 1573031754790
+11-06 11:15:54.824 29826 29860 D Evaluation: Frame 140 sent at 1573031754824
+11-06 11:15:54.870 29826 29860 D Evaluation: Frame 141 sent at 1573031754870
+11-06 11:15:54.909 29826 29860 D Evaluation: Frame 143 sent at 1573031754909
+11-06 11:15:54.934 29826 29860 D Evaluation: Frame 143 sent at 1573031754934
+11-06 11:15:54.967 29826 29860 D Evaluation: Frame 144 sent at 1573031754967
+11-06 11:15:54.997 29826 29860 D Evaluation: Frame 145 sent at 1573031754997
+11-06 11:15:55.028 29826 29860 D Evaluation: Frame 146 sent at 1573031755028
+11-06 11:15:55.070 29826 29860 D Evaluation: Frame 147 sent at 1573031755070
+11-06 11:15:55.102 29826 29860 D Evaluation: Frame 148 sent at 1573031755102
+11-06 11:15:55.131 29826 29860 D Evaluation: Frame 149 sent at 1573031755131
+11-06 11:15:55.164 29826 29860 D Evaluation: Frame 150 sent at 1573031755164
+11-06 11:15:55.206 29826 29860 D Evaluation: Frame 151 sent at 1573031755206
+11-06 11:15:55.244 29826 29860 D Evaluation: Frame 152 sent at 1573031755244
+11-06 11:15:55.281 29826 29860 D Evaluation: Frame 154 sent at 1573031755281
+11-06 11:15:55.302 29826 29860 D Evaluation: Frame 154 sent at 1573031755302
+11-06 11:15:55.328 29826 29860 D Evaluation: Frame 155 sent at 1573031755328
+11-06 11:15:55.359 29826 29826 D Poster  : At 1573031755359 location is 65.05994347764806 (latitude), and 25.468569195922587 (longitude)
+11-06 11:15:55.360 29826 29860 D Evaluation: Frame 156 sent at 1573031755360
+11-06 11:15:55.361 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:15:55.399 29826 29860 D Evaluation: Frame 157 sent at 1573031755399
+11-06 11:15:55.435 29826 29860 D Evaluation: Frame 158 sent at 1573031755435
+11-06 11:15:55.453 29826 29860 D Evaluation: Frame 159 sent at 1573031755453
+11-06 11:15:55.490 29826 29860 D Evaluation: Frame 160 sent at 1573031755490
+11-06 11:15:55.537 29826 29860 D Evaluation: Frame 161 sent at 1573031755537
+11-06 11:15:55.569 29826 29860 D Evaluation: Frame 162 sent at 1573031755569
+11-06 11:15:55.605 29826 29860 D Evaluation: Frame 163 sent at 1573031755605
+11-06 11:15:55.637 29826 29860 D Evaluation: Frame 164 sent at 1573031755637
+11-06 11:15:55.679 29826 29860 D Evaluation: Frame 165 sent at 1573031755679
+11-06 11:15:55.751 29826 29860 D Evaluation: Frame 166 sent at 1573031755751
+11-06 11:15:55.778 29826 29860 D Evaluation: Frame 167 sent at 1573031755778
+11-06 11:15:55.806 29826 29860 D Evaluation: Frame 168 sent at 1573031755806
+11-06 11:15:55.838 29826 29860 D Evaluation: Frame 169 sent at 1573031755838
+11-06 11:15:55.840 29826 29860 D Evaluation: 0 res for frame 166 received at 1573031755840
+11-06 11:15:55.873 29826 29860 D Evaluation: Frame 170 sent at 1573031755873
+11-06 11:15:55.874 29826 29860 D Evaluation: 0 res for frame 167 received at 1573031755874
+11-06 11:15:55.909 29826 29860 D Evaluation: Frame 171 sent at 1573031755909
+11-06 11:15:55.912 29826 29860 D Evaluation: 0 res for frame 168 received at 1573031755912
+11-06 11:15:55.937 29826 29860 D Evaluation: Frame 172 sent at 1573031755937
+11-06 11:15:55.939 29826 29860 D Evaluation: 0 res for frame 169 received at 1573031755939
+11-06 11:15:55.979 29826 29860 D Evaluation: Frame 174 sent at 1573031755979
+11-06 11:15:55.980 29826 29860 D Evaluation: 0 res for frame 170 received at 1573031755980
+11-06 11:15:56.001 29826 29860 D Evaluation: Frame 174 sent at 1573031756001
+11-06 11:15:56.003 29826 29860 D Evaluation: 0 res for frame 171 received at 1573031756003
+11-06 11:15:56.003 29826 29837 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:15:56.023 29826 29835 W System  : A resource failed to call close. 
+11-06 11:15:56.025 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 10 lines
+11-06 11:15:56.025 29826 29835 W System  : A resource failed to call close. 
+11-06 11:15:56.033 29826 29860 D Evaluation: Frame 175 sent at 1573031756033
+11-06 11:15:56.034 29826 29860 D Evaluation: 0 res for frame 172 received at 1573031756034
+11-06 11:15:56.062 29826 29860 D Evaluation: Frame 176 sent at 1573031756061
+11-06 11:15:56.063 29826 29860 D Evaluation: 0 res for frame 174 received at 1573031756063
+11-06 11:15:56.104 29826 29860 D Evaluation: Frame 177 sent at 1573031756104
+11-06 11:15:56.105 29826 29860 D Evaluation: 0 res for frame 174 received at 1573031756105
+11-06 11:15:56.158 29826 29860 D Evaluation: Frame 179 sent at 1573031756158
+11-06 11:15:56.161 29826 29860 D Evaluation: 0 res for frame 175 received at 1573031756161
+11-06 11:15:56.184 29826 29860 D Evaluation: Frame 179 sent at 1573031756184
+11-06 11:15:56.186 29826 29860 D Evaluation: 0 res for frame 176 received at 1573031756186
+11-06 11:15:56.213 29826 29860 D Evaluation: Frame 180 sent at 1573031756213
+11-06 11:15:56.214 29826 29860 D Evaluation: 0 res for frame 177 received at 1573031756214
+11-06 11:15:56.270 29826 29860 D Evaluation: Frame 181 sent at 1573031756270
+11-06 11:15:56.271 29826 29860 D Evaluation: 3 res for frame 179 received at 1573031756271
+11-06 11:15:56.305 29826 29860 D Evaluation: Frame 182 sent at 1573031756305
+11-06 11:15:56.306 29826 29860 D Evaluation: 0 res for frame 179 received at 1573031756306
+11-06 11:15:56.333 29826 29826 D Poster  : At 1573031756333 location is 65.05994204430507 (latitude), and 25.468588253118668 (longitude)
+11-06 11:15:56.335 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:15:56.337 29826 29860 D Evaluation: Frame 183 sent at 1573031756337
+11-06 11:15:56.339 29826 29860 D Evaluation: 1 res for frame 180 received at 1573031756339
+11-06 11:15:56.382 29826 29860 D Evaluation: Frame 185 sent at 1573031756382
+11-06 11:15:56.384 29826 29860 D Evaluation: 1 res for frame 181 received at 1573031756384
+11-06 11:15:56.408 29826 29860 D Evaluation: Frame 185 sent at 1573031756408
+11-06 11:15:56.409 29826 29860 D Evaluation: 1 res for frame 182 received at 1573031756409
+11-06 11:15:56.443 29826 29860 D Evaluation: Frame 186 sent at 1573031756443
+11-06 11:15:56.445 29826 29860 D Evaluation: 1 res for frame 183 received at 1573031756445
+11-06 11:15:56.481 29826 29860 D Evaluation: Frame 187 sent at 1573031756481
+11-06 11:15:56.483 29826 29860 D Evaluation: 1 res for frame 185 received at 1573031756483
+11-06 11:15:56.515 29826 29860 D Evaluation: Frame 188 sent at 1573031756515
+11-06 11:15:56.517 29826 29860 D Evaluation: 1 res for frame 185 received at 1573031756517
+11-06 11:15:56.547 29826 29860 D Evaluation: Frame 189 sent at 1573031756547
+11-06 11:15:56.548 29826 29860 D Evaluation: 1 res for frame 186 received at 1573031756548
+11-06 11:15:56.585 29826 29860 D Evaluation: Frame 190 sent at 1573031756585
+11-06 11:15:56.587 29826 29860 D Evaluation: 1 res for frame 187 received at 1573031756587
+11-06 11:15:56.614 29826 29860 D Evaluation: Frame 191 sent at 1573031756614
+11-06 11:15:56.616 29826 29860 D Evaluation: 1 res for frame 188 received at 1573031756616
+11-06 11:15:56.673 29826 29860 D Evaluation: Frame 192 sent at 1573031756672
+11-06 11:15:56.675 29826 29860 D Evaluation: 1 res for frame 189 received at 1573031756675
+11-06 11:15:56.700 29826 29860 D Evaluation: Frame 193 sent at 1573031756700
+11-06 11:15:56.701 29826 29860 D Evaluation: 1 res for frame 190 received at 1573031756701
+11-06 11:15:56.742 29826 29860 D Evaluation: Frame 194 sent at 1573031756742
+11-06 11:15:56.743 29826 29860 D Evaluation: 1 res for frame 191 received at 1573031756743
+11-06 11:15:56.773 29826 29860 D Evaluation: Frame 195 sent at 1573031756773
+11-06 11:15:56.774 29826 29860 D Evaluation: 1 res for frame 192 received at 1573031756774
+11-06 11:15:56.812 29826 29860 D Evaluation: Frame 196 sent at 1573031756812
+11-06 11:15:56.813 29826 29860 D Evaluation: 1 res for frame 193 received at 1573031756813
+11-06 11:15:56.844 29826 29860 D Evaluation: Frame 197 sent at 1573031756844
+11-06 11:15:56.845 29826 29860 D Evaluation: 1 res for frame 194 received at 1573031756845
+11-06 11:15:56.884 29826 29860 D Evaluation: Frame 198 sent at 1573031756884
+11-06 11:15:56.885 29826 29860 D Evaluation: 1 res for frame 195 received at 1573031756885
+11-06 11:15:56.913 29826 29860 D Evaluation: Frame 199 sent at 1573031756913
+11-06 11:15:56.915 29826 29860 D Evaluation: 1 res for frame 196 received at 1573031756914
+11-06 11:15:56.952 29826 29860 D Evaluation: Frame 200 sent at 1573031756952
+11-06 11:15:56.953 29826 29860 D Evaluation: 1 res for frame 197 received at 1573031756953
+11-06 11:15:56.978 29826 29860 D Evaluation: Frame 201 sent at 1573031756978
+11-06 11:15:57.007 29826 29860 D Evaluation: Frame 202 sent at 1573031757007
+11-06 11:15:57.008 29826 29860 D Evaluation: 1 res for frame 198 received at 1573031757008
+11-06 11:15:57.047 29826 29860 D Evaluation: Frame 203 sent at 1573031757047
+11-06 11:15:57.049 29826 29860 D Evaluation: 1 res for frame 199 received at 1573031757048
+11-06 11:15:57.088 29826 29860 D Evaluation: Frame 204 sent at 1573031757087
+11-06 11:15:57.089 29826 29860 D Evaluation: 1 res for frame 200 received at 1573031757089
+11-06 11:15:57.126 29826 29860 D Evaluation: Frame 205 sent at 1573031757126
+11-06 11:15:57.128 29826 29860 D Evaluation: 1 res for frame 201 received at 1573031757128
+11-06 11:15:57.151 29826 29860 D Evaluation: Frame 206 sent at 1573031757151
+11-06 11:15:57.152 29826 29860 D Evaluation: 1 res for frame 202 received at 1573031757152
+11-06 11:15:57.178 29826 29860 D Evaluation: Frame 207 sent at 1573031757178
+11-06 11:15:57.179 29826 29860 D Evaluation: 1 res for frame 203 received at 1573031757179
+11-06 11:15:57.222 29826 29860 D Evaluation: Frame 208 sent at 1573031757222
+11-06 11:15:57.224 29826 29860 D Evaluation: 1 res for frame 204 received at 1573031757224
+11-06 11:15:57.257 29826 29860 D Evaluation: Frame 209 sent at 1573031757257
+11-06 11:15:57.258 29826 29860 D Evaluation: 1 res for frame 205 received at 1573031757258
+11-06 11:15:57.283 29826 29860 D Evaluation: Frame 210 sent at 1573031757283
+11-06 11:15:57.284 29826 29860 D Evaluation: 1 res for frame 206 received at 1573031757284
+11-06 11:15:57.315 29826 29860 D Evaluation: Frame 211 sent at 1573031757315
+11-06 11:15:57.316 29826 29837 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:15:57.317 29826 29860 D Evaluation: 1 res for frame 207 received at 1573031757317
+11-06 11:15:57.340 29826 29826 D Poster  : At 1573031757340 location is 65.05993990505556 (latitude), and 25.468609669349323 (longitude)
+11-06 11:15:57.342 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:15:57.349 29826 29860 D Evaluation: Frame 212 sent at 1573031757349
+11-06 11:15:57.350 29826 29860 D Evaluation: 1 res for frame 208 received at 1573031757350
+11-06 11:15:57.354 29826 29835 W System  : A resource failed to call close. 
+11-06 11:15:57.355 29826 29835 W System  : A resource failed to call close. 
+11-06 11:15:57.356 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 7 lines
+11-06 11:15:57.356 29826 29835 W System  : A resource failed to call close. 
+11-06 11:15:57.356 29826 29835 W System  : A resource failed to call close. 
+11-06 11:15:57.356 29826 29835 W System  : A resource failed to call close. 
+11-06 11:15:57.368 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 59 lines
+11-06 11:15:57.368 29826 29835 W System  : A resource failed to call close. 
+11-06 11:15:57.372 29826 29860 D Evaluation: Frame 213 sent at 1573031757372
+11-06 11:15:57.403 29826 29860 D Evaluation: Frame 214 sent at 1573031757403
+11-06 11:15:57.405 29826 29860 D Evaluation: 1 res for frame 209 received at 1573031757405
+11-06 11:15:57.450 29826 29860 D Evaluation: Frame 215 sent at 1573031757450
+11-06 11:15:57.452 29826 29860 D Evaluation: 1 res for frame 210 received at 1573031757452
+11-06 11:15:57.497 29826 29860 D Evaluation: Frame 217 sent at 1573031757497
+11-06 11:15:57.498 29826 29860 D Evaluation: 1 res for frame 211 received at 1573031757498
+11-06 11:15:57.516 29826 29860 D Evaluation: Frame 217 sent at 1573031757516
+11-06 11:15:57.517 29826 29860 D Evaluation: 1 res for frame 212 received at 1573031757517
+11-06 11:15:57.547 29826 29860 D Evaluation: Frame 218 sent at 1573031757547
+11-06 11:15:57.548 29826 29860 D Evaluation: 1 res for frame 213 received at 1573031757548
+11-06 11:15:57.579 29826 29860 D Evaluation: Frame 219 sent at 1573031757579
+11-06 11:15:57.580 29826 29860 D Evaluation: 1 res for frame 214 received at 1573031757580
+11-06 11:15:57.618 29826 29860 D Evaluation: Frame 220 sent at 1573031757618
+11-06 11:15:57.619 29826 29860 D Evaluation: 1 res for frame 215 received at 1573031757619
+11-06 11:15:57.652 29826 29860 D Evaluation: Frame 221 sent at 1573031757652
+11-06 11:15:57.654 29826 29860 D Evaluation: 1 res for frame 217 received at 1573031757654
+11-06 11:15:57.680 29826 29860 D Evaluation: Frame 222 sent at 1573031757680
+11-06 11:15:57.681 29826 29860 D Evaluation: 1 res for frame 217 received at 1573031757681
+11-06 11:15:57.721 29826 29860 D Evaluation: Frame 223 sent at 1573031757721
+11-06 11:15:57.722 29826 29860 D Evaluation: 1 res for frame 218 received at 1573031757722
+11-06 11:15:57.749 29826 29860 D Evaluation: Frame 224 sent at 1573031757749
+11-06 11:15:57.751 29826 29860 D Evaluation: 1 res for frame 219 received at 1573031757750
+11-06 11:15:57.779 29826 29860 D Evaluation: Frame 225 sent at 1573031757779
+11-06 11:15:57.781 29826 29860 D Evaluation: 1 res for frame 220 received at 1573031757781
+11-06 11:15:57.825 29826 29860 D Evaluation: Frame 226 sent at 1573031757825
+11-06 11:15:57.827 29826 29860 D Evaluation: 1 res for frame 221 received at 1573031757826
+11-06 11:15:57.854 29826 29860 D Evaluation: Frame 227 sent at 1573031757854
+11-06 11:15:57.855 29826 29860 D Evaluation: 1 res for frame 222 received at 1573031757855
+11-06 11:15:57.893 29826 29860 D Evaluation: Frame 228 sent at 1573031757893
+11-06 11:15:57.894 29826 29860 D Evaluation: 1 res for frame 223 received at 1573031757894
+11-06 11:15:57.922 29826 29860 D Evaluation: Frame 229 sent at 1573031757922
+11-06 11:15:57.923 29826 29860 D Evaluation: 1 res for frame 224 received at 1573031757923
+11-06 11:15:57.954 29826 29860 D Evaluation: Frame 230 sent at 1573031757954
+11-06 11:15:57.955 29826 29860 D Evaluation: 1 res for frame 225 received at 1573031757955
+11-06 11:15:57.979 29826 29860 D Evaluation: Frame 231 sent at 1573031757979
+11-06 11:15:57.981 29826 29860 D Evaluation: 1 res for frame 226 received at 1573031757981
+11-06 11:15:58.010 29826 29860 D Evaluation: Frame 232 sent at 1573031758010
+11-06 11:15:58.011 29826 29860 D Evaluation: 1 res for frame 227 received at 1573031758011
+11-06 11:15:58.046 29826 29860 D Evaluation: Frame 233 sent at 1573031758046
+11-06 11:15:58.047 29826 29860 D Evaluation: 1 res for frame 228 received at 1573031758047
+11-06 11:15:58.109 29826 29860 D Evaluation: Frame 235 sent at 1573031758109
+11-06 11:15:58.110 29826 29860 D Evaluation: 1 res for frame 229 received at 1573031758110
+11-06 11:15:58.136 29826 29860 D Evaluation: Frame 236 sent at 1573031758136
+11-06 11:15:58.138 29826 29860 D Evaluation: 1 res for frame 230 received at 1573031758138
+11-06 11:15:58.162 29826 29860 D Evaluation: Frame 236 sent at 1573031758162
+11-06 11:15:58.163 29826 29860 D Evaluation: 1 res for frame 231 received at 1573031758163
+11-06 11:15:58.189 29826 29860 D Evaluation: Frame 237 sent at 1573031758189
+11-06 11:15:58.192 29826 29860 D Evaluation: 1 res for frame 232 received at 1573031758192
+11-06 11:15:58.214 29826 29860 D Evaluation: Frame 238 sent at 1573031758214
+11-06 11:15:58.215 29826 29860 D Evaluation: 1 res for frame 233 received at 1573031758215
+11-06 11:15:58.301 29826 29860 D Evaluation: Frame 239 sent at 1573031758301
+11-06 11:15:58.302 29826 29860 D Evaluation: 1 res for frame 235 received at 1573031758302
+11-06 11:15:58.354 29826 29826 D Poster  : At 1573031758354 location is 65.05993654525251 (latitude), and 25.46861687312768 (longitude)
+11-06 11:15:58.355 29826 29860 D Evaluation: Frame 241 sent at 1573031758355
+11-06 11:15:58.356 29826 29860 D Evaluation: 1 res for frame 236 received at 1573031758356
+11-06 11:15:58.359 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:15:58.377 29826 29860 D Evaluation: Frame 242 sent at 1573031758377
+11-06 11:15:58.378 29826 29860 D Evaluation: 1 res for frame 236 received at 1573031758378
+11-06 11:15:58.392 29826 29860 D Evaluation: Frame 242 sent at 1573031758392
+11-06 11:15:58.393 29826 29860 D Evaluation: 1 res for frame 237 received at 1573031758393
+11-06 11:15:58.406 29826 29860 D Evaluation: Frame 243 sent at 1573031758406
+11-06 11:15:58.407 29826 29860 D Evaluation: 1 res for frame 238 received at 1573031758407
+11-06 11:15:58.445 29826 29860 D Evaluation: Frame 244 sent at 1573031758444
+11-06 11:15:58.446 29826 29860 D Evaluation: 1 res for frame 239 received at 1573031758446
+11-06 11:15:58.483 29826 29860 D Evaluation: Frame 245 sent at 1573031758483
+11-06 11:15:58.484 29826 29860 D Evaluation: 1 res for frame 241 received at 1573031758484
+11-06 11:15:58.531 29826 29837 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:15:58.532 29826 29860 D Evaluation: Frame 246 sent at 1573031758532
+11-06 11:15:58.533 29826 29860 D Evaluation: 1 res for frame 242 received at 1573031758533
+11-06 11:15:58.550 29826 29835 W System  : A resource failed to call close. 
+11-06 11:15:58.555 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 37 lines
+11-06 11:15:58.555 29826 29835 W System  : A resource failed to call close. 
+11-06 11:15:58.555 29826 29835 W System  : A resource failed to call close. 
+11-06 11:15:58.556 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 5 lines
+11-06 11:15:58.556 29826 29835 W System  : A resource failed to call close. 
+11-06 11:15:58.556 29826 29835 W System  : A resource failed to call close. 
+11-06 11:15:58.556 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-06 11:15:58.556 29826 29835 W System  : A resource failed to call close. 
+11-06 11:15:58.556 29826 29835 W System  : A resource failed to call close. 
+11-06 11:15:58.556 29826 29835 W System  : A resource failed to call close. 
+11-06 11:15:58.557 29826 29835 W System  : A resource failed to call close. 
+11-06 11:15:58.557 29826 29835 W System  : A resource failed to call close. 
+11-06 11:15:58.557 29826 29835 W System  : A resource failed to call close. 
+11-06 11:15:58.559 29826 29835 W System  : A resource failed to call close. 
+11-06 11:15:58.559 29826 29835 W System  : A resource failed to call close. 
+11-06 11:15:58.560 29826 29835 W System  : A resource failed to call close. 
+11-06 11:15:58.560 29826 29835 W System  : A resource failed to call close. 
+11-06 11:15:58.560 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-06 11:15:58.560 29826 29835 W System  : A resource failed to call close. 
+11-06 11:15:58.560 29826 29835 W System  : A resource failed to call close. 
+11-06 11:15:58.560 29826 29835 W System  : A resource failed to call close. 
+11-06 11:15:58.561 29826 29835 W System  : A resource failed to call close. 
+11-06 11:15:58.561 29826 29835 W System  : A resource failed to call close. 
+11-06 11:15:58.561 29826 29860 D Evaluation: Frame 247 sent at 1573031758561
+11-06 11:15:58.562 29826 29860 D Evaluation: 1 res for frame 242 received at 1573031758562
+11-06 11:15:58.591 29826 29860 D Evaluation: Frame 248 sent at 1573031758591
+11-06 11:15:58.593 29826 29860 D Evaluation: 1 res for frame 243 received at 1573031758593
+11-06 11:15:58.620 29826 29860 D Evaluation: Frame 249 sent at 1573031758620
+11-06 11:15:58.622 29826 29860 D Evaluation: 1 res for frame 244 received at 1573031758622
+11-06 11:15:58.661 29826 29860 D Evaluation: Frame 250 sent at 1573031758661
+11-06 11:15:58.663 29826 29860 D Evaluation: 1 res for frame 245 received at 1573031758663
+11-06 11:15:58.693 29826 29860 D Evaluation: Frame 251 sent at 1573031758693
+11-06 11:15:58.694 29826 29860 D Evaluation: 1 res for frame 246 received at 1573031758694
+11-06 11:15:58.735 29826 29860 D Evaluation: Frame 252 sent at 1573031758735
+11-06 11:15:58.736 29826 29860 D Evaluation: 1 res for frame 247 received at 1573031758736
+11-06 11:15:58.757 29826 29860 D Evaluation: Frame 253 sent at 1573031758757
+11-06 11:15:58.758 29826 29860 D Evaluation: 1 res for frame 248 received at 1573031758758
+11-06 11:15:58.796 29826 29860 D Evaluation: Frame 254 sent at 1573031758796
+11-06 11:15:58.798 29826 29860 D Evaluation: 1 res for frame 249 received at 1573031758798
+11-06 11:15:58.817 29826 29860 D Evaluation: Frame 255 sent at 1573031758817
+11-06 11:15:58.818 29826 29860 D Evaluation: 1 res for frame 250 received at 1573031758818
+11-06 11:15:58.861 29826 29860 D Evaluation: Frame 256 sent at 1573031758861
+11-06 11:15:58.862 29826 29860 D Evaluation: 1 res for frame 251 received at 1573031758862
+11-06 11:15:58.901 29826 29860 D Evaluation: Frame 258 sent at 1573031758900
+11-06 11:15:58.902 29826 29860 D Evaluation: 1 res for frame 252 received at 1573031758902
+11-06 11:15:58.923 29826 29860 D Evaluation: Frame 258 sent at 1573031758923
+11-06 11:15:58.924 29826 29860 D Evaluation: 1 res for frame 253 received at 1573031758924
+11-06 11:15:58.962 29826 29860 D Evaluation: Frame 259 sent at 1573031758962
+11-06 11:15:58.964 29826 29860 D Evaluation: 1 res for frame 254 received at 1573031758964
+11-06 11:15:58.996 29826 29860 D Evaluation: Frame 260 sent at 1573031758996
+11-06 11:15:58.997 29826 29860 D Evaluation: 1 res for frame 255 received at 1573031758997
+11-06 11:15:59.019 29826 29860 D Evaluation: Frame 261 sent at 1573031759019
+11-06 11:15:59.020 29826 29860 D Evaluation: 1 res for frame 256 received at 1573031759020
+11-06 11:15:59.064 29826 29860 D Evaluation: Frame 262 sent at 1573031759064
+11-06 11:15:59.066 29826 29860 D Evaluation: 1 res for frame 258 received at 1573031759066
+11-06 11:15:59.091 29826 29860 D Evaluation: Frame 263 sent at 1573031759091
+11-06 11:15:59.092 29826 29860 D Evaluation: 1 res for frame 258 received at 1573031759092
+11-06 11:15:59.130 29826 29860 D Evaluation: Frame 264 sent at 1573031759130
+11-06 11:15:59.131 29826 29860 D Evaluation: 1 res for frame 259 received at 1573031759131
+11-06 11:15:59.158 29826 29860 D Evaluation: Frame 265 sent at 1573031759158
+11-06 11:15:59.159 29826 29860 D Evaluation: 1 res for frame 260 received at 1573031759159
+11-06 11:15:59.185 29826 29860 D Evaluation: Frame 266 sent at 1573031759185
+11-06 11:15:59.186 29826 29860 D Evaluation: 1 res for frame 261 received at 1573031759186
+11-06 11:15:59.234 29826 29860 D Evaluation: Frame 267 sent at 1573031759234
+11-06 11:15:59.235 29826 29860 D Evaluation: 1 res for frame 262 received at 1573031759235
+11-06 11:15:59.303 29826 29860 D Evaluation: Frame 268 sent at 1573031759303
+11-06 11:15:59.305 29826 29860 D Evaluation: 1 res for frame 263 received at 1573031759305
+11-06 11:15:59.334 29826 29860 D Evaluation: Frame 269 sent at 1573031759334
+11-06 11:15:59.336 29826 29860 D Evaluation: 1 res for frame 264 received at 1573031759336
+11-06 11:15:59.341 29826 29826 D Poster  : At 1573031759341 location is 65.05992997239936 (latitude), and 25.468627156235733 (longitude)
+11-06 11:15:59.344 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:15:59.360 29826 29860 D Evaluation: Frame 270 sent at 1573031759360
+11-06 11:15:59.361 29826 29860 D Evaluation: 1 res for frame 265 received at 1573031759361
+11-06 11:15:59.394 29826 29860 D Evaluation: Frame 271 sent at 1573031759394
+11-06 11:15:59.395 29826 29860 D Evaluation: 1 res for frame 266 received at 1573031759395
+11-06 11:15:59.411 29826 29860 D Evaluation: Frame 272 sent at 1573031759411
+11-06 11:15:59.412 29826 29860 D Evaluation: 1 res for frame 267 received at 1573031759412
+11-06 11:15:59.457 29826 29860 D Evaluation: Frame 273 sent at 1573031759457
+11-06 11:15:59.458 29826 29860 D Evaluation: 1 res for frame 268 received at 1573031759458
+11-06 11:15:59.489 29826 29860 D Evaluation: Frame 274 sent at 1573031759489
+11-06 11:15:59.491 29826 29860 D Evaluation: 1 res for frame 269 received at 1573031759491
+11-06 11:15:59.518 29826 29860 D Evaluation: Frame 275 sent at 1573031759518
+11-06 11:15:59.519 29826 29860 D Evaluation: 1 res for frame 270 received at 1573031759519
+11-06 11:15:59.563 29826 29860 D Evaluation: Frame 276 sent at 1573031759563
+11-06 11:15:59.564 29826 29860 D Evaluation: 1 res for frame 271 received at 1573031759564
+11-06 11:15:59.592 29826 29860 D Evaluation: Frame 277 sent at 1573031759592
+11-06 11:15:59.595 29826 29860 D Evaluation: 1 res for frame 272 received at 1573031759595
+11-06 11:15:59.636 29826 29860 D Evaluation: Frame 278 sent at 1573031759636
+11-06 11:15:59.638 29826 29860 D Evaluation: 1 res for frame 273 received at 1573031759638
+11-06 11:15:59.674 29826 29860 D Evaluation: Frame 280 sent at 1573031759674
+11-06 11:15:59.675 29826 29860 D Evaluation: 1 res for frame 274 received at 1573031759675
+11-06 11:15:59.693 29826 29860 D Evaluation: Frame 280 sent at 1573031759693
+11-06 11:15:59.695 29826 29860 D Evaluation: 1 res for frame 275 received at 1573031759695
+11-06 11:15:59.719 29826 29837 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:15:59.719 29826 29860 D Evaluation: Frame 281 sent at 1573031759719
+11-06 11:15:59.722 29826 29860 D Evaluation: 1 res for frame 276 received at 1573031759722
+11-06 11:15:59.737 29826 29835 W System  : A resource failed to call close. 
+11-06 11:15:59.747 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 68 lines
+11-06 11:15:59.747 29826 29835 W System  : A resource failed to call close. 
+11-06 11:15:59.765 29826 29860 D Evaluation: Frame 282 sent at 1573031759765
+11-06 11:15:59.768 29826 29860 D Evaluation: 1 res for frame 277 received at 1573031759768
+11-06 11:15:59.796 29826 29860 D Evaluation: Frame 283 sent at 1573031759796
+11-06 11:15:59.798 29826 29860 D Evaluation: 1 res for frame 278 received at 1573031759798
+11-06 11:15:59.829 29826 29860 D Evaluation: Frame 284 sent at 1573031759828
+11-06 11:15:59.831 29826 29860 D Evaluation: 1 res for frame 280 received at 1573031759831
+11-06 11:15:59.858 29826 29860 D Evaluation: Frame 285 sent at 1573031759858
+11-06 11:15:59.901 29826 29860 D Evaluation: Frame 286 sent at 1573031759901
+11-06 11:15:59.903 29826 29860 D Evaluation: 1 res for frame 280 received at 1573031759903
+11-06 11:15:59.947 29826 29860 D Evaluation: Frame 287 sent at 1573031759947
+11-06 11:15:59.950 29826 29860 D Evaluation: 1 res for frame 281 received at 1573031759950
+11-06 11:15:59.979 29826 29860 D Evaluation: Frame 288 sent at 1573031759979
+11-06 11:15:59.981 29826 29860 D Evaluation: 1 res for frame 282 received at 1573031759981
+11-06 11:16:00.009 29826 29860 D Evaluation: Frame 289 sent at 1573031760009
+11-06 11:16:00.011 29826 29860 D Evaluation: 1 res for frame 283 received at 1573031760011
+11-06 11:16:00.038 29826 29860 D Evaluation: Frame 290 sent at 1573031760038
+11-06 11:16:00.040 29826 29860 D Evaluation: 1 res for frame 284 received at 1573031760040
+11-06 11:16:00.059 29826 29860 D Evaluation: Frame 291 sent at 1573031760059
+11-06 11:16:00.061 29826 29860 D Evaluation: 1 res for frame 285 received at 1573031760061
+11-06 11:16:00.088 29826 29860 D Evaluation: Frame 292 sent at 1573031760088
+11-06 11:16:00.128 29826 29860 D Evaluation: Frame 293 sent at 1573031760128
+11-06 11:16:00.130 29826 29860 D Evaluation: 1 res for frame 286 received at 1573031760130
+11-06 11:16:00.162 29826 29860 D Evaluation: Frame 294 sent at 1573031760162
+11-06 11:16:00.164 29826 29860 D Evaluation: 1 res for frame 287 received at 1573031760164
+11-06 11:16:00.200 29826 29860 D Evaluation: Frame 295 sent at 1573031760200
+11-06 11:16:00.202 29826 29860 D Evaluation: 1 res for frame 288 received at 1573031760202
+11-06 11:16:00.241 29826 29860 D Evaluation: Frame 296 sent at 1573031760241
+11-06 11:16:00.243 29826 29860 D Evaluation: 1 res for frame 289 received at 1573031760243
+11-06 11:16:00.282 29826 29860 D Evaluation: Frame 298 sent at 1573031760281
+11-06 11:16:00.284 29826 29860 D Evaluation: 1 res for frame 290 received at 1573031760284
+11-06 11:16:00.310 29826 29860 D Evaluation: Frame 298 sent at 1573031760310
+11-06 11:16:00.312 29826 29860 D Evaluation: 1 res for frame 291 received at 1573031760312
+11-06 11:16:00.333 29826 29860 D Evaluation: Frame 299 sent at 1573031760333
+11-06 11:16:00.334 29826 29826 D Poster  : At 1573031760334 location is 65.05993092054179 (latitude), and 25.4686288582478 (longitude)
+11-06 11:16:00.335 29826 29860 D Evaluation: 1 res for frame 292 received at 1573031760335
+11-06 11:16:00.336 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:16:00.370 29826 29860 D Evaluation: Frame 300 sent at 1573031760370
+11-06 11:16:00.372 29826 29860 D Evaluation: 1 res for frame 293 received at 1573031760372
+11-06 11:16:00.395 29826 29860 D Evaluation: Frame 301 sent at 1573031760395
+11-06 11:16:00.397 29826 29860 D Evaluation: 1 res for frame 294 received at 1573031760397
+11-06 11:16:00.423 29826 29860 D Evaluation: Frame 302 sent at 1573031760423
+11-06 11:16:00.425 29826 29860 D Evaluation: 1 res for frame 295 received at 1573031760425
+11-06 11:16:00.468 29826 29860 D Evaluation: Frame 303 sent at 1573031760468
+11-06 11:16:00.471 29826 29860 D Evaluation: 1 res for frame 296 received at 1573031760471
+11-06 11:16:00.497 29826 29860 D Evaluation: Frame 304 sent at 1573031760497
+11-06 11:16:00.499 29826 29860 D Evaluation: 1 res for frame 298 received at 1573031760499
+11-06 11:16:00.538 29826 29860 D Evaluation: Frame 305 sent at 1573031760538
+11-06 11:16:00.540 29826 29860 D Evaluation: 1 res for frame 298 received at 1573031760540
+11-06 11:16:00.581 29826 29860 D Evaluation: Frame 306 sent at 1573031760581
+11-06 11:16:00.583 29826 29860 D Evaluation: 1 res for frame 299 received at 1573031760583
+11-06 11:16:00.615 29826 29860 D Evaluation: Frame 307 sent at 1573031760615
+11-06 11:16:00.618 29826 29860 D Evaluation: 1 res for frame 300 received at 1573031760618
+11-06 11:16:00.649 29826 29860 D Evaluation: Frame 308 sent at 1573031760649
+11-06 11:16:00.652 29826 29860 D Evaluation: 1 res for frame 301 received at 1573031760652
+11-06 11:16:00.677 29826 29860 D Evaluation: Frame 309 sent at 1573031760677
+11-06 11:16:00.679 29826 29860 D Evaluation: 1 res for frame 302 received at 1573031760679
+11-06 11:16:00.707 29826 29860 D Evaluation: Frame 310 sent at 1573031760707
+11-06 11:16:00.709 29826 29860 D Evaluation: 1 res for frame 303 received at 1573031760709
+11-06 11:16:00.741 29826 29860 D Evaluation: Frame 311 sent at 1573031760741
+11-06 11:16:00.743 29826 29860 D Evaluation: 1 res for frame 304 received at 1573031760743
+11-06 11:16:00.777 29826 29860 D Evaluation: Frame 312 sent at 1573031760777
+11-06 11:16:00.779 29826 29860 D Evaluation: 1 res for frame 305 received at 1573031760779
+11-06 11:16:00.804 29826 29860 D Evaluation: Frame 313 sent at 1573031760804
+11-06 11:16:00.806 29826 29860 D Evaluation: 1 res for frame 306 received at 1573031760806
+11-06 11:16:00.841 29826 29860 D Evaluation: Frame 314 sent at 1573031760841
+11-06 11:16:00.843 29826 29860 D Evaluation: 1 res for frame 307 received at 1573031760843
+11-06 11:16:00.875 29826 29860 D Evaluation: Frame 315 sent at 1573031760875
+11-06 11:16:00.877 29826 29860 D Evaluation: 1 res for frame 308 received at 1573031760877
+11-06 11:16:00.907 29826 29837 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:16:00.908 29826 29860 D Evaluation: Frame 316 sent at 1573031760908
+11-06 11:16:00.910 29826 29860 D Evaluation: 1 res for frame 309 received at 1573031760910
+11-06 11:16:00.928 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:00.928 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:00.929 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:00.933 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 62 lines
+11-06 11:16:00.933 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:00.955 29826 29860 D Evaluation: Frame 317 sent at 1573031760955
+11-06 11:16:00.957 29826 29860 D Evaluation: 1 res for frame 310 received at 1573031760957
+11-06 11:16:00.982 29826 29860 D Evaluation: Frame 318 sent at 1573031760982
+11-06 11:16:00.984 29826 29860 D Evaluation: 1 res for frame 311 received at 1573031760984
+11-06 11:16:01.021 29826 29860 D Evaluation: Frame 320 sent at 1573031761021
+11-06 11:16:01.023 29826 29860 D Evaluation: 1 res for frame 312 received at 1573031761023
+11-06 11:16:01.042 29826 29860 D Evaluation: Frame 320 sent at 1573031761042
+11-06 11:16:01.044 29826 29860 D Evaluation: 1 res for frame 313 received at 1573031761044
+11-06 11:16:01.084 29826 29860 D Evaluation: Frame 322 sent at 1573031761084
+11-06 11:16:01.086 29826 29860 D Evaluation: 1 res for frame 314 received at 1573031761086
+11-06 11:16:01.103 29826 29860 D Evaluation: Frame 322 sent at 1573031761103
+11-06 11:16:01.104 29826 29860 D Evaluation: 1 res for frame 315 received at 1573031761104
+11-06 11:16:01.136 29826 29860 D Evaluation: Frame 323 sent at 1573031761136
+11-06 11:16:01.138 29826 29860 D Evaluation: 1 res for frame 316 received at 1573031761138
+11-06 11:16:01.173 29826 29860 D Evaluation: Frame 324 sent at 1573031761173
+11-06 11:16:01.175 29826 29860 D Evaluation: 1 res for frame 317 received at 1573031761175
+11-06 11:16:01.215 29826 29860 D Evaluation: Frame 325 sent at 1573031761215
+11-06 11:16:01.217 29826 29860 D Evaluation: 1 res for frame 318 received at 1573031761217
+11-06 11:16:01.238 29826 29860 D Evaluation: Frame 326 sent at 1573031761238
+11-06 11:16:01.240 29826 29860 D Evaluation: 1 res for frame 320 received at 1573031761240
+11-06 11:16:01.322 29826 29860 D Evaluation: Frame 327 sent at 1573031761322
+11-06 11:16:01.324 29826 29860 D Evaluation: 1 res for frame 320 received at 1573031761324
+11-06 11:16:01.344 29826 29826 D Poster  : At 1573031761343 location is 65.05993314318826 (latitude), and 25.468618250543624 (longitude)
+11-06 11:16:01.347 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:16:01.386 29826 29860 D Evaluation: Frame 329 sent at 1573031761386
+11-06 11:16:01.389 29826 29860 D Evaluation: 1 res for frame 322 received at 1573031761389
+11-06 11:16:01.411 29826 29860 D Evaluation: Frame 329 sent at 1573031761411
+11-06 11:16:01.413 29826 29860 D Evaluation: 1 res for frame 322 received at 1573031761413
+11-06 11:16:01.441 29826 29860 D Evaluation: Frame 330 sent at 1573031761441
+11-06 11:16:01.443 29826 29860 D Evaluation: 1 res for frame 323 received at 1573031761443
+11-06 11:16:01.486 29826 29860 D Evaluation: Frame 331 sent at 1573031761486
+11-06 11:16:01.488 29826 29860 D Evaluation: 1 res for frame 324 received at 1573031761488
+11-06 11:16:01.524 29826 29860 D Evaluation: Frame 332 sent at 1573031761524
+11-06 11:16:01.527 29826 29860 D Evaluation: 1 res for frame 325 received at 1573031761527
+11-06 11:16:01.551 29826 29860 D Evaluation: Frame 333 sent at 1573031761551
+11-06 11:16:01.554 29826 29860 D Evaluation: 1 res for frame 326 received at 1573031761554
+11-06 11:16:01.597 29826 29860 D Evaluation: Frame 334 sent at 1573031761597
+11-06 11:16:01.599 29826 29860 D Evaluation: 1 res for frame 327 received at 1573031761599
+11-06 11:16:01.654 29826 29860 D Evaluation: Frame 335 sent at 1573031761654
+11-06 11:16:01.655 29826 29860 D Evaluation: 1 res for frame 329 received at 1573031761655
+11-06 11:16:01.679 29826 29860 D Evaluation: Frame 336 sent at 1573031761679
+11-06 11:16:01.681 29826 29860 D Evaluation: 1 res for frame 329 received at 1573031761681
+11-06 11:16:01.706 29826 29860 D Evaluation: Frame 337 sent at 1573031761706
+11-06 11:16:01.708 29826 29860 D Evaluation: 1 res for frame 330 received at 1573031761708
+11-06 11:16:01.744 29826 29860 D Evaluation: Frame 338 sent at 1573031761744
+11-06 11:16:01.746 29826 29860 D Evaluation: 1 res for frame 331 received at 1573031761745
+11-06 11:16:01.791 29826 29860 D Evaluation: Frame 340 sent at 1573031761791
+11-06 11:16:01.793 29826 29860 D Evaluation: 1 res for frame 332 received at 1573031761793
+11-06 11:16:01.815 29826 29860 D Evaluation: Frame 340 sent at 1573031761814
+11-06 11:16:01.816 29826 29860 D Evaluation: 1 res for frame 333 received at 1573031761816
+11-06 11:16:01.854 29826 29860 D Evaluation: Frame 341 sent at 1573031761854
+11-06 11:16:01.856 29826 29860 D Evaluation: 1 res for frame 334 received at 1573031761856
+11-06 11:16:01.886 29826 29860 D Evaluation: Frame 342 sent at 1573031761886
+11-06 11:16:01.888 29826 29860 D Evaluation: 1 res for frame 335 received at 1573031761888
+11-06 11:16:01.905 29826 29860 D Evaluation: Frame 343 sent at 1573031761905
+11-06 11:16:01.907 29826 29860 D Evaluation: 1 res for frame 336 received at 1573031761907
+11-06 11:16:01.945 29826 29860 D Evaluation: Frame 344 sent at 1573031761945
+11-06 11:16:01.947 29826 29860 D Evaluation: 1 res for frame 337 received at 1573031761947
+11-06 11:16:01.987 29826 29860 D Evaluation: Frame 345 sent at 1573031761987
+11-06 11:16:01.989 29826 29860 D Evaluation: 1 res for frame 338 received at 1573031761989
+11-06 11:16:02.019 29826 29860 D Evaluation: Frame 346 sent at 1573031762019
+11-06 11:16:02.021 29826 29860 D Evaluation: 1 res for frame 340 received at 1573031762021
+11-06 11:16:02.048 29826 29860 D Evaluation: Frame 347 sent at 1573031762048
+11-06 11:16:02.050 29826 29860 D Evaluation: 1 res for frame 340 received at 1573031762050
+11-06 11:16:02.083 29826 29860 D Evaluation: Frame 348 sent at 1573031762083
+11-06 11:16:02.086 29826 29860 D Evaluation: 1 res for frame 341 received at 1573031762086
+11-06 11:16:02.114 29826 29860 D Evaluation: Frame 349 sent at 1573031762114
+11-06 11:16:02.116 29826 29860 D Evaluation: 1 res for frame 342 received at 1573031762116
+11-06 11:16:02.158 29826 29860 D Evaluation: Frame 350 sent at 1573031762158
+11-06 11:16:02.160 29826 29860 D Evaluation: 1 res for frame 343 received at 1573031762160
+11-06 11:16:02.160 29826 29837 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:16:02.183 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:02.184 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 16 lines
+11-06 11:16:02.184 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:02.184 29826 29860 D Evaluation: Frame 351 sent at 1573031762184
+11-06 11:16:02.184 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:02.186 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 31 lines
+11-06 11:16:02.186 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:02.186 29826 29860 D Evaluation: 1 res for frame 344 received at 1573031762186
+11-06 11:16:02.186 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:02.186 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:02.186 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:02.186 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-06 11:16:02.186 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:02.186 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:02.187 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 10 lines
+11-06 11:16:02.187 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:02.187 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:02.187 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:02.223 29826 29860 D Evaluation: Frame 352 sent at 1573031762223
+11-06 11:16:02.225 29826 29860 D Evaluation: 1 res for frame 345 received at 1573031762225
+11-06 11:16:02.256 29826 29860 D Evaluation: Frame 353 sent at 1573031762256
+11-06 11:16:02.258 29826 29860 D Evaluation: 1 res for frame 346 received at 1573031762258
+11-06 11:16:02.283 29826 29860 D Evaluation: Frame 354 sent at 1573031762283
+11-06 11:16:02.285 29826 29860 D Evaluation: 1 res for frame 347 received at 1573031762285
+11-06 11:16:02.322 29826 29860 D Evaluation: Frame 355 sent at 1573031762322
+11-06 11:16:02.325 29826 29860 D Evaluation: 1 res for frame 348 received at 1573031762324
+11-06 11:16:02.346 29826 29826 D Poster  : At 1573031762346 location is 65.05993653367514 (latitude), and 25.46862719483452 (longitude)
+11-06 11:16:02.348 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:16:02.353 29826 29860 D Evaluation: Frame 356 sent at 1573031762353
+11-06 11:16:02.355 29826 29860 D Evaluation: 1 res for frame 349 received at 1573031762355
+11-06 11:16:02.385 29826 29860 D Evaluation: Frame 357 sent at 1573031762385
+11-06 11:16:02.387 29826 29860 D Evaluation: 1 res for frame 350 received at 1573031762387
+11-06 11:16:02.416 29826 29860 D Evaluation: Frame 358 sent at 1573031762416
+11-06 11:16:02.418 29826 29860 D Evaluation: 1 res for frame 351 received at 1573031762418
+11-06 11:16:02.454 29826 29860 D Evaluation: Frame 359 sent at 1573031762454
+11-06 11:16:02.456 29826 29860 D Evaluation: 1 res for frame 352 received at 1573031762456
+11-06 11:16:02.487 29826 29860 D Evaluation: Frame 360 sent at 1573031762487
+11-06 11:16:02.489 29826 29860 D Evaluation: 1 res for frame 353 received at 1573031762489
+11-06 11:16:02.519 29826 29860 D Evaluation: Frame 361 sent at 1573031762519
+11-06 11:16:02.521 29826 29860 D Evaluation: 1 res for frame 354 received at 1573031762521
+11-06 11:16:02.552 29826 29860 D Evaluation: Frame 362 sent at 1573031762552
+11-06 11:16:02.554 29826 29860 D Evaluation: 1 res for frame 355 received at 1573031762554
+11-06 11:16:02.597 29826 29860 D Evaluation: Frame 364 sent at 1573031762597
+11-06 11:16:02.600 29826 29860 D Evaluation: 1 res for frame 356 received at 1573031762600
+11-06 11:16:02.619 29826 29860 D Evaluation: Frame 364 sent at 1573031762619
+11-06 11:16:02.621 29826 29860 D Evaluation: 1 res for frame 357 received at 1573031762621
+11-06 11:16:02.655 29826 29860 D Evaluation: Frame 365 sent at 1573031762655
+11-06 11:16:02.657 29826 29860 D Evaluation: 1 res for frame 358 received at 1573031762657
+11-06 11:16:02.686 29826 29860 D Evaluation: Frame 366 sent at 1573031762686
+11-06 11:16:02.688 29826 29860 D Evaluation: 1 res for frame 359 received at 1573031762688
+11-06 11:16:02.711 29826 29860 D Evaluation: Frame 367 sent at 1573031762711
+11-06 11:16:02.712 29826 29860 D Evaluation: 1 res for frame 360 received at 1573031762712
+11-06 11:16:02.749 29826 29860 D Evaluation: Frame 368 sent at 1573031762749
+11-06 11:16:02.751 29826 29860 D Evaluation: 1 res for frame 361 received at 1573031762751
+11-06 11:16:02.782 29826 29860 D Evaluation: Frame 369 sent at 1573031762782
+11-06 11:16:02.784 29826 29860 D Evaluation: 1 res for frame 362 received at 1573031762784
+11-06 11:16:02.818 29826 29860 D Evaluation: Frame 370 sent at 1573031762818
+11-06 11:16:02.819 29826 29860 D Evaluation: 1 res for frame 364 received at 1573031762819
+11-06 11:16:02.885 29826 29860 D Evaluation: Frame 371 sent at 1573031762885
+11-06 11:16:02.887 29826 29860 D Evaluation: 1 res for frame 364 received at 1573031762887
+11-06 11:16:02.927 29826 29860 D Evaluation: Frame 372 sent at 1573031762927
+11-06 11:16:02.929 29826 29860 D Evaluation: 1 res for frame 365 received at 1573031762929
+11-06 11:16:02.968 29826 29860 D Evaluation: Frame 373 sent at 1573031762968
+11-06 11:16:02.970 29826 29860 D Evaluation: 1 res for frame 366 received at 1573031762970
+11-06 11:16:02.995 29826 29860 D Evaluation: Frame 374 sent at 1573031762995
+11-06 11:16:02.997 29826 29860 D Evaluation: 1 res for frame 367 received at 1573031762997
+11-06 11:16:03.023 29826 29860 D Evaluation: Frame 375 sent at 1573031763023
+11-06 11:16:03.025 29826 29860 D Evaluation: 1 res for frame 368 received at 1573031763025
+11-06 11:16:03.049 29826 29860 D Evaluation: Frame 376 sent at 1573031763049
+11-06 11:16:03.050 29826 29860 D Evaluation: 1 res for frame 369 received at 1573031763050
+11-06 11:16:03.096 29826 29860 D Evaluation: Frame 377 sent at 1573031763096
+11-06 11:16:03.098 29826 29860 D Evaluation: 1 res for frame 370 received at 1573031763098
+11-06 11:16:03.122 29826 29860 D Evaluation: Frame 378 sent at 1573031763122
+11-06 11:16:03.124 29826 29860 D Evaluation: 1 res for frame 371 received at 1573031763124
+11-06 11:16:03.162 29826 29860 D Evaluation: Frame 379 sent at 1573031763162
+11-06 11:16:03.166 29826 29860 D Evaluation: 1 res for frame 372 received at 1573031763166
+11-06 11:16:03.198 29826 29860 D Evaluation: Frame 380 sent at 1573031763198
+11-06 11:16:03.200 29826 29860 D Evaluation: 1 res for frame 373 received at 1573031763200
+11-06 11:16:03.238 29826 29860 D Evaluation: Frame 382 sent at 1573031763238
+11-06 11:16:03.240 29826 29860 D Evaluation: 1 res for frame 374 received at 1573031763240
+11-06 11:16:03.260 29826 29860 D Evaluation: Frame 382 sent at 1573031763260
+11-06 11:16:03.262 29826 29860 D Evaluation: 1 res for frame 375 received at 1573031763262
+11-06 11:16:03.321 29826 29860 D Evaluation: Frame 383 sent at 1573031763321
+11-06 11:16:03.323 29826 29860 D Evaluation: 1 res for frame 376 received at 1573031763323
+11-06 11:16:03.330 29826 29826 D Poster  : At 1573031763330 location is 65.05993653367514 (latitude), and 25.46862719483452 (longitude)
+11-06 11:16:03.332 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:16:03.365 29826 29837 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:16:03.365 29826 29860 D Evaluation: Frame 384 sent at 1573031763365
+11-06 11:16:03.367 29826 29860 D Evaluation: 1 res for frame 377 received at 1573031763367
+11-06 11:16:03.385 29826 29860 D Evaluation: Frame 385 sent at 1573031763385
+11-06 11:16:03.387 29826 29860 D Evaluation: 1 res for frame 378 received at 1573031763387
+11-06 11:16:03.387 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:03.394 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 64 lines
+11-06 11:16:03.394 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:03.425 29826 29860 D Evaluation: Frame 386 sent at 1573031763425
+11-06 11:16:03.427 29826 29860 D Evaluation: 1 res for frame 379 received at 1573031763427
+11-06 11:16:03.452 29826 29860 D Evaluation: Frame 387 sent at 1573031763452
+11-06 11:16:03.454 29826 29860 D Evaluation: 1 res for frame 380 received at 1573031763454
+11-06 11:16:03.505 29826 29860 D Evaluation: Frame 388 sent at 1573031763505
+11-06 11:16:03.507 29826 29860 D Evaluation: 1 res for frame 382 received at 1573031763506
+11-06 11:16:03.526 29826 29860 D Evaluation: Frame 389 sent at 1573031763526
+11-06 11:16:03.528 29826 29860 D Evaluation: 1 res for frame 382 received at 1573031763528
+11-06 11:16:03.550 29826 29860 D Evaluation: Frame 390 sent at 1573031763550
+11-06 11:16:03.552 29826 29860 D Evaluation: 1 res for frame 383 received at 1573031763552
+11-06 11:16:03.592 29826 29860 D Evaluation: Frame 391 sent at 1573031763592
+11-06 11:16:03.594 29826 29860 D Evaluation: 1 res for frame 384 received at 1573031763594
+11-06 11:16:03.629 29826 29860 D Evaluation: Frame 392 sent at 1573031763629
+11-06 11:16:03.631 29826 29860 D Evaluation: 1 res for frame 385 received at 1573031763631
+11-06 11:16:03.658 29826 29860 D Evaluation: Frame 393 sent at 1573031763658
+11-06 11:16:03.660 29826 29860 D Evaluation: 1 res for frame 386 received at 1573031763660
+11-06 11:16:03.685 29826 29860 D Evaluation: Frame 394 sent at 1573031763685
+11-06 11:16:03.687 29826 29860 D Evaluation: 1 res for frame 387 received at 1573031763687
+11-06 11:16:03.736 29826 29860 D Evaluation: Frame 395 sent at 1573031763736
+11-06 11:16:03.738 29826 29860 D Evaluation: 1 res for frame 388 received at 1573031763738
+11-06 11:16:03.758 29826 29860 D Evaluation: Frame 396 sent at 1573031763758
+11-06 11:16:03.760 29826 29860 D Evaluation: 1 res for frame 389 received at 1573031763760
+11-06 11:16:03.799 29826 29860 D Evaluation: Frame 397 sent at 1573031763799
+11-06 11:16:03.801 29826 29860 D Evaluation: 1 res for frame 390 received at 1573031763801
+11-06 11:16:03.831 29826 29860 D Evaluation: Frame 398 sent at 1573031763831
+11-06 11:16:03.833 29826 29860 D Evaluation: 1 res for frame 391 received at 1573031763833
+11-06 11:16:03.859 29826 29860 D Evaluation: Frame 399 sent at 1573031763859
+11-06 11:16:03.861 29826 29860 D Evaluation: 1 res for frame 392 received at 1573031763860
+11-06 11:16:03.886 29826 29860 D Evaluation: Frame 400 sent at 1573031763886
+11-06 11:16:03.888 29826 29860 D Evaluation: 1 res for frame 393 received at 1573031763888
+11-06 11:16:03.944 29826 29860 D Evaluation: Frame 401 sent at 1573031763944
+11-06 11:16:03.947 29826 29860 D Evaluation: 1 res for frame 394 received at 1573031763947
+11-06 11:16:03.976 29826 29860 D Evaluation: Frame 402 sent at 1573031763976
+11-06 11:16:03.979 29826 29860 D Evaluation: 1 res for frame 395 received at 1573031763978
+11-06 11:16:04.003 29826 29860 D Evaluation: Frame 403 sent at 1573031764002
+11-06 11:16:04.005 29826 29860 D Evaluation: 1 res for frame 396 received at 1573031764005
+11-06 11:16:04.029 29826 29860 D Evaluation: Frame 404 sent at 1573031764029
+11-06 11:16:04.031 29826 29860 D Evaluation: 1 res for frame 397 received at 1573031764031
+11-06 11:16:04.067 29826 29860 D Evaluation: Frame 405 sent at 1573031764067
+11-06 11:16:04.069 29826 29860 D Evaluation: 1 res for frame 398 received at 1573031764069
+11-06 11:16:04.100 29826 29860 D Evaluation: Frame 406 sent at 1573031764100
+11-06 11:16:04.102 29826 29860 D Evaluation: 1 res for frame 399 received at 1573031764102
+11-06 11:16:04.135 29826 29860 D Evaluation: Frame 407 sent at 1573031764135
+11-06 11:16:04.137 29826 29860 D Evaluation: 1 res for frame 400 received at 1573031764137
+11-06 11:16:04.176 29826 29860 D Evaluation: Frame 408 sent at 1573031764176
+11-06 11:16:04.178 29826 29860 D Evaluation: 1 res for frame 401 received at 1573031764178
+11-06 11:16:04.206 29826 29860 D Evaluation: Frame 410 sent at 1573031764206
+11-06 11:16:04.207 29826 29860 D Evaluation: 1 res for frame 402 received at 1573031764207
+11-06 11:16:04.227 29826 29860 D Evaluation: Frame 410 sent at 1573031764227
+11-06 11:16:04.228 29826 29860 D Evaluation: 1 res for frame 403 received at 1573031764228
+11-06 11:16:04.260 29826 29860 D Evaluation: Frame 411 sent at 1573031764260
+11-06 11:16:04.263 29826 29860 D Evaluation: 1 res for frame 404 received at 1573031764263
+11-06 11:16:04.291 29826 29860 D Evaluation: Frame 412 sent at 1573031764291
+11-06 11:16:04.293 29826 29860 D Evaluation: 1 res for frame 405 received at 1573031764293
+11-06 11:16:04.329 29826 29860 D Evaluation: Frame 413 sent at 1573031764329
+11-06 11:16:04.332 29826 29860 D Evaluation: 1 res for frame 406 received at 1573031764332
+11-06 11:16:04.332 29826 29826 D Poster  : At 1573031764332 location is 65.05993543275409 (latitude), and 25.46863693017135 (longitude)
+11-06 11:16:04.335 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:16:04.360 29826 29860 D Evaluation: Frame 414 sent at 1573031764360
+11-06 11:16:04.362 29826 29860 D Evaluation: 1 res for frame 407 received at 1573031764362
+11-06 11:16:04.395 29826 29860 D Evaluation: Frame 415 sent at 1573031764395
+11-06 11:16:04.397 29826 29860 D Evaluation: 1 res for frame 408 received at 1573031764397
+11-06 11:16:04.427 29826 29860 D Evaluation: Frame 416 sent at 1573031764427
+11-06 11:16:04.429 29826 29860 D Evaluation: 1 res for frame 410 received at 1573031764429
+11-06 11:16:04.471 29826 29860 D Evaluation: Frame 417 sent at 1573031764471
+11-06 11:16:04.473 29826 29860 D Evaluation: 1 res for frame 410 received at 1573031764473
+11-06 11:16:04.497 29826 29837 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:16:04.498 29826 29860 D Evaluation: Frame 418 sent at 1573031764497
+11-06 11:16:04.499 29826 29860 D Evaluation: 1 res for frame 411 received at 1573031764499
+11-06 11:16:04.517 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:04.524 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 61 lines
+11-06 11:16:04.525 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:04.525 29826 29860 D Evaluation: Frame 419 sent at 1573031764525
+11-06 11:16:04.525 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:04.525 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-06 11:16:04.525 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:04.526 29826 29860 D Evaluation: 1 res for frame 412 received at 1573031764526
+11-06 11:16:04.555 29826 29860 D Evaluation: Frame 420 sent at 1573031764555
+11-06 11:16:04.557 29826 29860 D Evaluation: 1 res for frame 414 received at 1573031764557
+11-06 11:16:04.591 29826 29860 D Evaluation: Frame 421 sent at 1573031764591
+11-06 11:16:04.594 29826 29860 D Evaluation: 1 res for frame 415 received at 1573031764594
+11-06 11:16:04.636 29826 29860 D Evaluation: Frame 422 sent at 1573031764636
+11-06 11:16:04.638 29826 29860 D Evaluation: 1 res for frame 416 received at 1573031764638
+11-06 11:16:04.676 29826 29860 D Evaluation: Frame 423 sent at 1573031764676
+11-06 11:16:04.679 29826 29860 D Evaluation: 1 res for frame 417 received at 1573031764679
+11-06 11:16:04.707 29826 29860 D Evaluation: Frame 424 sent at 1573031764707
+11-06 11:16:04.709 29826 29860 D Evaluation: 1 res for frame 418 received at 1573031764709
+11-06 11:16:04.732 29826 29860 D Evaluation: Frame 425 sent at 1573031764732
+11-06 11:16:04.734 29826 29860 D Evaluation: 1 res for frame 419 received at 1573031764734
+11-06 11:16:04.776 29826 29860 D Evaluation: Frame 426 sent at 1573031764776
+11-06 11:16:04.778 29826 29860 D Evaluation: 1 res for frame 420 received at 1573031764777
+11-06 11:16:04.805 29826 29860 D Evaluation: Frame 427 sent at 1573031764805
+11-06 11:16:04.807 29826 29860 D Evaluation: 1 res for frame 421 received at 1573031764807
+11-06 11:16:04.828 29826 29860 D Evaluation: Frame 428 sent at 1573031764828
+11-06 11:16:04.830 29826 29860 D Evaluation: 1 res for frame 422 received at 1573031764830
+11-06 11:16:04.862 29826 29860 D Evaluation: Frame 429 sent at 1573031764862
+11-06 11:16:04.864 29826 29860 D Evaluation: 1 res for frame 423 received at 1573031764864
+11-06 11:16:04.903 29826 29860 D Evaluation: Frame 430 sent at 1573031764903
+11-06 11:16:04.905 29826 29860 D Evaluation: 1 res for frame 424 received at 1573031764905
+11-06 11:16:04.942 29826 29860 D Evaluation: Frame 431 sent at 1573031764942
+11-06 11:16:04.944 29826 29860 D Evaluation: 1 res for frame 425 received at 1573031764944
+11-06 11:16:04.982 29826 29860 D Evaluation: Frame 432 sent at 1573031764982
+11-06 11:16:04.985 29826 29860 D Evaluation: 1 res for frame 426 received at 1573031764984
+11-06 11:16:05.014 29826 29860 D Evaluation: Frame 434 sent at 1573031765014
+11-06 11:16:05.016 29826 29860 D Evaluation: 1 res for frame 427 received at 1573031765016
+11-06 11:16:05.035 29826 29860 D Evaluation: Frame 434 sent at 1573031765035
+11-06 11:16:05.037 29826 29860 D Evaluation: 1 res for frame 428 received at 1573031765037
+11-06 11:16:05.073 29826 29860 D Evaluation: Frame 435 sent at 1573031765073
+11-06 11:16:05.075 29826 29860 D Evaluation: 1 res for frame 429 received at 1573031765075
+11-06 11:16:05.108 29826 29860 D Evaluation: Frame 436 sent at 1573031765108
+11-06 11:16:05.111 29826 29860 D Evaluation: 1 res for frame 430 received at 1573031765111
+11-06 11:16:05.134 29826 29860 D Evaluation: Frame 437 sent at 1573031765134
+11-06 11:16:05.136 29826 29860 D Evaluation: 1 res for frame 431 received at 1573031765136
+11-06 11:16:05.170 29826 29860 D Evaluation: Frame 438 sent at 1573031765170
+11-06 11:16:05.171 29826 29860 D Evaluation: 1 res for frame 432 received at 1573031765171
+11-06 11:16:05.212 29826 29860 D Evaluation: Frame 439 sent at 1573031765211
+11-06 11:16:05.214 29826 29860 D Evaluation: 1 res for frame 434 received at 1573031765214
+11-06 11:16:05.234 29826 29860 D Evaluation: Frame 440 sent at 1573031765234
+11-06 11:16:05.236 29826 29860 D Evaluation: 1 res for frame 434 received at 1573031765236
+11-06 11:16:05.277 29826 29860 D Evaluation: Frame 441 sent at 1573031765277
+11-06 11:16:05.279 29826 29860 D Evaluation: 1 res for frame 435 received at 1573031765279
+11-06 11:16:05.299 29826 29860 D Evaluation: Frame 442 sent at 1573031765299
+11-06 11:16:05.301 29826 29860 D Evaluation: 1 res for frame 436 received at 1573031765301
+11-06 11:16:05.334 29826 29826 D Poster  : At 1573031765334 location is 65.05993543275409 (latitude), and 25.46863693017135 (longitude)
+11-06 11:16:05.336 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:16:05.340 29826 29860 D Evaluation: Frame 443 sent at 1573031765340
+11-06 11:16:05.343 29826 29860 D Evaluation: 1 res for frame 437 received at 1573031765343
+11-06 11:16:05.377 29826 29860 D Evaluation: Frame 444 sent at 1573031765377
+11-06 11:16:05.379 29826 29860 D Evaluation: 1 res for frame 438 received at 1573031765379
+11-06 11:16:05.416 29826 29860 D Evaluation: Frame 445 sent at 1573031765416
+11-06 11:16:05.418 29826 29860 D Evaluation: 1 res for frame 439 received at 1573031765418
+11-06 11:16:05.439 29826 29860 D Evaluation: Frame 446 sent at 1573031765439
+11-06 11:16:05.441 29826 29860 D Evaluation: 1 res for frame 440 received at 1573031765441
+11-06 11:16:05.478 29826 29860 D Evaluation: Frame 447 sent at 1573031765478
+11-06 11:16:05.480 29826 29860 D Evaluation: 1 res for frame 441 received at 1573031765480
+11-06 11:16:05.502 29826 29860 D Evaluation: Frame 448 sent at 1573031765502
+11-06 11:16:05.540 29826 29860 D Evaluation: Frame 449 sent at 1573031765540
+11-06 11:16:05.542 29826 29860 D Evaluation: 1 res for frame 442 received at 1573031765542
+11-06 11:16:05.577 29826 29860 D Evaluation: Frame 450 sent at 1573031765577
+11-06 11:16:05.580 29826 29860 D Evaluation: 1 res for frame 443 received at 1573031765579
+11-06 11:16:05.605 29826 29860 D Evaluation: Frame 451 sent at 1573031765605
+11-06 11:16:05.608 29826 29860 D Evaluation: 1 res for frame 444 received at 1573031765608
+11-06 11:16:05.646 29826 29837 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:16:05.646 29826 29860 D Evaluation: Frame 452 sent at 1573031765646
+11-06 11:16:05.649 29826 29860 D Evaluation: 1 res for frame 445 received at 1573031765649
+11-06 11:16:05.669 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:05.672 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 64 lines
+11-06 11:16:05.672 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:05.673 29826 29860 D Evaluation: Frame 453 sent at 1573031765673
+11-06 11:16:05.678 29826 29860 D Evaluation: 1 res for frame 446 received at 1573031765678
+11-06 11:16:05.698 29826 29860 D Evaluation: Frame 454 sent at 1573031765698
+11-06 11:16:05.700 29826 29860 D Evaluation: 1 res for frame 447 received at 1573031765700
+11-06 11:16:05.737 29826 29860 D Evaluation: Frame 455 sent at 1573031765737
+11-06 11:16:05.739 29826 29860 D Evaluation: 1 res for frame 448 received at 1573031765739
+11-06 11:16:05.775 29826 29860 D Evaluation: Frame 456 sent at 1573031765775
+11-06 11:16:05.777 29826 29860 D Evaluation: 1 res for frame 449 received at 1573031765777
+11-06 11:16:05.816 29826 29860 D Evaluation: Frame 457 sent at 1573031765816
+11-06 11:16:05.818 29826 29860 D Evaluation: 1 res for frame 450 received at 1573031765818
+11-06 11:16:05.846 29826 29860 D Evaluation: Frame 458 sent at 1573031765846
+11-06 11:16:05.848 29826 29860 D Evaluation: 1 res for frame 451 received at 1573031765848
+11-06 11:16:05.877 29826 29860 D Evaluation: Frame 459 sent at 1573031765877
+11-06 11:16:05.879 29826 29860 D Evaluation: 1 res for frame 452 received at 1573031765879
+11-06 11:16:05.911 29826 29860 D Evaluation: Frame 460 sent at 1573031765911
+11-06 11:16:05.913 29826 29860 D Evaluation: 1 res for frame 453 received at 1573031765913
+11-06 11:16:05.944 29826 29860 D Evaluation: Frame 461 sent at 1573031765944
+11-06 11:16:05.946 29826 29860 D Evaluation: 1 res for frame 454 received at 1573031765946
+11-06 11:16:05.974 29826 29860 D Evaluation: Frame 462 sent at 1573031765974
+11-06 11:16:05.976 29826 29860 D Evaluation: 1 res for frame 455 received at 1573031765976
+11-06 11:16:06.011 29826 29860 D Evaluation: Frame 463 sent at 1573031766011
+11-06 11:16:06.012 29826 29860 D Evaluation: 1 res for frame 456 received at 1573031766012
+11-06 11:16:06.048 29826 29860 D Evaluation: Frame 464 sent at 1573031766048
+11-06 11:16:06.050 29826 29860 D Evaluation: 1 res for frame 457 received at 1573031766050
+11-06 11:16:06.083 29826 29860 D Evaluation: Frame 465 sent at 1573031766083
+11-06 11:16:06.085 29826 29860 D Evaluation: 1 res for frame 458 received at 1573031766085
+11-06 11:16:06.119 29826 29860 D Evaluation: Frame 466 sent at 1573031766119
+11-06 11:16:06.122 29826 29860 D Evaluation: 1 res for frame 459 received at 1573031766122
+11-06 11:16:06.143 29826 29860 D Evaluation: Frame 467 sent at 1573031766143
+11-06 11:16:06.144 29826 29860 D Evaluation: 1 res for frame 460 received at 1573031766144
+11-06 11:16:06.182 29826 29860 D Evaluation: Frame 468 sent at 1573031766182
+11-06 11:16:06.184 29826 29860 D Evaluation: 1 res for frame 461 received at 1573031766184
+11-06 11:16:06.220 29826 29860 D Evaluation: Frame 470 sent at 1573031766220
+11-06 11:16:06.222 29826 29860 D Evaluation: 1 res for frame 462 received at 1573031766222
+11-06 11:16:06.246 29826 29860 D Evaluation: Frame 470 sent at 1573031766246
+11-06 11:16:06.248 29826 29860 D Evaluation: 1 res for frame 463 received at 1573031766248
+11-06 11:16:06.276 29826 29860 D Evaluation: Frame 471 sent at 1573031766276
+11-06 11:16:06.278 29826 29860 D Evaluation: 1 res for frame 464 received at 1573031766278
+11-06 11:16:06.317 29826 29860 D Evaluation: Frame 472 sent at 1573031766317
+11-06 11:16:06.319 29826 29860 D Evaluation: 1 res for frame 465 received at 1573031766319
+11-06 11:16:06.339 29826 29826 D Poster  : At 1573031766339 location is 65.05993543275409 (latitude), and 25.46863693017135 (longitude)
+11-06 11:16:06.345 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:16:06.345 29826 29860 D Evaluation: Frame 473 sent at 1573031766345
+11-06 11:16:06.347 29826 29860 D Evaluation: 1 res for frame 466 received at 1573031766347
+11-06 11:16:06.377 29826 29860 D Evaluation: Frame 474 sent at 1573031766377
+11-06 11:16:06.379 29826 29860 D Evaluation: 1 res for frame 467 received at 1573031766379
+11-06 11:16:06.421 29826 29860 D Evaluation: Frame 475 sent at 1573031766421
+11-06 11:16:06.423 29826 29860 D Evaluation: 1 res for frame 468 received at 1573031766423
+11-06 11:16:06.446 29826 29860 D Evaluation: Frame 476 sent at 1573031766446
+11-06 11:16:06.448 29826 29860 D Evaluation: 1 res for frame 470 received at 1573031766448
+11-06 11:16:06.482 29826 29860 D Evaluation: Frame 477 sent at 1573031766482
+11-06 11:16:06.484 29826 29860 D Evaluation: 1 res for frame 470 received at 1573031766484
+11-06 11:16:06.519 29826 29860 D Evaluation: Frame 478 sent at 1573031766519
+11-06 11:16:06.521 29826 29860 D Evaluation: 1 res for frame 471 received at 1573031766521
+11-06 11:16:06.552 29826 29860 D Evaluation: Frame 479 sent at 1573031766552
+11-06 11:16:06.554 29826 29860 D Evaluation: 1 res for frame 472 received at 1573031766554
+11-06 11:16:06.579 29826 29860 D Evaluation: Frame 480 sent at 1573031766579
+11-06 11:16:06.581 29826 29860 D Evaluation: 1 res for frame 473 received at 1573031766581
+11-06 11:16:06.610 29826 29860 D Evaluation: Frame 481 sent at 1573031766610
+11-06 11:16:06.612 29826 29860 D Evaluation: 1 res for frame 474 received at 1573031766612
+11-06 11:16:06.648 29826 29860 D Evaluation: Frame 482 sent at 1573031766648
+11-06 11:16:06.650 29826 29860 D Evaluation: 1 res for frame 475 received at 1573031766650
+11-06 11:16:06.690 29826 29860 D Evaluation: Frame 483 sent at 1573031766690
+11-06 11:16:06.692 29826 29860 D Evaluation: 1 res for frame 476 received at 1573031766692
+11-06 11:16:06.722 29826 29860 D Evaluation: Frame 484 sent at 1573031766722
+11-06 11:16:06.725 29826 29860 D Evaluation: 1 res for frame 477 received at 1573031766725
+11-06 11:16:06.797 29826 29860 D Evaluation: Frame 485 sent at 1573031766797
+11-06 11:16:06.799 29826 29860 D Evaluation: 1 res for frame 478 received at 1573031766799
+11-06 11:16:06.840 29826 29837 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:16:06.840 29826 29860 D Evaluation: Frame 487 sent at 1573031766840
+11-06 11:16:06.842 29826 29860 D Evaluation: 1 res for frame 479 received at 1573031766842
+11-06 11:16:06.865 29826 29860 D Evaluation: Frame 487 sent at 1573031766865
+11-06 11:16:06.867 29826 29860 D Evaluation: 1 res for frame 480 received at 1573031766867
+11-06 11:16:06.867 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:06.868 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 8 lines
+11-06 11:16:06.869 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:06.869 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:06.876 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 56 lines
+11-06 11:16:06.876 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:06.890 29826 29860 D Evaluation: Frame 488 sent at 1573031766890
+11-06 11:16:06.892 29826 29860 D Evaluation: 1 res for frame 481 received at 1573031766892
+11-06 11:16:06.910 29826 29860 D Evaluation: Frame 489 sent at 1573031766910
+11-06 11:16:06.911 29826 29860 D Evaluation: 1 res for frame 482 received at 1573031766911
+11-06 11:16:06.948 29826 29860 D Evaluation: Frame 490 sent at 1573031766948
+11-06 11:16:06.949 29826 29860 D Evaluation: 1 res for frame 483 received at 1573031766949
+11-06 11:16:06.998 29826 29860 D Evaluation: Frame 492 sent at 1573031766998
+11-06 11:16:07.000 29826 29860 D Evaluation: 1 res for frame 484 received at 1573031767000
+11-06 11:16:07.023 29826 29860 D Evaluation: Frame 492 sent at 1573031767023
+11-06 11:16:07.025 29826 29860 D Evaluation: 1 res for frame 485 received at 1573031767025
+11-06 11:16:07.059 29826 29860 D Evaluation: Frame 493 sent at 1573031767059
+11-06 11:16:07.061 29826 29860 D Evaluation: 1 res for frame 487 received at 1573031767061
+11-06 11:16:07.128 29826 29860 D Evaluation: Frame 494 sent at 1573031767128
+11-06 11:16:07.131 29826 29860 D Evaluation: 1 res for frame 487 received at 1573031767131
+11-06 11:16:07.161 29826 29860 D Evaluation: Frame 495 sent at 1573031767161
+11-06 11:16:07.163 29826 29860 D Evaluation: 1 res for frame 488 received at 1573031767163
+11-06 11:16:07.211 29826 29860 D Evaluation: Frame 497 sent at 1573031767211
+11-06 11:16:07.213 29826 29860 D Evaluation: 1 res for frame 489 received at 1573031767213
+11-06 11:16:07.235 29826 29860 D Evaluation: Frame 498 sent at 1573031767235
+11-06 11:16:07.237 29826 29860 D Evaluation: 1 res for frame 490 received at 1573031767237
+11-06 11:16:07.257 29826 29860 D Evaluation: Frame 498 sent at 1573031767257
+11-06 11:16:07.259 29826 29860 D Evaluation: 1 res for frame 492 received at 1573031767259
+11-06 11:16:07.288 29826 29860 D Evaluation: Frame 499 sent at 1573031767288
+11-06 11:16:07.290 29826 29860 D Evaluation: 1 res for frame 492 received at 1573031767290
+11-06 11:16:07.320 29826 29860 D Evaluation: Frame 500 sent at 1573031767320
+11-06 11:16:07.323 29826 29860 D Evaluation: 1 res for frame 493 received at 1573031767323
+11-06 11:16:07.354 29826 29826 D Poster  : At 1573031767354 location is 65.05993543275409 (latitude), and 25.46863693017135 (longitude)
+11-06 11:16:07.356 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:16:07.360 29826 29860 D Evaluation: Frame 501 sent at 1573031767360
+11-06 11:16:07.362 29826 29860 D Evaluation: 1 res for frame 494 received at 1573031767362
+11-06 11:16:07.389 29826 29860 D Evaluation: Frame 502 sent at 1573031767389
+11-06 11:16:07.390 29826 29860 D Evaluation: 1 res for frame 495 received at 1573031767390
+11-06 11:16:07.407 29826 29860 D Evaluation: Frame 503 sent at 1573031767407
+11-06 11:16:07.445 29826 29860 D Evaluation: Frame 504 sent at 1573031767445
+11-06 11:16:07.447 29826 29860 D Evaluation: 1 res for frame 497 received at 1573031767447
+11-06 11:16:07.555 29826 29860 D Evaluation: Frame 506 sent at 1573031767555
+11-06 11:16:07.558 29826 29860 D Evaluation: 1 res for frame 498 received at 1573031767558
+11-06 11:16:07.582 29826 29860 D Evaluation: Frame 506 sent at 1573031767582
+11-06 11:16:07.584 29826 29860 D Evaluation: 1 res for frame 498 received at 1573031767584
+11-06 11:16:07.603 29826 29860 D Evaluation: Frame 507 sent at 1573031767603
+11-06 11:16:07.605 29826 29860 D Evaluation: 1 res for frame 499 received at 1573031767605
+11-06 11:16:07.626 29826 29860 D Evaluation: Frame 508 sent at 1573031767626
+11-06 11:16:07.628 29826 29860 D Evaluation: 1 res for frame 500 received at 1573031767628
+11-06 11:16:07.657 29826 29860 D Evaluation: Frame 509 sent at 1573031767657
+11-06 11:16:07.659 29826 29860 D Evaluation: 1 res for frame 501 received at 1573031767659
+11-06 11:16:07.690 29826 29860 D Evaluation: Frame 510 sent at 1573031767690
+11-06 11:16:07.692 29826 29860 D Evaluation: 1 res for frame 502 received at 1573031767692
+11-06 11:16:07.728 29826 29860 D Evaluation: Frame 512 sent at 1573031767728
+11-06 11:16:07.730 29826 29860 D Evaluation: 1 res for frame 503 received at 1573031767730
+11-06 11:16:07.747 29826 29860 D Evaluation: Frame 512 sent at 1573031767747
+11-06 11:16:07.748 29826 29860 D Evaluation: 1 res for frame 504 received at 1573031767748
+11-06 11:16:07.791 29826 29860 D Evaluation: Frame 513 sent at 1573031767791
+11-06 11:16:07.793 29826 29860 D Evaluation: 1 res for frame 506 received at 1573031767793
+11-06 11:16:07.824 29826 29860 D Evaluation: Frame 514 sent at 1573031767824
+11-06 11:16:07.826 29826 29860 D Evaluation: 1 res for frame 506 received at 1573031767826
+11-06 11:16:07.863 29826 29860 D Evaluation: Frame 515 sent at 1573031767862
+11-06 11:16:07.864 29826 29860 D Evaluation: 1 res for frame 507 received at 1573031767864
+11-06 11:16:07.901 29826 29860 D Evaluation: Frame 516 sent at 1573031767901
+11-06 11:16:07.903 29826 29860 D Evaluation: 1 res for frame 508 received at 1573031767903
+11-06 11:16:07.935 29826 29860 D Evaluation: Frame 518 sent at 1573031767935
+11-06 11:16:07.936 29826 29860 D Evaluation: 1 res for frame 509 received at 1573031767936
+11-06 11:16:07.958 29826 29860 D Evaluation: Frame 518 sent at 1573031767958
+11-06 11:16:07.960 29826 29860 D Evaluation: 1 res for frame 510 received at 1573031767960
+11-06 11:16:07.996 29826 29860 D Evaluation: Frame 519 sent at 1573031767996
+11-06 11:16:07.999 29826 29860 D Evaluation: 1 res for frame 512 received at 1573031767999
+11-06 11:16:08.028 29826 29860 D Evaluation: Frame 520 sent at 1573031768028
+11-06 11:16:08.029 29826 29837 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:16:08.029 29826 29860 D Evaluation: 1 res for frame 512 received at 1573031768029
+11-06 11:16:08.052 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:08.060 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 65 lines
+11-06 11:16:08.060 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:08.067 29826 29860 D Evaluation: Frame 521 sent at 1573031768067
+11-06 11:16:08.069 29826 29860 D Evaluation: 1 res for frame 513 received at 1573031768069
+11-06 11:16:08.099 29826 29860 D Evaluation: Frame 522 sent at 1573031768099
+11-06 11:16:08.101 29826 29860 D Evaluation: 1 res for frame 514 received at 1573031768101
+11-06 11:16:08.123 29826 29860 D Evaluation: Frame 523 sent at 1573031768123
+11-06 11:16:08.124 29826 29860 D Evaluation: 1 res for frame 515 received at 1573031768124
+11-06 11:16:08.176 29826 29860 D Evaluation: Frame 525 sent at 1573031768176
+11-06 11:16:08.179 29826 29860 D Evaluation: 1 res for frame 516 received at 1573031768179
+11-06 11:16:08.196 29826 29860 D Evaluation: Frame 525 sent at 1573031768196
+11-06 11:16:08.198 29826 29860 D Evaluation: 1 res for frame 518 received at 1573031768198
+11-06 11:16:08.232 29826 29860 D Evaluation: Frame 526 sent at 1573031768232
+11-06 11:16:08.234 29826 29860 D Evaluation: 1 res for frame 518 received at 1573031768234
+11-06 11:16:08.259 29826 29860 D Evaluation: Frame 527 sent at 1573031768259
+11-06 11:16:08.261 29826 29860 D Evaluation: 1 res for frame 519 received at 1573031768261
+11-06 11:16:08.308 29826 29860 D Evaluation: Frame 528 sent at 1573031768308
+11-06 11:16:08.310 29826 29860 D Evaluation: 1 res for frame 520 received at 1573031768310
+11-06 11:16:08.335 29826 29826 D Poster  : At 1573031768334 location is 65.05993543275409 (latitude), and 25.46863693017135 (longitude)
+11-06 11:16:08.337 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:16:08.341 29826 29860 D Evaluation: Frame 529 sent at 1573031768341
+11-06 11:16:08.343 29826 29860 D Evaluation: 1 res for frame 521 received at 1573031768343
+11-06 11:16:08.391 29826 29860 D Evaluation: Frame 530 sent at 1573031768391
+11-06 11:16:08.393 29826 29860 D Evaluation: 1 res for frame 522 received at 1573031768393
+11-06 11:16:08.418 29826 29860 D Evaluation: Frame 531 sent at 1573031768418
+11-06 11:16:08.420 29826 29860 D Evaluation: 1 res for frame 523 received at 1573031768420
+11-06 11:16:08.456 29826 29860 D Evaluation: Frame 532 sent at 1573031768456
+11-06 11:16:08.458 29826 29860 D Evaluation: 1 res for frame 525 received at 1573031768458
+11-06 11:16:08.498 29826 29860 D Evaluation: Frame 533 sent at 1573031768498
+11-06 11:16:08.500 29826 29860 D Evaluation: 1 res for frame 525 received at 1573031768500
+11-06 11:16:08.538 29826 29860 D Evaluation: Frame 534 sent at 1573031768538
+11-06 11:16:08.540 29826 29860 D Evaluation: 1 res for frame 526 received at 1573031768540
+11-06 11:16:08.575 29826 29860 D Evaluation: Frame 536 sent at 1573031768575
+11-06 11:16:08.576 29826 29860 D Evaluation: 1 res for frame 527 received at 1573031768576
+11-06 11:16:08.594 29826 29860 D Evaluation: Frame 536 sent at 1573031768594
+11-06 11:16:08.595 29826 29860 D Evaluation: 1 res for frame 528 received at 1573031768595
+11-06 11:16:08.630 29826 29860 D Evaluation: Frame 537 sent at 1573031768630
+11-06 11:16:08.632 29826 29860 D Evaluation: 1 res for frame 529 received at 1573031768632
+11-06 11:16:08.671 29826 29860 D Evaluation: Frame 538 sent at 1573031768671
+11-06 11:16:08.675 29826 29860 D Evaluation: 1 res for frame 530 received at 1573031768675
+11-06 11:16:08.694 29826 29860 D Evaluation: Frame 539 sent at 1573031768694
+11-06 11:16:08.695 29826 29860 D Evaluation: 1 res for frame 531 received at 1573031768695
+11-06 11:16:08.734 29826 29860 D Evaluation: Frame 540 sent at 1573031768734
+11-06 11:16:08.737 29826 29860 D Evaluation: 1 res for frame 532 received at 1573031768737
+11-06 11:16:08.760 29826 29860 D Evaluation: Frame 541 sent at 1573031768760
+11-06 11:16:08.762 29826 29860 D Evaluation: 1 res for frame 533 received at 1573031768762
+11-06 11:16:08.808 29826 29860 D Evaluation: Frame 542 sent at 1573031768807
+11-06 11:16:08.810 29826 29860 D Evaluation: 1 res for frame 534 received at 1573031768810
+11-06 11:16:08.839 29826 29860 D Evaluation: Frame 543 sent at 1573031768838
+11-06 11:16:08.840 29826 29860 D Evaluation: 1 res for frame 536 received at 1573031768840
+11-06 11:16:08.875 29826 29860 D Evaluation: Frame 544 sent at 1573031768875
+11-06 11:16:08.877 29826 29860 D Evaluation: 1 res for frame 536 received at 1573031768877
+11-06 11:16:08.905 29826 29860 D Evaluation: Frame 545 sent at 1573031768905
+11-06 11:16:08.907 29826 29860 D Evaluation: 1 res for frame 537 received at 1573031768907
+11-06 11:16:08.938 29826 29860 D Evaluation: Frame 546 sent at 1573031768938
+11-06 11:16:08.940 29826 29860 D Evaluation: 1 res for frame 538 received at 1573031768940
+11-06 11:16:08.965 29826 29860 D Evaluation: Frame 547 sent at 1573031768965
+11-06 11:16:08.967 29826 29860 D Evaluation: 1 res for frame 539 received at 1573031768967
+11-06 11:16:09.004 29826 29860 D Evaluation: Frame 548 sent at 1573031769004
+11-06 11:16:09.007 29826 29860 D Evaluation: 1 res for frame 540 received at 1573031769007
+11-06 11:16:09.040 29826 29860 D Evaluation: Frame 549 sent at 1573031769040
+11-06 11:16:09.042 29826 29860 D Evaluation: 1 res for frame 541 received at 1573031769042
+11-06 11:16:09.077 29826 29860 D Evaluation: Frame 550 sent at 1573031769077
+11-06 11:16:09.079 29826 29860 D Evaluation: 1 res for frame 542 received at 1573031769079
+11-06 11:16:09.104 29826 29860 D Evaluation: Frame 551 sent at 1573031769104
+11-06 11:16:09.107 29826 29860 D Evaluation: 1 res for frame 543 received at 1573031769107
+11-06 11:16:09.135 29826 29860 D Evaluation: Frame 552 sent at 1573031769135
+11-06 11:16:09.137 29826 29860 D Evaluation: 1 res for frame 544 received at 1573031769137
+11-06 11:16:09.168 29826 29860 D Evaluation: Frame 553 sent at 1573031769168
+11-06 11:16:09.170 29826 29860 D Evaluation: 1 res for frame 545 received at 1573031769170
+11-06 11:16:09.213 29826 29837 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:16:09.214 29826 29860 D Evaluation: Frame 554 sent at 1573031769214
+11-06 11:16:09.216 29826 29860 D Evaluation: 1 res for frame 546 received at 1573031769216
+11-06 11:16:09.245 29826 29860 D Evaluation: Frame 555 sent at 1573031769245
+11-06 11:16:09.245 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:09.246 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 9 lines
+11-06 11:16:09.247 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:09.247 29826 29860 D Evaluation: 1 res for frame 547 received at 1573031769247
+11-06 11:16:09.247 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:09.251 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 29 lines
+11-06 11:16:09.252 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:09.252 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:09.257 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 23 lines
+11-06 11:16:09.257 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:09.269 29826 29860 D Evaluation: Frame 556 sent at 1573031769269
+11-06 11:16:09.270 29826 29860 D Evaluation: 1 res for frame 548 received at 1573031769270
+11-06 11:16:09.306 29826 29860 D Evaluation: Frame 557 sent at 1573031769306
+11-06 11:16:09.307 29826 29860 D Evaluation: 1 res for frame 549 received at 1573031769307
+11-06 11:16:09.335 29826 29826 D Poster  : At 1573031769335 location is 65.05993543275409 (latitude), and 25.46863693017135 (longitude)
+11-06 11:16:09.337 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:16:09.338 29826 29860 D Evaluation: Frame 558 sent at 1573031769338
+11-06 11:16:09.340 29826 29860 D Evaluation: 1 res for frame 550 received at 1573031769340
+11-06 11:16:09.368 29826 29860 D Evaluation: Frame 559 sent at 1573031769368
+11-06 11:16:09.370 29826 29860 D Evaluation: 1 res for frame 551 received at 1573031769370
+11-06 11:16:09.398 29826 29860 D Evaluation: Frame 560 sent at 1573031769398
+11-06 11:16:09.400 29826 29860 D Evaluation: 1 res for frame 552 received at 1573031769400
+11-06 11:16:09.449 29826 29860 D Evaluation: Frame 561 sent at 1573031769449
+11-06 11:16:09.454 29826 29860 D Evaluation: 1 res for frame 553 received at 1573031769454
+11-06 11:16:09.472 29826 29860 D Evaluation: Frame 562 sent at 1573031769472
+11-06 11:16:09.474 29826 29860 D Evaluation: 1 res for frame 554 received at 1573031769474
+11-06 11:16:09.500 29826 29860 D Evaluation: Frame 563 sent at 1573031769500
+11-06 11:16:09.503 29826 29860 D Evaluation: 1 res for frame 555 received at 1573031769503
+11-06 11:16:09.538 29826 29860 D Evaluation: Frame 564 sent at 1573031769538
+11-06 11:16:09.540 29826 29860 D Evaluation: 1 res for frame 556 received at 1573031769540
+11-06 11:16:09.576 29826 29860 D Evaluation: Frame 565 sent at 1573031769576
+11-06 11:16:09.578 29826 29860 D Evaluation: 1 res for frame 557 received at 1573031769578
+11-06 11:16:09.606 29826 29860 D Evaluation: Frame 566 sent at 1573031769606
+11-06 11:16:09.608 29826 29860 D Evaluation: 1 res for frame 558 received at 1573031769608
+11-06 11:16:09.651 29826 29860 D Evaluation: Frame 567 sent at 1573031769651
+11-06 11:16:09.653 29826 29860 D Evaluation: 1 res for frame 559 received at 1573031769652
+11-06 11:16:09.692 29826 29860 D Evaluation: Frame 569 sent at 1573031769692
+11-06 11:16:09.695 29826 29860 D Evaluation: 1 res for frame 560 received at 1573031769695
+11-06 11:16:09.715 29826 29860 D Evaluation: Frame 569 sent at 1573031769715
+11-06 11:16:09.717 29826 29860 D Evaluation: 1 res for frame 561 received at 1573031769717
+11-06 11:16:09.766 29826 29860 D Evaluation: Frame 570 sent at 1573031769766
+11-06 11:16:09.768 29826 29860 D Evaluation: 1 res for frame 562 received at 1573031769768
+11-06 11:16:09.814 29826 29860 D Evaluation: Frame 571 sent at 1573031769814
+11-06 11:16:09.816 29826 29860 D Evaluation: 1 res for frame 563 received at 1573031769816
+11-06 11:16:09.837 29826 29860 D Evaluation: Frame 572 sent at 1573031769837
+11-06 11:16:09.839 29826 29860 D Evaluation: 1 res for frame 564 received at 1573031769839
+11-06 11:16:09.871 29826 29860 D Evaluation: Frame 573 sent at 1573031769871
+11-06 11:16:09.873 29826 29860 D Evaluation: 1 res for frame 565 received at 1573031769873
+11-06 11:16:09.909 29826 29860 D Evaluation: Frame 574 sent at 1573031769909
+11-06 11:16:09.910 29826 29860 D Evaluation: 1 res for frame 566 received at 1573031769910
+11-06 11:16:09.981 29826 29860 D Evaluation: Frame 575 sent at 1573031769981
+11-06 11:16:09.984 29826 29860 D Evaluation: 1 res for frame 567 received at 1573031769984
+11-06 11:16:10.014 29826 29860 D Evaluation: Frame 576 sent at 1573031770014
+11-06 11:16:10.017 29826 29860 D Evaluation: 1 res for frame 569 received at 1573031770017
+11-06 11:16:10.050 29826 29860 D Evaluation: Frame 577 sent at 1573031770050
+11-06 11:16:10.053 29826 29860 D Evaluation: 1 res for frame 569 received at 1573031770053
+11-06 11:16:10.080 29826 29860 D Evaluation: Frame 579 sent at 1573031770080
+11-06 11:16:10.081 29826 29860 D Evaluation: 1 res for frame 570 received at 1573031770081
+11-06 11:16:10.100 29826 29860 D Evaluation: Frame 579 sent at 1573031770100
+11-06 11:16:10.102 29826 29860 D Evaluation: 1 res for frame 571 received at 1573031770102
+11-06 11:16:10.136 29826 29860 D Evaluation: Frame 580 sent at 1573031770136
+11-06 11:16:10.138 29826 29860 D Evaluation: 1 res for frame 572 received at 1573031770138
+11-06 11:16:10.174 29826 29860 D Evaluation: Frame 581 sent at 1573031770174
+11-06 11:16:10.176 29826 29860 D Evaluation: 1 res for frame 573 received at 1573031770176
+11-06 11:16:10.218 29826 29860 D Evaluation: Frame 582 sent at 1573031770218
+11-06 11:16:10.220 29826 29860 D Evaluation: 1 res for frame 574 received at 1573031770220
+11-06 11:16:10.246 29826 29860 D Evaluation: Frame 583 sent at 1573031770246
+11-06 11:16:10.248 29826 29860 D Evaluation: 1 res for frame 575 received at 1573031770248
+11-06 11:16:10.277 29826 29860 D Evaluation: Frame 584 sent at 1573031770277
+11-06 11:16:10.279 29826 29860 D Evaluation: 1 res for frame 576 received at 1573031770279
+11-06 11:16:10.311 29826 29860 D Evaluation: Frame 585 sent at 1573031770311
+11-06 11:16:10.313 29826 29860 D Evaluation: 1 res for frame 577 received at 1573031770313
+11-06 11:16:10.328 29826 29826 D Poster  : At 1573031770328 location is 65.05993543275409 (latitude), and 25.46863693017135 (longitude)
+11-06 11:16:10.330 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:16:10.375 29826 29860 D Evaluation: Frame 586 sent at 1573031770375
+11-06 11:16:10.377 29826 29860 D Evaluation: 1 res for frame 579 received at 1573031770377
+11-06 11:16:10.411 29826 29860 D Evaluation: Frame 587 sent at 1573031770411
+11-06 11:16:10.413 29826 29860 D Evaluation: 1 res for frame 579 received at 1573031770413
+11-06 11:16:10.444 29826 29837 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:16:10.444 29826 29860 D Evaluation: Frame 588 sent at 1573031770444
+11-06 11:16:10.446 29826 29860 D Evaluation: 1 res for frame 580 received at 1573031770446
+11-06 11:16:10.468 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:10.468 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-06 11:16:10.469 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:10.469 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:10.472 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 23 lines
+11-06 11:16:10.472 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:10.475 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:10.476 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-06 11:16:10.476 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:10.476 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:10.479 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 34 lines
+11-06 11:16:10.479 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:10.495 29826 29860 D Evaluation: Frame 590 sent at 1573031770495
+11-06 11:16:10.497 29826 29860 D Evaluation: 1 res for frame 581 received at 1573031770497
+11-06 11:16:10.524 29826 29860 D Evaluation: Frame 590 sent at 1573031770524
+11-06 11:16:10.527 29826 29860 D Evaluation: 1 res for frame 582 received at 1573031770527
+11-06 11:16:10.557 29826 29860 D Evaluation: Frame 591 sent at 1573031770556
+11-06 11:16:10.559 29826 29860 D Evaluation: 1 res for frame 583 received at 1573031770559
+11-06 11:16:10.586 29826 29860 D Evaluation: Frame 592 sent at 1573031770586
+11-06 11:16:10.588 29826 29860 D Evaluation: 1 res for frame 584 received at 1573031770588
+11-06 11:16:10.607 29826 29860 D Evaluation: Frame 593 sent at 1573031770607
+11-06 11:16:10.608 29826 29860 D Evaluation: 1 res for frame 585 received at 1573031770608
+11-06 11:16:10.656 29826 29860 D Evaluation: Frame 594 sent at 1573031770656
+11-06 11:16:10.658 29826 29860 D Evaluation: 1 res for frame 586 received at 1573031770658
+11-06 11:16:10.686 29826 29860 D Evaluation: Frame 595 sent at 1573031770686
+11-06 11:16:10.688 29826 29860 D Evaluation: 1 res for frame 587 received at 1573031770688
+11-06 11:16:10.725 29826 29860 D Evaluation: Frame 596 sent at 1573031770724
+11-06 11:16:10.726 29826 29860 D Evaluation: 1 res for frame 588 received at 1573031770726
+11-06 11:16:10.754 29826 29860 D Evaluation: Frame 597 sent at 1573031770754
+11-06 11:16:10.756 29826 29860 D Evaluation: 1 res for frame 590 received at 1573031770756
+11-06 11:16:10.783 29826 29860 D Evaluation: Frame 598 sent at 1573031770783
+11-06 11:16:10.785 29826 29860 D Evaluation: 1 res for frame 590 received at 1573031770785
+11-06 11:16:10.813 29826 29860 D Evaluation: Frame 599 sent at 1573031770813
+11-06 11:16:10.815 29826 29860 D Evaluation: 1 res for frame 591 received at 1573031770815
+11-06 11:16:10.855 29826 29860 D Evaluation: Frame 600 sent at 1573031770855
+11-06 11:16:10.857 29826 29860 D Evaluation: 1 res for frame 592 received at 1573031770857
+11-06 11:16:10.892 29826 29860 D Evaluation: Frame 601 sent at 1573031770892
+11-06 11:16:10.894 29826 29860 D Evaluation: 1 res for frame 593 received at 1573031770894
+11-06 11:16:10.922 29826 29860 D Evaluation: Frame 603 sent at 1573031770922
+11-06 11:16:10.923 29826 29860 D Evaluation: 1 res for frame 594 received at 1573031770923
+11-06 11:16:10.940 29826 29860 D Evaluation: Frame 603 sent at 1573031770940
+11-06 11:16:10.941 29826 29860 D Evaluation: 1 res for frame 595 received at 1573031770941
+11-06 11:16:10.988 29826 29860 D Evaluation: Frame 604 sent at 1573031770988
+11-06 11:16:10.990 29826 29860 D Evaluation: 1 res for frame 596 received at 1573031770990
+11-06 11:16:11.008 29826 29860 D Evaluation: Frame 605 sent at 1573031771008
+11-06 11:16:11.010 29826 29860 D Evaluation: 1 res for frame 597 received at 1573031771010
+11-06 11:16:11.041 29826 29860 D Evaluation: Frame 606 sent at 1573031771041
+11-06 11:16:11.042 29826 29860 D Evaluation: 1 res for frame 598 received at 1573031771042
+11-06 11:16:11.083 29826 29860 D Evaluation: Frame 607 sent at 1573031771083
+11-06 11:16:11.085 29826 29860 D Evaluation: 1 res for frame 599 received at 1573031771085
+11-06 11:16:11.127 29826 29860 D Evaluation: Frame 608 sent at 1573031771127
+11-06 11:16:11.129 29826 29860 D Evaluation: 1 res for frame 600 received at 1573031771129
+11-06 11:16:11.162 29826 29860 D Evaluation: Frame 609 sent at 1573031771162
+11-06 11:16:11.164 29826 29860 D Evaluation: 1 res for frame 601 received at 1573031771164
+11-06 11:16:11.198 29826 29860 D Evaluation: Frame 610 sent at 1573031771198
+11-06 11:16:11.200 29826 29860 D Evaluation: 1 res for frame 603 received at 1573031771200
+11-06 11:16:11.228 29826 29860 D Evaluation: Frame 611 sent at 1573031771228
+11-06 11:16:11.230 29826 29860 D Evaluation: 1 res for frame 603 received at 1573031771230
+11-06 11:16:11.256 29826 29860 D Evaluation: Frame 612 sent at 1573031771256
+11-06 11:16:11.258 29826 29860 D Evaluation: 1 res for frame 604 received at 1573031771258
+11-06 11:16:11.282 29826 29860 D Evaluation: Frame 613 sent at 1573031771282
+11-06 11:16:11.284 29826 29860 D Evaluation: 1 res for frame 605 received at 1573031771284
+11-06 11:16:11.324 29826 29860 D Evaluation: Frame 614 sent at 1573031771324
+11-06 11:16:11.326 29826 29860 D Evaluation: 1 res for frame 606 received at 1573031771326
+11-06 11:16:11.363 29826 29826 D Poster  : At 1573031771363 location is 65.05993543275409 (latitude), and 25.46863693017135 (longitude)
+11-06 11:16:11.366 29826 29860 D Evaluation: Frame 615 sent at 1573031771366
+11-06 11:16:11.366 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:16:11.368 29826 29860 D Evaluation: 1 res for frame 607 received at 1573031771368
+11-06 11:16:11.391 29826 29860 D Evaluation: Frame 616 sent at 1573031771391
+11-06 11:16:11.393 29826 29860 D Evaluation: 1 res for frame 608 received at 1573031771393
+11-06 11:16:11.415 29826 29860 D Evaluation: Frame 617 sent at 1573031771415
+11-06 11:16:11.417 29826 29860 D Evaluation: 1 res for frame 609 received at 1573031771417
+11-06 11:16:11.456 29826 29860 D Evaluation: Frame 618 sent at 1573031771456
+11-06 11:16:11.458 29826 29860 D Evaluation: 1 res for frame 610 received at 1573031771458
+11-06 11:16:11.489 29826 29860 D Evaluation: Frame 619 sent at 1573031771489
+11-06 11:16:11.491 29826 29860 D Evaluation: 1 res for frame 611 received at 1573031771491
+11-06 11:16:11.510 29826 29837 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:16:11.511 29826 29860 D Evaluation: Frame 620 sent at 1573031771511
+11-06 11:16:11.513 29826 29860 D Evaluation: 1 res for frame 612 received at 1573031771513
+11-06 11:16:11.546 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:11.550 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 62 lines
+11-06 11:16:11.550 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:11.565 29826 29860 D Evaluation: Frame 621 sent at 1573031771565
+11-06 11:16:11.567 29826 29860 D Evaluation: 1 res for frame 613 received at 1573031771567
+11-06 11:16:11.589 29826 29860 D Evaluation: Frame 622 sent at 1573031771589
+11-06 11:16:11.591 29826 29860 D Evaluation: 1 res for frame 614 received at 1573031771591
+11-06 11:16:11.612 29826 29860 D Evaluation: Frame 623 sent at 1573031771612
+11-06 11:16:11.614 29826 29860 D Evaluation: 1 res for frame 615 received at 1573031771614
+11-06 11:16:11.654 29826 29860 D Evaluation: Frame 624 sent at 1573031771653
+11-06 11:16:11.656 29826 29860 D Evaluation: 1 res for frame 616 received at 1573031771656
+11-06 11:16:11.681 29826 29860 D Evaluation: Frame 625 sent at 1573031771681
+11-06 11:16:11.683 29826 29860 D Evaluation: 1 res for frame 617 received at 1573031771683
+11-06 11:16:11.727 29826 29860 D Evaluation: Frame 626 sent at 1573031771727
+11-06 11:16:11.729 29826 29860 D Evaluation: 1 res for frame 618 received at 1573031771729
+11-06 11:16:11.764 29826 29860 D Evaluation: Frame 627 sent at 1573031771764
+11-06 11:16:11.766 29826 29860 D Evaluation: 1 res for frame 619 received at 1573031771766
+11-06 11:16:11.795 29826 29860 D Evaluation: Frame 628 sent at 1573031771795
+11-06 11:16:11.797 29826 29860 D Evaluation: 1 res for frame 620 received at 1573031771797
+11-06 11:16:11.830 29826 29860 D Evaluation: Frame 629 sent at 1573031771829
+11-06 11:16:11.831 29826 29860 D Evaluation: 1 res for frame 621 received at 1573031771831
+11-06 11:16:11.899 29826 29860 D Evaluation: Frame 630 sent at 1573031771899
+11-06 11:16:11.901 29826 29860 D Evaluation: 1 res for frame 622 received at 1573031771901
+11-06 11:16:11.933 29826 29860 D Evaluation: Frame 631 sent at 1573031771933
+11-06 11:16:11.938 29826 29860 D Evaluation: 1 res for frame 623 received at 1573031771938
+11-06 11:16:11.966 29826 29860 D Evaluation: Frame 632 sent at 1573031771965
+11-06 11:16:11.967 29826 29860 D Evaluation: 1 res for frame 624 received at 1573031771967
+11-06 11:16:12.000 29826 29860 D Evaluation: Frame 633 sent at 1573031772000
+11-06 11:16:12.003 29826 29860 D Evaluation: 1 res for frame 625 received at 1573031772003
+11-06 11:16:12.034 29826 29860 D Evaluation: Frame 634 sent at 1573031772034
+11-06 11:16:12.036 29826 29860 D Evaluation: 1 res for frame 626 received at 1573031772036
+11-06 11:16:12.065 29826 29860 D Evaluation: Frame 635 sent at 1573031772065
+11-06 11:16:12.067 29826 29860 D Evaluation: 1 res for frame 627 received at 1573031772067
+11-06 11:16:12.099 29826 29860 D Evaluation: Frame 636 sent at 1573031772098
+11-06 11:16:12.100 29826 29860 D Evaluation: 1 res for frame 628 received at 1573031772100
+11-06 11:16:12.134 29826 29860 D Evaluation: Frame 637 sent at 1573031772134
+11-06 11:16:12.136 29826 29860 D Evaluation: 1 res for frame 629 received at 1573031772136
+11-06 11:16:12.165 29826 29860 D Evaluation: Frame 638 sent at 1573031772165
+11-06 11:16:12.167 29826 29860 D Evaluation: 1 res for frame 630 received at 1573031772167
+11-06 11:16:12.194 29826 29860 D Evaluation: Frame 639 sent at 1573031772194
+11-06 11:16:12.196 29826 29860 D Evaluation: 1 res for frame 631 received at 1573031772196
+11-06 11:16:12.240 29826 29860 D Evaluation: Frame 640 sent at 1573031772240
+11-06 11:16:12.242 29826 29860 D Evaluation: 1 res for frame 632 received at 1573031772242
+11-06 11:16:12.271 29826 29860 D Evaluation: Frame 642 sent at 1573031772270
+11-06 11:16:12.272 29826 29860 D Evaluation: 1 res for frame 633 received at 1573031772272
+11-06 11:16:12.292 29826 29860 D Evaluation: Frame 642 sent at 1573031772292
+11-06 11:16:12.294 29826 29860 D Evaluation: 1 res for frame 634 received at 1573031772294
+11-06 11:16:12.328 29826 29860 D Evaluation: Frame 643 sent at 1573031772328
+11-06 11:16:12.330 29826 29860 D Evaluation: 1 res for frame 635 received at 1573031772330
+11-06 11:16:12.345 29826 29826 D Poster  : At 1573031772345 location is 65.05993543275409 (latitude), and 25.46863693017135 (longitude)
+11-06 11:16:12.347 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:16:12.353 29826 29860 D Evaluation: Frame 644 sent at 1573031772353
+11-06 11:16:12.355 29826 29860 D Evaluation: 1 res for frame 636 received at 1573031772355
+11-06 11:16:12.392 29826 29860 D Evaluation: Frame 645 sent at 1573031772392
+11-06 11:16:12.394 29826 29860 D Evaluation: 1 res for frame 637 received at 1573031772394
+11-06 11:16:12.425 29826 29860 D Evaluation: Frame 646 sent at 1573031772425
+11-06 11:16:12.427 29826 29860 D Evaluation: 1 res for frame 638 received at 1573031772427
+11-06 11:16:12.465 29826 29860 D Evaluation: Frame 647 sent at 1573031772465
+11-06 11:16:12.466 29826 29860 D Evaluation: 1 res for frame 639 received at 1573031772466
+11-06 11:16:12.498 29826 29860 D Evaluation: Frame 648 sent at 1573031772498
+11-06 11:16:12.500 29826 29860 D Evaluation: 1 res for frame 640 received at 1573031772500
+11-06 11:16:12.529 29826 29860 D Evaluation: Frame 649 sent at 1573031772529
+11-06 11:16:12.531 29826 29860 D Evaluation: 1 res for frame 642 received at 1573031772531
+11-06 11:16:12.567 29826 29860 D Evaluation: Frame 650 sent at 1573031772567
+11-06 11:16:12.569 29826 29860 D Evaluation: 1 res for frame 642 received at 1573031772569
+11-06 11:16:12.598 29826 29860 D Evaluation: Frame 651 sent at 1573031772598
+11-06 11:16:12.601 29826 29860 D Evaluation: 1 res for frame 643 received at 1573031772601
+11-06 11:16:12.622 29826 29860 D Evaluation: Frame 652 sent at 1573031772622
+11-06 11:16:12.624 29826 29860 D Evaluation: 1 res for frame 644 received at 1573031772624
+11-06 11:16:12.663 29826 29860 D Evaluation: Frame 653 sent at 1573031772663
+11-06 11:16:12.664 29826 29860 D Evaluation: 1 res for frame 645 received at 1573031772664
+11-06 11:16:12.701 29826 29860 D Evaluation: Frame 654 sent at 1573031772701
+11-06 11:16:12.703 29826 29860 D Evaluation: 1 res for frame 646 received at 1573031772703
+11-06 11:16:12.704 29826 29837 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:16:12.727 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:12.729 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 11 lines
+11-06 11:16:12.729 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:12.729 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:12.731 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 12 lines
+11-06 11:16:12.731 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:12.731 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:12.731 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:12.731 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:12.731 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:12.732 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:12.732 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-06 11:16:12.732 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:12.732 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:12.732 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:12.732 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:12.732 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:12.732 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:12.733 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-06 11:16:12.733 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:12.733 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:12.735 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:12.738 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 26 lines
+11-06 11:16:12.738 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:12.739 29826 29860 D Evaluation: Frame 655 sent at 1573031772739
+11-06 11:16:12.741 29826 29860 D Evaluation: 1 res for frame 647 received at 1573031772741
+11-06 11:16:12.772 29826 29860 D Evaluation: Frame 656 sent at 1573031772772
+11-06 11:16:12.774 29826 29860 D Evaluation: 1 res for frame 648 received at 1573031772774
+11-06 11:16:12.798 29826 29860 D Evaluation: Frame 657 sent at 1573031772798
+11-06 11:16:12.800 29826 29860 D Evaluation: 1 res for frame 649 received at 1573031772800
+11-06 11:16:12.836 29826 29860 D Evaluation: Frame 658 sent at 1573031772836
+11-06 11:16:12.838 29826 29860 D Evaluation: 1 res for frame 650 received at 1573031772838
+11-06 11:16:12.865 29826 29860 D Evaluation: Frame 659 sent at 1573031772865
+11-06 11:16:12.867 29826 29860 D Evaluation: 1 res for frame 651 received at 1573031772867
+11-06 11:16:12.900 29826 29860 D Evaluation: Frame 660 sent at 1573031772900
+11-06 11:16:12.902 29826 29860 D Evaluation: 1 res for frame 652 received at 1573031772902
+11-06 11:16:12.935 29826 29860 D Evaluation: Frame 661 sent at 1573031772935
+11-06 11:16:12.937 29826 29860 D Evaluation: 1 res for frame 653 received at 1573031772937
+11-06 11:16:12.972 29826 29860 D Evaluation: Frame 662 sent at 1573031772972
+11-06 11:16:12.975 29826 29860 D Evaluation: 1 res for frame 654 received at 1573031772975
+11-06 11:16:13.002 29826 29860 D Evaluation: Frame 663 sent at 1573031773002
+11-06 11:16:13.004 29826 29860 D Evaluation: 1 res for frame 655 received at 1573031773004
+11-06 11:16:13.038 29826 29860 D Evaluation: Frame 664 sent at 1573031773038
+11-06 11:16:13.041 29826 29860 D Evaluation: 1 res for frame 656 received at 1573031773041
+11-06 11:16:13.069 29826 29860 D Evaluation: Frame 665 sent at 1573031773069
+11-06 11:16:13.070 29826 29860 D Evaluation: 1 res for frame 657 received at 1573031773070
+11-06 11:16:13.105 29826 29860 D Evaluation: Frame 666 sent at 1573031773105
+11-06 11:16:13.107 29826 29860 D Evaluation: 1 res for frame 658 received at 1573031773107
+11-06 11:16:13.133 29826 29860 D Evaluation: Frame 667 sent at 1573031773133
+11-06 11:16:13.135 29826 29860 D Evaluation: 1 res for frame 659 received at 1573031773135
+11-06 11:16:13.182 29826 29860 D Evaluation: Frame 669 sent at 1573031773182
+11-06 11:16:13.184 29826 29860 D Evaluation: 1 res for frame 660 received at 1573031773184
+11-06 11:16:13.204 29826 29860 D Evaluation: Frame 669 sent at 1573031773204
+11-06 11:16:13.205 29826 29860 D Evaluation: 1 res for frame 661 received at 1573031773205
+11-06 11:16:13.240 29826 29860 D Evaluation: Frame 670 sent at 1573031773240
+11-06 11:16:13.241 29826 29860 D Evaluation: 1 res for frame 662 received at 1573031773241
+11-06 11:16:13.267 29826 29860 D Evaluation: Frame 671 sent at 1573031773267
+11-06 11:16:13.269 29826 29860 D Evaluation: 1 res for frame 663 received at 1573031773269
+11-06 11:16:13.301 29826 29860 D Evaluation: Frame 672 sent at 1573031773301
+11-06 11:16:13.303 29826 29860 D Evaluation: 1 res for frame 664 received at 1573031773303
+11-06 11:16:13.345 29826 29826 D Poster  : At 1573031773344 location is 65.05993543275409 (latitude), and 25.46863693017135 (longitude)
+11-06 11:16:13.347 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:16:13.351 29826 29860 D Evaluation: Frame 673 sent at 1573031773351
+11-06 11:16:13.353 29826 29860 D Evaluation: 1 res for frame 665 received at 1573031773353
+11-06 11:16:13.380 29826 29860 D Evaluation: Frame 674 sent at 1573031773380
+11-06 11:16:13.382 29826 29860 D Evaluation: 1 res for frame 666 received at 1573031773382
+11-06 11:16:13.405 29826 29860 D Evaluation: Frame 675 sent at 1573031773405
+11-06 11:16:13.407 29826 29860 D Evaluation: 1 res for frame 667 received at 1573031773407
+11-06 11:16:13.439 29826 29860 D Evaluation: Frame 676 sent at 1573031773439
+11-06 11:16:13.441 29826 29860 D Evaluation: 1 res for frame 669 received at 1573031773441
+11-06 11:16:13.475 29826 29860 D Evaluation: Frame 677 sent at 1573031773475
+11-06 11:16:13.477 29826 29860 D Evaluation: 1 res for frame 669 received at 1573031773477
+11-06 11:16:13.502 29826 29860 D Evaluation: Frame 678 sent at 1573031773502
+11-06 11:16:13.504 29826 29860 D Evaluation: 1 res for frame 670 received at 1573031773504
+11-06 11:16:13.534 29826 29860 D Evaluation: Frame 679 sent at 1573031773534
+11-06 11:16:13.536 29826 29860 D Evaluation: 1 res for frame 671 received at 1573031773536
+11-06 11:16:13.573 29826 29860 D Evaluation: Frame 680 sent at 1573031773573
+11-06 11:16:13.576 29826 29860 D Evaluation: 1 res for frame 672 received at 1573031773575
+11-06 11:16:13.600 29826 29860 D Evaluation: Frame 681 sent at 1573031773600
+11-06 11:16:13.601 29826 29860 D Evaluation: 1 res for frame 673 received at 1573031773601
+11-06 11:16:13.638 29826 29860 D Evaluation: Frame 682 sent at 1573031773638
+11-06 11:16:13.639 29826 29860 D Evaluation: 1 res for frame 674 received at 1573031773639
+11-06 11:16:13.672 29826 29860 D Evaluation: Frame 683 sent at 1573031773672
+11-06 11:16:13.675 29826 29860 D Evaluation: 1 res for frame 675 received at 1573031773675
+11-06 11:16:13.744 29826 29860 D Evaluation: Frame 685 sent at 1573031773744
+11-06 11:16:13.746 29826 29860 D Evaluation: 1 res for frame 676 received at 1573031773746
+11-06 11:16:13.767 29826 29860 D Evaluation: Frame 685 sent at 1573031773767
+11-06 11:16:13.769 29826 29860 D Evaluation: 1 res for frame 677 received at 1573031773769
+11-06 11:16:13.808 29826 29860 D Evaluation: Frame 686 sent at 1573031773808
+11-06 11:16:13.811 29826 29860 D Evaluation: 1 res for frame 678 received at 1573031773811
+11-06 11:16:13.851 29826 29860 D Evaluation: Frame 688 sent at 1573031773851
+11-06 11:16:13.852 29826 29860 D Evaluation: 1 res for frame 679 received at 1573031773852
+11-06 11:16:13.870 29826 29860 D Evaluation: Frame 688 sent at 1573031773870
+11-06 11:16:13.872 29826 29860 D Evaluation: 1 res for frame 680 received at 1573031773872
+11-06 11:16:13.905 29826 29860 D Evaluation: Frame 689 sent at 1573031773905
+11-06 11:16:13.907 29826 29860 D Evaluation: 1 res for frame 681 received at 1573031773907
+11-06 11:16:13.940 29826 29837 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:16:13.941 29826 29860 D Evaluation: Frame 690 sent at 1573031773941
+11-06 11:16:13.943 29826 29860 D Evaluation: 1 res for frame 682 received at 1573031773943
+11-06 11:16:13.967 29826 29860 D Evaluation: Frame 691 sent at 1573031773967
+11-06 11:16:13.968 29826 29860 D Evaluation: 1 res for frame 683 received at 1573031773968
+11-06 11:16:13.970 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:13.970 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 6 lines
+11-06 11:16:13.971 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:13.971 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:13.978 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 60 lines
+11-06 11:16:13.978 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:13.994 29826 29860 D Evaluation: Frame 692 sent at 1573031773994
+11-06 11:16:13.995 29826 29860 D Evaluation: 1 res for frame 685 received at 1573031773995
+11-06 11:16:14.035 29826 29860 D Evaluation: Frame 693 sent at 1573031774035
+11-06 11:16:14.036 29826 29860 D Evaluation: 1 res for frame 685 received at 1573031774036
+11-06 11:16:14.067 29826 29860 D Evaluation: Frame 694 sent at 1573031774067
+11-06 11:16:14.069 29826 29860 D Evaluation: 1 res for frame 686 received at 1573031774069
+11-06 11:16:14.101 29826 29860 D Evaluation: Frame 695 sent at 1573031774101
+11-06 11:16:14.103 29826 29860 D Evaluation: 1 res for frame 688 received at 1573031774103
+11-06 11:16:14.141 29826 29860 D Evaluation: Frame 696 sent at 1573031774141
+11-06 11:16:14.143 29826 29860 D Evaluation: 1 res for frame 688 received at 1573031774143
+11-06 11:16:14.179 29826 29860 D Evaluation: Frame 697 sent at 1573031774179
+11-06 11:16:14.181 29826 29860 D Evaluation: 1 res for frame 689 received at 1573031774181
+11-06 11:16:14.216 29826 29860 D Evaluation: Frame 698 sent at 1573031774215
+11-06 11:16:14.217 29826 29860 D Evaluation: 1 res for frame 690 received at 1573031774217
+11-06 11:16:14.255 29826 29860 D Evaluation: Frame 699 sent at 1573031774255
+11-06 11:16:14.256 29826 29860 D Evaluation: 1 res for frame 691 received at 1573031774256
+11-06 11:16:14.274 29826 29860 D Evaluation: Frame 700 sent at 1573031774274
+11-06 11:16:14.275 29826 29860 D Evaluation: 1 res for frame 692 received at 1573031774275
+11-06 11:16:14.300 29826 29860 D Evaluation: Frame 701 sent at 1573031774300
+11-06 11:16:14.301 29826 29860 D Evaluation: 1 res for frame 693 received at 1573031774301
+11-06 11:16:14.333 29826 29826 D Poster  : At 1573031774333 location is 65.05993543275409 (latitude), and 25.46863693017135 (longitude)
+11-06 11:16:14.335 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:16:14.349 29826 29860 D Evaluation: Frame 702 sent at 1573031774349
+11-06 11:16:14.351 29826 29860 D Evaluation: 1 res for frame 694 received at 1573031774351
+11-06 11:16:14.371 29826 29860 D Evaluation: Frame 703 sent at 1573031774371
+11-06 11:16:14.373 29826 29860 D Evaluation: 1 res for frame 695 received at 1573031774373
+11-06 11:16:14.411 29826 29860 D Evaluation: Frame 704 sent at 1573031774411
+11-06 11:16:14.412 29826 29860 D Evaluation: 1 res for frame 696 received at 1573031774412
+11-06 11:16:14.449 29826 29860 D Evaluation: Frame 706 sent at 1573031774449
+11-06 11:16:14.451 29826 29860 D Evaluation: 1 res for frame 697 received at 1573031774451
+11-06 11:16:14.467 29826 29860 D Evaluation: Frame 706 sent at 1573031774467
+11-06 11:16:14.469 29826 29860 D Evaluation: 1 res for frame 698 received at 1573031774469
+11-06 11:16:14.511 29826 29860 D Evaluation: Frame 707 sent at 1573031774511
+11-06 11:16:14.512 29826 29860 D Evaluation: 1 res for frame 699 received at 1573031774512
+11-06 11:16:14.538 29826 29860 D Evaluation: Frame 708 sent at 1573031774538
+11-06 11:16:14.540 29826 29860 D Evaluation: 1 res for frame 700 received at 1573031774540
+11-06 11:16:14.577 29826 29860 D Evaluation: Frame 709 sent at 1573031774577
+11-06 11:16:14.579 29826 29860 D Evaluation: 1 res for frame 701 received at 1573031774579
+11-06 11:16:14.604 29826 29860 D Evaluation: Frame 710 sent at 1573031774604
+11-06 11:16:14.605 29826 29860 D Evaluation: 1 res for frame 702 received at 1573031774605
+11-06 11:16:14.639 29826 29860 D Evaluation: Frame 711 sent at 1573031774639
+11-06 11:16:14.641 29826 29860 D Evaluation: 1 res for frame 703 received at 1573031774641
+11-06 11:16:14.683 29826 29860 D Evaluation: Frame 712 sent at 1573031774683
+11-06 11:16:14.684 29826 29860 D Evaluation: 1 res for frame 704 received at 1573031774684
+11-06 11:16:14.720 29826 29860 D Evaluation: Frame 713 sent at 1573031774720
+11-06 11:16:14.721 29826 29860 D Evaluation: 1 res for frame 706 received at 1573031774721
+11-06 11:16:14.750 29826 29860 D Evaluation: Frame 714 sent at 1573031774750
+11-06 11:16:14.751 29826 29860 D Evaluation: 1 res for frame 706 received at 1573031774751
+11-06 11:16:14.783 29826 29860 D Evaluation: Frame 715 sent at 1573031774783
+11-06 11:16:14.784 29826 29860 D Evaluation: 1 res for frame 707 received at 1573031774784
+11-06 11:16:14.815 29826 29860 D Evaluation: Frame 716 sent at 1573031774815
+11-06 11:16:14.816 29826 29860 D Evaluation: 1 res for frame 708 received at 1573031774816
+11-06 11:16:14.851 29826 29860 D Evaluation: Frame 717 sent at 1573031774851
+11-06 11:16:14.853 29826 29860 D Evaluation: 1 res for frame 709 received at 1573031774853
+11-06 11:16:14.883 29826 29860 D Evaluation: Frame 718 sent at 1573031774883
+11-06 11:16:14.885 29826 29860 D Evaluation: 1 res for frame 710 received at 1573031774885
+11-06 11:16:14.925 29826 29860 D Evaluation: Frame 719 sent at 1573031774925
+11-06 11:16:14.926 29826 29860 D Evaluation: 1 res for frame 711 received at 1573031774926
+11-06 11:16:14.958 29826 29860 D Evaluation: Frame 720 sent at 1573031774958
+11-06 11:16:14.960 29826 29860 D Evaluation: 1 res for frame 712 received at 1573031774960
+11-06 11:16:14.985 29826 29860 D Evaluation: Frame 721 sent at 1573031774985
+11-06 11:16:14.987 29826 29860 D Evaluation: 1 res for frame 713 received at 1573031774986
+11-06 11:16:15.008 29826 29860 D Evaluation: Frame 722 sent at 1573031775008
+11-06 11:16:15.009 29826 29860 D Evaluation: 1 res for frame 714 received at 1573031775009
+11-06 11:16:15.042 29826 29860 D Evaluation: Frame 723 sent at 1573031775042
+11-06 11:16:15.044 29826 29860 D Evaluation: 1 res for frame 715 received at 1573031775044
+11-06 11:16:15.078 29826 29860 D Evaluation: Frame 724 sent at 1573031775078
+11-06 11:16:15.080 29826 29860 D Evaluation: 1 res for frame 716 received at 1573031775080
+11-06 11:16:15.110 29826 29837 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:16:15.110 29826 29860 D Evaluation: Frame 725 sent at 1573031775110
+11-06 11:16:15.112 29826 29860 D Evaluation: 1 res for frame 717 received at 1573031775112
+11-06 11:16:15.128 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:15.129 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 6 lines
+11-06 11:16:15.129 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:15.129 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:15.137 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 60 lines
+11-06 11:16:15.138 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:15.154 29826 29860 D Evaluation: Frame 726 sent at 1573031775154
+11-06 11:16:15.157 29826 29860 D Evaluation: 1 res for frame 718 received at 1573031775157
+11-06 11:16:15.174 29826 29860 D Evaluation: Frame 727 sent at 1573031775174
+11-06 11:16:15.176 29826 29860 D Evaluation: 1 res for frame 719 received at 1573031775176
+11-06 11:16:15.214 29826 29860 D Evaluation: Frame 728 sent at 1573031775214
+11-06 11:16:15.216 29826 29860 D Evaluation: 1 res for frame 720 received at 1573031775216
+11-06 11:16:15.262 29826 29860 D Evaluation: Frame 729 sent at 1573031775262
+11-06 11:16:15.263 29826 29860 D Evaluation: 1 res for frame 721 received at 1573031775263
+11-06 11:16:15.287 29826 29860 D Evaluation: Frame 731 sent at 1573031775287
+11-06 11:16:15.288 29826 29860 D Evaluation: 1 res for frame 722 received at 1573031775288
+11-06 11:16:15.305 29826 29860 D Evaluation: Frame 731 sent at 1573031775305
+11-06 11:16:15.307 29826 29860 D Evaluation: 1 res for frame 723 received at 1573031775307
+11-06 11:16:15.333 29826 29826 D Poster  : At 1573031775333 location is 65.05993543275409 (latitude), and 25.46863693017135 (longitude)
+11-06 11:16:15.336 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:16:15.375 29826 29860 D Evaluation: Frame 733 sent at 1573031775375
+11-06 11:16:15.377 29826 29860 D Evaluation: 1 res for frame 724 received at 1573031775377
+11-06 11:16:15.394 29826 29860 D Evaluation: Frame 733 sent at 1573031775394
+11-06 11:16:15.396 29826 29860 D Evaluation: 1 res for frame 725 received at 1573031775396
+11-06 11:16:15.411 29826 29860 D Evaluation: Frame 734 sent at 1573031775411
+11-06 11:16:15.412 29826 29860 D Evaluation: 1 res for frame 726 received at 1573031775412
+11-06 11:16:15.442 29826 29860 D Evaluation: Frame 735 sent at 1573031775442
+11-06 11:16:15.444 29826 29860 D Evaluation: 1 res for frame 727 received at 1573031775444
+11-06 11:16:15.481 29826 29860 D Evaluation: Frame 736 sent at 1573031775481
+11-06 11:16:15.482 29826 29860 D Evaluation: 1 res for frame 728 received at 1573031775482
+11-06 11:16:15.531 29826 29860 D Evaluation: Frame 737 sent at 1573031775531
+11-06 11:16:15.535 29826 29860 D Evaluation: 1 res for frame 729 received at 1573031775534
+11-06 11:16:15.563 29826 29860 D Evaluation: Frame 738 sent at 1573031775563
+11-06 11:16:15.565 29826 29860 D Evaluation: 1 res for frame 731 received at 1573031775565
+11-06 11:16:15.601 29826 29860 D Evaluation: Frame 740 sent at 1573031775601
+11-06 11:16:15.602 29826 29860 D Evaluation: 1 res for frame 731 received at 1573031775602
+11-06 11:16:15.619 29826 29860 D Evaluation: Frame 740 sent at 1573031775619
+11-06 11:16:15.620 29826 29860 D Evaluation: 1 res for frame 733 received at 1573031775620
+11-06 11:16:15.643 29826 29860 D Evaluation: Frame 741 sent at 1573031775643
+11-06 11:16:15.644 29826 29860 D Evaluation: 1 res for frame 733 received at 1573031775644
+11-06 11:16:15.682 29826 29860 D Evaluation: Frame 742 sent at 1573031775682
+11-06 11:16:15.683 29826 29860 D Evaluation: 1 res for frame 734 received at 1573031775683
+11-06 11:16:15.721 29826 29860 D Evaluation: Frame 743 sent at 1573031775721
+11-06 11:16:15.723 29826 29860 D Evaluation: 1 res for frame 735 received at 1573031775723
+11-06 11:16:15.754 29826 29860 D Evaluation: Frame 744 sent at 1573031775754
+11-06 11:16:15.756 29826 29860 D Evaluation: 1 res for frame 736 received at 1573031775756
+11-06 11:16:15.781 29826 29860 D Evaluation: Frame 745 sent at 1573031775781
+11-06 11:16:15.783 29826 29860 D Evaluation: 1 res for frame 737 received at 1573031775783
+11-06 11:16:15.821 29826 29860 D Evaluation: Frame 746 sent at 1573031775821
+11-06 11:16:15.824 29826 29860 D Evaluation: 1 res for frame 738 received at 1573031775824
+11-06 11:16:15.858 29826 29860 D Evaluation: Frame 747 sent at 1573031775858
+11-06 11:16:15.860 29826 29860 D Evaluation: 1 res for frame 740 received at 1573031775860
+11-06 11:16:15.905 29826 29860 D Evaluation: Frame 749 sent at 1573031775905
+11-06 11:16:15.909 29826 29860 D Evaluation: 1 res for frame 740 received at 1573031775909
+11-06 11:16:15.936 29826 29860 D Evaluation: Frame 749 sent at 1573031775936
+11-06 11:16:15.938 29826 29860 D Evaluation: 1 res for frame 741 received at 1573031775938
+11-06 11:16:15.962 29826 29860 D Evaluation: Frame 751 sent at 1573031775962
+11-06 11:16:15.964 29826 29860 D Evaluation: 1 res for frame 742 received at 1573031775964
+11-06 11:16:15.984 29826 29860 D Evaluation: Frame 751 sent at 1573031775984
+11-06 11:16:15.986 29826 29860 D Evaluation: 1 res for frame 743 received at 1573031775986
+11-06 11:16:16.017 29826 29860 D Evaluation: Frame 752 sent at 1573031776017
+11-06 11:16:16.019 29826 29860 D Evaluation: 1 res for frame 744 received at 1573031776019
+11-06 11:16:16.055 29826 29860 D Evaluation: Frame 753 sent at 1573031776055
+11-06 11:16:16.057 29826 29860 D Evaluation: 1 res for frame 745 received at 1573031776056
+11-06 11:16:16.097 29826 29860 D Evaluation: Frame 754 sent at 1573031776097
+11-06 11:16:16.099 29826 29860 D Evaluation: 1 res for frame 746 received at 1573031776099
+11-06 11:16:16.125 29826 29860 D Evaluation: Frame 755 sent at 1573031776125
+11-06 11:16:16.126 29826 29860 D Evaluation: 1 res for frame 747 received at 1573031776126
+11-06 11:16:16.159 29826 29860 D Evaluation: Frame 756 sent at 1573031776159
+11-06 11:16:16.161 29826 29860 D Evaluation: 1 res for frame 749 received at 1573031776161
+11-06 11:16:16.192 29826 29860 D Evaluation: Frame 757 sent at 1573031776192
+11-06 11:16:16.194 29826 29860 D Evaluation: 1 res for frame 749 received at 1573031776194
+11-06 11:16:16.229 29826 29860 D Evaluation: Frame 758 sent at 1573031776229
+11-06 11:16:16.231 29826 29860 D Evaluation: 1 res for frame 751 received at 1573031776231
+11-06 11:16:16.267 29826 29860 D Evaluation: Frame 759 sent at 1573031776267
+11-06 11:16:16.269 29826 29860 D Evaluation: 1 res for frame 751 received at 1573031776269
+11-06 11:16:16.288 29826 29860 D Evaluation: Frame 760 sent at 1573031776288
+11-06 11:16:16.290 29826 29860 D Evaluation: 1 res for frame 752 received at 1573031776290
+11-06 11:16:16.318 29826 29860 D Evaluation: Frame 761 sent at 1573031776318
+11-06 11:16:16.318 29826 29837 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:16:16.321 29826 29860 D Evaluation: 1 res for frame 753 received at 1573031776320
+11-06 11:16:16.334 29826 29826 D Poster  : At 1573031776333 location is 65.05993543275409 (latitude), and 25.46863693017135 (longitude)
+11-06 11:16:16.336 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:16:16.349 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:16.349 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:16.350 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:16.350 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-06 11:16:16.350 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:16.350 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:16.350 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-06 11:16:16.350 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:16.350 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:16.350 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-06 11:16:16.351 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:16.351 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:16.351 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:16.351 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-06 11:16:16.351 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:16.351 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:16.351 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:16.351 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:16.351 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:16.351 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:16.351 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:16.351 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-06 11:16:16.351 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:16.351 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:16.352 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 19 lines
+11-06 11:16:16.352 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:16.352 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:16.353 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 21 lines
+11-06 11:16:16.353 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:16.364 29826 29860 D Evaluation: Frame 763 sent at 1573031776364
+11-06 11:16:16.366 29826 29860 D Evaluation: 1 res for frame 754 received at 1573031776366
+11-06 11:16:16.384 29826 29860 D Evaluation: Frame 763 sent at 1573031776384
+11-06 11:16:16.385 29826 29860 D Evaluation: 1 res for frame 755 received at 1573031776385
+11-06 11:16:16.420 29826 29860 D Evaluation: Frame 764 sent at 1573031776420
+11-06 11:16:16.421 29826 29860 D Evaluation: 1 res for frame 756 received at 1573031776421
+11-06 11:16:16.457 29826 29860 D Evaluation: Frame 765 sent at 1573031776457
+11-06 11:16:16.459 29826 29860 D Evaluation: 1 res for frame 757 received at 1573031776459
+11-06 11:16:16.498 29826 29860 D Evaluation: Frame 766 sent at 1573031776498
+11-06 11:16:16.500 29826 29860 D Evaluation: 1 res for frame 758 received at 1573031776500
+11-06 11:16:16.532 29826 29860 D Evaluation: Frame 767 sent at 1573031776532
+11-06 11:16:16.534 29826 29860 D Evaluation: 1 res for frame 759 received at 1573031776534
+11-06 11:16:16.560 29826 29860 D Evaluation: Frame 768 sent at 1573031776560
+11-06 11:16:16.562 29826 29860 D Evaluation: 1 res for frame 760 received at 1573031776562
+11-06 11:16:16.588 29826 29860 D Evaluation: Frame 769 sent at 1573031776588
+11-06 11:16:16.590 29826 29860 D Evaluation: 1 res for frame 761 received at 1573031776590
+11-06 11:16:16.625 29826 29860 D Evaluation: Frame 770 sent at 1573031776625
+11-06 11:16:16.626 29826 29860 D Evaluation: 1 res for frame 763 received at 1573031776626
+11-06 11:16:16.662 29826 29860 D Evaluation: Frame 771 sent at 1573031776662
+11-06 11:16:16.664 29826 29860 D Evaluation: 1 res for frame 763 received at 1573031776664
+11-06 11:16:16.700 29826 29860 D Evaluation: Frame 772 sent at 1573031776700
+11-06 11:16:16.703 29826 29860 D Evaluation: 1 res for frame 764 received at 1573031776703
+11-06 11:16:16.742 29826 29860 D Evaluation: Frame 773 sent at 1573031776742
+11-06 11:16:16.743 29826 29860 D Evaluation: 1 res for frame 765 received at 1573031776743
+11-06 11:16:16.779 29826 29860 D Evaluation: Frame 774 sent at 1573031776779
+11-06 11:16:16.782 29826 29860 D Evaluation: 1 res for frame 766 received at 1573031776782
+11-06 11:16:16.810 29826 29860 D Evaluation: Frame 775 sent at 1573031776810
+11-06 11:16:16.812 29826 29860 D Evaluation: 1 res for frame 767 received at 1573031776812
+11-06 11:16:16.838 29826 29860 D Evaluation: Frame 776 sent at 1573031776838
+11-06 11:16:16.840 29826 29860 D Evaluation: 1 res for frame 768 received at 1573031776840
+11-06 11:16:16.864 29826 29860 D Evaluation: Frame 777 sent at 1573031776864
+11-06 11:16:16.866 29826 29860 D Evaluation: 1 res for frame 769 received at 1573031776866
+11-06 11:16:16.894 29826 29860 D Evaluation: Frame 778 sent at 1573031776894
+11-06 11:16:16.896 29826 29860 D Evaluation: 1 res for frame 770 received at 1573031776896
+11-06 11:16:16.921 29826 29860 D Evaluation: Frame 779 sent at 1573031776921
+11-06 11:16:16.922 29826 29860 D Evaluation: 1 res for frame 771 received at 1573031776922
+11-06 11:16:16.959 29826 29860 D Evaluation: Frame 780 sent at 1573031776959
+11-06 11:16:16.961 29826 29860 D Evaluation: 1 res for frame 772 received at 1573031776961
+11-06 11:16:16.995 29826 29860 D Evaluation: Frame 781 sent at 1573031776995
+11-06 11:16:16.997 29826 29860 D Evaluation: 1 res for frame 773 received at 1573031776997
+11-06 11:16:17.024 29826 29860 D Evaluation: Frame 782 sent at 1573031777024
+11-06 11:16:17.026 29826 29860 D Evaluation: 1 res for frame 774 received at 1573031777026
+11-06 11:16:17.076 29826 29860 D Evaluation: Frame 783 sent at 1573031777076
+11-06 11:16:17.077 29826 29860 D Evaluation: 1 res for frame 775 received at 1573031777077
+11-06 11:16:17.100 29826 29860 D Evaluation: Frame 784 sent at 1573031777100
+11-06 11:16:17.102 29826 29860 D Evaluation: 1 res for frame 776 received at 1573031777102
+11-06 11:16:17.126 29826 29860 D Evaluation: Frame 785 sent at 1573031777126
+11-06 11:16:17.127 29826 29860 D Evaluation: 1 res for frame 777 received at 1573031777127
+11-06 11:16:17.161 29826 29860 D Evaluation: Frame 786 sent at 1573031777161
+11-06 11:16:17.163 29826 29860 D Evaluation: 1 res for frame 778 received at 1573031777163
+11-06 11:16:17.190 29826 29860 D Evaluation: Frame 787 sent at 1573031777190
+11-06 11:16:17.191 29826 29860 D Evaluation: 1 res for frame 779 received at 1573031777191
+11-06 11:16:17.230 29826 29860 D Evaluation: Frame 788 sent at 1573031777230
+11-06 11:16:17.232 29826 29860 D Evaluation: 1 res for frame 780 received at 1573031777232
+11-06 11:16:17.263 29826 29860 D Evaluation: Frame 789 sent at 1573031777263
+11-06 11:16:17.264 29826 29860 D Evaluation: 1 res for frame 781 received at 1573031777264
+11-06 11:16:17.301 29826 29860 D Evaluation: Frame 790 sent at 1573031777301
+11-06 11:16:17.303 29826 29860 D Evaluation: 1 res for frame 782 received at 1573031777303
+11-06 11:16:17.335 29826 29860 D Evaluation: Frame 791 sent at 1573031777335
+11-06 11:16:17.337 29826 29860 D Evaluation: 1 res for frame 783 received at 1573031777337
+11-06 11:16:17.337 29826 29826 D Poster  : At 1573031777337 location is 65.05993543275409 (latitude), and 25.46863693017135 (longitude)
+11-06 11:16:17.340 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:16:17.396 29826 29860 D Evaluation: Frame 792 sent at 1573031777396
+11-06 11:16:17.397 29826 29860 D Evaluation: 1 res for frame 784 received at 1573031777397
+11-06 11:16:17.441 29826 29860 D Evaluation: Frame 793 sent at 1573031777441
+11-06 11:16:17.443 29826 29860 D Evaluation: 1 res for frame 785 received at 1573031777443
+11-06 11:16:17.466 29826 29860 D Evaluation: Frame 794 sent at 1573031777466
+11-06 11:16:17.468 29826 29860 D Evaluation: 1 res for frame 786 received at 1573031777467
+11-06 11:16:17.503 29826 29860 D Evaluation: Frame 795 sent at 1573031777503
+11-06 11:16:17.504 29826 29860 D Evaluation: 1 res for frame 787 received at 1573031777504
+11-06 11:16:17.540 29826 29860 D Evaluation: Frame 796 sent at 1573031777540
+11-06 11:16:17.542 29826 29860 D Evaluation: 1 res for frame 788 received at 1573031777542
+11-06 11:16:17.542 29826 29837 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:16:17.568 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:17.568 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:17.569 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:17.569 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-06 11:16:17.569 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:17.569 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:17.569 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 8 lines
+11-06 11:16:17.570 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:17.570 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:17.570 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:17.570 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:17.570 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-06 11:16:17.570 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:17.570 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:17.570 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:17.571 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:17.571 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:17.571 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:17.571 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:17.571 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:17.571 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:17.571 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:17.571 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:17.571 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:17.572 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:17.573 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 22 lines
+11-06 11:16:17.573 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:17.573 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:17.573 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 8 lines
+11-06 11:16:17.573 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:17.573 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:17.573 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:17.573 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-06 11:16:17.573 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:17.579 29826 29860 D Evaluation: Frame 797 sent at 1573031777579
+11-06 11:16:17.581 29826 29860 D Evaluation: 1 res for frame 789 received at 1573031777581
+11-06 11:16:17.603 29826 29860 D Evaluation: Frame 798 sent at 1573031777603
+11-06 11:16:17.605 29826 29860 D Evaluation: 1 res for frame 790 received at 1573031777605
+11-06 11:16:17.634 29826 29860 D Evaluation: Frame 799 sent at 1573031777634
+11-06 11:16:17.636 29826 29860 D Evaluation: 1 res for frame 791 received at 1573031777636
+11-06 11:16:17.663 29826 29860 D Evaluation: Frame 800 sent at 1573031777663
+11-06 11:16:17.664 29826 29860 D Evaluation: 1 res for frame 792 received at 1573031777664
+11-06 11:16:17.696 29826 29860 D Evaluation: Frame 801 sent at 1573031777696
+11-06 11:16:17.698 29826 29860 D Evaluation: 1 res for frame 793 received at 1573031777698
+11-06 11:16:17.731 29826 29860 D Evaluation: Frame 802 sent at 1573031777731
+11-06 11:16:17.733 29826 29860 D Evaluation: 1 res for frame 794 received at 1573031777732
+11-06 11:16:17.760 29826 29860 D Evaluation: Frame 803 sent at 1573031777760
+11-06 11:16:17.761 29826 29860 D Evaluation: 1 res for frame 795 received at 1573031777761
+11-06 11:16:17.799 29826 29860 D Evaluation: Frame 804 sent at 1573031777799
+11-06 11:16:17.801 29826 29860 D Evaluation: 1 res for frame 796 received at 1573031777801
+11-06 11:16:17.832 29826 29860 D Evaluation: Frame 805 sent at 1573031777832
+11-06 11:16:17.833 29826 29860 D Evaluation: 1 res for frame 797 received at 1573031777833
+11-06 11:16:17.877 29826 29860 D Evaluation: Frame 806 sent at 1573031777877
+11-06 11:16:17.879 29826 29860 D Evaluation: 1 res for frame 798 received at 1573031777879
+11-06 11:16:17.898 29826 29860 D Evaluation: Frame 807 sent at 1573031777898
+11-06 11:16:17.899 29826 29860 D Evaluation: 1 res for frame 799 received at 1573031777899
+11-06 11:16:17.940 29826 29860 D Evaluation: Frame 808 sent at 1573031777940
+11-06 11:16:17.942 29826 29860 D Evaluation: 1 res for frame 800 received at 1573031777942
+11-06 11:16:17.967 29826 29860 D Evaluation: Frame 809 sent at 1573031777967
+11-06 11:16:17.969 29826 29860 D Evaluation: 1 res for frame 801 received at 1573031777969
+11-06 11:16:17.996 29826 29860 D Evaluation: Frame 810 sent at 1573031777996
+11-06 11:16:17.998 29826 29860 D Evaluation: 1 res for frame 802 received at 1573031777998
+11-06 11:16:18.028 29826 29860 D Evaluation: Frame 811 sent at 1573031778028
+11-06 11:16:18.030 29826 29860 D Evaluation: 1 res for frame 803 received at 1573031778030
+11-06 11:16:18.074 29826 29860 D Evaluation: Frame 812 sent at 1573031778074
+11-06 11:16:18.076 29826 29860 D Evaluation: 1 res for frame 804 received at 1573031778076
+11-06 11:16:18.116 29826 29860 D Evaluation: Frame 814 sent at 1573031778116
+11-06 11:16:18.118 29826 29860 D Evaluation: 1 res for frame 805 received at 1573031778118
+11-06 11:16:18.139 29826 29860 D Evaluation: Frame 814 sent at 1573031778139
+11-06 11:16:18.141 29826 29860 D Evaluation: 1 res for frame 806 received at 1573031778141
+11-06 11:16:18.167 29826 29860 D Evaluation: Frame 815 sent at 1573031778167
+11-06 11:16:18.169 29826 29860 D Evaluation: 1 res for frame 807 received at 1573031778169
+11-06 11:16:18.204 29826 29860 D Evaluation: Frame 816 sent at 1573031778204
+11-06 11:16:18.206 29826 29860 D Evaluation: 1 res for frame 808 received at 1573031778206
+11-06 11:16:18.241 29826 29860 D Evaluation: Frame 817 sent at 1573031778241
+11-06 11:16:18.243 29826 29860 D Evaluation: 1 res for frame 809 received at 1573031778243
+11-06 11:16:18.284 29826 29860 D Evaluation: Frame 819 sent at 1573031778284
+11-06 11:16:18.285 29826 29860 D Evaluation: 1 res for frame 810 received at 1573031778285
+11-06 11:16:18.307 29826 29860 D Evaluation: Frame 819 sent at 1573031778307
+11-06 11:16:18.308 29826 29860 D Evaluation: 1 res for frame 811 received at 1573031778308
+11-06 11:16:18.337 29826 29826 D Poster  : At 1573031778336 location is 65.05993543275409 (latitude), and 25.46863693017135 (longitude)
+11-06 11:16:18.338 29826 29860 D Evaluation: Frame 820 sent at 1573031778338
+11-06 11:16:18.339 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:16:18.339 29826 29860 D Evaluation: 1 res for frame 812 received at 1573031778339
+11-06 11:16:18.373 29826 29860 D Evaluation: Frame 821 sent at 1573031778373
+11-06 11:16:18.375 29826 29860 D Evaluation: 1 res for frame 814 received at 1573031778375
+11-06 11:16:18.410 29826 29860 D Evaluation: Frame 822 sent at 1573031778410
+11-06 11:16:18.412 29826 29860 D Evaluation: 1 res for frame 814 received at 1573031778412
+11-06 11:16:18.440 29826 29860 D Evaluation: Frame 823 sent at 1573031778439
+11-06 11:16:18.441 29826 29860 D Evaluation: 1 res for frame 815 received at 1573031778441
+11-06 11:16:18.482 29826 29860 D Evaluation: Frame 825 sent at 1573031778482
+11-06 11:16:18.483 29826 29860 D Evaluation: 1 res for frame 816 received at 1573031778483
+11-06 11:16:18.504 29826 29860 D Evaluation: Frame 825 sent at 1573031778504
+11-06 11:16:18.506 29826 29860 D Evaluation: 1 res for frame 817 received at 1573031778506
+11-06 11:16:18.548 29826 29860 D Evaluation: Frame 826 sent at 1573031778548
+11-06 11:16:18.550 29826 29860 D Evaluation: 1 res for frame 819 received at 1573031778550
+11-06 11:16:18.584 29826 29860 D Evaluation: Frame 827 sent at 1573031778584
+11-06 11:16:18.586 29826 29860 D Evaluation: 1 res for frame 819 received at 1573031778586
+11-06 11:16:18.620 29826 29860 D Evaluation: Frame 828 sent at 1573031778619
+11-06 11:16:18.622 29826 29860 D Evaluation: 1 res for frame 820 received at 1573031778622
+11-06 11:16:18.649 29826 29860 D Evaluation: Frame 830 sent at 1573031778648
+11-06 11:16:18.650 29826 29860 D Evaluation: 1 res for frame 821 received at 1573031778650
+11-06 11:16:18.672 29826 29860 D Evaluation: Frame 830 sent at 1573031778672
+11-06 11:16:18.673 29826 29860 D Evaluation: 1 res for frame 822 received at 1573031778673
+11-06 11:16:18.700 29826 29837 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:16:18.700 29826 29860 D Evaluation: Frame 831 sent at 1573031778700
+11-06 11:16:18.702 29826 29860 D Evaluation: 1 res for frame 823 received at 1573031778702
+11-06 11:16:18.720 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:18.721 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 4 lines
+11-06 11:16:18.721 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:18.721 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:18.721 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:18.728 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 59 lines
+11-06 11:16:18.728 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:18.743 29826 29860 D Evaluation: Frame 832 sent at 1573031778743
+11-06 11:16:18.745 29826 29860 D Evaluation: 1 res for frame 825 received at 1573031778745
+11-06 11:16:18.774 29826 29860 D Evaluation: Frame 833 sent at 1573031778774
+11-06 11:16:18.775 29826 29860 D Evaluation: 1 res for frame 825 received at 1573031778775
+11-06 11:16:18.806 29826 29860 D Evaluation: Frame 834 sent at 1573031778806
+11-06 11:16:18.807 29826 29860 D Evaluation: 1 res for frame 826 received at 1573031778807
+11-06 11:16:18.850 29826 29860 D Evaluation: Frame 835 sent at 1573031778850
+11-06 11:16:18.852 29826 29860 D Evaluation: 1 res for frame 827 received at 1573031778852
+11-06 11:16:18.872 29826 29860 D Evaluation: Frame 836 sent at 1573031778872
+11-06 11:16:18.873 29826 29860 D Evaluation: 1 res for frame 828 received at 1573031778873
+11-06 11:16:18.907 29826 29860 D Evaluation: Frame 837 sent at 1573031778907
+11-06 11:16:18.908 29826 29860 D Evaluation: 1 res for frame 830 received at 1573031778908
+11-06 11:16:18.954 29826 29860 D Evaluation: Frame 838 sent at 1573031778954
+11-06 11:16:18.955 29826 29860 D Evaluation: 1 res for frame 830 received at 1573031778955
+11-06 11:16:18.984 29826 29860 D Evaluation: Frame 839 sent at 1573031778984
+11-06 11:16:18.986 29826 29860 D Evaluation: 1 res for frame 831 received at 1573031778986
+11-06 11:16:19.010 29826 29860 D Evaluation: Frame 840 sent at 1573031779010
+11-06 11:16:19.012 29826 29860 D Evaluation: 1 res for frame 832 received at 1573031779012
+11-06 11:16:19.037 29826 29860 D Evaluation: Frame 841 sent at 1573031779037
+11-06 11:16:19.038 29826 29860 D Evaluation: 1 res for frame 833 received at 1573031779038
+11-06 11:16:19.079 29826 29860 D Evaluation: Frame 842 sent at 1573031779079
+11-06 11:16:19.081 29826 29860 D Evaluation: 1 res for frame 834 received at 1573031779081
+11-06 11:16:19.121 29826 29860 D Evaluation: Frame 843 sent at 1573031779121
+11-06 11:16:19.123 29826 29860 D Evaluation: 1 res for frame 835 received at 1573031779123
+11-06 11:16:19.147 29826 29860 D Evaluation: Frame 844 sent at 1573031779147
+11-06 11:16:19.148 29826 29860 D Evaluation: 1 res for frame 836 received at 1573031779148
+11-06 11:16:19.175 29826 29860 D Evaluation: Frame 845 sent at 1573031779175
+11-06 11:16:19.176 29826 29860 D Evaluation: 1 res for frame 837 received at 1573031779176
+11-06 11:16:19.208 29826 29860 D Evaluation: Frame 846 sent at 1573031779208
+11-06 11:16:19.210 29826 29860 D Evaluation: 1 res for frame 838 received at 1573031779210
+11-06 11:16:19.243 29826 29860 D Evaluation: Frame 847 sent at 1573031779243
+11-06 11:16:19.244 29826 29860 D Evaluation: 1 res for frame 839 received at 1573031779244
+11-06 11:16:19.287 29826 29860 D Evaluation: Frame 848 sent at 1573031779287
+11-06 11:16:19.289 29826 29860 D Evaluation: 1 res for frame 840 received at 1573031779289
+11-06 11:16:19.318 29826 29860 D Evaluation: Frame 849 sent at 1573031779318
+11-06 11:16:19.320 29826 29860 D Evaluation: 1 res for frame 841 received at 1573031779320
+11-06 11:16:19.330 29826 29826 D Poster  : At 1573031779329 location is 65.05993543275409 (latitude), and 25.46863693017135 (longitude)
+11-06 11:16:19.333 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:16:19.372 29826 29860 D Evaluation: Frame 850 sent at 1573031779372
+11-06 11:16:19.375 29826 29860 D Evaluation: 1 res for frame 842 received at 1573031779375
+11-06 11:16:19.411 29826 29860 D Evaluation: Frame 851 sent at 1573031779411
+11-06 11:16:19.413 29826 29860 D Evaluation: 1 res for frame 843 received at 1573031779413
+11-06 11:16:19.455 29826 29860 D Evaluation: Frame 852 sent at 1573031779455
+11-06 11:16:19.457 29826 29860 D Evaluation: 1 res for frame 844 received at 1573031779457
+11-06 11:16:19.476 29826 29860 D Evaluation: Frame 853 sent at 1573031779476
+11-06 11:16:19.478 29826 29860 D Evaluation: 1 res for frame 845 received at 1573031779478
+11-06 11:16:19.502 29826 29860 D Evaluation: Frame 854 sent at 1573031779501
+11-06 11:16:19.503 29826 29860 D Evaluation: 1 res for frame 846 received at 1573031779503
+11-06 11:16:19.552 29826 29860 D Evaluation: Frame 855 sent at 1573031779552
+11-06 11:16:19.554 29826 29860 D Evaluation: 1 res for frame 847 received at 1573031779554
+11-06 11:16:19.586 29826 29860 D Evaluation: Frame 856 sent at 1573031779586
+11-06 11:16:19.587 29826 29860 D Evaluation: 1 res for frame 848 received at 1573031779587
+11-06 11:16:19.638 29826 29860 D Evaluation: Frame 857 sent at 1573031779638
+11-06 11:16:19.640 29826 29860 D Evaluation: 1 res for frame 849 received at 1573031779640
+11-06 11:16:19.685 29826 29860 D Evaluation: Frame 858 sent at 1573031779685
+11-06 11:16:19.686 29826 29860 D Evaluation: 1 res for frame 850 received at 1573031779686
+11-06 11:16:19.723 29826 29860 D Evaluation: Frame 859 sent at 1573031779722
+11-06 11:16:19.724 29826 29860 D Evaluation: 1 res for frame 851 received at 1573031779724
+11-06 11:16:19.762 29826 29860 D Evaluation: Frame 861 sent at 1573031779762
+11-06 11:16:19.764 29826 29860 D Evaluation: 1 res for frame 852 received at 1573031779764
+11-06 11:16:19.782 29826 29860 D Evaluation: Frame 861 sent at 1573031779782
+11-06 11:16:19.784 29826 29860 D Evaluation: 1 res for frame 853 received at 1573031779784
+11-06 11:16:19.815 29826 29860 D Evaluation: Frame 862 sent at 1573031779815
+11-06 11:16:19.817 29826 29860 D Evaluation: 1 res for frame 854 received at 1573031779817
+11-06 11:16:19.839 29826 29860 D Evaluation: Frame 863 sent at 1573031779839
+11-06 11:16:19.840 29826 29860 D Evaluation: 1 res for frame 855 received at 1573031779840
+11-06 11:16:19.882 29826 29860 D Evaluation: Frame 864 sent at 1573031779882
+11-06 11:16:19.884 29826 29860 D Evaluation: 1 res for frame 856 received at 1573031779884
+11-06 11:16:19.916 29826 29860 D Evaluation: Frame 865 sent at 1573031779916
+11-06 11:16:19.918 29826 29860 D Evaluation: 1 res for frame 857 received at 1573031779918
+11-06 11:16:19.949 29826 29837 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:16:19.950 29826 29860 D Evaluation: Frame 866 sent at 1573031779950
+11-06 11:16:19.952 29826 29860 D Evaluation: 1 res for frame 858 received at 1573031779952
+11-06 11:16:19.976 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:19.977 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 26 lines
+11-06 11:16:19.977 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:19.977 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:19.977 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 4 lines
+11-06 11:16:19.977 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:19.978 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:19.978 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-06 11:16:19.978 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:19.978 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:19.979 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 30 lines
+11-06 11:16:19.979 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:20.001 29826 29860 D Evaluation: Frame 868 sent at 1573031780001
+11-06 11:16:20.002 29826 29860 D Evaluation: 1 res for frame 859 received at 1573031780002
+11-06 11:16:20.020 29826 29860 D Evaluation: Frame 868 sent at 1573031780020
+11-06 11:16:20.021 29826 29860 D Evaluation: 1 res for frame 861 received at 1573031780021
+11-06 11:16:20.053 29826 29860 D Evaluation: Frame 869 sent at 1573031780053
+11-06 11:16:20.055 29826 29860 D Evaluation: 1 res for frame 861 received at 1573031780055
+11-06 11:16:20.092 29826 29860 D Evaluation: Frame 870 sent at 1573031780092
+11-06 11:16:20.094 29826 29860 D Evaluation: 1 res for frame 862 received at 1573031780093
+11-06 11:16:20.125 29826 29860 D Evaluation: Frame 871 sent at 1573031780125
+11-06 11:16:20.127 29826 29860 D Evaluation: 1 res for frame 863 received at 1573031780127
+11-06 11:16:20.151 29826 29860 D Evaluation: Frame 872 sent at 1573031780151
+11-06 11:16:20.153 29826 29860 D Evaluation: 1 res for frame 864 received at 1573031780153
+11-06 11:16:20.177 29826 29860 D Evaluation: Frame 873 sent at 1573031780177
+11-06 11:16:20.178 29826 29860 D Evaluation: 1 res for frame 865 received at 1573031780178
+11-06 11:16:20.228 29826 29860 D Evaluation: Frame 874 sent at 1573031780228
+11-06 11:16:20.230 29826 29860 D Evaluation: 1 res for frame 866 received at 1573031780230
+11-06 11:16:20.260 29826 29860 D Evaluation: Frame 875 sent at 1573031780260
+11-06 11:16:20.262 29826 29860 D Evaluation: 1 res for frame 868 received at 1573031780262
+11-06 11:16:20.283 29826 29860 D Evaluation: Frame 876 sent at 1573031780283
+11-06 11:16:20.284 29826 29860 D Evaluation: 1 res for frame 868 received at 1573031780284
+11-06 11:16:20.313 29826 29860 D Evaluation: Frame 877 sent at 1573031780313
+11-06 11:16:20.315 29826 29860 D Evaluation: 1 res for frame 869 received at 1573031780315
+11-06 11:16:20.330 29826 29826 D Poster  : At 1573031780330 location is 65.05993543275409 (latitude), and 25.46863693017135 (longitude)
+11-06 11:16:20.335 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:16:20.360 29826 29860 D Evaluation: Frame 878 sent at 1573031780360
+11-06 11:16:20.362 29826 29860 D Evaluation: 1 res for frame 870 received at 1573031780362
+11-06 11:16:20.385 29826 29860 D Evaluation: Frame 879 sent at 1573031780385
+11-06 11:16:20.387 29826 29860 D Evaluation: 1 res for frame 871 received at 1573031780387
+11-06 11:16:20.420 29826 29860 D Evaluation: Frame 880 sent at 1573031780420
+11-06 11:16:20.422 29826 29860 D Evaluation: 1 res for frame 872 received at 1573031780422
+11-06 11:16:20.457 29826 29860 D Evaluation: Frame 881 sent at 1573031780457
+11-06 11:16:20.459 29826 29860 D Evaluation: 1 res for frame 873 received at 1573031780459
+11-06 11:16:20.483 29826 29860 D Evaluation: Frame 882 sent at 1573031780483
+11-06 11:16:20.484 29826 29860 D Evaluation: 1 res for frame 874 received at 1573031780484
+11-06 11:16:20.523 29826 29860 D Evaluation: Frame 883 sent at 1573031780523
+11-06 11:16:20.525 29826 29860 D Evaluation: 1 res for frame 875 received at 1573031780525
+11-06 11:16:20.551 29826 29860 D Evaluation: Frame 884 sent at 1573031780551
+11-06 11:16:20.553 29826 29860 D Evaluation: 1 res for frame 876 received at 1573031780553
+11-06 11:16:20.607 29826 29860 D Evaluation: Frame 886 sent at 1573031780607
+11-06 11:16:20.609 29826 29860 D Evaluation: 1 res for frame 877 received at 1573031780609
+11-06 11:16:20.630 29826 29860 D Evaluation: Frame 887 sent at 1573031780630
+11-06 11:16:20.632 29826 29860 D Evaluation: 1 res for frame 878 received at 1573031780632
+11-06 11:16:20.650 29826 29860 D Evaluation: Frame 887 sent at 1573031780650
+11-06 11:16:20.652 29826 29860 D Evaluation: 1 res for frame 879 received at 1573031780652
+11-06 11:16:20.690 29826 29860 D Evaluation: Frame 888 sent at 1573031780690
+11-06 11:16:20.691 29826 29860 D Evaluation: 1 res for frame 880 received at 1573031780691
+11-06 11:16:20.721 29826 29860 D Evaluation: Frame 889 sent at 1573031780721
+11-06 11:16:20.723 29826 29860 D Evaluation: 1 res for frame 881 received at 1573031780723
+11-06 11:16:20.755 29826 29860 D Evaluation: Frame 890 sent at 1573031780755
+11-06 11:16:20.756 29826 29860 D Evaluation: 1 res for frame 882 received at 1573031780756
+11-06 11:16:20.787 29826 29860 D Evaluation: Frame 891 sent at 1573031780787
+11-06 11:16:20.789 29826 29860 D Evaluation: 1 res for frame 883 received at 1573031780789
+11-06 11:16:20.824 29826 29860 D Evaluation: Frame 892 sent at 1573031780824
+11-06 11:16:20.826 29826 29860 D Evaluation: 1 res for frame 884 received at 1573031780826
+11-06 11:16:20.857 29826 29860 D Evaluation: Frame 893 sent at 1573031780857
+11-06 11:16:20.859 29826 29860 D Evaluation: 1 res for frame 886 received at 1573031780859
+11-06 11:16:20.894 29826 29860 D Evaluation: Frame 894 sent at 1573031780894
+11-06 11:16:20.896 29826 29860 D Evaluation: 1 res for frame 887 received at 1573031780896
+11-06 11:16:20.924 29826 29860 D Evaluation: Frame 895 sent at 1573031780924
+11-06 11:16:20.925 29826 29860 D Evaluation: 1 res for frame 887 received at 1573031780925
+11-06 11:16:20.958 29826 29860 D Evaluation: Frame 896 sent at 1573031780958
+11-06 11:16:20.960 29826 29860 D Evaluation: 1 res for frame 888 received at 1573031780960
+11-06 11:16:20.996 29826 29860 D Evaluation: Frame 897 sent at 1573031780996
+11-06 11:16:20.998 29826 29860 D Evaluation: 1 res for frame 889 received at 1573031780998
+11-06 11:16:21.027 29826 29860 D Evaluation: Frame 898 sent at 1573031781027
+11-06 11:16:21.029 29826 29860 D Evaluation: 1 res for frame 890 received at 1573031781029
+11-06 11:16:21.058 29826 29860 D Evaluation: Frame 899 sent at 1573031781058
+11-06 11:16:21.060 29826 29860 D Evaluation: 1 res for frame 891 received at 1573031781060
+11-06 11:16:21.098 29826 29860 D Evaluation: Frame 900 sent at 1573031781098
+11-06 11:16:21.100 29826 29860 D Evaluation: 1 res for frame 892 received at 1573031781100
+11-06 11:16:21.137 29826 29860 D Evaluation: Frame 901 sent at 1573031781137
+11-06 11:16:21.139 29826 29860 D Evaluation: 1 res for frame 893 received at 1573031781139
+11-06 11:16:21.159 29826 29837 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:16:21.159 29826 29860 D Evaluation: Frame 902 sent at 1573031781159
+11-06 11:16:21.160 29826 29860 D Evaluation: 1 res for frame 894 received at 1573031781160
+11-06 11:16:21.185 29826 29860 D Evaluation: Frame 903 sent at 1573031781185
+11-06 11:16:21.186 29826 29860 D Evaluation: 1 res for frame 895 received at 1573031781186
+11-06 11:16:21.188 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.188 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.188 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.188 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.188 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-06 11:16:21.188 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.188 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.188 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.188 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.188 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.188 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.188 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-06 11:16:21.188 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.188 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.189 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.189 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.189 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.189 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-06 11:16:21.189 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.189 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.189 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 12 lines
+11-06 11:16:21.189 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.189 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.189 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.190 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.190 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.190 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.190 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-06 11:16:21.190 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.190 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.190 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.190 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.190 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.190 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-06 11:16:21.190 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.190 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.190 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-06 11:16:21.190 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.190 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.191 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 14 lines
+11-06 11:16:21.191 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:21.216 29826 29860 D Evaluation: Frame 904 sent at 1573031781216
+11-06 11:16:21.217 29826 29860 D Evaluation: 1 res for frame 896 received at 1573031781217
+11-06 11:16:21.255 29826 29860 D Evaluation: Frame 905 sent at 1573031781255
+11-06 11:16:21.257 29826 29860 D Evaluation: 0 res for frame 897 received at 1573031781257
+11-06 11:16:21.298 29826 29860 D Evaluation: Frame 906 sent at 1573031781298
+11-06 11:16:21.300 29826 29860 D Evaluation: 1 res for frame 898 received at 1573031781300
+11-06 11:16:21.340 29826 29826 D Poster  : At 1573031781340 location is 65.05993543275409 (latitude), and 25.46863693017135 (longitude)
+11-06 11:16:21.342 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:16:21.352 29826 29860 D Evaluation: Frame 907 sent at 1573031781352
+11-06 11:16:21.353 29826 29860 D Evaluation: 0 res for frame 899 received at 1573031781353
+11-06 11:16:21.383 29826 29860 D Evaluation: Frame 908 sent at 1573031781383
+11-06 11:16:21.384 29826 29860 D Evaluation: 1 res for frame 900 received at 1573031781384
+11-06 11:16:21.426 29826 29860 D Evaluation: Frame 909 sent at 1573031781425
+11-06 11:16:21.427 29826 29860 D Evaluation: 1 res for frame 901 received at 1573031781427
+11-06 11:16:21.459 29826 29860 D Evaluation: Frame 910 sent at 1573031781459
+11-06 11:16:21.461 29826 29860 D Evaluation: 1 res for frame 902 received at 1573031781461
+11-06 11:16:21.506 29826 29860 D Evaluation: Frame 911 sent at 1573031781506
+11-06 11:16:21.508 29826 29860 D Evaluation: 1 res for frame 903 received at 1573031781508
+11-06 11:16:21.539 29826 29860 D Evaluation: Frame 913 sent at 1573031781539
+11-06 11:16:21.540 29826 29860 D Evaluation: 1 res for frame 904 received at 1573031781540
+11-06 11:16:21.562 29826 29860 D Evaluation: Frame 913 sent at 1573031781562
+11-06 11:16:21.564 29826 29860 D Evaluation: 0 res for frame 905 received at 1573031781564
+11-06 11:16:21.596 29826 29860 D Evaluation: Frame 914 sent at 1573031781596
+11-06 11:16:21.597 29826 29860 D Evaluation: 0 res for frame 906 received at 1573031781597
+11-06 11:16:21.700 29826 29860 D Evaluation: Frame 916 sent at 1573031781700
+11-06 11:16:21.702 29826 29860 D Evaluation: 0 res for frame 907 received at 1573031781702
+11-06 11:16:21.721 29826 29860 D Evaluation: Frame 917 sent at 1573031781721
+11-06 11:16:21.723 29826 29860 D Evaluation: 0 res for frame 908 received at 1573031781723
+11-06 11:16:21.741 29826 29860 D Evaluation: Frame 917 sent at 1573031781741
+11-06 11:16:21.743 29826 29860 D Evaluation: 1 res for frame 909 received at 1573031781743
+11-06 11:16:21.765 29826 29860 D Evaluation: Frame 918 sent at 1573031781765
+11-06 11:16:21.767 29826 29860 D Evaluation: 1 res for frame 910 received at 1573031781767
+11-06 11:16:21.788 29826 29860 D Evaluation: Frame 919 sent at 1573031781788
+11-06 11:16:21.789 29826 29860 D Evaluation: 0 res for frame 911 received at 1573031781789
+11-06 11:16:21.827 29826 29860 D Evaluation: Frame 920 sent at 1573031781827
+11-06 11:16:21.828 29826 29860 D Evaluation: 1 res for frame 913 received at 1573031781828
+11-06 11:16:21.854 29826 29860 D Evaluation: Frame 921 sent at 1573031781854
+11-06 11:16:21.855 29826 29860 D Evaluation: 0 res for frame 913 received at 1573031781855
+11-06 11:16:21.895 29826 29860 D Evaluation: Frame 922 sent at 1573031781895
+11-06 11:16:21.898 29826 29860 D Evaluation: 1 res for frame 914 received at 1573031781898
+11-06 11:16:21.931 29826 29860 D Evaluation: Frame 923 sent at 1573031781931
+11-06 11:16:21.935 29826 29860 D Evaluation: 1 res for frame 916 received at 1573031781935
+11-06 11:16:21.967 29826 29860 D Evaluation: Frame 924 sent at 1573031781967
+11-06 11:16:21.968 29826 29860 D Evaluation: 1 res for frame 917 received at 1573031781968
+11-06 11:16:21.999 29826 29860 D Evaluation: Frame 925 sent at 1573031781999
+11-06 11:16:22.000 29826 29860 D Evaluation: 1 res for frame 917 received at 1573031782000
+11-06 11:16:22.036 29826 29860 D Evaluation: Frame 926 sent at 1573031782036
+11-06 11:16:22.037 29826 29860 D Evaluation: 0 res for frame 918 received at 1573031782037
+11-06 11:16:22.077 29826 29860 D Evaluation: Frame 927 sent at 1573031782077
+11-06 11:16:22.079 29826 29860 D Evaluation: 0 res for frame 919 received at 1573031782079
+11-06 11:16:22.109 29826 29860 D Evaluation: Frame 928 sent at 1573031782109
+11-06 11:16:22.111 29826 29860 D Evaluation: 0 res for frame 920 received at 1573031782111
+11-06 11:16:22.135 29826 29860 D Evaluation: Frame 929 sent at 1573031782135
+11-06 11:16:22.137 29826 29860 D Evaluation: 1 res for frame 921 received at 1573031782137
+11-06 11:16:22.164 29826 29860 D Evaluation: Frame 930 sent at 1573031782164
+11-06 11:16:22.165 29826 29860 D Evaluation: 1 res for frame 922 received at 1573031782165
+11-06 11:16:22.197 29826 29860 D Evaluation: Frame 931 sent at 1573031782197
+11-06 11:16:22.199 29826 29860 D Evaluation: 1 res for frame 923 received at 1573031782199
+11-06 11:16:22.240 29826 29860 D Evaluation: Frame 932 sent at 1573031782240
+11-06 11:16:22.242 29826 29860 D Evaluation: 1 res for frame 924 received at 1573031782242
+11-06 11:16:22.272 29826 29860 D Evaluation: Frame 933 sent at 1573031782272
+11-06 11:16:22.274 29826 29860 D Evaluation: 0 res for frame 925 received at 1573031782274
+11-06 11:16:22.318 29826 29860 D Evaluation: Frame 934 sent at 1573031782318
+11-06 11:16:22.321 29826 29860 D Evaluation: 1 res for frame 926 received at 1573031782321
+11-06 11:16:22.346 29826 29826 D Poster  : At 1573031782346 location is 65.05993543275409 (latitude), and 25.46863693017135 (longitude)
+11-06 11:16:22.347 29826 29860 D Evaluation: Frame 935 sent at 1573031782347
+11-06 11:16:22.349 29826 29860 D Evaluation: 1 res for frame 927 received at 1573031782349
+11-06 11:16:22.351 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:16:22.379 29826 29860 D Evaluation: Frame 937 sent at 1573031782379
+11-06 11:16:22.381 29826 29860 D Evaluation: 0 res for frame 928 received at 1573031782381
+11-06 11:16:22.398 29826 29860 D Evaluation: Frame 937 sent at 1573031782398
+11-06 11:16:22.399 29826 29860 D Evaluation: 0 res for frame 929 received at 1573031782399
+11-06 11:16:22.425 29826 29860 D Evaluation: Frame 938 sent at 1573031782425
+11-06 11:16:22.427 29826 29860 D Evaluation: 0 res for frame 930 received at 1573031782427
+11-06 11:16:22.427 29826 29837 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:16:22.458 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:22.461 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 30 lines
+11-06 11:16:22.461 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:22.461 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:22.461 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 6 lines
+11-06 11:16:22.461 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:22.461 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:22.462 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:22.464 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 31 lines
+11-06 11:16:22.464 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:22.468 29826 29860 D Evaluation: Frame 939 sent at 1573031782468
+11-06 11:16:22.470 29826 29860 D Evaluation: 1 res for frame 931 received at 1573031782470
+11-06 11:16:22.500 29826 29860 D Evaluation: Frame 940 sent at 1573031782500
+11-06 11:16:22.501 29826 29860 D Evaluation: 1 res for frame 932 received at 1573031782501
+11-06 11:16:22.530 29826 29860 D Evaluation: Frame 941 sent at 1573031782530
+11-06 11:16:22.531 29826 29860 D Evaluation: 0 res for frame 933 received at 1573031782531
+11-06 11:16:22.571 29826 29860 D Evaluation: Frame 942 sent at 1573031782571
+11-06 11:16:22.572 29826 29860 D Evaluation: 1 res for frame 934 received at 1573031782572
+11-06 11:16:22.600 29826 29860 D Evaluation: Frame 943 sent at 1573031782600
+11-06 11:16:22.601 29826 29860 D Evaluation: 0 res for frame 935 received at 1573031782601
+11-06 11:16:22.685 29826 29860 D Evaluation: Frame 944 sent at 1573031782685
+11-06 11:16:22.690 29826 29860 D Evaluation: 0 res for frame 937 received at 1573031782689
+11-06 11:16:22.718 29826 29860 D Evaluation: Frame 945 sent at 1573031782718
+11-06 11:16:22.720 29826 29860 D Evaluation: 0 res for frame 937 received at 1573031782720
+11-06 11:16:22.740 29826 29860 D Evaluation: Frame 946 sent at 1573031782740
+11-06 11:16:22.742 29826 29860 D Evaluation: 0 res for frame 938 received at 1573031782742
+11-06 11:16:22.765 29826 29860 D Evaluation: Frame 947 sent at 1573031782765
+11-06 11:16:22.766 29826 29860 D Evaluation: 0 res for frame 939 received at 1573031782766
+11-06 11:16:22.803 29826 29860 D Evaluation: Frame 948 sent at 1573031782803
+11-06 11:16:22.804 29826 29860 D Evaluation: 1 res for frame 940 received at 1573031782804
+11-06 11:16:22.842 29826 29860 D Evaluation: Frame 949 sent at 1573031782842
+11-06 11:16:22.843 29826 29860 D Evaluation: 0 res for frame 941 received at 1573031782843
+11-06 11:16:22.883 29826 29860 D Evaluation: Frame 951 sent at 1573031782883
+11-06 11:16:22.885 29826 29860 D Evaluation: 0 res for frame 942 received at 1573031782885
+11-06 11:16:22.905 29826 29860 D Evaluation: Frame 951 sent at 1573031782905
+11-06 11:16:22.907 29826 29860 D Evaluation: 1 res for frame 943 received at 1573031782907
+11-06 11:16:22.946 29826 29860 D Evaluation: Frame 952 sent at 1573031782946
+11-06 11:16:22.948 29826 29860 D Evaluation: 1 res for frame 944 received at 1573031782948
+11-06 11:16:22.981 29826 29860 D Evaluation: Frame 953 sent at 1573031782981
+11-06 11:16:22.983 29826 29860 D Evaluation: 1 res for frame 945 received at 1573031782983
+11-06 11:16:23.014 29826 29860 D Evaluation: Frame 954 sent at 1573031783014
+11-06 11:16:23.015 29826 29860 D Evaluation: 1 res for frame 946 received at 1573031783015
+11-06 11:16:23.049 29826 29860 D Evaluation: Frame 956 sent at 1573031783049
+11-06 11:16:23.051 29826 29860 D Evaluation: 0 res for frame 947 received at 1573031783051
+11-06 11:16:23.071 29826 29860 D Evaluation: Frame 956 sent at 1573031783071
+11-06 11:16:23.073 29826 29860 D Evaluation: 0 res for frame 948 received at 1573031783073
+11-06 11:16:23.115 29826 29860 D Evaluation: Frame 958 sent at 1573031783115
+11-06 11:16:23.117 29826 29860 D Evaluation: 1 res for frame 949 received at 1573031783117
+11-06 11:16:23.133 29826 29860 D Evaluation: Frame 958 sent at 1573031783133
+11-06 11:16:23.134 29826 29860 D Evaluation: 0 res for frame 951 received at 1573031783134
+11-06 11:16:23.167 29826 29860 D Evaluation: Frame 959 sent at 1573031783167
+11-06 11:16:23.169 29826 29860 D Evaluation: 0 res for frame 951 received at 1573031783169
+11-06 11:16:23.206 29826 29860 D Evaluation: Frame 960 sent at 1573031783206
+11-06 11:16:23.207 29826 29860 D Evaluation: 1 res for frame 952 received at 1573031783207
+11-06 11:16:23.247 29826 29860 D Evaluation: Frame 961 sent at 1573031783247
+11-06 11:16:23.248 29826 29860 D Evaluation: 1 res for frame 953 received at 1573031783248
+11-06 11:16:23.280 29826 29860 D Evaluation: Frame 962 sent at 1573031783280
+11-06 11:16:23.282 29826 29860 D Evaluation: 0 res for frame 954 received at 1573031783282
+11-06 11:16:23.316 29826 29860 D Evaluation: Frame 963 sent at 1573031783316
+11-06 11:16:23.317 29826 29860 D Evaluation: 0 res for frame 956 received at 1573031783317
+11-06 11:16:23.330 29826 29826 D Poster  : At 1573031783330 location is 65.05993543275409 (latitude), and 25.46863693017135 (longitude)
+11-06 11:16:23.333 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:16:23.361 29826 29860 D Evaluation: Frame 965 sent at 1573031783361
+11-06 11:16:23.362 29826 29860 D Evaluation: 0 res for frame 956 received at 1573031783362
+11-06 11:16:23.383 29826 29860 D Evaluation: Frame 965 sent at 1573031783383
+11-06 11:16:23.385 29826 29860 D Evaluation: 0 res for frame 958 received at 1573031783385
+11-06 11:16:23.407 29826 29860 D Evaluation: Frame 966 sent at 1573031783407
+11-06 11:16:23.409 29826 29860 D Evaluation: 1 res for frame 958 received at 1573031783409
+11-06 11:16:23.443 29826 29860 D Evaluation: Frame 967 sent at 1573031783443
+11-06 11:16:23.445 29826 29860 D Evaluation: 1 res for frame 959 received at 1573031783445
+11-06 11:16:23.495 29826 29860 D Evaluation: Frame 969 sent at 1573031783495
+11-06 11:16:23.496 29826 29860 D Evaluation: 1 res for frame 960 received at 1573031783496
+11-06 11:16:23.517 29826 29860 D Evaluation: Frame 969 sent at 1573031783517
+11-06 11:16:23.518 29826 29860 D Evaluation: 0 res for frame 961 received at 1573031783518
+11-06 11:16:23.545 29826 29860 D Evaluation: Frame 970 sent at 1573031783545
+11-06 11:16:23.547 29826 29860 D Evaluation: 0 res for frame 962 received at 1573031783547
+11-06 11:16:23.585 29826 29860 D Evaluation: Frame 971 sent at 1573031783585
+11-06 11:16:23.587 29826 29860 D Evaluation: 0 res for frame 963 received at 1573031783587
+11-06 11:16:23.612 29826 29860 D Evaluation: Frame 972 sent at 1573031783612
+11-06 11:16:23.614 29826 29860 D Evaluation: 0 res for frame 965 received at 1573031783614
+11-06 11:16:23.642 29826 29860 D Evaluation: Frame 973 sent at 1573031783642
+11-06 11:16:23.643 29826 29860 D Evaluation: 0 res for frame 965 received at 1573031783643
+11-06 11:16:23.676 29826 29837 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:16:23.676 29826 29860 D Evaluation: Frame 974 sent at 1573031783676
+11-06 11:16:23.678 29826 29860 D Evaluation: 0 res for frame 966 received at 1573031783678
+11-06 11:16:23.700 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:23.708 29826 29835 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 68 lines
+11-06 11:16:23.708 29826 29835 W System  : A resource failed to call close. 
+11-06 11:16:23.726 29826 29860 D Evaluation: Frame 976 sent at 1573031783726
+11-06 11:16:23.728 29826 29860 D Evaluation: 0 res for frame 967 received at 1573031783728
+11-06 11:16:23.749 29826 29860 D Evaluation: Frame 976 sent at 1573031783749
+11-06 11:16:23.750 29826 29860 D Evaluation: 0 res for frame 969 received at 1573031783750
+11-06 11:16:23.778 29826 29860 D Evaluation: Frame 977 sent at 1573031783778
+11-06 11:16:23.779 29826 29860 D Evaluation: 1 res for frame 969 received at 1573031783779
+11-06 11:16:23.817 29826 29860 D Evaluation: Frame 978 sent at 1573031783817
+11-06 11:16:23.818 29826 29860 D Evaluation: 0 res for frame 970 received at 1573031783818
+11-06 11:16:23.852 29826 29860 D Evaluation: Frame 979 sent at 1573031783852
+11-06 11:16:23.853 29826 29860 D Evaluation: 0 res for frame 971 received at 1573031783853
+11-06 11:16:23.881 29826 29860 D Evaluation: Frame 980 sent at 1573031783881
+11-06 11:16:23.883 29826 29860 D Evaluation: 0 res for frame 972 received at 1573031783883
+11-06 11:16:23.900 29826 29826 D stylus  : init stylus touchlistener.
+11-06 11:16:23.909 29826 29826 W Settings: Setting device_provisioned has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+11-06 11:16:23.910 29826 29826 V HiTouch_HiTouchSensor: User setup is finished.
+11-06 11:16:23.913 29826 29860 D Evaluation: Frame 981 sent at 1573031783913
+11-06 11:16:23.914 29826 29860 D Evaluation: 0 res for frame 973 received at 1573031783914
+11-06 11:16:23.923 29826 29826 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:69.625, limit is:60The moving distance of Y is:18.764801, limit is:60
+11-06 11:16:23.951 29826 29860 D Evaluation: Frame 982 sent at 1573031783950
+11-06 11:16:23.952 29826 29860 D Evaluation: 0 res for frame 974 received at 1573031783952
+11-06 11:16:23.984 29826 29860 D Evaluation: Frame 983 sent at 1573031783984
+11-06 11:16:23.985 29826 29860 D Evaluation: 0 res for frame 976 received at 1573031783985
+11-06 11:16:24.017 29826 29860 D Evaluation: Frame 984 sent at 1573031784017
+11-06 11:16:24.019 29826 29860 D Evaluation: 0 res for frame 977 received at 1573031784019
+11-06 11:16:24.042 29826 29860 D Evaluation: Frame 985 sent at 1573031784042
+11-06 11:16:24.043 29826 29860 D Evaluation: 0 res for frame 978 received at 1573031784043
+11-06 11:16:24.075 29826 29860 D Evaluation: Frame 986 sent at 1573031784075
+11-06 11:16:24.076 29826 29860 D Evaluation: 0 res for frame 979 received at 1573031784076
+11-06 11:16:24.099 29826 29860 D Evaluation: Frame 987 sent at 1573031784099
+11-06 11:16:24.100 29826 29860 D Evaluation: 1 res for frame 980 received at 1573031784100
+11-06 11:16:24.144 29826 29860 D Evaluation: Frame 988 sent at 1573031784144
+11-06 11:16:24.145 29826 29860 D Evaluation: 1 res for frame 981 received at 1573031784145
+11-06 11:16:24.167 29826 29860 D Evaluation: Frame 989 sent at 1573031784167
+11-06 11:16:24.168 29826 29860 D Evaluation: 1 res for frame 982 received at 1573031784168
+11-06 11:16:24.198 29826 29860 D Evaluation: Frame 990 sent at 1573031784198
+11-06 11:16:24.199 29826 29860 D Evaluation: 1 res for frame 983 received at 1573031784199
+11-06 11:16:24.231 29826 29860 D Evaluation: Frame 991 sent at 1573031784231
+11-06 11:16:24.232 29826 29860 D Evaluation: 1 res for frame 984 received at 1573031784232
+11-06 11:16:24.263 29826 29860 D Evaluation: Frame 992 sent at 1573031784263
+11-06 11:16:24.265 29826 29860 D Evaluation: 0 res for frame 985 received at 1573031784265
+11-06 11:16:24.299 29826 29860 D Evaluation: Frame 993 sent at 1573031784299
+11-06 11:16:24.301 29826 29860 D Evaluation: 1 res for frame 986 received at 1573031784301
+11-06 11:16:24.342 29826 29826 D Poster  : At 1573031784342 location is 65.05993543275409 (latitude), and 25.46863693017135 (longitude)
+11-06 11:16:24.342 29826 29860 D Evaluation: Frame 994 sent at 1573031784342
+11-06 11:16:24.343 29826 29860 D Evaluation: 1 res for frame 987 received at 1573031784343
+11-06 11:16:24.344 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:16:24.369 29826 29860 D Evaluation: Frame 995 sent at 1573031784369
+11-06 11:16:24.371 29826 29860 D Evaluation: 0 res for frame 988 received at 1573031784370
+11-06 11:16:24.398 29826 29860 D Evaluation: Frame 996 sent at 1573031784398
+11-06 11:16:24.399 29826 29860 D Evaluation: 1 res for frame 989 received at 1573031784399
+11-06 11:16:24.433 29826 29860 D Evaluation: Frame 997 sent at 1573031784433
+11-06 11:16:24.435 29826 29860 D Evaluation: 1 res for frame 990 received at 1573031784435
+11-06 11:16:24.468 29826 29860 D Evaluation: Frame 998 sent at 1573031784468
+11-06 11:16:24.470 29826 29860 D Evaluation: 1 res for frame 991 received at 1573031784470
+11-06 11:16:24.498 29826 29860 D Evaluation: Frame 999 sent at 1573031784498
+11-06 11:16:24.499 29826 29860 D Evaluation: 1 res for frame 992 received at 1573031784499
+11-06 11:16:24.545 29826 29860 D Evaluation: Frame 1000 sent at 1573031784545
+11-06 11:16:24.546 29826 29860 D Evaluation: 1 res for frame 993 received at 1573031784546
+11-06 11:16:24.570 29826 29860 D Evaluation: Frame 1001 sent at 1573031784570
+11-06 11:16:24.571 29826 29860 D Evaluation: 1 res for frame 994 received at 1573031784571
+11-06 11:16:24.604 29826 29860 D Evaluation: Frame 1002 sent at 1573031784604
+11-06 11:16:24.605 29826 29860 D Evaluation: 1 res for frame 995 received at 1573031784605
+11-06 11:16:24.634 29826 29860 D Evaluation: Frame 1003 sent at 1573031784634
+11-06 11:16:24.635 29826 29860 D Evaluation: 0 res for frame 996 received at 1573031784635
+11-06 11:16:24.638 29826 29826 I Poster  :  onPause() called.
+11-06 11:16:24.742 29826 29826 I Camera  : close camera: 0, package name: symlab.cloudridar.arhud
+11-06 11:16:24.742 29826 29826 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 29826 ,uidOf3RdApk: 10149 ,permType: 0 ,permCfg: 0
+11-06 11:16:24.744 29826 29826 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = false
+11-06 11:16:24.827 29826 29826 D ZrHung.AppEyeUiProbe: stop checker.
+11-06 11:16:24.841 29826 29826 I Poster  :  surfaceDestroyed() called.
+11-06 11:16:24.843 29826 29826 D ViewRootImpl[MainActivity]: surface should not be released
+11-06 11:16:24.843 29826 29826 I Poster  :  onStop() called.
+11-06 11:16:24.857 29826 29877 W libEGL  : EGLNativeWindowType 0xef5f0008 disconnect failed
+11-06 11:16:25.318 29826 29826 D Poster  : At 1573031785318 location is 65.05993543275409 (latitude), and 25.46863693017135 (longitude)
+11-06 11:16:25.319 29826 29826 D Poster  : Connected to mobile network 20
+11-06 11:16:25.329 29826 29826 D Latitude: status
+11-06 11:16:25.654 29826 29851 D ZrHung.AppEyeUiProbe: Current Activity:false
+11-06 11:16:25.654 29826 29851 D ZrHung.AppEyeUiProbe: not watching, wait.
+11-06 11:16:26.063 29826 29826 I Poster  :  onDestroy() called.
+11-06 11:16:26.064 29826 29826 D ActivityThread: Remove activity client record, r= ActivityRecord{fd66872 token=android.os.BinderProxy@8cd3ec5 {symlab.cloudridar.arhud/symlab.ARHUD.MainActivity}} token= android.os.BinderProxy@8cd3ec5

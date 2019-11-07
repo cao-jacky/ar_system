@@ -1,0 +1,27 @@
+--------- beginning of main
+11-05 10:30:47.602 23143 23176 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0102]
+11-05 10:30:47.602 23143 23176 W ZrHung.AppEyeUiProbe: Failed to get config from zrhung
+11-05 10:30:47.607 23174 23174 W logcat  : type=1400 audit(0.0:32585): avc: granted { create } for name="logcat_1572942647595.txt" scontext=u:r:untrusted_app:s0:c149,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0:c149,c256,c512,c768 tclass=file
+11-05 10:30:47.609 23143 23143 I MultiDex: Installing application
+11-05 10:30:47.609 23143 23143 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+--------- beginning of system
+11-05 10:30:47.613 23143 23143 V ActivityThread: callActivityOnCreate
+11-05 10:30:47.613 23143 23143 I Poster  :  onCreate() called.
+11-05 10:30:47.616 23143 23143 I HwApsImpl: APS: new HwApsImpl created
+11-05 10:30:47.622 23143 23143 V HwWidgetFactory: : successes to get AllImpl object and return....
+11-05 10:30:47.629 23143 23143 D OpenGLRenderer: Skia GL Pipeline
+11-05 10:30:47.648 23143 23143 D Poster  : config file error
+11-05 10:30:47.652 23143 23184 W loudridar.arhu: Accessing hidden method Lcom/msic/qarth/PatchStore;->createDisableExceptionQarthFile(Ljava/lang/Throwable;)Z (blacklist, JNI)
+11-05 10:30:47.652 23143 23184 E loudridar.arhu: [qarth_debug:]  get PatchStore::createDisableExceptionQarthFile method fail.
+--------- beginning of crash
+11-05 10:30:47.653 23143 23184 E AndroidRuntime: FATAL EXCEPTION: network thread
+11-05 10:30:47.653 23143 23184 E AndroidRuntime: Process: symlab.cloudridar.arhud, PID: 23143
+11-05 10:30:47.653 23143 23184 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.nio.channels.DatagramChannel.send(java.nio.ByteBuffer, java.net.SocketAddress)' on a null object reference
+11-05 10:30:47.653 23143 23184 E AndroidRuntime: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-05 10:30:47.653 23143 23184 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-05 10:30:47.653 23143 23184 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-05 10:30:47.653 23143 23184 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:216)
+11-05 10:30:47.653 23143 23184 E AndroidRuntime: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-05 10:30:47.653 23143 23143 D ActivityThread: add activity client record, r= ActivityRecord{f82197c token=android.os.BinderProxy@ef7d776 {symlab.cloudridar.arhud/symlab.ARHUD.MainActivity}} token= android.os.BinderProxy@ef7d776
+11-05 10:30:47.673 23143 23143 I Poster  :  onStart() called.
+11-05 10:30:47.673 23143 23184 I Process : Sending signal. PID: 23143 SIG: 9

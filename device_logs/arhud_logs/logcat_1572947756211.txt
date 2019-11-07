@@ -1,0 +1,521 @@
+--------- beginning of main
+11-05 11:55:56.238  4872  4872 I Poster  :  onCreate() called.
+11-05 11:55:56.242  4872  4872 I HwApsImpl: APS: new HwApsImpl created
+11-05 11:55:56.247  4924  4924 W logcat  : type=1400 audit(0.0:395): avc: granted { create } for name="logcat_1572947756211.txt" scontext=u:r:untrusted_app:s0:c149,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0:c149,c256,c512,c768 tclass=file
+11-05 11:55:56.252  4872  4872 V HwWidgetFactory: : successes to get AllImpl object and return....
+11-05 11:55:56.261  4872  4872 D OpenGLRenderer: Skia GL Pipeline
+11-05 11:55:56.293  4872  4872 D Poster  : Server bound to IP 193.166.28.132 and port 52727
+--------- beginning of system
+11-05 11:55:56.297  4872  4872 D ActivityThread: add activity client record, r= ActivityRecord{667bf54 token=android.os.BinderProxy@d1de8af {symlab.cloudridar.arhud/symlab.ARHUD.MainActivity}} token= android.os.BinderProxy@d1de8af
+11-05 11:55:56.298  4872  4957 D Evaluation: metadata 0 sent 
+11-05 11:55:56.301  4872  4872 I Poster  :  onStart() called.
+11-05 11:55:56.302  4872  4872 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-05 11:55:56.304  4872  4872 I Poster  :  onResume() called.
+11-05 11:55:56.311  4872  4872 I PermissionManager: camera remind result:true
+11-05 11:55:56.311  4872  4872 I Camera  : open camera: 0, package name: symlab.cloudridar.arhud
+11-05 11:55:56.311  4872  4872 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 4872 ,uidOf3RdApk: 10149 ,permType: 0 ,permCfg: 1
+11-05 11:55:56.313  4872  4872 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = true
+11-05 11:55:56.329  4872  4872 D ActivityThread: isOptEnabled=false isWechatScanOpt=false
+11-05 11:55:56.331  4872  4872 I HwSecImmHelper: mSecurityInputMethodService is null
+11-05 11:55:56.342  4872  4872 D OpenGLRenderer:   HWUI Binary is  enabled
+11-05 11:55:56.373  4872  5009 D HiTouch_PressGestureDetector: onAttached, package=symlab.cloudridar.arhud, windowType=1, mHiTouchRestricted=false
+11-05 11:55:56.387  4872  5000 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-05 11:55:56.387  4872  5000 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-05 11:55:56.388  4872  5000 I iGraphics: [0020080c] pn: symlab.cloudridar.arhud, p: 4872
+11-05 11:55:56.388  4872  5000 I OpenGLRenderer: Initialized EGL, version 1.4, mEglDisplay 0x1
+11-05 11:55:56.388  4872  5000 D OpenGLRenderer: Swap behavior 2
+11-05 11:55:56.396  4872  4872 I Poster  :  surfaceCreated() called.
+11-05 11:55:56.396  4872  4872 I Poster  : initPreview() called
+11-05 11:55:56.402  4872  4872 I PermissionManager: camera remind result:true
+11-05 11:55:56.409  4872  5000 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+11-05 11:55:56.427  4872  4872 I Poster  :  surfaceChanged() called.
+11-05 11:55:56.458  4872  4872 W InputMethodManager: startInputReason = 1
+11-05 11:55:56.498  4872  4872 W InputMethodManager: startInputReason = 5
+11-05 11:55:56.865  4872  4957 D Evaluation: metadata 1 sent 
+11-05 11:55:56.892  4872  4957 D Evaluation: metadata 2 sent 
+11-05 11:55:56.926  4872  4957 D Evaluation: metadata 3 sent 
+11-05 11:55:56.954  4872  4957 D Evaluation: metadata 4 sent 
+11-05 11:55:56.987  4872  4957 D Evaluation: metadata 5 sent 
+11-05 11:55:57.043  4872  4957 D Evaluation: Frame 6 sent at 1572947757043
+11-05 11:55:57.067  4872  4957 D Evaluation: Frame 7 sent at 1572947757067
+11-05 11:55:57.100  4872  4957 D Evaluation: Frame 8 sent at 1572947757100
+11-05 11:55:57.137  4872  4957 D Evaluation: Frame 9 sent at 1572947757137
+11-05 11:55:57.164  4872  4957 D Evaluation: Frame 10 sent at 1572947757164
+11-05 11:55:57.169  4872  4957 D Evaluation: 0 res for frame 6 received at 1572947757169
+11-05 11:55:57.201  4872  4957 D Evaluation: Frame 11 sent at 1572947757201
+11-05 11:55:57.202  4872  4957 D Evaluation: 0 res for frame 7 received at 1572947757202
+11-05 11:55:57.233  4872  4957 D Evaluation: Frame 12 sent at 1572947757232
+11-05 11:55:57.267  4872  4957 D Evaluation: Frame 13 sent at 1572947757267
+11-05 11:55:57.300  4872  4957 D Evaluation: Frame 14 sent at 1572947757300
+11-05 11:55:57.301  4872  4957 D Evaluation: 0 res for frame 8 received at 1572947757301
+11-05 11:55:57.333  4872  4957 D Evaluation: Frame 15 sent at 1572947757333
+11-05 11:55:57.366  4872  4957 D Evaluation: Frame 16 sent at 1572947757366
+11-05 11:55:57.367  4872  4957 D Evaluation: 0 res for frame 9 received at 1572947757367
+11-05 11:55:57.399  4872  4957 D Evaluation: Frame 17 sent at 1572947757399
+11-05 11:55:57.435  4872  4957 D Evaluation: Frame 18 sent at 1572947757435
+11-05 11:55:57.435  4872  4957 D Evaluation: 0 res for frame 10 received at 1572947757435
+11-05 11:55:57.470  4872  4957 D Evaluation: Frame 19 sent at 1572947757470
+11-05 11:55:57.504  4872  4957 D Evaluation: Frame 20 sent at 1572947757504
+11-05 11:55:57.539  4872  4957 D Evaluation: Frame 21 sent at 1572947757539
+11-05 11:55:57.540  4872  4957 D Evaluation: 0 res for frame 11 received at 1572947757540
+11-05 11:55:57.574  4872  4957 D Evaluation: Frame 22 sent at 1572947757574
+11-05 11:55:57.575  4872  4957 D Evaluation: 0 res for frame 12 received at 1572947757575
+11-05 11:55:57.610  4872  4957 D Evaluation: Frame 23 sent at 1572947757610
+11-05 11:55:57.646  4872  4957 D Evaluation: Frame 24 sent at 1572947757646
+11-05 11:55:57.687  4872  4957 D Evaluation: Frame 25 sent at 1572947757687
+11-05 11:55:57.689  4872  4957 D Evaluation: 0 res for frame 13 received at 1572947757689
+11-05 11:55:57.724  4872  4957 D Evaluation: Frame 26 sent at 1572947757724
+11-05 11:55:57.753  4872  4957 D Evaluation: Frame 27 sent at 1572947757753
+11-05 11:55:57.754  4872  4957 D Evaluation: 0 res for frame 14 received at 1572947757754
+11-05 11:55:57.779  4872  4957 D Evaluation: Frame 28 sent at 1572947757779
+11-05 11:55:57.826  4872  4957 D Evaluation: Frame 29 sent at 1572947757826
+11-05 11:55:57.827  4872  4957 D Evaluation: 0 res for frame 15 received at 1572947757827
+11-05 11:55:57.857  4872  4957 D Evaluation: Frame 30 sent at 1572947757857
+11-05 11:55:57.888  4872  4891 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-05 11:55:57.888  4872  4957 D Evaluation: Frame 31 sent at 1572947757888
+11-05 11:55:57.911  4872  4889 W System  : A resource failed to call close. 
+11-05 11:55:57.912  4872  4889 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 18 lines
+11-05 11:55:57.912  4872  4889 W System  : A resource failed to call close. 
+11-05 11:55:57.955  4872  4957 D Evaluation: Frame 32 sent at 1572947757955
+11-05 11:55:57.992  4872  4957 D Evaluation: Frame 33 sent at 1572947757992
+11-05 11:55:58.025  4872  4957 D Evaluation: Frame 34 sent at 1572947758025
+11-05 11:55:58.058  4872  4957 D Evaluation: Frame 35 sent at 1572947758058
+11-05 11:55:58.088  4872  4957 D Evaluation: Frame 36 sent at 1572947758088
+11-05 11:55:58.116  4872  4957 D Evaluation: Frame 37 sent at 1572947758116
+11-05 11:55:58.156  4872  4957 D Evaluation: Frame 38 sent at 1572947758156
+11-05 11:55:58.189  4872  4957 D Evaluation: Frame 39 sent at 1572947758189
+11-05 11:55:58.220  4872  4957 D Evaluation: Frame 40 sent at 1572947758220
+11-05 11:55:58.254  4872  4957 D Evaluation: Frame 41 sent at 1572947758254
+11-05 11:55:58.290  4872  4957 D Evaluation: Frame 42 sent at 1572947758290
+11-05 11:55:58.318  4872  4957 D Evaluation: Frame 43 sent at 1572947758318
+11-05 11:55:58.364  4872  4957 D Evaluation: Frame 44 sent at 1572947758364
+11-05 11:55:58.404  4872  4957 D Evaluation: Frame 45 sent at 1572947758404
+11-05 11:55:58.435  4872  4957 D Evaluation: Frame 46 sent at 1572947758435
+11-05 11:55:58.469  4872  4957 D Evaluation: Frame 47 sent at 1572947758469
+11-05 11:55:58.489  4872  4957 D Evaluation: Frame 48 sent at 1572947758489
+11-05 11:55:58.516  4872  4957 D Evaluation: Frame 49 sent at 1572947758516
+11-05 11:55:58.546  4872  4957 D Evaluation: Frame 50 sent at 1572947758546
+11-05 11:55:58.580  4872  4957 D Evaluation: Frame 51 sent at 1572947758580
+11-05 11:55:58.612  4872  4957 D Evaluation: Frame 52 sent at 1572947758612
+11-05 11:55:58.651  4872  4957 D Evaluation: Frame 53 sent at 1572947758651
+11-05 11:55:58.680  4872  4957 D Evaluation: Frame 54 sent at 1572947758680
+11-05 11:55:58.718  4872  4957 D Evaluation: Frame 55 sent at 1572947758718
+11-05 11:55:58.752  4872  4957 D Evaluation: Frame 56 sent at 1572947758752
+11-05 11:55:58.784  4872  4957 D Evaluation: Frame 57 sent at 1572947758784
+11-05 11:55:58.818  4872  4957 D Evaluation: Frame 58 sent at 1572947758818
+11-05 11:55:58.858  4872  4957 D Evaluation: Frame 59 sent at 1572947758858
+11-05 11:55:58.883  4872  4957 D Evaluation: Frame 60 sent at 1572947758883
+11-05 11:55:58.921  4872  4891 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-05 11:55:58.921  4872  4957 D Evaluation: Frame 61 sent at 1572947758921
+11-05 11:55:58.956  4872  4957 D Evaluation: Frame 62 sent at 1572947758956
+11-05 11:55:59.026  4872  4957 D Evaluation: Frame 63 sent at 1572947759026
+11-05 11:55:59.066  4872  4957 D Evaluation: Frame 64 sent at 1572947759066
+11-05 11:55:59.092  4872  4957 D Evaluation: Frame 65 sent at 1572947759092
+11-05 11:55:59.123  4872  4957 D Evaluation: Frame 66 sent at 1572947759123
+11-05 11:55:59.188  4872  4957 D Evaluation: Frame 67 sent at 1572947759188
+11-05 11:55:59.222  4872  4957 D Evaluation: Frame 68 sent at 1572947759222
+11-05 11:55:59.258  4872  4957 D Evaluation: Frame 69 sent at 1572947759258
+11-05 11:55:59.297  4872  4957 D Evaluation: Frame 70 sent at 1572947759297
+11-05 11:55:59.332  4872  4957 D Evaluation: Frame 71 sent at 1572947759332
+11-05 11:55:59.365  4872  4957 D Evaluation: Frame 72 sent at 1572947759365
+11-05 11:55:59.398  4872  4957 D Evaluation: Frame 73 sent at 1572947759398
+11-05 11:55:59.423  4872  4957 D Evaluation: Frame 74 sent at 1572947759423
+11-05 11:55:59.460  4872  4872 D Poster  : At 1572947759459 location is 65.0596619290089 (latitude), and 25.46640980253546 (longitude)
+11-05 11:55:59.461  4872  4957 D Evaluation: Frame 75 sent at 1572947759461
+11-05 11:55:59.528  4872  4957 D Evaluation: Frame 76 sent at 1572947759528
+11-05 11:55:59.562  4872  4872 D stylus  : init stylus touchlistener.
+11-05 11:55:59.566  4872  4872 W Settings: Setting device_provisioned has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+11-05 11:55:59.567  4872  4872 V HiTouch_HiTouchSensor: User setup is finished.
+11-05 11:55:59.579  4872  4957 D Evaluation: Frame 77 sent at 1572947759579
+11-05 11:55:59.609  4872  4957 D Evaluation: Frame 78 sent at 1572947759609
+11-05 11:55:59.640  4872  4957 D Evaluation: Frame 79 sent at 1572947759640
+11-05 11:55:59.658  4872  4957 D Evaluation: Frame 80 sent at 1572947759658
+11-05 11:55:59.696  4872  4957 D Evaluation: Frame 81 sent at 1572947759696
+11-05 11:55:59.724  4872  4957 D Evaluation: Frame 82 sent at 1572947759724
+11-05 11:55:59.756  4872  4957 D Evaluation: Frame 83 sent at 1572947759755
+11-05 11:55:59.830  4872  4957 D Evaluation: Frame 84 sent at 1572947759830
+11-05 11:55:59.858  4872  4957 D Evaluation: Frame 85 sent at 1572947759858
+11-05 11:55:59.892  4872  4957 D Evaluation: Frame 86 sent at 1572947759892
+11-05 11:55:59.930  4872  4957 D Evaluation: Frame 87 sent at 1572947759930
+11-05 11:55:59.962  4872  4957 D Evaluation: Frame 88 sent at 1572947759962
+11-05 11:56:00.000  4872  4957 D Evaluation: Frame 89 sent at 1572947759999
+11-05 11:56:00.039  4872  4957 D Evaluation: Frame 90 sent at 1572947760039
+11-05 11:56:00.067  4872  4957 D Evaluation: Frame 91 sent at 1572947760067
+11-05 11:56:00.098  4872  4957 D Evaluation: Frame 92 sent at 1572947760098
+11-05 11:56:00.145  4872  4957 D Evaluation: Frame 93 sent at 1572947760145
+11-05 11:56:00.170  4872  4957 D Evaluation: Frame 94 sent at 1572947760170
+11-05 11:56:00.214  4872  4891 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-05 11:56:00.215  4872  4957 D Evaluation: Frame 95 sent at 1572947760215
+11-05 11:56:00.249  4872  4957 D Evaluation: Frame 97 sent at 1572947760249
+11-05 11:56:00.279  4872  4957 D Evaluation: Frame 97 sent at 1572947760279
+11-05 11:56:00.319  4872  4957 D Evaluation: Frame 98 sent at 1572947760319
+11-05 11:56:00.357  4872  4957 D Evaluation: Frame 100 sent at 1572947760357
+11-05 11:56:00.389  4872  4957 D Evaluation: Frame 101 sent at 1572947760389
+11-05 11:56:00.420  4872  4957 D Evaluation: Frame 102 sent at 1572947760418
+11-05 11:56:00.438  4872  4957 D Evaluation: Frame 102 sent at 1572947760438
+11-05 11:56:00.457  4872  4872 D Poster  : At 1572947760457 location is 65.05962217460167 (latitude), and 25.466457986544373 (longitude)
+11-05 11:56:00.481  4872  4957 D Evaluation: Frame 103 sent at 1572947760481
+11-05 11:56:00.519  4872  4957 D Evaluation: Frame 105 sent at 1572947760519
+11-05 11:56:00.545  4872  4957 D Evaluation: Frame 105 sent at 1572947760545
+11-05 11:56:00.575  4872  4957 D Evaluation: Frame 106 sent at 1572947760575
+11-05 11:56:00.622  4872  4957 D Evaluation: Frame 108 sent at 1572947760622
+11-05 11:56:00.644  4872  4957 D Evaluation: Frame 108 sent at 1572947760644
+11-05 11:56:00.673  4872  4957 D Evaluation: Frame 109 sent at 1572947760673
+11-05 11:56:00.699  4872  4957 D Evaluation: Frame 110 sent at 1572947760699
+11-05 11:56:00.731  4872  4957 D Evaluation: Frame 111 sent at 1572947760731
+11-05 11:56:00.768  4872  4957 D Evaluation: Frame 112 sent at 1572947760768
+11-05 11:56:00.800  4872  4957 D Evaluation: Frame 113 sent at 1572947760800
+11-05 11:56:00.846  4872  4957 D Evaluation: Frame 114 sent at 1572947760846
+11-05 11:56:00.874  4872  4957 D Evaluation: Frame 115 sent at 1572947760874
+11-05 11:56:00.945  4872  4957 D Evaluation: Frame 116 sent at 1572947760945
+11-05 11:56:00.980  4872  4957 D Evaluation: Frame 117 sent at 1572947760980
+11-05 11:56:01.014  4872  4957 D Evaluation: Frame 118 sent at 1572947761014
+11-05 11:56:01.046  4872  4957 D Evaluation: Frame 119 sent at 1572947761046
+11-05 11:56:01.086  4872  4957 D Evaluation: Frame 120 sent at 1572947761086
+11-05 11:56:01.110  4872  4957 D Evaluation: Frame 121 sent at 1572947761110
+11-05 11:56:01.154  4872  4957 D Evaluation: Frame 122 sent at 1572947761154
+11-05 11:56:01.176  4872  4957 D Evaluation: Frame 123 sent at 1572947761176
+11-05 11:56:01.205  4872  4957 D Evaluation: Frame 124 sent at 1572947761205
+11-05 11:56:01.211  4872  4872 I AwareBitmapCacher: init lrucache size: 2097152 pid=4872
+11-05 11:56:01.244  4872  4957 D Evaluation: Frame 125 sent at 1572947761244
+11-05 11:56:01.277  4872  4957 D Evaluation: Frame 126 sent at 1572947761277
+11-05 11:56:01.315  4872  4957 D Evaluation: Frame 127 sent at 1572947761315
+11-05 11:56:01.345  4872  4957 D Evaluation: Frame 128 sent at 1572947761345
+11-05 11:56:01.378  4872  4957 D Evaluation: Frame 129 sent at 1572947761378
+11-05 11:56:01.410  4872  4957 D Evaluation: Frame 130 sent at 1572947761410
+11-05 11:56:01.444  4872  4872 D Poster  : At 1572947761444 location is 65.0596296803993 (latitude), and 25.466387804751434 (longitude)
+11-05 11:56:01.480  4872  4957 D Evaluation: Frame 131 sent at 1572947761480
+11-05 11:56:01.529  4872  4957 D Evaluation: Frame 132 sent at 1572947761529
+11-05 11:56:01.560  4872  4957 D Evaluation: Frame 133 sent at 1572947761560
+11-05 11:56:01.584  4872  4957 D Evaluation: Frame 134 sent at 1572947761584
+11-05 11:56:01.606  4872  4957 D Evaluation: Frame 135 sent at 1572947761606
+11-05 11:56:01.643  4872  4957 D Evaluation: Frame 136 sent at 1572947761643
+11-05 11:56:01.685  4872  4957 D Evaluation: Frame 137 sent at 1572947761685
+11-05 11:56:01.713  4872  4891 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-05 11:56:01.713  4872  4957 D Evaluation: Frame 138 sent at 1572947761713
+11-05 11:56:01.748  4872  4957 D Evaluation: Frame 139 sent at 1572947761748
+11-05 11:56:01.782  4872  4957 D Evaluation: Frame 140 sent at 1572947761782
+11-05 11:56:01.815  4872  4957 D Evaluation: Frame 141 sent at 1572947761815
+11-05 11:56:01.852  4872  4957 D Evaluation: Frame 142 sent at 1572947761852
+11-05 11:56:01.896  4872  4957 D Evaluation: Frame 143 sent at 1572947761896
+11-05 11:56:01.930  4872  4957 D Evaluation: Frame 144 sent at 1572947761930
+11-05 11:56:01.951  4872  4957 D Evaluation: Frame 145 sent at 1572947761951
+11-05 11:56:01.980  4872  4957 D Evaluation: Frame 146 sent at 1572947761980
+11-05 11:56:02.018  4872  4957 D Evaluation: Frame 147 sent at 1572947762018
+11-05 11:56:02.055  4872  4957 D Evaluation: Frame 148 sent at 1572947762055
+11-05 11:56:02.058  4872  4872 D Poster  : At 1572947762058 location is 65.05962709062926 (latitude), and 25.46634693129121 (longitude)
+11-05 11:56:02.096  4872  4957 D Evaluation: Frame 149 sent at 1572947762096
+11-05 11:56:02.119  4872  4957 D Evaluation: Frame 150 sent at 1572947762119
+11-05 11:56:02.153  4872  4957 D Evaluation: Frame 151 sent at 1572947762153
+11-05 11:56:02.223  4872  4957 D Evaluation: Frame 152 sent at 1572947762223
+11-05 11:56:02.253  4872  4957 D Evaluation: Frame 153 sent at 1572947762253
+11-05 11:56:02.285  4872  4957 D Evaluation: Frame 154 sent at 1572947762285
+11-05 11:56:02.311  4872  4957 D Evaluation: Frame 155 sent at 1572947762311
+11-05 11:56:02.353  4872  4957 D Evaluation: Frame 156 sent at 1572947762353
+11-05 11:56:02.385  4872  4957 D Evaluation: Frame 157 sent at 1572947762385
+11-05 11:56:02.422  4872  4957 D Evaluation: Frame 158 sent at 1572947762422
+11-05 11:56:02.453  4872  4957 D Evaluation: Frame 159 sent at 1572947762453
+11-05 11:56:02.481  4872  4957 D Evaluation: Frame 160 sent at 1572947762481
+11-05 11:56:02.521  4872  4957 D Evaluation: Frame 161 sent at 1572947762521
+11-05 11:56:02.553  4872  4957 D Evaluation: Frame 162 sent at 1572947762553
+11-05 11:56:02.594  4872  4957 D Evaluation: Frame 163 sent at 1572947762594
+11-05 11:56:02.634  4872  4957 D Evaluation: Frame 164 sent at 1572947762634
+11-05 11:56:02.656  4872  4957 D Evaluation: Frame 165 sent at 1572947762656
+11-05 11:56:02.721  4872  4957 D Evaluation: Frame 166 sent at 1572947762721
+11-05 11:56:02.746  4872  4957 D Evaluation: Frame 167 sent at 1572947762746
+11-05 11:56:02.785  4872  4957 D Evaluation: Frame 168 sent at 1572947762785
+11-05 11:56:02.815  4872  4957 D Evaluation: Frame 169 sent at 1572947762815
+11-05 11:56:02.860  4872  4957 D Evaluation: Frame 170 sent at 1572947762860
+11-05 11:56:02.927  4872  4957 D Evaluation: Frame 171 sent at 1572947762927
+11-05 11:56:02.955  4872  4957 D Evaluation: Frame 172 sent at 1572947762955
+11-05 11:56:02.987  4872  4957 D Evaluation: Frame 173 sent at 1572947762987
+11-05 11:56:03.018  4872  4891 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-05 11:56:03.018  4872  4957 D Evaluation: Frame 174 sent at 1572947763018
+11-05 11:56:03.056  4872  4872 D Poster  : At 1572947763056 location is 65.05968987894914 (latitude), and 25.466340529085556 (longitude)
+11-05 11:56:03.103  4872  4957 D Evaluation: Frame 176 sent at 1572947763103
+11-05 11:56:03.120  4872  4957 D Evaluation: Frame 176 sent at 1572947763120
+11-05 11:56:03.155  4872  4957 D Evaluation: Frame 177 sent at 1572947763155
+11-05 11:56:03.196  4872  4957 D Evaluation: Frame 178 sent at 1572947763196
+11-05 11:56:03.225  4872  4957 D Evaluation: Frame 179 sent at 1572947763225
+11-05 11:56:03.264  4872  4957 D Evaluation: Frame 180 sent at 1572947763264
+11-05 11:56:03.304  4872  4957 D Evaluation: Frame 181 sent at 1572947763304
+11-05 11:56:03.323  4872  4957 D Evaluation: Frame 182 sent at 1572947763323
+11-05 11:56:03.396  4872  4957 D Evaluation: Frame 183 sent at 1572947763396
+11-05 11:56:03.443  4872  4957 D Evaluation: Frame 184 sent at 1572947763443
+11-05 11:56:03.467  4872  4957 D Evaluation: Frame 185 sent at 1572947763467
+11-05 11:56:03.497  4872  4957 D Evaluation: Frame 186 sent at 1572947763497
+11-05 11:56:03.526  4872  4957 D Evaluation: Frame 187 sent at 1572947763526
+11-05 11:56:03.565  4872  4957 D Evaluation: Frame 188 sent at 1572947763565
+11-05 11:56:03.594  4872  4957 D Evaluation: Frame 189 sent at 1572947763594
+11-05 11:56:03.632  4872  4957 D Evaluation: Frame 190 sent at 1572947763632
+11-05 11:56:03.661  4872  4957 D Evaluation: Frame 191 sent at 1572947763661
+11-05 11:56:03.695  4872  4957 D Evaluation: Frame 192 sent at 1572947763695
+11-05 11:56:03.732  4872  4957 D Evaluation: Frame 193 sent at 1572947763732
+11-05 11:56:03.759  4872  4957 D Evaluation: Frame 194 sent at 1572947763759
+11-05 11:56:03.795  4872  4957 D Evaluation: Frame 195 sent at 1572947763795
+11-05 11:56:03.831  4872  4957 D Evaluation: Frame 196 sent at 1572947763831
+11-05 11:56:03.858  4872  4957 D Evaluation: Frame 197 sent at 1572947763858
+11-05 11:56:03.903  4872  4957 D Evaluation: Frame 198 sent at 1572947763903
+11-05 11:56:03.942  4872  4957 D Evaluation: Frame 199 sent at 1572947763942
+11-05 11:56:03.964  4872  4957 D Evaluation: Frame 200 sent at 1572947763964
+11-05 11:56:04.007  4872  4957 D Evaluation: Frame 201 sent at 1572947764006
+11-05 11:56:04.044  4872  4957 D Evaluation: Frame 202 sent at 1572947764044
+11-05 11:56:04.071  4872  4872 D Poster  : At 1572947764070 location is 65.05962137157803 (latitude), and 25.466405626337394 (longitude)
+11-05 11:56:04.075  4872  4957 D Evaluation: Frame 203 sent at 1572947764075
+11-05 11:56:04.110  4872  4957 D Evaluation: Frame 204 sent at 1572947764110
+11-05 11:56:04.133  4872  4957 D Evaluation: Frame 205 sent at 1572947764133
+11-05 11:56:04.164  4872  4957 D Evaluation: Frame 206 sent at 1572947764164
+11-05 11:56:04.211  4872  4957 D Evaluation: Frame 207 sent at 1572947764211
+11-05 11:56:04.242  4872  4957 D Evaluation: Frame 208 sent at 1572947764241
+11-05 11:56:04.275  4872  4957 D Evaluation: Frame 209 sent at 1572947764275
+11-05 11:56:04.309  4872  4957 D Evaluation: Frame 210 sent at 1572947764309
+11-05 11:56:04.337  4872  4957 D Evaluation: Frame 211 sent at 1572947764337
+11-05 11:56:04.378  4872  4957 D Evaluation: Frame 212 sent at 1572947764378
+11-05 11:56:04.415  4872  4891 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-05 11:56:04.415  4872  4957 D Evaluation: Frame 213 sent at 1572947764415
+11-05 11:56:04.446  4872  4957 D Evaluation: Frame 214 sent at 1572947764446
+11-05 11:56:04.470  4872  4957 D Evaluation: Frame 215 sent at 1572947764470
+11-05 11:56:04.505  4872  4957 D Evaluation: Frame 216 sent at 1572947764505
+11-05 11:56:04.544  4872  4957 D Evaluation: Frame 217 sent at 1572947764544
+11-05 11:56:04.588  4872  4957 D Evaluation: Frame 218 sent at 1572947764588
+11-05 11:56:04.618  4872  4957 D Evaluation: Frame 219 sent at 1572947764618
+11-05 11:56:04.653  4872  4957 D Evaluation: Frame 220 sent at 1572947764653
+11-05 11:56:04.692  4872  4957 D Evaluation: Frame 221 sent at 1572947764692
+11-05 11:56:04.715  4872  4957 D Evaluation: Frame 222 sent at 1572947764715
+11-05 11:56:04.751  4872  4957 D Evaluation: Frame 223 sent at 1572947764751
+11-05 11:56:04.771  4872  4957 D Evaluation: Frame 224 sent at 1572947764771
+11-05 11:56:04.806  4872  4957 D Evaluation: Frame 225 sent at 1572947764806
+11-05 11:56:04.842  4872  4957 D Evaluation: Frame 226 sent at 1572947764841
+11-05 11:56:04.882  4872  4957 D Evaluation: Frame 227 sent at 1572947764882
+11-05 11:56:04.925  4872  4957 D Evaluation: Frame 228 sent at 1572947764925
+11-05 11:56:04.965  4872  4957 D Evaluation: Frame 229 sent at 1572947764965
+11-05 11:56:04.985  4872  4872 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:13.315186, limit is:60The moving distance of Y is:64.27689, limit is:60
+11-05 11:56:04.994  4872  4957 D Evaluation: Frame 230 sent at 1572947764994
+11-05 11:56:05.043  4872  4957 D Evaluation: Frame 231 sent at 1572947765043
+11-05 11:56:05.069  4872  4872 D Poster  : At 1572947765069 location is 65.05961842237 (latitude), and 25.466383242794862 (longitude)
+11-05 11:56:05.085  4872  4957 D Evaluation: Frame 232 sent at 1572947765085
+11-05 11:56:05.105  4872  4957 D Evaluation: Frame 233 sent at 1572947765105
+11-05 11:56:05.138  4872  4957 D Evaluation: Frame 234 sent at 1572947765138
+11-05 11:56:05.170  4872  4957 D Evaluation: Frame 235 sent at 1572947765170
+11-05 11:56:05.204  4872  4957 D Evaluation: Frame 236 sent at 1572947765204
+11-05 11:56:05.235  4872  4957 D Evaluation: Frame 237 sent at 1572947765235
+11-05 11:56:05.273  4872  4957 D Evaluation: Frame 238 sent at 1572947765273
+11-05 11:56:05.305  4872  4957 D Evaluation: Frame 239 sent at 1572947765305
+11-05 11:56:05.347  4872  4957 D Evaluation: Frame 240 sent at 1572947765347
+11-05 11:56:05.374  4872  4957 W System.err: java.net.SocketException: Message too long
+11-05 11:56:05.374  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-05 11:56:05.374  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-05 11:56:05.374  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-05 11:56:05.374  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-05 11:56:05.374  4872  4957 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-05 11:56:05.374  4872  4957 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-05 11:56:05.374  4872  4957 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-05 11:56:05.374  4872  4957 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-05 11:56:05.374  4872  4957 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-05 11:56:05.406  4872  4957 D Evaluation: Frame 242 sent at 1572947765406
+11-05 11:56:05.443  4872  4957 D Evaluation: Frame 243 sent at 1572947765443
+11-05 11:56:05.474  4872  4957 W System.err: java.net.SocketException: Message too long
+11-05 11:56:05.474  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-05 11:56:05.474  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-05 11:56:05.474  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-05 11:56:05.474  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-05 11:56:05.474  4872  4957 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-05 11:56:05.474  4872  4957 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-05 11:56:05.474  4872  4957 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-05 11:56:05.474  4872  4957 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-05 11:56:05.474  4872  4957 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-05 11:56:05.501  4872  4957 D Evaluation: Frame 245 sent at 1572947765501
+11-05 11:56:05.533  4872  4957 D Evaluation: Frame 246 sent at 1572947765533
+11-05 11:56:05.567  4872  4957 W System.err: java.net.SocketException: Message too long
+11-05 11:56:05.567  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-05 11:56:05.567  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-05 11:56:05.567  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-05 11:56:05.567  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-05 11:56:05.567  4872  4957 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-05 11:56:05.567  4872  4957 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-05 11:56:05.567  4872  4957 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-05 11:56:05.567  4872  4957 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-05 11:56:05.567  4872  4957 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-05 11:56:05.615  4872  4957 D Evaluation: Frame 248 sent at 1572947765615
+11-05 11:56:05.641  4872  4957 W System.err: java.net.SocketException: Message too long
+11-05 11:56:05.641  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-05 11:56:05.641  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-05 11:56:05.641  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-05 11:56:05.641  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-05 11:56:05.641  4872  4957 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-05 11:56:05.641  4872  4957 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-05 11:56:05.641  4872  4957 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-05 11:56:05.641  4872  4957 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-05 11:56:05.641  4872  4957 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-05 11:56:05.670  4872  4891 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-05 11:56:05.670  4872  4957 W System.err: java.net.SocketException: Message too long
+11-05 11:56:05.671  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-05 11:56:05.671  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-05 11:56:05.671  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-05 11:56:05.671  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-05 11:56:05.671  4872  4957 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-05 11:56:05.671  4872  4957 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-05 11:56:05.671  4872  4957 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-05 11:56:05.671  4872  4957 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-05 11:56:05.671  4872  4957 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-05 11:56:05.709  4872  4957 W System.err: java.net.SocketException: Message too long
+11-05 11:56:05.709  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-05 11:56:05.709  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-05 11:56:05.709  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-05 11:56:05.709  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-05 11:56:05.709  4872  4957 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-05 11:56:05.709  4872  4957 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-05 11:56:05.709  4872  4957 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-05 11:56:05.710  4872  4957 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-05 11:56:05.710  4872  4957 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-05 11:56:05.739  4872  4957 W System.err: java.net.SocketException: Message too long
+11-05 11:56:05.739  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-05 11:56:05.739  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-05 11:56:05.739  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-05 11:56:05.739  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-05 11:56:05.739  4872  4957 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-05 11:56:05.739  4872  4957 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-05 11:56:05.739  4872  4957 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-05 11:56:05.739  4872  4957 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-05 11:56:05.739  4872  4957 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-05 11:56:05.773  4872  4957 W System.err: java.net.SocketException: Message too long
+11-05 11:56:05.773  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-05 11:56:05.773  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-05 11:56:05.773  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-05 11:56:05.773  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-05 11:56:05.773  4872  4957 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-05 11:56:05.773  4872  4957 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-05 11:56:05.773  4872  4957 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-05 11:56:05.773  4872  4957 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-05 11:56:05.773  4872  4957 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-05 11:56:05.809  4872  4957 D Evaluation: Frame 254 sent at 1572947765809
+11-05 11:56:05.845  4872  4957 D Evaluation: Frame 255 sent at 1572947765845
+11-05 11:56:05.878  4872  4957 W System.err: java.net.SocketException: Message too long
+11-05 11:56:05.878  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-05 11:56:05.878  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-05 11:56:05.878  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-05 11:56:05.878  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-05 11:56:05.878  4872  4957 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-05 11:56:05.878  4872  4957 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-05 11:56:05.878  4872  4957 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-05 11:56:05.878  4872  4957 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-05 11:56:05.878  4872  4957 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-05 11:56:05.908  4872  4957 W System.err: java.net.SocketException: Message too long
+11-05 11:56:05.909  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-05 11:56:05.909  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-05 11:56:05.909  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-05 11:56:05.909  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-05 11:56:05.909  4872  4957 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-05 11:56:05.909  4872  4957 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-05 11:56:05.909  4872  4957 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-05 11:56:05.909  4872  4957 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-05 11:56:05.909  4872  4957 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-05 11:56:05.943  4872  4957 W System.err: java.net.SocketException: Message too long
+11-05 11:56:05.943  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-05 11:56:05.943  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-05 11:56:05.943  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-05 11:56:05.943  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-05 11:56:05.943  4872  4957 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-05 11:56:05.943  4872  4957 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-05 11:56:05.943  4872  4957 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-05 11:56:05.943  4872  4957 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-05 11:56:05.943  4872  4957 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-05 11:56:05.975  4872  4957 D Evaluation: Frame 259 sent at 1572947765975
+11-05 11:56:06.006  4872  4957 D Evaluation: Frame 260 sent at 1572947766006
+11-05 11:56:06.041  4872  4957 D Evaluation: Frame 261 sent at 1572947766041
+11-05 11:56:06.045  4872  4872 D Poster  : At 1572947766045 location is 65.05959328596185 (latitude), and 25.46640613044878 (longitude)
+11-05 11:56:06.082  4872  4957 D Evaluation: Frame 262 sent at 1572947766082
+11-05 11:56:06.108  4872  4957 D Evaluation: Frame 263 sent at 1572947766108
+11-05 11:56:06.146  4872  4957 D Evaluation: Frame 264 sent at 1572947766146
+11-05 11:56:06.175  4872  4957 D Evaluation: Frame 265 sent at 1572947766175
+11-05 11:56:06.218  4872  4957 W System.err: java.net.SocketException: Message too long
+11-05 11:56:06.218  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-05 11:56:06.218  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-05 11:56:06.218  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-05 11:56:06.218  4872  4957 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-05 11:56:06.218  4872  4957 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-05 11:56:06.218  4872  4957 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-05 11:56:06.218  4872  4957 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-05 11:56:06.218  4872  4957 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-05 11:56:06.218  4872  4957 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-05 11:56:06.246  4872  4957 D Evaluation: Frame 267 sent at 1572947766246
+11-05 11:56:06.281  4872  4957 D Evaluation: Frame 268 sent at 1572947766281
+11-05 11:56:06.316  4872  4957 D Evaluation: Frame 269 sent at 1572947766315
+11-05 11:56:06.354  4872  4957 D Evaluation: Frame 270 sent at 1572947766354
+11-05 11:56:06.381  4872  4957 D Evaluation: Frame 271 sent at 1572947766381
+11-05 11:56:06.429  4872  4957 D Evaluation: Frame 273 sent at 1572947766429
+11-05 11:56:06.450  4872  4957 D Evaluation: Frame 273 sent at 1572947766450
+11-05 11:56:06.475  4872  4957 D Evaluation: Frame 274 sent at 1572947766475
+11-05 11:56:06.511  4872  4957 D Evaluation: Frame 275 sent at 1572947766511
+11-05 11:56:06.545  4872  4957 D Evaluation: Frame 276 sent at 1572947766545
+11-05 11:56:06.580  4872  4957 D Evaluation: Frame 277 sent at 1572947766580
+11-05 11:56:06.614  4872  4957 D Evaluation: Frame 278 sent at 1572947766614
+11-05 11:56:06.653  4872  4957 D Evaluation: Frame 279 sent at 1572947766653
+11-05 11:56:06.684  4872  4957 D Evaluation: Frame 280 sent at 1572947766684
+11-05 11:56:06.714  4872  4957 D Evaluation: Frame 281 sent at 1572947766714
+11-05 11:56:06.755  4872  4957 D Evaluation: Frame 282 sent at 1572947766755
+11-05 11:56:06.780  4872  4957 D Evaluation: Frame 283 sent at 1572947766780
+11-05 11:56:06.814  4872  4891 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-05 11:56:06.815  4872  4957 D Evaluation: Frame 284 sent at 1572947766815
+11-05 11:56:06.851  4872  4957 D Evaluation: Frame 285 sent at 1572947766851
+11-05 11:56:06.882  4872  4957 D Evaluation: Frame 286 sent at 1572947766882
+11-05 11:56:06.919  4872  4957 D Evaluation: Frame 287 sent at 1572947766919
+11-05 11:56:06.970  4872  4957 D Evaluation: Frame 288 sent at 1572947766970
+11-05 11:56:06.990  4872  4957 D Evaluation: Frame 289 sent at 1572947766990
+11-05 11:56:07.014  4872  4957 D Evaluation: Frame 290 sent at 1572947767014
+11-05 11:56:07.051  4872  4957 D Evaluation: Frame 291 sent at 1572947767051
+11-05 11:56:07.062  4872  4872 D Poster  : At 1572947767062 location is 65.05959309255807 (latitude), and 25.466404935879133 (longitude)
+11-05 11:56:07.100  4872  4957 D Evaluation: Frame 292 sent at 1572947767100
+11-05 11:56:07.119  4872  4957 D Evaluation: Frame 293 sent at 1572947767119
+11-05 11:56:07.150  4872  4957 D Evaluation: Frame 294 sent at 1572947767150
+11-05 11:56:07.182  4872  4957 D Evaluation: Frame 295 sent at 1572947767182
+11-05 11:56:07.221  4872  4957 D Evaluation: Frame 296 sent at 1572947767221
+11-05 11:56:07.256  4872  4957 D Evaluation: Frame 297 sent at 1572947767256
+11-05 11:56:07.288  4872  4957 D Evaluation: Frame 298 sent at 1572947767288
+11-05 11:56:07.322  4872  4957 D Evaluation: Frame 299 sent at 1572947767322
+11-05 11:56:07.360  4872  4957 D Evaluation: Frame 300 sent at 1572947767360
+11-05 11:56:07.391  4872  4957 D Evaluation: Frame 301 sent at 1572947767391
+11-05 11:56:07.421  4872  4957 D Evaluation: Frame 302 sent at 1572947767421
+11-05 11:56:07.462  4872  4957 D Evaluation: Frame 303 sent at 1572947767462
+11-05 11:56:07.494  4872  4957 D Evaluation: Frame 304 sent at 1572947767494
+11-05 11:56:07.530  4872  4957 D Evaluation: Frame 305 sent at 1572947767530
+11-05 11:56:07.554  4872  4957 D Evaluation: Frame 306 sent at 1572947767554
+11-05 11:56:07.597  4872  4957 D Evaluation: Frame 307 sent at 1572947767597
+11-05 11:56:07.625  4872  4957 D Evaluation: Frame 308 sent at 1572947767625
+11-05 11:56:07.668  4872  4957 D Evaluation: Frame 309 sent at 1572947767668
+11-05 11:56:07.687  4872  4957 D Evaluation: Frame 310 sent at 1572947767687
+11-05 11:56:07.724  4872  4957 D Evaluation: Frame 311 sent at 1572947767724
+11-05 11:56:07.769  4872  4957 D Evaluation: Frame 312 sent at 1572947767768
+11-05 11:56:07.789  4872  4957 D Evaluation: Frame 313 sent at 1572947767789
+11-05 11:56:07.822  4872  4957 D Evaluation: Frame 314 sent at 1572947767822
+11-05 11:56:07.858  4872  4957 D Evaluation: Frame 315 sent at 1572947767858
+11-05 11:56:07.894  4872  4957 D Evaluation: Frame 316 sent at 1572947767894
+11-05 11:56:07.931  4872  4957 D Evaluation: Frame 317 sent at 1572947767931
+11-05 11:56:07.957  4872  4957 D Evaluation: Frame 318 sent at 1572947767957
+11-05 11:56:08.001  4872  4891 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-05 11:56:08.002  4872  4957 D Evaluation: Frame 319 sent at 1572947768002
+11-05 11:56:08.027  4872  4957 D Evaluation: Frame 320 sent at 1572947768027
+11-05 11:56:08.063  4872  4872 D Poster  : At 1572947768063 location is 65.05959363405927 (latitude), and 25.466408280490562 (longitude)
+11-05 11:56:08.072  4872  4957 D Evaluation: Frame 321 sent at 1572947768072
+11-05 11:56:08.099  4872  4957 D Evaluation: Frame 322 sent at 1572947768099
+11-05 11:56:08.129  4872  4957 D Evaluation: Frame 323 sent at 1572947768129
+11-05 11:56:08.160  4872  4957 D Evaluation: Frame 324 sent at 1572947768160
+11-05 11:56:08.214  4872  4957 D Evaluation: Frame 326 sent at 1572947768214
+11-05 11:56:08.259  4872  4957 D Evaluation: Frame 327 sent at 1572947768259
+11-05 11:56:08.285  4872  4957 D Evaluation: Frame 328 sent at 1572947768285
+11-05 11:56:08.290  4872  4872 I Poster  :  onPause() called.
+11-05 11:56:08.299  4872  4957 D Evaluation: Frame 328 sent at 1572947768299
+11-05 11:56:08.408  4872  4872 I Camera  : close camera: 0, package name: symlab.cloudridar.arhud
+11-05 11:56:08.408  4872  4872 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 4872 ,uidOf3RdApk: 10149 ,permType: 0 ,permCfg: 0
+11-05 11:56:08.410  4872  4872 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = false
+11-05 11:56:08.482  4872  4872 D ZrHung.AppEyeUiProbe: stop checker.
+11-05 11:56:08.498  4872  4872 I Poster  :  surfaceDestroyed() called.
+11-05 11:56:08.500  4872  4872 D ViewRootImpl[MainActivity]: surface should not be released
+11-05 11:56:08.500  4872  4872 I Poster  :  onStop() called.
+11-05 11:56:08.534  4872  5000 W libEGL  : EGLNativeWindowType 0xf2770008 disconnect failed
+11-05 11:56:09.066  4872  4872 D Poster  : At 1572947769066 location is 65.05959420397153 (latitude), and 25.466406762413097 (longitude)
+11-05 11:56:09.105  4872  4872 D Latitude: status
+11-05 11:56:09.227  4872  4939 D ZrHung.AppEyeUiProbe: Current Activity:false
+11-05 11:56:09.227  4872  4939 D ZrHung.AppEyeUiProbe: not watching, wait.
+11-05 11:56:09.697  4872  4872 I Poster  :  onDestroy() called.
+11-05 11:56:09.698  4872  4872 D ActivityThread: Remove activity client record, r= ActivityRecord{667bf54 token=android.os.BinderProxy@d1de8af {symlab.cloudridar.arhud/symlab.ARHUD.MainActivity}} token= android.os.BinderProxy@d1de8af

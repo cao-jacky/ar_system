@@ -1,0 +1,20 @@
+--------- beginning of system
+11-05 10:40:41.800  7862  7862 D ActivityThread: Attach thread to application
+11-05 10:40:41.938  7862  7862 V ActivityThread: callActivityOnCreate
+--------- beginning of crash
+11-05 10:40:41.980  7862  7907 E AndroidRuntime: FATAL EXCEPTION: network thread
+11-05 10:40:41.980  7862  7907 E AndroidRuntime: Process: symlab.cloudridar.arhud, PID: 7862
+11-05 10:40:41.980  7862  7907 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.nio.channels.DatagramChannel.send(java.nio.ByteBuffer, java.net.SocketAddress)' on a null object reference
+11-05 10:40:41.980  7862  7907 E AndroidRuntime: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-05 10:40:41.980  7862  7907 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-05 10:40:41.980  7862  7907 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-05 10:40:41.980  7862  7907 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:216)
+11-05 10:40:41.980  7862  7907 E AndroidRuntime: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-05 10:40:41.980  7862  7862 D ActivityThread: add activity client record, r= ActivityRecord{b962f3f token=android.os.BinderProxy@1f33661 {symlab.cloudridar.arhud/symlab.ARHUD.MainActivity}} token= android.os.BinderProxy@1f33661
+11-05 10:40:43.194  7932  7932 D ActivityThread: Attach thread to application
+11-05 10:40:43.342  7932  7932 V ActivityThread: callActivityOnCreate
+--------- beginning of main
+11-05 10:40:43.343  7932  7932 I Poster  :  onCreate() called.
+11-05 10:40:43.346  7932  7932 I HwApsImpl: APS: new HwApsImpl created
+11-05 10:40:43.352  7932  7932 V HwWidgetFactory: : successes to get AllImpl object and return....
+11-05 10:40:43.359  7932  7932 D OpenGLRenderer: Skia GL Pipeline

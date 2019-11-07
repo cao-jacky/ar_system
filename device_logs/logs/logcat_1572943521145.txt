@@ -1,0 +1,83 @@
+--------- beginning of main
+11-05 10:45:20.957  8856  8856 I dar.poster_edg: Late-enabling -Xcheck:jni
+11-05 10:45:20.994  8856  8856 I dar.poster_edg: Reinit property: dalvik.vm.checkjni= false
+11-05 10:45:21.005  8856  8856 D ZrHung.AppEyeUiProbe: AppEyeUIP created.
+11-05 10:45:21.007  8856  8856 E libc    : Access denied finding property "runtime.mmitest.isrunning"
+11-05 10:45:21.003  8856  8856 W re-initialized>: type=1400 audit(0.0:2705): avc: denied { read } for name="u:object_r:mmi_prop:s0" dev="tmpfs" ino=9047 scontext=u:r:untrusted_app_27:s0:c512,c768 tcontext=u:object_r:mmi_prop:s0 tclass=file permissive=0
+--------- beginning of system
+11-05 10:45:21.009  8856  8856 D ActivityThread: Attach thread to application
+11-05 10:45:21.019  8856  8863 E dar.poster_edg: Failed to send DDMS packet REAQ to debugger (-1 of 20): Broken pipe
+11-05 10:45:21.060  8856  8856 I dar.poster_edg: The ClassLoaderContext is a special shared library.
+11-05 10:45:21.065  8856  8876 I HwApiCacheMangerEx: apicache path=/storage/emulated/0 state=mounted key=symlab.cloudridar.poster_edge#10147#256
+11-05 10:45:21.066  8856  8876 I HwApiCacheMangerEx: apicache path=/storage/emulated/0 state=mounted key=symlab.cloudridar.poster_edge#10147#0
+11-05 10:45:21.137  8856  8856 I dar.poster_edg: QarthPatchMonintor::Init
+11-05 10:45:21.137  8856  8856 I dar.poster_edg: 
+11-05 10:45:21.137  8856  8856 I dar.poster_edg: QarthPatchMonintor::StartWatch
+11-05 10:45:21.137  8856  8856 I dar.poster_edg: 
+11-05 10:45:21.137  8856  8856 I dar.poster_edg: QarthPatchMonintor::WatchPackage: /data/hotpatch/fwkhotpatch/
+11-05 10:45:21.137  8856  8856 I dar.poster_edg: 
+11-05 10:45:21.137  8856  8856 I dar.poster_edg: QarthPatchMonintor::CheckAndWatchPatch: /data/hotpatch/fwkhotpatch/symlab.cloudridar.poster_edge
+11-05 10:45:21.137  8856  8856 I dar.poster_edg: 
+11-05 10:45:21.137  8856  8856 I dar.poster_edg: QarthPatchMonintor::CheckAndWatchPatch: /data/hotpatch/fwkhotpatch/all
+11-05 10:45:21.137  8856  8856 I dar.poster_edg: 
+11-05 10:45:21.137  8856  8856 I dar.poster_edg: QarthPatchMonintor::Run
+11-05 10:45:21.137  8856  8856 I dar.poster_edg: 
+11-05 10:45:21.137  8856  8884 I dar.poster_edg: QarthPatchMonintor::Reading
+11-05 10:45:21.137  8856  8884 I dar.poster_edg: 
+11-05 10:45:21.137  8856  8884 I dar.poster_edg: QarthPatchMonintor::CheckNotifyEvent
+11-05 10:45:21.137  8856  8884 I dar.poster_edg: 
+11-05 10:45:21.137  8856  8884 I dar.poster_edg: QarthPatchMonintor::CheckNotifyEvent before read
+11-05 10:45:21.137  8856  8884 I dar.poster_edg: 
+11-05 10:45:21.141  8856  8876 I AwareBitmapCacher: init processName:symlab.cloudridar.poster_edge pid=8856 uid=10147
+11-05 10:45:21.143  8856  8886 E AwareLog: AtomicFileUtils: readFileLines file not exist: android.util.AtomicFile@401944f
+11-05 10:45:21.144  8856  8856 I FirebaseInitProvider: FirebaseApp initialization unsuccessful
+11-05 10:45:21.144  8856  8886 E AwareLog: AtomicFileUtils: readFileLines file not exist: android.util.AtomicFile@3f667dc
+11-05 10:45:21.143  8856  8856 W dar.poster_edge: type=1400 audit(0.0:2706): avc: granted { create } for name="logs" scontext=u:r:untrusted_app_27:s0:c512,c768 tcontext=u:object_r:sdcardfs:s0:c512,c768 tclass=dir
+11-05 10:45:21.151  8856  8856 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-05 10:45:21.151  8856  8892 D ZrHung.AppEyeUiProbe: Runnable thread started.
+11-05 10:45:21.152  8856  8892 D IMonitor: Load library imonitor_jni
+11-05 10:45:21.154  8856  8892 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0102]
+11-05 10:45:21.154  8856  8892 W ZrHung.AppEyeUiProbe: Failed to get config from zrhung
+11-05 10:45:21.159  8890  8890 W logcat  : type=1400 audit(0.0:2707): avc: granted { create } for name="logcat_1572943521145.txt" scontext=u:r:untrusted_app_27:s0:c512,c768 tcontext=u:object_r:sdcardfs:s0:c512,c768 tclass=file
+11-05 10:45:21.170  8856  8856 V ActivityThread: callActivityOnCreate
+11-05 10:45:21.171  8856  8856 I Poster  :  onCreate() called.
+11-05 10:45:21.174  8856  8856 I HwApsImpl: APS: new HwApsImpl created
+11-05 10:45:21.180  8856  8856 V HwWidgetFactory: : successes to get AllImpl object and return....
+11-05 10:45:21.188  8856  8856 D OpenGLRenderer: Skia GL Pipeline
+11-05 10:45:21.197  8856  8856 I Rajawali: Rajawali | Bombshell | v1.1 Development 
+11-05 10:45:21.197  8856  8856 I Rajawali: THIS IS A DEV BRANCH CONTAINING SIGNIFICANT CHANGES. PLEASE REFER TO CHANGELOG.md FOR MORE INFORMATION.
+11-05 10:45:21.208  8856  8856 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-05 10:45:21.208  8856  8856 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-05 10:45:21.209  8856  8856 I iGraphics: [0020080c] pn: symlab.cloudridar.poster_edge, p: 8856
+11-05 10:45:21.223  8856  8856 D ActivityThread: add activity client record, r= ActivityRecord{a935099 token=android.os.BinderProxy@1f33661 {symlab.cloudridar.poster_edge/symlab.posterApp.PosterActivity}} token= android.os.BinderProxy@1f33661
+11-05 10:45:21.225  8856  8856 I Poster  :  onStart() called.
+11-05 10:45:21.225  8856  8856 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-05 10:45:21.226  8856  8856 I Poster  :  onResume() called.
+11-05 10:45:21.231  8856  8856 I PermissionManager: camera remind result:true
+11-05 10:45:21.231  8856  8856 I Camera  : open camera: 0, package name: symlab.cloudridar.poster_edge
+11-05 10:45:21.231  8856  8856 I BackgroundPermManager: pkgName: symlab.cloudridar.poster_edge,pid: 8856 ,uidOf3RdApk: 10147 ,permType: 0 ,permCfg: 1
+11-05 10:45:21.232  8856  8856 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = true
+11-05 10:45:21.243  8856  8856 D ActivityThread: isOptEnabled=false isWechatScanOpt=false
+11-05 10:45:21.250  8856  8856 I HwSecImmHelper: mSecurityInputMethodService is null
+11-05 10:45:21.255  8856  8912 D Poster  : UDP connection
+11-05 10:45:21.257  8856  8856 D OpenGLRenderer:   HWUI Binary is  enabled
+11-05 10:45:21.259  8856  8856 I ViewRootImpl[PosterActivity]: view add KeepScreenOnFlag
+11-05 10:45:21.279  8856  8930 D HiTouch_PressGestureDetector: onAttached, package=symlab.cloudridar.poster_edge, windowType=1, mHiTouchRestricted=false
+11-05 10:45:21.289  8856  8929 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-05 10:45:21.289  8856  8929 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-05 10:45:21.289  8856  8929 I OpenGLRenderer: Initialized EGL, version 1.4, mEglDisplay 0x1
+11-05 10:45:21.289  8856  8929 D OpenGLRenderer: Swap behavior 2
+11-05 10:45:21.299  8856  8929 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+11-05 10:45:21.308  8856  8856 I Poster  :  surfaceCreated() called.
+11-05 10:45:21.313  8856  8856 I PermissionManager: camera remind result:true
+11-05 10:45:21.319  8856  8856 I Poster  :  surfaceChanged() called.
+11-05 10:45:21.328  8856  8909 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+11-05 10:45:21.353  8856  8856 W InputMethodManager: startInputReason = 1
+11-05 10:45:21.355  8856  8856 W InputMethodManager: startInputReason = 5
+11-05 10:45:22.360  8856  8856 D stylus  : init stylus touchlistener.
+11-05 10:45:22.367  8856  8856 W Settings: Setting device_provisioned has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+11-05 10:45:22.367  8856  8856 V HiTouch_HiTouchSensor: User setup is finished.
+11-05 10:45:22.382  8856  8856 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:67.96973, limit is:60The moving distance of Y is:9.990723, limit is:60
+11-05 10:45:22.384  8856  8909 V Poster  : No object picked!
+11-05 10:45:22.396  8856  8912 D Evaluation: get gray scaled frame data at 1572943522396
+11-05 10:45:22.401  8856  8912 D Evaluation: frame 25 sent with size 15159 at 1572943522401

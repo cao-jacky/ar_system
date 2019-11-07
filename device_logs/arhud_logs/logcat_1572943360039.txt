@@ -1,0 +1,14 @@
+--------- beginning of system
+11-05 10:42:39.876  8135  8135 D ActivityThread: Attach thread to application
+--------- beginning of main
+11-05 10:42:39.878  8135  8144 E loudridar.arhu: Failed to send DDMS packet REAQ to debugger (-1 of 20): Broken pipe
+11-05 10:42:39.973  8135  8161 I HwApiCacheMangerEx: apicache path=/storage/emulated/0 state=mounted key=symlab.cloudridar.arhud#10149#256
+11-05 10:42:39.973  8135  8161 I HwApiCacheMangerEx: apicache path=/storage/emulated/0 state=mounted key=symlab.cloudridar.arhud#10149#0
+11-05 10:42:40.051  8171  8171 W logcat  : type=1400 audit(0.0:2168): avc: granted { create } for name="logcat_1572943360039.txt" scontext=u:r:untrusted_app:s0:c149,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0:c149,c256,c512,c768 tclass=file
+11-05 10:42:40.051  8135  8135 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-05 10:42:40.051  8135  8174 D ZrHung.AppEyeUiProbe: Runnable thread started.
+11-05 10:42:40.051  8135  8174 D IMonitor: Load library imonitor_jni
+11-05 10:42:40.054  8135  8174 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0102]
+11-05 10:42:40.054  8135  8174 W ZrHung.AppEyeUiProbe: Failed to get config from zrhung
+11-05 10:42:40.057  8135  8135 I MultiDex: Installing application
+11-05 10:42:40.058  8135  8135 I MultiDex: VM has multidex support, MultiDex support library is disabled.

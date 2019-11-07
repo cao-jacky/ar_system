@@ -138,7 +138,8 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
                 " (longitude)");
         if (NetworkUtils.isWifiConnection(this) ){
             Log.d(Constants.TAG, "Connected to WiFi");
-        } else {
+        }
+        else {
             curr_network_type = NetworkUtils.getNetworkType(this);
             Log.d(Constants.TAG, "Connected to mobile network " + curr_network_type);
         }

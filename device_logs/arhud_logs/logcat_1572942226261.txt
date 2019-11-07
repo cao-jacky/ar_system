@@ -1,0 +1,64 @@
+--------- beginning of main
+11-05 10:23:46.059 20868 20868 I loudridar.arhu: Late-enabling -Xcheck:jni
+11-05 10:23:46.099 20868 20868 I loudridar.arhu: Reinit property: dalvik.vm.checkjni= false
+11-05 10:23:46.122 20868 20868 D ZrHung.AppEyeUiProbe: AppEyeUIP created.
+11-05 10:23:46.119 20868 20868 W re-initialized>: type=1400 audit(0.0:29593): avc: denied { read } for name="u:object_r:mmi_prop:s0" dev="tmpfs" ino=15287 scontext=u:r:untrusted_app:s0:c147,c256,c512,c768 tcontext=u:object_r:mmi_prop:s0 tclass=file permissive=0
+11-05 10:23:46.124 20868 20868 E libc    : Access denied finding property "runtime.mmitest.isrunning"
+--------- beginning of system
+11-05 10:23:46.126 20868 20868 D ActivityThread: Attach thread to application
+11-05 10:23:46.190 20868 20889 I HwApiCacheMangerEx: apicache path=/storage/emulated/0 state=mounted key=symlab.cloudridar.arhud#10147#256
+11-05 10:23:46.190 20868 20889 I HwApiCacheMangerEx: apicache path=/storage/emulated/0 state=mounted key=symlab.cloudridar.arhud#10147#0
+11-05 10:23:46.252 20868 20868 I loudridar.arhu: QarthPatchMonintor::Init
+11-05 10:23:46.252 20868 20868 I loudridar.arhu: 
+11-05 10:23:46.252 20868 20868 I loudridar.arhu: QarthPatchMonintor::StartWatch
+11-05 10:23:46.252 20868 20868 I loudridar.arhu: 
+11-05 10:23:46.252 20868 20868 I loudridar.arhu: QarthPatchMonintor::WatchPackage: /data/hotpatch/fwkhotpatch/
+11-05 10:23:46.252 20868 20868 I loudridar.arhu: 
+11-05 10:23:46.252 20868 20868 I loudridar.arhu: QarthPatchMonintor::CheckAndWatchPatch: /data/hotpatch/fwkhotpatch/symlab.cloudridar.arhud
+11-05 10:23:46.252 20868 20868 I loudridar.arhu: 
+11-05 10:23:46.252 20868 20868 I loudridar.arhu: QarthPatchMonintor::CheckAndWatchPatch: /data/hotpatch/fwkhotpatch/all
+11-05 10:23:46.252 20868 20868 I loudridar.arhu: 
+11-05 10:23:46.252 20868 20868 I loudridar.arhu: QarthPatchMonintor::Run
+11-05 10:23:46.252 20868 20868 I loudridar.arhu: 
+11-05 10:23:46.252 20868 20896 I loudridar.arhu: QarthPatchMonintor::Reading
+11-05 10:23:46.252 20868 20896 I loudridar.arhu: 
+11-05 10:23:46.252 20868 20896 I loudridar.arhu: QarthPatchMonintor::CheckNotifyEvent
+11-05 10:23:46.252 20868 20896 I loudridar.arhu: 
+11-05 10:23:46.252 20868 20896 I loudridar.arhu: QarthPatchMonintor::CheckNotifyEvent before read
+11-05 10:23:46.252 20868 20896 I loudridar.arhu: 
+11-05 10:23:46.255 20868 20868 I MultiDex: VM with version 2.1.0 has multidex support
+11-05 10:23:46.255 20868 20868 I MultiDex: Installing application
+11-05 10:23:46.255 20868 20868 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+11-05 10:23:46.257 20868 20889 I AwareBitmapCacher: init processName:symlab.cloudridar.arhud pid=20868 uid=10147
+11-05 10:23:46.258 20868 20897 E AwareLog: AtomicFileUtils: readFileLines file not exist: android.util.AtomicFile@c9cc54c
+11-05 10:23:46.258 20868 20897 E AwareLog: AtomicFileUtils: readFileLines file not exist: android.util.AtomicFile@7a55995
+11-05 10:23:46.260 20868 20868 I FirebaseInitProvider: FirebaseApp initialization unsuccessful
+11-05 10:23:46.267 20868 20868 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-05 10:23:46.267 20868 20903 D ZrHung.AppEyeUiProbe: Runnable thread started.
+11-05 10:23:46.268 20868 20903 D IMonitor: Load library imonitor_jni
+11-05 10:23:46.270 20868 20903 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0102]
+11-05 10:23:46.270 20868 20903 W ZrHung.AppEyeUiProbe: Failed to get config from zrhung
+11-05 10:23:46.271 20901 20901 W logcat  : type=1400 audit(0.0:29594): avc: granted { create } for name="logcat_1572942226261.txt" scontext=u:r:untrusted_app:s0:c147,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0:c147,c256,c512,c768 tclass=file
+11-05 10:23:46.279 20868 20868 I MultiDex: Installing application
+11-05 10:23:46.279 20868 20868 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+11-05 10:23:46.282 20868 20868 V ActivityThread: callActivityOnCreate
+11-05 10:23:46.282 20868 20868 I Poster  :  onCreate() called.
+11-05 10:23:46.285 20868 20868 I HwApsImpl: APS: new HwApsImpl created
+11-05 10:23:46.291 20868 20868 V HwWidgetFactory: : successes to get AllImpl object and return....
+11-05 10:23:46.298 20868 20868 D OpenGLRenderer: Skia GL Pipeline
+11-05 10:23:46.321 20868 20868 D Poster  : config file error
+11-05 10:23:46.325 20868 20912 W loudridar.arhu: Accessing hidden method Lcom/msic/qarth/PatchStore;->createDisableExceptionQarthFile(Ljava/lang/Throwable;)Z (blacklist, JNI)
+11-05 10:23:46.325 20868 20912 E loudridar.arhu: [qarth_debug:]  get PatchStore::createDisableExceptionQarthFile method fail.
+--------- beginning of crash
+11-05 10:23:46.325 20868 20912 E AndroidRuntime: FATAL EXCEPTION: network thread
+11-05 10:23:46.325 20868 20912 E AndroidRuntime: Process: symlab.cloudridar.arhud, PID: 20868
+11-05 10:23:46.325 20868 20912 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke virtual method 'int java.nio.channels.DatagramChannel.send(java.nio.ByteBuffer, java.net.SocketAddress)' on a null object reference
+11-05 10:23:46.325 20868 20912 E AndroidRuntime: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-05 10:23:46.325 20868 20912 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-05 10:23:46.325 20868 20912 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-05 10:23:46.325 20868 20912 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:216)
+11-05 10:23:46.325 20868 20912 E AndroidRuntime: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-05 10:23:46.326 20868 20868 D ActivityThread: add activity client record, r= ActivityRecord{f82197c token=android.os.BinderProxy@ef7d776 {symlab.cloudridar.arhud/symlab.ARHUD.MainActivity}} token= android.os.BinderProxy@ef7d776
+11-05 10:23:46.338 20868 20868 I Poster  :  onStart() called.
+11-05 10:23:46.338 20868 20868 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-05 10:23:46.338 20868 20912 I Process : Sending signal. PID: 20868 SIG: 9

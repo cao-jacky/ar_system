@@ -1,0 +1,686 @@
+--------- beginning of main
+11-06 11:57:52.615  3784  3784 W logcat  : type=1400 audit(0.0:41639): avc: granted { create } for name="logcat_1573034272599.txt" scontext=u:r:untrusted_app:s0:c149,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0:c149,c256,c512,c768 tclass=file
+11-06 11:57:52.616  3761  3761 I MultiDex: Installing application
+11-06 11:57:52.617  3761  3761 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+--------- beginning of system
+11-06 11:57:52.620  3761  3761 V ActivityThread: callActivityOnCreate
+11-06 11:57:52.620  3761  3761 I Poster  :  onCreate() called.
+11-06 11:57:52.623  3761  3761 I HwApsImpl: APS: new HwApsImpl created
+11-06 11:57:52.630  3761  3761 V HwWidgetFactory: : successes to get AllImpl object and return....
+11-06 11:57:52.638  3761  3761 D OpenGLRenderer: Skia GL Pipeline
+11-06 11:57:52.666  3761  3761 D Poster  : Server bound to IP 193.166.28.132 and port 52727
+11-06 11:57:52.670  3761  3797 D Evaluation: metadata 0 sent 
+11-06 11:57:52.671  3761  3761 D ActivityThread: add activity client record, r= ActivityRecord{fd66872 token=android.os.BinderProxy@8cd3ec5 {symlab.cloudridar.arhud/symlab.ARHUD.MainActivity}} token= android.os.BinderProxy@8cd3ec5
+11-06 11:57:52.673  3761  3761 I Poster  :  onStart() called.
+11-06 11:57:52.674  3761  3761 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-06 11:57:52.675  3761  3761 I Poster  :  onResume() called.
+11-06 11:57:52.680  3761  3761 I PermissionManager: camera remind result:true
+11-06 11:57:52.680  3761  3761 I Camera  : open camera: 0, package name: symlab.cloudridar.arhud
+11-06 11:57:52.680  3761  3761 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 3761 ,uidOf3RdApk: 10149 ,permType: 0 ,permCfg: 1
+11-06 11:57:52.681  3761  3761 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = true
+11-06 11:57:52.691  3761  3761 D ActivityThread: isOptEnabled=false isWechatScanOpt=false
+11-06 11:57:52.693  3761  3761 I HwSecImmHelper: mSecurityInputMethodService is null
+11-06 11:57:52.701  3761  3761 D OpenGLRenderer:   HWUI Binary is  enabled
+11-06 11:57:52.723  3761  3819 D HiTouch_PressGestureDetector: onAttached, package=symlab.cloudridar.arhud, windowType=1, mHiTouchRestricted=false
+11-06 11:57:52.734  3761  3818 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-06 11:57:52.734  3761  3818 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-06 11:57:52.734  3761  3818 I iGraphics: [0020080c] pn: symlab.cloudridar.arhud, p: 3761
+11-06 11:57:52.734  3761  3818 I OpenGLRenderer: Initialized EGL, version 1.4, mEglDisplay 0x1
+11-06 11:57:52.734  3761  3818 D OpenGLRenderer: Swap behavior 2
+11-06 11:57:52.747  3761  3818 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+11-06 11:57:52.753  3761  3761 I Poster  :  surfaceCreated() called.
+11-06 11:57:52.753  3761  3761 I Poster  : initPreview() called
+11-06 11:57:52.759  3761  3761 I PermissionManager: camera remind result:true
+11-06 11:57:52.765  3761  3761 I Poster  :  surfaceChanged() called.
+11-06 11:57:52.785  3761  3761 W InputMethodManager: startInputReason = 1
+11-06 11:57:52.797  3761  3761 W InputMethodManager: startInputReason = 5
+11-06 11:57:53.069  3761  3797 D Evaluation: metadata 1 sent 
+11-06 11:57:53.101  3761  3797 D Evaluation: metadata 2 sent 
+11-06 11:57:53.135  3761  3797 D Evaluation: metadata 3 sent 
+11-06 11:57:53.168  3761  3797 D Evaluation: metadata 4 sent 
+11-06 11:57:53.202  3761  3797 D Evaluation: metadata 5 sent 
+11-06 11:57:53.257  3761  3797 D Evaluation: Frame 6 sent at 1573034273257
+11-06 11:57:53.282  3761  3797 D Evaluation: Frame 7 sent at 1573034273282
+11-06 11:57:53.317  3761  3797 D Evaluation: Frame 8 sent at 1573034273317
+11-06 11:57:53.349  3761  3797 D Evaluation: Frame 9 sent at 1573034273349
+11-06 11:57:53.549  3761  3761 D Poster  : At 1573034273548 location is 65.05668788260118 (latitude), and 25.480424669110683 (longitude)
+11-06 11:57:53.551  3761  3761 D Poster  : Connected to mobile network 20
+11-06 11:57:53.622  3761  3797 D Evaluation: Frame 10 sent at 1573034273622
+11-06 11:57:53.624  3761  3797 D Evaluation: 0 res for frame 6 received at 1573034273624
+11-06 11:57:53.651  3761  3772 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:57:53.652  3761  3797 D Evaluation: Frame 11 sent at 1573034273652
+11-06 11:57:53.662  3761  3770 W System  : A resource failed to call close. 
+11-06 11:57:53.662  3761  3770 W System  : A resource failed to call close. 
+11-06 11:57:53.684  3761  3797 D Evaluation: Frame 12 sent at 1573034273684
+11-06 11:57:53.720  3761  3797 D Evaluation: Frame 13 sent at 1573034273720
+11-06 11:57:53.722  3761  3797 D Evaluation: 0 res for frame 7 received at 1573034273722
+11-06 11:57:53.752  3761  3797 D Evaluation: Frame 14 sent at 1573034273752
+11-06 11:57:53.786  3761  3797 D Evaluation: Frame 15 sent at 1573034273786
+11-06 11:57:53.819  3761  3797 D Evaluation: Frame 16 sent at 1573034273819
+11-06 11:57:53.854  3761  3797 D Evaluation: Frame 17 sent at 1573034273854
+11-06 11:57:53.903  3761  3797 D Evaluation: Frame 18 sent at 1573034273903
+11-06 11:57:53.927  3761  3797 D Evaluation: Frame 19 sent at 1573034273927
+11-06 11:57:53.960  3761  3797 D Evaluation: Frame 20 sent at 1573034273960
+11-06 11:57:53.998  3761  3797 D Evaluation: Frame 21 sent at 1573034273998
+11-06 11:57:54.038  3761  3797 D Evaluation: Frame 22 sent at 1573034274038
+11-06 11:57:54.039  3761  3797 D Evaluation: 0 res for frame 10 received at 1573034274039
+11-06 11:57:54.077  3761  3797 D Evaluation: Frame 23 sent at 1573034274077
+11-06 11:57:54.102  3761  3797 D Evaluation: Frame 24 sent at 1573034274102
+11-06 11:57:54.135  3761  3797 D Evaluation: Frame 25 sent at 1573034274135
+11-06 11:57:54.171  3761  3797 D Evaluation: Frame 26 sent at 1573034274171
+11-06 11:57:54.172  3761  3797 D Evaluation: 0 res for frame 11 received at 1573034274172
+11-06 11:57:54.212  3761  3797 D Evaluation: Frame 27 sent at 1573034274212
+11-06 11:57:54.244  3761  3797 D Evaluation: Frame 28 sent at 1573034274244
+11-06 11:57:54.307  3761  3797 D Evaluation: Frame 29 sent at 1573034274307
+11-06 11:57:54.362  3761  3797 D Evaluation: Frame 30 sent at 1573034274362
+11-06 11:57:54.410  3761  3797 D Evaluation: Frame 31 sent at 1573034274410
+11-06 11:57:54.506  3761  3797 D Evaluation: Frame 32 sent at 1573034274506
+11-06 11:57:54.554  3761  3761 D Poster  : At 1573034274553 location is 65.05668844346582 (latitude), and 25.48042148474667 (longitude)
+11-06 11:57:54.557  3761  3761 D Poster  : Connected to mobile network 20
+11-06 11:57:54.597  3761  3797 D Evaluation: Frame 34 sent at 1573034274597
+11-06 11:57:54.617  3761  3797 D Evaluation: Frame 34 sent at 1573034274617
+11-06 11:57:54.683  3761  3797 D Evaluation: Frame 35 sent at 1573034274683
+11-06 11:57:54.706  3761  3797 D Evaluation: Frame 36 sent at 1573034274706
+11-06 11:57:54.752  3761  3797 D Evaluation: Frame 37 sent at 1573034274752
+11-06 11:57:54.782  3761  3797 D Evaluation: Frame 38 sent at 1573034274782
+11-06 11:57:54.817  3761  3797 D Evaluation: Frame 39 sent at 1573034274817
+11-06 11:57:54.836  3761  3797 D Evaluation: Frame 40 sent at 1573034274836
+11-06 11:57:54.876  3761  3797 D Evaluation: Frame 41 sent at 1573034274876
+11-06 11:57:54.907  3761  3797 D Evaluation: Frame 42 sent at 1573034274907
+11-06 11:57:54.971  3761  3797 D Evaluation: Frame 43 sent at 1573034274971
+11-06 11:57:55.007  3761  3797 D Evaluation: Frame 44 sent at 1573034275007
+11-06 11:57:55.040  3761  3797 D Evaluation: Frame 45 sent at 1573034275040
+11-06 11:57:55.071  3761  3797 D Evaluation: Frame 46 sent at 1573034275071
+11-06 11:57:55.114  3761  3797 D Evaluation: Frame 47 sent at 1573034275114
+11-06 11:57:55.143  3761  3797 D Evaluation: Frame 48 sent at 1573034275143
+11-06 11:57:55.180  3761  3797 D Evaluation: Frame 49 sent at 1573034275180
+11-06 11:57:55.212  3761  3797 D Evaluation: Frame 50 sent at 1573034275212
+11-06 11:57:55.254  3761  3772 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:57:55.254  3761  3797 D Evaluation: Frame 51 sent at 1573034275254
+11-06 11:57:55.272  3761  3770 W System  : A resource failed to call close. 
+11-06 11:57:55.272  3761  3770 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 4 lines
+11-06 11:57:55.272  3761  3770 W System  : A resource failed to call close. 
+11-06 11:57:55.279  3761  3797 D Evaluation: Frame 52 sent at 1573034275279
+11-06 11:57:55.313  3761  3797 D Evaluation: Frame 53 sent at 1573034275313
+11-06 11:57:55.346  3761  3797 D Evaluation: Frame 54 sent at 1573034275346
+11-06 11:57:55.375  3761  3797 D Evaluation: Frame 55 sent at 1573034275374
+11-06 11:57:55.414  3761  3797 D Evaluation: Frame 56 sent at 1573034275414
+11-06 11:57:55.448  3761  3797 D Evaluation: Frame 57 sent at 1573034275448
+11-06 11:57:55.489  3761  3797 D Evaluation: Frame 58 sent at 1573034275489
+11-06 11:57:55.518  3761  3797 D Evaluation: Frame 59 sent at 1573034275518
+11-06 11:57:55.546  3761  3761 D Poster  : At 1573034275546 location is 65.05668872103865 (latitude), and 25.480419724050606 (longitude)
+11-06 11:57:55.547  3761  3797 D Evaluation: Frame 60 sent at 1573034275547
+11-06 11:57:55.549  3761  3761 D Poster  : Connected to mobile network 20
+11-06 11:57:55.580  3761  3797 D Evaluation: Frame 61 sent at 1573034275580
+11-06 11:57:55.609  3761  3797 D Evaluation: Frame 62 sent at 1573034275609
+11-06 11:57:55.643  3761  3797 D Evaluation: Frame 63 sent at 1573034275643
+11-06 11:57:55.679  3761  3797 D Evaluation: Frame 64 sent at 1573034275679
+11-06 11:57:55.713  3761  3797 D Evaluation: Frame 65 sent at 1573034275713
+11-06 11:57:55.746  3761  3797 D Evaluation: Frame 66 sent at 1573034275746
+11-06 11:57:55.860  3761  3797 D Evaluation: Frame 67 sent at 1573034275860
+11-06 11:57:55.898  3761  3797 D Evaluation: Frame 68 sent at 1573034275898
+11-06 11:57:55.918  3761  3797 D Evaluation: Frame 69 sent at 1573034275918
+11-06 11:57:55.951  3761  3797 D Evaluation: Frame 70 sent at 1573034275951
+11-06 11:57:55.984  3761  3797 D Evaluation: Frame 71 sent at 1573034275984
+11-06 11:57:56.016  3761  3797 D Evaluation: Frame 72 sent at 1573034276016
+11-06 11:57:56.050  3761  3797 D Evaluation: Frame 73 sent at 1573034276050
+11-06 11:57:56.090  3761  3797 D Evaluation: Frame 74 sent at 1573034276090
+11-06 11:57:56.120  3761  3797 D Evaluation: Frame 75 sent at 1573034276120
+11-06 11:57:56.164  3761  3797 D Evaluation: Frame 76 sent at 1573034276164
+11-06 11:57:56.189  3761  3797 D Evaluation: Frame 77 sent at 1573034276189
+11-06 11:57:56.226  3761  3797 D Evaluation: Frame 78 sent at 1573034276226
+11-06 11:57:56.251  3761  3797 D Evaluation: Frame 79 sent at 1573034276251
+11-06 11:57:56.294  3761  3797 D Evaluation: Frame 80 sent at 1573034276294
+11-06 11:57:56.317  3761  3797 D Evaluation: Frame 81 sent at 1573034276317
+11-06 11:57:56.361  3761  3797 D Evaluation: Frame 82 sent at 1573034276361
+11-06 11:57:56.392  3761  3797 D Evaluation: Frame 83 sent at 1573034276392
+11-06 11:57:56.434  3761  3797 D Evaluation: Frame 84 sent at 1573034276434
+11-06 11:57:56.456  3761  3797 D Evaluation: Frame 85 sent at 1573034276456
+11-06 11:57:56.503  3761  3797 D Evaluation: Frame 87 sent at 1573034276503
+11-06 11:57:56.526  3761  3797 D Evaluation: Frame 87 sent at 1573034276526
+11-06 11:57:56.546  3761  3761 D Poster  : At 1573034276546 location is 65.05669003487714 (latitude), and 25.480415051898788 (longitude)
+11-06 11:57:56.549  3761  3761 D Poster  : Connected to mobile network 20
+11-06 11:57:56.579  3761  3797 D Evaluation: Frame 88 sent at 1573034276579
+11-06 11:57:56.641  3761  3797 D Evaluation: Frame 90 sent at 1573034276641
+11-06 11:57:56.662  3761  3772 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:57:56.663  3761  3797 D Evaluation: Frame 90 sent at 1573034276663
+11-06 11:57:56.702  3761  3797 D Evaluation: Frame 91 sent at 1573034276702
+11-06 11:57:56.724  3761  3797 D Evaluation: Frame 92 sent at 1573034276724
+11-06 11:57:56.772  3761  3797 D Evaluation: Frame 93 sent at 1573034276772
+11-06 11:57:56.796  3761  3797 D Evaluation: Frame 94 sent at 1573034276796
+11-06 11:57:56.835  3761  3797 D Evaluation: Frame 95 sent at 1573034276835
+11-06 11:57:56.865  3761  3797 D Evaluation: Frame 96 sent at 1573034276865
+11-06 11:57:56.906  3761  3797 D Evaluation: Frame 98 sent at 1573034276906
+11-06 11:57:56.925  3761  3797 D Evaluation: Frame 98 sent at 1573034276925
+11-06 11:57:56.932  3761  3761 D stylus  : init stylus touchlistener.
+11-06 11:57:56.937  3761  3761 W Settings: Setting device_provisioned has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+11-06 11:57:56.939  3761  3761 V HiTouch_HiTouchSensor: User setup is finished.
+11-06 11:57:56.964  3761  3797 D Evaluation: Frame 99 sent at 1573034276964
+11-06 11:57:56.991  3761  3797 D Evaluation: Frame 100 sent at 1573034276991
+11-06 11:57:57.024  3761  3761 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:6.824707, limit is:60The moving distance of Y is:63.563095, limit is:60
+11-06 11:57:57.031  3761  3797 D Evaluation: Frame 101 sent at 1573034277031
+11-06 11:57:57.063  3761  3797 D Evaluation: Frame 102 sent at 1573034277063
+11-06 11:57:57.102  3761  3797 D Evaluation: Frame 103 sent at 1573034277102
+11-06 11:57:57.132  3761  3797 D Evaluation: Frame 104 sent at 1573034277132
+11-06 11:57:57.189  3761  3797 D Evaluation: Frame 105 sent at 1573034277189
+11-06 11:57:57.226  3761  3797 D Evaluation: Frame 106 sent at 1573034277226
+11-06 11:57:57.323  3761  3797 D Evaluation: Frame 107 sent at 1573034277323
+11-06 11:57:57.360  3761  3797 D Evaluation: Frame 108 sent at 1573034277360
+11-06 11:57:57.388  3761  3797 D Evaluation: Frame 109 sent at 1573034277388
+11-06 11:57:57.427  3761  3797 D Evaluation: Frame 110 sent at 1573034277427
+11-06 11:57:57.450  3761  3797 D Evaluation: Frame 111 sent at 1573034277450
+11-06 11:57:57.495  3761  3797 D Evaluation: Frame 112 sent at 1573034277495
+11-06 11:57:57.521  3761  3797 D Evaluation: Frame 113 sent at 1573034277521
+11-06 11:57:57.545  3761  3761 D Poster  : At 1573034277544 location is 65.05669037916842 (latitude), and 25.480411028692853 (longitude)
+11-06 11:57:57.547  3761  3761 D Poster  : Connected to mobile network 20
+11-06 11:57:57.562  3761  3797 D Evaluation: Frame 114 sent at 1573034277562
+11-06 11:57:57.585  3761  3797 D Evaluation: Frame 115 sent at 1573034277585
+11-06 11:57:57.593  3761  3761 I AwareBitmapCacher: init lrucache size: 2097152 pid=3761
+11-06 11:57:57.628  3761  3797 D Evaluation: Frame 116 sent at 1573034277628
+11-06 11:57:57.660  3761  3797 D Evaluation: Frame 117 sent at 1573034277660
+11-06 11:57:57.694  3761  3797 D Evaluation: Frame 118 sent at 1573034277694
+11-06 11:57:57.722  3761  3797 D Evaluation: Frame 119 sent at 1573034277722
+11-06 11:57:57.763  3761  3797 D Evaluation: Frame 120 sent at 1573034277763
+11-06 11:57:57.788  3761  3797 D Evaluation: Frame 121 sent at 1573034277788
+11-06 11:57:57.834  3761  3797 D Evaluation: Frame 122 sent at 1573034277834
+11-06 11:57:57.858  3761  3797 D Evaluation: Frame 123 sent at 1573034277858
+11-06 11:57:57.899  3761  3797 D Evaluation: Frame 124 sent at 1573034277899
+11-06 11:57:57.925  3761  3797 D Evaluation: Frame 125 sent at 1573034277925
+11-06 11:57:57.961  3761  3797 D Evaluation: Frame 126 sent at 1573034277961
+11-06 11:57:57.991  3761  3772 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:57:57.991  3761  3797 D Evaluation: Frame 127 sent at 1573034277991
+11-06 11:57:58.034  3761  3797 D Evaluation: Frame 128 sent at 1573034278034
+11-06 11:57:58.058  3761  3797 D Evaluation: Frame 129 sent at 1573034278058
+11-06 11:57:58.100  3761  3797 D Evaluation: Frame 130 sent at 1573034278100
+11-06 11:57:58.127  3761  3797 D Evaluation: Frame 131 sent at 1573034278127
+11-06 11:57:58.160  3761  3797 D Evaluation: Frame 132 sent at 1573034278160
+11-06 11:57:58.202  3761  3797 D Evaluation: Frame 133 sent at 1573034278202
+11-06 11:57:58.224  3761  3797 D Evaluation: Frame 134 sent at 1573034278224
+11-06 11:57:58.258  3761  3797 D Evaluation: Frame 135 sent at 1573034278258
+11-06 11:57:58.330  3761  3797 D Evaluation: Frame 136 sent at 1573034278329
+11-06 11:57:58.395  3761  3797 D Evaluation: Frame 137 sent at 1573034278395
+11-06 11:57:58.437  3761  3797 D Evaluation: Frame 138 sent at 1573034278437
+11-06 11:57:58.464  3761  3797 D Evaluation: Frame 139 sent at 1573034278464
+11-06 11:57:58.500  3761  3797 D Evaluation: Frame 140 sent at 1573034278500
+11-06 11:57:58.527  3761  3797 D Evaluation: Frame 141 sent at 1573034278527
+11-06 11:57:58.540  3761  3761 D Poster  : At 1573034278540 location is 65.05668949877933 (latitude), and 25.480411445168226 (longitude)
+11-06 11:57:58.542  3761  3761 D Poster  : Connected to mobile network 20
+11-06 11:57:58.580  3761  3797 D Evaluation: Frame 143 sent at 1573034278580
+11-06 11:57:58.598  3761  3797 D Evaluation: Frame 143 sent at 1573034278598
+11-06 11:57:58.636  3761  3797 D Evaluation: Frame 144 sent at 1573034278636
+11-06 11:57:58.662  3761  3797 D Evaluation: Frame 145 sent at 1573034278662
+11-06 11:57:58.703  3761  3797 D Evaluation: Frame 146 sent at 1573034278703
+11-06 11:57:58.734  3761  3797 D Evaluation: Frame 147 sent at 1573034278734
+11-06 11:57:58.774  3761  3797 D Evaluation: Frame 148 sent at 1573034278774
+11-06 11:57:58.799  3761  3797 D Evaluation: Frame 149 sent at 1573034278799
+11-06 11:57:58.840  3761  3797 D Evaluation: Frame 150 sent at 1573034278840
+11-06 11:57:58.867  3761  3797 D Evaluation: Frame 151 sent at 1573034278867
+11-06 11:57:58.905  3761  3797 D Evaluation: Frame 152 sent at 1573034278905
+11-06 11:57:58.932  3761  3797 D Evaluation: Frame 153 sent at 1573034278932
+11-06 11:57:58.976  3761  3797 D Evaluation: Frame 154 sent at 1573034278976
+11-06 11:57:59.005  3761  3797 D Evaluation: Frame 155 sent at 1573034279005
+11-06 11:57:59.037  3761  3797 D Evaluation: Frame 156 sent at 1573034279037
+11-06 11:57:59.066  3761  3797 D Evaluation: Frame 157 sent at 1573034279066
+11-06 11:57:59.107  3761  3797 D Evaluation: Frame 158 sent at 1573034279107
+11-06 11:57:59.133  3761  3797 D Evaluation: Frame 159 sent at 1573034279133
+11-06 11:57:59.170  3761  3797 D Evaluation: Frame 160 sent at 1573034279170
+11-06 11:57:59.195  3761  3797 D Evaluation: Frame 161 sent at 1573034279195
+11-06 11:57:59.232  3761  3797 D Evaluation: Frame 162 sent at 1573034279232
+11-06 11:57:59.280  3761  3797 D Evaluation: Frame 163 sent at 1573034279280
+11-06 11:57:59.303  3761  3797 D Evaluation: Frame 164 sent at 1573034279303
+11-06 11:57:59.334  3761  3772 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:57:59.334  3761  3797 D Evaluation: Frame 165 sent at 1573034279334
+11-06 11:57:59.373  3761  3797 D Evaluation: Frame 166 sent at 1573034279373
+11-06 11:57:59.402  3761  3797 D Evaluation: Frame 167 sent at 1573034279402
+11-06 11:57:59.442  3761  3797 D Evaluation: Frame 168 sent at 1573034279442
+11-06 11:57:59.466  3761  3797 D Evaluation: Frame 169 sent at 1573034279466
+11-06 11:57:59.509  3761  3797 D Evaluation: Frame 170 sent at 1573034279509
+11-06 11:57:59.551  3761  3761 D Poster  : At 1573034279551 location is 65.05668960083118 (latitude), and 25.480411422311334 (longitude)
+11-06 11:57:59.553  3761  3761 D Poster  : Connected to mobile network 20
+11-06 11:57:59.555  3761  3797 D Evaluation: Frame 171 sent at 1573034279555
+11-06 11:57:59.584  3761  3797 D Evaluation: Frame 172 sent at 1573034279584
+11-06 11:57:59.598  3761  3797 D Evaluation: Frame 173 sent at 1573034279598
+11-06 11:57:59.646  3761  3797 D Evaluation: Frame 174 sent at 1573034279646
+11-06 11:57:59.668  3761  3797 D Evaluation: Frame 175 sent at 1573034279668
+11-06 11:57:59.713  3761  3797 D Evaluation: Frame 176 sent at 1573034279713
+11-06 11:57:59.738  3761  3797 D Evaluation: Frame 177 sent at 1573034279738
+11-06 11:57:59.778  3761  3797 D Evaluation: Frame 178 sent at 1573034279778
+11-06 11:57:59.807  3761  3797 D Evaluation: Frame 179 sent at 1573034279807
+11-06 11:57:59.846  3761  3797 D Evaluation: Frame 180 sent at 1573034279846
+11-06 11:57:59.872  3761  3797 D Evaluation: Frame 181 sent at 1573034279872
+11-06 11:57:59.917  3761  3797 D Evaluation: Frame 182 sent at 1573034279917
+11-06 11:57:59.940  3761  3797 D Evaluation: Frame 183 sent at 1573034279940
+11-06 11:57:59.982  3761  3797 D Evaluation: Frame 184 sent at 1573034279981
+11-06 11:58:00.007  3761  3797 D Evaluation: Frame 185 sent at 1573034280007
+11-06 11:58:00.048  3761  3797 D Evaluation: Frame 186 sent at 1573034280048
+11-06 11:58:00.079  3761  3797 D Evaluation: Frame 187 sent at 1573034280079
+11-06 11:58:00.114  3761  3797 D Evaluation: Frame 188 sent at 1573034280114
+11-06 11:58:00.144  3761  3797 D Evaluation: Frame 189 sent at 1573034280144
+11-06 11:58:00.173  3761  3797 D Evaluation: Frame 190 sent at 1573034280173
+11-06 11:58:00.211  3761  3797 D Evaluation: Frame 191 sent at 1573034280211
+11-06 11:58:00.242  3761  3797 D Evaluation: Frame 192 sent at 1573034280242
+11-06 11:58:00.275  3761  3797 D Evaluation: Frame 193 sent at 1573034280275
+11-06 11:58:00.310  3761  3797 D Evaluation: Frame 194 sent at 1573034280310
+11-06 11:58:00.350  3761  3797 D Evaluation: Frame 195 sent at 1573034280350
+11-06 11:58:00.376  3761  3797 D Evaluation: Frame 196 sent at 1573034280376
+11-06 11:58:00.413  3761  3797 D Evaluation: Frame 197 sent at 1573034280413
+11-06 11:58:00.444  3761  3797 D Evaluation: Frame 198 sent at 1573034280444
+11-06 11:58:00.475  3761  3797 D Evaluation: Frame 199 sent at 1573034280475
+11-06 11:58:00.512  3761  3797 D Evaluation: Frame 200 sent at 1573034280512
+11-06 11:58:00.544  3761  3761 D Poster  : At 1573034280544 location is 65.05668960083118 (latitude), and 25.480411422311334 (longitude)
+11-06 11:58:00.546  3761  3761 D Poster  : Connected to mobile network 20
+11-06 11:58:00.546  3761  3797 D Evaluation: Frame 201 sent at 1573034280546
+11-06 11:58:00.578  3761  3797 D Evaluation: Frame 202 sent at 1573034280578
+11-06 11:58:00.612  3761  3772 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:58:00.613  3761  3797 D Evaluation: Frame 203 sent at 1573034280613
+11-06 11:58:00.651  3761  3797 D Evaluation: Frame 204 sent at 1573034280651
+11-06 11:58:00.677  3761  3797 D Evaluation: Frame 205 sent at 1573034280677
+11-06 11:58:00.713  3761  3797 D Evaluation: Frame 206 sent at 1573034280713
+11-06 11:58:00.746  3761  3797 D Evaluation: Frame 207 sent at 1573034280746
+11-06 11:58:00.779  3761  3797 D Evaluation: Frame 208 sent at 1573034280779
+11-06 11:58:00.813  3761  3797 D Evaluation: Frame 209 sent at 1573034280813
+11-06 11:58:00.854  3761  3797 D Evaluation: Frame 210 sent at 1573034280854
+11-06 11:58:00.888  3761  3797 D Evaluation: Frame 211 sent at 1573034280888
+11-06 11:58:00.920  3761  3797 D Evaluation: Frame 212 sent at 1573034280920
+11-06 11:58:00.950  3761  3797 D Evaluation: Frame 213 sent at 1573034280950
+11-06 11:58:00.982  3761  3797 D Evaluation: Frame 214 sent at 1573034280982
+11-06 11:58:01.013  3761  3797 D Evaluation: Frame 215 sent at 1573034281013
+11-06 11:58:01.052  3761  3797 D Evaluation: Frame 216 sent at 1573034281052
+11-06 11:58:01.083  3761  3797 D Evaluation: Frame 217 sent at 1573034281083
+11-06 11:58:01.114  3761  3797 D Evaluation: Frame 218 sent at 1573034281114
+11-06 11:58:01.154  3761  3797 D Evaluation: Frame 219 sent at 1573034281154
+11-06 11:58:01.185  3761  3797 D Evaluation: Frame 220 sent at 1573034281185
+11-06 11:58:01.215  3761  3797 D Evaluation: Frame 221 sent at 1573034281215
+11-06 11:58:01.259  3761  3797 D Evaluation: Frame 222 sent at 1573034281259
+11-06 11:58:01.286  3761  3797 D Evaluation: Frame 223 sent at 1573034281286
+11-06 11:58:01.314  3761  3797 D Evaluation: Frame 224 sent at 1573034281314
+11-06 11:58:01.354  3761  3797 D Evaluation: Frame 225 sent at 1573034281354
+11-06 11:58:01.385  3761  3797 D Evaluation: Frame 226 sent at 1573034281384
+11-06 11:58:01.440  3761  3797 D Evaluation: Frame 228 sent at 1573034281440
+11-06 11:58:01.464  3761  3797 D Evaluation: Frame 228 sent at 1573034281463
+11-06 11:58:01.502  3761  3797 D Evaluation: Frame 229 sent at 1573034281502
+11-06 11:58:01.527  3761  3797 D Evaluation: Frame 230 sent at 1573034281527
+11-06 11:58:01.545  3761  3761 D Poster  : At 1573034281545 location is 65.05668960083118 (latitude), and 25.480411422311334 (longitude)
+11-06 11:58:01.547  3761  3761 D Poster  : Connected to mobile network 20
+11-06 11:58:01.559  3761  3797 D Evaluation: Frame 231 sent at 1573034281559
+11-06 11:58:01.592  3761  3797 D Evaluation: Frame 232 sent at 1573034281592
+11-06 11:58:01.628  3761  3797 D Evaluation: Frame 233 sent at 1573034281628
+11-06 11:58:01.659  3761  3797 D Evaluation: Frame 234 sent at 1573034281659
+11-06 11:58:01.706  3761  3772 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:58:01.707  3761  3797 W System.err: java.net.SocketException: Message too long
+11-06 11:58:01.707  3761  3797 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:58:01.707  3761  3797 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:58:01.707  3761  3797 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:58:01.707  3761  3797 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:58:01.707  3761  3797 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:58:01.707  3761  3797 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:58:01.707  3761  3797 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:58:01.707  3761  3797 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:58:01.707  3761  3797 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:58:01.735  3761  3797 W System.err: java.net.SocketException: Message too long
+11-06 11:58:01.735  3761  3797 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:58:01.735  3761  3797 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:58:01.735  3761  3797 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:58:01.735  3761  3797 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:58:01.735  3761  3797 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:58:01.735  3761  3797 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:58:01.735  3761  3797 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:58:01.735  3761  3797 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:58:01.735  3761  3797 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:58:01.770  3761  3797 D Evaluation: Frame 237 sent at 1573034281770
+11-06 11:58:01.801  3761  3797 D Evaluation: Frame 238 sent at 1573034281801
+11-06 11:58:01.841  3761  3797 W System.err: java.net.SocketException: Message too long
+11-06 11:58:01.841  3761  3797 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:58:01.842  3761  3797 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:58:01.842  3761  3797 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:58:01.842  3761  3797 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:58:01.842  3761  3797 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:58:01.842  3761  3797 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:58:01.842  3761  3797 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:58:01.842  3761  3797 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:58:01.842  3761  3797 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:58:01.866  3761  3797 D Evaluation: Frame 240 sent at 1573034281866
+11-06 11:58:01.938  3761  3797 D Evaluation: Frame 241 sent at 1573034281938
+11-06 11:58:01.986  3761  3797 D Evaluation: Frame 243 sent at 1573034281986
+11-06 11:58:02.005  3761  3797 D Evaluation: Frame 243 sent at 1573034282005
+11-06 11:58:02.035  3761  3797 D Evaluation: Frame 244 sent at 1573034282035
+11-06 11:58:02.066  3761  3797 D Evaluation: Frame 245 sent at 1573034282066
+11-06 11:58:02.099  3761  3797 D Evaluation: Frame 246 sent at 1573034282099
+11-06 11:58:02.135  3761  3797 D Evaluation: Frame 247 sent at 1573034282135
+11-06 11:58:02.171  3761  3797 D Evaluation: Frame 248 sent at 1573034282171
+11-06 11:58:02.199  3761  3797 D Evaluation: Frame 249 sent at 1573034282199
+11-06 11:58:02.238  3761  3797 D Evaluation: Frame 250 sent at 1573034282238
+11-06 11:58:02.274  3761  3797 D Evaluation: Frame 251 sent at 1573034282274
+11-06 11:58:02.302  3761  3797 D Evaluation: Frame 252 sent at 1573034282302
+11-06 11:58:02.339  3761  3797 D Evaluation: Frame 253 sent at 1573034282339
+11-06 11:58:02.370  3761  3797 D Evaluation: Frame 254 sent at 1573034282370
+11-06 11:58:02.402  3761  3797 D Evaluation: Frame 255 sent at 1573034282402
+11-06 11:58:02.440  3761  3797 D Evaluation: Frame 256 sent at 1573034282440
+11-06 11:58:02.466  3761  3797 D Evaluation: Frame 257 sent at 1573034282466
+11-06 11:58:02.505  3761  3797 D Evaluation: Frame 258 sent at 1573034282505
+11-06 11:58:02.534  3761  3797 D Evaluation: Frame 259 sent at 1573034282534
+11-06 11:58:02.549  3761  3761 D Poster  : At 1573034282548 location is 65.05669058111621 (latitude), and 25.48041027562057 (longitude)
+11-06 11:58:02.551  3761  3761 D Poster  : Connected to mobile network 20
+11-06 11:58:02.582  3761  3797 D Evaluation: Frame 261 sent at 1573034282582
+11-06 11:58:02.599  3761  3797 D Evaluation: Frame 261 sent at 1573034282599
+11-06 11:58:02.641  3761  3797 D Evaluation: Frame 262 sent at 1573034282641
+11-06 11:58:02.669  3761  3797 D Evaluation: Frame 263 sent at 1573034282669
+11-06 11:58:02.711  3761  3797 D Evaluation: Frame 264 sent at 1573034282711
+11-06 11:58:02.744  3761  3797 D Evaluation: Frame 265 sent at 1573034282744
+11-06 11:58:02.822  3761  3797 D Evaluation: Frame 266 sent at 1573034282822
+11-06 11:58:02.855  3761  3797 D Evaluation: Frame 268 sent at 1573034282855
+11-06 11:58:02.880  3761  3797 D Evaluation: Frame 268 sent at 1573034282880
+11-06 11:58:02.910  3761  3772 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:58:02.911  3761  3797 D Evaluation: Frame 269 sent at 1573034282911
+11-06 11:58:02.948  3761  3797 D Evaluation: Frame 270 sent at 1573034282948
+11-06 11:58:02.976  3761  3797 D Evaluation: Frame 271 sent at 1573034282975
+11-06 11:58:03.009  3761  3797 D Evaluation: Frame 272 sent at 1573034283009
+11-06 11:58:03.047  3761  3797 D Evaluation: Frame 273 sent at 1573034283047
+11-06 11:58:03.070  3761  3797 D Evaluation: Frame 274 sent at 1573034283070
+11-06 11:58:03.123  3761  3797 D Evaluation: Frame 276 sent at 1573034283123
+11-06 11:58:03.144  3761  3797 D Evaluation: Frame 276 sent at 1573034283144
+11-06 11:58:03.181  3761  3797 D Evaluation: Frame 277 sent at 1573034283181
+11-06 11:58:03.252  3761  3797 D Evaluation: Frame 278 sent at 1573034283252
+11-06 11:58:03.279  3761  3797 D Evaluation: Frame 279 sent at 1573034283279
+11-06 11:58:03.319  3761  3797 D Evaluation: Frame 280 sent at 1573034283319
+11-06 11:58:03.341  3761  3797 D Evaluation: Frame 281 sent at 1573034283341
+11-06 11:58:03.382  3761  3797 D Evaluation: Frame 282 sent at 1573034283382
+11-06 11:58:03.408  3761  3797 D Evaluation: Frame 283 sent at 1573034283408
+11-06 11:58:03.451  3761  3797 D Evaluation: Frame 284 sent at 1573034283451
+11-06 11:58:03.492  3761  3797 D Evaluation: Frame 285 sent at 1573034283492
+11-06 11:58:03.518  3761  3797 D Evaluation: Frame 286 sent at 1573034283518
+11-06 11:58:03.547  3761  3797 D Evaluation: Frame 287 sent at 1573034283547
+11-06 11:58:03.547  3761  3761 D Poster  : At 1573034283547 location is 65.05669205950622 (latitude), and 25.480400551728437 (longitude)
+11-06 11:58:03.549  3761  3761 D Poster  : Connected to mobile network 20
+11-06 11:58:03.620  3761  3797 D Evaluation: Frame 288 sent at 1573034283620
+11-06 11:58:03.660  3761  3797 D Evaluation: Frame 289 sent at 1573034283660
+11-06 11:58:03.690  3761  3797 D Evaluation: Frame 290 sent at 1573034283690
+11-06 11:58:03.718  3761  3797 D Evaluation: Frame 291 sent at 1573034283718
+11-06 11:58:03.747  3761  3797 D Evaluation: Frame 292 sent at 1573034283747
+11-06 11:58:03.788  3761  3797 D Evaluation: Frame 293 sent at 1573034283788
+11-06 11:58:03.807  3761  3797 D Evaluation: Frame 294 sent at 1573034283807
+11-06 11:58:03.853  3761  3797 D Evaluation: Frame 295 sent at 1573034283853
+11-06 11:58:03.886  3761  3797 D Evaluation: Frame 296 sent at 1573034283886
+11-06 11:58:03.927  3761  3797 D Evaluation: Frame 298 sent at 1573034283927
+11-06 11:58:03.948  3761  3797 D Evaluation: Frame 298 sent at 1573034283948
+11-06 11:58:03.981  3761  3797 D Evaluation: Frame 299 sent at 1573034283981
+11-06 11:58:04.009  3761  3797 D Evaluation: Frame 300 sent at 1573034284009
+11-06 11:58:04.050  3761  3797 D Evaluation: Frame 301 sent at 1573034284050
+11-06 11:58:04.083  3761  3797 D Evaluation: Frame 302 sent at 1573034284083
+11-06 11:58:04.120  3761  3797 D Evaluation: Frame 303 sent at 1573034284120
+11-06 11:58:04.151  3761  3797 D Evaluation: Frame 304 sent at 1573034284151
+11-06 11:58:04.232  3761  3797 D Evaluation: Frame 305 sent at 1573034284232
+11-06 11:58:04.257  3761  3797 D Evaluation: Frame 306 sent at 1573034284257
+11-06 11:58:04.284  3761  3797 D Evaluation: Frame 307 sent at 1573034284284
+11-06 11:58:04.321  3761  3797 D Evaluation: Frame 308 sent at 1573034284321
+11-06 11:58:04.351  3761  3797 D Evaluation: Frame 309 sent at 1573034284351
+11-06 11:58:04.386  3761  3797 D Evaluation: Frame 310 sent at 1573034284386
+11-06 11:58:04.415  3761  3797 D Evaluation: Frame 311 sent at 1573034284415
+11-06 11:58:04.463  3761  3797 D Evaluation: Frame 312 sent at 1573034284463
+11-06 11:58:04.483  3761  3797 D Evaluation: Frame 313 sent at 1573034284483
+11-06 11:58:04.520  3761  3772 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:58:04.521  3761  3797 D Evaluation: Frame 314 sent at 1573034284521
+11-06 11:58:04.547  3761  3797 D Evaluation: Frame 315 sent at 1573034284547
+11-06 11:58:04.548  3761  3761 D Poster  : At 1573034284547 location is 65.05669500958635 (latitude), and 25.480393325232175 (longitude)
+11-06 11:58:04.550  3761  3761 D Poster  : Connected to mobile network 20
+11-06 11:58:04.585  3761  3797 D Evaluation: Frame 316 sent at 1573034284585
+11-06 11:58:04.618  3761  3797 D Evaluation: Frame 317 sent at 1573034284618
+11-06 11:58:04.659  3761  3797 D Evaluation: Frame 318 sent at 1573034284659
+11-06 11:58:04.692  3761  3797 D Evaluation: Frame 319 sent at 1573034284692
+11-06 11:58:04.760  3761  3797 D Evaluation: Frame 320 sent at 1573034284760
+11-06 11:58:04.799  3761  3797 D Evaluation: Frame 321 sent at 1573034284798
+11-06 11:58:04.826  3761  3797 D Evaluation: Frame 322 sent at 1573034284826
+11-06 11:58:04.861  3761  3797 D Evaluation: Frame 323 sent at 1573034284860
+11-06 11:58:04.889  3761  3797 D Evaluation: Frame 324 sent at 1573034284889
+11-06 11:58:04.926  3761  3797 D Evaluation: Frame 325 sent at 1573034284926
+11-06 11:58:04.954  3761  3797 D Evaluation: Frame 326 sent at 1573034284954
+11-06 11:58:05.005  3761  3797 D Evaluation: Frame 328 sent at 1573034285005
+11-06 11:58:05.026  3761  3797 D Evaluation: Frame 328 sent at 1573034285026
+11-06 11:58:05.062  3761  3797 D Evaluation: Frame 329 sent at 1573034285062
+11-06 11:58:05.088  3761  3797 D Evaluation: Frame 330 sent at 1573034285088
+11-06 11:58:05.135  3761  3797 D Evaluation: Frame 331 sent at 1573034285135
+11-06 11:58:05.162  3761  3797 D Evaluation: Frame 332 sent at 1573034285162
+11-06 11:58:05.192  3761  3797 D Evaluation: Frame 333 sent at 1573034285192
+11-06 11:58:05.226  3761  3797 D Evaluation: Frame 334 sent at 1573034285226
+11-06 11:58:05.312  3761  3797 D Evaluation: Frame 335 sent at 1573034285312
+11-06 11:58:05.346  3761  3797 D Evaluation: Frame 337 sent at 1573034285346
+11-06 11:58:05.369  3761  3797 D Evaluation: Frame 337 sent at 1573034285369
+11-06 11:58:05.402  3761  3797 D Evaluation: Frame 338 sent at 1573034285402
+11-06 11:58:05.426  3761  3797 D Evaluation: Frame 339 sent at 1573034285426
+11-06 11:58:05.463  3761  3797 D Evaluation: Frame 340 sent at 1573034285463
+11-06 11:58:05.491  3761  3797 D Evaluation: Frame 341 sent at 1573034285491
+11-06 11:58:05.524  3761  3797 D Evaluation: Frame 342 sent at 1573034285524
+11-06 11:58:05.550  3761  3761 D Poster  : At 1573034285550 location is 65.0566986740099 (latitude), and 25.480381418525507 (longitude)
+11-06 11:58:05.552  3761  3761 D Poster  : Connected to mobile network 20
+11-06 11:58:05.558  3761  3797 D Evaluation: Frame 343 sent at 1573034285558
+11-06 11:58:05.595  3761  3797 D Evaluation: Frame 344 sent at 1573034285595
+11-06 11:58:05.627  3761  3797 D Evaluation: Frame 345 sent at 1573034285627
+11-06 11:58:05.668  3761  3797 D Evaluation: Frame 346 sent at 1573034285668
+11-06 11:58:05.699  3761  3797 D Evaluation: Frame 347 sent at 1573034285699
+11-06 11:58:05.731  3761  3797 D Evaluation: Frame 348 sent at 1573034285731
+11-06 11:58:05.766  3761  3797 D Evaluation: Frame 349 sent at 1573034285766
+11-06 11:58:05.790  3761  3797 D Evaluation: Frame 350 sent at 1573034285790
+11-06 11:58:05.829  3761  3797 D Evaluation: Frame 351 sent at 1573034285829
+11-06 11:58:05.872  3761  3797 D Evaluation: Frame 352 sent at 1573034285872
+11-06 11:58:05.905  3761  3772 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:58:05.905  3761  3797 D Evaluation: Frame 353 sent at 1573034285905
+11-06 11:58:05.930  3761  3797 D Evaluation: Frame 354 sent at 1573034285930
+11-06 11:58:05.965  3761  3797 D Evaluation: Frame 355 sent at 1573034285964
+11-06 11:58:05.994  3761  3797 D Evaluation: Frame 356 sent at 1573034285994
+11-06 11:58:06.032  3761  3797 D Evaluation: Frame 357 sent at 1573034286032
+11-06 11:58:06.078  3761  3797 D Evaluation: Frame 359 sent at 1573034286078
+11-06 11:58:06.103  3761  3797 D Evaluation: Frame 359 sent at 1573034286103
+11-06 11:58:06.139  3761  3797 W System.err: java.net.SocketException: Message too long
+11-06 11:58:06.139  3761  3797 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:58:06.139  3761  3797 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:58:06.139  3761  3797 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:58:06.139  3761  3797 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:58:06.139  3761  3797 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:58:06.139  3761  3797 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:58:06.139  3761  3797 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:58:06.139  3761  3797 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:58:06.139  3761  3797 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:58:06.161  3761  3797 D Evaluation: Frame 361 sent at 1573034286161
+11-06 11:58:06.202  3761  3797 D Evaluation: Frame 362 sent at 1573034286202
+11-06 11:58:06.233  3761  3797 D Evaluation: Frame 363 sent at 1573034286233
+11-06 11:58:06.278  3761  3797 D Evaluation: Frame 365 sent at 1573034286278
+11-06 11:58:06.300  3761  3797 D Evaluation: Frame 365 sent at 1573034286300
+11-06 11:58:06.341  3761  3797 D Evaluation: Frame 367 sent at 1573034286341
+11-06 11:58:06.363  3761  3797 D Evaluation: Frame 367 sent at 1573034286363
+11-06 11:58:06.404  3761  3797 D Evaluation: Frame 368 sent at 1573034286403
+11-06 11:58:06.431  3761  3797 D Evaluation: Frame 369 sent at 1573034286431
+11-06 11:58:06.470  3761  3797 D Evaluation: Frame 370 sent at 1573034286470
+11-06 11:58:06.505  3761  3797 D Evaluation: Frame 371 sent at 1573034286505
+11-06 11:58:06.547  3761  3797 D Evaluation: Frame 373 sent at 1573034286547
+11-06 11:58:06.552  3761  3761 D Poster  : At 1573034286552 location is 65.05670169686441 (latitude), and 25.48036995458785 (longitude)
+11-06 11:58:06.556  3761  3761 D Poster  : Connected to mobile network 20
+11-06 11:58:06.568  3761  3797 D Evaluation: Frame 373 sent at 1573034286568
+11-06 11:58:06.626  3761  3797 D Evaluation: Frame 374 sent at 1573034286625
+11-06 11:58:06.674  3761  3797 D Evaluation: Frame 375 sent at 1573034286674
+11-06 11:58:06.699  3761  3797 D Evaluation: Frame 376 sent at 1573034286699
+11-06 11:58:06.754  3761  3797 D Evaluation: Frame 378 sent at 1573034286754
+11-06 11:58:06.778  3761  3797 D Evaluation: Frame 378 sent at 1573034286778
+11-06 11:58:06.808  3761  3797 D Evaluation: Frame 380 sent at 1573034286808
+11-06 11:58:06.828  3761  3797 D Evaluation: Frame 380 sent at 1573034286828
+11-06 11:58:06.874  3761  3797 D Evaluation: Frame 381 sent at 1573034286874
+11-06 11:58:06.897  3761  3797 D Evaluation: Frame 382 sent at 1573034286897
+11-06 11:58:06.942  3761  3797 D Evaluation: Frame 383 sent at 1573034286942
+11-06 11:58:06.974  3761  3797 D Evaluation: Frame 384 sent at 1573034286973
+11-06 11:58:07.012  3761  3797 D Evaluation: Frame 386 sent at 1573034287012
+11-06 11:58:07.037  3761  3797 D Evaluation: Frame 386 sent at 1573034287037
+11-06 11:58:07.078  3761  3797 D Evaluation: Frame 387 sent at 1573034287078
+11-06 11:58:07.106  3761  3797 D Evaluation: Frame 388 sent at 1573034287106
+11-06 11:58:07.142  3761  3797 D Evaluation: Frame 389 sent at 1573034287142
+11-06 11:58:07.143  3761  3772 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:58:07.170  3761  3797 D Evaluation: Frame 390 sent at 1573034287170
+11-06 11:58:07.207  3761  3797 D Evaluation: Frame 391 sent at 1573034287207
+11-06 11:58:07.238  3761  3797 D Evaluation: Frame 392 sent at 1573034287238
+11-06 11:58:07.282  3761  3797 D Evaluation: Frame 393 sent at 1573034287282
+11-06 11:58:07.389  3761  3797 D Evaluation: Frame 394 sent at 1573034287389
+11-06 11:58:07.454  3761  3797 D Evaluation: Frame 395 sent at 1573034287454
+11-06 11:58:07.481  3761  3797 D Evaluation: Frame 396 sent at 1573034287481
+11-06 11:58:07.513  3761  3797 D Evaluation: Frame 397 sent at 1573034287513
+11-06 11:58:07.548  3761  3797 D Evaluation: Frame 398 sent at 1573034287548
+11-06 11:58:07.552  3761  3761 D Poster  : At 1573034287551 location is 65.05670895530571 (latitude), and 25.480353931157154 (longitude)
+11-06 11:58:07.555  3761  3761 D Poster  : Connected to mobile network 20
+11-06 11:58:07.592  3761  3797 D Evaluation: Frame 400 sent at 1573034287592
+11-06 11:58:07.614  3761  3797 D Evaluation: Frame 400 sent at 1573034287614
+11-06 11:58:07.642  3761  3797 D Evaluation: Frame 401 sent at 1573034287642
+11-06 11:58:07.678  3761  3797 D Evaluation: Frame 402 sent at 1573034287678
+11-06 11:58:07.715  3761  3797 D Evaluation: Frame 403 sent at 1573034287715
+11-06 11:58:07.757  3761  3797 D Evaluation: Frame 405 sent at 1573034287757
+11-06 11:58:07.780  3761  3797 D Evaluation: Frame 405 sent at 1573034287780
+11-06 11:58:07.816  3761  3797 D Evaluation: Frame 406 sent at 1573034287816
+11-06 11:58:07.848  3761  3797 D Evaluation: Frame 407 sent at 1573034287847
+11-06 11:58:07.881  3761  3797 D Evaluation: Frame 408 sent at 1573034287880
+11-06 11:58:07.911  3761  3797 D Evaluation: Frame 409 sent at 1573034287911
+11-06 11:58:07.952  3761  3797 D Evaluation: Frame 410 sent at 1573034287952
+11-06 11:58:07.979  3761  3797 D Evaluation: Frame 411 sent at 1573034287979
+11-06 11:58:08.010  3761  3797 D Evaluation: Frame 412 sent at 1573034288010
+11-06 11:58:08.047  3761  3797 D Evaluation: Frame 413 sent at 1573034288046
+11-06 11:58:08.074  3761  3797 D Evaluation: Frame 414 sent at 1573034288074
+11-06 11:58:08.112  3761  3797 D Evaluation: Frame 415 sent at 1573034288112
+11-06 11:58:08.147  3761  3797 D Evaluation: Frame 416 sent at 1573034288147
+11-06 11:58:08.179  3761  3797 D Evaluation: Frame 417 sent at 1573034288179
+11-06 11:58:08.220  3761  3797 D Evaluation: Frame 418 sent at 1573034288220
+11-06 11:58:08.249  3761  3797 D Evaluation: Frame 419 sent at 1573034288249
+11-06 11:58:08.284  3761  3797 D Evaluation: Frame 420 sent at 1573034288284
+11-06 11:58:08.312  3761  3797 D Evaluation: Frame 421 sent at 1573034288312
+11-06 11:58:08.352  3761  3797 D Evaluation: Frame 422 sent at 1573034288351
+11-06 11:58:08.390  3761  3797 D Evaluation: Frame 423 sent at 1573034288390
+11-06 11:58:08.419  3761  3797 D Evaluation: Frame 424 sent at 1573034288419
+11-06 11:58:08.450  3761  3797 D Evaluation: Frame 425 sent at 1573034288450
+11-06 11:58:08.484  3761  3797 D Evaluation: Frame 426 sent at 1573034288484
+11-06 11:58:08.525  3761  3797 D Evaluation: Frame 427 sent at 1573034288524
+11-06 11:58:08.541  3761  3761 D Poster  : At 1573034288541 location is 65.05671500374356 (latitude), and 25.480338864562867 (longitude)
+11-06 11:58:08.542  3761  3761 D Poster  : Connected to mobile network 20
+11-06 11:58:08.545  3761  3797 D Evaluation: Frame 428 sent at 1573034288545
+11-06 11:58:08.573  3761  3797 D Evaluation: Frame 429 sent at 1573034288572
+11-06 11:58:08.604  3761  3797 D Evaluation: Frame 430 sent at 1573034288604
+11-06 11:58:08.636  3761  3772 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:58:08.637  3761  3797 D Evaluation: Frame 431 sent at 1573034288637
+11-06 11:58:08.672  3761  3797 D Evaluation: Frame 432 sent at 1573034288672
+11-06 11:58:08.711  3761  3797 D Evaluation: Frame 433 sent at 1573034288711
+11-06 11:58:08.736  3761  3797 D Evaluation: Frame 434 sent at 1573034288736
+11-06 11:58:08.773  3761  3797 D Evaluation: Frame 435 sent at 1573034288773
+11-06 11:58:08.806  3761  3797 D Evaluation: Frame 436 sent at 1573034288806
+11-06 11:58:08.840  3761  3797 D Evaluation: Frame 437 sent at 1573034288840
+11-06 11:58:08.908  3761  3797 D Evaluation: Frame 438 sent at 1573034288908
+11-06 11:58:08.946  3761  3797 D Evaluation: Frame 439 sent at 1573034288946
+11-06 11:58:08.971  3761  3797 D Evaluation: Frame 440 sent at 1573034288971
+11-06 11:58:09.015  3761  3797 D Evaluation: Frame 441 sent at 1573034289015
+11-06 11:58:09.042  3761  3797 D Evaluation: Frame 442 sent at 1573034289042
+11-06 11:58:09.066  3761  3761 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:69.968994, limit is:60The moving distance of Y is:20.98059, limit is:60
+11-06 11:58:09.078  3761  3797 D Evaluation: Frame 443 sent at 1573034289078
+11-06 11:58:09.108  3761  3797 D Evaluation: Frame 444 sent at 1573034289108
+11-06 11:58:09.146  3761  3797 D Evaluation: Frame 445 sent at 1573034289146
+11-06 11:58:09.175  3761  3797 D Evaluation: Frame 446 sent at 1573034289175
+11-06 11:58:09.211  3761  3797 D Evaluation: Frame 447 sent at 1573034289211
+11-06 11:58:09.241  3761  3797 D Evaluation: Frame 448 sent at 1573034289241
+11-06 11:58:09.274  3761  3797 D Evaluation: Frame 449 sent at 1573034289274
+11-06 11:58:09.319  3761  3797 D Evaluation: Frame 450 sent at 1573034289319
+11-06 11:58:09.339  3761  3797 D Evaluation: Frame 451 sent at 1573034289339
+11-06 11:58:09.375  3761  3797 D Evaluation: Frame 452 sent at 1573034289375
+11-06 11:58:09.410  3761  3797 D Evaluation: Frame 453 sent at 1573034289410
+11-06 11:58:09.443  3761  3797 D Evaluation: Frame 454 sent at 1573034289443
+11-06 11:58:09.475  3761  3797 D Evaluation: Frame 455 sent at 1573034289475
+11-06 11:58:09.514  3761  3797 D Evaluation: Frame 456 sent at 1573034289514
+11-06 11:58:09.543  3761  3761 D Poster  : At 1573034289543 location is 65.0567221234617 (latitude), and 25.480332214963116 (longitude)
+11-06 11:58:09.544  3761  3797 D Evaluation: Frame 457 sent at 1573034289544
+11-06 11:58:09.545  3761  3761 D Poster  : Connected to mobile network 20
+11-06 11:58:09.582  3761  3797 D Evaluation: Frame 458 sent at 1573034289582
+11-06 11:58:09.609  3761  3797 D Evaluation: Frame 459 sent at 1573034289609
+11-06 11:58:09.644  3761  3797 D Evaluation: Frame 460 sent at 1573034289644
+11-06 11:58:09.677  3761  3797 D Evaluation: Frame 461 sent at 1573034289677
+11-06 11:58:09.713  3761  3797 D Evaluation: Frame 462 sent at 1573034289713
+11-06 11:58:09.743  3761  3797 D Evaluation: Frame 463 sent at 1573034289743
+11-06 11:58:09.779  3761  3797 D Evaluation: Frame 464 sent at 1573034289779
+11-06 11:58:09.812  3761  3797 D Evaluation: Frame 465 sent at 1573034289812
+11-06 11:58:09.856  3761  3797 D Evaluation: Frame 466 sent at 1573034289856
+11-06 11:58:09.883  3761  3797 D Evaluation: Frame 467 sent at 1573034289883
+11-06 11:58:09.912  3761  3797 D Evaluation: Frame 468 sent at 1573034289912
+11-06 11:58:09.949  3761  3797 D Evaluation: Frame 469 sent at 1573034289949
+11-06 11:58:09.983  3761  3797 D Evaluation: Frame 470 sent at 1573034289983
+11-06 11:58:10.009  3761  3797 D Evaluation: Frame 471 sent at 1573034290009
+11-06 11:58:10.049  3761  3797 D Evaluation: Frame 472 sent at 1573034290049
+11-06 11:58:10.089  3761  3797 D Evaluation: Frame 473 sent at 1573034290089
+11-06 11:58:10.117  3761  3797 D Evaluation: Frame 474 sent at 1573034290117
+11-06 11:58:10.155  3761  3797 D Evaluation: Frame 475 sent at 1573034290155
+11-06 11:58:10.182  3761  3797 D Evaluation: Frame 476 sent at 1573034290182
+11-06 11:58:10.212  3761  3797 D Evaluation: Frame 477 sent at 1573034290212
+11-06 11:58:10.251  3761  3797 D Evaluation: Frame 478 sent at 1573034290251
+11-06 11:58:10.281  3761  3797 D Evaluation: Frame 479 sent at 1573034290281
+11-06 11:58:10.316  3761  3797 D Evaluation: Frame 480 sent at 1573034290316
+11-06 11:58:10.350  3761  3797 D Evaluation: Frame 481 sent at 1573034290350
+11-06 11:58:10.390  3761  3797 D Evaluation: Frame 482 sent at 1573034290390
+11-06 11:58:10.424  3761  3797 D Evaluation: Frame 483 sent at 1573034290424
+11-06 11:58:10.449  3761  3797 D Evaluation: Frame 484 sent at 1573034290448
+11-06 11:58:10.483  3761  3797 D Evaluation: Frame 485 sent at 1573034290483
+11-06 11:58:10.518  3761  3797 D Evaluation: Frame 486 sent at 1573034290518
+11-06 11:58:10.552  3761  3761 D Poster  : At 1573034290552 location is 65.05672923872893 (latitude), and 25.48033153694778 (longitude)
+11-06 11:58:10.553  3761  3797 D Evaluation: Frame 487 sent at 1573034290553
+11-06 11:58:10.554  3761  3761 D Poster  : Connected to mobile network 20
+11-06 11:58:10.585  3761  3772 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:58:10.586  3761  3797 D Evaluation: Frame 488 sent at 1573034290586
+11-06 11:58:10.615  3761  3797 D Evaluation: Frame 489 sent at 1573034290615
+11-06 11:58:10.655  3761  3797 D Evaluation: Frame 490 sent at 1573034290655
+11-06 11:58:10.684  3761  3797 D Evaluation: Frame 491 sent at 1573034290684
+11-06 11:58:10.718  3761  3797 D Evaluation: Frame 492 sent at 1573034290718
+11-06 11:58:10.752  3761  3797 D Evaluation: Frame 493 sent at 1573034290752
+11-06 11:58:10.788  3761  3797 D Evaluation: Frame 494 sent at 1573034290788
+11-06 11:58:10.821  3761  3797 D Evaluation: Frame 495 sent at 1573034290821
+11-06 11:58:10.854  3761  3797 D Evaluation: Frame 496 sent at 1573034290854
+11-06 11:58:10.869  3761  3761 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:78.409424, limit is:60The moving distance of Y is:16.44226, limit is:60
+11-06 11:58:10.886  3761  3797 D Evaluation: Frame 497 sent at 1573034290886
+11-06 11:58:10.928  3761  3797 D Evaluation: Frame 498 sent at 1573034290928
+11-06 11:58:10.959  3761  3797 D Evaluation: Frame 499 sent at 1573034290959
+11-06 11:58:10.988  3761  3797 D Evaluation: Frame 500 sent at 1573034290988
+11-06 11:58:11.021  3761  3797 D Evaluation: Frame 501 sent at 1573034291021
+11-06 11:58:11.055  3761  3797 D Evaluation: Frame 502 sent at 1573034291055
+11-06 11:58:11.090  3761  3797 D Evaluation: Frame 503 sent at 1573034291090
+11-06 11:58:11.123  3761  3797 D Evaluation: Frame 504 sent at 1573034291123
+11-06 11:58:11.155  3761  3797 D Evaluation: Frame 505 sent at 1573034291155
+11-06 11:58:11.193  3761  3797 D Evaluation: Frame 506 sent at 1573034291193
+11-06 11:58:11.231  3761  3797 D Evaluation: Frame 507 sent at 1573034291231
+11-06 11:58:11.256  3761  3797 D Evaluation: Frame 508 sent at 1573034291256
+11-06 11:58:11.296  3761  3797 D Evaluation: Frame 509 sent at 1573034291296
+11-06 11:58:11.324  3761  3797 D Evaluation: Frame 510 sent at 1573034291324
+11-06 11:58:11.364  3761  3797 D Evaluation: Frame 511 sent at 1573034291364
+11-06 11:58:11.389  3761  3797 D Evaluation: Frame 512 sent at 1573034291389
+11-06 11:58:11.433  3761  3797 D Evaluation: Frame 513 sent at 1573034291433
+11-06 11:58:11.458  3761  3797 D Evaluation: Frame 514 sent at 1573034291458
+11-06 11:58:11.510  3761  3797 D Evaluation: Frame 516 sent at 1573034291510
+11-06 11:58:11.531  3761  3797 D Evaluation: Frame 516 sent at 1573034291531
+11-06 11:58:11.546  3761  3761 D Poster  : At 1573034291546 location is 65.0567337803033 (latitude), and 25.480332596782315 (longitude)
+11-06 11:58:11.547  3761  3761 D Poster  : Connected to mobile network 20
+11-06 11:58:11.562  3761  3797 D Evaluation: Frame 517 sent at 1573034291562
+11-06 11:58:11.588  3761  3797 D Evaluation: Frame 518 sent at 1573034291588
+11-06 11:58:11.632  3761  3797 D Evaluation: Frame 519 sent at 1573034291632
+11-06 11:58:11.660  3761  3797 D Evaluation: Frame 520 sent at 1573034291660
+11-06 11:58:11.700  3761  3797 D Evaluation: Frame 521 sent at 1573034291700
+11-06 11:58:11.726  3761  3797 D Evaluation: Frame 522 sent at 1573034291726
+11-06 11:58:11.768  3761  3797 D Evaluation: Frame 523 sent at 1573034291768
+11-06 11:58:11.794  3761  3797 D Evaluation: Frame 524 sent at 1573034291793
+11-06 11:58:11.837  3761  3797 D Evaluation: Frame 525 sent at 1573034291837
+11-06 11:58:11.862  3761  3797 D Evaluation: Frame 526 sent at 1573034291862
+11-06 11:58:11.893  3761  3797 D Evaluation: Frame 527 sent at 1573034291893
+11-06 11:58:11.931  3761  3797 D Evaluation: Frame 528 sent at 1573034291931
+11-06 11:58:11.962  3761  3797 D Evaluation: Frame 529 sent at 1573034291962
+11-06 11:58:11.994  3761  3797 D Evaluation: Frame 530 sent at 1573034291994
+11-06 11:58:12.032  3761  3797 D Evaluation: Frame 531 sent at 1573034292032
+11-06 11:58:12.075  3761  3797 D Evaluation: Frame 532 sent at 1573034292075
+11-06 11:58:12.099  3761  3797 D Evaluation: Frame 533 sent at 1573034292099
+11-06 11:58:12.107  3761  3761 I Poster  :  onPause() called.
+11-06 11:58:12.206  3761  3761 I Camera  : close camera: 0, package name: symlab.cloudridar.arhud
+11-06 11:58:12.206  3761  3761 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 3761 ,uidOf3RdApk: 10149 ,permType: 0 ,permCfg: 0
+11-06 11:58:12.217  3761  3761 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = false
+11-06 11:58:12.337  3761  3761 D ZrHung.AppEyeUiProbe: stop checker.
+11-06 11:58:12.360  3761  3761 I Poster  :  surfaceDestroyed() called.
+11-06 11:58:12.361  3761  3761 D ViewRootImpl[MainActivity]: surface should not be released
+11-06 11:58:12.361  3761  3761 I Poster  :  onStop() called.
+11-06 11:58:12.380  3761  3818 W libEGL  : EGLNativeWindowType 0xef5f0008 disconnect failed
+11-06 11:58:12.575  3761  3761 D Poster  : At 1573034292575 location is 65.05673890365429 (latitude), and 25.48033284537965 (longitude)
+11-06 11:58:12.576  3761  3761 D Poster  : Connected to mobile network 20
+11-06 11:58:12.586  3761  3761 D Latitude: status
+11-06 11:58:12.614  3761  3786 D ZrHung.AppEyeUiProbe: Current Activity:false
+11-06 11:58:12.614  3761  3786 D ZrHung.AppEyeUiProbe: not watching, wait.

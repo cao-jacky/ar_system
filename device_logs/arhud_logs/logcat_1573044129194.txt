@@ -1,0 +1,1105 @@
+--------- beginning of main
+11-06 14:42:09.202 24431 24455 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0102]
+11-06 14:42:09.202 24431 24455 W ZrHung.AppEyeUiProbe: Failed to get config from zrhung
+11-06 14:42:09.203 24453 24453 W logcat  : type=1400 audit(0.0:18187): avc: granted { create } for name="logcat_1573044129194.txt" scontext=u:r:untrusted_app:s0:c149,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0:c149,c256,c512,c768 tclass=file
+11-06 14:42:09.209 24431 24431 I MultiDex: Installing application
+11-06 14:42:09.209 24431 24431 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+--------- beginning of system
+11-06 14:42:09.211 24431 24431 V ActivityThread: callActivityOnCreate
+11-06 14:42:09.211 24431 24431 I Poster  :  onCreate() called.
+11-06 14:42:09.214 24431 24431 I HwApsImpl: APS: new HwApsImpl created
+11-06 14:42:09.221 24431 24431 V HwWidgetFactory: : successes to get AllImpl object and return....
+11-06 14:42:09.228 24431 24431 D OpenGLRenderer: Skia GL Pipeline
+11-06 14:42:09.252 24431 24431 D Poster  : Server bound to IP 193.166.28.132 and port 52727
+11-06 14:42:09.255 24431 24464 D Evaluation: metadata 0 sent 
+11-06 14:42:09.255 24431 24431 D ActivityThread: add activity client record, r= ActivityRecord{24fb417 token=android.os.BinderProxy@3a687be {symlab.cloudridar.arhud/symlab.ARHUD.MainActivity}} token= android.os.BinderProxy@3a687be
+11-06 14:42:09.257 24431 24431 I Poster  :  onStart() called.
+11-06 14:42:09.258 24431 24431 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-06 14:42:09.259 24431 24431 I Poster  :  onResume() called.
+11-06 14:42:09.264 24431 24431 I PermissionManager: camera remind result:true
+11-06 14:42:09.264 24431 24431 I Camera  : open camera: 0, package name: symlab.cloudridar.arhud
+11-06 14:42:09.264 24431 24431 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 24431 ,uidOf3RdApk: 10149 ,permType: 0 ,permCfg: 1
+11-06 14:42:09.265 24431 24431 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = true
+11-06 14:42:09.273 24431 24431 D ActivityThread: isOptEnabled=false isWechatScanOpt=false
+11-06 14:42:09.276 24431 24431 I HwSecImmHelper: mSecurityInputMethodService is null
+11-06 14:42:09.284 24431 24431 D OpenGLRenderer:   HWUI Binary is  enabled
+11-06 14:42:09.302 24431 24483 D HiTouch_PressGestureDetector: onAttached, package=symlab.cloudridar.arhud, windowType=1, mHiTouchRestricted=false
+11-06 14:42:09.312 24431 24481 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-06 14:42:09.312 24431 24481 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-06 14:42:09.312 24431 24481 I iGraphics: [0020080c] pn: symlab.cloudridar.arhud, p: 24431
+11-06 14:42:09.312 24431 24481 I OpenGLRenderer: Initialized EGL, version 1.4, mEglDisplay 0x1
+11-06 14:42:09.312 24431 24481 D OpenGLRenderer: Swap behavior 2
+11-06 14:42:09.321 24431 24481 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+11-06 14:42:09.328 24431 24431 I Poster  :  surfaceCreated() called.
+11-06 14:42:09.328 24431 24431 I Poster  : initPreview() called
+11-06 14:42:09.333 24431 24431 I PermissionManager: camera remind result:true
+11-06 14:42:09.338 24431 24431 I Poster  :  surfaceChanged() called.
+11-06 14:42:09.356 24431 24431 W InputMethodManager: startInputReason = 1
+11-06 14:42:09.370 24431 24431 W InputMethodManager: startInputReason = 5
+11-06 14:42:09.628 24431 24464 D Evaluation: metadata 1 sent 
+11-06 14:42:09.656 24431 24464 D Evaluation: metadata 2 sent 
+11-06 14:42:09.693 24431 24464 D Evaluation: metadata 3 sent 
+11-06 14:42:09.727 24431 24464 D Evaluation: metadata 4 sent 
+11-06 14:42:09.760 24431 24464 D Evaluation: metadata 5 sent 
+11-06 14:42:09.814 24431 24464 W System.err: java.net.SocketException: Message too long
+11-06 14:42:09.814 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 14:42:09.814 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 14:42:09.814 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 14:42:09.814 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 14:42:09.814 24431 24464 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 14:42:09.814 24431 24464 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 14:42:09.815 24431 24464 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 14:42:09.815 24431 24464 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 14:42:09.815 24431 24464 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 14:42:09.841 24431 24464 W System.err: java.net.SocketException: Message too long
+11-06 14:42:09.841 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 14:42:09.841 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 14:42:09.841 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 14:42:09.841 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 14:42:09.841 24431 24464 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 14:42:09.841 24431 24464 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 14:42:09.841 24431 24464 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 14:42:09.841 24431 24464 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 14:42:09.841 24431 24464 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 14:42:09.875 24431 24464 W System.err: java.net.SocketException: Message too long
+11-06 14:42:09.875 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 14:42:09.875 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 14:42:09.875 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 14:42:09.875 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 14:42:09.875 24431 24464 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 14:42:09.875 24431 24464 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 14:42:09.875 24431 24464 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 14:42:09.875 24431 24464 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 14:42:09.875 24431 24464 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 14:42:09.909 24431 24464 W System.err: java.net.SocketException: Message too long
+11-06 14:42:09.909 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 14:42:09.909 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 14:42:09.909 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 14:42:09.909 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 14:42:09.909 24431 24464 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 14:42:09.909 24431 24464 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 14:42:09.909 24431 24464 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 14:42:09.909 24431 24464 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 14:42:09.909 24431 24464 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 14:42:09.945 24431 24464 W System.err: java.net.SocketException: Message too long
+11-06 14:42:09.945 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 14:42:09.945 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 14:42:09.945 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 14:42:09.945 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 14:42:09.945 24431 24464 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 14:42:09.945 24431 24464 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 14:42:09.945 24431 24464 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 14:42:09.945 24431 24464 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 14:42:09.945 24431 24464 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 14:42:09.975 24431 24442 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 14:42:09.975 24431 24464 W System.err: java.net.SocketException: Message too long
+11-06 14:42:09.975 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 14:42:09.975 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 14:42:09.975 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 14:42:09.976 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 14:42:09.976 24431 24464 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 14:42:09.976 24431 24464 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 14:42:09.976 24431 24464 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 14:42:09.976 24431 24464 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 14:42:09.976 24431 24464 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 14:42:10.010 24431 24464 W System.err: java.net.SocketException: Message too long
+11-06 14:42:10.010 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 14:42:10.010 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 14:42:10.011 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 14:42:10.011 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 14:42:10.011 24431 24464 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 14:42:10.011 24431 24464 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 14:42:10.011 24431 24464 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 14:42:10.011 24431 24464 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 14:42:10.011 24431 24464 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 14:42:10.042 24431 24464 W System.err: java.net.SocketException: Message too long
+11-06 14:42:10.042 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 14:42:10.042 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 14:42:10.042 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 14:42:10.042 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 14:42:10.042 24431 24464 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 14:42:10.042 24431 24464 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 14:42:10.042 24431 24464 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 14:42:10.043 24431 24464 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 14:42:10.043 24431 24464 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 14:42:10.075 24431 24464 W System.err: java.net.SocketException: Message too long
+11-06 14:42:10.075 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 14:42:10.075 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 14:42:10.075 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 14:42:10.075 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 14:42:10.075 24431 24464 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 14:42:10.075 24431 24464 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 14:42:10.075 24431 24464 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 14:42:10.076 24431 24464 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 14:42:10.076 24431 24464 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 14:42:10.110 24431 24464 W System.err: java.net.SocketException: Message too long
+11-06 14:42:10.110 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 14:42:10.110 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 14:42:10.110 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 14:42:10.110 24431 24464 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 14:42:10.110 24431 24464 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 14:42:10.110 24431 24464 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 14:42:10.110 24431 24464 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 14:42:10.110 24431 24464 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 14:42:10.110 24431 24464 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 14:42:10.143 24431 24464 D Evaluation: Frame 16 sent at 1573044130143
+11-06 14:42:10.175 24431 24464 D Evaluation: Frame 17 sent at 1573044130175
+11-06 14:42:10.213 24431 24464 D Evaluation: Frame 18 sent at 1573044130213
+11-06 14:42:10.243 24431 24464 D Evaluation: Frame 19 sent at 1573044130243
+11-06 14:42:10.277 24431 24464 D Evaluation: Frame 20 sent at 1573044130277
+11-06 14:42:10.310 24431 24464 D Evaluation: Frame 21 sent at 1573044130310
+11-06 14:42:10.343 24431 24464 D Evaluation: Frame 22 sent at 1573044130343
+11-06 14:42:10.376 24431 24464 D Evaluation: Frame 23 sent at 1573044130376
+11-06 14:42:10.409 24431 24464 D Evaluation: Frame 24 sent at 1573044130409
+11-06 14:42:10.424 24431 24431 D Poster  : At 1573044130424 location is 65.05894868016989 (latitude), and 25.466534800083508 (longitude)
+11-06 14:42:10.427 24431 24431 D Poster  : Connected to mobile network 20
+11-06 14:42:10.454 24431 24464 D Evaluation: Frame 25 sent at 1573044130454
+11-06 14:42:10.455 24431 24464 D Evaluation: 0 res for frame 16 received at 1573044130455
+11-06 14:42:10.477 24431 24464 D Evaluation: Frame 26 sent at 1573044130477
+11-06 14:42:10.514 24431 24464 D Evaluation: Frame 27 sent at 1573044130514
+11-06 14:42:10.544 24431 24464 D Evaluation: Frame 28 sent at 1573044130544
+11-06 14:42:10.586 24431 24464 D Evaluation: Frame 29 sent at 1573044130586
+11-06 14:42:10.587 24431 24464 D Evaluation: 0 res for frame 17 received at 1573044130587
+11-06 14:42:10.599 24431 24431 D Poster  : At 1573044130599 location is 65.05917749021434 (latitude), and 25.46640470452675 (longitude)
+11-06 14:42:10.602 24431 24431 D Poster  : Connected to mobile network 20
+11-06 14:42:10.621 24431 24464 D Evaluation: Frame 30 sent at 1573044130621
+11-06 14:42:10.652 24431 24464 D Evaluation: Frame 31 sent at 1573044130652
+11-06 14:42:10.691 24431 24464 D Evaluation: Frame 32 sent at 1573044130691
+11-06 14:42:10.728 24431 24464 D Evaluation: Frame 33 sent at 1573044130728
+11-06 14:42:10.765 24431 24464 D Evaluation: Frame 34 sent at 1573044130765
+11-06 14:42:10.793 24431 24464 D Evaluation: Frame 35 sent at 1573044130793
+11-06 14:42:10.828 24431 24464 D Evaluation: Frame 36 sent at 1573044130828
+11-06 14:42:10.857 24431 24464 D Evaluation: Frame 37 sent at 1573044130857
+11-06 14:42:10.892 24431 24464 D Evaluation: Frame 38 sent at 1573044130892
+11-06 14:42:10.933 24431 24464 D Evaluation: Frame 39 sent at 1573044130933
+11-06 14:42:10.965 24431 24464 D Evaluation: Frame 40 sent at 1573044130965
+11-06 14:42:11.001 24431 24464 D Evaluation: Frame 41 sent at 1573044131001
+11-06 14:42:11.026 24431 24464 D Evaluation: Frame 42 sent at 1573044131026
+11-06 14:42:11.062 24431 24464 D Evaluation: Frame 43 sent at 1573044131062
+11-06 14:42:11.100 24431 24464 D Evaluation: Frame 44 sent at 1573044131100
+11-06 14:42:11.131 24431 24464 D Evaluation: Frame 45 sent at 1573044131131
+11-06 14:42:11.165 24431 24464 D Evaluation: Frame 46 sent at 1573044131165
+11-06 14:42:11.198 24431 24464 D Evaluation: Frame 47 sent at 1573044131198
+11-06 14:42:11.230 24431 24464 D Evaluation: Frame 48 sent at 1573044131230
+11-06 14:42:11.274 24431 24464 D Evaluation: Frame 49 sent at 1573044131274
+11-06 14:42:11.307 24431 24464 D Evaluation: Frame 50 sent at 1573044131307
+11-06 14:42:11.329 24431 24464 D Evaluation: Frame 51 sent at 1573044131329
+11-06 14:42:11.355 24431 24464 D Evaluation: Frame 52 sent at 1573044131355
+11-06 14:42:11.397 24431 24464 D Evaluation: Frame 53 sent at 1573044131397
+11-06 14:42:11.431 24431 24464 D Evaluation: Frame 54 sent at 1573044131430
+11-06 14:42:11.432 24431 24464 D Evaluation: 0 res for frame 39 received at 1573044131432
+11-06 14:42:11.471 24431 24464 D Evaluation: Frame 55 sent at 1573044131471
+11-06 14:42:11.472 24431 24464 D Evaluation: 0 res for frame 40 received at 1573044131472
+11-06 14:42:11.499 24431 24464 D Evaluation: Frame 56 sent at 1573044131498
+11-06 14:42:11.500 24431 24464 D Evaluation: 0 res for frame 41 received at 1573044131500
+11-06 14:42:11.531 24431 24464 D Evaluation: Frame 57 sent at 1573044131531
+11-06 14:42:11.533 24431 24464 D Evaluation: 0 res for frame 42 received at 1573044131533
+11-06 14:42:11.563 24431 24464 D Evaluation: Frame 58 sent at 1573044131563
+11-06 14:42:11.564 24431 24464 D Evaluation: 0 res for frame 43 received at 1573044131564
+11-06 14:42:11.597 24431 24464 D Evaluation: Frame 59 sent at 1573044131597
+11-06 14:42:11.599 24431 24464 D Evaluation: 0 res for frame 44 received at 1573044131599
+11-06 14:42:11.603 24431 24431 D Poster  : At 1573044131602 location is 65.05933368330574 (latitude), and 25.466321711890814 (longitude)
+11-06 14:42:11.604 24431 24431 D Poster  : Connected to mobile network 20
+11-06 14:42:11.638 24431 24464 D Evaluation: Frame 60 sent at 1573044131638
+11-06 14:42:11.639 24431 24464 D Evaluation: 0 res for frame 45 received at 1573044131639
+11-06 14:42:11.667 24431 24464 D Evaluation: Frame 61 sent at 1573044131667
+11-06 14:42:11.668 24431 24464 D Evaluation: 0 res for frame 46 received at 1573044131668
+11-06 14:42:11.693 24431 24464 D Evaluation: Frame 62 sent at 1573044131693
+11-06 14:42:11.695 24431 24464 D Evaluation: 0 res for frame 47 received at 1573044131695
+11-06 14:42:11.735 24431 24464 D Evaluation: Frame 63 sent at 1573044131735
+11-06 14:42:11.737 24431 24464 D Evaluation: 0 res for frame 48 received at 1573044131737
+11-06 14:42:11.776 24431 24464 D Evaluation: Frame 64 sent at 1573044131776
+11-06 14:42:11.778 24431 24464 D Evaluation: 0 res for frame 49 received at 1573044131778
+11-06 14:42:11.809 24431 24464 D Evaluation: Frame 65 sent at 1573044131809
+11-06 14:42:11.814 24431 24464 D Evaluation: 0 res for frame 50 received at 1573044131814
+11-06 14:42:11.838 24431 24464 D Evaluation: Frame 66 sent at 1573044131837
+11-06 14:42:11.839 24431 24464 D Evaluation: 0 res for frame 51 received at 1573044131839
+11-06 14:42:11.867 24431 24464 D Evaluation: Frame 67 sent at 1573044131867
+11-06 14:42:11.869 24431 24464 D Evaluation: 0 res for frame 52 received at 1573044131869
+11-06 14:42:11.904 24431 24464 D Evaluation: Frame 68 sent at 1573044131904
+11-06 14:42:11.906 24431 24464 D Evaluation: 0 res for frame 53 received at 1573044131906
+11-06 14:42:11.936 24431 24442 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 14:42:11.937 24431 24464 D Evaluation: Frame 69 sent at 1573044131937
+11-06 14:42:11.939 24431 24464 D Evaluation: 0 res for frame 54 received at 1573044131939
+11-06 14:42:11.952 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:11.954 24431 24440 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 30 lines
+11-06 14:42:11.954 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:11.954 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:11.954 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:11.974 24431 24464 D Evaluation: Frame 70 sent at 1573044131974
+11-06 14:42:11.976 24431 24464 D Evaluation: 0 res for frame 55 received at 1573044131976
+11-06 14:42:12.012 24431 24464 D Evaluation: Frame 71 sent at 1573044132012
+11-06 14:42:12.014 24431 24464 D Evaluation: 0 res for frame 56 received at 1573044132014
+11-06 14:42:12.040 24431 24464 D Evaluation: Frame 72 sent at 1573044132040
+11-06 14:42:12.041 24431 24464 D Evaluation: 0 res for frame 57 received at 1573044132041
+11-06 14:42:12.107 24431 24464 D Evaluation: Frame 73 sent at 1573044132107
+11-06 14:42:12.108 24431 24464 D Evaluation: 0 res for frame 58 received at 1573044132108
+11-06 14:42:12.142 24431 24464 D Evaluation: Frame 74 sent at 1573044132142
+11-06 14:42:12.143 24431 24464 D Evaluation: 0 res for frame 59 received at 1573044132143
+11-06 14:42:12.169 24431 24464 D Evaluation: Frame 75 sent at 1573044132169
+11-06 14:42:12.171 24431 24464 D Evaluation: 0 res for frame 60 received at 1573044132171
+11-06 14:42:12.208 24431 24464 D Evaluation: Frame 76 sent at 1573044132208
+11-06 14:42:12.209 24431 24464 D Evaluation: 0 res for frame 61 received at 1573044132209
+11-06 14:42:12.234 24431 24464 D Evaluation: Frame 77 sent at 1573044132234
+11-06 14:42:12.236 24431 24464 D Evaluation: 0 res for frame 62 received at 1573044132236
+11-06 14:42:12.273 24431 24464 D Evaluation: Frame 78 sent at 1573044132273
+11-06 14:42:12.274 24431 24464 D Evaluation: 0 res for frame 63 received at 1573044132274
+11-06 14:42:12.315 24431 24464 D Evaluation: Frame 79 sent at 1573044132315
+11-06 14:42:12.316 24431 24464 D Evaluation: 0 res for frame 64 received at 1573044132316
+11-06 14:42:12.353 24431 24464 D Evaluation: Frame 80 sent at 1573044132353
+11-06 14:42:12.354 24431 24464 D Evaluation: 0 res for frame 65 received at 1573044132354
+11-06 14:42:12.385 24431 24464 D Evaluation: Frame 81 sent at 1573044132385
+11-06 14:42:12.386 24431 24464 D Evaluation: 0 res for frame 66 received at 1573044132386
+11-06 14:42:12.416 24431 24464 D Evaluation: Frame 82 sent at 1573044132416
+11-06 14:42:12.418 24431 24464 D Evaluation: 0 res for frame 67 received at 1573044132418
+11-06 14:42:12.449 24431 24464 D Evaluation: Frame 83 sent at 1573044132449
+11-06 14:42:12.451 24431 24464 D Evaluation: 0 res for frame 68 received at 1573044132451
+11-06 14:42:12.483 24431 24464 D Evaluation: Frame 84 sent at 1573044132483
+11-06 14:42:12.484 24431 24464 D Evaluation: 0 res for frame 69 received at 1573044132484
+11-06 14:42:12.521 24431 24464 D Evaluation: Frame 85 sent at 1573044132521
+11-06 14:42:12.522 24431 24464 D Evaluation: 0 res for frame 70 received at 1573044132522
+11-06 14:42:12.549 24431 24464 D Evaluation: Frame 86 sent at 1573044132549
+11-06 14:42:12.550 24431 24464 D Evaluation: 0 res for frame 71 received at 1573044132550
+11-06 14:42:12.586 24431 24464 D Evaluation: Frame 87 sent at 1573044132586
+11-06 14:42:12.588 24431 24464 D Evaluation: 0 res for frame 72 received at 1573044132588
+11-06 14:42:12.607 24431 24431 D Poster  : At 1573044132607 location is 65.05933171543661 (latitude), and 25.466423138226816 (longitude)
+11-06 14:42:12.609 24431 24431 D Poster  : Connected to mobile network 20
+11-06 14:42:12.610 24431 24464 D Evaluation: Frame 88 sent at 1573044132610
+11-06 14:42:12.611 24431 24464 D Evaluation: 0 res for frame 73 received at 1573044132611
+11-06 14:42:12.644 24431 24464 D Evaluation: Frame 89 sent at 1573044132644
+11-06 14:42:12.646 24431 24464 D Evaluation: 0 res for frame 74 received at 1573044132646
+11-06 14:42:12.678 24431 24464 D Evaluation: Frame 90 sent at 1573044132678
+11-06 14:42:12.679 24431 24464 D Evaluation: 0 res for frame 75 received at 1573044132679
+11-06 14:42:12.723 24431 24464 D Evaluation: Frame 91 sent at 1573044132723
+11-06 14:42:12.724 24431 24464 D Evaluation: 0 res for frame 76 received at 1573044132724
+11-06 14:42:12.740 24431 24464 D Evaluation: Frame 92 sent at 1573044132740
+11-06 14:42:12.742 24431 24464 D Evaluation: 0 res for frame 77 received at 1573044132742
+11-06 14:42:12.780 24431 24464 D Evaluation: Frame 93 sent at 1573044132780
+11-06 14:42:12.781 24431 24464 D Evaluation: 0 res for frame 78 received at 1573044132781
+11-06 14:42:12.808 24431 24464 D Evaluation: Frame 94 sent at 1573044132808
+11-06 14:42:12.810 24431 24464 D Evaluation: 0 res for frame 79 received at 1573044132810
+11-06 14:42:12.848 24431 24464 D Evaluation: Frame 95 sent at 1573044132848
+11-06 14:42:12.849 24431 24464 D Evaluation: 0 res for frame 80 received at 1573044132849
+11-06 14:42:12.883 24431 24464 D Evaluation: Frame 96 sent at 1573044132883
+11-06 14:42:12.885 24431 24464 D Evaluation: 0 res for frame 81 received at 1573044132884
+11-06 14:42:12.913 24431 24464 D Evaluation: Frame 97 sent at 1573044132913
+11-06 14:42:12.915 24431 24464 D Evaluation: 1 res for frame 82 received at 1573044132915
+11-06 14:42:12.945 24431 24464 D Evaluation: Frame 98 sent at 1573044132945
+11-06 14:42:12.946 24431 24464 D Evaluation: 0 res for frame 83 received at 1573044132946
+11-06 14:42:13.023 24431 24464 D Evaluation: Frame 99 sent at 1573044133023
+11-06 14:42:13.024 24431 24464 D Evaluation: 0 res for frame 84 received at 1573044133024
+11-06 14:42:13.048 24431 24464 D Evaluation: Frame 100 sent at 1573044133048
+11-06 14:42:13.049 24431 24464 D Evaluation: 1 res for frame 85 received at 1573044133049
+11-06 14:42:13.081 24431 24464 D Evaluation: Frame 101 sent at 1573044133081
+11-06 14:42:13.083 24431 24464 D Evaluation: 1 res for frame 86 received at 1573044133083
+11-06 14:42:13.109 24431 24464 D Evaluation: Frame 102 sent at 1573044133109
+11-06 14:42:13.111 24431 24464 D Evaluation: 1 res for frame 87 received at 1573044133111
+11-06 14:42:13.150 24431 24464 D Evaluation: Frame 103 sent at 1573044133150
+11-06 14:42:13.151 24431 24464 D Evaluation: 1 res for frame 88 received at 1573044133151
+11-06 14:42:13.188 24431 24464 D Evaluation: Frame 104 sent at 1573044133188
+11-06 14:42:13.190 24431 24464 D Evaluation: 1 res for frame 89 received at 1573044133190
+11-06 14:42:13.209 24431 24431 D Poster  : At 1573044133208 location is 65.05933494931877 (latitude), and 25.466414966261063 (longitude)
+11-06 14:42:13.211 24431 24431 D Poster  : Connected to mobile network 20
+11-06 14:42:13.227 24431 24464 D Evaluation: Frame 105 sent at 1573044133227
+11-06 14:42:13.229 24431 24464 D Evaluation: 1 res for frame 90 received at 1573044133229
+11-06 14:42:13.246 24431 24464 D Evaluation: Frame 106 sent at 1573044133246
+11-06 14:42:13.247 24431 24464 D Evaluation: 1 res for frame 91 received at 1573044133247
+11-06 14:42:13.277 24431 24464 D Evaluation: Frame 107 sent at 1573044133277
+11-06 14:42:13.278 24431 24464 D Evaluation: 1 res for frame 92 received at 1573044133278
+11-06 14:42:13.331 24431 24464 D Evaluation: Frame 108 sent at 1573044133331
+11-06 14:42:13.333 24431 24464 D Evaluation: 1 res for frame 93 received at 1573044133333
+11-06 14:42:13.353 24431 24464 D Evaluation: Frame 109 sent at 1573044133353
+11-06 14:42:13.355 24431 24464 D Evaluation: 1 res for frame 94 received at 1573044133355
+11-06 14:42:13.384 24431 24464 D Evaluation: Frame 110 sent at 1573044133384
+11-06 14:42:13.386 24431 24464 D Evaluation: 0 res for frame 95 received at 1573044133386
+11-06 14:42:13.433 24431 24464 D Evaluation: Frame 111 sent at 1573044133433
+11-06 14:42:13.435 24431 24464 D Evaluation: 0 res for frame 96 received at 1573044133435
+11-06 14:42:13.460 24431 24464 D Evaluation: Frame 112 sent at 1573044133460
+11-06 14:42:13.461 24431 24464 D Evaluation: 0 res for frame 97 received at 1573044133461
+11-06 14:42:13.491 24431 24464 D Evaluation: Frame 113 sent at 1573044133491
+11-06 14:42:13.493 24431 24464 D Evaluation: 1 res for frame 99 received at 1573044133492
+11-06 14:42:13.522 24431 24464 D Evaluation: Frame 114 sent at 1573044133522
+11-06 14:42:13.524 24431 24464 D Evaluation: 1 res for frame 100 received at 1573044133523
+11-06 14:42:13.553 24431 24464 D Evaluation: Frame 115 sent at 1573044133553
+11-06 14:42:13.554 24431 24464 D Evaluation: 1 res for frame 101 received at 1573044133554
+11-06 14:42:13.598 24431 24464 D Evaluation: Frame 116 sent at 1573044133598
+11-06 14:42:13.600 24431 24464 D Evaluation: 1 res for frame 102 received at 1573044133600
+11-06 14:42:13.626 24431 24464 D Evaluation: Frame 117 sent at 1573044133626
+11-06 14:42:13.628 24431 24464 D Evaluation: 1 res for frame 103 received at 1573044133628
+11-06 14:42:13.662 24431 24464 D Evaluation: Frame 118 sent at 1573044133662
+11-06 14:42:13.693 24431 24464 D Evaluation: Frame 119 sent at 1573044133693
+11-06 14:42:13.695 24431 24464 D Evaluation: 1 res for frame 104 received at 1573044133695
+11-06 14:42:13.730 24431 24464 D Evaluation: Frame 120 sent at 1573044133730
+11-06 14:42:13.731 24431 24464 D Evaluation: 1 res for frame 105 received at 1573044133731
+11-06 14:42:13.807 24431 24464 D Evaluation: Frame 121 sent at 1573044133807
+11-06 14:42:13.808 24431 24464 D Evaluation: 1 res for frame 106 received at 1573044133808
+11-06 14:42:13.829 24431 24464 D Evaluation: Frame 122 sent at 1573044133829
+11-06 14:42:13.830 24431 24464 D Evaluation: 1 res for frame 108 received at 1573044133830
+11-06 14:42:13.865 24431 24464 D Evaluation: Frame 123 sent at 1573044133865
+11-06 14:42:13.895 24431 24464 D Evaluation: Frame 124 sent at 1573044133895
+11-06 14:42:13.932 24431 24464 D Evaluation: Frame 125 sent at 1573044133932
+11-06 14:42:13.966 24431 24464 D Evaluation: Frame 126 sent at 1573044133966
+11-06 14:42:13.967 24431 24464 D Evaluation: 1 res for frame 111 received at 1573044133967
+11-06 14:42:13.998 24431 24464 D Evaluation: Frame 127 sent at 1573044133998
+11-06 14:42:14.027 24431 24464 D Evaluation: Frame 128 sent at 1573044134027
+11-06 14:42:14.117 24431 24464 D Evaluation: Frame 130 sent at 1573044134117
+11-06 14:42:14.118 24431 24464 D Evaluation: 1 res for frame 116 received at 1573044134118
+11-06 14:42:14.138 24431 24442 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 14:42:14.139 24431 24464 D Evaluation: Frame 130 sent at 1573044134139
+11-06 14:42:14.160 24431 24464 D Evaluation: Frame 131 sent at 1573044134160
+11-06 14:42:14.168 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:14.168 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:14.168 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:14.169 24431 24440 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 4 lines
+11-06 14:42:14.169 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:14.169 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:14.169 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:14.169 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:14.169 24431 24440 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 5 lines
+11-06 14:42:14.169 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:14.169 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:14.169 24431 24440 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-06 14:42:14.169 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:14.170 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:14.170 24431 24440 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-06 14:42:14.170 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:14.170 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:14.170 24431 24440 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 8 lines
+11-06 14:42:14.170 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:14.170 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:14.170 24431 24440 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-06 14:42:14.170 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:14.171 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:14.172 24431 24440 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 26 lines
+11-06 14:42:14.172 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:14.172 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:14.176 24431 24440 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 40 lines
+11-06 14:42:14.176 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:14.194 24431 24431 I AwareBitmapCacher: init lrucache size: 2097152 pid=24431
+11-06 14:42:14.194 24431 24464 D Evaluation: Frame 132 sent at 1573044134194
+11-06 14:42:14.204 24431 24431 D Poster  : At 1573044134204 location is 65.05938764587377 (latitude), and 25.46631024725273 (longitude)
+11-06 14:42:14.206 24431 24431 D Poster  : Connected to mobile network 20
+11-06 14:42:14.215 24431 24464 D Evaluation: Frame 133 sent at 1573044134215
+11-06 14:42:14.247 24431 24464 D Evaluation: Frame 134 sent at 1573044134247
+11-06 14:42:14.291 24431 24464 D Evaluation: Frame 135 sent at 1573044134291
+11-06 14:42:14.293 24431 24464 D Evaluation: 1 res for frame 121 received at 1573044134293
+11-06 14:42:14.328 24431 24464 D Evaluation: Frame 136 sent at 1573044134328
+11-06 14:42:14.330 24431 24464 D Evaluation: 1 res for frame 122 received at 1573044134330
+11-06 14:42:14.363 24431 24464 D Evaluation: Frame 137 sent at 1573044134362
+11-06 14:42:14.364 24431 24464 D Evaluation: 1 res for frame 123 received at 1573044134364
+11-06 14:42:14.393 24431 24464 D Evaluation: Frame 138 sent at 1573044134393
+11-06 14:42:14.394 24431 24464 D Evaluation: 1 res for frame 124 received at 1573044134394
+11-06 14:42:14.433 24431 24464 D Evaluation: Frame 139 sent at 1573044134433
+11-06 14:42:14.435 24431 24464 D Evaluation: 1 res for frame 125 received at 1573044134435
+11-06 14:42:14.466 24431 24464 D Evaluation: Frame 140 sent at 1573044134466
+11-06 14:42:14.501 24431 24464 D Evaluation: Frame 141 sent at 1573044134500
+11-06 14:42:14.538 24431 24464 D Evaluation: Frame 142 sent at 1573044134538
+11-06 14:42:14.570 24431 24464 D Evaluation: Frame 143 sent at 1573044134570
+11-06 14:42:14.603 24431 24464 D Evaluation: Frame 144 sent at 1573044134603
+11-06 14:42:14.604 24431 24464 D Evaluation: 1 res for frame 130 received at 1573044134604
+11-06 14:42:14.634 24431 24464 D Evaluation: Frame 145 sent at 1573044134634
+11-06 14:42:14.665 24431 24464 D Evaluation: Frame 146 sent at 1573044134665
+11-06 14:42:14.666 24431 24464 D Evaluation: 0 res for frame 131 received at 1573044134666
+11-06 14:42:14.687 24431 24464 D Evaluation: Frame 147 sent at 1573044134687
+11-06 14:42:14.689 24431 24464 D Evaluation: 0 res for frame 132 received at 1573044134689
+11-06 14:42:14.727 24431 24464 D Evaluation: Frame 148 sent at 1573044134727
+11-06 14:42:14.760 24431 24464 D Evaluation: Frame 149 sent at 1573044134760
+11-06 14:42:14.798 24431 24464 D Evaluation: Frame 150 sent at 1573044134798
+11-06 14:42:14.800 24431 24464 D Evaluation: 1 res for frame 135 received at 1573044134800
+11-06 14:42:14.832 24431 24464 D Evaluation: Frame 151 sent at 1573044134832
+11-06 14:42:14.834 24431 24464 D Evaluation: 0 res for frame 136 received at 1573044134834
+11-06 14:42:14.876 24431 24464 D Evaluation: Frame 152 sent at 1573044134876
+11-06 14:42:14.878 24431 24464 D Evaluation: 0 res for frame 137 received at 1573044134878
+11-06 14:42:14.907 24431 24464 D Evaluation: Frame 153 sent at 1573044134907
+11-06 14:42:14.939 24431 24464 D Evaluation: Frame 154 sent at 1573044134939
+11-06 14:42:14.972 24431 24464 D Evaluation: Frame 155 sent at 1573044134972
+11-06 14:42:15.013 24431 24464 D Evaluation: Frame 156 sent at 1573044135012
+11-06 14:42:15.040 24431 24464 D Evaluation: Frame 157 sent at 1573044135040
+11-06 14:42:15.065 24431 24464 D Evaluation: Frame 158 sent at 1573044135065
+11-06 14:42:15.066 24431 24464 D Evaluation: 1 res for frame 142 received at 1573044135066
+11-06 14:42:15.096 24431 24464 D Evaluation: Frame 159 sent at 1573044135096
+11-06 14:42:15.137 24431 24464 D Evaluation: Frame 160 sent at 1573044135137
+11-06 14:42:15.176 24431 24464 D Evaluation: Frame 161 sent at 1573044135176
+11-06 14:42:15.204 24431 24431 D Poster  : At 1573044135204 location is 65.0593239633454 (latitude), and 25.466548331750538 (longitude)
+11-06 14:42:15.206 24431 24431 D Poster  : Connected to mobile network 20
+11-06 14:42:15.211 24431 24464 D Evaluation: Frame 162 sent at 1573044135211
+11-06 14:42:15.242 24431 24464 D Evaluation: Frame 163 sent at 1573044135242
+11-06 14:42:15.244 24431 24464 D Evaluation: 1 res for frame 148 received at 1573044135244
+11-06 14:42:15.271 24431 24464 D Evaluation: Frame 164 sent at 1573044135271
+11-06 14:42:15.273 24431 24464 D Evaluation: 1 res for frame 149 received at 1573044135273
+11-06 14:42:15.309 24431 24464 D Evaluation: Frame 165 sent at 1573044135309
+11-06 14:42:15.310 24431 24464 D Evaluation: 1 res for frame 150 received at 1573044135310
+11-06 14:42:15.341 24431 24464 D Evaluation: Frame 166 sent at 1573044135340
+11-06 14:42:15.372 24431 24464 D Evaluation: Frame 167 sent at 1573044135372
+11-06 14:42:15.373 24431 24464 D Evaluation: 1 res for frame 152 received at 1573044135373
+11-06 14:42:15.413 24431 24464 D Evaluation: Frame 168 sent at 1573044135413
+11-06 14:42:15.415 24431 24464 D Evaluation: 1 res for frame 153 received at 1573044135415
+11-06 14:42:15.450 24431 24464 D Evaluation: Frame 169 sent at 1573044135450
+11-06 14:42:15.451 24431 24464 D Evaluation: 1 res for frame 154 received at 1573044135451
+11-06 14:42:15.481 24431 24464 D Evaluation: Frame 170 sent at 1573044135481
+11-06 14:42:15.508 24431 24464 D Evaluation: Frame 171 sent at 1573044135508
+11-06 14:42:15.548 24431 24464 D Evaluation: Frame 173 sent at 1573044135548
+11-06 14:42:15.550 24431 24464 D Evaluation: 1 res for frame 156 received at 1573044135550
+11-06 14:42:15.569 24431 24464 D Evaluation: Frame 173 sent at 1573044135569
+11-06 14:42:15.603 24431 24464 D Evaluation: Frame 174 sent at 1573044135603
+11-06 14:42:15.636 24431 24464 D Evaluation: Frame 175 sent at 1573044135636
+11-06 14:42:15.639 24431 24464 D Evaluation: 1 res for frame 159 received at 1573044135639
+11-06 14:42:15.688 24431 24464 D Evaluation: Frame 176 sent at 1573044135688
+11-06 14:42:15.690 24431 24464 D Evaluation: 1 res for frame 160 received at 1573044135690
+11-06 14:42:15.718 24431 24464 D Evaluation: Frame 177 sent at 1573044135718
+11-06 14:42:15.719 24431 24464 D Evaluation: 1 res for frame 161 received at 1573044135719
+11-06 14:42:15.739 24431 24464 D Evaluation: Frame 178 sent at 1573044135739
+11-06 14:42:15.741 24431 24464 D Evaluation: 1 res for frame 162 received at 1573044135741
+11-06 14:42:15.768 24431 24464 D Evaluation: Frame 179 sent at 1573044135768
+11-06 14:42:15.820 24431 24464 D Evaluation: Frame 181 sent at 1573044135820
+11-06 14:42:15.822 24431 24464 D Evaluation: 1 res for frame 165 received at 1573044135822
+11-06 14:42:15.842 24431 24464 D Evaluation: Frame 181 sent at 1573044135842
+11-06 14:42:15.843 24431 24464 D Evaluation: 1 res for frame 166 received at 1573044135843
+11-06 14:42:15.887 24431 24464 D Evaluation: Frame 182 sent at 1573044135887
+11-06 14:42:15.917 24431 24464 D Evaluation: Frame 183 sent at 1573044135917
+11-06 14:42:15.919 24431 24464 D Evaluation: 1 res for frame 168 received at 1573044135919
+11-06 14:42:15.940 24431 24464 D Evaluation: Frame 184 sent at 1573044135940
+11-06 14:42:15.941 24431 24464 D Evaluation: 1 res for frame 169 received at 1573044135941
+11-06 14:42:15.978 24431 24464 D Evaluation: Frame 185 sent at 1573044135977
+11-06 14:42:15.979 24431 24464 D Evaluation: 1 res for frame 170 received at 1573044135979
+11-06 14:42:16.011 24431 24464 D Evaluation: Frame 186 sent at 1573044136011
+11-06 14:42:16.050 24431 24464 D Evaluation: Frame 187 sent at 1573044136050
+11-06 14:42:16.051 24431 24464 D Evaluation: 0 res for frame 173 received at 1573044136051
+11-06 14:42:16.123 24431 24464 D Evaluation: Frame 189 sent at 1573044136123
+11-06 14:42:16.125 24431 24464 D Evaluation: 1 res for frame 174 received at 1573044136125
+11-06 14:42:16.144 24431 24464 D Evaluation: Frame 189 sent at 1573044136144
+11-06 14:42:16.146 24431 24464 D Evaluation: 1 res for frame 175 received at 1573044136146
+11-06 14:42:16.175 24431 24464 D Evaluation: Frame 190 sent at 1573044136175
+11-06 14:42:16.177 24431 24464 D Evaluation: 1 res for frame 176 received at 1573044136177
+11-06 14:42:16.202 24431 24431 D Poster  : At 1573044136202 location is 65.05932092036659 (latitude), and 25.46650666810359 (longitude)
+11-06 14:42:16.205 24431 24431 D Poster  : Connected to mobile network 20
+11-06 14:42:16.208 24431 24464 D Evaluation: Frame 191 sent at 1573044136208
+11-06 14:42:16.209 24431 24464 D Evaluation: 1 res for frame 177 received at 1573044136209
+11-06 14:42:16.244 24431 24464 D Evaluation: Frame 192 sent at 1573044136244
+11-06 14:42:16.273 24431 24464 D Evaluation: Frame 193 sent at 1573044136273
+11-06 14:42:16.321 24431 24464 D Evaluation: Frame 194 sent at 1573044136321
+11-06 14:42:16.323 24431 24464 D Evaluation: 1 res for frame 181 received at 1573044136323
+11-06 14:42:16.356 24431 24464 D Evaluation: Frame 195 sent at 1573044136356
+11-06 14:42:16.357 24431 24464 D Evaluation: 1 res for frame 181 received at 1573044136357
+11-06 14:42:16.382 24431 24464 D Evaluation: Frame 196 sent at 1573044136382
+11-06 14:42:16.383 24431 24464 D Evaluation: 1 res for frame 182 received at 1573044136383
+11-06 14:42:16.403 24431 24464 D Evaluation: Frame 197 sent at 1573044136403
+11-06 14:42:16.405 24431 24464 D Evaluation: 1 res for frame 183 received at 1573044136405
+11-06 14:42:16.446 24431 24464 D Evaluation: Frame 198 sent at 1573044136446
+11-06 14:42:16.477 24431 24464 D Evaluation: Frame 199 sent at 1573044136477
+11-06 14:42:16.479 24431 24464 D Evaluation: 1 res for frame 185 received at 1573044136479
+11-06 14:42:16.519 24431 24464 D Evaluation: Frame 200 sent at 1573044136519
+11-06 14:42:16.520 24431 24464 D Evaluation: 1 res for frame 186 received at 1573044136520
+11-06 14:42:16.553 24431 24464 D Evaluation: Frame 201 sent at 1573044136553
+11-06 14:42:16.555 24431 24464 D Evaluation: 1 res for frame 187 received at 1573044136555
+11-06 14:42:16.576 24431 24464 D Evaluation: Frame 202 sent at 1573044136576
+11-06 14:42:16.577 24431 24464 D Evaluation: 1 res for frame 188 received at 1573044136577
+11-06 14:42:16.623 24431 24464 D Evaluation: Frame 204 sent at 1573044136623
+11-06 14:42:16.624 24431 24464 D Evaluation: 1 res for frame 189 received at 1573044136624
+11-06 14:42:16.640 24431 24464 D Evaluation: Frame 204 sent at 1573044136640
+11-06 14:42:16.641 24431 24464 D Evaluation: 1 res for frame 190 received at 1573044136641
+11-06 14:42:16.687 24431 24464 D Evaluation: Frame 205 sent at 1573044136687
+11-06 14:42:16.689 24431 24464 D Evaluation: 1 res for frame 191 received at 1573044136689
+11-06 14:42:16.711 24431 24464 D Evaluation: Frame 206 sent at 1573044136711
+11-06 14:42:16.712 24431 24464 D Evaluation: 1 res for frame 192 received at 1573044136712
+11-06 14:42:16.739 24431 24464 D Evaluation: Frame 207 sent at 1573044136739
+11-06 14:42:16.741 24431 24464 D Evaluation: 1 res for frame 193 received at 1573044136741
+11-06 14:42:16.789 24431 24464 D Evaluation: Frame 208 sent at 1573044136789
+11-06 14:42:16.791 24431 24464 D Evaluation: 1 res for frame 194 received at 1573044136791
+11-06 14:42:16.809 24431 24464 D Evaluation: Frame 209 sent at 1573044136809
+11-06 14:42:16.810 24431 24464 D Evaluation: 1 res for frame 195 received at 1573044136810
+11-06 14:42:16.844 24431 24464 D Evaluation: Frame 210 sent at 1573044136843
+11-06 14:42:16.845 24431 24464 D Evaluation: 1 res for frame 196 received at 1573044136845
+11-06 14:42:16.878 24431 24464 D Evaluation: Frame 211 sent at 1573044136878
+11-06 14:42:16.879 24431 24464 D Evaluation: 1 res for frame 197 received at 1573044136879
+11-06 14:42:16.880 24431 24442 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 14:42:16.898 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:16.898 24431 24440 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 8 lines
+11-06 14:42:16.899 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:16.899 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:16.899 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:16.899 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:16.899 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:16.899 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:16.902 24431 24440 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 34 lines
+11-06 14:42:16.902 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:16.903 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:16.903 24431 24440 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 6 lines
+11-06 14:42:16.903 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:16.903 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:16.906 24431 24440 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 40 lines
+11-06 14:42:16.906 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:16.918 24431 24464 D Evaluation: Frame 212 sent at 1573044136918
+11-06 14:42:16.920 24431 24464 D Evaluation: 1 res for frame 198 received at 1573044136920
+11-06 14:42:16.945 24431 24464 D Evaluation: Frame 213 sent at 1573044136945
+11-06 14:42:16.946 24431 24464 D Evaluation: 1 res for frame 199 received at 1573044136946
+11-06 14:42:16.985 24431 24464 D Evaluation: Frame 214 sent at 1573044136985
+11-06 14:42:16.988 24431 24464 D Evaluation: 1 res for frame 200 received at 1573044136988
+11-06 14:42:17.013 24431 24464 D Evaluation: Frame 215 sent at 1573044137012
+11-06 14:42:17.014 24431 24464 D Evaluation: 1 res for frame 201 received at 1573044137014
+11-06 14:42:17.058 24431 24464 D Evaluation: Frame 216 sent at 1573044137057
+11-06 14:42:17.059 24431 24464 D Evaluation: 1 res for frame 202 received at 1573044137059
+11-06 14:42:17.086 24431 24464 D Evaluation: Frame 217 sent at 1573044137086
+11-06 14:42:17.087 24431 24464 D Evaluation: 1 res for frame 204 received at 1573044137087
+11-06 14:42:17.120 24431 24464 D Evaluation: Frame 218 sent at 1573044137120
+11-06 14:42:17.121 24431 24464 D Evaluation: 1 res for frame 204 received at 1573044137121
+11-06 14:42:17.151 24431 24464 D Evaluation: Frame 219 sent at 1573044137151
+11-06 14:42:17.156 24431 24464 D Evaluation: 1 res for frame 205 received at 1573044137156
+11-06 14:42:17.182 24431 24464 D Evaluation: Frame 220 sent at 1573044137182
+11-06 14:42:17.219 24431 24431 D Poster  : At 1573044137219 location is 65.05931915592181 (latitude), and 25.466465738010868 (longitude)
+11-06 14:42:17.222 24431 24464 D Evaluation: Frame 221 sent at 1573044137222
+11-06 14:42:17.223 24431 24431 D Poster  : Connected to mobile network 20
+11-06 14:42:17.225 24431 24464 D Evaluation: 1 res for frame 206 received at 1573044137225
+11-06 14:42:17.251 24431 24464 D Evaluation: Frame 222 sent at 1573044137251
+11-06 14:42:17.253 24431 24464 D Evaluation: 1 res for frame 207 received at 1573044137253
+11-06 14:42:17.285 24431 24464 D Evaluation: Frame 223 sent at 1573044137285
+11-06 14:42:17.287 24431 24464 D Evaluation: 1 res for frame 208 received at 1573044137286
+11-06 14:42:17.323 24431 24464 D Evaluation: Frame 224 sent at 1573044137323
+11-06 14:42:17.325 24431 24464 D Evaluation: 1 res for frame 209 received at 1573044137325
+11-06 14:42:17.360 24431 24464 D Evaluation: Frame 225 sent at 1573044137359
+11-06 14:42:17.362 24431 24464 D Evaluation: 1 res for frame 210 received at 1573044137362
+11-06 14:42:17.387 24431 24464 D Evaluation: Frame 226 sent at 1573044137387
+11-06 14:42:17.388 24431 24464 D Evaluation: 1 res for frame 211 received at 1573044137388
+11-06 14:42:17.417 24431 24464 D Evaluation: Frame 227 sent at 1573044137417
+11-06 14:42:17.419 24431 24464 D Evaluation: 1 res for frame 212 received at 1573044137419
+11-06 14:42:17.455 24431 24464 D Evaluation: Frame 228 sent at 1573044137455
+11-06 14:42:17.457 24431 24464 D Evaluation: 1 res for frame 213 received at 1573044137457
+11-06 14:42:17.487 24431 24464 D Evaluation: Frame 229 sent at 1573044137487
+11-06 14:42:17.489 24431 24464 D Evaluation: 1 res for frame 214 received at 1573044137489
+11-06 14:42:17.513 24431 24464 D Evaluation: Frame 230 sent at 1573044137513
+11-06 14:42:17.514 24431 24464 D Evaluation: 1 res for frame 215 received at 1573044137514
+11-06 14:42:17.547 24431 24464 D Evaluation: Frame 231 sent at 1573044137547
+11-06 14:42:17.549 24431 24464 D Evaluation: 1 res for frame 216 received at 1573044137549
+11-06 14:42:17.588 24431 24464 D Evaluation: Frame 232 sent at 1573044137588
+11-06 14:42:17.590 24431 24464 D Evaluation: 1 res for frame 217 received at 1573044137590
+11-06 14:42:17.618 24431 24464 D Evaluation: Frame 233 sent at 1573044137618
+11-06 14:42:17.620 24431 24464 D Evaluation: 1 res for frame 218 received at 1573044137620
+11-06 14:42:17.650 24431 24464 D Evaluation: Frame 234 sent at 1573044137650
+11-06 14:42:17.652 24431 24464 D Evaluation: 1 res for frame 219 received at 1573044137652
+11-06 14:42:17.699 24431 24464 D Evaluation: Frame 235 sent at 1573044137699
+11-06 14:42:17.726 24431 24464 D Evaluation: Frame 236 sent at 1573044137726
+11-06 14:42:17.728 24431 24464 D Evaluation: 1 res for frame 221 received at 1573044137727
+11-06 14:42:17.757 24431 24464 D Evaluation: Frame 237 sent at 1573044137757
+11-06 14:42:17.758 24431 24464 D Evaluation: 1 res for frame 222 received at 1573044137758
+11-06 14:42:17.797 24431 24464 D Evaluation: Frame 238 sent at 1573044137797
+11-06 14:42:17.828 24431 24464 D Evaluation: Frame 239 sent at 1573044137828
+11-06 14:42:17.829 24431 24464 D Evaluation: 1 res for frame 224 received at 1573044137829
+11-06 14:42:17.858 24431 24464 D Evaluation: Frame 240 sent at 1573044137858
+11-06 14:42:17.860 24431 24464 D Evaluation: 1 res for frame 225 received at 1573044137860
+11-06 14:42:17.896 24431 24464 D Evaluation: Frame 241 sent at 1573044137896
+11-06 14:42:17.929 24431 24464 D Evaluation: Frame 242 sent at 1573044137929
+11-06 14:42:17.964 24431 24464 D Evaluation: Frame 243 sent at 1573044137964
+11-06 14:42:17.965 24431 24464 D Evaluation: 1 res for frame 228 received at 1573044137965
+11-06 14:42:17.994 24431 24464 D Evaluation: Frame 244 sent at 1573044137994
+11-06 14:42:17.996 24431 24464 D Evaluation: 1 res for frame 229 received at 1573044137996
+11-06 14:42:18.026 24431 24464 D Evaluation: Frame 245 sent at 1573044138026
+11-06 14:42:18.053 24431 24464 D Evaluation: Frame 246 sent at 1573044138053
+11-06 14:42:18.054 24431 24464 D Evaluation: 1 res for frame 231 received at 1573044138054
+11-06 14:42:18.089 24431 24464 D Evaluation: Frame 247 sent at 1573044138089
+11-06 14:42:18.090 24431 24464 D Evaluation: 1 res for frame 232 received at 1573044138090
+11-06 14:42:18.122 24431 24464 D Evaluation: Frame 248 sent at 1573044138122
+11-06 14:42:18.154 24431 24464 D Evaluation: Frame 249 sent at 1573044138154
+11-06 14:42:18.155 24431 24464 D Evaluation: 1 res for frame 234 received at 1573044138155
+11-06 14:42:18.184 24431 24464 D Evaluation: Frame 250 sent at 1573044138184
+11-06 14:42:18.186 24431 24464 D Evaluation: 1 res for frame 235 received at 1573044138186
+11-06 14:42:18.216 24431 24431 D Poster  : At 1573044138216 location is 65.05931993912967 (latitude), and 25.466444422299507 (longitude)
+11-06 14:42:18.219 24431 24431 D Poster  : Connected to mobile network 20
+11-06 14:42:18.224 24431 24464 D Evaluation: Frame 251 sent at 1573044138224
+11-06 14:42:18.225 24431 24464 D Evaluation: 1 res for frame 236 received at 1573044138225
+11-06 14:42:18.256 24431 24464 D Evaluation: Frame 252 sent at 1573044138256
+11-06 14:42:18.289 24431 24464 D Evaluation: Frame 253 sent at 1573044138288
+11-06 14:42:18.331 24431 24464 D Evaluation: Frame 254 sent at 1573044138331
+11-06 14:42:18.332 24431 24464 D Evaluation: 1 res for frame 238 received at 1573044138332
+11-06 14:42:18.360 24431 24464 D Evaluation: Frame 255 sent at 1573044138360
+11-06 14:42:18.399 24431 24464 D Evaluation: Frame 256 sent at 1573044138399
+11-06 14:42:18.427 24431 24464 D Evaluation: Frame 257 sent at 1573044138427
+11-06 14:42:18.471 24431 24464 D Evaluation: Frame 258 sent at 1573044138471
+11-06 14:42:18.495 24431 24464 D Evaluation: Frame 259 sent at 1573044138495
+11-06 14:42:18.536 24431 24464 D Evaluation: Frame 260 sent at 1573044138536
+11-06 14:42:18.570 24431 24464 D Evaluation: Frame 261 sent at 1573044138570
+11-06 14:42:18.636 24431 24464 D Evaluation: Frame 262 sent at 1573044138636
+11-06 14:42:18.680 24431 24464 D Evaluation: Frame 263 sent at 1573044138680
+11-06 14:42:18.705 24431 24464 D Evaluation: Frame 264 sent at 1573044138705
+11-06 14:42:18.735 24431 24464 D Evaluation: Frame 265 sent at 1573044138735
+11-06 14:42:18.767 24431 24464 D Evaluation: Frame 266 sent at 1573044138767
+11-06 14:42:18.769 24431 24464 D Evaluation: 0 res for frame 251 received at 1573044138769
+11-06 14:42:18.794 24431 24464 D Evaluation: Frame 267 sent at 1573044138794
+11-06 14:42:18.835 24431 24464 D Evaluation: Frame 268 sent at 1573044138835
+11-06 14:42:18.869 24431 24464 D Evaluation: Frame 269 sent at 1573044138869
+11-06 14:42:18.901 24431 24464 D Evaluation: Frame 270 sent at 1573044138901
+11-06 14:42:18.935 24431 24464 D Evaluation: Frame 271 sent at 1573044138935
+11-06 14:42:18.937 24431 24464 D Evaluation: 0 res for frame 256 received at 1573044138937
+11-06 14:42:18.965 24431 24464 D Evaluation: Frame 272 sent at 1573044138965
+11-06 14:42:19.000 24431 24464 D Evaluation: Frame 273 sent at 1573044139000
+11-06 14:42:19.001 24431 24464 D Evaluation: 0 res for frame 258 received at 1573044139001
+11-06 14:42:19.041 24431 24464 D Evaluation: Frame 274 sent at 1573044139041
+11-06 14:42:19.072 24431 24464 D Evaluation: Frame 275 sent at 1573044139072
+11-06 14:42:19.073 24431 24464 D Evaluation: 0 res for frame 260 received at 1573044139073
+11-06 14:42:19.101 24431 24464 D Evaluation: Frame 276 sent at 1573044139101
+11-06 14:42:19.126 24431 24464 D Evaluation: Frame 277 sent at 1573044139126
+11-06 14:42:19.170 24431 24464 D Evaluation: Frame 278 sent at 1573044139170
+11-06 14:42:19.172 24431 24464 D Evaluation: 0 res for frame 262 received at 1573044139172
+11-06 14:42:19.202 24431 24464 D Evaluation: Frame 279 sent at 1573044139202
+11-06 14:42:19.204 24431 24464 D Evaluation: 0 res for frame 263 received at 1573044139204
+11-06 14:42:19.215 24431 24431 D Poster  : At 1573044139214 location is 65.05932093892878 (latitude), and 25.46642326879465 (longitude)
+11-06 14:42:19.218 24431 24431 D Poster  : Connected to mobile network 20
+11-06 14:42:19.230 24431 24464 D Evaluation: Frame 280 sent at 1573044139230
+11-06 14:42:19.231 24431 24464 D Evaluation: 0 res for frame 264 received at 1573044139231
+11-06 14:42:19.270 24431 24464 D Evaluation: Frame 281 sent at 1573044139270
+11-06 14:42:19.273 24431 24464 D Evaluation: 0 res for frame 265 received at 1573044139273
+11-06 14:42:19.299 24431 24464 D Evaluation: Frame 282 sent at 1573044139299
+11-06 14:42:19.346 24431 24464 D Evaluation: Frame 283 sent at 1573044139346
+11-06 14:42:19.349 24431 24464 D Evaluation: 0 res for frame 268 received at 1573044139349
+11-06 14:42:19.368 24431 24464 D Evaluation: Frame 284 sent at 1573044139368
+11-06 14:42:19.402 24431 24464 D Evaluation: Frame 285 sent at 1573044139402
+11-06 14:42:19.435 24431 24464 D Evaluation: Frame 286 sent at 1573044139435
+11-06 14:42:19.468 24431 24442 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 14:42:19.469 24431 24464 D Evaluation: Frame 287 sent at 1573044139468
+11-06 14:42:19.493 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:19.499 24431 24440 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 84 lines
+11-06 14:42:19.500 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:19.510 24431 24464 D Evaluation: Frame 288 sent at 1573044139510
+11-06 14:42:19.542 24431 24464 D Evaluation: Frame 289 sent at 1573044139542
+11-06 14:42:19.575 24431 24464 D Evaluation: Frame 290 sent at 1573044139575
+11-06 14:42:19.610 24431 24464 D Evaluation: Frame 291 sent at 1573044139610
+11-06 14:42:19.638 24431 24464 D Evaluation: Frame 292 sent at 1573044139638
+11-06 14:42:19.675 24431 24464 D Evaluation: Frame 293 sent at 1573044139675
+11-06 14:42:19.713 24431 24464 D Evaluation: Frame 294 sent at 1573044139713
+11-06 14:42:19.743 24431 24464 D Evaluation: Frame 295 sent at 1573044139743
+11-06 14:42:19.765 24431 24464 D Evaluation: Frame 296 sent at 1573044139765
+11-06 14:42:19.811 24431 24464 D Evaluation: Frame 297 sent at 1573044139811
+11-06 14:42:19.839 24431 24464 D Evaluation: Frame 298 sent at 1573044139839
+11-06 14:42:19.916 24431 24464 D Evaluation: Frame 299 sent at 1573044139916
+11-06 14:42:19.919 24431 24464 D Evaluation: 1 res for frame 283 received at 1573044139919
+11-06 14:42:19.955 24431 24464 D Evaluation: Frame 300 sent at 1573044139955
+11-06 14:42:19.974 24431 24464 D Evaluation: Frame 301 sent at 1573044139974
+11-06 14:42:20.005 24431 24464 D Evaluation: Frame 302 sent at 1573044140005
+11-06 14:42:20.050 24431 24464 D Evaluation: Frame 303 sent at 1573044140050
+11-06 14:42:20.053 24431 24464 D Evaluation: 1 res for frame 288 received at 1573044140053
+11-06 14:42:20.076 24431 24464 D Evaluation: Frame 304 sent at 1573044140076
+11-06 14:42:20.102 24431 24464 D Evaluation: Frame 305 sent at 1573044140102
+11-06 14:42:20.139 24431 24464 D Evaluation: Frame 306 sent at 1573044140139
+11-06 14:42:20.171 24431 24464 D Evaluation: Frame 307 sent at 1573044140171
+11-06 14:42:20.214 24431 24431 D Poster  : At 1573044140214 location is 65.05932765292793 (latitude), and 25.466384640299232 (longitude)
+11-06 14:42:20.217 24431 24431 D Poster  : Connected to mobile network 20
+11-06 14:42:20.222 24431 24464 D Evaluation: Frame 308 sent at 1573044140222
+11-06 14:42:20.248 24431 24464 D Evaluation: Frame 309 sent at 1573044140248
+11-06 14:42:20.270 24431 24464 D Evaluation: Frame 310 sent at 1573044140270
+11-06 14:42:20.311 24431 24464 D Evaluation: Frame 311 sent at 1573044140311
+11-06 14:42:20.313 24431 24464 D Evaluation: 1 res for frame 297 received at 1573044140313
+11-06 14:42:20.351 24431 24464 D Evaluation: Frame 312 sent at 1573044140351
+11-06 14:42:20.388 24431 24464 D Evaluation: Frame 313 sent at 1573044140388
+11-06 14:42:20.391 24431 24464 D Evaluation: 1 res for frame 299 received at 1573044140390
+11-06 14:42:20.410 24431 24464 D Evaluation: Frame 314 sent at 1573044140410
+11-06 14:42:20.445 24431 24464 D Evaluation: Frame 315 sent at 1573044140445
+11-06 14:42:20.447 24431 24464 D Evaluation: 1 res for frame 300 received at 1573044140447
+11-06 14:42:20.473 24431 24464 D Evaluation: Frame 316 sent at 1573044140473
+11-06 14:42:20.475 24431 24464 D Evaluation: 1 res for frame 301 received at 1573044140475
+11-06 14:42:20.515 24431 24464 D Evaluation: Frame 317 sent at 1573044140515
+11-06 14:42:20.555 24431 24464 D Evaluation: Frame 318 sent at 1573044140555
+11-06 14:42:20.558 24431 24464 D Evaluation: 1 res for frame 303 received at 1573044140557
+11-06 14:42:20.579 24431 24464 D Evaluation: Frame 319 sent at 1573044140579
+11-06 14:42:20.618 24431 24464 D Evaluation: Frame 320 sent at 1573044140618
+11-06 14:42:20.644 24431 24464 D Evaluation: Frame 321 sent at 1573044140644
+11-06 14:42:20.679 24431 24464 D Evaluation: Frame 322 sent at 1573044140679
+11-06 14:42:20.712 24431 24464 D Evaluation: Frame 323 sent at 1573044140712
+11-06 14:42:20.742 24431 24464 D Evaluation: Frame 324 sent at 1573044140742
+11-06 14:42:20.744 24431 24464 D Evaluation: 1 res for frame 308 received at 1573044140744
+11-06 14:42:20.773 24431 24464 D Evaluation: Frame 325 sent at 1573044140773
+11-06 14:42:20.817 24431 24464 D Evaluation: Frame 326 sent at 1573044140817
+11-06 14:42:20.857 24431 24464 D Evaluation: Frame 327 sent at 1573044140857
+11-06 14:42:20.888 24431 24464 D Evaluation: Frame 328 sent at 1573044140888
+11-06 14:42:20.926 24431 24464 D Evaluation: Frame 329 sent at 1573044140926
+11-06 14:42:20.951 24431 24464 D Evaluation: Frame 330 sent at 1573044140951
+11-06 14:42:20.984 24431 24464 D Evaluation: Frame 331 sent at 1573044140984
+11-06 14:42:21.017 24431 24464 D Evaluation: Frame 332 sent at 1573044141017
+11-06 14:42:21.044 24431 24464 D Evaluation: Frame 333 sent at 1573044141044
+11-06 14:42:21.088 24431 24464 D Evaluation: Frame 334 sent at 1573044141088
+11-06 14:42:21.114 24431 24464 D Evaluation: Frame 335 sent at 1573044141114
+11-06 14:42:21.155 24431 24464 D Evaluation: Frame 336 sent at 1573044141155
+11-06 14:42:21.190 24431 24464 D Evaluation: Frame 337 sent at 1573044141190
+11-06 14:42:21.216 24431 24431 D Poster  : At 1573044141216 location is 65.05933229156474 (latitude), and 25.466383168537174 (longitude)
+11-06 14:42:21.218 24431 24431 D Poster  : Connected to mobile network 20
+11-06 14:42:21.222 24431 24464 D Evaluation: Frame 338 sent at 1573044141222
+11-06 14:42:21.247 24431 24464 D Evaluation: Frame 339 sent at 1573044141247
+11-06 14:42:21.277 24431 24464 D Evaluation: Frame 340 sent at 1573044141277
+11-06 14:42:21.324 24431 24464 D Evaluation: Frame 341 sent at 1573044141324
+11-06 14:42:21.347 24431 24464 D Evaluation: Frame 342 sent at 1573044141347
+11-06 14:42:21.386 24431 24464 D Evaluation: Frame 343 sent at 1573044141386
+11-06 14:42:21.388 24431 24464 D Evaluation: 1 res for frame 327 received at 1573044141388
+11-06 14:42:21.424 24431 24464 D Evaluation: Frame 344 sent at 1573044141424
+11-06 14:42:21.451 24431 24464 D Evaluation: Frame 345 sent at 1573044141451
+11-06 14:42:21.489 24431 24464 D Evaluation: Frame 346 sent at 1573044141489
+11-06 14:42:21.524 24431 24464 D Evaluation: Frame 347 sent at 1573044141524
+11-06 14:42:21.555 24431 24464 D Evaluation: Frame 348 sent at 1573044141555
+11-06 14:42:21.590 24431 24464 D Evaluation: Frame 349 sent at 1573044141590
+11-06 14:42:21.592 24431 24464 D Evaluation: 1 res for frame 334 received at 1573044141592
+11-06 14:42:21.617 24431 24464 D Evaluation: Frame 350 sent at 1573044141617
+11-06 14:42:21.663 24431 24464 D Evaluation: Frame 351 sent at 1573044141663
+11-06 14:42:21.666 24431 24464 D Evaluation: 1 res for frame 336 received at 1573044141666
+11-06 14:42:21.685 24431 24464 D Evaluation: Frame 352 sent at 1573044141685
+11-06 14:42:21.719 24431 24464 D Evaluation: Frame 353 sent at 1573044141719
+11-06 14:42:21.754 24431 24464 D Evaluation: Frame 354 sent at 1573044141754
+11-06 14:42:21.783 24431 24464 D Evaluation: Frame 355 sent at 1573044141783
+11-06 14:42:21.867 24431 24464 D Evaluation: Frame 356 sent at 1573044141867
+11-06 14:42:21.870 24431 24464 D Evaluation: 1 res for frame 341 received at 1573044141870
+11-06 14:42:21.895 24431 24464 D Evaluation: Frame 357 sent at 1573044141895
+11-06 14:42:21.924 24431 24464 D Evaluation: Frame 358 sent at 1573044141924
+11-06 14:42:21.958 24431 24464 D Evaluation: Frame 359 sent at 1573044141958
+11-06 14:42:21.990 24431 24464 D Evaluation: Frame 360 sent at 1573044141990
+11-06 14:42:21.992 24431 24464 D Evaluation: 1 res for frame 346 received at 1573044141992
+11-06 14:42:22.015 24431 24464 D Evaluation: Frame 361 sent at 1573044142015
+11-06 14:42:22.059 24431 24464 D Evaluation: Frame 362 sent at 1573044142058
+11-06 14:42:22.085 24431 24464 D Evaluation: Frame 363 sent at 1573044142085
+11-06 14:42:22.114 24431 24464 D Evaluation: Frame 364 sent at 1573044142114
+11-06 14:42:22.153 24431 24464 D Evaluation: Frame 365 sent at 1573044142153
+11-06 14:42:22.191 24431 24464 D Evaluation: Frame 366 sent at 1573044142191
+11-06 14:42:22.193 24431 24464 D Evaluation: 1 res for frame 351 received at 1573044142193
+11-06 14:42:22.218 24431 24431 D Poster  : At 1573044142217 location is 65.05932612843688 (latitude), and 25.466388817997863 (longitude)
+11-06 14:42:22.220 24431 24431 D Poster  : Connected to mobile network 20
+11-06 14:42:22.230 24431 24464 D Evaluation: Frame 367 sent at 1573044142230
+11-06 14:42:22.284 24431 24464 D Evaluation: Frame 368 sent at 1573044142284
+11-06 14:42:22.320 24431 24464 D Evaluation: Frame 369 sent at 1573044142320
+11-06 14:42:22.354 24431 24464 D Evaluation: Frame 370 sent at 1573044142354
+11-06 14:42:22.356 24431 24464 D Evaluation: 1 res for frame 356 received at 1573044142356
+11-06 14:42:22.397 24431 24464 D Evaluation: Frame 371 sent at 1573044142397
+11-06 14:42:22.400 24431 24464 D Evaluation: 1 res for frame 357 received at 1573044142400
+11-06 14:42:22.428 24431 24464 D Evaluation: Frame 372 sent at 1573044142428
+11-06 14:42:22.431 24431 24464 D Evaluation: 1 res for frame 358 received at 1573044142431
+11-06 14:42:22.450 24431 24464 D Evaluation: Frame 373 sent at 1573044142450
+11-06 14:42:22.500 24431 24464 D Evaluation: Frame 374 sent at 1573044142500
+11-06 14:42:22.502 24431 24464 D Evaluation: 1 res for frame 359 received at 1573044142502
+11-06 14:42:22.526 24431 24464 D Evaluation: Frame 375 sent at 1573044142526
+11-06 14:42:22.528 24431 24464 D Evaluation: 1 res for frame 360 received at 1573044142528
+11-06 14:42:22.555 24431 24464 D Evaluation: Frame 376 sent at 1573044142555
+11-06 14:42:22.557 24431 24464 D Evaluation: 1 res for frame 362 received at 1573044142557
+11-06 14:42:22.595 24431 24464 D Evaluation: Frame 377 sent at 1573044142595
+11-06 14:42:22.626 24431 24464 D Evaluation: Frame 378 sent at 1573044142626
+11-06 14:42:22.658 24431 24464 D Evaluation: Frame 379 sent at 1573044142658
+11-06 14:42:22.687 24431 24464 D Evaluation: Frame 380 sent at 1573044142687
+11-06 14:42:22.729 24431 24464 D Evaluation: Frame 381 sent at 1573044142729
+11-06 14:42:22.752 24431 24464 D Evaluation: Frame 382 sent at 1573044142752
+11-06 14:42:22.754 24431 24464 D Evaluation: 1 res for frame 367 received at 1573044142754
+11-06 14:42:22.754 24431 24442 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 14:42:22.777 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:22.782 24431 24440 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 40 lines
+11-06 14:42:22.782 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:22.804 24431 24464 D Evaluation: Frame 383 sent at 1573044142804
+11-06 14:42:22.806 24431 24464 D Evaluation: 1 res for frame 368 received at 1573044142806
+11-06 14:42:22.826 24431 24464 D Evaluation: Frame 384 sent at 1573044142826
+11-06 14:42:22.828 24431 24464 D Evaluation: 1 res for frame 369 received at 1573044142828
+11-06 14:42:22.862 24431 24464 D Evaluation: Frame 385 sent at 1573044142862
+11-06 14:42:22.894 24431 24464 D Evaluation: Frame 386 sent at 1573044142894
+11-06 14:42:22.926 24431 24464 D Evaluation: Frame 387 sent at 1573044142926
+11-06 14:42:22.929 24431 24464 D Evaluation: 1 res for frame 371 received at 1573044142929
+11-06 14:42:22.961 24431 24464 D Evaluation: Frame 388 sent at 1573044142961
+11-06 14:42:22.997 24431 24464 D Evaluation: Frame 389 sent at 1573044142997
+11-06 14:42:22.999 24431 24464 D Evaluation: 1 res for frame 374 received at 1573044142999
+11-06 14:42:23.026 24431 24464 D Evaluation: Frame 390 sent at 1573044143026
+11-06 14:42:23.066 24431 24464 D Evaluation: Frame 391 sent at 1573044143066
+11-06 14:42:23.101 24431 24464 D Evaluation: Frame 392 sent at 1573044143100
+11-06 14:42:23.103 24431 24464 D Evaluation: 1 res for frame 377 received at 1573044143103
+11-06 14:42:23.132 24431 24464 D Evaluation: Frame 393 sent at 1573044143132
+11-06 14:42:23.167 24431 24464 D Evaluation: Frame 394 sent at 1573044143167
+11-06 14:42:23.190 24431 24464 D Evaluation: Frame 395 sent at 1573044143190
+11-06 14:42:23.215 24431 24431 D Poster  : At 1573044143214 location is 65.05931931996398 (latitude), and 25.466391914069007 (longitude)
+11-06 14:42:23.218 24431 24431 D Poster  : Connected to mobile network 20
+11-06 14:42:23.237 24431 24464 D Evaluation: Frame 396 sent at 1573044143237
+11-06 14:42:23.265 24431 24464 D Evaluation: Frame 397 sent at 1573044143265
+11-06 14:42:23.267 24431 24464 D Evaluation: 1 res for frame 381 received at 1573044143267
+11-06 14:42:23.294 24431 24464 D Evaluation: Frame 398 sent at 1573044143294
+11-06 14:42:23.296 24431 24464 D Evaluation: 1 res for frame 383 received at 1573044143296
+11-06 14:42:23.333 24431 24464 D Evaluation: Frame 399 sent at 1573044143333
+11-06 14:42:23.361 24431 24464 D Evaluation: Frame 400 sent at 1573044143361
+11-06 14:42:23.412 24431 24464 D Evaluation: Frame 401 sent at 1573044143412
+11-06 14:42:23.467 24431 24464 D Evaluation: Frame 402 sent at 1573044143467
+11-06 14:42:23.506 24431 24464 D Evaluation: Frame 403 sent at 1573044143506
+11-06 14:42:23.534 24431 24464 D Evaluation: Frame 404 sent at 1573044143534
+11-06 14:42:23.565 24431 24464 D Evaluation: Frame 405 sent at 1573044143565
+11-06 14:42:23.594 24431 24464 D Evaluation: Frame 406 sent at 1573044143594
+11-06 14:42:23.643 24431 24464 D Evaluation: Frame 407 sent at 1573044143642
+11-06 14:42:23.675 24431 24464 D Evaluation: Frame 408 sent at 1573044143675
+11-06 14:42:23.707 24431 24464 D Evaluation: Frame 409 sent at 1573044143707
+11-06 14:42:23.739 24431 24464 D Evaluation: Frame 410 sent at 1573044143739
+11-06 14:42:23.742 24431 24464 D Evaluation: 1 res for frame 396 received at 1573044143742
+11-06 14:42:23.765 24431 24464 D Evaluation: Frame 411 sent at 1573044143765
+11-06 14:42:23.803 24431 24464 D Evaluation: Frame 412 sent at 1573044143803
+11-06 14:42:23.835 24431 24464 D Evaluation: Frame 413 sent at 1573044143835
+11-06 14:42:23.865 24431 24464 D Evaluation: Frame 414 sent at 1573044143865
+11-06 14:42:23.902 24431 24464 D Evaluation: Frame 415 sent at 1573044143902
+11-06 14:42:23.932 24431 24464 D Evaluation: Frame 416 sent at 1573044143932
+11-06 14:42:23.934 24431 24464 D Evaluation: 1 res for frame 401 received at 1573044143934
+11-06 14:42:23.988 24431 24464 D Evaluation: Frame 418 sent at 1573044143988
+11-06 14:42:23.993 24431 24464 D Evaluation: 1 res for frame 402 received at 1573044143993
+11-06 14:42:24.012 24431 24464 D Evaluation: Frame 418 sent at 1573044144012
+11-06 14:42:24.015 24431 24464 D Evaluation: 1 res for frame 403 received at 1573044144015
+11-06 14:42:24.043 24431 24464 D Evaluation: Frame 419 sent at 1573044144043
+11-06 14:42:24.045 24431 24464 D Evaluation: 1 res for frame 404 received at 1573044144045
+11-06 14:42:24.083 24431 24464 D Evaluation: Frame 421 sent at 1573044144083
+11-06 14:42:24.099 24431 24464 D Evaluation: Frame 421 sent at 1573044144099
+11-06 14:42:24.133 24431 24464 D Evaluation: Frame 422 sent at 1573044144133
+11-06 14:42:24.135 24431 24464 D Evaluation: 1 res for frame 407 received at 1573044144135
+11-06 14:42:24.165 24431 24464 D Evaluation: Frame 423 sent at 1573044144165
+11-06 14:42:24.167 24431 24464 D Evaluation: 1 res for frame 408 received at 1573044144167
+11-06 14:42:24.208 24431 24464 D Evaluation: Frame 424 sent at 1573044144208
+11-06 14:42:24.223 24431 24431 D Poster  : At 1573044144223 location is 65.05930933018881 (latitude), and 25.466414291105714 (longitude)
+11-06 14:42:24.226 24431 24431 D Poster  : Connected to mobile network 20
+11-06 14:42:24.233 24431 24464 D Evaluation: Frame 425 sent at 1573044144233
+11-06 14:42:24.260 24431 24464 D Evaluation: Frame 426 sent at 1573044144260
+11-06 14:42:24.297 24431 24464 D Evaluation: Frame 427 sent at 1573044144297
+11-06 14:42:24.347 24431 24464 D Evaluation: Frame 428 sent at 1573044144347
+11-06 14:42:24.368 24431 24464 D Evaluation: Frame 429 sent at 1573044144368
+11-06 14:42:24.412 24431 24464 D Evaluation: Frame 430 sent at 1573044144412
+11-06 14:42:24.446 24431 24464 D Evaluation: Frame 431 sent at 1573044144446
+11-06 14:42:24.467 24431 24464 D Evaluation: Frame 432 sent at 1573044144467
+11-06 14:42:24.502 24431 24464 D Evaluation: Frame 433 sent at 1573044144502
+11-06 14:42:24.504 24431 24464 D Evaluation: 1 res for frame 418 received at 1573044144504
+11-06 14:42:24.543 24431 24464 D Evaluation: Frame 434 sent at 1573044144543
+11-06 14:42:24.576 24431 24464 D Evaluation: Frame 435 sent at 1573044144576
+11-06 14:42:24.607 24431 24464 D Evaluation: Frame 436 sent at 1573044144607
+11-06 14:42:24.643 24431 24464 D Evaluation: Frame 437 sent at 1573044144643
+11-06 14:42:24.673 24431 24464 D Evaluation: Frame 438 sent at 1573044144673
+11-06 14:42:24.703 24431 24464 D Evaluation: Frame 439 sent at 1573044144703
+11-06 14:42:24.732 24431 24464 D Evaluation: Frame 440 sent at 1573044144732
+11-06 14:42:24.734 24431 24464 D Evaluation: 1 res for frame 424 received at 1573044144734
+11-06 14:42:24.778 24431 24464 D Evaluation: Frame 441 sent at 1573044144778
+11-06 14:42:24.810 24431 24464 D Evaluation: Frame 442 sent at 1573044144810
+11-06 14:42:24.846 24431 24464 D Evaluation: Frame 443 sent at 1573044144846
+11-06 14:42:24.848 24431 24464 D Evaluation: 1 res for frame 428 received at 1573044144848
+11-06 14:42:24.879 24431 24464 D Evaluation: Frame 444 sent at 1573044144879
+11-06 14:42:24.910 24431 24464 D Evaluation: Frame 445 sent at 1573044144910
+11-06 14:42:24.912 24431 24464 D Evaluation: 1 res for frame 430 received at 1573044144912
+11-06 14:42:24.937 24431 24464 D Evaluation: Frame 446 sent at 1573044144937
+11-06 14:42:24.976 24431 24464 D Evaluation: Frame 447 sent at 1573044144976
+11-06 14:42:25.011 24431 24464 D Evaluation: Frame 448 sent at 1573044145011
+11-06 14:42:25.039 24431 24464 D Evaluation: Frame 449 sent at 1573044145039
+11-06 14:42:25.042 24431 24464 D Evaluation: 1 res for frame 434 received at 1573044145042
+11-06 14:42:25.090 24431 24464 D Evaluation: Frame 451 sent at 1573044145090
+11-06 14:42:25.111 24431 24464 D Evaluation: Frame 451 sent at 1573044145111
+11-06 14:42:25.143 24431 24464 D Evaluation: Frame 452 sent at 1573044145143
+11-06 14:42:25.171 24431 24464 D Evaluation: Frame 453 sent at 1573044145171
+11-06 14:42:25.206 24431 24431 D Poster  : At 1573044145206 location is 65.05930065533231 (latitude), and 25.46642127611371 (longitude)
+11-06 14:42:25.208 24431 24431 D Poster  : Connected to mobile network 20
+11-06 14:42:25.220 24431 24464 D Evaluation: Frame 454 sent at 1573044145220
+11-06 14:42:25.241 24431 24464 D Evaluation: Frame 455 sent at 1573044145241
+11-06 14:42:25.282 24431 24464 D Evaluation: Frame 456 sent at 1573044145282
+11-06 14:42:25.285 24431 24464 D Evaluation: 1 res for frame 441 received at 1573044145285
+11-06 14:42:25.309 24431 24464 D Evaluation: Frame 457 sent at 1573044145308
+11-06 14:42:25.401 24431 24464 D Evaluation: Frame 458 sent at 1573044145401
+11-06 14:42:25.442 24431 24464 D Evaluation: Frame 460 sent at 1573044145442
+11-06 14:42:25.462 24431 24464 D Evaluation: Frame 460 sent at 1573044145462
+11-06 14:42:25.515 24431 24464 D Evaluation: Frame 461 sent at 1573044145515
+11-06 14:42:25.517 24431 24464 D Evaluation: 1 res for frame 447 received at 1573044145517
+11-06 14:42:25.555 24431 24464 D Evaluation: Frame 462 sent at 1573044145555
+11-06 14:42:25.586 24431 24464 D Evaluation: Frame 463 sent at 1573044145586
+11-06 14:42:25.613 24431 24464 D Evaluation: Frame 464 sent at 1573044145613
+11-06 14:42:25.615 24431 24464 D Evaluation: 1 res for frame 451 received at 1573044145615
+11-06 14:42:25.643 24431 24464 D Evaluation: Frame 465 sent at 1573044145643
+11-06 14:42:25.686 24431 24464 D Evaluation: Frame 466 sent at 1573044145686
+11-06 14:42:25.719 24431 24464 D Evaluation: Frame 467 sent at 1573044145719
+11-06 14:42:25.755 24431 24464 D Evaluation: Frame 468 sent at 1573044145755
+11-06 14:42:25.784 24431 24464 D Evaluation: Frame 469 sent at 1573044145784
+11-06 14:42:25.812 24431 24464 D Evaluation: Frame 470 sent at 1573044145812
+11-06 14:42:25.855 24431 24464 D Evaluation: Frame 471 sent at 1573044145855
+11-06 14:42:25.883 24431 24464 D Evaluation: Frame 472 sent at 1573044145883
+11-06 14:42:25.921 24431 24464 D Evaluation: Frame 473 sent at 1573044145921
+11-06 14:42:25.952 24431 24464 D Evaluation: Frame 474 sent at 1573044145952
+11-06 14:42:25.977 24431 24464 D Evaluation: Frame 475 sent at 1573044145977
+11-06 14:42:26.023 24431 24442 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 14:42:26.024 24431 24464 D Evaluation: Frame 476 sent at 1573044146024
+11-06 14:42:26.051 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:26.051 24431 24464 D Evaluation: Frame 477 sent at 1573044146051
+11-06 14:42:26.051 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:26.055 24431 24440 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 41 lines
+11-06 14:42:26.055 24431 24440 W System  : A resource failed to call close. 
+11-06 14:42:26.090 24431 24464 D Evaluation: Frame 478 sent at 1573044146090
+11-06 14:42:26.118 24431 24464 D Evaluation: Frame 479 sent at 1573044146118
+11-06 14:42:26.143 24431 24464 D Evaluation: Frame 480 sent at 1573044146143
+11-06 14:42:26.186 24431 24464 D Evaluation: Frame 481 sent at 1573044146186
+11-06 14:42:26.215 24431 24431 D Poster  : At 1573044146214 location is 65.05930065533231 (latitude), and 25.46642127611371 (longitude)
+11-06 14:42:26.218 24431 24431 D Poster  : Connected to mobile network 20
+11-06 14:42:26.262 24431 24464 D Evaluation: Frame 482 sent at 1573044146261
+11-06 14:42:26.278 24431 24431 D stylus  : init stylus touchlistener.
+11-06 14:42:26.283 24431 24431 W Settings: Setting device_provisioned has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+11-06 14:42:26.284 24431 24431 V HiTouch_HiTouchSensor: User setup is finished.
+11-06 14:42:26.297 24431 24464 D Evaluation: Frame 483 sent at 1573044146296
+11-06 14:42:26.302 24431 24431 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:5.864517, limit is:60The moving distance of Y is:72.096886, limit is:60
+11-06 14:42:26.322 24431 24464 D Evaluation: Frame 484 sent at 1573044146322
+11-06 14:42:26.385 24431 24464 D Evaluation: Frame 485 sent at 1573044146385
+11-06 14:42:26.415 24431 24464 D Evaluation: Frame 486 sent at 1573044146415
+11-06 14:42:26.439 24431 24464 D Evaluation: Frame 487 sent at 1573044146439
+11-06 14:42:26.472 24431 24464 D Evaluation: Frame 488 sent at 1573044146472
+11-06 14:42:26.504 24431 24464 D Evaluation: Frame 489 sent at 1573044146504
+11-06 14:42:26.541 24431 24464 D Evaluation: Frame 490 sent at 1573044146541
+11-06 14:42:26.576 24431 24464 D Evaluation: Frame 491 sent at 1573044146576
+11-06 14:42:26.607 24431 24464 D Evaluation: Frame 492 sent at 1573044146607
+11-06 14:42:26.646 24431 24464 D Evaluation: Frame 493 sent at 1573044146646
+11-06 14:42:26.673 24431 24464 D Evaluation: Frame 494 sent at 1573044146673
+11-06 14:42:26.706 24431 24464 D Evaluation: Frame 495 sent at 1573044146706
+11-06 14:42:26.744 24431 24464 D Evaluation: Frame 496 sent at 1573044146744
+11-06 14:42:26.775 24431 24464 D Evaluation: Frame 497 sent at 1573044146775
+11-06 14:42:26.809 24431 24464 D Evaluation: Frame 498 sent at 1573044146809
+11-06 14:42:26.841 24431 24464 D Evaluation: Frame 499 sent at 1573044146841
+11-06 14:42:26.874 24431 24464 D Evaluation: Frame 500 sent at 1573044146874
+11-06 14:42:26.921 24431 24464 D Evaluation: Frame 501 sent at 1573044146921
+11-06 14:42:26.942 24431 24464 D Evaluation: Frame 502 sent at 1573044146942
+11-06 14:42:26.983 24431 24464 D Evaluation: Frame 503 sent at 1573044146983
+11-06 14:42:27.016 24431 24464 D Evaluation: Frame 504 sent at 1573044147016
+11-06 14:42:27.049 24431 24464 D Evaluation: Frame 505 sent at 1573044147049
+11-06 14:42:27.082 24431 24464 D Evaluation: Frame 506 sent at 1573044147082
+11-06 14:42:27.109 24431 24464 D Evaluation: Frame 507 sent at 1573044147109
+11-06 14:42:27.154 24431 24464 D Evaluation: Frame 508 sent at 1573044147154
+11-06 14:42:27.188 24431 24464 D Evaluation: Frame 509 sent at 1573044147188
+11-06 14:42:27.205 24431 24431 D Poster  : At 1573044147205 location is 65.05930037336967 (latitude), and 25.466423168665273 (longitude)
+11-06 14:42:27.208 24431 24431 D Poster  : Connected to mobile network 20
+11-06 14:42:27.223 24431 24464 D Evaluation: Frame 510 sent at 1573044147223
+11-06 14:42:27.242 24431 24464 D Evaluation: Frame 511 sent at 1573044147242
+11-06 14:42:27.279 24431 24464 D Evaluation: Frame 512 sent at 1573044147279
+11-06 14:42:27.314 24431 24464 D Evaluation: Frame 513 sent at 1573044147314
+11-06 14:42:27.344 24431 24464 D Evaluation: Frame 514 sent at 1573044147344
+11-06 14:42:27.380 24431 24464 D Evaluation: Frame 515 sent at 1573044147380
+11-06 14:42:27.414 24431 24464 D Evaluation: Frame 516 sent at 1573044147414
+11-06 14:42:27.450 24431 24464 D Evaluation: Frame 517 sent at 1573044147450
+11-06 14:42:27.481 24431 24464 D Evaluation: Frame 518 sent at 1573044147481
+11-06 14:42:27.515 24431 24464 D Evaluation: Frame 519 sent at 1573044147515
+11-06 14:42:27.547 24431 24464 D Evaluation: Frame 520 sent at 1573044147547
+11-06 14:42:27.579 24431 24464 D Evaluation: Frame 521 sent at 1573044147579
+11-06 14:42:27.621 24431 24464 D Evaluation: Frame 522 sent at 1573044147621
+11-06 14:42:27.648 24431 24464 D Evaluation: Frame 523 sent at 1573044147648
+11-06 14:42:27.688 24431 24464 D Evaluation: Frame 524 sent at 1573044147688
+11-06 14:42:27.723 24431 24464 D Evaluation: Frame 525 sent at 1573044147723
+11-06 14:42:27.755 24431 24464 D Evaluation: Frame 526 sent at 1573044147755
+11-06 14:42:27.781 24431 24464 D Evaluation: Frame 527 sent at 1573044147781
+11-06 14:42:27.815 24431 24464 D Evaluation: Frame 528 sent at 1573044147815
+11-06 14:42:27.885 24431 24464 D Evaluation: Frame 529 sent at 1573044147885
+11-06 14:42:27.919 24431 24464 D Evaluation: Frame 530 sent at 1573044147919
+11-06 14:42:27.959 24431 24464 D Evaluation: Frame 531 sent at 1573044147959
+11-06 14:42:27.991 24431 24464 D Evaluation: Frame 532 sent at 1573044147991
+11-06 14:42:28.019 24431 24464 D Evaluation: Frame 533 sent at 1573044148019
+11-06 14:42:28.052 24431 24464 D Evaluation: Frame 534 sent at 1573044148052
+11-06 14:42:28.093 24431 24464 D Evaluation: Frame 535 sent at 1573044148093
+11-06 14:42:28.116 24431 24464 D Evaluation: Frame 536 sent at 1573044148116
+11-06 14:42:28.151 24431 24464 D Evaluation: Frame 537 sent at 1573044148151
+11-06 14:42:28.184 24431 24464 D Evaluation: Frame 538 sent at 1573044148184
+11-06 14:42:28.216 24431 24464 D Evaluation: Frame 539 sent at 1573044148216
+11-06 14:42:28.217 24431 24431 D Poster  : At 1573044148217 location is 65.05930037336967 (latitude), and 25.466423168665273 (longitude)
+11-06 14:42:28.218 24431 24431 D Poster  : Connected to mobile network 20
+11-06 14:42:28.254 24431 24464 D Evaluation: Frame 540 sent at 1573044148254
+11-06 14:42:28.288 24431 24464 D Evaluation: Frame 541 sent at 1573044148288
+11-06 14:42:28.328 24431 24464 D Evaluation: Frame 542 sent at 1573044148328
+11-06 14:42:28.352 24431 24464 D Evaluation: Frame 543 sent at 1573044148352
+11-06 14:42:28.386 24431 24464 D Evaluation: Frame 544 sent at 1573044148386
+11-06 14:42:28.421 24431 24464 D Evaluation: Frame 545 sent at 1573044148421
+11-06 14:42:28.454 24431 24464 D Evaluation: Frame 546 sent at 1573044148454
+11-06 14:42:28.488 24431 24464 D Evaluation: Frame 547 sent at 1573044148488
+11-06 14:42:28.532 24431 24464 D Evaluation: Frame 548 sent at 1573044148532
+11-06 14:42:28.561 24431 24464 D Evaluation: Frame 549 sent at 1573044148561
+11-06 14:42:28.589 24431 24464 D Evaluation: Frame 550 sent at 1573044148589
+11-06 14:42:28.624 24431 24464 D Evaluation: Frame 551 sent at 1573044148623
+11-06 14:42:28.656 24431 24464 D Evaluation: Frame 552 sent at 1573044148656
+11-06 14:42:28.690 24431 24464 D Evaluation: Frame 553 sent at 1573044148690
+11-06 14:42:28.723 24431 24464 D Evaluation: Frame 554 sent at 1573044148723
+11-06 14:42:28.766 24431 24464 D Evaluation: Frame 555 sent at 1573044148766
+11-06 14:42:28.799 24431 24464 D Evaluation: Frame 556 sent at 1573044148799
+11-06 14:42:28.824 24431 24464 D Evaluation: Frame 557 sent at 1573044148824
+11-06 14:42:28.856 24431 24464 D Evaluation: Frame 558 sent at 1573044148856
+11-06 14:42:28.890 24431 24464 D Evaluation: Frame 559 sent at 1573044148890
+11-06 14:42:28.925 24431 24464 D Evaluation: Frame 560 sent at 1573044148925
+11-06 14:42:28.957 24431 24464 D Evaluation: Frame 561 sent at 1573044148957
+11-06 14:42:28.998 24431 24464 D Evaluation: Frame 562 sent at 1573044148998
+11-06 14:42:29.023 24431 24464 D Evaluation: Frame 563 sent at 1573044149023
+11-06 14:42:29.073 24431 24464 D Evaluation: Frame 564 sent at 1573044149072
+11-06 14:42:29.092 24431 24464 D Evaluation: Frame 565 sent at 1573044149092
+11-06 14:42:29.126 24431 24464 D Evaluation: Frame 566 sent at 1573044149125
+11-06 14:42:29.160 24431 24464 D Evaluation: Frame 567 sent at 1573044149160
+11-06 14:42:29.200 24431 24464 D Evaluation: Frame 568 sent at 1573044149200
+11-06 14:42:29.227 24431 24464 D Evaluation: Frame 569 sent at 1573044149227
+11-06 14:42:29.231 24431 24431 D Poster  : At 1573044149231 location is 65.05930037336967 (latitude), and 25.466423168665273 (longitude)
+11-06 14:42:29.233 24431 24431 D Poster  : Connected to mobile network 20
+11-06 14:42:29.263 24431 24464 D Evaluation: Frame 570 sent at 1573044149263
+11-06 14:42:29.295 24431 24464 D Evaluation: Frame 571 sent at 1573044149295
+11-06 14:42:29.374 24431 24464 D Evaluation: Frame 572 sent at 1573044149374
+11-06 14:42:29.402 24431 24464 D Evaluation: Frame 573 sent at 1573044149402
+11-06 14:42:29.427 24431 24464 D Evaluation: Frame 574 sent at 1573044149427
+11-06 14:42:29.461 24431 24464 D Evaluation: Frame 575 sent at 1573044149460
+11-06 14:42:29.496 24431 24464 D Evaluation: Frame 576 sent at 1573044149496
+11-06 14:42:29.529 24431 24464 D Evaluation: Frame 577 sent at 1573044149529
+11-06 14:42:29.564 24431 24464 D Evaluation: Frame 578 sent at 1573044149564
+11-06 14:42:29.636 24431 24464 D Evaluation: Frame 579 sent at 1573044149636
+11-06 14:42:29.665 24431 24464 D Evaluation: Frame 580 sent at 1573044149665
+11-06 14:42:29.705 24431 24464 D Evaluation: Frame 581 sent at 1573044149705
+11-06 14:42:29.739 24431 24464 D Evaluation: Frame 582 sent at 1573044149739
+11-06 14:42:29.763 24431 24464 D Evaluation: Frame 583 sent at 1573044149763
+11-06 14:42:29.794 24431 24464 D Evaluation: Frame 584 sent at 1573044149794
+11-06 14:42:29.831 24431 24464 D Evaluation: Frame 585 sent at 1573044149831
+11-06 14:42:29.865 24431 24464 D Evaluation: Frame 586 sent at 1573044149865
+11-06 14:42:29.908 24431 24464 D Evaluation: Frame 587 sent at 1573044149908
+11-06 14:42:29.937 24431 24464 D Evaluation: Frame 588 sent at 1573044149937
+11-06 14:42:29.966 24431 24464 D Evaluation: Frame 589 sent at 1573044149966
+11-06 14:42:30.006 24431 24464 D Evaluation: Frame 590 sent at 1573044150006
+11-06 14:42:30.039 24431 24464 D Evaluation: Frame 591 sent at 1573044150039
+11-06 14:42:30.068 24431 24464 D Evaluation: Frame 592 sent at 1573044150068
+11-06 14:42:30.110 24431 24464 D Evaluation: Frame 593 sent at 1573044150110
+11-06 14:42:30.140 24431 24464 D Evaluation: Frame 594 sent at 1573044150140
+11-06 14:42:30.171 24431 24464 D Evaluation: Frame 595 sent at 1573044150171
+11-06 14:42:30.201 24431 24431 D Poster  : At 1573044150201 location is 65.05930037336967 (latitude), and 25.466423168665273 (longitude)
+11-06 14:42:30.202 24431 24464 D Evaluation: Frame 596 sent at 1573044150202
+11-06 14:42:30.202 24431 24431 D Poster  : Connected to mobile network 20
+11-06 14:42:30.242 24431 24464 D Evaluation: Frame 597 sent at 1573044150242
+11-06 14:42:30.267 24431 24464 D Evaluation: Frame 598 sent at 1573044150267
+11-06 14:42:30.307 24431 24464 D Evaluation: Frame 599 sent at 1573044150307
+11-06 14:42:30.344 24431 24464 D Evaluation: Frame 600 sent at 1573044150344
+11-06 14:42:30.370 24431 24464 D Evaluation: Frame 601 sent at 1573044150370
+11-06 14:42:30.408 24431 24464 D Evaluation: Frame 602 sent at 1573044150408
+11-06 14:42:30.442 24431 24464 D Evaluation: Frame 603 sent at 1573044150442
+11-06 14:42:30.475 24431 24464 D Evaluation: Frame 604 sent at 1573044150475
+11-06 14:42:30.501 24431 24464 D Evaluation: Frame 605 sent at 1573044150501
+11-06 14:42:30.542 24431 24464 D Evaluation: Frame 606 sent at 1573044150542
+11-06 14:42:30.568 24431 24442 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 14:42:30.569 24431 24464 D Evaluation: Frame 607 sent at 1573044150569
+11-06 14:42:30.610 24431 24464 D Evaluation: Frame 608 sent at 1573044150610
+11-06 14:42:30.636 24431 24464 D Evaluation: Frame 609 sent at 1573044150636
+11-06 14:42:30.678 24431 24464 D Evaluation: Frame 610 sent at 1573044150678
+11-06 14:42:30.719 24431 24464 D Evaluation: Frame 611 sent at 1573044150719
+11-06 14:42:30.744 24431 24464 D Evaluation: Frame 612 sent at 1573044150744
+11-06 14:42:30.770 24431 24464 D Evaluation: Frame 613 sent at 1573044150770
+11-06 14:42:30.811 24431 24464 D Evaluation: Frame 614 sent at 1573044150811
+11-06 14:42:30.840 24431 24464 D Evaluation: Frame 615 sent at 1573044150840
+11-06 14:42:30.879 24431 24464 D Evaluation: Frame 616 sent at 1573044150879
+11-06 14:42:30.904 24431 24464 D Evaluation: Frame 617 sent at 1573044150904
+11-06 14:42:30.947 24431 24464 D Evaluation: Frame 618 sent at 1573044150947
+11-06 14:42:30.972 24431 24464 D Evaluation: Frame 619 sent at 1573044150972
+11-06 14:42:31.014 24431 24464 D Evaluation: Frame 620 sent at 1573044151014
+11-06 14:42:31.039 24431 24464 D Evaluation: Frame 621 sent at 1573044151039
+11-06 14:42:31.061 24431 24431 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:107.029785, limit is:60The moving distance of Y is:26.344513, limit is:60
+11-06 14:42:31.082 24431 24464 D Evaluation: Frame 622 sent at 1573044151082
+11-06 14:42:31.107 24431 24464 D Evaluation: Frame 623 sent at 1573044151107
+11-06 14:42:31.145 24431 24464 D Evaluation: Frame 624 sent at 1573044151145
+11-06 14:42:31.172 24431 24464 D Evaluation: Frame 625 sent at 1573044151172
+11-06 14:42:31.212 24431 24431 D Poster  : At 1573044151212 location is 65.05930037336967 (latitude), and 25.466423168665273 (longitude)
+11-06 14:42:31.213 24431 24431 D Poster  : Connected to mobile network 20
+11-06 14:42:31.218 24431 24464 D Evaluation: Frame 626 sent at 1573044151218
+11-06 14:42:31.242 24431 24464 D Evaluation: Frame 627 sent at 1573044151242
+11-06 14:42:31.281 24431 24464 D Evaluation: Frame 628 sent at 1573044151281
+11-06 14:42:31.307 24431 24464 D Evaluation: Frame 629 sent at 1573044151307
+11-06 14:42:31.349 24431 24464 D Evaluation: Frame 630 sent at 1573044151349
+11-06 14:42:31.376 24431 24464 D Evaluation: Frame 631 sent at 1573044151376
+11-06 14:42:31.416 24431 24464 D Evaluation: Frame 632 sent at 1573044151416
+11-06 14:42:31.444 24431 24464 D Evaluation: Frame 633 sent at 1573044151444
+11-06 14:42:31.525 24431 24464 D Evaluation: Frame 634 sent at 1573044151525
+11-06 14:42:31.589 24431 24464 D Evaluation: Frame 635 sent at 1573044151589
+11-06 14:42:31.612 24431 24431 I Poster  :  onPause() called.
+11-06 14:42:31.613 24431 24464 D Evaluation: Frame 636 sent at 1573044151613
+11-06 14:42:31.728 24431 24431 I Camera  : close camera: 0, package name: symlab.cloudridar.arhud
+11-06 14:42:31.728 24431 24431 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 24431 ,uidOf3RdApk: 10149 ,permType: 0 ,permCfg: 0
+11-06 14:42:31.730 24431 24431 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = false
+11-06 14:42:31.835 24431 24431 D ZrHung.AppEyeUiProbe: stop checker.
+11-06 14:42:31.887 24431 24431 I Poster  :  surfaceDestroyed() called.
+11-06 14:42:31.890 24431 24431 D ViewRootImpl[MainActivity]: surface should not be released
+11-06 14:42:31.890 24431 24431 I Poster  :  onStop() called.
+11-06 14:42:31.901 24431 24481 W libEGL  : EGLNativeWindowType 0xe5af0008 disconnect failed
+11-06 14:42:32.215 24431 24455 D ZrHung.AppEyeUiProbe: Current Activity:false
+11-06 14:42:32.215 24431 24455 D ZrHung.AppEyeUiProbe: not watching, wait.
+11-06 14:42:32.225 24431 24431 D Poster  : At 1573044152224 location is 65.05930037336967 (latitude), and 25.466423168665273 (longitude)
+11-06 14:42:32.230 24431 24431 D Poster  : Connected to mobile network 20
+11-06 14:42:32.235 24431 24431 D Latitude: status

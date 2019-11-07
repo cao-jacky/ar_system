@@ -1,0 +1,423 @@
+--------- beginning of system
+11-05 10:55:04.217 10954 10954 D ActivityThread: Attach thread to application
+--------- beginning of main
+11-05 10:55:04.267 10954 10974 I HwApiCacheMangerEx: apicache path=/storage/emulated/0 state=mounted key=symlab.cloudridar.arhud#10149#256
+11-05 10:55:04.268 10954 10974 I HwApiCacheMangerEx: apicache path=/storage/emulated/0 state=mounted key=symlab.cloudridar.arhud#10149#0
+11-05 10:55:04.332 10954 10954 I loudridar.arhu: QarthPatchMonintor::Init
+11-05 10:55:04.332 10954 10954 I loudridar.arhu: 
+11-05 10:55:04.332 10954 10954 I loudridar.arhu: QarthPatchMonintor::StartWatch
+11-05 10:55:04.332 10954 10954 I loudridar.arhu: 
+11-05 10:55:04.332 10954 10954 I loudridar.arhu: QarthPatchMonintor::WatchPackage: /data/hotpatch/fwkhotpatch/
+11-05 10:55:04.332 10954 10954 I loudridar.arhu: 
+11-05 10:55:04.332 10954 10954 I loudridar.arhu: QarthPatchMonintor::CheckAndWatchPatch: /data/hotpatch/fwkhotpatch/symlab.cloudridar.arhud
+11-05 10:55:04.332 10954 10954 I loudridar.arhu: 
+11-05 10:55:04.332 10954 10954 I loudridar.arhu: QarthPatchMonintor::CheckAndWatchPatch: /data/hotpatch/fwkhotpatch/all
+11-05 10:55:04.332 10954 10954 I loudridar.arhu: 
+11-05 10:55:04.332 10954 10954 I loudridar.arhu: QarthPatchMonintor::Run
+11-05 10:55:04.332 10954 10954 I loudridar.arhu: 
+11-05 10:55:04.333 10954 10990 I loudridar.arhu: QarthPatchMonintor::Reading
+11-05 10:55:04.333 10954 10990 I loudridar.arhu: 
+11-05 10:55:04.333 10954 10990 I loudridar.arhu: QarthPatchMonintor::CheckNotifyEvent
+11-05 10:55:04.333 10954 10990 I loudridar.arhu: 
+11-05 10:55:04.333 10954 10990 I loudridar.arhu: QarthPatchMonintor::CheckNotifyEvent before read
+11-05 10:55:04.333 10954 10990 I loudridar.arhu: 
+11-05 10:55:04.336 10954 10954 I MultiDex: VM with version 2.1.0 has multidex support
+11-05 10:55:04.336 10954 10954 I MultiDex: Installing application
+11-05 10:55:04.336 10954 10954 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+11-05 10:55:04.338 10954 10974 I AwareBitmapCacher: init processName:symlab.cloudridar.arhud pid=10954 uid=10149
+11-05 10:55:04.341 10954 10992 E AwareLog: AtomicFileUtils: readFileLines file not exist: android.util.AtomicFile@401944f
+11-05 10:55:04.341 10954 10954 I FirebaseInitProvider: FirebaseApp initialization unsuccessful
+11-05 10:55:04.341 10954 10992 E AwareLog: AtomicFileUtils: readFileLines file not exist: android.util.AtomicFile@3b770e5
+11-05 10:55:04.348 10954 10954 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-05 10:55:04.348 10954 10998 D ZrHung.AppEyeUiProbe: Runnable thread started.
+11-05 10:55:04.349 10954 10998 D IMonitor: Load library imonitor_jni
+11-05 10:55:04.352 10954 10998 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0102]
+11-05 10:55:04.352 10954 10998 W ZrHung.AppEyeUiProbe: Failed to get config from zrhung
+11-05 10:55:04.355 10995 10995 W logcat  : type=1400 audit(0.0:4453): avc: granted { create } for name="logcat_1572944104342.txt" scontext=u:r:untrusted_app:s0:c149,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0:c149,c256,c512,c768 tclass=file
+11-05 10:55:04.365 10954 10954 I MultiDex: Installing application
+11-05 10:55:04.365 10954 10954 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+11-05 10:55:04.369 10954 10954 V ActivityThread: callActivityOnCreate
+11-05 10:55:04.369 10954 10954 I Poster  :  onCreate() called.
+11-05 10:55:04.372 10954 10954 I HwApsImpl: APS: new HwApsImpl created
+11-05 10:55:04.378 10954 10954 V HwWidgetFactory: : successes to get AllImpl object and return....
+11-05 10:55:04.385 10954 10954 D OpenGLRenderer: Skia GL Pipeline
+11-05 10:55:04.410 10954 10954 D Poster  : Server bound to IP 193.166.28.132 and port 52727
+11-05 10:55:04.415 10954 11007 D Evaluation: metadata 0 sent 
+11-05 10:55:04.415 10954 10954 D ActivityThread: add activity client record, r= ActivityRecord{29e1f5e token=android.os.BinderProxy@1f33661 {symlab.cloudridar.arhud/symlab.ARHUD.MainActivity}} token= android.os.BinderProxy@1f33661
+11-05 10:55:04.417 10954 10954 I Poster  :  onStart() called.
+11-05 10:55:04.418 10954 10954 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-05 10:55:04.419 10954 10954 I Poster  :  onResume() called.
+11-05 10:55:04.423 10954 10954 I PermissionManager: camera remind result:true
+11-05 10:55:04.423 10954 10954 I Camera  : open camera: 0, package name: symlab.cloudridar.arhud
+11-05 10:55:04.424 10954 10954 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 10954 ,uidOf3RdApk: 10149 ,permType: 0 ,permCfg: 1
+11-05 10:55:04.424 10954 10954 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = true
+11-05 10:55:04.433 10954 10954 D ActivityThread: isOptEnabled=false isWechatScanOpt=false
+11-05 10:55:04.435 10954 10954 I HwSecImmHelper: mSecurityInputMethodService is null
+11-05 10:55:04.442 10954 10954 D OpenGLRenderer:   HWUI Binary is  enabled
+11-05 10:55:04.460 10954 11025 D HiTouch_PressGestureDetector: onAttached, package=symlab.cloudridar.arhud, windowType=1, mHiTouchRestricted=false
+11-05 10:55:04.471 10954 11024 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-05 10:55:04.471 10954 11024 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-05 10:55:04.471 10954 11024 I iGraphics: [0020080c] pn: symlab.cloudridar.arhud, p: 10954
+11-05 10:55:04.471 10954 11024 I OpenGLRenderer: Initialized EGL, version 1.4, mEglDisplay 0x1
+11-05 10:55:04.472 10954 11024 D OpenGLRenderer: Swap behavior 2
+11-05 10:55:04.481 10954 11024 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+11-05 10:55:04.490 10954 10954 I Poster  :  surfaceCreated() called.
+11-05 10:55:04.490 10954 10954 I Poster  : initPreview() called
+11-05 10:55:04.495 10954 10954 I PermissionManager: camera remind result:true
+11-05 10:55:04.501 10954 10954 I Poster  :  surfaceChanged() called.
+11-05 10:55:04.521 10954 10954 W InputMethodManager: startInputReason = 1
+11-05 10:55:04.544 10954 10954 W InputMethodManager: startInputReason = 5
+11-05 10:55:04.792 10954 11007 D Evaluation: metadata 1 sent 
+11-05 10:55:04.822 10954 11007 D Evaluation: metadata 2 sent 
+11-05 10:55:04.859 10954 11007 D Evaluation: metadata 3 sent 
+11-05 10:55:04.892 10954 11007 D Evaluation: metadata 4 sent 
+11-05 10:55:04.925 10954 11007 D Evaluation: metadata 5 sent 
+11-05 10:55:04.977 10954 11007 D Evaluation: Frame 6 sent at 1572944104977
+11-05 10:55:05.004 10954 11007 D Evaluation: Frame 7 sent at 1572944105004
+11-05 10:55:05.035 10954 11007 D Evaluation: Frame 8 sent at 1572944105035
+11-05 10:55:05.068 10954 11007 D Evaluation: Frame 9 sent at 1572944105068
+11-05 10:55:05.107 10954 10954 W symlab.cloudridar.arhud: type=1400 audit(0.0:4457): avc: granted { create } for comm=6E6574776F726B20746872656164 name="resultDelay.txt" scontext=u:r:untrusted_app:s0:c149,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0:c149,c256,c512,c768 tclass=file
+11-05 10:55:05.108 10954 11007 D Evaluation: Frame 10 sent at 1572944105108
+11-05 10:55:05.110 10954 11007 D Evaluation: 0 res for frame 6 received at 1572944105110
+11-05 10:55:05.136 10954 11007 D Evaluation: Frame 11 sent at 1572944105136
+11-05 10:55:05.137 10954 11007 D Evaluation: 0 res for frame 7 received at 1572944105137
+11-05 10:55:05.172 10954 11007 D Evaluation: Frame 12 sent at 1572944105172
+11-05 10:55:05.173 10954 11007 D Evaluation: 0 res for frame 8 received at 1572944105173
+11-05 10:55:05.206 10954 11007 D Evaluation: Frame 13 sent at 1572944105206
+11-05 10:55:05.207 10954 11007 D Evaluation: 0 res for frame 9 received at 1572944105207
+11-05 10:55:05.236 10954 11007 D Evaluation: Frame 14 sent at 1572944105236
+11-05 10:55:05.237 10954 11007 D Evaluation: 0 res for frame 10 received at 1572944105237
+11-05 10:55:05.274 10954 11007 D Evaluation: Frame 15 sent at 1572944105274
+11-05 10:55:05.276 10954 11007 D Evaluation: 0 res for frame 11 received at 1572944105276
+11-05 10:55:05.303 10954 11007 D Evaluation: Frame 16 sent at 1572944105303
+11-05 10:55:05.304 10954 11007 D Evaluation: 0 res for frame 12 received at 1572944105304
+11-05 10:55:05.340 10954 11007 D Evaluation: Frame 17 sent at 1572944105340
+11-05 10:55:05.341 10954 11007 D Evaluation: 0 res for frame 13 received at 1572944105341
+11-05 10:55:05.373 10954 11007 D Evaluation: Frame 18 sent at 1572944105373
+11-05 10:55:05.374 10954 11007 D Evaluation: 0 res for frame 14 received at 1572944105374
+11-05 10:55:05.404 10954 11007 D Evaluation: Frame 19 sent at 1572944105404
+11-05 10:55:05.405 10954 11007 D Evaluation: 0 res for frame 15 received at 1572944105405
+11-05 10:55:05.438 10954 11007 D Evaluation: Frame 20 sent at 1572944105438
+11-05 10:55:05.439 10954 11007 D Evaluation: 0 res for frame 16 received at 1572944105439
+11-05 10:55:05.473 10954 11007 D Evaluation: Frame 21 sent at 1572944105473
+11-05 10:55:05.474 10954 11007 D Evaluation: 0 res for frame 17 received at 1572944105474
+11-05 10:55:05.509 10954 11007 D Evaluation: Frame 22 sent at 1572944105509
+11-05 10:55:05.509 10954 11007 D Evaluation: 0 res for frame 18 received at 1572944105509
+11-05 10:55:05.542 10954 11007 D Evaluation: Frame 23 sent at 1572944105542
+11-05 10:55:05.543 10954 11007 D Evaluation: 0 res for frame 19 received at 1572944105543
+11-05 10:55:05.576 10954 11007 D Evaluation: Frame 24 sent at 1572944105576
+11-05 10:55:05.577 10954 11007 D Evaluation: 0 res for frame 20 received at 1572944105577
+11-05 10:55:05.606 10954 11007 D Evaluation: Frame 25 sent at 1572944105606
+11-05 10:55:05.607 10954 11007 D Evaluation: 0 res for frame 21 received at 1572944105607
+11-05 10:55:05.641 10954 11007 D Evaluation: Frame 26 sent at 1572944105641
+11-05 10:55:05.642 10954 11007 D Evaluation: 0 res for frame 22 received at 1572944105642
+11-05 10:55:05.684 10954 11007 D Evaluation: Frame 27 sent at 1572944105684
+11-05 10:55:05.724 10954 10965 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-05 10:55:05.725 10954 11007 D Evaluation: Frame 28 sent at 1572944105725
+11-05 10:55:05.726 10954 11007 D Evaluation: 0 res for frame 23 received at 1572944105726
+11-05 10:55:05.740 10954 10963 W System  : A resource failed to call close. 
+11-05 10:55:05.740 10954 10963 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 4 lines
+11-05 10:55:05.741 10954 10963 W System  : A resource failed to call close. 
+11-05 10:55:05.741 10954 10963 W System  : A resource failed to call close. 
+11-05 10:55:05.742 10954 10963 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 26 lines
+11-05 10:55:05.742 10954 10963 W System  : A resource failed to call close. 
+11-05 10:55:05.759 10954 11007 D Evaluation: Frame 29 sent at 1572944105759
+11-05 10:55:05.760 10954 11007 D Evaluation: 0 res for frame 24 received at 1572944105760
+11-05 10:55:05.792 10954 11007 D Evaluation: Frame 30 sent at 1572944105792
+11-05 10:55:05.817 10954 11007 D Evaluation: Frame 31 sent at 1572944105817
+11-05 10:55:05.818 10954 11007 D Evaluation: 0 res for frame 25 received at 1572944105818
+11-05 10:55:05.850 10954 11007 D Evaluation: Frame 32 sent at 1572944105850
+11-05 10:55:05.888 10954 11007 D Evaluation: Frame 33 sent at 1572944105888
+11-05 10:55:05.890 10954 11007 D Evaluation: 0 res for frame 26 received at 1572944105890
+11-05 10:55:05.932 10954 11007 D Evaluation: Frame 34 sent at 1572944105931
+11-05 10:55:05.933 10954 11007 D Evaluation: 0 res for frame 27 received at 1572944105933
+11-05 10:55:05.966 10954 11007 D Evaluation: Frame 35 sent at 1572944105966
+11-05 10:55:06.029 10954 11007 D Evaluation: Frame 36 sent at 1572944106029
+11-05 10:55:06.031 10954 11007 D Evaluation: 0 res for frame 28 received at 1572944106030
+11-05 10:55:06.067 10954 11007 D Evaluation: Frame 37 sent at 1572944106067
+11-05 10:55:06.096 10954 11007 D Evaluation: Frame 38 sent at 1572944106096
+11-05 10:55:06.097 10954 11007 D Evaluation: 0 res for frame 29 received at 1572944106097
+11-05 10:55:06.139 10954 11007 D Evaluation: Frame 39 sent at 1572944106139
+11-05 10:55:06.160 10954 11007 D Evaluation: Frame 40 sent at 1572944106160
+11-05 10:55:06.161 10954 11007 D Evaluation: 0 res for frame 30 received at 1572944106161
+11-05 10:55:06.192 10954 11007 D Evaluation: Frame 41 sent at 1572944106192
+11-05 10:55:06.230 10954 11007 D Evaluation: Frame 42 sent at 1572944106230
+11-05 10:55:06.275 10954 11007 D Evaluation: Frame 44 sent at 1572944106275
+11-05 10:55:06.276 10954 11007 D Evaluation: 0 res for frame 31 received at 1572944106276
+11-05 10:55:06.296 10954 11007 D Evaluation: Frame 44 sent at 1572944106296
+11-05 10:55:06.331 10954 11007 D Evaluation: Frame 45 sent at 1572944106331
+11-05 10:55:06.366 10954 11007 D Evaluation: Frame 46 sent at 1572944106366
+11-05 10:55:06.367 10954 11007 D Evaluation: 0 res for frame 32 received at 1572944106367
+11-05 10:55:06.399 10954 11007 D Evaluation: Frame 47 sent at 1572944106399
+11-05 10:55:06.432 10954 11007 D Evaluation: Frame 48 sent at 1572944106432
+11-05 10:55:06.458 10954 11007 D Evaluation: Frame 49 sent at 1572944106458
+11-05 10:55:06.494 10954 11007 D Evaluation: Frame 50 sent at 1572944106494
+11-05 10:55:06.528 10954 11007 D Evaluation: Frame 51 sent at 1572944106528
+11-05 10:55:06.567 10954 11007 D Evaluation: Frame 52 sent at 1572944106567
+11-05 10:55:06.614 10954 11007 D Evaluation: Frame 53 sent at 1572944106614
+11-05 10:55:06.637 10954 11007 D Evaluation: Frame 54 sent at 1572944106637
+11-05 10:55:06.670 10954 11007 D Evaluation: Frame 55 sent at 1572944106670
+11-05 10:55:06.696 10954 11007 D Evaluation: Frame 56 sent at 1572944106696
+11-05 10:55:06.734 10954 10965 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-05 10:55:06.735 10954 11007 D Evaluation: Frame 57 sent at 1572944106735
+11-05 10:55:06.746 10954 10963 W System  : A resource failed to call close. 
+11-05 10:55:06.746 10954 10963 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 18 lines
+11-05 10:55:06.747 10954 10963 W System  : A resource failed to call close. 
+11-05 10:55:06.762 10954 11007 D Evaluation: Frame 58 sent at 1572944106762
+11-05 10:55:06.799 10954 11007 D Evaluation: Frame 59 sent at 1572944106799
+11-05 10:55:06.838 10954 11007 D Evaluation: Frame 60 sent at 1572944106838
+11-05 10:55:06.874 10954 11007 D Evaluation: Frame 61 sent at 1572944106874
+11-05 10:55:06.911 10954 11007 D Evaluation: Frame 62 sent at 1572944106911
+11-05 10:55:06.945 10954 11007 D Evaluation: Frame 63 sent at 1572944106945
+11-05 10:55:06.990 10954 11007 D Evaluation: Frame 64 sent at 1572944106990
+11-05 10:55:07.008 10954 11007 D Evaluation: Frame 65 sent at 1572944107008
+11-05 10:55:07.063 10954 11007 D Evaluation: Frame 66 sent at 1572944107063
+11-05 10:55:07.106 10954 11007 D Evaluation: Frame 67 sent at 1572944107106
+11-05 10:55:07.136 10954 11007 D Evaluation: Frame 68 sent at 1572944107136
+11-05 10:55:07.167 10954 11007 D Evaluation: Frame 69 sent at 1572944107167
+11-05 10:55:07.209 10954 11007 D Evaluation: Frame 70 sent at 1572944107209
+11-05 10:55:07.243 10954 11007 D Evaluation: Frame 71 sent at 1572944107243
+11-05 10:55:07.279 10954 11007 D Evaluation: Frame 72 sent at 1572944107279
+11-05 10:55:07.312 10954 11007 D Evaluation: Frame 73 sent at 1572944107312
+11-05 10:55:07.335 10954 11007 D Evaluation: Frame 74 sent at 1572944107335
+11-05 10:55:07.364 10954 11007 D Evaluation: Frame 75 sent at 1572944107364
+11-05 10:55:07.407 10954 11007 D Evaluation: Frame 76 sent at 1572944107407
+11-05 10:55:07.435 10954 11007 D Evaluation: Frame 77 sent at 1572944107435
+11-05 10:55:07.470 10954 11007 D Evaluation: Frame 78 sent at 1572944107470
+11-05 10:55:07.505 10954 11007 D Evaluation: Frame 79 sent at 1572944107505
+11-05 10:55:07.530 10954 11007 D Evaluation: Frame 80 sent at 1572944107530
+11-05 10:55:07.602 10954 11007 D Evaluation: Frame 81 sent at 1572944107602
+11-05 10:55:07.641 10954 11007 D Evaluation: Frame 82 sent at 1572944107641
+11-05 10:55:07.675 10954 11007 D Evaluation: Frame 83 sent at 1572944107675
+11-05 10:55:07.713 10954 11007 D Evaluation: Frame 84 sent at 1572944107713
+11-05 10:55:07.741 10954 11007 D Evaluation: Frame 85 sent at 1572944107741
+11-05 10:55:07.769 10954 11007 D Evaluation: Frame 86 sent at 1572944107769
+11-05 10:55:07.803 10954 11007 D Evaluation: Frame 87 sent at 1572944107803
+11-05 10:55:07.841 10954 11007 D Evaluation: Frame 88 sent at 1572944107841
+11-05 10:55:07.877 10954 11007 D Evaluation: Frame 89 sent at 1572944107877
+11-05 10:55:07.916 10954 11007 D Evaluation: Frame 90 sent at 1572944107916
+11-05 10:55:07.944 10954 11007 D Evaluation: Frame 91 sent at 1572944107944
+11-05 10:55:07.976 10954 11007 D Evaluation: Frame 92 sent at 1572944107976
+11-05 10:55:08.009 10954 11007 D Evaluation: Frame 93 sent at 1572944108009
+11-05 10:55:08.042 10954 11007 D Evaluation: Frame 94 sent at 1572944108042
+11-05 10:55:08.121 10954 11007 D Evaluation: Frame 95 sent at 1572944108121
+11-05 10:55:08.164 10954 11007 D Evaluation: Frame 97 sent at 1572944108164
+11-05 10:55:08.183 10954 11007 D Evaluation: Frame 97 sent at 1572944108183
+11-05 10:55:08.210 10954 11007 D Evaluation: Frame 98 sent at 1572944108210
+11-05 10:55:08.244 10954 10965 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-05 10:55:08.245 10954 11007 D Evaluation: Frame 99 sent at 1572944108245
+11-05 10:55:08.293 10954 11007 D Evaluation: Frame 100 sent at 1572944108293
+11-05 10:55:08.318 10954 11007 D Evaluation: Frame 101 sent at 1572944108318
+11-05 10:55:08.357 10954 11007 D Evaluation: Frame 102 sent at 1572944108357
+11-05 10:55:08.384 10954 11007 D Evaluation: Frame 103 sent at 1572944108384
+11-05 10:55:08.417 10954 11007 D Evaluation: Frame 104 sent at 1572944108417
+11-05 10:55:08.457 10954 11007 D Evaluation: Frame 105 sent at 1572944108457
+11-05 10:55:08.495 10954 11007 D Evaluation: Frame 106 sent at 1572944108495
+11-05 10:55:08.522 10954 11007 D Evaluation: Frame 107 sent at 1572944108522
+11-05 10:55:08.559 10954 11007 D Evaluation: Frame 108 sent at 1572944108559
+11-05 10:55:08.593 10954 11007 D Evaluation: Frame 109 sent at 1572944108593
+11-05 10:55:08.621 10954 11007 D Evaluation: Frame 110 sent at 1572944108621
+11-05 10:55:08.658 10954 11007 D Evaluation: Frame 111 sent at 1572944108658
+11-05 10:55:08.659 10954 11007 D Evaluation: 0 res for frame 95 received at 1572944108659
+11-05 10:55:08.691 10954 11007 D Evaluation: Frame 112 sent at 1572944108691
+11-05 10:55:08.721 10954 11007 D Evaluation: Frame 113 sent at 1572944108721
+11-05 10:55:08.753 10954 11007 D Evaluation: Frame 114 sent at 1572944108753
+11-05 10:55:08.786 10954 11007 D Evaluation: Frame 115 sent at 1572944108786
+11-05 10:55:08.837 10954 11007 D Evaluation: Frame 116 sent at 1572944108837
+11-05 10:55:08.865 10954 11007 D Evaluation: Frame 117 sent at 1572944108865
+11-05 10:55:08.895 10954 11007 D Evaluation: Frame 118 sent at 1572944108894
+11-05 10:55:08.918 10954 11007 D Evaluation: Frame 119 sent at 1572944108918
+11-05 10:55:08.961 10954 11007 D Evaluation: Frame 120 sent at 1572944108961
+11-05 10:55:08.986 10954 11007 D Evaluation: Frame 121 sent at 1572944108986
+11-05 10:55:09.030 10954 11007 D Evaluation: Frame 123 sent at 1572944109030
+11-05 10:55:09.047 10954 11007 D Evaluation: Frame 123 sent at 1572944109047
+11-05 10:55:09.082 10954 11007 D Evaluation: Frame 124 sent at 1572944109082
+11-05 10:55:09.126 10954 11007 D Evaluation: Frame 125 sent at 1572944109126
+11-05 10:55:09.152 10954 11007 D Evaluation: Frame 126 sent at 1572944109152
+11-05 10:55:09.195 10954 11007 D Evaluation: Frame 127 sent at 1572944109195
+11-05 10:55:09.216 10954 11007 D Evaluation: Frame 128 sent at 1572944109216
+11-05 10:55:09.248 10954 11007 D Evaluation: Frame 129 sent at 1572944109248
+11-05 10:55:09.292 10954 11007 D Evaluation: Frame 130 sent at 1572944109292
+11-05 10:55:09.322 10954 11007 D Evaluation: Frame 131 sent at 1572944109322
+11-05 10:55:09.328 10954 10985 I loudridar.arhu: Starting profile saver IsSaveProfileNow end.
+11-05 10:55:09.341 10954 10954 I AwareBitmapCacher: init lrucache size: 2097152 pid=10954
+11-05 10:55:09.362 10954 11007 D Evaluation: Frame 132 sent at 1572944109362
+11-05 10:55:09.397 10954 11007 D Evaluation: Frame 133 sent at 1572944109397
+11-05 10:55:09.433 10954 11007 D Evaluation: Frame 134 sent at 1572944109433
+11-05 10:55:09.461 10954 11007 D Evaluation: Frame 135 sent at 1572944109461
+11-05 10:55:09.491 10954 11007 D Evaluation: Frame 136 sent at 1572944109491
+11-05 10:55:09.526 10954 11007 D Evaluation: Frame 137 sent at 1572944109526
+11-05 10:55:09.552 10954 11007 D Evaluation: Frame 138 sent at 1572944109552
+11-05 10:55:09.592 10954 11007 D Evaluation: Frame 139 sent at 1572944109592
+11-05 10:55:09.627 10954 11007 D Evaluation: Frame 140 sent at 1572944109627
+11-05 10:55:09.659 10954 11007 D Evaluation: Frame 141 sent at 1572944109659
+11-05 10:55:09.700 10954 11007 D Evaluation: Frame 142 sent at 1572944109700
+11-05 10:55:09.729 10954 11007 D Evaluation: Frame 143 sent at 1572944109729
+11-05 10:55:09.759 10954 11007 D Evaluation: Frame 144 sent at 1572944109759
+11-05 10:55:09.795 10954 11007 D Evaluation: Frame 145 sent at 1572944109795
+11-05 10:55:09.839 10954 11007 D Evaluation: Frame 146 sent at 1572944109839
+11-05 10:55:09.877 10954 11007 D Evaluation: Frame 147 sent at 1572944109876
+11-05 10:55:09.908 10954 11007 D Evaluation: Frame 148 sent at 1572944109907
+11-05 10:55:09.930 10954 11007 D Evaluation: Frame 149 sent at 1572944109930
+11-05 10:55:09.967 10954 11007 D Evaluation: Frame 150 sent at 1572944109967
+11-05 10:55:09.990 10954 11007 D Evaluation: Frame 151 sent at 1572944109990
+11-05 10:55:10.041 10954 11007 D Evaluation: Frame 152 sent at 1572944110041
+11-05 10:55:10.067 10954 11007 D Evaluation: Frame 153 sent at 1572944110067
+11-05 10:55:10.099 10954 11007 D Evaluation: Frame 154 sent at 1572944110099
+11-05 10:55:10.136 10954 11007 D Evaluation: Frame 155 sent at 1572944110135
+11-05 10:55:10.171 10954 11007 D Evaluation: Frame 156 sent at 1572944110171
+11-05 10:55:10.196 10954 10965 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-05 10:55:10.196 10954 11007 D Evaluation: Frame 157 sent at 1572944110196
+11-05 10:55:10.219 10954 10963 W System  : A resource failed to call close. 
+11-05 10:55:10.219 10954 10963 W System  : A resource failed to call close. 
+11-05 10:55:10.249 10954 11007 D Evaluation: Frame 159 sent at 1572944110249
+11-05 10:55:10.272 10954 11007 D Evaluation: Frame 159 sent at 1572944110272
+11-05 10:55:10.298 10954 11007 D Evaluation: Frame 160 sent at 1572944110298
+11-05 10:55:10.336 10954 11007 D Evaluation: Frame 161 sent at 1572944110336
+11-05 10:55:10.375 10954 11007 D Evaluation: Frame 162 sent at 1572944110375
+11-05 10:55:10.399 10954 11007 D Evaluation: Frame 163 sent at 1572944110399
+11-05 10:55:10.437 10954 11007 D Evaluation: Frame 164 sent at 1572944110437
+11-05 10:55:10.475 10954 11007 D Evaluation: Frame 165 sent at 1572944110475
+11-05 10:55:10.507 10954 11007 D Evaluation: Frame 166 sent at 1572944110507
+11-05 10:55:10.533 10954 11007 D Evaluation: Frame 167 sent at 1572944110533
+11-05 10:55:10.571 10954 11007 D Evaluation: Frame 168 sent at 1572944110571
+11-05 10:55:10.605 10954 11007 D Evaluation: Frame 169 sent at 1572944110605
+11-05 10:55:10.636 10954 11007 D Evaluation: Frame 170 sent at 1572944110636
+11-05 10:55:10.672 10954 11007 D Evaluation: Frame 171 sent at 1572944110672
+11-05 10:55:10.712 10954 11007 D Evaluation: Frame 172 sent at 1572944110712
+11-05 10:55:10.744 10954 11007 D Evaluation: Frame 173 sent at 1572944110744
+11-05 10:55:10.781 10954 11007 D Evaluation: Frame 174 sent at 1572944110781
+11-05 10:55:10.805 10954 11007 D Evaluation: Frame 175 sent at 1572944110805
+11-05 10:55:10.848 10954 11007 D Evaluation: Frame 176 sent at 1572944110848
+11-05 10:55:10.878 10954 11007 D Evaluation: Frame 177 sent at 1572944110878
+11-05 10:55:10.902 10954 11007 D Evaluation: Frame 178 sent at 1572944110902
+11-05 10:55:10.938 10954 11007 D Evaluation: Frame 179 sent at 1572944110938
+11-05 10:55:10.972 10954 11007 D Evaluation: Frame 180 sent at 1572944110972
+11-05 10:55:11.009 10954 11007 D Evaluation: Frame 181 sent at 1572944111009
+11-05 10:55:11.042 10954 11007 D Evaluation: Frame 182 sent at 1572944111042
+11-05 10:55:11.069 10954 11007 D Evaluation: Frame 183 sent at 1572944111069
+11-05 10:55:11.107 10954 11007 D Evaluation: Frame 184 sent at 1572944111107
+11-05 10:55:11.178 10954 11007 D Evaluation: Frame 185 sent at 1572944111178
+11-05 10:55:11.217 10954 11007 D Evaluation: Frame 186 sent at 1572944111217
+11-05 10:55:11.250 10954 11007 D Evaluation: Frame 188 sent at 1572944111250
+11-05 10:55:11.272 10954 11007 D Evaluation: Frame 188 sent at 1572944111272
+11-05 10:55:11.306 10954 11007 D Evaluation: Frame 189 sent at 1572944111306
+11-05 10:55:11.335 10954 11007 D Evaluation: Frame 190 sent at 1572944111335
+11-05 10:55:11.380 10954 11007 D Evaluation: Frame 191 sent at 1572944111380
+11-05 10:55:11.413 10954 11007 D Evaluation: Frame 192 sent at 1572944111413
+11-05 10:55:11.438 10954 11007 D Evaluation: Frame 193 sent at 1572944111438
+11-05 10:55:11.474 10954 11007 D Evaluation: Frame 194 sent at 1572944111474
+11-05 10:55:11.516 10954 11007 D Evaluation: Frame 195 sent at 1572944111515
+11-05 10:55:11.554 10954 11007 D Evaluation: Frame 196 sent at 1572944111554
+11-05 10:55:11.579 10954 11007 D Evaluation: Frame 197 sent at 1572944111579
+11-05 10:55:11.610 10954 11007 D Evaluation: Frame 198 sent at 1572944111610
+11-05 10:55:11.646 10954 11007 D Evaluation: Frame 199 sent at 1572944111646
+11-05 10:55:11.683 10954 11007 D Evaluation: Frame 200 sent at 1572944111683
+11-05 10:55:11.728 10954 11007 D Evaluation: Frame 202 sent at 1572944111728
+11-05 10:55:11.747 10954 11007 D Evaluation: Frame 202 sent at 1572944111747
+11-05 10:55:11.778 10954 11007 D Evaluation: Frame 203 sent at 1572944111778
+11-05 10:55:11.815 10954 11007 D Evaluation: Frame 204 sent at 1572944111815
+11-05 10:55:11.848 10954 11007 D Evaluation: Frame 205 sent at 1572944111848
+11-05 10:55:11.876 10954 11007 D Evaluation: Frame 206 sent at 1572944111876
+11-05 10:55:11.910 10954 11007 D Evaluation: Frame 207 sent at 1572944111910
+11-05 10:55:11.945 10954 11007 D Evaluation: Frame 208 sent at 1572944111945
+11-05 10:55:11.977 10954 11007 D Evaluation: Frame 209 sent at 1572944111977
+11-05 10:55:12.015 10954 11007 D Evaluation: Frame 210 sent at 1572944112015
+11-05 10:55:12.040 10954 11007 D Evaluation: Frame 211 sent at 1572944112040
+11-05 10:55:12.078 10954 10965 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-05 10:55:12.078 10954 11007 D Evaluation: Frame 212 sent at 1572944112078
+11-05 10:55:12.114 10954 11007 D Evaluation: Frame 213 sent at 1572944112114
+11-05 10:55:12.147 10954 11007 D Evaluation: Frame 214 sent at 1572944112147
+11-05 10:55:12.176 10954 11007 D Evaluation: Frame 215 sent at 1572944112176
+11-05 10:55:12.215 10954 11007 D Evaluation: Frame 216 sent at 1572944112215
+11-05 10:55:12.250 10954 11007 D Evaluation: Frame 217 sent at 1572944112250
+11-05 10:55:12.285 10954 11007 D Evaluation: Frame 218 sent at 1572944112285
+11-05 10:55:12.316 10954 11007 D Evaluation: Frame 219 sent at 1572944112316
+11-05 10:55:12.353 10954 11007 D Evaluation: Frame 220 sent at 1572944112353
+11-05 10:55:12.388 10954 11007 D Evaluation: Frame 221 sent at 1572944112388
+11-05 10:55:12.433 10954 11007 D Evaluation: Frame 223 sent at 1572944112432
+11-05 10:55:12.450 10954 11007 D Evaluation: Frame 223 sent at 1572944112450
+11-05 10:55:12.477 10954 11007 D Evaluation: Frame 224 sent at 1572944112477
+11-05 10:55:12.519 10954 11007 D Evaluation: Frame 225 sent at 1572944112519
+11-05 10:55:12.553 10954 11007 D Evaluation: Frame 226 sent at 1572944112553
+11-05 10:55:12.590 10954 11007 D Evaluation: Frame 227 sent at 1572944112590
+11-05 10:55:12.616 10954 11007 D Evaluation: Frame 228 sent at 1572944112616
+11-05 10:55:12.652 10954 11007 D Evaluation: Frame 229 sent at 1572944112652
+11-05 10:55:12.684 10954 11007 D Evaluation: Frame 230 sent at 1572944112684
+11-05 10:55:12.717 10954 11007 D Evaluation: Frame 231 sent at 1572944112717
+11-05 10:55:12.751 10954 11007 D Evaluation: Frame 232 sent at 1572944112751
+11-05 10:55:12.788 10954 11007 D Evaluation: Frame 233 sent at 1572944112788
+11-05 10:55:12.815 10954 11007 D Evaluation: Frame 234 sent at 1572944112815
+11-05 10:55:12.860 10954 11007 D Evaluation: Frame 235 sent at 1572944112860
+11-05 10:55:12.891 10954 11007 D Evaluation: Frame 236 sent at 1572944112891
+11-05 10:55:12.924 10954 11007 D Evaluation: Frame 237 sent at 1572944112924
+11-05 10:55:12.950 10954 11007 D Evaluation: Frame 238 sent at 1572944112950
+11-05 10:55:12.985 10954 11007 D Evaluation: Frame 239 sent at 1572944112985
+11-05 10:55:13.017 10954 11007 D Evaluation: Frame 240 sent at 1572944113017
+11-05 10:55:13.061 10954 11007 D Evaluation: Frame 241 sent at 1572944113061
+11-05 10:55:13.089 10954 11007 D Evaluation: Frame 242 sent at 1572944113088
+11-05 10:55:13.126 10954 11007 D Evaluation: Frame 243 sent at 1572944113126
+11-05 10:55:13.154 10954 11007 D Evaluation: Frame 244 sent at 1572944113154
+11-05 10:55:13.241 10954 11007 D Evaluation: Frame 246 sent at 1572944113241
+11-05 10:55:13.265 10954 11007 D Evaluation: Frame 246 sent at 1572944113265
+11-05 10:55:13.292 10954 11007 D Evaluation: Frame 247 sent at 1572944113292
+11-05 10:55:13.322 10954 11007 D Evaluation: Frame 248 sent at 1572944113322
+11-05 10:55:13.353 10954 11007 D Evaluation: Frame 249 sent at 1572944113353
+11-05 10:55:13.400 10954 11007 D Evaluation: Frame 250 sent at 1572944113400
+11-05 10:55:13.432 10954 11007 D Evaluation: Frame 251 sent at 1572944113432
+11-05 10:55:13.459 10954 11007 D Evaluation: Frame 252 sent at 1572944113459
+11-05 10:55:13.499 10954 11007 D Evaluation: Frame 253 sent at 1572944113499
+11-05 10:55:13.536 10954 11007 D Evaluation: Frame 254 sent at 1572944113536
+11-05 10:55:13.565 10954 11007 D Evaluation: Frame 255 sent at 1572944113565
+11-05 10:55:13.592 10954 11007 D Evaluation: Frame 256 sent at 1572944113592
+11-05 10:55:13.625 10954 11007 D Evaluation: Frame 257 sent at 1572944113625
+11-05 10:55:13.659 10954 11007 D Evaluation: Frame 258 sent at 1572944113659
+11-05 10:55:13.695 10954 11007 D Evaluation: Frame 259 sent at 1572944113695
+11-05 10:55:13.727 10954 11007 D Evaluation: Frame 260 sent at 1572944113727
+11-05 10:55:13.772 10954 11007 D Evaluation: Frame 262 sent at 1572944113772
+11-05 10:55:13.773 10954 11007 D Evaluation: 0 res for frame 246 received at 1572944113773
+11-05 10:55:13.795 10954 11007 D Evaluation: Frame 262 sent at 1572944113795
+11-05 10:55:13.824 10954 11007 D Evaluation: Frame 263 sent at 1572944113824
+11-05 10:55:13.865 10954 11007 D Evaluation: Frame 264 sent at 1572944113865
+11-05 10:55:13.896 10954 11007 D Evaluation: Frame 265 sent at 1572944113896
+11-05 10:55:13.929 10954 11007 D Evaluation: Frame 266 sent at 1572944113929
+11-05 10:55:13.967 10954 11007 D Evaluation: Frame 267 sent at 1572944113967
+11-05 10:55:13.997 10954 11007 D Evaluation: Frame 268 sent at 1572944113997
+11-05 10:55:13.998 10954 10954 D stylus  : init stylus touchlistener.
+11-05 10:55:14.009 10954 10954 W Settings: Setting device_provisioned has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+11-05 10:55:14.010 10954 10954 V HiTouch_HiTouchSensor: User setup is finished.
+11-05 10:55:14.027 10954 10954 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:125.57031, limit is:60The moving distance of Y is:28.707764, limit is:60
+11-05 10:55:14.046 10954 11007 D Evaluation: Frame 270 sent at 1572944114046
+11-05 10:55:14.065 10954 11007 D Evaluation: Frame 270 sent at 1572944114065
+11-05 10:55:14.088 10954 11007 D Evaluation: Frame 271 sent at 1572944114088
+11-05 10:55:14.113 10954 11007 D Evaluation: Frame 272 sent at 1572944114113
+11-05 10:55:14.148 10954 11007 D Evaluation: Frame 273 sent at 1572944114148
+11-05 10:55:14.184 10954 11007 D Evaluation: Frame 274 sent at 1572944114184
+11-05 10:55:14.218 10954 10965 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-05 10:55:14.219 10954 11007 D Evaluation: Frame 275 sent at 1572944114219
+11-05 10:55:14.236 10954 10963 W System  : A resource failed to call close. 
+11-05 10:55:14.236 10954 10963 W System  : A resource failed to call close. 
+11-05 10:55:14.254 10954 11007 D Evaluation: Frame 276 sent at 1572944114254
+11-05 10:55:14.284 10954 11007 D Evaluation: Frame 277 sent at 1572944114284
+11-05 10:55:14.316 10954 11007 D Evaluation: Frame 278 sent at 1572944114316
+11-05 10:55:14.355 10954 11007 D Evaluation: Frame 279 sent at 1572944114355
+11-05 10:55:14.387 10954 11007 D Evaluation: Frame 280 sent at 1572944114387
+11-05 10:55:14.414 10954 11007 D Evaluation: Frame 281 sent at 1572944114414
+11-05 10:55:14.452 10954 11007 D Evaluation: Frame 282 sent at 1572944114452
+11-05 10:55:14.485 10954 11007 D Evaluation: Frame 283 sent at 1572944114485
+11-05 10:55:14.524 10954 11007 D Evaluation: Frame 284 sent at 1572944114524
+11-05 10:55:14.549 10954 11007 D Evaluation: Frame 285 sent at 1572944114549
+11-05 10:55:14.584 10954 11007 D Evaluation: Frame 286 sent at 1572944114584
+11-05 10:55:14.587 10954 10954 I Poster  :  onPause() called.
+11-05 10:55:14.677 10954 10954 I Camera  : close camera: 0, package name: symlab.cloudridar.arhud
+11-05 10:55:14.677 10954 10954 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 10954 ,uidOf3RdApk: 10149 ,permType: 0 ,permCfg: 0
+11-05 10:55:14.680 10954 10954 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = false
+11-05 10:55:14.782 10954 10954 D ZrHung.AppEyeUiProbe: stop checker.
+11-05 10:55:14.826 10954 10954 I Poster  :  surfaceDestroyed() called.
+11-05 10:55:14.827 10954 10954 D ViewRootImpl[MainActivity]: surface should not be released
+11-05 10:55:14.829 10954 10954 I Poster  :  onStop() called.
+11-05 10:55:14.848 10954 11024 W libEGL  : EGLNativeWindowType 0xed170008 disconnect failed
+11-05 10:55:15.358 10954 10998 D ZrHung.AppEyeUiProbe: Current Activity:false
+11-05 10:55:15.358 10954 10998 D ZrHung.AppEyeUiProbe: not watching, wait.
+11-05 10:55:16.133 10954 10954 I Poster  :  onDestroy() called.
+11-05 10:55:16.134 10954 10954 D ActivityThread: Remove activity client record, r= ActivityRecord{29e1f5e token=android.os.BinderProxy@1f33661 {symlab.cloudridar.arhud/symlab.ARHUD.MainActivity}} token= android.os.BinderProxy@1f33661

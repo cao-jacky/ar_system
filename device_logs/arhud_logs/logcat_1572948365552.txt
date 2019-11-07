@@ -1,0 +1,473 @@
+--------- beginning of main
+11-05 12:06:05.563 10067 10067 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-05 12:06:05.563 10067 10093 D ZrHung.AppEyeUiProbe: Runnable thread started.
+11-05 12:06:05.564 10067 10093 D IMonitor: Load library imonitor_jni
+11-05 12:06:05.567 10090 10090 W logcat  : type=1400 audit(0.0:1811): avc: granted { create } for name="logcat_1572948365552.txt" scontext=u:r:untrusted_app:s0:c149,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0:c149,c256,c512,c768 tclass=file
+11-05 12:06:05.567 10067 10093 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0102]
+11-05 12:06:05.567 10067 10093 W ZrHung.AppEyeUiProbe: Failed to get config from zrhung
+11-05 12:06:05.568 10067 10067 I MultiDex: Installing application
+11-05 12:06:05.568 10067 10067 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+--------- beginning of system
+11-05 12:06:05.572 10067 10067 V ActivityThread: callActivityOnCreate
+11-05 12:06:05.572 10067 10067 I Poster  :  onCreate() called.
+11-05 12:06:05.576 10067 10067 I HwApsImpl: APS: new HwApsImpl created
+11-05 12:06:05.581 10067 10067 V HwWidgetFactory: : successes to get AllImpl object and return....
+11-05 12:06:05.588 10067 10067 D OpenGLRenderer: Skia GL Pipeline
+11-05 12:06:05.611 10067 10067 D Poster  : Server bound to IP 193.166.28.132 and port 52727
+11-05 12:06:05.613 10067 10101 D Evaluation: metadata 0 sent 
+11-05 12:06:05.613 10067 10067 D ActivityThread: add activity client record, r= ActivityRecord{667bf54 token=android.os.BinderProxy@d1de8af {symlab.cloudridar.arhud/symlab.ARHUD.MainActivity}} token= android.os.BinderProxy@d1de8af
+11-05 12:06:05.615 10067 10067 I Poster  :  onStart() called.
+11-05 12:06:05.616 10067 10067 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-05 12:06:05.617 10067 10067 I Poster  :  onResume() called.
+11-05 12:06:05.621 10067 10067 I PermissionManager: camera remind result:true
+11-05 12:06:05.622 10067 10067 I Camera  : open camera: 0, package name: symlab.cloudridar.arhud
+11-05 12:06:05.622 10067 10067 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 10067 ,uidOf3RdApk: 10149 ,permType: 0 ,permCfg: 1
+11-05 12:06:05.622 10067 10067 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = true
+11-05 12:06:05.630 10067 10067 D ActivityThread: isOptEnabled=false isWechatScanOpt=false
+11-05 12:06:05.631 10067 10067 I HwSecImmHelper: mSecurityInputMethodService is null
+11-05 12:06:05.645 10067 10067 D OpenGLRenderer:   HWUI Binary is  enabled
+11-05 12:06:05.658 10067 10120 D HiTouch_PressGestureDetector: onAttached, package=symlab.cloudridar.arhud, windowType=1, mHiTouchRestricted=false
+11-05 12:06:05.667 10067 10119 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-05 12:06:05.667 10067 10119 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-05 12:06:05.667 10067 10119 I iGraphics: [0020080c] pn: symlab.cloudridar.arhud, p: 10067
+11-05 12:06:05.667 10067 10119 I OpenGLRenderer: Initialized EGL, version 1.4, mEglDisplay 0x1
+11-05 12:06:05.667 10067 10119 D OpenGLRenderer: Swap behavior 2
+11-05 12:06:05.676 10067 10119 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+11-05 12:06:05.683 10067 10067 I Poster  :  surfaceCreated() called.
+11-05 12:06:05.683 10067 10067 I Poster  : initPreview() called
+11-05 12:06:05.688 10067 10067 I PermissionManager: camera remind result:true
+11-05 12:06:05.693 10067 10067 I Poster  :  surfaceChanged() called.
+11-05 12:06:05.707 10067 10067 W InputMethodManager: startInputReason = 1
+11-05 12:06:05.721 10067 10067 W InputMethodManager: startInputReason = 5
+11-05 12:06:05.980 10067 10101 D Evaluation: metadata 1 sent 
+11-05 12:06:06.007 10067 10101 D Evaluation: metadata 2 sent 
+11-05 12:06:06.043 10067 10101 D Evaluation: metadata 3 sent 
+11-05 12:06:06.077 10067 10101 D Evaluation: metadata 4 sent 
+11-05 12:06:06.112 10067 10101 D Evaluation: metadata 5 sent 
+11-05 12:06:06.157 10067 10101 D Evaluation: Frame 6 sent at 1572948366157
+11-05 12:06:06.187 10067 10101 D Evaluation: Frame 7 sent at 1572948366187
+11-05 12:06:06.221 10067 10101 D Evaluation: Frame 8 sent at 1572948366221
+11-05 12:06:06.254 10067 10101 D Evaluation: Frame 9 sent at 1572948366254
+11-05 12:06:06.294 10067 10101 D Evaluation: Frame 10 sent at 1572948366294
+11-05 12:06:06.295 10067 10101 D Evaluation: 0 res for frame 6 received at 1572948366295
+11-05 12:06:06.325 10067 10101 D Evaluation: Frame 11 sent at 1572948366324
+11-05 12:06:06.325 10067 10101 D Evaluation: 0 res for frame 7 received at 1572948366325
+11-05 12:06:06.357 10067 10101 D Evaluation: Frame 12 sent at 1572948366357
+11-05 12:06:06.359 10067 10101 D Evaluation: 0 res for frame 8 received at 1572948366359
+11-05 12:06:06.391 10067 10101 D Evaluation: Frame 13 sent at 1572948366391
+11-05 12:06:06.422 10067 10101 D Evaluation: Frame 14 sent at 1572948366422
+11-05 12:06:06.458 10067 10101 D Evaluation: Frame 15 sent at 1572948366458
+11-05 12:06:06.459 10067 10101 D Evaluation: 0 res for frame 9 received at 1572948366459
+11-05 12:06:06.466 10067 10067 D Poster  : At 1572948366466 location is 65.0586838646803 (latitude), and 25.466107419057945 (longitude)
+11-05 12:06:06.493 10067 10101 D Evaluation: Frame 16 sent at 1572948366493
+11-05 12:06:06.493 10067 10101 D Evaluation: 0 res for frame 10 received at 1572948366493
+11-05 12:06:06.526 10067 10101 D Evaluation: Frame 17 sent at 1572948366526
+11-05 12:06:06.527 10067 10101 D Evaluation: 0 res for frame 11 received at 1572948366527
+11-05 12:06:06.559 10067 10101 D Evaluation: Frame 18 sent at 1572948366559
+11-05 12:06:06.560 10067 10101 D Evaluation: 0 res for frame 12 received at 1572948366560
+11-05 12:06:06.590 10067 10101 D Evaluation: Frame 19 sent at 1572948366590
+11-05 12:06:06.627 10067 10101 D Evaluation: Frame 20 sent at 1572948366627
+11-05 12:06:06.628 10067 10101 D Evaluation: 0 res for frame 13 received at 1572948366628
+11-05 12:06:06.658 10067 10101 D Evaluation: Frame 21 sent at 1572948366658
+11-05 12:06:06.658 10067 10101 D Evaluation: 0 res for frame 14 received at 1572948366658
+11-05 12:06:06.692 10067 10101 D Evaluation: Frame 22 sent at 1572948366692
+11-05 12:06:06.727 10067 10101 D Evaluation: Frame 23 sent at 1572948366727
+11-05 12:06:06.758 10067 10101 D Evaluation: Frame 24 sent at 1572948366758
+11-05 12:06:06.759 10067 10101 D Evaluation: 0 res for frame 15 received at 1572948366759
+11-05 12:06:06.791 10067 10101 D Evaluation: Frame 25 sent at 1572948366791
+11-05 12:06:06.792 10067 10101 D Evaluation: 0 res for frame 16 received at 1572948366792
+11-05 12:06:06.829 10067 10101 D Evaluation: Frame 26 sent at 1572948366829
+11-05 12:06:06.859 10067 10101 D Evaluation: Frame 27 sent at 1572948366859
+11-05 12:06:06.860 10067 10101 D Evaluation: 0 res for frame 17 received at 1572948366860
+11-05 12:06:06.892 10067 10101 D Evaluation: Frame 28 sent at 1572948366892
+11-05 12:06:06.936 10067 10101 D Evaluation: Frame 29 sent at 1572948366936
+11-05 12:06:06.937 10067 10101 D Evaluation: 0 res for frame 18 received at 1572948366937
+11-05 12:06:06.975 10067 10101 D Evaluation: Frame 30 sent at 1572948366975
+11-05 12:06:07.015 10067 10101 D Evaluation: Frame 31 sent at 1572948367015
+11-05 12:06:07.016 10067 10101 D Evaluation: 0 res for frame 19 received at 1572948367016
+11-05 12:06:07.050 10067 10101 D Evaluation: Frame 32 sent at 1572948367050
+11-05 12:06:07.053 10067 10101 D Evaluation: 0 res for frame 20 received at 1572948367053
+11-05 12:06:07.081 10067 10101 D Evaluation: Frame 33 sent at 1572948367081
+11-05 12:06:07.126 10067 10101 D Evaluation: Frame 34 sent at 1572948367126
+11-05 12:06:07.127 10067 10078 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-05 12:06:07.128 10067 10101 D Evaluation: 0 res for frame 21 received at 1572948367128
+11-05 12:06:07.148 10067 10076 W System  : A resource failed to call close. 
+11-05 12:06:07.149 10067 10076 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 15 lines
+11-05 12:06:07.149 10067 10076 W System  : A resource failed to call close. 
+11-05 12:06:07.149 10067 10101 D Evaluation: Frame 35 sent at 1572948367149
+11-05 12:06:07.149 10067 10076 W System  : A resource failed to call close. 
+11-05 12:06:07.150 10067 10076 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 12 lines
+11-05 12:06:07.150 10067 10076 W System  : A resource failed to call close. 
+11-05 12:06:07.184 10067 10101 D Evaluation: Frame 36 sent at 1572948367184
+11-05 12:06:07.186 10067 10101 D Evaluation: 0 res for frame 22 received at 1572948367186
+11-05 12:06:07.218 10067 10101 D Evaluation: Frame 37 sent at 1572948367218
+11-05 12:06:07.257 10067 10101 D Evaluation: Frame 38 sent at 1572948367257
+11-05 12:06:07.259 10067 10101 D Evaluation: 0 res for frame 23 received at 1572948367259
+11-05 12:06:07.288 10067 10101 D Evaluation: Frame 39 sent at 1572948367288
+11-05 12:06:07.317 10067 10101 D Evaluation: Frame 40 sent at 1572948367317
+11-05 12:06:07.353 10067 10101 D Evaluation: Frame 41 sent at 1572948367353
+11-05 12:06:07.376 10067 10101 D Evaluation: Frame 42 sent at 1572948367376
+11-05 12:06:07.416 10067 10101 D Evaluation: Frame 43 sent at 1572948367416
+11-05 12:06:07.446 10067 10101 D Evaluation: Frame 44 sent at 1572948367446
+11-05 12:06:07.457 10067 10067 D Poster  : At 1572948367456 location is 65.0586742845946 (latitude), and 25.466131624148794 (longitude)
+11-05 12:06:07.480 10067 10101 D Evaluation: Frame 45 sent at 1572948367480
+11-05 12:06:07.511 10067 10101 D Evaluation: Frame 46 sent at 1572948367511
+11-05 12:06:07.554 10067 10101 D Evaluation: Frame 47 sent at 1572948367554
+11-05 12:06:07.581 10067 10101 D Evaluation: Frame 48 sent at 1572948367581
+11-05 12:06:07.628 10067 10101 D Evaluation: Frame 49 sent at 1572948367628
+11-05 12:06:07.660 10067 10101 D Evaluation: Frame 50 sent at 1572948367660
+11-05 12:06:07.661 10067 10101 D Evaluation: 0 res for frame 34 received at 1572948367661
+11-05 12:06:07.690 10067 10101 D Evaluation: Frame 51 sent at 1572948367690
+11-05 12:06:07.691 10067 10101 D Evaluation: 0 res for frame 36 received at 1572948367691
+11-05 12:06:07.716 10067 10101 D Evaluation: Frame 52 sent at 1572948367716
+11-05 12:06:07.749 10067 10101 D Evaluation: Frame 53 sent at 1572948367749
+11-05 12:06:07.751 10067 10101 D Evaluation: 0 res for frame 38 received at 1572948367751
+11-05 12:06:07.792 10067 10101 D Evaluation: Frame 54 sent at 1572948367792
+11-05 12:06:07.850 10067 10101 D Evaluation: Frame 55 sent at 1572948367850
+11-05 12:06:07.886 10067 10101 D Evaluation: Frame 56 sent at 1572948367886
+11-05 12:06:07.920 10067 10101 D Evaluation: Frame 57 sent at 1572948367920
+11-05 12:06:07.946 10067 10101 D Evaluation: Frame 58 sent at 1572948367945
+11-05 12:06:07.981 10067 10101 D Evaluation: Frame 59 sent at 1572948367981
+11-05 12:06:08.024 10067 10101 D Evaluation: Frame 60 sent at 1572948368024
+11-05 12:06:08.052 10067 10101 D Evaluation: Frame 61 sent at 1572948368052
+11-05 12:06:08.121 10067 10101 D Evaluation: Frame 62 sent at 1572948368121
+11-05 12:06:08.169 10067 10101 D Evaluation: Frame 63 sent at 1572948368169
+11-05 12:06:08.195 10067 10101 D Evaluation: Frame 64 sent at 1572948368195
+11-05 12:06:08.230 10067 10101 D Evaluation: Frame 65 sent at 1572948368230
+11-05 12:06:08.259 10067 10101 D Evaluation: Frame 66 sent at 1572948368259
+11-05 12:06:08.287 10067 10101 D Evaluation: Frame 67 sent at 1572948368287
+11-05 12:06:08.338 10067 10101 D Evaluation: Frame 68 sent at 1572948368338
+11-05 12:06:08.359 10067 10101 D Evaluation: Frame 69 sent at 1572948368359
+11-05 12:06:08.387 10067 10101 D Evaluation: Frame 70 sent at 1572948368387
+11-05 12:06:08.438 10067 10101 D Evaluation: Frame 71 sent at 1572948368438
+11-05 12:06:08.460 10067 10067 D Poster  : At 1572948368460 location is 65.05867241039405 (latitude), and 25.466153958019763 (longitude)
+11-05 12:06:08.466 10067 10101 D Evaluation: Frame 72 sent at 1572948368466
+11-05 12:06:08.497 10067 10101 D Evaluation: Frame 73 sent at 1572948368497
+11-05 12:06:08.523 10067 10101 D Evaluation: Frame 74 sent at 1572948368523
+11-05 12:06:08.565 10067 10101 D Evaluation: Frame 75 sent at 1572948368565
+11-05 12:06:08.593 10067 10101 D Evaluation: Frame 76 sent at 1572948368593
+11-05 12:06:08.628 10067 10101 D Evaluation: Frame 77 sent at 1572948368628
+11-05 12:06:08.658 10067 10101 D Evaluation: Frame 78 sent at 1572948368658
+11-05 12:06:08.698 10067 10101 D Evaluation: Frame 79 sent at 1572948368698
+11-05 12:06:08.728 10067 10101 D Evaluation: Frame 80 sent at 1572948368728
+11-05 12:06:08.764 10067 10101 D Evaluation: Frame 81 sent at 1572948368764
+11-05 12:06:08.797 10067 10101 D Evaluation: Frame 82 sent at 1572948368797
+11-05 12:06:08.830 10067 10101 D Evaluation: Frame 83 sent at 1572948368830
+11-05 12:06:08.862 10067 10101 D Evaluation: Frame 84 sent at 1572948368862
+11-05 12:06:08.902 10067 10101 D Evaluation: Frame 85 sent at 1572948368902
+11-05 12:06:08.939 10067 10101 D Evaluation: Frame 86 sent at 1572948368939
+11-05 12:06:08.970 10067 10101 D Evaluation: Frame 87 sent at 1572948368970
+11-05 12:06:08.999 10067 10101 D Evaluation: Frame 88 sent at 1572948368999
+11-05 12:06:09.036 10067 10101 D Evaluation: Frame 89 sent at 1572948369036
+11-05 12:06:09.059 10067 10101 D Evaluation: Frame 90 sent at 1572948369059
+11-05 12:06:09.100 10067 10101 D Evaluation: Frame 91 sent at 1572948369100
+11-05 12:06:09.126 10067 10101 D Evaluation: Frame 92 sent at 1572948369126
+11-05 12:06:09.169 10067 10101 D Evaluation: Frame 93 sent at 1572948369169
+11-05 12:06:09.203 10067 10101 D Evaluation: Frame 94 sent at 1572948369203
+11-05 12:06:09.229 10067 10101 D Evaluation: Frame 95 sent at 1572948369229
+11-05 12:06:09.269 10067 10101 D Evaluation: Frame 96 sent at 1572948369269
+11-05 12:06:09.303 10067 10101 D Evaluation: Frame 97 sent at 1572948369303
+11-05 12:06:09.327 10067 10101 D Evaluation: Frame 98 sent at 1572948369327
+11-05 12:06:09.368 10067 10101 D Evaluation: Frame 99 sent at 1572948369368
+11-05 12:06:09.389 10067 10101 D Evaluation: Frame 100 sent at 1572948369389
+11-05 12:06:09.439 10067 10101 D Evaluation: Frame 101 sent at 1572948369439
+11-05 12:06:09.465 10067 10067 D Poster  : At 1572948369465 location is 65.0586683450726 (latitude), and 25.466165801523097 (longitude)
+11-05 12:06:09.472 10067 10101 D Evaluation: Frame 102 sent at 1572948369472
+11-05 12:06:09.508 10067 10101 D Evaluation: Frame 103 sent at 1572948369508
+11-05 12:06:09.589 10067 10101 D Evaluation: Frame 104 sent at 1572948369589
+11-05 12:06:09.617 10067 10101 D Evaluation: Frame 105 sent at 1572948369617
+11-05 12:06:09.639 10067 10101 D Evaluation: Frame 106 sent at 1572948369639
+11-05 12:06:09.674 10067 10101 D Evaluation: Frame 107 sent at 1572948369674
+11-05 12:06:09.703 10067 10101 D Evaluation: Frame 108 sent at 1572948369703
+11-05 12:06:09.797 10067 10101 D Evaluation: Frame 109 sent at 1572948369797
+11-05 12:06:09.819 10067 10101 D Evaluation: Frame 110 sent at 1572948369818
+11-05 12:06:09.842 10067 10101 D Evaluation: Frame 111 sent at 1572948369842
+11-05 12:06:09.877 10067 10101 D Evaluation: Frame 112 sent at 1572948369877
+11-05 12:06:09.902 10067 10078 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-05 12:06:09.903 10067 10101 D Evaluation: Frame 113 sent at 1572948369903
+11-05 12:06:09.921 10067 10076 W System  : A resource failed to call close. 
+11-05 12:06:09.922 10067 10076 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 9 lines
+11-05 12:06:09.922 10067 10076 W System  : A resource failed to call close. 
+11-05 12:06:09.980 10067 10101 D Evaluation: Frame 114 sent at 1572948369980
+11-05 12:06:10.015 10067 10101 D Evaluation: Frame 115 sent at 1572948370014
+11-05 12:06:10.048 10067 10101 D Evaluation: Frame 116 sent at 1572948370047
+11-05 12:06:10.073 10067 10101 D Evaluation: Frame 117 sent at 1572948370073
+11-05 12:06:10.117 10067 10101 D Evaluation: Frame 118 sent at 1572948370117
+11-05 12:06:10.119 10067 10101 D Evaluation: 1 res for frame 104 received at 1572948370119
+11-05 12:06:10.174 10067 10101 D Evaluation: Frame 119 sent at 1572948370174
+11-05 12:06:10.215 10067 10101 D Evaluation: Frame 120 sent at 1572948370215
+11-05 12:06:10.252 10067 10101 D Evaluation: Frame 121 sent at 1572948370252
+11-05 12:06:10.286 10067 10101 D Evaluation: Frame 122 sent at 1572948370286
+11-05 12:06:10.314 10067 10101 D Evaluation: Frame 123 sent at 1572948370314
+11-05 12:06:10.315 10067 10101 D Evaluation: 1 res for frame 109 received at 1572948370315
+11-05 12:06:10.351 10067 10101 D Evaluation: Frame 124 sent at 1572948370351
+11-05 12:06:10.384 10067 10101 D Evaluation: Frame 125 sent at 1572948370384
+11-05 12:06:10.407 10067 10101 D Evaluation: Frame 126 sent at 1572948370407
+11-05 12:06:10.452 10067 10101 D Evaluation: Frame 127 sent at 1572948370452
+11-05 12:06:10.469 10067 10067 D Poster  : At 1572948370468 location is 65.05867512171207 (latitude), and 25.466170693334025 (longitude)
+11-05 12:06:10.474 10067 10101 D Evaluation: Frame 128 sent at 1572948370474
+11-05 12:06:10.504 10067 10101 D Evaluation: Frame 129 sent at 1572948370504
+11-05 12:06:10.535 10067 10101 D Evaluation: Frame 130 sent at 1572948370535
+11-05 12:06:10.536 10067 10101 D Evaluation: 1 res for frame 114 received at 1572948370536
+11-05 12:06:10.552 10067 10067 I AwareBitmapCacher: init lrucache size: 2097152 pid=10067
+11-05 12:06:10.570 10067 10101 D Evaluation: Frame 131 sent at 1572948370570
+11-05 12:06:10.606 10067 10101 D Evaluation: Frame 132 sent at 1572948370605
+11-05 12:06:10.635 10067 10101 D Evaluation: Frame 133 sent at 1572948370635
+11-05 12:06:10.683 10067 10101 D Evaluation: Frame 134 sent at 1572948370683
+11-05 12:06:10.711 10067 10101 D Evaluation: Frame 135 sent at 1572948370710
+11-05 12:06:10.743 10067 10101 D Evaluation: Frame 136 sent at 1572948370743
+11-05 12:06:10.784 10067 10101 D Evaluation: Frame 137 sent at 1572948370783
+11-05 12:06:10.817 10067 10101 D Evaluation: Frame 138 sent at 1572948370817
+11-05 12:06:10.857 10067 10101 D Evaluation: Frame 139 sent at 1572948370857
+11-05 12:06:10.881 10067 10101 D Evaluation: Frame 140 sent at 1572948370881
+11-05 12:06:10.912 10067 10101 D Evaluation: Frame 141 sent at 1572948370912
+11-05 12:06:10.952 10067 10101 D Evaluation: Frame 142 sent at 1572948370952
+11-05 12:06:10.984 10067 10101 D Evaluation: Frame 143 sent at 1572948370984
+11-05 12:06:11.022 10067 10101 D Evaluation: Frame 144 sent at 1572948371022
+11-05 12:06:11.057 10067 10101 D Evaluation: Frame 145 sent at 1572948371057
+11-05 12:06:11.089 10067 10101 D Evaluation: Frame 146 sent at 1572948371089
+11-05 12:06:11.112 10067 10101 D Evaluation: Frame 147 sent at 1572948371112
+11-05 12:06:11.143 10067 10101 D Evaluation: Frame 148 sent at 1572948371143
+11-05 12:06:11.180 10067 10101 D Evaluation: Frame 149 sent at 1572948371180
+11-05 12:06:11.214 10067 10101 D Evaluation: Frame 150 sent at 1572948371214
+11-05 12:06:11.241 10067 10101 D Evaluation: Frame 151 sent at 1572948371241
+11-05 12:06:11.283 10067 10101 D Evaluation: Frame 152 sent at 1572948371283
+11-05 12:06:11.317 10067 10101 D Evaluation: Frame 153 sent at 1572948371317
+11-05 12:06:11.364 10067 10101 D Evaluation: Frame 154 sent at 1572948371363
+11-05 12:06:11.389 10067 10101 D Evaluation: Frame 155 sent at 1572948371389
+11-05 12:06:11.413 10067 10101 D Evaluation: Frame 156 sent at 1572948371413
+11-05 12:06:11.451 10067 10101 D Evaluation: Frame 157 sent at 1572948371451
+11-05 12:06:11.465 10067 10067 D Poster  : At 1572948371465 location is 65.05866802822688 (latitude), and 25.466178747683834 (longitude)
+11-05 12:06:11.474 10067 10101 D Evaluation: Frame 158 sent at 1572948371474
+11-05 12:06:11.512 10067 10101 D Evaluation: Frame 159 sent at 1572948371512
+11-05 12:06:11.551 10067 10101 D Evaluation: Frame 160 sent at 1572948371551
+11-05 12:06:11.588 10067 10101 D Evaluation: Frame 161 sent at 1572948371588
+11-05 12:06:11.621 10067 10101 D Evaluation: Frame 162 sent at 1572948371620
+11-05 12:06:11.695 10067 10101 D Evaluation: Frame 163 sent at 1572948371695
+11-05 12:06:11.725 10067 10101 D Evaluation: Frame 164 sent at 1572948371725
+11-05 12:06:11.751 10067 10101 D Evaluation: Frame 165 sent at 1572948371751
+11-05 12:06:11.792 10067 10101 D Evaluation: Frame 166 sent at 1572948371792
+11-05 12:06:11.828 10067 10101 D Evaluation: Frame 167 sent at 1572948371828
+11-05 12:06:11.854 10067 10101 D Evaluation: Frame 168 sent at 1572948371854
+11-05 12:06:11.891 10067 10101 D Evaluation: Frame 169 sent at 1572948371891
+11-05 12:06:11.928 10067 10101 D Evaluation: Frame 170 sent at 1572948371928
+11-05 12:06:11.959 10067 10101 D Evaluation: Frame 171 sent at 1572948371959
+11-05 12:06:11.983 10067 10101 D Evaluation: Frame 172 sent at 1572948371983
+11-05 12:06:12.034 10067 10101 D Evaluation: Frame 173 sent at 1572948372034
+11-05 12:06:12.053 10067 10101 D Evaluation: Frame 174 sent at 1572948372053
+11-05 12:06:12.094 10067 10101 D Evaluation: Frame 175 sent at 1572948372094
+11-05 12:06:12.121 10067 10101 D Evaluation: Frame 176 sent at 1572948372121
+11-05 12:06:12.154 10067 10101 D Evaluation: Frame 177 sent at 1572948372154
+11-05 12:06:12.190 10067 10101 D Evaluation: Frame 178 sent at 1572948372190
+11-05 12:06:12.227 10067 10101 D Evaluation: Frame 179 sent at 1572948372227
+11-05 12:06:12.229 10067 10101 D Evaluation: 0 res for frame 163 received at 1572948372229
+11-05 12:06:12.256 10067 10101 D Evaluation: Frame 180 sent at 1572948372256
+11-05 12:06:12.299 10067 10101 D Evaluation: Frame 181 sent at 1572948372299
+11-05 12:06:12.331 10067 10101 D Evaluation: Frame 182 sent at 1572948372331
+11-05 12:06:12.357 10067 10101 D Evaluation: Frame 183 sent at 1572948372357
+11-05 12:06:12.388 10067 10101 D Evaluation: Frame 184 sent at 1572948372387
+11-05 12:06:12.418 10067 10101 D Evaluation: Frame 185 sent at 1572948372418
+11-05 12:06:12.461 10067 10067 D Poster  : At 1572948372461 location is 65.0586683938931 (latitude), and 25.466191615525666 (longitude)
+11-05 12:06:12.479 10067 10101 D Evaluation: Frame 186 sent at 1572948372479
+11-05 12:06:12.503 10067 10101 D Evaluation: Frame 187 sent at 1572948372502
+11-05 12:06:12.519 10067 10101 D Evaluation: Frame 188 sent at 1572948372519
+11-05 12:06:12.549 10067 10101 D Evaluation: Frame 189 sent at 1572948372549
+11-05 12:06:12.601 10067 10101 D Evaluation: Frame 190 sent at 1572948372601
+11-05 12:06:12.633 10067 10078 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-05 12:06:12.634 10067 10101 D Evaluation: Frame 191 sent at 1572948372634
+11-05 12:06:12.664 10067 10076 W System  : A resource failed to call close. 
+11-05 12:06:12.667 10067 10076 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 6 lines
+11-05 12:06:12.667 10067 10076 W System  : A resource failed to call close. 
+11-05 12:06:12.692 10067 10101 D Evaluation: Frame 193 sent at 1572948372692
+11-05 12:06:12.715 10067 10101 D Evaluation: Frame 194 sent at 1572948372715
+11-05 12:06:12.734 10067 10101 D Evaluation: Frame 194 sent at 1572948372734
+11-05 12:06:12.755 10067 10101 D Evaluation: Frame 195 sent at 1572948372755
+11-05 12:06:12.789 10067 10101 D Evaluation: Frame 196 sent at 1572948372789
+11-05 12:06:12.833 10067 10101 D Evaluation: Frame 197 sent at 1572948372833
+11-05 12:06:12.860 10067 10101 D Evaluation: Frame 198 sent at 1572948372860
+11-05 12:06:12.897 10067 10101 D Evaluation: Frame 199 sent at 1572948372897
+11-05 12:06:12.932 10067 10101 D Evaluation: Frame 200 sent at 1572948372932
+11-05 12:06:12.998 10067 10101 D Evaluation: Frame 201 sent at 1572948372998
+11-05 12:06:13.050 10067 10101 D Evaluation: Frame 202 sent at 1572948373050
+11-05 12:06:13.072 10067 10101 D Evaluation: Frame 203 sent at 1572948373072
+11-05 12:06:13.097 10067 10101 D Evaluation: Frame 204 sent at 1572948373097
+11-05 12:06:13.131 10067 10101 D Evaluation: Frame 205 sent at 1572948373131
+11-05 12:06:13.161 10067 10101 D Evaluation: Frame 206 sent at 1572948373160
+11-05 12:06:13.222 10067 10101 D Evaluation: Frame 208 sent at 1572948373222
+11-05 12:06:13.250 10067 10101 D Evaluation: Frame 209 sent at 1572948373250
+11-05 12:06:13.268 10067 10101 D Evaluation: Frame 209 sent at 1572948373268
+11-05 12:06:13.301 10067 10101 D Evaluation: Frame 210 sent at 1572948373301
+11-05 12:06:13.377 10067 10101 D Evaluation: Frame 211 sent at 1572948373376
+11-05 12:06:13.411 10067 10101 D Evaluation: Frame 213 sent at 1572948373411
+11-05 12:06:13.430 10067 10101 D Evaluation: Frame 213 sent at 1572948373430
+11-05 12:06:13.465 10067 10067 D Poster  : At 1572948373464 location is 65.05866995546303 (latitude), and 25.466187308060867 (longitude)
+11-05 12:06:13.468 10067 10101 D Evaluation: Frame 214 sent at 1572948373468
+11-05 12:06:13.531 10067 10101 D Evaluation: Frame 215 sent at 1572948373531
+11-05 12:06:13.571 10067 10101 D Evaluation: Frame 216 sent at 1572948373571
+11-05 12:06:13.602 10067 10101 D Evaluation: Frame 217 sent at 1572948373602
+11-05 12:06:13.638 10067 10101 D Evaluation: Frame 218 sent at 1572948373638
+11-05 12:06:13.715 10067 10101 D Evaluation: Frame 219 sent at 1572948373714
+11-05 12:06:13.748 10067 10101 D Evaluation: Frame 220 sent at 1572948373748
+11-05 12:06:13.783 10067 10101 D Evaluation: Frame 221 sent at 1572948373783
+11-05 12:06:13.813 10067 10101 D Evaluation: Frame 222 sent at 1572948373813
+11-05 12:06:13.839 10067 10101 D Evaluation: Frame 223 sent at 1572948373839
+11-05 12:06:13.880 10067 10101 D Evaluation: Frame 224 sent at 1572948373880
+11-05 12:06:13.882 10067 10101 D Evaluation: 0 res for frame 211 received at 1572948373882
+11-05 12:06:13.916 10067 10101 D Evaluation: Frame 225 sent at 1572948373916
+11-05 12:06:13.953 10067 10101 D Evaluation: Frame 226 sent at 1572948373953
+11-05 12:06:13.981 10067 10101 D Evaluation: Frame 227 sent at 1572948373980
+11-05 12:06:14.010 10067 10101 D Evaluation: Frame 228 sent at 1572948374010
+11-05 12:06:14.052 10067 10101 D Evaluation: Frame 229 sent at 1572948374052
+11-05 12:06:14.073 10067 10101 D Evaluation: Frame 230 sent at 1572948374073
+11-05 12:06:14.102 10067 10101 D Evaluation: Frame 231 sent at 1572948374101
+11-05 12:06:14.150 10067 10101 D Evaluation: Frame 233 sent at 1572948374150
+11-05 12:06:14.168 10067 10101 D Evaluation: Frame 233 sent at 1572948374168
+11-05 12:06:14.209 10067 10101 D Evaluation: Frame 234 sent at 1572948374209
+11-05 12:06:14.250 10067 10101 D Evaluation: Frame 235 sent at 1572948374250
+11-05 12:06:14.251 10067 10101 D Evaluation: 1 res for frame 219 received at 1572948374251
+11-05 12:06:14.285 10067 10101 D Evaluation: Frame 237 sent at 1572948374285
+11-05 12:06:14.303 10067 10101 D Evaluation: Frame 237 sent at 1572948374303
+11-05 12:06:14.341 10067 10101 D Evaluation: Frame 238 sent at 1572948374341
+11-05 12:06:14.385 10067 10101 D Evaluation: Frame 239 sent at 1572948374385
+11-05 12:06:14.416 10067 10101 D Evaluation: Frame 240 sent at 1572948374416
+11-05 12:06:14.449 10067 10101 D Evaluation: Frame 241 sent at 1572948374449
+11-05 12:06:14.476 10067 10067 D Poster  : At 1572948374475 location is 65.05867120133979 (latitude), and 25.466189832997408 (longitude)
+11-05 12:06:14.491 10067 10101 D Evaluation: Frame 242 sent at 1572948374491
+11-05 12:06:14.508 10067 10101 D Evaluation: Frame 243 sent at 1572948374508
+11-05 12:06:14.544 10067 10101 D Evaluation: Frame 244 sent at 1572948374544
+11-05 12:06:14.579 10067 10101 D Evaluation: Frame 245 sent at 1572948374579
+11-05 12:06:14.617 10067 10101 D Evaluation: Frame 246 sent at 1572948374617
+11-05 12:06:14.651 10067 10101 D Evaluation: Frame 247 sent at 1572948374651
+11-05 12:06:14.684 10067 10101 D Evaluation: Frame 248 sent at 1572948374684
+11-05 12:06:14.719 10067 10101 D Evaluation: Frame 249 sent at 1572948374719
+11-05 12:06:14.758 10067 10101 D Evaluation: Frame 250 sent at 1572948374758
+11-05 12:06:14.789 10067 10101 D Evaluation: Frame 252 sent at 1572948374789
+11-05 12:06:14.810 10067 10101 D Evaluation: Frame 252 sent at 1572948374810
+11-05 12:06:14.847 10067 10101 D Evaluation: Frame 253 sent at 1572948374847
+11-05 12:06:14.882 10067 10101 D Evaluation: Frame 254 sent at 1572948374882
+11-05 12:06:14.919 10067 10101 D Evaluation: Frame 255 sent at 1572948374919
+11-05 12:06:14.952 10067 10101 D Evaluation: Frame 256 sent at 1572948374952
+11-05 12:06:14.980 10067 10101 D Evaluation: Frame 257 sent at 1572948374980
+11-05 12:06:15.024 10067 10101 D Evaluation: Frame 258 sent at 1572948375024
+11-05 12:06:15.054 10067 10101 D Evaluation: Frame 259 sent at 1572948375054
+11-05 12:06:15.093 10067 10101 D Evaluation: Frame 260 sent at 1572948375093
+11-05 12:06:15.118 10067 10101 D Evaluation: Frame 261 sent at 1572948375118
+11-05 12:06:15.159 10067 10101 D Evaluation: Frame 262 sent at 1572948375159
+11-05 12:06:15.194 10067 10101 D Evaluation: Frame 263 sent at 1572948375194
+11-05 12:06:15.226 10067 10101 D Evaluation: Frame 264 sent at 1572948375226
+11-05 12:06:15.253 10067 10101 D Evaluation: Frame 265 sent at 1572948375253
+11-05 12:06:15.286 10067 10101 D Evaluation: Frame 266 sent at 1572948375286
+11-05 12:06:15.317 10067 10078 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-05 12:06:15.317 10067 10101 D Evaluation: Frame 267 sent at 1572948375317
+11-05 12:06:15.337 10067 10076 W System  : A resource failed to call close. 
+11-05 12:06:15.338 10067 10076 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-05 12:06:15.338 10067 10076 W System  : A resource failed to call close. 
+11-05 12:06:15.351 10067 10101 D Evaluation: Frame 268 sent at 1572948375351
+11-05 12:06:15.374 10067 10101 D Evaluation: Frame 269 sent at 1572948375374
+11-05 12:06:15.431 10067 10101 D Evaluation: Frame 271 sent at 1572948375431
+11-05 12:06:15.452 10067 10101 D Evaluation: Frame 271 sent at 1572948375452
+11-05 12:06:15.470 10067 10067 D Poster  : At 1572948375469 location is 65.05866485044882 (latitude), and 25.46619953300515 (longitude)
+11-05 12:06:15.492 10067 10101 D Evaluation: Frame 272 sent at 1572948375492
+11-05 12:06:15.516 10067 10101 D Evaluation: Frame 273 sent at 1572948375516
+11-05 12:06:15.545 10067 10101 D Evaluation: Frame 274 sent at 1572948375545
+11-05 12:06:15.584 10067 10101 D Evaluation: Frame 275 sent at 1572948375584
+11-05 12:06:15.661 10067 10101 D Evaluation: Frame 276 sent at 1572948375661
+11-05 12:06:15.700 10067 10101 D Evaluation: Frame 277 sent at 1572948375700
+11-05 12:06:15.736 10067 10101 D Evaluation: Frame 278 sent at 1572948375736
+11-05 12:06:15.846 10067 10101 D Evaluation: Frame 280 sent at 1572948375846
+11-05 12:06:15.872 10067 10101 D Evaluation: Frame 280 sent at 1572948375872
+11-05 12:06:15.896 10067 10101 D Evaluation: Frame 282 sent at 1572948375896
+11-05 12:06:15.917 10067 10101 D Evaluation: Frame 282 sent at 1572948375917
+11-05 12:06:15.952 10067 10101 D Evaluation: Frame 283 sent at 1572948375952
+11-05 12:06:15.979 10067 10101 D Evaluation: Frame 284 sent at 1572948375979
+11-05 12:06:16.031 10067 10101 D Evaluation: Frame 285 sent at 1572948376031
+11-05 12:06:16.060 10067 10101 D Evaluation: Frame 287 sent at 1572948376060
+11-05 12:06:16.078 10067 10101 D Evaluation: Frame 287 sent at 1572948376077
+11-05 12:06:16.110 10067 10101 D Evaluation: Frame 288 sent at 1572948376110
+11-05 12:06:16.148 10067 10101 D Evaluation: Frame 289 sent at 1572948376148
+11-05 12:06:16.181 10067 10101 D Evaluation: Frame 290 sent at 1572948376181
+11-05 12:06:16.219 10067 10101 D Evaluation: Frame 291 sent at 1572948376219
+11-05 12:06:16.261 10067 10101 D Evaluation: Frame 292 sent at 1572948376261
+11-05 12:06:16.294 10067 10101 D Evaluation: Frame 293 sent at 1572948376294
+11-05 12:06:16.330 10067 10101 D Evaluation: Frame 294 sent at 1572948376330
+11-05 12:06:16.332 10067 10101 D Evaluation: 1 res for frame 280 received at 1572948376332
+11-05 12:06:16.356 10067 10101 D Evaluation: Frame 295 sent at 1572948376356
+11-05 12:06:16.403 10067 10101 D Evaluation: Frame 297 sent at 1572948376403
+11-05 12:06:16.427 10067 10101 D Evaluation: Frame 297 sent at 1572948376426
+11-05 12:06:16.448 10067 10101 D Evaluation: Frame 298 sent at 1572948376448
+11-05 12:06:16.466 10067 10067 D Poster  : At 1572948376466 location is 65.05866639228552 (latitude), and 25.46622068964761 (longitude)
+11-05 12:06:16.494 10067 10101 D Evaluation: Frame 299 sent at 1572948376494
+11-05 12:06:16.523 10067 10101 D Evaluation: Frame 300 sent at 1572948376523
+11-05 12:06:16.559 10067 10101 D Evaluation: Frame 301 sent at 1572948376559
+11-05 12:06:16.595 10067 10101 D Evaluation: Frame 302 sent at 1572948376595
+11-05 12:06:16.637 10067 10101 D Evaluation: Frame 303 sent at 1572948376637
+11-05 12:06:16.668 10067 10101 D Evaluation: Frame 304 sent at 1572948376668
+11-05 12:06:16.697 10067 10101 D Evaluation: Frame 305 sent at 1572948376697
+11-05 12:06:16.729 10067 10101 D Evaluation: Frame 306 sent at 1572948376729
+11-05 12:06:16.767 10067 10101 D Evaluation: Frame 307 sent at 1572948376767
+11-05 12:06:16.789 10067 10101 D Evaluation: Frame 308 sent at 1572948376789
+11-05 12:06:16.828 10067 10101 D Evaluation: Frame 309 sent at 1572948376828
+11-05 12:06:16.866 10067 10101 D Evaluation: Frame 310 sent at 1572948376866
+11-05 12:06:16.893 10067 10101 D Evaluation: Frame 311 sent at 1572948376893
+11-05 12:06:16.930 10067 10101 D Evaluation: Frame 312 sent at 1572948376930
+11-05 12:06:16.962 10067 10101 D Evaluation: Frame 313 sent at 1572948376962
+11-05 12:06:17.008 10067 10101 D Evaluation: Frame 314 sent at 1572948377008
+11-05 12:06:17.031 10067 10101 D Evaluation: Frame 315 sent at 1572948377031
+11-05 12:06:17.066 10067 10101 D Evaluation: Frame 316 sent at 1572948377066
+11-05 12:06:17.102 10067 10101 D Evaluation: Frame 317 sent at 1572948377102
+11-05 12:06:17.122 10067 10101 D Evaluation: Frame 318 sent at 1572948377122
+11-05 12:06:17.163 10067 10101 D Evaluation: Frame 319 sent at 1572948377163
+11-05 12:06:17.194 10067 10101 D Evaluation: Frame 320 sent at 1572948377194
+11-05 12:06:17.237 10067 10101 D Evaluation: Frame 321 sent at 1572948377237
+11-05 12:06:17.269 10067 10101 D Evaluation: Frame 322 sent at 1572948377269
+11-05 12:06:17.278 10067 10067 D stylus  : init stylus touchlistener.
+11-05 12:06:17.285 10067 10067 W Settings: Setting device_provisioned has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+11-05 12:06:17.287 10067 10067 V HiTouch_HiTouchSensor: User setup is finished.
+11-05 12:06:17.311 10067 10101 D Evaluation: Frame 323 sent at 1572948377311
+11-05 12:06:17.332 10067 10101 D Evaluation: Frame 324 sent at 1572948377331
+11-05 12:06:17.371 10067 10067 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:13.454468, limit is:60The moving distance of Y is:71.48299, limit is:60
+11-05 12:06:17.404 10067 10101 D Evaluation: Frame 325 sent at 1572948377404
+11-05 12:06:17.435 10067 10101 D Evaluation: Frame 326 sent at 1572948377435
+11-05 12:06:17.455 10067 10101 D Evaluation: Frame 327 sent at 1572948377455
+11-05 12:06:17.461 10067 10067 D Poster  : At 1572948377461 location is 65.05866579496757 (latitude), and 25.46623702907141 (longitude)
+11-05 12:06:17.493 10067 10101 D Evaluation: Frame 328 sent at 1572948377493
+11-05 12:06:17.517 10067 10101 D Evaluation: Frame 329 sent at 1572948377517
+11-05 12:06:17.559 10067 10101 D Evaluation: Frame 330 sent at 1572948377559
+11-05 12:06:17.584 10067 10101 D Evaluation: Frame 331 sent at 1572948377584
+11-05 12:06:17.623 10067 10101 D Evaluation: Frame 332 sent at 1572948377623
+11-05 12:06:17.650 10067 10101 D Evaluation: Frame 333 sent at 1572948377650
+11-05 12:06:17.723 10067 10101 D Evaluation: Frame 334 sent at 1572948377723
+11-05 12:06:17.760 10067 10101 D Evaluation: Frame 335 sent at 1572948377760
+11-05 12:06:17.784 10067 10101 D Evaluation: Frame 336 sent at 1572948377784
+11-05 12:06:17.819 10067 10101 D Evaluation: Frame 337 sent at 1572948377819
+11-05 12:06:17.850 10067 10101 D Evaluation: Frame 338 sent at 1572948377850
+11-05 12:06:17.882 10067 10101 D Evaluation: Frame 339 sent at 1572948377882
+11-05 12:06:17.920 10067 10101 D Evaluation: Frame 340 sent at 1572948377920
+11-05 12:06:17.961 10067 10101 D Evaluation: Frame 341 sent at 1572948377961
+11-05 12:06:18.001 10067 10101 D Evaluation: Frame 342 sent at 1572948378001
+11-05 12:06:18.063 10067 10101 D Evaluation: Frame 343 sent at 1572948378063
+11-05 12:06:18.090 10067 10101 D Evaluation: Frame 344 sent at 1572948378090
+11-05 12:06:18.119 10067 10101 D Evaluation: Frame 345 sent at 1572948378119
+11-05 12:06:18.162 10067 10101 D Evaluation: Frame 346 sent at 1572948378162
+11-05 12:06:18.197 10067 10101 D Evaluation: Frame 347 sent at 1572948378197
+11-05 12:06:18.224 10067 10101 D Evaluation: Frame 348 sent at 1572948378224
+11-05 12:06:18.262 10067 10101 D Evaluation: Frame 349 sent at 1572948378262
+11-05 12:06:18.279 10067 10067 I Poster  :  onPause() called.
+11-05 12:06:18.347 10067 10067 I Camera  : close camera: 0, package name: symlab.cloudridar.arhud
+11-05 12:06:18.348 10067 10067 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 10067 ,uidOf3RdApk: 10149 ,permType: 0 ,permCfg: 0
+11-05 12:06:18.350 10067 10067 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = false
+11-05 12:06:18.410 10067 10067 D ZrHung.AppEyeUiProbe: stop checker.
+11-05 12:06:18.448 10067 10067 D Poster  : At 1572948378447 location is 65.0586601569973 (latitude), and 25.46626575500565 (longitude)
+11-05 12:06:18.476 10067 10067 I Poster  :  surfaceDestroyed() called.
+11-05 12:06:18.476 10067 10067 D ViewRootImpl[MainActivity]: surface should not be released
+11-05 12:06:18.476 10067 10067 I Poster  :  onStop() called.
+11-05 12:06:18.487 10067 10119 W libEGL  : EGLNativeWindowType 0xf2770008 disconnect failed
+11-05 12:06:18.571 10067 10093 D ZrHung.AppEyeUiProbe: Current Activity:false
+11-05 12:06:18.571 10067 10093 D ZrHung.AppEyeUiProbe: not watching, wait.
+11-05 12:06:19.476 10067 10067 D Poster  : At 1572948379476 location is 65.05865364137814 (latitude), and 25.46627953568122 (longitude)
+11-05 12:06:19.494 10067 10067 D Latitude: status
+11-05 12:06:23.285 10067 10067 I AwareBitmapCacher: handleReleaseCache: pid=10067
+11-05 12:06:23.285 10067 10067 I AwareBitmapCacher: init lrucache size: 2097152 pid=10067
+11-05 12:06:23.452 10067 10078 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-05 12:06:23.493 10067 10076 W System  : A resource failed to call close. 
+11-05 12:06:23.494 10067 10076 W System  : A resource failed to call close. 

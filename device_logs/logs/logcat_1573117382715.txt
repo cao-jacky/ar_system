@@ -1,0 +1,63 @@
+--------- beginning of main
+11-07 11:03:02.731 18036 18066 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0102]
+11-07 11:03:02.731 18036 18066 W ZrHung.AppEyeUiProbe: Failed to get config from zrhung
+11-07 11:03:02.734 18036 18036 I Poster  :  onCreate() called.
+11-07 11:03:02.737 18036 18036 I HwApsImpl: APS: new HwApsImpl created
+11-07 11:03:02.743 18064 18064 W logcat  : type=1400 audit(0.0:54425): avc: granted { create } for name="logcat_1573117382715.txt" scontext=u:r:untrusted_app_27:s0:c512,c768 tcontext=u:object_r:sdcardfs:s0:c512,c768 tclass=file
+11-07 11:03:02.745 18036 18036 V HwWidgetFactory: : successes to get AllImpl object and return....
+11-07 11:03:02.753 18036 18036 D OpenGLRenderer: Skia GL Pipeline
+11-07 11:03:02.759 18036 18036 I Rajawali: Rajawali | Bombshell | v1.1 Development 
+11-07 11:03:02.759 18036 18036 I Rajawali: THIS IS A DEV BRANCH CONTAINING SIGNIFICANT CHANGES. PLEASE REFER TO CHANGELOG.md FOR MORE INFORMATION.
+11-07 11:03:02.763 18036 18036 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-07 11:03:02.764 18036 18036 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-07 11:03:02.764 18036 18036 I iGraphics: [0020080c] pn: symlab.cloudridar.poster_edge, p: 18036
+--------- beginning of system
+11-07 11:03:02.781 18036 18036 D ActivityThread: add activity client record, r= ActivityRecord{6d9d096 token=android.os.BinderProxy@3a687be {symlab.cloudridar.poster_edge/symlab.posterApp.PosterActivity}} token= android.os.BinderProxy@3a687be
+11-07 11:03:02.783 18036 18036 I Poster  :  onStart() called.
+11-07 11:03:02.783 18036 18036 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-07 11:03:02.785 18036 18036 I Poster  :  onResume() called.
+11-07 11:03:02.791 18036 18036 I PermissionManager: camera remind result:true
+11-07 11:03:02.791 18036 18036 I Camera  : open camera: 0, package name: symlab.cloudridar.poster_edge
+11-07 11:03:02.791 18036 18036 I BackgroundPermManager: pkgName: symlab.cloudridar.poster_edge,pid: 18036 ,uidOf3RdApk: 10147 ,permType: 0 ,permCfg: 1
+11-07 11:03:02.792 18036 18036 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = true
+11-07 11:03:02.805 18036 18036 D ActivityThread: isOptEnabled=false isWechatScanOpt=false
+11-07 11:03:02.813 18036 18036 I HwSecImmHelper: mSecurityInputMethodService is null
+11-07 11:03:02.821 18036 18036 D OpenGLRenderer:   HWUI Binary is  enabled
+11-07 11:03:02.823 18036 18086 D Poster  : UDP connection
+11-07 11:03:02.824 18036 18036 I ViewRootImpl[PosterActivity]: view add KeepScreenOnFlag
+11-07 11:03:02.841 18036 18104 D HiTouch_PressGestureDetector: onAttached, package=symlab.cloudridar.poster_edge, windowType=1, mHiTouchRestricted=false
+11-07 11:03:02.849 18036 18103 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-07 11:03:02.849 18036 18103 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-07 11:03:02.850 18036 18103 I OpenGLRenderer: Initialized EGL, version 1.4, mEglDisplay 0x1
+11-07 11:03:02.850 18036 18103 D OpenGLRenderer: Swap behavior 2
+11-07 11:03:02.861 18036 18103 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+11-07 11:03:02.865 18036 18036 I Poster  :  surfaceCreated() called.
+11-07 11:03:02.866 18036 18047 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-07 11:03:02.870 18036 18036 I PermissionManager: camera remind result:true
+11-07 11:03:02.875 18036 18036 I Poster  :  surfaceChanged() called.
+11-07 11:03:02.883 18036 18083 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+11-07 11:03:02.925 18036 18036 W InputMethodManager: startInputReason = 1
+11-07 11:03:02.928 18036 18036 W InputMethodManager: startInputReason = 5
+11-07 11:03:02.969 18036 18036 D stylus  : init stylus touchlistener.
+11-07 11:03:02.971 18036 18036 W Settings: Setting device_provisioned has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+11-07 11:03:02.971 18036 18036 V HiTouch_HiTouchSensor: User setup is finished.
+11-07 11:03:02.986 18036 18083 V Poster  : No object picked!
+11-07 11:03:03.151 18036 18086 D Evaluation: metadata 1 sent 
+11-07 11:03:03.343 18036 18083 V Poster  : No object picked!
+11-07 11:03:03.806 18036 18083 V Poster  : No object picked!
+11-07 11:03:03.848 18036 18036 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:91.05786, limit is:60The moving distance of Y is:37.900238, limit is:60
+11-07 11:03:03.873 18036 18083 V Poster  : No object picked!
+11-07 11:03:03.914 18036 18036 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:80.100586, limit is:60The moving distance of Y is:20.752167, limit is:60
+11-07 11:03:04.526 18036 18083 V Poster  : No object picked!
+11-07 11:03:04.547 18036 18036 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:67.746826, limit is:60The moving distance of Y is:33.545715, limit is:60
+11-07 11:03:05.543 18036 18083 V Poster  : No object picked!
+11-07 11:03:05.551 18036 18086 D Evaluation: get gray scaled frame data at 1573117385551
+11-07 11:03:05.557 18036 18086 D Evaluation: frame 41 sent with size 1934 at 1573117385557
+11-07 11:03:05.563 18036 18036 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:69.21875, limit is:60The moving distance of Y is:34.982086, limit is:60
+11-07 11:03:05.976 18036 18083 V Poster  : No object picked!
+11-07 11:03:06.295 18036 18036 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:34.564697, limit is:60The moving distance of Y is:65.99344, limit is:60
+11-07 11:03:07.455 18036 18083 V Poster  : No object picked!
+11-07 11:03:07.479 18036 18036 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:75.8584, limit is:60The moving distance of Y is:41.731842, limit is:60
+11-07 11:03:07.500 18036 18086 D Evaluation: get gray scaled frame data at 1573117387500
+11-07 11:03:07.505 18036 18086 D Evaluation: frame 73 sent with size 1897 at 1573117387505
+11-07 11:03:07.728 18036 18036 I AwareBitmapCacher: init lrucache size: 2097152 pid=18036

@@ -1,0 +1,219 @@
+--------- beginning of main
+11-06 12:52:18.712 10316 10316 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-06 12:52:18.713 10316 10343 D ZrHung.AppEyeUiProbe: Runnable thread started.
+11-06 12:52:18.713 10316 10343 D IMonitor: Load library imonitor_jni
+11-06 12:52:18.715 10341 10341 W logcat  : type=1400 audit(0.0:3292): avc: granted { create } for name="logcat_1573037538704.txt" scontext=u:r:untrusted_app:s0:c149,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0:c149,c256,c512,c768 tclass=file
+11-06 12:52:18.716 10316 10343 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0102]
+11-06 12:52:18.716 10316 10343 W ZrHung.AppEyeUiProbe: Failed to get config from zrhung
+11-06 12:52:18.720 10316 10316 I MultiDex: Installing application
+11-06 12:52:18.720 10316 10316 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+--------- beginning of system
+11-06 12:52:18.723 10316 10316 V ActivityThread: callActivityOnCreate
+11-06 12:52:18.723 10316 10316 I Poster  :  onCreate() called.
+11-06 12:52:18.726 10316 10316 I HwApsImpl: APS: new HwApsImpl created
+11-06 12:52:18.732 10316 10316 V HwWidgetFactory: : successes to get AllImpl object and return....
+11-06 12:52:18.740 10316 10316 D OpenGLRenderer: Skia GL Pipeline
+11-06 12:52:18.764 10316 10316 D Poster  : Server bound to IP 193.166.28.132 and port 52727
+11-06 12:52:18.766 10316 10352 D Evaluation: metadata 0 sent 
+11-06 12:52:18.766 10316 10316 D ActivityThread: add activity client record, r= ActivityRecord{24fb417 token=android.os.BinderProxy@3a687be {symlab.cloudridar.arhud/symlab.ARHUD.MainActivity}} token= android.os.BinderProxy@3a687be
+11-06 12:52:18.768 10316 10316 I Poster  :  onStart() called.
+11-06 12:52:18.769 10316 10316 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-06 12:52:18.770 10316 10316 I Poster  :  onResume() called.
+11-06 12:52:18.774 10316 10316 I PermissionManager: camera remind result:true
+11-06 12:52:18.774 10316 10316 I Camera  : open camera: 0, package name: symlab.cloudridar.arhud
+11-06 12:52:18.774 10316 10316 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 10316 ,uidOf3RdApk: 10149 ,permType: 0 ,permCfg: 1
+11-06 12:52:18.775 10316 10316 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = true
+11-06 12:52:18.786 10316 10316 D ActivityThread: isOptEnabled=false isWechatScanOpt=false
+11-06 12:52:18.788 10316 10316 I HwSecImmHelper: mSecurityInputMethodService is null
+11-06 12:52:18.799 10316 10316 D OpenGLRenderer:   HWUI Binary is  enabled
+11-06 12:52:18.813 10316 10371 D HiTouch_PressGestureDetector: onAttached, package=symlab.cloudridar.arhud, windowType=1, mHiTouchRestricted=false
+11-06 12:52:18.825 10316 10370 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-06 12:52:18.825 10316 10370 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-06 12:52:18.825 10316 10370 I iGraphics: [0020080c] pn: symlab.cloudridar.arhud, p: 10316
+11-06 12:52:18.825 10316 10370 I OpenGLRenderer: Initialized EGL, version 1.4, mEglDisplay 0x1
+11-06 12:52:18.825 10316 10370 D OpenGLRenderer: Swap behavior 2
+11-06 12:52:18.834 10316 10370 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+11-06 12:52:18.855 10316 10316 I Poster  :  surfaceCreated() called.
+11-06 12:52:18.855 10316 10316 I Poster  : initPreview() called
+11-06 12:52:18.860 10316 10316 I PermissionManager: camera remind result:true
+11-06 12:52:18.864 10316 10316 I Poster  :  surfaceChanged() called.
+11-06 12:52:18.880 10316 10316 W InputMethodManager: startInputReason = 1
+11-06 12:52:18.889 10316 10316 W InputMethodManager: startInputReason = 5
+11-06 12:52:19.130 10316 10352 D Evaluation: metadata 1 sent 
+11-06 12:52:19.160 10316 10352 D Evaluation: metadata 2 sent 
+11-06 12:52:19.197 10316 10352 D Evaluation: metadata 3 sent 
+11-06 12:52:19.231 10316 10352 D Evaluation: metadata 4 sent 
+11-06 12:52:19.264 10316 10352 D Evaluation: metadata 5 sent 
+11-06 12:52:19.314 10316 10352 D Evaluation: Frame 6 sent at 1573037539314
+11-06 12:52:19.344 10316 10352 D Evaluation: Frame 7 sent at 1573037539344
+11-06 12:52:19.376 10316 10352 D Evaluation: Frame 8 sent at 1573037539376
+11-06 12:52:19.413 10316 10352 D Evaluation: Frame 9 sent at 1573037539413
+11-06 12:52:19.449 10316 10352 D Evaluation: Frame 10 sent at 1573037539449
+11-06 12:52:19.476 10316 10352 D Evaluation: Frame 11 sent at 1573037539476
+11-06 12:52:19.510 10316 10352 D Evaluation: Frame 12 sent at 1573037539510
+11-06 12:52:19.546 10316 10352 D Evaluation: Frame 13 sent at 1573037539546
+11-06 12:52:19.577 10316 10352 D Evaluation: Frame 14 sent at 1573037539577
+11-06 12:52:19.611 10316 10352 D Evaluation: Frame 15 sent at 1573037539611
+11-06 12:52:19.644 10316 10316 D Poster  : At 1573037539644 location is 65.05784681616682 (latitude), and 25.468892231310033 (longitude)
+11-06 12:52:19.645 10316 10352 D Evaluation: Frame 16 sent at 1573037539645
+11-06 12:52:19.646 10316 10316 D Poster  : Connected to mobile network 20
+11-06 12:52:19.678 10316 10352 D Evaluation: Frame 17 sent at 1573037539678
+11-06 12:52:19.714 10316 10352 D Evaluation: Frame 18 sent at 1573037539714
+11-06 12:52:19.744 10316 10352 D Evaluation: Frame 19 sent at 1573037539744
+11-06 12:52:19.783 10316 10352 D Evaluation: Frame 20 sent at 1573037539783
+11-06 12:52:19.812 10316 10352 D Evaluation: Frame 21 sent at 1573037539812
+11-06 12:52:19.849 10316 10352 D Evaluation: Frame 22 sent at 1573037539849
+11-06 12:52:19.883 10316 10352 D Evaluation: Frame 23 sent at 1573037539883
+11-06 12:52:19.915 10316 10352 D Evaluation: Frame 24 sent at 1573037539915
+11-06 12:52:19.949 10316 10352 D Evaluation: Frame 25 sent at 1573037539949
+11-06 12:52:19.983 10316 10352 D Evaluation: Frame 26 sent at 1573037539983
+11-06 12:52:20.016 10316 10352 D Evaluation: Frame 27 sent at 1573037540016
+11-06 12:52:20.050 10316 10352 D Evaluation: Frame 28 sent at 1573037540050
+11-06 12:52:20.098 10316 10352 D Evaluation: Frame 29 sent at 1573037540098
+11-06 12:52:20.129 10316 10352 D Evaluation: Frame 30 sent at 1573037540129
+11-06 12:52:20.172 10316 10352 D Evaluation: Frame 31 sent at 1573037540172
+11-06 12:52:20.203 10316 10352 D Evaluation: Frame 32 sent at 1573037540203
+11-06 12:52:20.230 10316 10352 D Evaluation: Frame 33 sent at 1573037540230
+11-06 12:52:20.268 10316 10352 D Evaluation: Frame 34 sent at 1573037540268
+11-06 12:52:20.302 10316 10352 D Evaluation: Frame 35 sent at 1573037540302
+11-06 12:52:20.327 10316 10352 D Evaluation: Frame 36 sent at 1573037540327
+11-06 12:52:20.369 10316 10329 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 12:52:20.369 10316 10352 D Evaluation: Frame 37 sent at 1573037540369
+11-06 12:52:20.405 10316 10352 D Evaluation: Frame 38 sent at 1573037540405
+11-06 12:52:20.444 10316 10352 D Evaluation: Frame 39 sent at 1573037540444
+11-06 12:52:20.478 10316 10352 D Evaluation: Frame 40 sent at 1573037540478
+11-06 12:52:20.513 10316 10352 D Evaluation: Frame 41 sent at 1573037540513
+11-06 12:52:20.540 10316 10352 D Evaluation: Frame 42 sent at 1573037540540
+11-06 12:52:20.574 10316 10352 D Evaluation: Frame 43 sent at 1573037540574
+11-06 12:52:20.602 10316 10352 D Evaluation: Frame 44 sent at 1573037540602
+11-06 12:52:20.653 10316 10352 D Evaluation: Frame 46 sent at 1573037540652
+11-06 12:52:20.659 10316 10316 D Poster  : At 1573037540659 location is 65.05784461719024 (latitude), and 25.46888394265182 (longitude)
+11-06 12:52:20.662 10316 10316 D Poster  : Connected to mobile network 20
+11-06 12:52:20.669 10316 10352 D Evaluation: Frame 46 sent at 1573037540669
+11-06 12:52:20.693 10316 10352 D Evaluation: Frame 47 sent at 1573037540693
+11-06 12:52:20.736 10316 10352 D Evaluation: Frame 48 sent at 1573037540736
+11-06 12:52:20.787 10316 10352 D Evaluation: Frame 49 sent at 1573037540787
+11-06 12:52:20.810 10316 10352 D Evaluation: Frame 50 sent at 1573037540810
+11-06 12:52:20.841 10316 10352 D Evaluation: Frame 51 sent at 1573037540841
+11-06 12:52:20.874 10316 10352 D Evaluation: Frame 52 sent at 1573037540874
+11-06 12:52:20.912 10316 10352 D Evaluation: Frame 53 sent at 1573037540912
+11-06 12:52:20.946 10316 10352 D Evaluation: Frame 54 sent at 1573037540946
+11-06 12:52:20.975 10316 10352 D Evaluation: Frame 55 sent at 1573037540975
+11-06 12:52:21.003 10316 10352 D Evaluation: Frame 56 sent at 1573037541003
+11-06 12:52:21.032 10316 10352 D Evaluation: Frame 57 sent at 1573037541032
+11-06 12:52:21.072 10316 10352 D Evaluation: Frame 58 sent at 1573037541072
+11-06 12:52:21.102 10316 10352 D Evaluation: Frame 59 sent at 1573037541102
+11-06 12:52:21.141 10316 10352 D Evaluation: Frame 60 sent at 1573037541141
+11-06 12:52:21.174 10316 10352 D Evaluation: Frame 61 sent at 1573037541174
+11-06 12:52:21.209 10316 10352 D Evaluation: Frame 62 sent at 1573037541209
+11-06 12:52:21.242 10316 10352 D Evaluation: Frame 63 sent at 1573037541242
+11-06 12:52:21.278 10316 10352 D Evaluation: Frame 64 sent at 1573037541278
+11-06 12:52:21.318 10316 10352 D Evaluation: Frame 65 sent at 1573037541318
+11-06 12:52:21.332 10316 10316 D stylus  : init stylus touchlistener.
+11-06 12:52:21.338 10316 10316 W Settings: Setting device_provisioned has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+11-06 12:52:21.340 10316 10316 V HiTouch_HiTouchSensor: User setup is finished.
+11-06 12:52:21.351 10316 10352 D Evaluation: Frame 66 sent at 1573037541351
+11-06 12:52:21.352 10316 10316 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:14.979431, limit is:60The moving distance of Y is:64.38133, limit is:60
+11-06 12:52:21.373 10316 10352 D Evaluation: Frame 67 sent at 1573037541373
+11-06 12:52:21.409 10316 10352 D Evaluation: Frame 68 sent at 1573037541409
+11-06 12:52:21.447 10316 10352 D Evaluation: Frame 69 sent at 1573037541447
+11-06 12:52:21.476 10316 10352 D Evaluation: Frame 70 sent at 1573037541476
+11-06 12:52:21.503 10316 10352 D Evaluation: Frame 71 sent at 1573037541503
+11-06 12:52:21.533 10316 10352 D Evaluation: Frame 72 sent at 1573037541533
+11-06 12:52:21.567 10316 10352 D Evaluation: Frame 73 sent at 1573037541567
+11-06 12:52:21.604 10316 10352 D Evaluation: Frame 74 sent at 1573037541603
+11-06 12:52:21.644 10316 10352 D Evaluation: Frame 75 sent at 1573037541644
+11-06 12:52:21.668 10316 10316 D Poster  : At 1573037541668 location is 65.0578468958082 (latitude), and 25.468881867531337 (longitude)
+11-06 12:52:21.669 10316 10316 D Poster  : Connected to mobile network 20
+11-06 12:52:21.670 10316 10352 D Evaluation: Frame 76 sent at 1573037541670
+11-06 12:52:21.697 10316 10352 D Evaluation: Frame 77 sent at 1573037541696
+11-06 12:52:21.733 10316 10352 D Evaluation: Frame 78 sent at 1573037541733
+11-06 12:52:21.768 10316 10352 D Evaluation: Frame 79 sent at 1573037541768
+11-06 12:52:21.806 10316 10352 D Evaluation: Frame 80 sent at 1573037541806
+11-06 12:52:21.843 10316 10352 D Evaluation: Frame 81 sent at 1573037541843
+11-06 12:52:21.870 10316 10352 D Evaluation: Frame 82 sent at 1573037541870
+11-06 12:52:21.912 10316 10352 D Evaluation: Frame 83 sent at 1573037541912
+11-06 12:52:21.945 10316 10352 D Evaluation: Frame 84 sent at 1573037541945
+11-06 12:52:21.979 10316 10352 D Evaluation: Frame 85 sent at 1573037541979
+11-06 12:52:22.010 10316 10352 D Evaluation: Frame 86 sent at 1573037542010
+11-06 12:52:22.045 10316 10352 D Evaluation: Frame 87 sent at 1573037542045
+11-06 12:52:22.071 10316 10352 D Evaluation: Frame 88 sent at 1573037542071
+11-06 12:52:22.115 10316 10352 D Evaluation: Frame 89 sent at 1573037542115
+11-06 12:52:22.148 10316 10352 D Evaluation: Frame 90 sent at 1573037542148
+11-06 12:52:22.177 10316 10352 D Evaluation: Frame 91 sent at 1573037542177
+11-06 12:52:22.207 10316 10352 D Evaluation: Frame 92 sent at 1573037542207
+11-06 12:52:22.241 10316 10352 D Evaluation: Frame 93 sent at 1573037542241
+11-06 12:52:22.289 10316 10352 D Evaluation: Frame 94 sent at 1573037542289
+11-06 12:52:22.310 10316 10352 D Evaluation: Frame 95 sent at 1573037542309
+11-06 12:52:22.348 10316 10352 D Evaluation: Frame 96 sent at 1573037542348
+11-06 12:52:22.376 10316 10352 D Evaluation: Frame 97 sent at 1573037542376
+11-06 12:52:22.409 10316 10352 D Evaluation: Frame 98 sent at 1573037542409
+11-06 12:52:22.443 10316 10352 D Evaluation: Frame 99 sent at 1573037542443
+11-06 12:52:22.477 10316 10352 D Evaluation: Frame 100 sent at 1573037542477
+11-06 12:52:22.506 10316 10352 D Evaluation: Frame 101 sent at 1573037542506
+11-06 12:52:22.552 10316 10352 D Evaluation: Frame 102 sent at 1573037542552
+11-06 12:52:22.585 10316 10352 D Evaluation: Frame 103 sent at 1573037542585
+11-06 12:52:22.618 10316 10352 D Evaluation: Frame 104 sent at 1573037542618
+11-06 12:52:22.649 10316 10352 D Evaluation: Frame 105 sent at 1573037542649
+11-06 12:52:22.657 10316 10316 D Poster  : At 1573037542657 location is 65.05784408925491 (latitude), and 25.468871288726216 (longitude)
+11-06 12:52:22.659 10316 10316 D Poster  : Connected to mobile network 20
+11-06 12:52:22.684 10316 10352 D Evaluation: Frame 106 sent at 1573037542684
+11-06 12:52:22.715 10316 10352 D Evaluation: Frame 107 sent at 1573037542715
+11-06 12:52:22.743 10316 10352 D Evaluation: Frame 108 sent at 1573037542743
+11-06 12:52:22.785 10316 10352 D Evaluation: Frame 109 sent at 1573037542785
+11-06 12:52:22.829 10316 10352 D Evaluation: Frame 110 sent at 1573037542829
+11-06 12:52:22.856 10316 10352 D Evaluation: Frame 111 sent at 1573037542856
+11-06 12:52:22.879 10316 10352 D Evaluation: Frame 112 sent at 1573037542879
+11-06 12:52:22.919 10316 10329 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 12:52:22.920 10316 10352 D Evaluation: Frame 113 sent at 1573037542920
+11-06 12:52:22.949 10316 10352 D Evaluation: Frame 114 sent at 1573037542949
+11-06 12:52:22.991 10316 10352 D Evaluation: Frame 115 sent at 1573037542991
+11-06 12:52:23.017 10316 10352 D Evaluation: Frame 116 sent at 1573037543017
+11-06 12:52:23.055 10316 10352 D Evaluation: Frame 117 sent at 1573037543055
+11-06 12:52:23.084 10316 10352 D Evaluation: Frame 118 sent at 1573037543084
+11-06 12:52:23.121 10316 10352 D Evaluation: Frame 119 sent at 1573037543121
+11-06 12:52:23.149 10316 10352 D Evaluation: Frame 120 sent at 1573037543149
+11-06 12:52:23.189 10316 10352 D Evaluation: Frame 121 sent at 1573037543189
+11-06 12:52:23.216 10316 10352 D Evaluation: Frame 122 sent at 1573037543216
+11-06 12:52:23.254 10316 10352 D Evaluation: Frame 123 sent at 1573037543254
+11-06 12:52:23.281 10316 10352 D Evaluation: Frame 124 sent at 1573037543281
+11-06 12:52:23.321 10316 10352 D Evaluation: Frame 125 sent at 1573037543321
+11-06 12:52:23.353 10316 10352 D Evaluation: Frame 126 sent at 1573037543353
+11-06 12:52:23.390 10316 10352 D Evaluation: Frame 127 sent at 1573037543390
+11-06 12:52:23.417 10316 10352 D Evaluation: Frame 128 sent at 1573037543417
+11-06 12:52:23.458 10316 10352 D Evaluation: Frame 129 sent at 1573037543458
+11-06 12:52:23.484 10316 10352 D Evaluation: Frame 130 sent at 1573037543484
+11-06 12:52:23.523 10316 10352 D Evaluation: Frame 131 sent at 1573037543523
+11-06 12:52:23.557 10316 10352 D Evaluation: Frame 132 sent at 1573037543557
+11-06 12:52:23.589 10316 10352 D Evaluation: Frame 133 sent at 1573037543589
+11-06 12:52:23.627 10316 10352 D Evaluation: Frame 134 sent at 1573037543627
+11-06 12:52:23.656 10316 10316 D Poster  : At 1573037543656 location is 65.05784604063176 (latitude), and 25.468866445553974 (longitude)
+11-06 12:52:23.657 10316 10316 D Poster  : Connected to mobile network 20
+11-06 12:52:23.659 10316 10352 D Evaluation: Frame 135 sent at 1573037543659
+11-06 12:52:23.685 10316 10352 D Evaluation: Frame 136 sent at 1573037543685
+11-06 12:52:23.703 10316 10316 I AwareBitmapCacher: init lrucache size: 2097152 pid=10316
+11-06 12:52:23.723 10316 10352 D Evaluation: Frame 137 sent at 1573037543723
+11-06 12:52:23.750 10316 10352 D Evaluation: Frame 138 sent at 1573037543750
+11-06 12:52:23.793 10316 10352 D Evaluation: Frame 139 sent at 1573037543793
+11-06 12:52:23.830 10316 10352 D Evaluation: Frame 140 sent at 1573037543830
+11-06 12:52:23.857 10316 10352 D Evaluation: Frame 141 sent at 1573037543857
+11-06 12:52:23.898 10316 10352 D Evaluation: Frame 142 sent at 1573037543898
+11-06 12:52:23.926 10316 10352 D Evaluation: Frame 143 sent at 1573037543926
+11-06 12:52:23.954 10316 10352 D Evaluation: Frame 144 sent at 1573037543954
+11-06 12:52:24.009 10316 10352 D Evaluation: Frame 145 sent at 1573037544009
+11-06 12:52:24.028 10316 10352 D Evaluation: Frame 146 sent at 1573037544028
+11-06 12:52:24.056 10316 10316 I Poster  :  onPause() called.
+11-06 12:52:24.058 10316 10352 D Evaluation: Frame 147 sent at 1573037544058
+11-06 12:52:24.181 10316 10316 I Camera  : close camera: 0, package name: symlab.cloudridar.arhud
+11-06 12:52:24.181 10316 10316 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 10316 ,uidOf3RdApk: 10149 ,permType: 0 ,permCfg: 0
+11-06 12:52:24.183 10316 10316 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = false
+11-06 12:52:24.225 10316 10316 D ZrHung.AppEyeUiProbe: stop checker.
+11-06 12:52:24.240 10316 10316 I Poster  :  surfaceDestroyed() called.
+11-06 12:52:24.242 10316 10316 D ViewRootImpl[MainActivity]: surface should not be released
+11-06 12:52:24.242 10316 10316 I Poster  :  onStop() called.
+11-06 12:52:24.264 10316 10370 W libEGL  : EGLNativeWindowType 0xe5af0008 disconnect failed
+11-06 12:52:24.655 10316 10316 D Poster  : At 1573037544655 location is 65.05784849571337 (latitude), and 25.468863498559088 (longitude)
+11-06 12:52:24.659 10316 10316 D Poster  : Connected to mobile network 20
+11-06 12:52:24.682 10316 10316 D Latitude: status
+11-06 12:52:24.717 10316 10343 D ZrHung.AppEyeUiProbe: Current Activity:false
+11-06 12:52:24.717 10316 10343 D ZrHung.AppEyeUiProbe: not watching, wait.

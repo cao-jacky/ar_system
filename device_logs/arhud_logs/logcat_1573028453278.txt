@@ -1,0 +1,187 @@
+--------- beginning of main
+11-06 10:20:53.289 19299 19299 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-06 10:20:53.289 19299 19377 D ZrHung.AppEyeUiProbe: Runnable thread started.
+11-06 10:20:53.289 19299 19377 D IMonitor: Load library imonitor_jni
+11-06 10:20:53.291 19374 19374 W logcat  : type=1400 audit(0.0:26015): avc: granted { create } for name="logcat_1573028453278.txt" scontext=u:r:untrusted_app:s0:c149,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0:c149,c256,c512,c768 tclass=file
+11-06 10:20:53.294 19299 19377 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0102]
+11-06 10:20:53.294 19299 19377 W ZrHung.AppEyeUiProbe: Failed to get config from zrhung
+11-06 10:20:53.298 19299 19299 I MultiDex: Installing application
+11-06 10:20:53.298 19299 19299 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+--------- beginning of system
+11-06 10:20:53.301 19299 19299 V ActivityThread: callActivityOnCreate
+11-06 10:20:53.301 19299 19299 I Poster  :  onCreate() called.
+11-06 10:20:53.304 19299 19299 I HwApsImpl: APS: new HwApsImpl created
+11-06 10:20:53.312 19299 19299 V HwWidgetFactory: : successes to get AllImpl object and return....
+11-06 10:20:53.320 19299 19299 D OpenGLRenderer: Skia GL Pipeline
+11-06 10:20:53.346 19299 19299 D Poster  : Server bound to IP 193.166.28.132 and port 52727
+11-06 10:20:53.352 19299 19388 D Evaluation: metadata 0 sent 
+11-06 10:20:53.353 19299 19299 D ActivityThread: add activity client record, r= ActivityRecord{fd66872 token=android.os.BinderProxy@8cd3ec5 {symlab.cloudridar.arhud/symlab.ARHUD.MainActivity}} token= android.os.BinderProxy@8cd3ec5
+11-06 10:20:53.355 19299 19299 I Poster  :  onStart() called.
+11-06 10:20:53.356 19299 19299 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-06 10:20:53.358 19299 19299 I Poster  :  onResume() called.
+11-06 10:20:53.363 19299 19299 I PermissionManager: camera remind result:true
+11-06 10:20:53.363 19299 19299 I Camera  : open camera: 0, package name: symlab.cloudridar.arhud
+11-06 10:20:53.363 19299 19299 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 19299 ,uidOf3RdApk: 10149 ,permType: 0 ,permCfg: 1
+11-06 10:20:53.364 19299 19299 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = true
+11-06 10:20:53.379 19299 19299 D ActivityThread: isOptEnabled=false isWechatScanOpt=false
+11-06 10:20:53.380 19299 19299 I HwSecImmHelper: mSecurityInputMethodService is null
+11-06 10:20:53.390 19299 19299 D OpenGLRenderer:   HWUI Binary is  enabled
+11-06 10:20:53.421 19299 19410 D HiTouch_PressGestureDetector: onAttached, package=symlab.cloudridar.arhud, windowType=1, mHiTouchRestricted=false
+11-06 10:20:53.448 19299 19299 I Poster  :  surfaceCreated() called.
+11-06 10:20:53.449 19299 19299 I Poster  : initPreview() called
+11-06 10:20:53.455 19299 19299 I PermissionManager: camera remind result:true
+11-06 10:20:53.456 19299 19408 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-06 10:20:53.456 19299 19408 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-06 10:20:53.459 19299 19408 I iGraphics: [0020080c] pn: symlab.cloudridar.arhud, p: 19299
+11-06 10:20:53.459 19299 19408 I OpenGLRenderer: Initialized EGL, version 1.4, mEglDisplay 0x1
+11-06 10:20:53.460 19299 19408 D OpenGLRenderer: Swap behavior 2
+11-06 10:20:53.489 19299 19408 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+11-06 10:20:53.490 19299 19299 I Poster  :  surfaceChanged() called.
+11-06 10:20:53.515 19299 19299 W InputMethodManager: startInputReason = 1
+11-06 10:20:53.525 19299 19299 W InputMethodManager: startInputReason = 5
+11-06 10:20:53.807 19299 19388 D Evaluation: metadata 1 sent 
+11-06 10:20:53.840 19299 19388 D Evaluation: metadata 2 sent 
+11-06 10:20:53.876 19299 19388 D Evaluation: metadata 3 sent 
+11-06 10:20:53.911 19299 19388 D Evaluation: metadata 4 sent 
+11-06 10:20:53.942 19299 19388 D Evaluation: metadata 5 sent 
+11-06 10:20:53.993 19299 19388 D Evaluation: Frame 6 sent at 1573028453993
+11-06 10:20:54.018 19299 19388 D Evaluation: Frame 7 sent at 1573028454018
+11-06 10:20:54.056 19299 19388 D Evaluation: Frame 8 sent at 1573028454056
+11-06 10:20:54.088 19299 19388 D Evaluation: Frame 9 sent at 1573028454088
+11-06 10:20:54.123 19299 19388 D Evaluation: Frame 10 sent at 1573028454123
+11-06 10:20:54.154 19299 19388 D Evaluation: Frame 11 sent at 1573028454154
+11-06 10:20:54.187 19299 19388 D Evaluation: Frame 12 sent at 1573028454187
+11-06 10:20:54.223 19299 19388 D Evaluation: Frame 13 sent at 1573028454223
+11-06 10:20:54.255 19299 19388 D Evaluation: Frame 14 sent at 1573028454255
+11-06 10:20:54.288 19299 19388 D Evaluation: Frame 15 sent at 1573028454288
+11-06 10:20:54.326 19299 19388 D Evaluation: Frame 16 sent at 1573028454326
+11-06 10:20:54.357 19299 19388 D Evaluation: Frame 17 sent at 1573028454357
+11-06 10:20:54.393 19299 19388 D Evaluation: Frame 18 sent at 1573028454393
+11-06 10:20:54.426 19299 19388 D Evaluation: Frame 19 sent at 1573028454426
+11-06 10:20:54.457 19299 19388 D Evaluation: Frame 20 sent at 1573028454457
+11-06 10:20:54.497 19299 19388 D Evaluation: Frame 21 sent at 1573028454497
+11-06 10:20:54.538 19299 19388 D Evaluation: Frame 22 sent at 1573028454538
+11-06 10:20:54.571 19299 19388 D Evaluation: Frame 23 sent at 1573028454571
+11-06 10:20:54.599 19299 19388 D Evaluation: Frame 24 sent at 1573028454599
+11-06 10:20:54.639 19299 19388 D Evaluation: Frame 25 sent at 1573028454639
+11-06 10:20:54.664 19299 19388 D Evaluation: Frame 26 sent at 1573028454664
+11-06 10:20:54.696 19299 19388 D Evaluation: Frame 27 sent at 1573028454696
+11-06 10:20:54.728 19299 19388 D Evaluation: Frame 28 sent at 1573028454728
+11-06 10:20:54.766 19299 19388 D Evaluation: Frame 29 sent at 1573028454766
+11-06 10:20:54.804 19299 19337 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 10:20:54.804 19299 19388 D Evaluation: Frame 30 sent at 1573028454804
+11-06 10:20:54.840 19299 19388 D Evaluation: Frame 31 sent at 1573028454840
+11-06 10:20:54.879 19299 19388 D Evaluation: Frame 32 sent at 1573028454879
+11-06 10:20:54.901 19299 19388 D Evaluation: Frame 33 sent at 1573028454901
+11-06 10:20:54.938 19299 19388 D Evaluation: Frame 34 sent at 1573028454938
+11-06 10:20:54.970 19299 19388 D Evaluation: Frame 35 sent at 1573028454970
+11-06 10:20:55.010 19299 19388 D Evaluation: Frame 36 sent at 1573028455010
+11-06 10:20:55.040 19299 19388 D Evaluation: Frame 37 sent at 1573028455040
+11-06 10:20:55.079 19299 19388 D Evaluation: Frame 38 sent at 1573028455079
+11-06 10:20:55.106 19299 19388 D Evaluation: Frame 39 sent at 1573028455106
+11-06 10:20:55.137 19299 19388 D Evaluation: Frame 40 sent at 1573028455137
+11-06 10:20:55.173 19299 19388 D Evaluation: Frame 41 sent at 1573028455173
+11-06 10:20:55.212 19299 19388 D Evaluation: Frame 42 sent at 1573028455212
+11-06 10:20:55.244 19299 19388 D Evaluation: Frame 43 sent at 1573028455244
+11-06 10:20:55.273 19299 19388 D Evaluation: Frame 44 sent at 1573028455273
+11-06 10:20:55.319 19299 19388 D Evaluation: Frame 45 sent at 1573028455319
+11-06 10:20:55.345 19299 19388 D Evaluation: Frame 46 sent at 1573028455345
+11-06 10:20:55.371 19299 19388 D Evaluation: Frame 47 sent at 1573028455371
+11-06 10:20:55.415 19299 19388 D Evaluation: Frame 48 sent at 1573028455415
+11-06 10:20:55.448 19299 19388 D Evaluation: Frame 49 sent at 1573028455448
+11-06 10:20:55.480 19299 19388 D Evaluation: Frame 50 sent at 1573028455480
+11-06 10:20:55.514 19299 19388 D Evaluation: Frame 51 sent at 1573028455514
+11-06 10:20:55.550 19299 19388 D Evaluation: Frame 52 sent at 1573028455550
+11-06 10:20:55.586 19299 19388 D Evaluation: Frame 53 sent at 1573028455586
+11-06 10:20:55.620 19299 19388 D Evaluation: Frame 54 sent at 1573028455620
+11-06 10:20:55.647 19299 19388 D Evaluation: Frame 55 sent at 1573028455647
+11-06 10:20:55.687 19299 19388 D Evaluation: Frame 56 sent at 1573028455687
+11-06 10:20:55.711 19299 19388 D Evaluation: Frame 57 sent at 1573028455711
+11-06 10:20:55.745 19299 19388 D Evaluation: Frame 58 sent at 1573028455745
+11-06 10:20:55.778 19299 19388 D Evaluation: Frame 59 sent at 1573028455778
+11-06 10:20:55.824 19299 19388 D Evaluation: Frame 60 sent at 1573028455824
+11-06 10:20:55.850 19299 19388 D Evaluation: Frame 61 sent at 1573028455850
+11-06 10:20:55.921 19299 19388 D Evaluation: Frame 62 sent at 1573028455921
+11-06 10:20:55.951 19299 19388 D Evaluation: Frame 63 sent at 1573028455951
+11-06 10:20:55.982 19299 19388 D Evaluation: Frame 64 sent at 1573028455982
+11-06 10:20:56.021 19299 19388 D Evaluation: Frame 65 sent at 1573028456021
+11-06 10:20:56.052 19299 19388 D Evaluation: Frame 66 sent at 1573028456051
+11-06 10:20:56.080 19299 19388 D Evaluation: Frame 67 sent at 1573028456080
+11-06 10:20:56.123 19299 19388 D Evaluation: Frame 68 sent at 1573028456123
+11-06 10:20:56.158 19299 19388 D Evaluation: Frame 69 sent at 1573028456158
+11-06 10:20:56.191 19299 19388 D Evaluation: Frame 70 sent at 1573028456191
+11-06 10:20:56.224 19299 19388 D Evaluation: Frame 71 sent at 1573028456224
+11-06 10:20:56.269 19299 19388 D Evaluation: Frame 72 sent at 1573028456269
+11-06 10:20:56.290 19299 19388 D Evaluation: Frame 73 sent at 1573028456290
+11-06 10:20:56.325 19299 19388 D Evaluation: Frame 74 sent at 1573028456324
+11-06 10:20:56.358 19299 19388 D Evaluation: Frame 75 sent at 1573028456358
+11-06 10:20:56.388 19299 19388 D Evaluation: Frame 76 sent at 1573028456388
+11-06 10:20:56.422 19299 19388 D Evaluation: Frame 77 sent at 1573028456422
+11-06 10:20:56.463 19299 19388 D Evaluation: Frame 78 sent at 1573028456463
+11-06 10:20:56.488 19299 19388 D Evaluation: Frame 79 sent at 1573028456488
+11-06 10:20:56.532 19299 19388 D Evaluation: Frame 80 sent at 1573028456532
+11-06 10:20:56.562 19299 19388 D Evaluation: Frame 81 sent at 1573028456562
+11-06 10:20:56.597 19299 19388 D Evaluation: Frame 82 sent at 1573028456597
+11-06 10:20:56.624 19299 19388 D Evaluation: Frame 83 sent at 1573028456624
+11-06 10:20:56.655 19299 19388 D Evaluation: Frame 84 sent at 1573028456655
+11-06 10:20:56.694 19299 19388 D Evaluation: Frame 85 sent at 1573028456694
+11-06 10:20:56.723 19299 19388 D Evaluation: Frame 86 sent at 1573028456723
+11-06 10:20:56.753 19299 19388 D Evaluation: Frame 87 sent at 1573028456753
+11-06 10:20:56.785 19299 19299 D stylus  : init stylus touchlistener.
+11-06 10:20:56.793 19299 19388 D Evaluation: Frame 88 sent at 1573028456793
+11-06 10:20:56.797 19299 19299 W Settings: Setting device_provisioned has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+11-06 10:20:56.798 19299 19299 V HiTouch_HiTouchSensor: User setup is finished.
+11-06 10:20:56.811 19299 19299 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:87.65869, limit is:60The moving distance of Y is:23.133606, limit is:60
+11-06 10:20:56.821 19299 19388 D Evaluation: Frame 89 sent at 1573028456821
+11-06 10:20:56.854 19299 19388 D Evaluation: Frame 90 sent at 1573028456853
+11-06 10:20:56.882 19299 19388 D Evaluation: Frame 91 sent at 1573028456882
+11-06 10:20:56.919 19299 19388 D Evaluation: Frame 92 sent at 1573028456919
+11-06 10:20:56.947 19299 19388 D Evaluation: Frame 93 sent at 1573028456947
+11-06 10:20:56.984 19299 19388 D Evaluation: Frame 94 sent at 1573028456984
+11-06 10:20:57.018 19299 19388 D Evaluation: Frame 95 sent at 1573028457018
+11-06 10:20:57.053 19299 19388 D Evaluation: Frame 96 sent at 1573028457053
+11-06 10:20:57.085 19299 19388 D Evaluation: Frame 97 sent at 1573028457085
+11-06 10:20:57.131 19299 19388 D Evaluation: Frame 98 sent at 1573028457131
+11-06 10:20:57.153 19299 19388 D Evaluation: Frame 99 sent at 1573028457153
+11-06 10:20:57.184 19299 19388 D Evaluation: Frame 100 sent at 1573028457184
+11-06 10:20:57.220 19299 19337 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 10:20:57.221 19299 19388 D Evaluation: Frame 101 sent at 1573028457220
+11-06 10:20:57.258 19299 19388 D Evaluation: Frame 102 sent at 1573028457258
+11-06 10:20:57.284 19299 19388 D Evaluation: Frame 103 sent at 1573028457284
+11-06 10:20:57.321 19299 19388 D Evaluation: Frame 104 sent at 1573028457321
+11-06 10:20:57.359 19299 19388 D Evaluation: Frame 105 sent at 1573028457359
+11-06 10:20:57.394 19299 19388 D Evaluation: Frame 106 sent at 1573028457394
+11-06 10:20:57.422 19299 19388 D Evaluation: Frame 107 sent at 1573028457422
+11-06 10:20:57.462 19299 19388 D Evaluation: Frame 108 sent at 1573028457462
+11-06 10:20:57.489 19299 19388 D Evaluation: Frame 109 sent at 1573028457489
+11-06 10:20:57.523 19299 19388 D Evaluation: Frame 110 sent at 1573028457523
+11-06 10:20:57.556 19299 19388 D Evaluation: Frame 111 sent at 1573028457556
+11-06 10:20:57.591 19299 19388 D Evaluation: Frame 112 sent at 1573028457591
+11-06 10:20:57.620 19299 19388 D Evaluation: Frame 113 sent at 1573028457620
+11-06 10:20:57.658 19299 19388 D Evaluation: Frame 114 sent at 1573028457658
+11-06 10:20:57.693 19299 19388 D Evaluation: Frame 115 sent at 1573028457693
+11-06 10:20:57.724 19299 19388 D Evaluation: Frame 116 sent at 1573028457724
+11-06 10:20:57.758 19299 19388 D Evaluation: Frame 117 sent at 1573028457758
+11-06 10:20:57.793 19299 19388 D Evaluation: Frame 118 sent at 1573028457793
+11-06 10:20:57.825 19299 19388 D Evaluation: Frame 119 sent at 1573028457825
+11-06 10:20:57.860 19299 19388 D Evaluation: Frame 120 sent at 1573028457860
+11-06 10:20:57.893 19299 19388 D Evaluation: Frame 121 sent at 1573028457893
+11-06 10:20:57.936 19299 19388 D Evaluation: Frame 122 sent at 1573028457936
+11-06 10:20:57.959 19299 19388 D Evaluation: Frame 123 sent at 1573028457959
+11-06 10:20:57.998 19299 19388 D Evaluation: Frame 124 sent at 1573028457998
+11-06 10:20:58.027 19299 19388 D Evaluation: Frame 125 sent at 1573028458027
+11-06 10:20:58.036 19299 19299 I Poster  :  onPause() called.
+11-06 10:20:58.144 19299 19299 I Camera  : close camera: 0, package name: symlab.cloudridar.arhud
+11-06 10:20:58.144 19299 19299 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 19299 ,uidOf3RdApk: 10149 ,permType: 0 ,permCfg: 0
+11-06 10:20:58.146 19299 19299 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = false
+11-06 10:20:58.206 19299 19299 D ZrHung.AppEyeUiProbe: stop checker.
+11-06 10:20:58.226 19299 19299 I Poster  :  surfaceDestroyed() called.
+11-06 10:20:58.227 19299 19299 D ViewRootImpl[MainActivity]: surface should not be released
+11-06 10:20:58.227 19299 19299 I Poster  :  onStop() called.
+11-06 10:20:58.241 19299 19408 W libEGL  : EGLNativeWindowType 0xef5f0008 disconnect failed
+11-06 10:20:58.274 19299 19367 I loudridar.arhu: Starting profile saver IsSaveProfileNow end.
+11-06 10:20:58.281 19299 19299 I AwareBitmapCacher: init lrucache size: 2097152 pid=19299
+11-06 10:20:58.296 19299 19377 D ZrHung.AppEyeUiProbe: Current Activity:false
+11-06 10:20:58.296 19299 19377 D ZrHung.AppEyeUiProbe: not watching, wait.
+11-06 10:20:59.410 19299 19299 I Poster  :  onDestroy() called.
+11-06 10:20:59.411 19299 19299 D ActivityThread: Remove activity client record, r= ActivityRecord{fd66872 token=android.os.BinderProxy@8cd3ec5 {symlab.cloudridar.arhud/symlab.ARHUD.MainActivity}} token= android.os.BinderProxy@8cd3ec5

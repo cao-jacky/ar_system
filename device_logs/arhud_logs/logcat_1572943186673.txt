@@ -1,0 +1,50 @@
+--------- beginning of main
+11-05 10:39:46.460  7605  7605 I loudridar.arhu: Late-enabling -Xcheck:jni
+11-05 10:39:46.496  7605  7605 I loudridar.arhu: Reinit property: dalvik.vm.checkjni= false
+11-05 10:39:46.507  7605  7605 W re-initialized>: type=1400 audit(0.0:1310): avc: denied { read } for name="u:object_r:mmi_prop:s0" dev="tmpfs" ino=9047 scontext=u:r:untrusted_app:s0:c149,c256,c512,c768 tcontext=u:object_r:mmi_prop:s0 tclass=file permissive=0
+11-05 10:39:46.508  7605  7605 D ZrHung.AppEyeUiProbe: AppEyeUIP created.
+11-05 10:39:46.510  7605  7605 E libc    : Access denied finding property "runtime.mmitest.isrunning"
+--------- beginning of system
+11-05 10:39:46.514  7605  7605 D ActivityThread: Attach thread to application
+11-05 10:39:46.517  7605  7612 E loudridar.arhu: Failed to send DDMS packet REAQ to debugger (-1 of 20): Broken pipe
+11-05 10:39:46.594  7605  7630 I HwApiCacheMangerEx: apicache path=/storage/emulated/0 state=mounted key=symlab.cloudridar.arhud#10149#256
+11-05 10:39:46.595  7605  7630 I HwApiCacheMangerEx: apicache path=/storage/emulated/0 state=mounted key=symlab.cloudridar.arhud#10149#0
+11-05 10:39:46.663  7605  7605 I loudridar.arhu: QarthPatchMonintor::Init
+11-05 10:39:46.663  7605  7605 I loudridar.arhu: 
+11-05 10:39:46.663  7605  7605 I loudridar.arhu: QarthPatchMonintor::StartWatch
+11-05 10:39:46.663  7605  7605 I loudridar.arhu: 
+11-05 10:39:46.663  7605  7605 I loudridar.arhu: QarthPatchMonintor::WatchPackage: /data/hotpatch/fwkhotpatch/
+11-05 10:39:46.663  7605  7605 I loudridar.arhu: 
+11-05 10:39:46.663  7605  7605 I loudridar.arhu: QarthPatchMonintor::CheckAndWatchPatch: /data/hotpatch/fwkhotpatch/symlab.cloudridar.arhud
+11-05 10:39:46.663  7605  7605 I loudridar.arhu: 
+11-05 10:39:46.663  7605  7605 I loudridar.arhu: QarthPatchMonintor::CheckAndWatchPatch: /data/hotpatch/fwkhotpatch/all
+11-05 10:39:46.663  7605  7605 I loudridar.arhu: 
+11-05 10:39:46.663  7605  7605 I loudridar.arhu: QarthPatchMonintor::Run
+11-05 10:39:46.664  7605  7605 I loudridar.arhu: 
+11-05 10:39:46.664  7605  7636 I loudridar.arhu: QarthPatchMonintor::Reading
+11-05 10:39:46.664  7605  7636 I loudridar.arhu: 
+11-05 10:39:46.664  7605  7636 I loudridar.arhu: QarthPatchMonintor::CheckNotifyEvent
+11-05 10:39:46.664  7605  7636 I loudridar.arhu: 
+11-05 10:39:46.664  7605  7636 I loudridar.arhu: QarthPatchMonintor::CheckNotifyEvent before read
+11-05 10:39:46.664  7605  7636 I loudridar.arhu: 
+11-05 10:39:46.668  7605  7605 I MultiDex: VM with version 2.1.0 has multidex support
+11-05 10:39:46.668  7605  7605 I MultiDex: Installing application
+11-05 10:39:46.668  7605  7605 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+11-05 10:39:46.669  7605  7630 I AwareBitmapCacher: init processName:symlab.cloudridar.arhud pid=7605 uid=10149
+11-05 10:39:46.672  7605  7605 I FirebaseInitProvider: FirebaseApp initialization unsuccessful
+11-05 10:39:46.673  7605  7638 E AwareLog: AtomicFileUtils: readFileLines file not exist: android.util.AtomicFile@3f667dc
+11-05 10:39:46.674  7605  7638 E AwareLog: AtomicFileUtils: readFileLines file not exist: android.util.AtomicFile@3b770e5
+11-05 10:39:46.679  7605  7605 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-05 10:39:46.679  7605  7643 D ZrHung.AppEyeUiProbe: Runnable thread started.
+11-05 10:39:46.679  7605  7643 D IMonitor: Load library imonitor_jni
+11-05 10:39:46.683  7605  7643 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0102]
+11-05 10:39:46.683  7605  7643 W ZrHung.AppEyeUiProbe: Failed to get config from zrhung
+11-05 10:39:46.688  7605  7605 I MultiDex: Installing application
+11-05 10:39:46.688  7605  7605 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+11-05 10:39:46.687  7641  7641 W logcat  : type=1400 audit(0.0:1311): avc: granted { create } for name="logcat_1572943186673.txt" scontext=u:r:untrusted_app:s0:c149,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0:c149,c256,c512,c768 tclass=file
+11-05 10:39:46.699  7605  7605 V ActivityThread: callActivityOnCreate
+11-05 10:39:46.699  7605  7605 I Poster  :  onCreate() called.
+11-05 10:39:46.702  7605  7605 I HwApsImpl: APS: new HwApsImpl created
+11-05 10:39:46.708  7605  7605 V HwWidgetFactory: : successes to get AllImpl object and return....
+11-05 10:39:46.715  7605  7605 D OpenGLRenderer: Skia GL Pipeline
+11-05 10:39:46.735  7605  7605 D Poster  : config file error

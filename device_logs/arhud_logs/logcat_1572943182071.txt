@@ -1,0 +1,15 @@
+--------- beginning of system
+11-05 10:39:41.914  7426  7426 D ActivityThread: Attach thread to application
+--------- beginning of main
+11-05 10:39:42.087  7484  7484 W logcat  : type=1400 audit(0.0:1103): avc: granted { create } for name="logcat_1572943182071.txt" scontext=u:r:untrusted_app:s0:c149,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0:c149,c256,c512,c768 tclass=file
+11-05 10:39:42.035  7426  7470 I HwApiCacheMangerEx: apicache path=/storage/emulated/0 state=mounted key=symlab.cloudridar.arhud#10149#256
+11-05 10:39:42.036  7426  7470 I HwApiCacheMangerEx: apicache path=/storage/emulated/0 state=mounted key=symlab.cloudridar.arhud#10149#0
+11-05 10:39:42.087  7484  7484 W logcat  : type=1400 audit(0.0:1103): avc: granted { create } for name="logcat_1572943182071.txt" scontext=u:r:untrusted_app:s0:c149,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0:c149,c256,c512,c768 tclass=file
+11-05 10:39:42.091  7426  7426 I MultiDex: Installing application
+11-05 10:39:42.091  7426  7426 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+11-05 10:39:42.094  7426  7426 V ActivityThread: callActivityOnCreate
+11-05 10:39:42.094  7426  7426 I Poster  :  onCreate() called.
+11-05 10:39:42.097  7426  7426 I HwApsImpl: APS: new HwApsImpl created
+11-05 10:39:42.103  7426  7426 V HwWidgetFactory: : successes to get AllImpl object and return....
+11-05 10:39:42.112  7426  7426 D OpenGLRenderer: Skia GL Pipeline
+11-05 10:39:42.139  7426  7426 D Poster  : config file error

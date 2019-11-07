@@ -1,0 +1,1484 @@
+--------- beginning of main
+11-06 11:15:20.495 29663 29663 W logcat  : type=1400 audit(0.0:34522): avc: granted { create } for name="logcat_1573031720488.txt" scontext=u:r:untrusted_app:s0:c149,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0:c149,c256,c512,c768 tclass=file
+11-06 11:15:20.495 29636 29665 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0102]
+11-06 11:15:20.495 29636 29665 W ZrHung.AppEyeUiProbe: Failed to get config from zrhung
+11-06 11:15:20.503 29636 29636 I MultiDex: Installing application
+11-06 11:15:20.503 29636 29636 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+--------- beginning of system
+11-06 11:15:20.507 29636 29636 V ActivityThread: callActivityOnCreate
+11-06 11:15:20.507 29636 29636 I Poster  :  onCreate() called.
+11-06 11:15:20.510 29636 29636 I HwApsImpl: APS: new HwApsImpl created
+11-06 11:15:20.516 29636 29636 V HwWidgetFactory: : successes to get AllImpl object and return....
+11-06 11:15:20.523 29636 29636 D OpenGLRenderer: Skia GL Pipeline
+11-06 11:15:20.547 29636 29636 D Poster  : Server bound to IP 193.166.28.132 and port 52727
+11-06 11:15:20.550 29636 29674 D Evaluation: metadata 0 sent 
+11-06 11:15:20.552 29636 29636 D ActivityThread: add activity client record, r= ActivityRecord{fd66872 token=android.os.BinderProxy@8cd3ec5 {symlab.cloudridar.arhud/symlab.ARHUD.MainActivity}} token= android.os.BinderProxy@8cd3ec5
+11-06 11:15:20.554 29636 29636 I Poster  :  onStart() called.
+11-06 11:15:20.554 29636 29636 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-06 11:15:20.555 29636 29636 I Poster  :  onResume() called.
+11-06 11:15:20.559 29636 29636 I PermissionManager: camera remind result:true
+11-06 11:15:20.559 29636 29636 I Camera  : open camera: 0, package name: symlab.cloudridar.arhud
+11-06 11:15:20.559 29636 29636 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 29636 ,uidOf3RdApk: 10149 ,permType: 0 ,permCfg: 1
+11-06 11:15:20.560 29636 29636 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = true
+11-06 11:15:20.570 29636 29636 D ActivityThread: isOptEnabled=false isWechatScanOpt=false
+11-06 11:15:20.572 29636 29636 I HwSecImmHelper: mSecurityInputMethodService is null
+11-06 11:15:20.578 29636 29636 D OpenGLRenderer:   HWUI Binary is  enabled
+11-06 11:15:20.598 29636 29698 D HiTouch_PressGestureDetector: onAttached, package=symlab.cloudridar.arhud, windowType=1, mHiTouchRestricted=false
+11-06 11:15:20.608 29636 29693 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-06 11:15:20.608 29636 29693 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-06 11:15:20.608 29636 29693 I iGraphics: [0020080c] pn: symlab.cloudridar.arhud, p: 29636
+11-06 11:15:20.609 29636 29693 I OpenGLRenderer: Initialized EGL, version 1.4, mEglDisplay 0x1
+11-06 11:15:20.609 29636 29693 D OpenGLRenderer: Swap behavior 2
+11-06 11:15:20.619 29636 29693 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+11-06 11:15:20.628 29636 29636 I Poster  :  surfaceCreated() called.
+11-06 11:15:20.628 29636 29636 I Poster  : initPreview() called
+11-06 11:15:20.632 29636 29636 I PermissionManager: camera remind result:true
+11-06 11:15:20.638 29636 29636 I Poster  :  surfaceChanged() called.
+11-06 11:15:20.656 29636 29636 W InputMethodManager: startInputReason = 1
+11-06 11:15:20.674 29636 29636 W InputMethodManager: startInputReason = 5
+11-06 11:15:20.916 29636 29674 D Evaluation: metadata 1 sent 
+11-06 11:15:20.943 29636 29674 D Evaluation: metadata 2 sent 
+11-06 11:15:20.980 29636 29674 D Evaluation: metadata 3 sent 
+11-06 11:15:21.014 29636 29674 D Evaluation: metadata 4 sent 
+11-06 11:15:21.048 29636 29674 D Evaluation: metadata 5 sent 
+11-06 11:15:21.104 29636 29674 D Evaluation: Frame 6 sent at 1573031721103
+11-06 11:15:21.126 29636 29674 D Evaluation: Frame 7 sent at 1573031721126
+11-06 11:15:21.158 29636 29674 D Evaluation: Frame 8 sent at 1573031721158
+11-06 11:15:21.191 29636 29674 D Evaluation: Frame 9 sent at 1573031721191
+11-06 11:15:21.232 29636 29674 D Evaluation: Frame 10 sent at 1573031721232
+11-06 11:15:21.259 29636 29674 D Evaluation: Frame 11 sent at 1573031721259
+11-06 11:15:21.296 29636 29674 D Evaluation: Frame 12 sent at 1573031721296
+11-06 11:15:21.326 29636 29674 D Evaluation: Frame 13 sent at 1573031721326
+11-06 11:15:21.363 29636 29674 D Evaluation: Frame 14 sent at 1573031721363
+11-06 11:15:21.394 29636 29674 D Evaluation: Frame 15 sent at 1573031721394
+11-06 11:15:21.428 29636 29674 D Evaluation: Frame 16 sent at 1573031721428
+11-06 11:15:21.460 29636 29651 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:15:21.460 29636 29674 D Evaluation: Frame 17 sent at 1573031721460
+11-06 11:15:21.494 29636 29674 D Evaluation: Frame 18 sent at 1573031721494
+11-06 11:15:21.527 29636 29674 D Evaluation: Frame 19 sent at 1573031721527
+11-06 11:15:21.566 29636 29674 D Evaluation: Frame 20 sent at 1573031721566
+11-06 11:15:21.599 29636 29674 D Evaluation: Frame 21 sent at 1573031721599
+11-06 11:15:21.634 29636 29674 D Evaluation: Frame 22 sent at 1573031721634
+11-06 11:15:21.662 29636 29674 D Evaluation: Frame 23 sent at 1573031721662
+11-06 11:15:21.696 29636 29674 D Evaluation: Frame 24 sent at 1573031721696
+11-06 11:15:21.730 29636 29674 D Evaluation: Frame 25 sent at 1573031721730
+11-06 11:15:21.763 29636 29674 D Evaluation: Frame 26 sent at 1573031721763
+11-06 11:15:21.804 29636 29674 D Evaluation: Frame 27 sent at 1573031721804
+11-06 11:15:21.841 29636 29674 D Evaluation: Frame 28 sent at 1573031721841
+11-06 11:15:21.842 29636 29674 D Evaluation: 0 res for frame 6 received at 1573031721842
+11-06 11:15:21.878 29636 29674 D Evaluation: Frame 29 sent at 1573031721878
+11-06 11:15:21.880 29636 29674 D Evaluation: 0 res for frame 7 received at 1573031721880
+11-06 11:15:21.940 29636 29674 D Evaluation: Frame 31 sent at 1573031721940
+11-06 11:15:21.941 29636 29674 D Evaluation: 0 res for frame 8 received at 1573031721941
+11-06 11:15:21.961 29636 29674 D Evaluation: Frame 31 sent at 1573031721961
+11-06 11:15:21.979 29636 29674 D Evaluation: Frame 32 sent at 1573031721979
+11-06 11:15:22.013 29636 29674 D Evaluation: Frame 33 sent at 1573031722013
+11-06 11:15:22.014 29636 29674 D Evaluation: 0 res for frame 9 received at 1573031722014
+11-06 11:15:22.082 29636 29674 D Evaluation: Frame 34 sent at 1573031722082
+11-06 11:15:22.083 29636 29674 D Evaluation: 0 res for frame 10 received at 1573031722083
+11-06 11:15:22.124 29636 29674 D Evaluation: Frame 35 sent at 1573031722123
+11-06 11:15:22.125 29636 29674 D Evaluation: 0 res for frame 11 received at 1573031722125
+11-06 11:15:22.157 29636 29674 D Evaluation: Frame 36 sent at 1573031722157
+11-06 11:15:22.159 29636 29674 D Evaluation: 0 res for frame 12 received at 1573031722159
+11-06 11:15:22.188 29636 29674 D Evaluation: Frame 37 sent at 1573031722188
+11-06 11:15:22.221 29636 29674 D Evaluation: Frame 38 sent at 1573031722221
+11-06 11:15:22.222 29636 29674 D Evaluation: 0 res for frame 13 received at 1573031722222
+11-06 11:15:22.262 29636 29674 D Evaluation: Frame 39 sent at 1573031722262
+11-06 11:15:22.263 29636 29674 D Evaluation: 0 res for frame 14 received at 1573031722263
+11-06 11:15:22.296 29636 29674 D Evaluation: Frame 40 sent at 1573031722296
+11-06 11:15:22.298 29636 29674 D Evaluation: 0 res for frame 15 received at 1573031722298
+11-06 11:15:22.330 29636 29674 D Evaluation: Frame 41 sent at 1573031722330
+11-06 11:15:22.332 29636 29674 D Evaluation: 0 res for frame 16 received at 1573031722332
+11-06 11:15:22.355 29636 29674 D Evaluation: Frame 42 sent at 1573031722355
+11-06 11:15:22.397 29636 29674 D Evaluation: Frame 43 sent at 1573031722397
+11-06 11:15:22.399 29636 29674 D Evaluation: 0 res for frame 17 received at 1573031722399
+11-06 11:15:22.423 29636 29674 D Evaluation: Frame 44 sent at 1573031722423
+11-06 11:15:22.465 29636 29674 D Evaluation: Frame 45 sent at 1573031722465
+11-06 11:15:22.466 29636 29674 D Evaluation: 0 res for frame 18 received at 1573031722466
+11-06 11:15:22.494 29636 29674 D Evaluation: Frame 46 sent at 1573031722494
+11-06 11:15:22.571 29636 29674 D Evaluation: Frame 47 sent at 1573031722571
+11-06 11:15:22.572 29636 29674 D Evaluation: 0 res for frame 19 received at 1573031722572
+11-06 11:15:22.596 29636 29674 D Evaluation: Frame 48 sent at 1573031722596
+11-06 11:15:22.598 29636 29674 D Evaluation: 0 res for frame 20 received at 1573031722598
+11-06 11:15:22.623 29636 29651 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:15:22.623 29636 29674 D Evaluation: Frame 49 sent at 1573031722623
+11-06 11:15:22.638 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:22.639 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:22.639 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:22.640 29636 29649 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 26 lines
+11-06 11:15:22.640 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:22.666 29636 29674 D Evaluation: Frame 51 sent at 1573031722666
+11-06 11:15:22.668 29636 29674 D Evaluation: 1 res for frame 21 received at 1573031722668
+11-06 11:15:22.685 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:22.685 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:22.685 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:22.685 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:22.686 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:22.686 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:22.686 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:22.686 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:22.686 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:22.686 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:22.730 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:22.730 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:22.730 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:22.730 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:22.730 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:22.730 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:22.730 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:22.730 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:22.730 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:22.730 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:22.732 29636 29674 D Evaluation: 1 res for frame 22 received at 1573031722731
+11-06 11:15:22.749 29636 29674 D Evaluation: Frame 53 sent at 1573031722749
+11-06 11:15:22.787 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:22.787 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:22.787 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:22.787 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:22.787 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:22.787 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:22.788 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:22.788 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:22.788 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:22.788 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:22.788 29636 29674 D Evaluation: 1 res for frame 23 received at 1573031722788
+11-06 11:15:22.849 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:22.849 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:22.849 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:22.849 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:22.849 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:22.849 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:22.849 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:22.849 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:22.849 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:22.849 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:22.850 29636 29674 D Evaluation: 0 res for frame 24 received at 1573031722850
+11-06 11:15:22.878 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:22.878 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:22.878 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:22.878 29636 29636 D Poster  : At 1573031722878 location is 65.05990163526333 (latitude), and 25.4683824386963 (longitude)
+11-06 11:15:22.878 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:22.878 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:22.878 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:22.878 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:22.878 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:22.878 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:22.878 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:22.883 29636 29636 D Poster  : Connected to mobile network 20
+11-06 11:15:22.914 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:22.914 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:22.914 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:22.914 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:22.914 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:22.914 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:22.915 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:22.915 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:22.915 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:22.915 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:22.945 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:22.946 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:22.946 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:22.946 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:22.946 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:22.946 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:22.946 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:22.946 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:22.946 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:22.946 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:22.947 29636 29674 D Evaluation: 1 res for frame 25 received at 1573031722947
+11-06 11:15:22.987 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:22.987 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:22.988 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:22.988 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:22.988 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:22.988 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:22.988 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:22.988 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:22.988 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:22.988 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:22.989 29636 29674 D Evaluation: 1 res for frame 26 received at 1573031722989
+11-06 11:15:23.024 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:23.024 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:23.024 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:23.024 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:23.024 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:23.024 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:23.025 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:23.025 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:23.025 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:23.025 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:23.059 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:23.060 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:23.060 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:23.060 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:23.060 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:23.060 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:23.060 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:23.060 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:23.060 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:23.060 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:23.088 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:23.088 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:23.088 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:23.088 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:23.088 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:23.088 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:23.088 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:23.088 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:23.088 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:23.088 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:23.089 29636 29674 D Evaluation: 0 res for frame 27 received at 1573031723089
+11-06 11:15:23.130 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:23.130 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:23.130 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:23.130 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:23.130 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:23.130 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:23.130 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:23.130 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:23.130 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:23.130 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:23.164 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:23.164 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:23.164 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:23.164 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:23.164 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:23.164 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:23.164 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:23.164 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:23.164 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:23.164 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:23.165 29636 29674 D Evaluation: 0 res for frame 28 received at 1573031723165
+11-06 11:15:23.193 29636 29674 D Evaluation: Frame 65 sent at 1573031723192
+11-06 11:15:23.233 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:23.234 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:23.234 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:23.234 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:23.234 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:23.234 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:23.234 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:23.234 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:23.234 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:23.234 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:23.235 29636 29674 D Evaluation: 0 res for frame 29 received at 1573031723235
+11-06 11:15:23.263 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:23.263 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:23.263 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:23.263 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:23.263 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:23.263 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:23.263 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:23.263 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:23.263 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:23.263 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:23.298 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:23.298 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:23.298 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:23.298 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:23.298 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:23.298 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:23.298 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:23.298 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:23.298 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:23.298 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:23.300 29636 29674 D Evaluation: 0 res for frame 31 received at 1573031723300
+11-06 11:15:23.329 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:23.329 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:23.329 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:23.329 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:23.329 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:23.329 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:23.329 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:23.329 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:23.329 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:23.329 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:23.359 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:23.359 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:23.359 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:23.359 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:23.359 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:23.359 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:23.359 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:23.359 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:23.359 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:23.359 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:23.360 29636 29674 D Evaluation: 0 res for frame 31 received at 1573031723360
+11-06 11:15:23.395 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:23.395 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:23.395 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:23.395 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:23.396 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:23.396 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:23.396 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:23.396 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:23.396 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:23.396 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:23.397 29636 29674 D Evaluation: 0 res for frame 32 received at 1573031723397
+11-06 11:15:23.423 29636 29651 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:15:23.423 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:23.423 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:23.423 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:23.423 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:23.423 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:23.423 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:23.423 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:23.424 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:23.424 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:23.424 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:23.425 29636 29674 D Evaluation: 0 res for frame 33 received at 1573031723425
+11-06 11:15:23.435 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:23.435 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:23.436 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:23.436 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:23.436 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:23.436 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:23.436 29636 29649 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-06 11:15:23.436 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:23.436 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:23.437 29636 29649 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 12 lines
+11-06 11:15:23.437 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:23.462 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:23.462 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:23.462 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:23.462 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:23.462 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:23.462 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:23.462 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:23.462 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:23.462 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:23.462 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:23.495 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:23.496 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:23.496 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:23.496 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:23.496 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:23.496 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:23.496 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:23.496 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:23.496 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:23.496 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:23.497 29636 29674 D Evaluation: 0 res for frame 34 received at 1573031723497
+11-06 11:15:23.528 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:23.528 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:23.529 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:23.529 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:23.529 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:23.529 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:23.529 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:23.529 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:23.529 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:23.529 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:23.530 29636 29674 D Evaluation: 0 res for frame 35 received at 1573031723530
+11-06 11:15:23.566 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:23.566 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:23.566 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:23.566 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:23.566 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:23.566 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:23.566 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:23.566 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:23.566 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:23.566 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:23.567 29636 29674 D Evaluation: 0 res for frame 36 received at 1573031723567
+11-06 11:15:23.613 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:23.614 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:23.614 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:23.614 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:23.614 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:23.614 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:23.614 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:23.614 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:23.614 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:23.614 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:23.615 29636 29674 D Evaluation: 0 res for frame 37 received at 1573031723615
+11-06 11:15:23.641 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:23.641 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:23.641 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:23.641 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:23.642 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:23.642 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:23.642 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:23.642 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:23.642 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:23.642 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:23.665 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:23.665 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:23.665 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:23.665 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:23.665 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:23.665 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:23.665 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:23.665 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:23.665 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:23.665 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:23.666 29636 29674 D Evaluation: 0 res for frame 38 received at 1573031723666
+11-06 11:15:23.701 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:23.701 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:23.701 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:23.701 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:23.701 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:23.701 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:23.701 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:23.701 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:23.701 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:23.701 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:23.735 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:23.735 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:23.735 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:23.735 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:23.735 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:23.735 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:23.735 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:23.735 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:23.735 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:23.735 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:23.736 29636 29674 D Evaluation: 0 res for frame 39 received at 1573031723736
+11-06 11:15:23.776 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:23.776 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:23.776 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:23.776 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:23.776 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:23.776 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:23.776 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:23.776 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:23.776 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:23.776 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:23.777 29636 29674 D Evaluation: 0 res for frame 40 received at 1573031723777
+11-06 11:15:23.807 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:23.807 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:23.807 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:23.807 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:23.807 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:23.807 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:23.807 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:23.807 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:23.807 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:23.807 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:23.809 29636 29674 D Evaluation: 0 res for frame 41 received at 1573031723809
+11-06 11:15:23.833 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:23.833 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:23.834 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:23.834 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:23.834 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:23.834 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:23.834 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:23.834 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:23.834 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:23.834 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:23.874 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:23.874 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:23.874 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:23.874 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:23.874 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:23.874 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:23.874 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:23.874 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:23.874 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:23.874 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:23.875 29636 29674 D Evaluation: 0 res for frame 42 received at 1573031723875
+11-06 11:15:23.904 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:23.904 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:23.904 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:23.904 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:23.904 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:23.904 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:23.904 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:23.904 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:23.904 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:23.904 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:23.928 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:23.928 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:23.928 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:23.928 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:23.928 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:23.928 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:23.928 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:23.928 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:23.928 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:23.928 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:23.958 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:23.958 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:23.958 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:23.958 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:23.958 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:23.958 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:23.958 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:23.958 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:23.958 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:23.958 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:23.959 29636 29674 D Evaluation: 0 res for frame 43 received at 1573031723959
+11-06 11:15:23.997 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:23.997 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:23.997 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:23.997 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:23.997 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:23.997 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:23.997 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:23.997 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:23.997 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:23.997 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:23.998 29636 29674 D Evaluation: 0 res for frame 44 received at 1573031723998
+11-06 11:15:24.033 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:24.033 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:24.034 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:24.034 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:24.034 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:24.034 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:24.034 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:24.034 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:24.034 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:24.034 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:24.066 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:24.066 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:24.066 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:24.066 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:24.066 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:24.066 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:24.066 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:24.066 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:24.066 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:24.067 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:24.104 29636 29674 W System.err: java.net.SocketException: Message too long
+11-06 11:15:24.104 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-06 11:15:24.104 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-06 11:15:24.104 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-06 11:15:24.104 29636 29674 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-06 11:15:24.104 29636 29674 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:124)
+11-06 11:15:24.104 29636 29674 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-06 11:15:24.104 29636 29674 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-06 11:15:24.104 29636 29674 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-06 11:15:24.104 29636 29674 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-06 11:15:24.136 29636 29674 D Evaluation: Frame 93 sent at 1573031724136
+11-06 11:15:24.137 29636 29674 D Evaluation: 0 res for frame 47 received at 1573031724137
+11-06 11:15:24.173 29636 29674 D Evaluation: Frame 94 sent at 1573031724173
+11-06 11:15:24.214 29636 29674 D Evaluation: Frame 95 sent at 1573031724214
+11-06 11:15:24.242 29636 29651 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:15:24.242 29636 29674 D Evaluation: Frame 96 sent at 1573031724242
+11-06 11:15:24.268 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:24.271 29636 29649 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 24 lines
+11-06 11:15:24.272 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:24.272 29636 29674 D Evaluation: Frame 97 sent at 1573031724272
+11-06 11:15:24.306 29636 29674 D Evaluation: Frame 98 sent at 1573031724306
+11-06 11:15:24.337 29636 29674 D Evaluation: Frame 99 sent at 1573031724337
+11-06 11:15:24.365 29636 29674 D Evaluation: Frame 100 sent at 1573031724365
+11-06 11:15:24.409 29636 29674 D Evaluation: Frame 101 sent at 1573031724409
+11-06 11:15:24.448 29636 29674 D Evaluation: Frame 102 sent at 1573031724448
+11-06 11:15:24.449 29636 29674 D Evaluation: 0 res for frame 65 received at 1573031724449
+11-06 11:15:24.488 29636 29674 D Evaluation: Frame 103 sent at 1573031724488
+11-06 11:15:24.513 29636 29674 D Evaluation: Frame 104 sent at 1573031724513
+11-06 11:15:24.552 29636 29674 D Evaluation: Frame 105 sent at 1573031724552
+11-06 11:15:24.581 29636 29674 D Evaluation: Frame 106 sent at 1573031724580
+11-06 11:15:24.609 29636 29674 D Evaluation: Frame 107 sent at 1573031724609
+11-06 11:15:24.611 29636 29674 D Evaluation: 0 res for frame 93 received at 1573031724611
+11-06 11:15:24.653 29636 29674 D Evaluation: Frame 108 sent at 1573031724653
+11-06 11:15:24.655 29636 29674 D Evaluation: 0 res for frame 94 received at 1573031724655
+11-06 11:15:24.732 29636 29674 D Evaluation: Frame 110 sent at 1573031724732
+11-06 11:15:24.734 29636 29674 D Evaluation: 0 res for frame 95 received at 1573031724734
+11-06 11:15:24.759 29636 29674 D Evaluation: Frame 111 sent at 1573031724759
+11-06 11:15:24.761 29636 29674 D Evaluation: 0 res for frame 96 received at 1573031724761
+11-06 11:15:24.785 29636 29674 D Evaluation: Frame 111 sent at 1573031724785
+11-06 11:15:24.786 29636 29674 D Evaluation: 0 res for frame 97 received at 1573031724786
+11-06 11:15:24.815 29636 29674 D Evaluation: Frame 112 sent at 1573031724815
+11-06 11:15:24.840 29636 29674 D Evaluation: Frame 113 sent at 1573031724840
+11-06 11:15:24.843 29636 29674 D Evaluation: 0 res for frame 98 received at 1573031724843
+11-06 11:15:24.883 29636 29674 D Evaluation: Frame 114 sent at 1573031724882
+11-06 11:15:24.913 29636 29674 D Evaluation: Frame 115 sent at 1573031724913
+11-06 11:15:24.914 29636 29674 D Evaluation: 0 res for frame 99 received at 1573031724914
+11-06 11:15:24.950 29636 29674 D Evaluation: Frame 116 sent at 1573031724950
+11-06 11:15:24.982 29636 29674 D Evaluation: Frame 117 sent at 1573031724982
+11-06 11:15:24.983 29636 29674 D Evaluation: 0 res for frame 100 received at 1573031724983
+11-06 11:15:25.010 29636 29674 D Evaluation: Frame 118 sent at 1573031725010
+11-06 11:15:25.011 29636 29674 D Evaluation: 0 res for frame 101 received at 1573031725011
+11-06 11:15:25.044 29636 29674 D Evaluation: Frame 119 sent at 1573031725044
+11-06 11:15:25.075 29636 29674 D Evaluation: Frame 120 sent at 1573031725075
+11-06 11:15:25.120 29636 29674 D Evaluation: Frame 121 sent at 1573031725120
+11-06 11:15:25.122 29636 29674 D Evaluation: 0 res for frame 102 received at 1573031725122
+11-06 11:15:25.151 29636 29674 D Evaluation: Frame 122 sent at 1573031725151
+11-06 11:15:25.153 29636 29674 D Evaluation: 0 res for frame 103 received at 1573031725153
+11-06 11:15:25.180 29636 29674 D Evaluation: Frame 123 sent at 1573031725180
+11-06 11:15:25.219 29636 29674 D Evaluation: Frame 124 sent at 1573031725219
+11-06 11:15:25.220 29636 29674 D Evaluation: 1 res for frame 104 received at 1573031725220
+11-06 11:15:25.250 29636 29651 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:15:25.251 29636 29674 D Evaluation: Frame 125 sent at 1573031725251
+11-06 11:15:25.253 29636 29674 D Evaluation: 0 res for frame 105 received at 1573031725253
+11-06 11:15:25.284 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:25.284 29636 29649 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-06 11:15:25.285 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:25.285 29636 29674 D Evaluation: Frame 126 sent at 1573031725285
+11-06 11:15:25.285 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:25.286 29636 29649 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-06 11:15:25.286 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:25.286 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:25.286 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:25.286 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:25.287 29636 29649 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-06 11:15:25.287 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:25.287 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:25.287 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:25.292 29636 29649 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 8 lines
+11-06 11:15:25.292 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:25.307 29636 29674 D Evaluation: Frame 127 sent at 1573031725307
+11-06 11:15:25.309 29636 29674 D Evaluation: 0 res for frame 106 received at 1573031725309
+11-06 11:15:25.348 29636 29674 D Evaluation: Frame 128 sent at 1573031725348
+11-06 11:15:25.349 29636 29674 D Evaluation: 0 res for frame 107 received at 1573031725349
+11-06 11:15:25.376 29636 29674 D Evaluation: Frame 129 sent at 1573031725376
+11-06 11:15:25.378 29636 29674 D Evaluation: 0 res for frame 108 received at 1573031725378
+11-06 11:15:25.416 29636 29674 D Evaluation: Frame 130 sent at 1573031725416
+11-06 11:15:25.443 29636 29674 D Evaluation: Frame 131 sent at 1573031725443
+11-06 11:15:25.490 29636 29636 I AwareBitmapCacher: init lrucache size: 2097152 pid=29636
+11-06 11:15:25.497 29636 29674 D Evaluation: Frame 132 sent at 1573031725497
+11-06 11:15:25.498 29636 29674 D Evaluation: 0 res for frame 110 received at 1573031725498
+11-06 11:15:25.519 29636 29674 D Evaluation: Frame 133 sent at 1573031725519
+11-06 11:15:25.520 29636 29674 D Evaluation: 0 res for frame 111 received at 1573031725520
+11-06 11:15:25.592 29636 29674 D Evaluation: Frame 134 sent at 1573031725592
+11-06 11:15:25.594 29636 29674 D Evaluation: 0 res for frame 111 received at 1573031725594
+11-06 11:15:25.614 29636 29674 D Evaluation: Frame 135 sent at 1573031725614
+11-06 11:15:25.655 29636 29674 D Evaluation: Frame 136 sent at 1573031725655
+11-06 11:15:25.656 29636 29674 D Evaluation: 0 res for frame 112 received at 1573031725656
+11-06 11:15:25.687 29636 29674 D Evaluation: Frame 137 sent at 1573031725687
+11-06 11:15:25.688 29636 29674 D Evaluation: 0 res for frame 113 received at 1573031725688
+11-06 11:15:25.712 29636 29674 D Evaluation: Frame 138 sent at 1573031725712
+11-06 11:15:25.754 29636 29674 D Evaluation: Frame 139 sent at 1573031725754
+11-06 11:15:25.755 29636 29674 D Evaluation: 0 res for frame 114 received at 1573031725755
+11-06 11:15:25.790 29636 29674 D Evaluation: Frame 140 sent at 1573031725790
+11-06 11:15:25.792 29636 29674 D Evaluation: 0 res for frame 115 received at 1573031725792
+11-06 11:15:25.813 29636 29674 D Evaluation: Frame 141 sent at 1573031725813
+11-06 11:15:25.854 29636 29674 D Evaluation: Frame 142 sent at 1573031725854
+11-06 11:15:25.874 29636 29636 D Poster  : At 1573031725873 location is 65.06003577456849 (latitude), and 25.46819411265327 (longitude)
+11-06 11:15:25.878 29636 29636 D Poster  : Connected to mobile network 20
+11-06 11:15:25.884 29636 29674 D Evaluation: Frame 143 sent at 1573031725884
+11-06 11:15:25.885 29636 29674 D Evaluation: 0 res for frame 116 received at 1573031725885
+11-06 11:15:25.931 29636 29674 D Evaluation: Frame 145 sent at 1573031725931
+11-06 11:15:25.932 29636 29674 D Evaluation: 0 res for frame 117 received at 1573031725932
+11-06 11:15:25.951 29636 29674 D Evaluation: Frame 145 sent at 1573031725951
+11-06 11:15:25.986 29636 29674 D Evaluation: Frame 146 sent at 1573031725986
+11-06 11:15:26.018 29636 29674 D Evaluation: Frame 147 sent at 1573031726018
+11-06 11:15:26.060 29636 29674 D Evaluation: Frame 148 sent at 1573031726060
+11-06 11:15:26.061 29636 29674 D Evaluation: 0 res for frame 118 received at 1573031726061
+11-06 11:15:26.089 29636 29674 D Evaluation: Frame 149 sent at 1573031726089
+11-06 11:15:26.091 29636 29674 D Evaluation: 0 res for frame 119 received at 1573031726091
+11-06 11:15:26.125 29636 29674 D Evaluation: Frame 150 sent at 1573031726125
+11-06 11:15:26.160 29636 29674 D Evaluation: Frame 151 sent at 1573031726160
+11-06 11:15:26.201 29636 29674 D Evaluation: Frame 152 sent at 1573031726201
+11-06 11:15:26.203 29636 29674 D Evaluation: 0 res for frame 120 received at 1573031726203
+11-06 11:15:26.228 29636 29674 D Evaluation: Frame 153 sent at 1573031726228
+11-06 11:15:26.258 29636 29674 D Evaluation: Frame 154 sent at 1573031726258
+11-06 11:15:26.259 29636 29674 D Evaluation: 0 res for frame 121 received at 1573031726259
+11-06 11:15:26.299 29636 29674 D Evaluation: Frame 155 sent at 1573031726299
+11-06 11:15:26.327 29636 29674 D Evaluation: Frame 156 sent at 1573031726327
+11-06 11:15:26.363 29636 29674 D Evaluation: Frame 157 sent at 1573031726363
+11-06 11:15:26.365 29636 29674 D Evaluation: 0 res for frame 122 received at 1573031726365
+11-06 11:15:26.392 29636 29674 D Evaluation: Frame 158 sent at 1573031726392
+11-06 11:15:26.421 29636 29674 D Evaluation: Frame 159 sent at 1573031726421
+11-06 11:15:26.422 29636 29674 D Evaluation: 0 res for frame 123 received at 1573031726422
+11-06 11:15:26.461 29636 29674 D Evaluation: Frame 160 sent at 1573031726461
+11-06 11:15:26.496 29636 29674 D Evaluation: Frame 161 sent at 1573031726496
+11-06 11:15:26.496 29636 29651 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:15:26.516 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:26.518 29636 29649 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 16 lines
+11-06 11:15:26.518 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:26.518 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:26.518 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:26.518 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:26.518 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:26.518 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:26.519 29636 29649 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 4 lines
+11-06 11:15:26.519 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:26.519 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:26.519 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:26.519 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:26.520 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:26.520 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:26.520 29636 29649 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 4 lines
+11-06 11:15:26.520 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:26.526 29636 29674 D Evaluation: Frame 162 sent at 1573031726526
+11-06 11:15:26.527 29636 29674 D Evaluation: 2 res for frame 124 received at 1573031726527
+11-06 11:15:26.563 29636 29674 D Evaluation: Frame 163 sent at 1573031726563
+11-06 11:15:26.564 29636 29674 D Evaluation: 0 res for frame 125 received at 1573031726564
+11-06 11:15:26.607 29636 29674 D Evaluation: Frame 164 sent at 1573031726607
+11-06 11:15:26.712 29636 29674 D Evaluation: Frame 166 sent at 1573031726712
+11-06 11:15:26.714 29636 29674 D Evaluation: 0 res for frame 126 received at 1573031726714
+11-06 11:15:26.735 29636 29674 D Evaluation: Frame 166 sent at 1573031726735
+11-06 11:15:26.737 29636 29674 D Evaluation: 2 res for frame 127 received at 1573031726737
+11-06 11:15:26.766 29636 29674 D Evaluation: Frame 168 sent at 1573031726766
+11-06 11:15:26.767 29636 29674 D Evaluation: 1 res for frame 128 received at 1573031726767
+11-06 11:15:26.787 29636 29674 D Evaluation: Frame 168 sent at 1573031726786
+11-06 11:15:26.830 29636 29674 D Evaluation: Frame 169 sent at 1573031726830
+11-06 11:15:26.831 29636 29674 D Evaluation: 0 res for frame 129 received at 1573031726831
+11-06 11:15:26.863 29636 29674 D Evaluation: Frame 170 sent at 1573031726863
+11-06 11:15:26.864 29636 29674 D Evaluation: 0 res for frame 130 received at 1573031726864
+11-06 11:15:26.899 29636 29674 D Evaluation: Frame 171 sent at 1573031726899
+11-06 11:15:26.901 29636 29674 D Evaluation: 1 res for frame 131 received at 1573031726901
+11-06 11:15:26.928 29636 29674 D Evaluation: Frame 172 sent at 1573031726928
+11-06 11:15:27.018 29636 29674 D Evaluation: Frame 174 sent at 1573031727018
+11-06 11:15:27.019 29636 29674 D Evaluation: 0 res for frame 132 received at 1573031727019
+11-06 11:15:27.040 29636 29674 D Evaluation: Frame 174 sent at 1573031727040
+11-06 11:15:27.042 29636 29674 D Evaluation: 0 res for frame 133 received at 1573031727042
+11-06 11:15:27.063 29636 29674 D Evaluation: Frame 175 sent at 1573031727063
+11-06 11:15:27.064 29636 29674 D Evaluation: 2 res for frame 134 received at 1573031727064
+11-06 11:15:27.093 29636 29674 D Evaluation: Frame 176 sent at 1573031727093
+11-06 11:15:27.094 29636 29674 D Evaluation: 1 res for frame 135 received at 1573031727094
+11-06 11:15:27.132 29636 29674 D Evaluation: Frame 177 sent at 1573031727131
+11-06 11:15:27.133 29636 29674 D Evaluation: 1 res for frame 136 received at 1573031727133
+11-06 11:15:27.166 29636 29674 D Evaluation: Frame 178 sent at 1573031727166
+11-06 11:15:27.167 29636 29674 D Evaluation: 0 res for frame 137 received at 1573031727167
+11-06 11:15:27.197 29636 29674 D Evaluation: Frame 179 sent at 1573031727197
+11-06 11:15:27.234 29636 29674 D Evaluation: Frame 180 sent at 1573031727234
+11-06 11:15:27.271 29636 29674 D Evaluation: Frame 181 sent at 1573031727271
+11-06 11:15:27.304 29636 29674 D Evaluation: Frame 182 sent at 1573031727304
+11-06 11:15:27.328 29636 29636 D Poster  : At 1573031727328 location is 65.05977469412623 (latitude), and 25.468543982457113 (longitude)
+11-06 11:15:27.333 29636 29636 D Poster  : Connected to mobile network 20
+11-06 11:15:27.336 29636 29674 D Evaluation: Frame 183 sent at 1573031727335
+11-06 11:15:27.359 29636 29674 D Evaluation: Frame 184 sent at 1573031727359
+11-06 11:15:27.394 29636 29674 D Evaluation: Frame 185 sent at 1573031727394
+11-06 11:15:27.395 29636 29674 D Evaluation: 1 res for frame 148 received at 1573031727395
+11-06 11:15:27.426 29636 29674 D Evaluation: Frame 186 sent at 1573031727425
+11-06 11:15:27.495 29636 29674 D Evaluation: Frame 188 sent at 1573031727495
+11-06 11:15:27.518 29636 29674 D Evaluation: Frame 189 sent at 1573031727518
+11-06 11:15:27.538 29636 29674 D Evaluation: Frame 189 sent at 1573031727538
+11-06 11:15:27.571 29636 29674 D Evaluation: Frame 190 sent at 1573031727571
+11-06 11:15:27.600 29636 29674 D Evaluation: Frame 191 sent at 1573031727600
+11-06 11:15:27.601 29636 29674 D Evaluation: 1 res for frame 152 received at 1573031727601
+11-06 11:15:27.639 29636 29674 D Evaluation: Frame 192 sent at 1573031727639
+11-06 11:15:27.674 29636 29674 D Evaluation: Frame 193 sent at 1573031727674
+11-06 11:15:27.697 29636 29674 D Evaluation: Frame 194 sent at 1573031727697
+11-06 11:15:27.738 29636 29674 D Evaluation: Frame 195 sent at 1573031727738
+11-06 11:15:27.767 29636 29674 D Evaluation: Frame 196 sent at 1573031727767
+11-06 11:15:27.800 29636 29674 D Evaluation: Frame 197 sent at 1573031727800
+11-06 11:15:27.844 29636 29674 D Evaluation: Frame 198 sent at 1573031727844
+11-06 11:15:27.876 29636 29674 D Evaluation: Frame 199 sent at 1573031727875
+11-06 11:15:27.915 29636 29674 D Evaluation: Frame 200 sent at 1573031727915
+11-06 11:15:27.916 29636 29674 D Evaluation: 0 res for frame 160 received at 1573031727916
+11-06 11:15:27.938 29636 29674 D Evaluation: Frame 201 sent at 1573031727938
+11-06 11:15:27.939 29636 29674 D Evaluation: 1 res for frame 161 received at 1573031727939
+11-06 11:15:27.975 29636 29674 D Evaluation: Frame 202 sent at 1573031727975
+11-06 11:15:27.976 29636 29674 D Evaluation: 1 res for frame 162 received at 1573031727976
+11-06 11:15:27.999 29636 29674 D Evaluation: Frame 203 sent at 1573031727999
+11-06 11:15:28.000 29636 29674 D Evaluation: 0 res for frame 163 received at 1573031728000
+11-06 11:15:28.035 29636 29674 D Evaluation: Frame 204 sent at 1573031728035
+11-06 11:15:28.036 29636 29674 D Evaluation: 0 res for frame 164 received at 1573031728036
+11-06 11:15:28.066 29636 29674 D Evaluation: Frame 205 sent at 1573031728066
+11-06 11:15:28.067 29636 29651 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:15:28.067 29636 29674 D Evaluation: 0 res for frame 166 received at 1573031728067
+11-06 11:15:28.086 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:28.089 29636 29649 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 26 lines
+11-06 11:15:28.089 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:28.090 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:28.090 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:28.092 29636 29649 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 13 lines
+11-06 11:15:28.092 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:28.111 29636 29674 D Evaluation: Frame 207 sent at 1573031728111
+11-06 11:15:28.113 29636 29674 D Evaluation: 0 res for frame 166 received at 1573031728113
+11-06 11:15:28.130 29636 29674 D Evaluation: Frame 207 sent at 1573031728130
+11-06 11:15:28.131 29636 29674 D Evaluation: 0 res for frame 168 received at 1573031728131
+11-06 11:15:28.176 29636 29674 D Evaluation: Frame 208 sent at 1573031728176
+11-06 11:15:28.177 29636 29674 D Evaluation: 0 res for frame 168 received at 1573031728177
+11-06 11:15:28.206 29636 29674 D Evaluation: Frame 209 sent at 1573031728206
+11-06 11:15:28.234 29636 29674 D Evaluation: Frame 210 sent at 1573031728234
+11-06 11:15:28.235 29636 29674 D Evaluation: 1 res for frame 169 received at 1573031728235
+11-06 11:15:28.274 29636 29674 D Evaluation: Frame 211 sent at 1573031728274
+11-06 11:15:28.275 29636 29674 D Evaluation: 1 res for frame 170 received at 1573031728275
+11-06 11:15:28.309 29636 29674 D Evaluation: Frame 212 sent at 1573031728309
+11-06 11:15:28.327 29636 29636 D Poster  : At 1573031728327 location is 65.0597996562358 (latitude), and 25.468557541598187 (longitude)
+11-06 11:15:28.331 29636 29636 D Poster  : Connected to mobile network 20
+11-06 11:15:28.352 29636 29674 D Evaluation: Frame 214 sent at 1573031728352
+11-06 11:15:28.354 29636 29674 D Evaluation: 0 res for frame 171 received at 1573031728354
+11-06 11:15:28.372 29636 29674 D Evaluation: Frame 214 sent at 1573031728372
+11-06 11:15:28.373 29636 29674 D Evaluation: 0 res for frame 172 received at 1573031728373
+11-06 11:15:28.390 29636 29674 D Evaluation: Frame 215 sent at 1573031728390
+11-06 11:15:28.435 29636 29674 D Evaluation: Frame 216 sent at 1573031728435
+11-06 11:15:28.436 29636 29674 D Evaluation: 0 res for frame 174 received at 1573031728436
+11-06 11:15:28.468 29636 29674 D Evaluation: Frame 217 sent at 1573031728468
+11-06 11:15:28.470 29636 29674 D Evaluation: 0 res for frame 174 received at 1573031728470
+11-06 11:15:28.514 29636 29674 D Evaluation: Frame 218 sent at 1573031728514
+11-06 11:15:28.515 29636 29674 D Evaluation: 0 res for frame 175 received at 1573031728515
+11-06 11:15:28.556 29636 29674 D Evaluation: Frame 220 sent at 1573031728555
+11-06 11:15:28.557 29636 29674 D Evaluation: 0 res for frame 176 received at 1573031728557
+11-06 11:15:28.573 29636 29674 D Evaluation: Frame 220 sent at 1573031728573
+11-06 11:15:28.574 29636 29674 D Evaluation: 1 res for frame 177 received at 1573031728574
+11-06 11:15:28.637 29636 29674 D Evaluation: Frame 221 sent at 1573031728637
+11-06 11:15:28.640 29636 29674 D Evaluation: 1 res for frame 178 received at 1573031728640
+11-06 11:15:28.675 29636 29674 D Evaluation: Frame 222 sent at 1573031728675
+11-06 11:15:28.676 29636 29674 D Evaluation: 1 res for frame 179 received at 1573031728676
+11-06 11:15:28.706 29636 29674 D Evaluation: Frame 223 sent at 1573031728706
+11-06 11:15:28.707 29636 29674 D Evaluation: 2 res for frame 180 received at 1573031728707
+11-06 11:15:28.745 29636 29674 D Evaluation: Frame 224 sent at 1573031728744
+11-06 11:15:28.746 29636 29674 D Evaluation: 1 res for frame 181 received at 1573031728746
+11-06 11:15:28.775 29636 29674 D Evaluation: Frame 225 sent at 1573031728775
+11-06 11:15:28.776 29636 29674 D Evaluation: 1 res for frame 182 received at 1573031728776
+11-06 11:15:28.868 29636 29674 D Evaluation: Frame 227 sent at 1573031728868
+11-06 11:15:28.870 29636 29674 D Evaluation: 2 res for frame 183 received at 1573031728870
+11-06 11:15:28.893 29636 29674 D Evaluation: Frame 227 sent at 1573031728893
+11-06 11:15:28.894 29636 29674 D Evaluation: 1 res for frame 184 received at 1573031728894
+11-06 11:15:28.954 29636 29674 D Evaluation: Frame 228 sent at 1573031728954
+11-06 11:15:28.955 29636 29674 D Evaluation: 1 res for frame 185 received at 1573031728955
+11-06 11:15:28.981 29636 29674 D Evaluation: Frame 229 sent at 1573031728981
+11-06 11:15:28.982 29636 29674 D Evaluation: 1 res for frame 186 received at 1573031728982
+11-06 11:15:29.054 29636 29674 D Evaluation: Frame 230 sent at 1573031729054
+11-06 11:15:29.056 29636 29674 D Evaluation: 2 res for frame 188 received at 1573031729056
+11-06 11:15:29.091 29636 29674 D Evaluation: Frame 231 sent at 1573031729090
+11-06 11:15:29.092 29636 29674 D Evaluation: 2 res for frame 189 received at 1573031729092
+11-06 11:15:29.117 29636 29674 D Evaluation: Frame 232 sent at 1573031729117
+11-06 11:15:29.119 29636 29674 D Evaluation: 1 res for frame 189 received at 1573031729119
+11-06 11:15:29.147 29636 29674 D Evaluation: Frame 233 sent at 1573031729147
+11-06 11:15:29.148 29636 29674 D Evaluation: 1 res for frame 190 received at 1573031729148
+11-06 11:15:29.180 29636 29674 D Evaluation: Frame 234 sent at 1573031729180
+11-06 11:15:29.181 29636 29674 D Evaluation: 2 res for frame 191 received at 1573031729181
+11-06 11:15:29.216 29636 29674 D Evaluation: Frame 235 sent at 1573031729216
+11-06 11:15:29.218 29636 29674 D Evaluation: 1 res for frame 192 received at 1573031729218
+11-06 11:15:29.247 29636 29674 D Evaluation: Frame 236 sent at 1573031729247
+11-06 11:15:29.248 29636 29674 D Evaluation: 1 res for frame 193 received at 1573031729248
+11-06 11:15:29.280 29636 29674 D Evaluation: Frame 237 sent at 1573031729280
+11-06 11:15:29.281 29636 29674 D Evaluation: 1 res for frame 194 received at 1573031729281
+11-06 11:15:29.320 29636 29674 D Evaluation: Frame 238 sent at 1573031729320
+11-06 11:15:29.321 29636 29674 D Evaluation: 1 res for frame 195 received at 1573031729321
+11-06 11:15:29.338 29636 29636 D Poster  : At 1573031729337 location is 65.05992961977631 (latitude), and 25.46852115112233 (longitude)
+11-06 11:15:29.340 29636 29636 D Poster  : Connected to mobile network 20
+11-06 11:15:29.346 29636 29674 D Evaluation: Frame 239 sent at 1573031729346
+11-06 11:15:29.348 29636 29674 D Evaluation: 1 res for frame 196 received at 1573031729348
+11-06 11:15:29.368 29636 29674 D Evaluation: Frame 240 sent at 1573031729368
+11-06 11:15:29.369 29636 29674 D Evaluation: 1 res for frame 197 received at 1573031729369
+11-06 11:15:29.400 29636 29674 D Evaluation: Frame 241 sent at 1573031729400
+11-06 11:15:29.403 29636 29674 D Evaluation: 1 res for frame 198 received at 1573031729403
+11-06 11:15:29.434 29636 29651 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:15:29.434 29636 29674 D Evaluation: Frame 242 sent at 1573031729434
+11-06 11:15:29.449 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:29.449 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:29.450 29636 29649 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 26 lines
+11-06 11:15:29.450 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:29.450 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:29.451 29636 29649 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-06 11:15:29.451 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:29.451 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:29.452 29636 29649 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 31 lines
+11-06 11:15:29.453 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:29.477 29636 29674 D Evaluation: Frame 243 sent at 1573031729477
+11-06 11:15:29.478 29636 29674 D Evaluation: 1 res for frame 199 received at 1573031729478
+11-06 11:15:29.513 29636 29674 D Evaluation: Frame 244 sent at 1573031729512
+11-06 11:15:29.514 29636 29674 D Evaluation: 1 res for frame 200 received at 1573031729514
+11-06 11:15:29.544 29636 29674 D Evaluation: Frame 245 sent at 1573031729544
+11-06 11:15:29.545 29636 29674 D Evaluation: 1 res for frame 201 received at 1573031729545
+11-06 11:15:29.576 29636 29674 D Evaluation: Frame 246 sent at 1573031729576
+11-06 11:15:29.578 29636 29674 D Evaluation: 1 res for frame 202 received at 1573031729578
+11-06 11:15:29.608 29636 29674 D Evaluation: Frame 247 sent at 1573031729608
+11-06 11:15:29.609 29636 29674 D Evaluation: 1 res for frame 203 received at 1573031729609
+11-06 11:15:29.645 29636 29674 D Evaluation: Frame 248 sent at 1573031729645
+11-06 11:15:29.676 29636 29674 D Evaluation: Frame 249 sent at 1573031729676
+11-06 11:15:29.677 29636 29674 D Evaluation: 1 res for frame 205 received at 1573031729677
+11-06 11:15:29.710 29636 29674 D Evaluation: Frame 250 sent at 1573031729710
+11-06 11:15:29.748 29636 29674 D Evaluation: Frame 251 sent at 1573031729748
+11-06 11:15:29.778 29636 29674 D Evaluation: Frame 252 sent at 1573031729778
+11-06 11:15:29.810 29636 29674 D Evaluation: Frame 253 sent at 1573031729810
+11-06 11:15:29.811 29636 29674 D Evaluation: 1 res for frame 208 received at 1573031729811
+11-06 11:15:29.842 29636 29674 D Evaluation: Frame 254 sent at 1573031729842
+11-06 11:15:29.881 29636 29674 D Evaluation: Frame 255 sent at 1573031729881
+11-06 11:15:29.908 29636 29674 D Evaluation: Frame 256 sent at 1573031729908
+11-06 11:15:29.941 29636 29674 D Evaluation: Frame 257 sent at 1573031729941
+11-06 11:15:29.942 29636 29674 D Evaluation: 1 res for frame 212 received at 1573031729942
+11-06 11:15:29.978 29636 29674 D Evaluation: Frame 258 sent at 1573031729978
+11-06 11:15:30.010 29636 29674 D Evaluation: Frame 259 sent at 1573031730010
+11-06 11:15:30.045 29636 29674 D Evaluation: Frame 260 sent at 1573031730045
+11-06 11:15:30.077 29636 29674 D Evaluation: Frame 261 sent at 1573031730077
+11-06 11:15:30.115 29636 29674 D Evaluation: Frame 262 sent at 1573031730115
+11-06 11:15:30.117 29636 29674 D Evaluation: 1 res for frame 216 received at 1573031730116
+11-06 11:15:30.156 29636 29674 D Evaluation: Frame 263 sent at 1573031730156
+11-06 11:15:30.158 29636 29674 D Evaluation: 1 res for frame 217 received at 1573031730158
+11-06 11:15:30.181 29636 29674 D Evaluation: Frame 264 sent at 1573031730181
+11-06 11:15:30.182 29636 29674 D Evaluation: 1 res for frame 218 received at 1573031730182
+11-06 11:15:30.218 29636 29674 D Evaluation: Frame 265 sent at 1573031730218
+11-06 11:15:30.219 29636 29674 D Evaluation: 1 res for frame 220 received at 1573031730219
+11-06 11:15:30.248 29636 29674 D Evaluation: Frame 266 sent at 1573031730248
+11-06 11:15:30.249 29636 29674 D Evaluation: 0 res for frame 220 received at 1573031730249
+11-06 11:15:30.292 29636 29674 D Evaluation: Frame 267 sent at 1573031730292
+11-06 11:15:30.294 29636 29674 D Evaluation: 1 res for frame 221 received at 1573031730294
+11-06 11:15:30.324 29636 29674 D Evaluation: Frame 268 sent at 1573031730324
+11-06 11:15:30.329 29636 29636 D Poster  : At 1573031730329 location is 65.05991072086962 (latitude), and 25.46855502496281 (longitude)
+11-06 11:15:30.332 29636 29636 D Poster  : Connected to mobile network 20
+11-06 11:15:30.375 29636 29674 D Evaluation: Frame 270 sent at 1573031730375
+11-06 11:15:30.376 29636 29674 D Evaluation: 1 res for frame 222 received at 1573031730376
+11-06 11:15:30.395 29636 29674 D Evaluation: Frame 271 sent at 1573031730395
+11-06 11:15:30.396 29636 29674 D Evaluation: 1 res for frame 223 received at 1573031730396
+11-06 11:15:30.410 29636 29674 D Evaluation: Frame 271 sent at 1573031730410
+11-06 11:15:30.411 29636 29674 D Evaluation: 1 res for frame 224 received at 1573031730411
+11-06 11:15:30.437 29636 29674 D Evaluation: Frame 272 sent at 1573031730437
+11-06 11:15:30.476 29636 29674 D Evaluation: Frame 273 sent at 1573031730476
+11-06 11:15:30.512 29636 29674 D Evaluation: Frame 274 sent at 1573031730512
+11-06 11:15:30.546 29636 29674 D Evaluation: Frame 275 sent at 1573031730546
+11-06 11:15:30.548 29636 29674 D Evaluation: 1 res for frame 227 received at 1573031730548
+11-06 11:15:30.586 29636 29674 D Evaluation: Frame 276 sent at 1573031730586
+11-06 11:15:30.588 29636 29674 D Evaluation: 1 res for frame 227 received at 1573031730588
+11-06 11:15:30.637 29636 29674 D Evaluation: Frame 277 sent at 1573031730637
+11-06 11:15:30.639 29636 29674 D Evaluation: 2 res for frame 228 received at 1573031730639
+11-06 11:15:30.703 29636 29674 D Evaluation: Frame 278 sent at 1573031730703
+11-06 11:15:30.705 29636 29674 D Evaluation: 1 res for frame 229 received at 1573031730705
+11-06 11:15:30.727 29636 29674 D Evaluation: Frame 280 sent at 1573031730727
+11-06 11:15:30.729 29636 29674 D Evaluation: 1 res for frame 230 received at 1573031730729
+11-06 11:15:30.750 29636 29674 D Evaluation: Frame 280 sent at 1573031730750
+11-06 11:15:30.751 29636 29674 D Evaluation: 1 res for frame 231 received at 1573031730751
+11-06 11:15:30.788 29636 29674 D Evaluation: Frame 281 sent at 1573031730788
+11-06 11:15:30.790 29636 29674 D Evaluation: 1 res for frame 232 received at 1573031730790
+11-06 11:15:30.826 29636 29674 D Evaluation: Frame 282 sent at 1573031730826
+11-06 11:15:30.827 29636 29674 D Evaluation: 1 res for frame 233 received at 1573031730827
+11-06 11:15:30.864 29636 29651 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:15:30.864 29636 29674 D Evaluation: Frame 283 sent at 1573031730864
+11-06 11:15:30.867 29636 29674 D Evaluation: 0 res for frame 234 received at 1573031730867
+11-06 11:15:30.881 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:30.885 29636 29649 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 31 lines
+11-06 11:15:30.885 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:30.885 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:30.886 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:30.886 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:30.886 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:30.886 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:30.886 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:30.886 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:30.886 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:30.886 29636 29649 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-06 11:15:30.886 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:30.887 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:30.887 29636 29649 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 4 lines
+11-06 11:15:30.887 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:30.890 29636 29674 D Evaluation: Frame 284 sent at 1573031730890
+11-06 11:15:30.892 29636 29674 D Evaluation: 1 res for frame 235 received at 1573031730892
+11-06 11:15:30.913 29636 29674 D Evaluation: Frame 285 sent at 1573031730913
+11-06 11:15:30.915 29636 29674 D Evaluation: 0 res for frame 236 received at 1573031730915
+11-06 11:15:30.961 29636 29674 D Evaluation: Frame 286 sent at 1573031730961
+11-06 11:15:30.963 29636 29674 D Evaluation: 1 res for frame 237 received at 1573031730963
+11-06 11:15:30.994 29636 29674 D Evaluation: Frame 287 sent at 1573031730994
+11-06 11:15:30.995 29636 29674 D Evaluation: 0 res for frame 238 received at 1573031730995
+11-06 11:15:31.017 29636 29674 D Evaluation: Frame 288 sent at 1573031731017
+11-06 11:15:31.018 29636 29674 D Evaluation: 0 res for frame 239 received at 1573031731018
+11-06 11:15:31.051 29636 29674 D Evaluation: Frame 289 sent at 1573031731051
+11-06 11:15:31.087 29636 29674 D Evaluation: Frame 290 sent at 1573031731087
+11-06 11:15:31.128 29636 29674 D Evaluation: Frame 291 sent at 1573031731128
+11-06 11:15:31.202 29636 29674 D Evaluation: Frame 292 sent at 1573031731201
+11-06 11:15:31.204 29636 29674 D Evaluation: 1 res for frame 243 received at 1573031731204
+11-06 11:15:31.239 29636 29674 D Evaluation: Frame 293 sent at 1573031731239
+11-06 11:15:31.241 29636 29674 D Evaluation: 1 res for frame 244 received at 1573031731241
+11-06 11:15:31.267 29636 29674 D Evaluation: Frame 294 sent at 1573031731267
+11-06 11:15:31.297 29636 29674 D Evaluation: Frame 295 sent at 1573031731297
+11-06 11:15:31.325 29636 29674 D Evaluation: Frame 296 sent at 1573031731325
+11-06 11:15:31.327 29636 29674 D Evaluation: 1 res for frame 248 received at 1573031731327
+11-06 11:15:31.331 29636 29636 D Poster  : At 1573031731331 location is 65.05993250949675 (latitude), and 25.46858527475772 (longitude)
+11-06 11:15:31.334 29636 29636 D Poster  : Connected to mobile network 20
+11-06 11:15:31.373 29636 29674 D Evaluation: Frame 298 sent at 1573031731373
+11-06 11:15:31.374 29636 29674 D Evaluation: 1 res for frame 250 received at 1573031731374
+11-06 11:15:31.393 29636 29674 D Evaluation: Frame 298 sent at 1573031731393
+11-06 11:15:31.424 29636 29674 D Evaluation: Frame 299 sent at 1573031731424
+11-06 11:15:31.458 29636 29674 D Evaluation: Frame 300 sent at 1573031731458
+11-06 11:15:31.493 29636 29674 D Evaluation: Frame 301 sent at 1573031731493
+11-06 11:15:31.534 29636 29674 D Evaluation: Frame 302 sent at 1573031731533
+11-06 11:15:31.537 29636 29674 D Evaluation: 1 res for frame 255 received at 1573031731537
+11-06 11:15:31.568 29636 29674 D Evaluation: Frame 303 sent at 1573031731568
+11-06 11:15:31.597 29636 29674 D Evaluation: Frame 304 sent at 1573031731597
+11-06 11:15:31.623 29636 29674 D Evaluation: Frame 305 sent at 1573031731623
+11-06 11:15:31.659 29636 29674 D Evaluation: Frame 306 sent at 1573031731659
+11-06 11:15:31.690 29636 29674 D Evaluation: Frame 307 sent at 1573031731690
+11-06 11:15:31.734 29636 29674 D Evaluation: Frame 308 sent at 1573031731734
+11-06 11:15:31.761 29636 29674 D Evaluation: Frame 309 sent at 1573031731761
+11-06 11:15:31.763 29636 29674 D Evaluation: 1 res for frame 262 received at 1573031731763
+11-06 11:15:31.795 29636 29674 D Evaluation: Frame 310 sent at 1573031731795
+11-06 11:15:31.830 29636 29674 D Evaluation: Frame 311 sent at 1573031731830
+11-06 11:15:31.866 29636 29674 D Evaluation: Frame 312 sent at 1573031731866
+11-06 11:15:31.906 29636 29674 D Evaluation: Frame 313 sent at 1573031731906
+11-06 11:15:31.933 29636 29674 D Evaluation: Frame 314 sent at 1573031731933
+11-06 11:15:31.965 29636 29674 D Evaluation: Frame 315 sent at 1573031731965
+11-06 11:15:32.005 29636 29674 D Evaluation: Frame 316 sent at 1573031732005
+11-06 11:15:32.008 29636 29674 D Evaluation: 1 res for frame 270 received at 1573031732008
+11-06 11:15:32.040 29636 29674 D Evaluation: Frame 317 sent at 1573031732040
+11-06 11:15:32.064 29636 29674 D Evaluation: Frame 318 sent at 1573031732064
+11-06 11:15:32.101 29636 29674 D Evaluation: Frame 319 sent at 1573031732101
+11-06 11:15:32.136 29636 29674 D Evaluation: Frame 320 sent at 1573031732136
+11-06 11:15:32.139 29636 29674 D Evaluation: 1 res for frame 273 received at 1573031732139
+11-06 11:15:32.169 29636 29674 D Evaluation: Frame 321 sent at 1573031732169
+11-06 11:15:32.171 29636 29674 D Evaluation: 1 res for frame 274 received at 1573031732171
+11-06 11:15:32.195 29636 29674 D Evaluation: Frame 322 sent at 1573031732195
+11-06 11:15:32.239 29636 29674 D Evaluation: Frame 323 sent at 1573031732238
+11-06 11:15:32.241 29636 29674 D Evaluation: 1 res for frame 276 received at 1573031732241
+11-06 11:15:32.262 29636 29674 D Evaluation: Frame 324 sent at 1573031732262
+11-06 11:15:32.264 29636 29674 D Evaluation: 1 res for frame 277 received at 1573031732264
+11-06 11:15:32.303 29636 29674 D Evaluation: Frame 325 sent at 1573031732303
+11-06 11:15:32.305 29636 29674 D Evaluation: 1 res for frame 278 received at 1573031732305
+11-06 11:15:32.332 29636 29636 D Poster  : At 1573031732332 location is 65.05990574979118 (latitude), and 25.468592350482393 (longitude)
+11-06 11:15:32.335 29636 29636 D Poster  : Connected to mobile network 20
+11-06 11:15:32.337 29636 29674 D Evaluation: Frame 326 sent at 1573031732337
+11-06 11:15:32.339 29636 29674 D Evaluation: 1 res for frame 279 received at 1573031732339
+11-06 11:15:32.368 29636 29674 D Evaluation: Frame 327 sent at 1573031732368
+11-06 11:15:32.395 29636 29651 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:15:32.395 29636 29674 D Evaluation: Frame 328 sent at 1573031732395
+11-06 11:15:32.398 29636 29674 D Evaluation: 1 res for frame 280 received at 1573031732398
+11-06 11:15:32.412 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:32.413 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:32.413 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:32.413 29636 29649 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 6 lines
+11-06 11:15:32.413 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:32.414 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:32.415 29636 29649 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 26 lines
+11-06 11:15:32.416 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:32.437 29636 29674 D Evaluation: Frame 329 sent at 1573031732437
+11-06 11:15:32.439 29636 29674 D Evaluation: 1 res for frame 281 received at 1573031732439
+11-06 11:15:32.461 29636 29674 D Evaluation: Frame 330 sent at 1573031732461
+11-06 11:15:32.463 29636 29674 D Evaluation: 1 res for frame 282 received at 1573031732463
+11-06 11:15:32.509 29636 29674 D Evaluation: Frame 331 sent at 1573031732509
+11-06 11:15:32.511 29636 29674 D Evaluation: 1 res for frame 283 received at 1573031732511
+11-06 11:15:32.545 29636 29674 D Evaluation: Frame 332 sent at 1573031732545
+11-06 11:15:32.547 29636 29674 D Evaluation: 1 res for frame 284 received at 1573031732547
+11-06 11:15:32.571 29636 29674 D Evaluation: Frame 333 sent at 1573031732571
+11-06 11:15:32.604 29636 29674 D Evaluation: Frame 334 sent at 1573031732604
+11-06 11:15:32.606 29636 29674 D Evaluation: 1 res for frame 285 received at 1573031732606
+11-06 11:15:32.636 29636 29674 D Evaluation: Frame 335 sent at 1573031732636
+11-06 11:15:32.638 29636 29674 D Evaluation: 1 res for frame 286 received at 1573031732638
+11-06 11:15:32.673 29636 29674 D Evaluation: Frame 336 sent at 1573031732673
+11-06 11:15:32.675 29636 29674 D Evaluation: 1 res for frame 287 received at 1573031732675
+11-06 11:15:32.739 29636 29674 D Evaluation: Frame 337 sent at 1573031732739
+11-06 11:15:32.741 29636 29674 D Evaluation: 1 res for frame 288 received at 1573031732741
+11-06 11:15:32.778 29636 29674 D Evaluation: Frame 338 sent at 1573031732778
+11-06 11:15:32.780 29636 29674 D Evaluation: 1 res for frame 289 received at 1573031732780
+11-06 11:15:32.822 29636 29674 D Evaluation: Frame 340 sent at 1573031732822
+11-06 11:15:32.824 29636 29674 D Evaluation: 1 res for frame 290 received at 1573031732824
+11-06 11:15:32.847 29636 29674 D Evaluation: Frame 340 sent at 1573031732847
+11-06 11:15:32.849 29636 29674 D Evaluation: 0 res for frame 291 received at 1573031732849
+11-06 11:15:32.873 29636 29674 D Evaluation: Frame 341 sent at 1573031732872
+11-06 11:15:32.875 29636 29674 D Evaluation: 0 res for frame 292 received at 1573031732875
+11-06 11:15:32.899 29636 29674 D Evaluation: Frame 342 sent at 1573031732899
+11-06 11:15:32.901 29636 29674 D Evaluation: 1 res for frame 293 received at 1573031732901
+11-06 11:15:32.935 29636 29674 D Evaluation: Frame 343 sent at 1573031732935
+11-06 11:15:32.937 29636 29674 D Evaluation: 1 res for frame 294 received at 1573031732937
+11-06 11:15:32.962 29636 29674 D Evaluation: Frame 344 sent at 1573031732962
+11-06 11:15:32.964 29636 29674 D Evaluation: 1 res for frame 295 received at 1573031732964
+11-06 11:15:33.012 29636 29674 D Evaluation: Frame 345 sent at 1573031733012
+11-06 11:15:33.014 29636 29674 D Evaluation: 1 res for frame 296 received at 1573031733014
+11-06 11:15:33.045 29636 29674 D Evaluation: Frame 346 sent at 1573031733045
+11-06 11:15:33.047 29636 29674 D Evaluation: 1 res for frame 298 received at 1573031733047
+11-06 11:15:33.067 29636 29674 D Evaluation: Frame 347 sent at 1573031733067
+11-06 11:15:33.069 29636 29674 D Evaluation: 1 res for frame 298 received at 1573031733069
+11-06 11:15:33.108 29636 29674 D Evaluation: Frame 348 sent at 1573031733108
+11-06 11:15:33.135 29636 29674 D Evaluation: Frame 349 sent at 1573031733135
+11-06 11:15:33.179 29636 29674 D Evaluation: Frame 350 sent at 1573031733179
+11-06 11:15:33.264 29636 29674 D Evaluation: Frame 352 sent at 1573031733264
+11-06 11:15:33.267 29636 29674 D Evaluation: 0 res for frame 302 received at 1573031733267
+11-06 11:15:33.289 29636 29674 D Evaluation: Frame 352 sent at 1573031733289
+11-06 11:15:33.326 29636 29674 D Evaluation: Frame 354 sent at 1573031733326
+11-06 11:15:33.335 29636 29636 D Poster  : At 1573031733335 location is 65.05989664741482 (latitude), and 25.468555906297894 (longitude)
+11-06 11:15:33.338 29636 29636 D Poster  : Connected to mobile network 20
+11-06 11:15:33.345 29636 29674 D Evaluation: Frame 354 sent at 1573031733345
+11-06 11:15:33.347 29636 29674 D Evaluation: 1 res for frame 306 received at 1573031733347
+11-06 11:15:33.368 29636 29674 D Evaluation: Frame 355 sent at 1573031733368
+11-06 11:15:33.370 29636 29674 D Evaluation: 2 res for frame 307 received at 1573031733370
+11-06 11:15:33.396 29636 29674 D Evaluation: Frame 356 sent at 1573031733396
+11-06 11:15:33.398 29636 29674 D Evaluation: 1 res for frame 308 received at 1573031733398
+11-06 11:15:33.432 29636 29674 D Evaluation: Frame 357 sent at 1573031733432
+11-06 11:15:33.465 29636 29674 D Evaluation: Frame 358 sent at 1573031733465
+11-06 11:15:33.503 29636 29674 D Evaluation: Frame 359 sent at 1573031733503
+11-06 11:15:33.538 29636 29674 D Evaluation: Frame 360 sent at 1573031733538
+11-06 11:15:33.540 29636 29674 D Evaluation: 1 res for frame 311 received at 1573031733540
+11-06 11:15:33.584 29636 29674 D Evaluation: Frame 361 sent at 1573031733584
+11-06 11:15:33.588 29636 29674 D Evaluation: 1 res for frame 312 received at 1573031733588
+11-06 11:15:33.616 29636 29674 D Evaluation: Frame 362 sent at 1573031733616
+11-06 11:15:33.638 29636 29674 D Evaluation: Frame 363 sent at 1573031733638
+11-06 11:15:33.675 29636 29674 D Evaluation: Frame 364 sent at 1573031733675
+11-06 11:15:33.677 29636 29674 D Evaluation: 1 res for frame 316 received at 1573031733677
+11-06 11:15:33.701 29636 29674 D Evaluation: Frame 365 sent at 1573031733701
+11-06 11:15:33.740 29636 29674 D Evaluation: Frame 366 sent at 1573031733740
+11-06 11:15:33.777 29636 29674 D Evaluation: Frame 367 sent at 1573031733777
+11-06 11:15:33.826 29636 29674 D Evaluation: Frame 368 sent at 1573031733826
+11-06 11:15:33.853 29636 29674 D Evaluation: Frame 369 sent at 1573031733853
+11-06 11:15:33.853 29636 29651 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:15:33.855 29636 29674 D Evaluation: 1 res for frame 323 received at 1573031733855
+11-06 11:15:33.876 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:33.883 29636 29649 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 50 lines
+11-06 11:15:33.883 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:33.888 29636 29674 D Evaluation: Frame 370 sent at 1573031733888
+11-06 11:15:33.922 29636 29674 D Evaluation: Frame 371 sent at 1573031733922
+11-06 11:15:33.924 29636 29674 D Evaluation: 1 res for frame 325 received at 1573031733924
+11-06 11:15:33.946 29636 29674 D Evaluation: Frame 372 sent at 1573031733946
+11-06 11:15:33.987 29636 29674 D Evaluation: Frame 373 sent at 1573031733987
+11-06 11:15:34.025 29636 29674 D Evaluation: Frame 374 sent at 1573031734025
+11-06 11:15:34.050 29636 29674 D Evaluation: Frame 375 sent at 1573031734050
+11-06 11:15:34.053 29636 29674 D Evaluation: 1 res for frame 329 received at 1573031734053
+11-06 11:15:34.079 29636 29674 D Evaluation: Frame 376 sent at 1573031734079
+11-06 11:15:34.117 29636 29674 D Evaluation: Frame 377 sent at 1573031734117
+11-06 11:15:34.119 29636 29674 D Evaluation: 1 res for frame 331 received at 1573031734119
+11-06 11:15:34.150 29636 29674 D Evaluation: Frame 378 sent at 1573031734150
+11-06 11:15:34.152 29636 29674 D Evaluation: 1 res for frame 332 received at 1573031734152
+11-06 11:15:34.184 29636 29674 D Evaluation: Frame 379 sent at 1573031734183
+11-06 11:15:34.212 29636 29674 D Evaluation: Frame 380 sent at 1573031734212
+11-06 11:15:34.247 29636 29674 D Evaluation: Frame 381 sent at 1573031734247
+11-06 11:15:34.283 29636 29674 D Evaluation: Frame 382 sent at 1573031734283
+11-06 11:15:34.335 29636 29636 D Poster  : At 1573031734334 location is 65.05989839522468 (latitude), and 25.468598160441474 (longitude)
+11-06 11:15:34.339 29636 29636 D Poster  : Connected to mobile network 20
+11-06 11:15:34.383 29636 29674 D Evaluation: Frame 383 sent at 1573031734382
+11-06 11:15:34.384 29636 29674 D Evaluation: 1 res for frame 337 received at 1573031734384
+11-06 11:15:34.412 29636 29674 D Evaluation: Frame 384 sent at 1573031734412
+11-06 11:15:34.414 29636 29674 D Evaluation: 1 res for frame 338 received at 1573031734414
+11-06 11:15:34.449 29636 29674 D Evaluation: Frame 385 sent at 1573031734449
+11-06 11:15:34.451 29636 29674 D Evaluation: 1 res for frame 340 received at 1573031734451
+11-06 11:15:34.480 29636 29674 D Evaluation: Frame 386 sent at 1573031734480
+11-06 11:15:34.482 29636 29674 D Evaluation: 1 res for frame 340 received at 1573031734482
+11-06 11:15:34.525 29636 29674 D Evaluation: Frame 387 sent at 1573031734525
+11-06 11:15:34.527 29636 29674 D Evaluation: 1 res for frame 341 received at 1573031734527
+11-06 11:15:34.557 29636 29674 D Evaluation: Frame 388 sent at 1573031734557
+11-06 11:15:34.559 29636 29674 D Evaluation: 1 res for frame 342 received at 1573031734559
+11-06 11:15:34.589 29636 29674 D Evaluation: Frame 389 sent at 1573031734589
+11-06 11:15:34.663 29636 29674 D Evaluation: Frame 390 sent at 1573031734663
+11-06 11:15:34.694 29636 29674 D Evaluation: Frame 391 sent at 1573031734694
+11-06 11:15:34.717 29636 29674 D Evaluation: Frame 392 sent at 1573031734717
+11-06 11:15:34.746 29636 29674 D Evaluation: Frame 393 sent at 1573031734746
+11-06 11:15:34.790 29636 29674 D Evaluation: Frame 394 sent at 1573031734790
+11-06 11:15:34.827 29636 29674 D Evaluation: Frame 395 sent at 1573031734827
+11-06 11:15:34.863 29636 29674 D Evaluation: Frame 396 sent at 1573031734863
+11-06 11:15:34.936 29636 29674 D Evaluation: Frame 397 sent at 1573031734936
+11-06 11:15:34.963 29636 29674 D Evaluation: Frame 398 sent at 1573031734963
+11-06 11:15:34.997 29636 29674 D Evaluation: Frame 399 sent at 1573031734997
+11-06 11:15:35.021 29636 29674 D Evaluation: Frame 400 sent at 1573031735021
+11-06 11:15:35.102 29636 29674 D Evaluation: Frame 401 sent at 1573031735102
+11-06 11:15:35.136 29636 29674 D Evaluation: Frame 402 sent at 1573031735136
+11-06 11:15:35.163 29636 29674 D Evaluation: Frame 403 sent at 1573031735163
+11-06 11:15:35.196 29636 29674 D Evaluation: Frame 404 sent at 1573031735196
+11-06 11:15:35.226 29636 29674 D Evaluation: Frame 405 sent at 1573031735226
+11-06 11:15:35.260 29636 29674 D Evaluation: Frame 406 sent at 1573031735260
+11-06 11:15:35.293 29636 29674 D Evaluation: Frame 407 sent at 1573031735293
+11-06 11:15:35.332 29636 29674 D Evaluation: Frame 408 sent at 1573031735332
+11-06 11:15:35.337 29636 29636 D Poster  : At 1573031735337 location is 65.05990373128621 (latitude), and 25.468583208677252 (longitude)
+11-06 11:15:35.341 29636 29636 D Poster  : Connected to mobile network 20
+11-06 11:15:35.364 29636 29674 D Evaluation: Frame 409 sent at 1573031735364
+11-06 11:15:35.381 29636 29674 D Evaluation: Frame 410 sent at 1573031735381
+11-06 11:15:35.415 29636 29674 D Evaluation: Frame 411 sent at 1573031735415
+11-06 11:15:35.504 29636 29674 D Evaluation: Frame 412 sent at 1573031735504
+11-06 11:15:35.533 29636 29674 D Evaluation: Frame 413 sent at 1573031735533
+11-06 11:15:35.557 29636 29674 D Evaluation: Frame 414 sent at 1573031735557
+11-06 11:15:35.596 29636 29674 D Evaluation: Frame 415 sent at 1573031735596
+11-06 11:15:35.632 29636 29674 D Evaluation: Frame 416 sent at 1573031735632
+11-06 11:15:35.655 29636 29674 D Evaluation: Frame 417 sent at 1573031735655
+11-06 11:15:35.708 29636 29651 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:15:35.708 29636 29674 D Evaluation: Frame 419 sent at 1573031735708
+11-06 11:15:35.728 29636 29674 D Evaluation: Frame 419 sent at 1573031735728
+11-06 11:15:35.729 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:35.729 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:35.729 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:35.729 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:35.730 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:35.730 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:35.730 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:35.730 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:35.730 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:35.730 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:35.730 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:35.730 29636 29649 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-06 11:15:35.730 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:35.730 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:35.730 29636 29649 I chatty  : uid=10149(symlab.cloudridar.arhud) FinalizerDaemon identical 4 lines
+11-06 11:15:35.731 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:35.731 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:35.731 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:35.731 29636 29649 W System  : A resource failed to call close. 
+11-06 11:15:35.751 29636 29674 D Evaluation: Frame 420 sent at 1573031735751
+11-06 11:15:35.794 29636 29674 D Evaluation: Frame 421 sent at 1573031735794
+11-06 11:15:35.817 29636 29674 D Evaluation: Frame 422 sent at 1573031735817
+11-06 11:15:35.867 29636 29674 D Evaluation: Frame 423 sent at 1573031735867
+11-06 11:15:35.895 29636 29674 D Evaluation: Frame 424 sent at 1573031735895
+11-06 11:15:35.931 29636 29674 D Evaluation: Frame 425 sent at 1573031735931
+11-06 11:15:35.962 29636 29674 D Evaluation: Frame 426 sent at 1573031735962
+11-06 11:15:36.049 29636 29674 D Evaluation: Frame 428 sent at 1573031736049
+11-06 11:15:36.076 29636 29674 D Evaluation: Frame 428 sent at 1573031736076
+11-06 11:15:36.153 29636 29674 D Evaluation: Frame 430 sent at 1573031736153
+11-06 11:15:36.178 29636 29674 D Evaluation: Frame 430 sent at 1573031736178
+11-06 11:15:36.206 29636 29674 D Evaluation: Frame 431 sent at 1573031736206
+11-06 11:15:36.228 29636 29674 D Evaluation: Frame 432 sent at 1573031736228
+11-06 11:15:36.281 29636 29674 D Evaluation: Frame 434 sent at 1573031736281
+11-06 11:15:36.300 29636 29674 D Evaluation: Frame 434 sent at 1573031736300
+11-06 11:15:36.323 29636 29636 D Poster  : At 1573031736323 location is 65.05990373128621 (latitude), and 25.468583208677252 (longitude)
+11-06 11:15:36.325 29636 29636 D Poster  : Connected to mobile network 20
+11-06 11:15:36.332 29636 29674 D Evaluation: Frame 435 sent at 1573031736332
+11-06 11:15:36.352 29636 29674 D Evaluation: Frame 436 sent at 1573031736352
+11-06 11:15:36.380 29636 29674 D Evaluation: Frame 437 sent at 1573031736380
+11-06 11:15:36.430 29636 29674 D Evaluation: Frame 438 sent at 1573031736430
+11-06 11:15:36.467 29636 29674 D Evaluation: Frame 439 sent at 1573031736467
+11-06 11:15:36.503 29636 29674 D Evaluation: Frame 440 sent at 1573031736503
+11-06 11:15:36.581 29636 29674 D Evaluation: Frame 441 sent at 1573031736581
+11-06 11:15:36.666 29636 29674 D Evaluation: Frame 443 sent at 1573031736666
+11-06 11:15:36.688 29636 29674 D Evaluation: Frame 444 sent at 1573031736688
+11-06 11:15:36.708 29636 29674 D Evaluation: Frame 444 sent at 1573031736708
+11-06 11:15:36.725 29636 29674 D Evaluation: Frame 445 sent at 1573031736725
+11-06 11:15:36.763 29636 29674 D Evaluation: Frame 446 sent at 1573031736763
+11-06 11:15:36.802 29636 29674 D Evaluation: Frame 447 sent at 1573031736802
+11-06 11:15:36.844 29636 29674 D Evaluation: Frame 448 sent at 1573031736844
+11-06 11:15:36.873 29636 29674 D Evaluation: Frame 449 sent at 1573031736873
+11-06 11:15:36.902 29636 29674 D Evaluation: Frame 450 sent at 1573031736902
+11-06 11:15:36.945 29636 29674 D Evaluation: Frame 451 sent at 1573031736944
+11-06 11:15:36.984 29636 29674 D Evaluation: Frame 452 sent at 1573031736984
+11-06 11:15:37.065 29636 29674 D Evaluation: Frame 454 sent at 1573031737065
+11-06 11:15:37.086 29636 29674 D Evaluation: Frame 455 sent at 1573031737086
+11-06 11:15:37.104 29636 29674 D Evaluation: Frame 455 sent at 1573031737104
+11-06 11:15:37.135 29636 29674 D Evaluation: Frame 456 sent at 1573031737135
+11-06 11:15:37.171 29636 29674 D Evaluation: Frame 457 sent at 1573031737171
+11-06 11:15:37.209 29636 29674 D Evaluation: Frame 458 sent at 1573031737209
+11-06 11:15:37.231 29636 29674 D Evaluation: Frame 459 sent at 1573031737231
+11-06 11:15:37.271 29636 29674 D Evaluation: Frame 460 sent at 1573031737271
+11-06 11:15:37.298 29636 29674 D Evaluation: Frame 461 sent at 1573031737298
+11-06 11:15:37.327 29636 29636 D Poster  : At 1573031737327 location is 65.05990484490128 (latitude), and 25.468584675255656 (longitude)
+11-06 11:15:37.331 29636 29636 D Poster  : Connected to mobile network 20
+11-06 11:15:37.370 29636 29674 D Evaluation: Frame 463 sent at 1573031737370
+11-06 11:15:37.394 29636 29674 D Evaluation: Frame 464 sent at 1573031737394
+11-06 11:15:37.414 29636 29674 D Evaluation: Frame 464 sent at 1573031737414
+11-06 11:15:37.433 29636 29674 D Evaluation: Frame 465 sent at 1573031737433
+11-06 11:15:37.463 29636 29674 D Evaluation: Frame 466 sent at 1573031737463
+11-06 11:15:37.508 29636 29674 D Evaluation: Frame 467 sent at 1573031737508
+11-06 11:15:37.541 29636 29674 D Evaluation: Frame 468 sent at 1573031737541
+11-06 11:15:37.587 29636 29674 D Evaluation: Frame 469 sent at 1573031737587
+11-06 11:15:37.616 29636 29674 D Evaluation: Frame 470 sent at 1573031737616
+11-06 11:15:37.646 29636 29674 D Evaluation: Frame 471 sent at 1573031737646
+11-06 11:15:37.681 29636 29674 D Evaluation: Frame 473 sent at 1573031737681
+11-06 11:15:37.708 29636 29674 D Evaluation: Frame 473 sent at 1573031737708
+11-06 11:15:37.747 29636 29674 D Evaluation: Frame 474 sent at 1573031737747
+11-06 11:15:37.747 29636 29651 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:15:37.772 29636 29674 D Evaluation: Frame 475 sent at 1573031737772
+11-06 11:15:37.806 29636 29674 D Evaluation: Frame 476 sent at 1573031737806
+11-06 11:15:37.846 29636 29674 D Evaluation: Frame 477 sent at 1573031737846
+11-06 11:15:37.873 29636 29674 D Evaluation: Frame 478 sent at 1573031737873
+11-06 11:15:37.907 29636 29674 D Evaluation: Frame 479 sent at 1573031737907
+11-06 11:15:37.939 29636 29674 D Evaluation: Frame 480 sent at 1573031737939
+11-06 11:15:38.028 29636 29674 D Evaluation: Frame 481 sent at 1573031738028
+11-06 11:15:38.064 29636 29674 D Evaluation: Frame 482 sent at 1573031738064
+11-06 11:15:38.089 29636 29674 D Evaluation: Frame 484 sent at 1573031738089
+11-06 11:15:38.113 29636 29674 D Evaluation: Frame 484 sent at 1573031738113
+11-06 11:15:38.139 29636 29674 D Evaluation: Frame 485 sent at 1573031738139
+11-06 11:15:38.175 29636 29674 D Evaluation: Frame 486 sent at 1573031738175
+11-06 11:15:38.221 29636 29674 D Evaluation: Frame 487 sent at 1573031738221
+11-06 11:15:38.249 29636 29674 D Evaluation: Frame 488 sent at 1573031738249
+11-06 11:15:38.276 29636 29674 D Evaluation: Frame 489 sent at 1573031738276
+11-06 11:15:38.330 29636 29674 D Evaluation: Frame 490 sent at 1573031738330
+11-06 11:15:38.331 29636 29636 D Poster  : At 1573031738331 location is 65.05989986629876 (latitude), and 25.46860322761944 (longitude)
+11-06 11:15:38.333 29636 29636 D Poster  : Connected to mobile network 20
+11-06 11:15:38.406 29636 29674 D Evaluation: Frame 491 sent at 1573031738406
+11-06 11:15:38.440 29636 29674 D Evaluation: Frame 492 sent at 1573031738440
+11-06 11:15:38.479 29636 29674 D Evaluation: Frame 493 sent at 1573031738479
+11-06 11:15:38.512 29636 29674 D Evaluation: Frame 494 sent at 1573031738512
+11-06 11:15:38.543 29636 29674 D Evaluation: Frame 495 sent at 1573031738543
+11-06 11:15:38.580 29636 29674 D Evaluation: Frame 496 sent at 1573031738580
+11-06 11:15:38.605 29636 29674 D Evaluation: Frame 497 sent at 1573031738605
+11-06 11:15:38.643 29636 29674 D Evaluation: Frame 498 sent at 1573031738643
+11-06 11:15:38.679 29636 29674 D Evaluation: Frame 499 sent at 1573031738679
+11-06 11:15:38.715 29636 29674 D Evaluation: Frame 500 sent at 1573031738714
+11-06 11:15:38.743 29636 29674 D Evaluation: Frame 501 sent at 1573031738743
+11-06 11:15:38.783 29636 29674 D Evaluation: Frame 502 sent at 1573031738783
+11-06 11:15:38.835 29636 29674 D Evaluation: Frame 503 sent at 1573031738835
+11-06 11:15:38.908 29636 29674 D Evaluation: Frame 505 sent at 1573031738908
+11-06 11:15:38.932 29636 29674 D Evaluation: Frame 505 sent at 1573031738932
+11-06 11:15:38.958 29636 29674 D Evaluation: Frame 506 sent at 1573031738958
+11-06 11:15:38.988 29636 29674 D Evaluation: Frame 507 sent at 1573031738988
+11-06 11:15:39.021 29636 29674 D Evaluation: Frame 508 sent at 1573031739021
+11-06 11:15:39.060 29636 29674 D Evaluation: Frame 509 sent at 1573031739060
+11-06 11:15:39.091 29636 29674 D Evaluation: Frame 510 sent at 1573031739091
+11-06 11:15:39.115 29636 29674 D Evaluation: Frame 511 sent at 1573031739115
+11-06 11:15:39.159 29636 29674 D Evaluation: Frame 512 sent at 1573031739159
+11-06 11:15:39.190 29636 29674 D Evaluation: Frame 513 sent at 1573031739190
+11-06 11:15:39.227 29636 29674 D Evaluation: Frame 514 sent at 1573031739227
+11-06 11:15:39.259 29636 29674 D Evaluation: Frame 515 sent at 1573031739259
+11-06 11:15:39.293 29636 29674 D Evaluation: Frame 516 sent at 1573031739293
+11-06 11:15:39.326 29636 29636 D Poster  : At 1573031739325 location is 65.05990478864149 (latitude), and 25.46860666713222 (longitude)
+11-06 11:15:39.330 29636 29636 D Poster  : Connected to mobile network 20
+11-06 11:15:39.372 29636 29674 D Evaluation: Frame 518 sent at 1573031739372
+11-06 11:15:39.390 29636 29674 D Evaluation: Frame 518 sent at 1573031739390
+11-06 11:15:39.419 29636 29674 D Evaluation: Frame 519 sent at 1573031739418
+11-06 11:15:39.446 29636 29674 D Evaluation: Frame 520 sent at 1573031739445
+11-06 11:15:39.487 29636 29674 D Evaluation: Frame 521 sent at 1573031739487
+11-06 11:15:39.520 29636 29674 D Evaluation: Frame 522 sent at 1573031739520
+11-06 11:15:39.565 29636 29674 D Evaluation: Frame 523 sent at 1573031739565
+11-06 11:15:39.595 29636 29674 D Evaluation: Frame 524 sent at 1573031739595
+11-06 11:15:39.627 29636 29674 D Evaluation: Frame 525 sent at 1573031739627
+11-06 11:15:39.657 29636 29674 D Evaluation: Frame 526 sent at 1573031739657
+11-06 11:15:39.691 29636 29651 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:15:39.691 29636 29674 D Evaluation: Frame 527 sent at 1573031739691
+11-06 11:15:39.727 29636 29674 D Evaluation: Frame 528 sent at 1573031739727
+11-06 11:15:39.748 29636 29674 D Evaluation: Frame 529 sent at 1573031739748
+11-06 11:15:39.786 29636 29674 D Evaluation: Frame 530 sent at 1573031739786
+11-06 11:15:39.815 29636 29674 D Evaluation: Frame 531 sent at 1573031739815
+11-06 11:15:39.870 29636 29674 D Evaluation: Frame 532 sent at 1573031739870
+11-06 11:15:39.893 29636 29674 D Evaluation: Frame 533 sent at 1573031739893
+11-06 11:15:39.983 29636 29674 D Evaluation: Frame 535 sent at 1573031739983
+11-06 11:15:40.006 29636 29674 D Evaluation: Frame 535 sent at 1573031740006
+11-06 11:15:40.034 29636 29674 D Evaluation: Frame 536 sent at 1573031740034
+11-06 11:15:40.063 29636 29674 D Evaluation: Frame 537 sent at 1573031740063
+11-06 11:15:40.102 29636 29674 D Evaluation: Frame 538 sent at 1573031740102
+11-06 11:15:40.131 29636 29674 D Evaluation: Frame 539 sent at 1573031740131
+11-06 11:15:40.166 29636 29674 D Evaluation: Frame 540 sent at 1573031740166
+11-06 11:15:40.202 29636 29674 D Evaluation: Frame 541 sent at 1573031740202
+11-06 11:15:40.231 29636 29674 D Evaluation: Frame 542 sent at 1573031740231
+11-06 11:15:40.263 29636 29674 D Evaluation: Frame 543 sent at 1573031740263
+11-06 11:15:40.289 29636 29674 D Evaluation: Frame 544 sent at 1573031740289
+11-06 11:15:40.330 29636 29674 D Evaluation: Frame 545 sent at 1573031740330
+11-06 11:15:40.335 29636 29636 D Poster  : At 1573031740335 location is 65.05990340847225 (latitude), and 25.46861121303397 (longitude)
+11-06 11:15:40.338 29636 29636 D Poster  : Connected to mobile network 20
+11-06 11:15:40.356 29636 29674 D Evaluation: Frame 546 sent at 1573031740356
+11-06 11:15:40.387 29636 29674 D Evaluation: Frame 547 sent at 1573031740387
+11-06 11:15:40.423 29636 29674 D Evaluation: Frame 548 sent at 1573031740423
+11-06 11:15:40.455 29636 29674 D Evaluation: Frame 549 sent at 1573031740455
+11-06 11:15:40.496 29636 29674 D Evaluation: Frame 550 sent at 1573031740495
+11-06 11:15:40.568 29636 29674 D Evaluation: Frame 551 sent at 1573031740568
+11-06 11:15:40.606 29636 29674 D Evaluation: Frame 552 sent at 1573031740606
+11-06 11:15:40.641 29636 29674 D Evaluation: Frame 553 sent at 1573031740641
+11-06 11:15:40.678 29636 29674 D Evaluation: Frame 554 sent at 1573031740678
+11-06 11:15:40.699 29636 29674 D Evaluation: Frame 555 sent at 1573031740699
+11-06 11:15:40.731 29636 29674 D Evaluation: Frame 556 sent at 1573031740731
+11-06 11:15:40.756 29636 29674 D Evaluation: Frame 557 sent at 1573031740756
+11-06 11:15:40.798 29636 29674 D Evaluation: Frame 558 sent at 1573031740798
+11-06 11:15:40.825 29636 29674 D Evaluation: Frame 559 sent at 1573031740825
+11-06 11:15:40.859 29636 29674 D Evaluation: Frame 560 sent at 1573031740859
+11-06 11:15:40.903 29636 29674 D Evaluation: Frame 561 sent at 1573031740903
+11-06 11:15:40.939 29636 29674 D Evaluation: Frame 562 sent at 1573031740939
+11-06 11:15:40.969 29636 29674 D Evaluation: Frame 563 sent at 1573031740969
+11-06 11:15:41.004 29636 29674 D Evaluation: Frame 564 sent at 1573031741004
+11-06 11:15:41.039 29636 29674 D Evaluation: Frame 565 sent at 1573031741039
+11-06 11:15:41.072 29636 29674 D Evaluation: Frame 566 sent at 1573031741072
+11-06 11:15:41.106 29636 29674 D Evaluation: Frame 567 sent at 1573031741105
+11-06 11:15:41.134 29636 29674 D Evaluation: Frame 568 sent at 1573031741134
+11-06 11:15:41.168 29636 29674 D Evaluation: Frame 569 sent at 1573031741168
+11-06 11:15:41.207 29636 29674 D Evaluation: Frame 570 sent at 1573031741207
+11-06 11:15:41.241 29636 29674 D Evaluation: Frame 571 sent at 1573031741241
+11-06 11:15:41.276 29636 29674 D Evaluation: Frame 572 sent at 1573031741276
+11-06 11:15:41.306 29636 29674 D Evaluation: Frame 573 sent at 1573031741306
+11-06 11:15:41.330 29636 29636 D Poster  : At 1573031741330 location is 65.05990334972465 (latitude), and 25.468609954158172 (longitude)
+11-06 11:15:41.332 29636 29636 D Poster  : Connected to mobile network 20
+11-06 11:15:41.332 29636 29674 D Evaluation: Frame 574 sent at 1573031741332
+11-06 11:15:41.364 29636 29674 D Evaluation: Frame 575 sent at 1573031741364
+11-06 11:15:41.405 29636 29674 D Evaluation: Frame 576 sent at 1573031741405
+11-06 11:15:41.430 29636 29674 D Evaluation: Frame 577 sent at 1573031741430
+11-06 11:15:41.474 29636 29674 D Evaluation: Frame 578 sent at 1573031741474
+11-06 11:15:41.507 29636 29674 D Evaluation: Frame 579 sent at 1573031741507
+11-06 11:15:41.543 29636 29674 D Evaluation: Frame 580 sent at 1573031741543
+11-06 11:15:41.579 29636 29674 D Evaluation: Frame 581 sent at 1573031741579
+11-06 11:15:41.580 29636 29651 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:15:41.611 29636 29674 D Evaluation: Frame 582 sent at 1573031741611
+11-06 11:15:41.643 29636 29674 D Evaluation: Frame 583 sent at 1573031741643
+11-06 11:15:41.682 29636 29674 D Evaluation: Frame 584 sent at 1573031741682
+11-06 11:15:41.711 29636 29674 D Evaluation: Frame 585 sent at 1573031741711
+11-06 11:15:41.750 29636 29674 D Evaluation: Frame 586 sent at 1573031741750
+11-06 11:15:41.776 29636 29674 D Evaluation: Frame 587 sent at 1573031741776
+11-06 11:15:41.843 29636 29674 D Evaluation: Frame 588 sent at 1573031741843
+11-06 11:15:41.868 29636 29674 D Evaluation: Frame 589 sent at 1573031741868
+11-06 11:15:41.869 29636 29636 D stylus  : init stylus touchlistener.
+11-06 11:15:41.878 29636 29636 W Settings: Setting device_provisioned has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+11-06 11:15:41.879 29636 29636 V HiTouch_HiTouchSensor: User setup is finished.
+11-06 11:15:41.895 29636 29636 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:93.96924, limit is:60The moving distance of Y is:48.722534, limit is:60
+11-06 11:15:41.916 29636 29674 D Evaluation: Frame 590 sent at 1573031741916
+11-06 11:15:41.942 29636 29674 D Evaluation: Frame 591 sent at 1573031741942
+11-06 11:15:41.976 29636 29674 D Evaluation: Frame 592 sent at 1573031741975
+11-06 11:15:41.994 29636 29674 D Evaluation: Frame 593 sent at 1573031741994
+11-06 11:15:42.026 29636 29674 D Evaluation: Frame 594 sent at 1573031742026
+11-06 11:15:42.061 29636 29674 D Evaluation: Frame 595 sent at 1573031742061
+11-06 11:15:42.094 29636 29674 D Evaluation: Frame 596 sent at 1573031742094
+11-06 11:15:42.131 29636 29674 D Evaluation: Frame 597 sent at 1573031742131
+11-06 11:15:42.172 29636 29674 D Evaluation: Frame 598 sent at 1573031742172
+11-06 11:15:42.195 29636 29674 D Evaluation: Frame 599 sent at 1573031742195
+11-06 11:15:42.273 29636 29674 D Evaluation: Frame 600 sent at 1573031742273
+11-06 11:15:42.302 29636 29674 D Evaluation: Frame 601 sent at 1573031742302
+11-06 11:15:42.328 29636 29636 D Poster  : At 1573031742328 location is 65.05990475680369 (latitude), and 25.468602972479715 (longitude)
+11-06 11:15:42.330 29636 29636 D Poster  : Connected to mobile network 20
+11-06 11:15:42.331 29636 29674 D Evaluation: Frame 602 sent at 1573031742331
+11-06 11:15:42.373 29636 29674 D Evaluation: Frame 603 sent at 1573031742372
+11-06 11:15:42.397 29636 29674 D Evaluation: Frame 604 sent at 1573031742397
+11-06 11:15:42.465 29636 29674 D Evaluation: Frame 605 sent at 1573031742465
+11-06 11:15:42.503 29636 29674 D Evaluation: Frame 606 sent at 1573031742503
+11-06 11:15:42.533 29636 29674 D Evaluation: Frame 607 sent at 1573031742533
+11-06 11:15:42.572 29636 29674 D Evaluation: Frame 608 sent at 1573031742572
+11-06 11:15:42.599 29636 29674 D Evaluation: Frame 609 sent at 1573031742599
+11-06 11:15:42.638 29636 29674 D Evaluation: Frame 610 sent at 1573031742638
+11-06 11:15:42.666 29636 29674 D Evaluation: Frame 611 sent at 1573031742666
+11-06 11:15:42.707 29636 29674 D Evaluation: Frame 612 sent at 1573031742707
+11-06 11:15:42.740 29636 29674 D Evaluation: Frame 613 sent at 1573031742740
+11-06 11:15:42.766 29636 29674 D Evaluation: Frame 614 sent at 1573031742766
+11-06 11:15:42.814 29636 29674 D Evaluation: Frame 615 sent at 1573031742814
+11-06 11:15:42.832 29636 29674 D Evaluation: Frame 616 sent at 1573031742832
+11-06 11:15:42.879 29636 29674 D Evaluation: Frame 617 sent at 1573031742879
+11-06 11:15:42.903 29636 29674 D Evaluation: Frame 618 sent at 1573031742903
+11-06 11:15:42.943 29636 29674 D Evaluation: Frame 619 sent at 1573031742943
+11-06 11:15:42.968 29636 29674 D Evaluation: Frame 620 sent at 1573031742968
+11-06 11:15:43.009 29636 29674 D Evaluation: Frame 621 sent at 1573031743009
+11-06 11:15:43.031 29636 29674 D Evaluation: Frame 622 sent at 1573031743031
+11-06 11:15:43.081 29636 29674 D Evaluation: Frame 623 sent at 1573031743081
+11-06 11:15:43.104 29636 29674 D Evaluation: Frame 624 sent at 1573031743104
+11-06 11:15:43.143 29636 29674 D Evaluation: Frame 625 sent at 1573031743143
+11-06 11:15:43.171 29636 29674 D Evaluation: Frame 626 sent at 1573031743171
+11-06 11:15:43.208 29636 29674 D Evaluation: Frame 627 sent at 1573031743208
+11-06 11:15:43.234 29636 29674 D Evaluation: Frame 628 sent at 1573031743234
+11-06 11:15:43.280 29636 29674 D Evaluation: Frame 629 sent at 1573031743280
+11-06 11:15:43.304 29636 29651 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:15:43.305 29636 29674 D Evaluation: Frame 630 sent at 1573031743305
+11-06 11:15:43.343 29636 29636 D Poster  : At 1573031743343 location is 65.05990475680369 (latitude), and 25.468602972479715 (longitude)
+11-06 11:15:43.344 29636 29636 D Poster  : Connected to mobile network 20
+11-06 11:15:43.352 29636 29674 D Evaluation: Frame 631 sent at 1573031743352
+11-06 11:15:43.375 29636 29674 D Evaluation: Frame 632 sent at 1573031743375
+11-06 11:15:43.413 29636 29674 D Evaluation: Frame 633 sent at 1573031743413
+11-06 11:15:43.437 29636 29674 D Evaluation: Frame 634 sent at 1573031743436
+11-06 11:15:43.480 29636 29674 D Evaluation: Frame 635 sent at 1573031743480
+11-06 11:15:43.504 29636 29674 D Evaluation: Frame 636 sent at 1573031743504
+11-06 11:15:43.545 29636 29674 D Evaluation: Frame 637 sent at 1573031743545
+11-06 11:15:43.571 29636 29674 D Evaluation: Frame 638 sent at 1573031743571
+11-06 11:15:43.618 29636 29674 D Evaluation: Frame 639 sent at 1573031743618
+11-06 11:15:43.638 29636 29674 D Evaluation: Frame 640 sent at 1573031743638
+11-06 11:15:43.679 29636 29674 D Evaluation: Frame 641 sent at 1573031743679
+11-06 11:15:43.708 29636 29674 D Evaluation: Frame 642 sent at 1573031743708
+11-06 11:15:43.749 29636 29674 D Evaluation: Frame 643 sent at 1573031743749
+11-06 11:15:43.770 29636 29674 D Evaluation: Frame 644 sent at 1573031743770
+11-06 11:15:43.816 29636 29674 D Evaluation: Frame 645 sent at 1573031743816
+11-06 11:15:43.842 29636 29674 D Evaluation: Frame 646 sent at 1573031743842
+11-06 11:15:43.887 29636 29674 D Evaluation: Frame 647 sent at 1573031743887
+11-06 11:15:43.916 29636 29674 D Evaluation: Frame 648 sent at 1573031743916
+11-06 11:15:43.941 29636 29674 D Evaluation: Frame 649 sent at 1573031743941
+11-06 11:15:43.975 29636 29674 D Evaluation: Frame 650 sent at 1573031743975
+11-06 11:15:44.011 29636 29674 D Evaluation: Frame 651 sent at 1573031744011
+11-06 11:15:44.040 29636 29674 D Evaluation: Frame 652 sent at 1573031744040
+11-06 11:15:44.078 29636 29674 D Evaluation: Frame 653 sent at 1573031744078
+11-06 11:15:44.119 29636 29674 D Evaluation: Frame 654 sent at 1573031744119
+11-06 11:15:44.145 29636 29674 D Evaluation: Frame 655 sent at 1573031744145
+11-06 11:15:44.186 29636 29674 D Evaluation: Frame 656 sent at 1573031744186
+11-06 11:15:44.212 29636 29674 D Evaluation: Frame 657 sent at 1573031744212
+11-06 11:15:44.252 29636 29674 D Evaluation: Frame 658 sent at 1573031744252
+11-06 11:15:44.277 29636 29674 D Evaluation: Frame 659 sent at 1573031744277
+11-06 11:15:44.311 29636 29674 D Evaluation: Frame 660 sent at 1573031744311
+11-06 11:15:44.325 29636 29636 D Poster  : At 1573031744325 location is 65.05991277101424 (latitude), and 25.468605425009105 (longitude)
+11-06 11:15:44.326 29636 29636 D Poster  : Connected to mobile network 20
+11-06 11:15:44.359 29636 29674 D Evaluation: Frame 661 sent at 1573031744359
+11-06 11:15:44.381 29636 29674 D Evaluation: Frame 662 sent at 1573031744381
+11-06 11:15:44.428 29636 29674 D Evaluation: Frame 663 sent at 1573031744428
+11-06 11:15:44.454 29636 29674 D Evaluation: Frame 664 sent at 1573031744454
+11-06 11:15:44.483 29636 29674 D Evaluation: Frame 665 sent at 1573031744483
+11-06 11:15:44.511 29636 29674 D Evaluation: Frame 666 sent at 1573031744511
+11-06 11:15:44.544 29636 29674 D Evaluation: Frame 667 sent at 1573031744544
+11-06 11:15:44.580 29636 29674 D Evaluation: Frame 668 sent at 1573031744579
+11-06 11:15:44.614 29636 29674 D Evaluation: Frame 669 sent at 1573031744614
+11-06 11:15:44.647 29636 29674 D Evaluation: Frame 670 sent at 1573031744647
+11-06 11:15:44.683 29636 29674 D Evaluation: Frame 671 sent at 1573031744683
+11-06 11:15:44.714 29636 29674 D Evaluation: Frame 672 sent at 1573031744714
+11-06 11:15:44.750 29636 29674 D Evaluation: Frame 673 sent at 1573031744750
+11-06 11:15:44.780 29636 29674 D Evaluation: Frame 674 sent at 1573031744780
+11-06 11:15:44.816 29636 29674 D Evaluation: Frame 675 sent at 1573031744816
+11-06 11:15:44.856 29636 29674 D Evaluation: Frame 676 sent at 1573031744856
+11-06 11:15:44.891 29636 29674 D Evaluation: Frame 677 sent at 1573031744890
+11-06 11:15:44.914 29636 29651 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-06 11:15:44.914 29636 29674 D Evaluation: Frame 678 sent at 1573031744914
+11-06 11:15:44.962 29636 29674 D Evaluation: Frame 679 sent at 1573031744962
+11-06 11:15:44.985 29636 29674 D Evaluation: Frame 680 sent at 1573031744984
+11-06 11:15:45.053 29636 29674 D Evaluation: Frame 681 sent at 1573031745053
+11-06 11:15:45.084 29636 29674 D Evaluation: Frame 682 sent at 1573031745084
+11-06 11:15:45.118 29636 29674 D Evaluation: Frame 683 sent at 1573031745118
+11-06 11:15:45.156 29636 29674 D Evaluation: Frame 684 sent at 1573031745156
+11-06 11:15:45.184 29636 29674 D Evaluation: Frame 685 sent at 1573031745184
+11-06 11:15:45.209 29636 29636 I Poster  :  onPause() called.
+11-06 11:15:45.210 29636 29674 D Evaluation: Frame 686 sent at 1573031745210
+11-06 11:15:45.294 29636 29636 I Camera  : close camera: 0, package name: symlab.cloudridar.arhud
+11-06 11:15:45.294 29636 29636 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 29636 ,uidOf3RdApk: 10149 ,permType: 0 ,permCfg: 0
+11-06 11:15:45.299 29636 29636 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = false
+11-06 11:15:45.347 29636 29636 D ZrHung.AppEyeUiProbe: stop checker.
+11-06 11:15:45.353 29636 29636 D Poster  : At 1573031745353 location is 65.05991875981721 (latitude), and 25.468608192908984 (longitude)
+11-06 11:15:45.355 29636 29636 D Poster  : Connected to mobile network 20
+11-06 11:15:45.366 29636 29636 I Poster  :  surfaceDestroyed() called.
+11-06 11:15:45.366 29636 29636 D ViewRootImpl[MainActivity]: surface should not be released
+11-06 11:15:45.366 29636 29636 I Poster  :  onStop() called.
+11-06 11:15:45.382 29636 29693 W libEGL  : EGLNativeWindowType 0xef5f0008 disconnect failed
+11-06 11:15:45.504 29636 29665 D ZrHung.AppEyeUiProbe: Current Activity:false
+11-06 11:15:45.504 29636 29665 D ZrHung.AppEyeUiProbe: not watching, wait.
+11-06 11:15:46.328 29636 29636 D Poster  : At 1573031746328 location is 65.05991970777133 (latitude), and 25.46860550425972 (longitude)
+11-06 11:15:46.331 29636 29636 D Poster  : Connected to mobile network 20
+11-06 11:15:46.346 29636 29636 D Latitude: status

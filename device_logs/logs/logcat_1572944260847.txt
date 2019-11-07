@@ -1,0 +1,62 @@
+--------- beginning of system
+11-05 10:45:21.009  8856  8856 D ActivityThread: Attach thread to application
+11-05 10:45:21.170  8856  8856 V ActivityThread: callActivityOnCreate
+11-05 10:45:21.223  8856  8856 D ActivityThread: add activity client record, r= ActivityRecord{a935099 token=android.os.BinderProxy@1f33661 {symlab.cloudridar.poster_edge/symlab.posterApp.PosterActivity}} token= android.os.BinderProxy@1f33661
+11-05 10:45:21.231  8856  8856 I PermissionManager: camera remind result:true
+11-05 10:45:21.231  8856  8856 I BackgroundPermManager: pkgName: symlab.cloudridar.poster_edge,pid: 8856 ,uidOf3RdApk: 10147 ,permType: 0 ,permCfg: 1
+11-05 10:45:21.243  8856  8856 D ActivityThread: isOptEnabled=false isWechatScanOpt=false
+11-05 10:45:21.313  8856  8856 I PermissionManager: camera remind result:true
+11-05 10:45:29.607  8856  8856 I BackgroundPermManager: pkgName: symlab.cloudridar.poster_edge,pid: 8856 ,uidOf3RdApk: 10147 ,permType: 0 ,permCfg: 0
+11-05 10:45:30.571  8856  8856 I PermissionManager: camera remind result:true
+11-05 10:45:30.571  8856  8856 I BackgroundPermManager: pkgName: symlab.cloudridar.poster_edge,pid: 8856 ,uidOf3RdApk: 10147 ,permType: 0 ,permCfg: 1
+11-05 10:45:30.588  8856  8856 D ActivityThread: isOptEnabled=false isWechatScanOpt=false
+11-05 10:45:30.615  8856  8856 I PermissionManager: camera remind result:true
+11-05 10:45:33.061  8856  8856 I BackgroundPermManager: pkgName: symlab.cloudridar.poster_edge,pid: 8856 ,uidOf3RdApk: 10147 ,permType: 0 ,permCfg: 0
+11-05 10:45:35.216  8856  8856 D ActivityThread: Remove activity client record, r= ActivityRecord{a935099 token=android.os.BinderProxy@1f33661 {symlab.cloudridar.poster_edge/symlab.posterApp.PosterActivity}} token= android.os.BinderProxy@1f33661
+--------- beginning of main
+11-05 10:57:40.854 11845 11871 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0102]
+11-05 10:57:40.854 11845 11871 W ZrHung.AppEyeUiProbe: Failed to get config from zrhung
+11-05 10:57:40.855 11869 11869 W logcat  : type=1400 audit(0.0:4983): avc: granted { create } for name="logcat_1572944260847.txt" scontext=u:r:untrusted_app_27:s0:c512,c768 tcontext=u:object_r:sdcardfs:s0:c512,c768 tclass=file
+11-05 10:57:40.863 11845 11845 V ActivityThread: callActivityOnCreate
+11-05 10:57:40.863 11845 11845 I Poster  :  onCreate() called.
+11-05 10:57:40.866 11845 11845 I HwApsImpl: APS: new HwApsImpl created
+11-05 10:57:40.872 11845 11845 V HwWidgetFactory: : successes to get AllImpl object and return....
+11-05 10:57:40.878 11845 11845 D OpenGLRenderer: Skia GL Pipeline
+11-05 10:57:40.886 11845 11845 I Rajawali: Rajawali | Bombshell | v1.1 Development 
+11-05 10:57:40.886 11845 11845 I Rajawali: THIS IS A DEV BRANCH CONTAINING SIGNIFICANT CHANGES. PLEASE REFER TO CHANGELOG.md FOR MORE INFORMATION.
+11-05 10:57:40.897 11845 11845 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-05 10:57:40.897 11845 11845 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-05 10:57:40.897 11845 11845 I iGraphics: [0020080c] pn: symlab.cloudridar.poster_edge, p: 11845
+11-05 10:57:40.911 11845 11845 D ActivityThread: add activity client record, r= ActivityRecord{a935099 token=android.os.BinderProxy@1f33661 {symlab.cloudridar.poster_edge/symlab.posterApp.PosterActivity}} token= android.os.BinderProxy@1f33661
+11-05 10:57:40.913 11845 11845 I Poster  :  onStart() called.
+11-05 10:57:40.913 11845 11845 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-05 10:57:40.914 11845 11845 I Poster  :  onResume() called.
+11-05 10:57:40.919 11845 11845 I PermissionManager: camera remind result:true
+11-05 10:57:40.919 11845 11845 I Camera  : open camera: 0, package name: symlab.cloudridar.poster_edge
+11-05 10:57:40.919 11845 11845 I BackgroundPermManager: pkgName: symlab.cloudridar.poster_edge,pid: 11845 ,uidOf3RdApk: 10147 ,permType: 0 ,permCfg: 1
+11-05 10:57:40.920 11845 11845 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = true
+11-05 10:57:40.928 11845 11845 D ActivityThread: isOptEnabled=false isWechatScanOpt=false
+11-05 10:57:40.936 11845 11845 I HwSecImmHelper: mSecurityInputMethodService is null
+11-05 10:57:40.942 11845 11845 D OpenGLRenderer:   HWUI Binary is  enabled
+11-05 10:57:40.942 11845 11891 D Poster  : UDP connection
+11-05 10:57:40.946 11845 11845 I ViewRootImpl[PosterActivity]: view add KeepScreenOnFlag
+11-05 10:57:40.966 11845 11909 D HiTouch_PressGestureDetector: onAttached, package=symlab.cloudridar.poster_edge, windowType=1, mHiTouchRestricted=false
+11-05 10:57:40.974 11845 11908 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-05 10:57:40.974 11845 11908 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-05 10:57:40.974 11845 11908 I OpenGLRenderer: Initialized EGL, version 1.4, mEglDisplay 0x1
+11-05 10:57:40.974 11845 11908 D OpenGLRenderer: Swap behavior 2
+11-05 10:57:40.979 11845 11845 I Poster  :  surfaceCreated() called.
+11-05 10:57:40.983 11845 11908 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+11-05 10:57:40.984 11845 11845 I PermissionManager: camera remind result:true
+11-05 10:57:40.989 11845 11845 I Poster  :  surfaceChanged() called.
+11-05 10:57:40.998 11845 11888 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+11-05 10:57:41.017 11845 11845 W InputMethodManager: startInputReason = 1
+11-05 10:57:41.019 11845 11845 W InputMethodManager: startInputReason = 5
+11-05 10:57:41.953 11845 11845 D stylus  : init stylus touchlistener.
+11-05 10:57:41.958 11845 11845 W Settings: Setting device_provisioned has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+11-05 10:57:41.958 11845 11845 V HiTouch_HiTouchSensor: User setup is finished.
+11-05 10:57:41.971 11845 11888 V Poster  : No object picked!
+11-05 10:57:41.987 11845 11891 D Evaluation: get gray scaled frame data at 1572944261987
+11-05 10:57:41.992 11845 11891 D Evaluation: frame 22 sent with size 18728 at 1572944261992
+11-05 10:57:42.424 11845 11888 V Poster  : No object picked!
+11-05 10:57:42.445 11845 11845 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:160.45044, limit is:60The moving distance of Y is:27.297852, limit is:60

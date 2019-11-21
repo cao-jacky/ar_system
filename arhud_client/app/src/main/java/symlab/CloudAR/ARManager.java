@@ -71,6 +71,7 @@ public class ARManager {
 
             ip = br.readLine();
             port = Integer.parseInt(br.readLine());
+            Log.d(Constants.TAG, "Server details are IP " + ip + " and port " + port);
             br.close();
 
             serverAddr = new InetSocketAddress(ip, port);

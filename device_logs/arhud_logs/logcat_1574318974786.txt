@@ -1,0 +1,393 @@
+--------- beginning of main
+11-21 08:49:34.454  9523  9523 I loudridar.arhu: Late-enabling -Xcheck:jni
+11-21 08:49:34.755  9523  9523 I Perf    : Connecting to perf service.
+11-21 08:49:34.771  9523  9523 I MultiDex: VM with version 2.1.0 has multidex support
+11-21 08:49:34.771  9523  9523 I MultiDex: Installing application
+11-21 08:49:34.771  9523  9523 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+11-21 08:49:34.779  9523  9523 I FirebaseInitProvider: FirebaseApp initialization unsuccessful
+11-21 08:49:34.814  9523  9523 I MultiDex: Installing application
+11-21 08:49:34.814  9523  9523 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+11-21 08:49:34.818  9523  9523 I Poster  :  onCreate() called.
+11-21 08:49:34.826  9523  9523 I DecorView: It non-support bigbang
+11-21 08:49:34.830  9523  9523 I PhoneWindow: isNeedChangeNaviBarColor taskInfo: [android.app.ActivityManager$RunningTaskInfo@fbf91f7] size: 1
+11-21 08:49:34.830  9523  9523 I PhoneWindow: isAPPNeedChange pkgName: symlab.cloudridar.arhud needKeep: false
+11-21 08:49:34.830  9523  9523 I PhoneWindow: isNeedChangeNaviBarColor false
+11-21 08:49:34.830  9523  9523 I PhoneWindow: generateLayout mNavigationBarColor: ff000000
+11-21 08:49:34.831  9523  9523 I PhoneWindow: generateLayout isLightNavi false, Visibility: 0
+11-21 08:49:34.839  9523  9523 D OpenGLRenderer: Skia GL Pipeline
+11-21 08:49:34.865  9523  9523 D LocationManager: [LocationManager] requestLocationUpdates(), 
+11-21 08:49:34.865  9523  9523 D LocationManager: java.lang.RuntimeException
+11-21 08:49:34.865  9523  9523 D LocationManager: 	at android.location.LocationManager.requestLocationUpdates(LocationManager.java:1013)
+11-21 08:49:34.865  9523  9523 D LocationManager: 	at android.location.LocationManager.requestLocationUpdates(LocationManager.java:562)
+11-21 08:49:34.865  9523  9523 D LocationManager: 	at symlab.ARHUD.MainActivity.onCreate(MainActivity.java:94)
+11-21 08:49:34.865  9523  9523 D LocationManager: 	at android.app.Activity.performCreate(Activity.java:7136)
+11-21 08:49:34.865  9523  9523 D LocationManager: 	at android.app.Activity.performCreate(Activity.java:7127)
+11-21 08:49:34.865  9523  9523 D LocationManager: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+11-21 08:49:34.865  9523  9523 D LocationManager: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2908)
+11-21 08:49:34.865  9523  9523 D LocationManager: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3063)
+11-21 08:49:34.865  9523  9523 D LocationManager: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+11-21 08:49:34.865  9523  9523 D LocationManager: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+11-21 08:49:34.865  9523  9523 D LocationManager: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+11-21 08:49:34.865  9523  9523 D LocationManager: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1823)
+11-21 08:49:34.865  9523  9523 D LocationManager: 	at android.os.Handler.dispatchMessage(Handler.java:107)
+11-21 08:49:34.865  9523  9523 D LocationManager: 	at android.os.Looper.loop(Looper.java:198)
+11-21 08:49:34.865  9523  9523 D LocationManager: 	at android.app.ActivityThread.main(ActivityThread.java:6729)
+11-21 08:49:34.865  9523  9523 D LocationManager: 	at java.lang.reflect.Method.invoke(Native Method)
+11-21 08:49:34.865  9523  9523 D LocationManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+11-21 08:49:34.865  9523  9523 D LocationManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+11-21 08:49:34.885  9523  9523 D Poster  : Server details are IP 10.42.0.1 and port 52727
+11-21 08:49:34.892  9523  9523 D Poster  : Server bound to IP 10.42.0.1 and port 52727
+11-21 08:49:34.905  9523  9523 I Poster  :  onStart() called.
+11-21 08:49:34.906  9523  9523 I Poster  :  onResume() called.
+11-21 08:49:34.895  9523  9523 W loudridar.arhud: type=1400 audit(0.0:966): avc: denied { read } for name="u:object_r:vendor_camera_prop:s0" dev="tmpfs" ino=5653 scontext=u:r:untrusted_app:s0:c203,c256,c512,c768 tcontext=u:object_r:vendor_camera_prop:s0 tclass=file permissive=0
+11-21 08:49:34.908  9523  9523 E libc    : Access denied finding property "vendor.camera.aux.packagelist"
+11-21 08:49:34.909  9523  9523 E libc    : Access denied finding property "vendor.camera.aux.packagelist"
+11-21 08:49:34.895  9523  9523 W loudridar.arhud: type=1400 audit(0.0:967): avc: denied { read } for name="u:object_r:vendor_camera_prop:s0" dev="tmpfs" ino=5653 scontext=u:r:untrusted_app:s0:c203,c256,c512,c768 tcontext=u:object_r:vendor_camera_prop:s0 tclass=file permissive=0
+11-21 08:49:34.911  9523  9523 E libc    : Access denied finding property "vendor.camera.aux.packagelist"
+11-21 08:49:34.905  9523  9523 W loudridar.arhud: type=1400 audit(0.0:968): avc: denied { read } for name="u:object_r:vendor_camera_prop:s0" dev="tmpfs" ino=5653 scontext=u:r:untrusted_app:s0:c203,c256,c512,c768 tcontext=u:object_r:vendor_camera_prop:s0 tclass=file permissive=0
+11-21 08:49:35.020  9523  9622 I Adreno  : QUALCOMM build                   : a4d39a0, I6fd668c4d3
+11-21 08:49:35.020  9523  9622 I Adreno  : Build Date                       : 10/05/18
+11-21 08:49:35.020  9523  9622 I Adreno  : OpenGL ES Shader Compiler Version: EV031.25.03.01
+11-21 08:49:35.020  9523  9622 I Adreno  : Local Branch                     : 
+11-21 08:49:35.020  9523  9622 I Adreno  : Remote Branch                    : refs/tags/AU_LINUX_ANDROID_LA.UM.7.2.R1.09.00.00.442.049
+11-21 08:49:35.020  9523  9622 I Adreno  : Remote Branch                    : NONE
+11-21 08:49:35.020  9523  9622 I Adreno  : Reconstruct Branch               : NOTHING
+11-21 08:49:35.020  9523  9622 I Adreno  : Build Config                     : S L 6.0.7 AArch32
+11-21 08:49:35.023  9523  9622 I Adreno  : PFP: 0x005ff112, ME: 0x005ff066
+11-21 08:49:35.027  9523  9622 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-21 08:49:35.028  9523  9622 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-21 08:49:35.028  9523  9622 I OpenGLRenderer: Initialized EGL, version 1.4
+11-21 08:49:35.028  9523  9622 D OpenGLRenderer: Swap behavior 2
+11-21 08:49:35.040  9523  9523 I Poster  :  surfaceCreated() called.
+11-21 08:49:35.041  9523  9523 I Poster  : initPreview() called
+11-21 08:49:35.053  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:35.077  9523  9523 I Poster  :  surfaceChanged() called.
+11-21 08:49:35.684  9523  9568 D Evaluation: 2 res for frame 7 received at 1574318975684
+11-21 08:49:35.709  9523  9568 D Evaluation: 0 res for frame 8 received at 1574318975709
+11-21 08:49:35.741  9523  9568 D Evaluation: 2 res for frame 9 received at 1574318975741
+11-21 08:49:35.806  9523  9568 D Evaluation: 2 res for frame 10 received at 1574318975806
+11-21 08:49:35.840  9523  9568 D Evaluation: 0 res for frame 10 received at 1574318975840
+11-21 08:49:35.874  9523  9568 D Evaluation: 0 res for frame 11 received at 1574318975874
+11-21 08:49:35.906  9523  9568 D Evaluation: 0 res for frame 12 received at 1574318975906
+11-21 08:49:35.943  9523  9568 D Evaluation: 2 res for frame 13 received at 1574318975943
+11-21 08:49:35.975  9523  9568 D Evaluation: 2 res for frame 14 received at 1574318975975
+11-21 08:49:36.009  9523  9568 D Evaluation: 2 res for frame 15 received at 1574318976009
+11-21 08:49:36.042  9523  9568 D Evaluation: 3 res for frame 16 received at 1574318976042
+11-21 08:49:36.074  9523  9568 D Evaluation: 2 res for frame 17 received at 1574318976074
+11-21 08:49:36.110  9523  9568 D Evaluation: 2 res for frame 18 received at 1574318976110
+11-21 08:49:36.152  9523  9568 D Evaluation: 2 res for frame 19 received at 1574318976152
+11-21 08:49:36.182  9523  9568 D Evaluation: 2 res for frame 20 received at 1574318976182
+11-21 08:49:36.210  9523  9568 D Evaluation: 3 res for frame 21 received at 1574318976210
+11-21 08:49:36.244  9523  9568 D Evaluation: 3 res for frame 22 received at 1574318976244
+11-21 08:49:36.279  9523  9568 D Evaluation: 2 res for frame 23 received at 1574318976279
+11-21 08:49:36.299  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:36.300  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:36.300  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:36.300  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:36.300  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:36.303  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:36.305  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:36.305  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:36.308  9523  9542 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 12 lines
+11-21 08:49:36.308  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:36.308  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:36.310  9523  9542 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 21 lines
+11-21 08:49:36.310  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:36.311  9523  9568 D Evaluation: 3 res for frame 24 received at 1574318976311
+11-21 08:49:36.344  9523  9568 D Evaluation: 3 res for frame 25 received at 1574318976343
+11-21 08:49:36.375  9523  9568 D Evaluation: 3 res for frame 26 received at 1574318976375
+11-21 08:49:36.410  9523  9568 D Evaluation: 3 res for frame 27 received at 1574318976410
+11-21 08:49:36.439  9523  9568 D Evaluation: 3 res for frame 28 received at 1574318976439
+11-21 08:49:36.518  9523  9568 D Evaluation: 3 res for frame 29 received at 1574318976518
+11-21 08:49:36.542  9523  9568 D Evaluation: 3 res for frame 30 received at 1574318976542
+11-21 08:49:36.566  9523  9568 D Evaluation: 3 res for frame 31 received at 1574318976566
+11-21 08:49:36.590  9523  9568 D Evaluation: 3 res for frame 32 received at 1574318976590
+11-21 08:49:36.617  9523  9568 D Evaluation: 3 res for frame 34 received at 1574318976617
+11-21 08:49:36.640  9523  9568 D Evaluation: 2 res for frame 35 received at 1574318976640
+11-21 08:49:36.673  9523  9568 D Evaluation: 2 res for frame 36 received at 1574318976673
+11-21 08:49:36.706  9523  9568 D Evaluation: 2 res for frame 36 received at 1574318976706
+11-21 08:49:36.743  9523  9568 D Evaluation: 2 res for frame 37 received at 1574318976743
+11-21 08:49:36.775  9523  9568 D Evaluation: 2 res for frame 38 received at 1574318976775
+11-21 08:49:36.818  9523  9568 D Evaluation: 2 res for frame 39 received at 1574318976818
+11-21 08:49:36.846  9523  9568 D Evaluation: 2 res for frame 40 received at 1574318976846
+11-21 08:49:36.877  9523  9568 D Evaluation: 2 res for frame 41 received at 1574318976877
+11-21 08:49:36.886  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:36.886  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:36.886  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:36.886  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:36.886  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:36.886  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:36.886  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:36.890  9523  9542 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 27 lines
+11-21 08:49:36.890  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:36.907  9523  9568 D Evaluation: 2 res for frame 42 received at 1574318976907
+11-21 08:49:36.938  9523  9568 D Evaluation: 2 res for frame 43 received at 1574318976937
+11-21 08:49:37.027  9523  9568 D Evaluation: 2 res for frame 44 received at 1574318977027
+11-21 08:49:37.053  9523  9568 D Evaluation: 3 res for frame 45 received at 1574318977053
+11-21 08:49:37.076  9523  9568 D Evaluation: 3 res for frame 46 received at 1574318977076
+11-21 08:49:37.110  9523  9568 D Evaluation: 3 res for frame 47 received at 1574318977110
+11-21 08:49:37.149  9523  9568 D Evaluation: 3 res for frame 49 received at 1574318977149
+11-21 08:49:37.206  9523  9568 D Evaluation: 3 res for frame 49 received at 1574318977206
+11-21 08:49:37.250  9523  9568 D Evaluation: 3 res for frame 50 received at 1574318977249
+11-21 08:49:37.279  9523  9568 D Evaluation: 3 res for frame 51 received at 1574318977279
+11-21 08:49:37.320  9523  9568 D Evaluation: 3 res for frame 52 received at 1574318977320
+11-21 08:49:37.355  9523  9568 D Evaluation: 3 res for frame 53 received at 1574318977355
+11-21 08:49:37.382  9523  9568 D Evaluation: 3 res for frame 54 received at 1574318977382
+11-21 08:49:37.412  9523  9568 D Evaluation: 2 res for frame 55 received at 1574318977412
+11-21 08:49:37.442  9523  9568 D Evaluation: 2 res for frame 56 received at 1574318977442
+11-21 08:49:37.517  9523  9568 D Evaluation: 2 res for frame 57 received at 1574318977517
+11-21 08:49:37.560  9523  9568 D Evaluation: 2 res for frame 58 received at 1574318977560
+11-21 08:49:37.590  9523  9568 D Evaluation: 2 res for frame 59 received at 1574318977590
+11-21 08:49:37.612  9523  9568 D Evaluation: 2 res for frame 60 received at 1574318977612
+11-21 08:49:37.658  9523  9568 D Evaluation: 2 res for frame 61 received at 1574318977658
+11-21 08:49:37.683  9523  9568 D Evaluation: 2 res for frame 62 received at 1574318977683
+11-21 08:49:37.792  9523  9568 D Evaluation: 2 res for frame 63 received at 1574318977792
+11-21 08:49:37.829  9523  9568 D Evaluation: 2 res for frame 64 received at 1574318977829
+11-21 08:49:37.837  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:37.837  9523  9542 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 6 lines
+11-21 08:49:37.837  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:37.837  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:37.837  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:37.838  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:37.838  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:37.838  9523  9542 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 7 lines
+11-21 08:49:37.838  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:37.838  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:37.838  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:37.838  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:37.839  9523  9542 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 10 lines
+11-21 08:49:37.839  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:37.839  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:37.839  9523  9542 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 10 lines
+11-21 08:49:37.839  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:37.855  9523  9568 D Evaluation: 2 res for frame 65 received at 1574318977855
+11-21 08:49:37.879  9523  9568 D Evaluation: 2 res for frame 66 received at 1574318977879
+11-21 08:49:37.904  9523  9568 D Evaluation: 3 res for frame 67 received at 1574318977904
+11-21 08:49:37.943  9523  9568 D Evaluation: 3 res for frame 69 received at 1574318977943
+11-21 08:49:37.973  9523  9568 D Evaluation: 3 res for frame 69 received at 1574318977973
+11-21 08:49:38.008  9523  9568 D Evaluation: 3 res for frame 70 received at 1574318978008
+11-21 08:49:38.040  9523  9568 D Evaluation: 2 res for frame 71 received at 1574318978040
+11-21 08:49:38.077  9523  9568 D Evaluation: 2 res for frame 72 received at 1574318978077
+11-21 08:49:38.109  9523  9568 D Evaluation: 2 res for frame 73 received at 1574318978109
+11-21 08:49:38.140  9523  9568 D Evaluation: 2 res for frame 74 received at 1574318978140
+11-21 08:49:38.178  9523  9568 D Evaluation: 2 res for frame 75 received at 1574318978178
+11-21 08:49:38.212  9523  9568 D Evaluation: 2 res for frame 76 received at 1574318978212
+11-21 08:49:38.242  9523  9568 D Evaluation: 2 res for frame 77 received at 1574318978242
+11-21 08:49:38.271  9523  9568 D Evaluation: 2 res for frame 78 received at 1574318978271
+11-21 08:49:38.305  9523  9568 D Evaluation: 2 res for frame 80 received at 1574318978305
+11-21 08:49:38.352  9523  9568 D Evaluation: 2 res for frame 81 received at 1574318978352
+11-21 08:49:38.376  9523  9568 D Evaluation: 2 res for frame 82 received at 1574318978376
+11-21 08:49:38.409  9523  9568 D Evaluation: 2 res for frame 83 received at 1574318978409
+11-21 08:49:38.455  9523  9568 D Evaluation: 2 res for frame 84 received at 1574318978455
+11-21 08:49:38.466  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:38.466  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:38.467  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:38.467  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:38.467  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:38.467  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:38.467  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:38.467  9523  9542 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 8 lines
+11-21 08:49:38.467  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:38.467  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:38.469  9523  9542 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 21 lines
+11-21 08:49:38.469  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:38.483  9523  9568 D Evaluation: 2 res for frame 85 received at 1574318978483
+11-21 08:49:38.507  9523  9568 D Evaluation: 2 res for frame 86 received at 1574318978507
+11-21 08:49:38.538  9523  9568 D Evaluation: 2 res for frame 88 received at 1574318978538
+11-21 08:49:38.659  9523  9568 D Evaluation: 2 res for frame 89 received at 1574318978659
+11-21 08:49:38.685  9523  9568 D Evaluation: 2 res for frame 90 received at 1574318978685
+11-21 08:49:38.710  9523  9568 D Evaluation: 2 res for frame 91 received at 1574318978710
+11-21 08:49:38.744  9523  9568 D Evaluation: 2 res for frame 93 received at 1574318978744
+11-21 08:49:38.778  9523  9568 D Evaluation: 2 res for frame 93 received at 1574318978778
+11-21 08:49:38.807  9523  9568 D Evaluation: 2 res for frame 94 received at 1574318978807
+11-21 08:49:38.845  9523  9568 D Evaluation: 2 res for frame 95 received at 1574318978845
+11-21 08:49:38.887  9523  9568 D Evaluation: 2 res for frame 96 received at 1574318978887
+11-21 08:49:38.911  9523  9568 D Evaluation: 2 res for frame 97 received at 1574318978911
+11-21 08:49:38.940  9523  9568 D Evaluation: 2 res for frame 98 received at 1574318978940
+11-21 08:49:38.976  9523  9568 D Evaluation: 2 res for frame 99 received at 1574318978976
+11-21 08:49:39.008  9523  9568 D Evaluation: 2 res for frame 100 received at 1574318979008
+11-21 08:49:39.049  9523  9568 D Evaluation: 2 res for frame 101 received at 1574318979049
+11-21 08:49:39.075  9523  9568 D Evaluation: 2 res for frame 102 received at 1574318979075
+11-21 08:49:39.111  9523  9568 D Evaluation: 2 res for frame 103 received at 1574318979111
+11-21 08:49:39.115  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:39.116  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:39.116  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:39.116  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:39.116  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:39.116  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:39.116  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:39.116  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:39.116  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:39.117  9523  9542 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 22 lines
+11-21 08:49:39.117  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:39.119  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:39.119  9523  9542 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-21 08:49:39.119  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:39.143  9523  9568 D Evaluation: 2 res for frame 104 received at 1574318979143
+11-21 08:49:39.180  9523  9568 D Evaluation: 2 res for frame 105 received at 1574318979180
+11-21 08:49:39.207  9523  9568 D Evaluation: 2 res for frame 106 received at 1574318979207
+11-21 08:49:39.251  9523  9568 D Evaluation: 2 res for frame 107 received at 1574318979251
+11-21 08:49:39.279  9523  9568 D Evaluation: 2 res for frame 108 received at 1574318979278
+11-21 08:49:39.313  9523  9568 D Evaluation: 2 res for frame 109 received at 1574318979313
+11-21 08:49:39.341  9523  9568 D Evaluation: 2 res for frame 110 received at 1574318979341
+11-21 08:49:39.379  9523  9568 D Evaluation: 2 res for frame 111 received at 1574318979379
+11-21 08:49:39.452  9523  9568 D Evaluation: 2 res for frame 112 received at 1574318979452
+11-21 08:49:39.477  9523  9568 D Evaluation: 2 res for frame 113 received at 1574318979477
+11-21 08:49:39.512  9523  9568 D Evaluation: 2 res for frame 114 received at 1574318979512
+11-21 08:49:39.541  9523  9568 D Evaluation: 2 res for frame 115 received at 1574318979541
+11-21 08:49:39.577  9523  9568 D Evaluation: 2 res for frame 116 received at 1574318979577
+11-21 08:49:39.610  9523  9568 D Evaluation: 2 res for frame 117 received at 1574318979610
+11-21 08:49:39.646  9523  9568 D Evaluation: 2 res for frame 118 received at 1574318979646
+11-21 08:49:39.687  9523  9568 D Evaluation: 2 res for frame 119 received at 1574318979687
+11-21 08:49:39.716  9523  9568 D Evaluation: 2 res for frame 120 received at 1574318979716
+11-21 08:49:39.744  9523  9568 D Evaluation: 2 res for frame 121 received at 1574318979744
+11-21 08:49:39.783  9523  9568 D Evaluation: 2 res for frame 122 received at 1574318979782
+11-21 08:49:39.785  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:39.786  9523  9542 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-21 08:49:39.786  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:39.789  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:39.789  9523  9542 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-21 08:49:39.789  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:39.789  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:39.789  9523  9542 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-21 08:49:39.789  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:39.789  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:39.791  9523  9542 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 24 lines
+11-21 08:49:39.791  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:39.807  9523  9568 D Evaluation: 2 res for frame 123 received at 1574318979807
+11-21 08:49:39.844  9523  9568 D Evaluation: 2 res for frame 124 received at 1574318979843
+11-21 08:49:39.879  9523  9568 D Evaluation: 2 res for frame 125 received at 1574318979879
+11-21 08:49:39.907  9523  9568 D Evaluation: 2 res for frame 126 received at 1574318979907
+11-21 08:49:39.944  9523  9568 D Evaluation: 2 res for frame 127 received at 1574318979944
+11-21 08:49:39.975  9523  9568 D Evaluation: 2 res for frame 128 received at 1574318979975
+11-21 08:49:40.011  9523  9568 D Evaluation: 2 res for frame 129 received at 1574318980011
+11-21 08:49:40.044  9523  9568 D Evaluation: 2 res for frame 130 received at 1574318980044
+11-21 08:49:40.079  9523  9568 D Evaluation: 2 res for frame 131 received at 1574318980079
+11-21 08:49:40.108  9523  9568 D Evaluation: 2 res for frame 132 received at 1574318980108
+11-21 08:49:40.144  9523  9568 D Evaluation: 2 res for frame 133 received at 1574318980144
+11-21 08:49:40.177  9523  9568 D Evaluation: 2 res for frame 134 received at 1574318980177
+11-21 08:49:40.211  9523  9568 D Evaluation: 2 res for frame 135 received at 1574318980211
+11-21 08:49:40.246  9523  9568 D Evaluation: 2 res for frame 136 received at 1574318980246
+11-21 08:49:40.282  9523  9568 D Evaluation: 2 res for frame 137 received at 1574318980282
+11-21 08:49:40.310  9523  9568 D Evaluation: 2 res for frame 138 received at 1574318980310
+11-21 08:49:40.350  9523  9568 D Evaluation: 2 res for frame 139 received at 1574318980350
+11-21 08:49:40.389  9523  9568 D Evaluation: 2 res for frame 140 received at 1574318980389
+11-21 08:49:40.416  9523  9568 D Evaluation: 2 res for frame 141 received at 1574318980416
+11-21 08:49:40.421  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:40.421  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:40.421  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:40.422  9523  9542 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 17 lines
+11-21 08:49:40.422  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:40.422  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:40.422  9523  9542 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-21 08:49:40.422  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:40.422  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:40.422  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:40.422  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:40.423  9523  9542 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-21 08:49:40.423  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:40.423  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:40.423  9523  9542 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 6 lines
+11-21 08:49:40.423  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:40.661  9523  9568 D Evaluation: 2 res for frame 142 received at 1574318980661
+11-21 08:49:40.688  9523  9568 D Evaluation: 2 res for frame 144 received at 1574318980688
+11-21 08:49:40.713  9523  9568 D Evaluation: 2 res for frame 144 received at 1574318980712
+11-21 08:49:40.736  9523  9568 D Evaluation: 2 res for frame 145 received at 1574318980736
+11-21 08:49:40.762  9523  9568 D Evaluation: 2 res for frame 151 received at 1574318980761
+11-21 08:49:40.786  9523  9568 D Evaluation: 2 res for frame 152 received at 1574318980786
+11-21 08:49:40.811  9523  9568 D Evaluation: 2 res for frame 153 received at 1574318980811
+11-21 08:49:40.837  9523  9568 D Evaluation: 2 res for frame 153 received at 1574318980837
+11-21 08:49:40.862  9523  9568 D Evaluation: 2 res for frame 154 received at 1574318980862
+11-21 08:49:40.886  9523  9568 D Evaluation: 2 res for frame 155 received at 1574318980886
+11-21 08:49:40.913  9523  9568 D Evaluation: 2 res for frame 156 received at 1574318980913
+11-21 08:49:40.936  9523  9568 D Evaluation: 2 res for frame 157 received at 1574318980936
+11-21 08:49:40.962  9523  9568 D Evaluation: 2 res for frame 157 received at 1574318980962
+11-21 08:49:40.987  9523  9568 D Evaluation: 2 res for frame 158 received at 1574318980987
+11-21 08:49:41.011  9523  9568 D Evaluation: 2 res for frame 158 received at 1574318981011
+11-21 08:49:41.033  9523  9568 D Evaluation: 2 res for frame 159 received at 1574318981033
+11-21 08:49:41.056  9523  9568 D Evaluation: 2 res for frame 159 received at 1574318981056
+11-21 08:49:41.078  9523  9568 D Evaluation: 2 res for frame 160 received at 1574318981078
+11-21 08:49:41.103  9523  9568 D Evaluation: 2 res for frame 161 received at 1574318981103
+11-21 08:49:41.141  9523  9568 D Evaluation: 2 res for frame 162 received at 1574318981141
+11-21 08:49:41.161  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:41.161  9523  9542 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-21 08:49:41.161  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:41.161  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:41.161  9523  9542 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-21 08:49:41.162  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:41.162  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:41.162  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:41.162  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:41.162  9523  9542 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-21 08:49:41.162  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:41.162  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:41.162  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:41.162  9523  9542 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 5 lines
+11-21 08:49:41.162  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:41.163  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:41.164  9523  9542 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 19 lines
+11-21 08:49:41.164  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:41.175  9523  9568 D Evaluation: 2 res for frame 162 received at 1574318981175
+11-21 08:49:41.208  9523  9568 D Evaluation: 0 res for frame 163 received at 1574318981207
+11-21 08:49:41.242  9523  9568 D Evaluation: 0 res for frame 164 received at 1574318981242
+11-21 08:49:41.270  9523  9568 D Evaluation: 0 res for frame 165 received at 1574318981270
+11-21 08:49:41.311  9523  9568 D Evaluation: 0 res for frame 166 received at 1574318981311
+11-21 08:49:41.341  9523  9568 D Evaluation: 0 res for frame 167 received at 1574318981341
+11-21 08:49:41.372  9523  9568 D Evaluation: 0 res for frame 168 received at 1574318981372
+11-21 08:49:41.404  9523  9568 D Evaluation: 0 res for frame 169 received at 1574318981404
+11-21 08:49:41.442  9523  9568 D Evaluation: 0 res for frame 170 received at 1574318981442
+11-21 08:49:41.470  9523  9568 D Evaluation: 0 res for frame 171 received at 1574318981470
+11-21 08:49:41.505  9523  9568 D Evaluation: 0 res for frame 172 received at 1574318981505
+11-21 08:49:41.542  9523  9568 D Evaluation: 0 res for frame 173 received at 1574318981542
+11-21 08:49:41.570  9523  9568 D Evaluation: 0 res for frame 174 received at 1574318981570
+11-21 08:49:41.607  9523  9568 D Evaluation: 0 res for frame 175 received at 1574318981607
+11-21 08:49:41.637  9523  9568 D Evaluation: 0 res for frame 176 received at 1574318981637
+11-21 08:49:41.676  9523  9568 D Evaluation: 0 res for frame 177 received at 1574318981676
+11-21 08:49:41.704  9523  9568 D Evaluation: 0 res for frame 178 received at 1574318981704
+11-21 08:49:41.753  9523  9568 D Evaluation: 0 res for frame 179 received at 1574318981753
+11-21 08:49:41.782  9523  9568 D Evaluation: 0 res for frame 180 received at 1574318981782
+11-21 08:49:41.833  9523  9568 D Evaluation: 0 res for frame 181 received at 1574318981833
+11-21 08:49:41.866  9523  9568 D Evaluation: 0 res for frame 182 received at 1574318981866
+11-21 08:49:41.894  9523  9568 D Evaluation: 0 res for frame 183 received at 1574318981894
+11-21 08:49:41.920  9523  9568 D Evaluation: 1 res for frame 185 received at 1574318981920
+11-21 08:49:41.947  9523  9568 D Evaluation: 1 res for frame 186 received at 1574318981947
+11-21 08:49:41.952  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:41.952  9523  9542 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 4 lines
+11-21 08:49:41.952  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:41.952  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:41.952  9523  9542 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-21 08:49:41.952  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:41.952  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:41.952  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:41.952  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:41.953  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:41.953  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:41.954  9523  9542 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 31 lines
+11-21 08:49:41.954  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:42.036  9523  9568 D Evaluation: 2 res for frame 187 received at 1574318982036
+11-21 08:49:42.076  9523  9568 D Evaluation: 1 res for frame 188 received at 1574318982076
+11-21 08:49:42.111  9523  9568 D Evaluation: 1 res for frame 188 received at 1574318982111
+11-21 08:49:42.140  9523  9568 D Evaluation: 2 res for frame 190 received at 1574318982140
+11-21 08:49:42.166  9523  9568 D Evaluation: 1 res for frame 191 received at 1574318982166
+11-21 08:49:42.254  9523  9568 D Evaluation: 0 res for frame 192 received at 1574318982254
+11-21 08:49:42.318  9523  9568 D Evaluation: 0 res for frame 193 received at 1574318982318
+11-21 08:49:42.367  9523  9568 D Evaluation: 0 res for frame 193 received at 1574318982367
+11-21 08:49:42.392  9523  9523 I Poster  :  onPause() called.
+11-21 08:49:42.401  9523  9568 D Evaluation: 0 res for frame 194 received at 1574318982401
+11-21 08:49:42.432  9523  9568 D Evaluation: 0 res for frame 196 received at 1574318982432
+11-21 08:49:42.467  9523  9568 D Evaluation: 0 res for frame 197 received at 1574318982466
+11-21 08:49:43.152  9523  9523 I Poster  :  surfaceDestroyed() called.
+11-21 08:49:43.154  9523  9523 I Poster  :  onStop() called.
+11-21 08:49:47.948  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:47.948  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:47.949  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:47.949  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:47.949  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:47.949  9523  9542 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-21 08:49:47.949  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:47.949  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:47.951  9523  9542 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 14 lines
+11-21 08:49:47.951  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:47.951  9523  9542 W System  : A resource failed to call close. 
+11-21 08:49:51.758  9523  9523 D Poster  : At 1574318991758 location is 65.05789489 (latitude), and 25.46914229 (longitude)
+11-21 08:49:51.761  9523  9523 D Poster  : Connected to WiFi

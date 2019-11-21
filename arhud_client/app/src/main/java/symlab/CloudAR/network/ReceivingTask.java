@@ -67,9 +67,11 @@ public class ReceivingTask implements Runnable{
             e.printStackTrace();
         }
         //pengzhou : record result transmission delay
+//        File appDirectory = new File( Environment.getExternalStorageDirectory() + "/CloudAR" );
+//        File logDirectory = new File( appDirectory + "/receive_logs" );
+//        File file = new File(logDirectory,"receive_"+System.currentTimeMillis()+".txt");
         File sdcard = Environment.getExternalStorageDirectory();
-        File file = new File(sdcard,"CloudAR/resultDelay.txt");
-
+        File file = new File(sdcard,"CloudAR/receive.txt");
 
         if (res != null) {
             time= System.currentTimeMillis();
@@ -87,11 +89,14 @@ public class ReceivingTask implements Runnable{
             System.arraycopy(res, 24, tmp, 0, 4);
             newMarkerNum = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
 
-            resultdelay = time - resultTimesend;
-            //Log.d(Constants.Eval, String.valueOf(resultdelay));
+//            resultdelay = time - resultTimesend;
+//            Log.d(Constants.Eval, resultID + " " + time + " " + String.valueOf(resultTimesend) +
+//             " " + String.valueOf(resultdelay));
             try{BufferedWriter bw =
                     new BufferedWriter(new FileWriter(file, true));
-                bw.write(Double.toString(resultdelay));
+                bw.write(Integer.toString(resultID));
+                bw.write(",");
+                bw.write(Double.toString(time));
                 bw.newLine();
                 bw.flush();}
             catch (Exception e){
@@ -104,15 +109,15 @@ public class ReceivingTask implements Runnable{
                         " received at " + System.currentTimeMillis());
                 Detected detected[] = new Detected[newMarkerNum];
 
-                try{BufferedWriter bw =
-                        new BufferedWriter(new FileWriter(file, true));
-                        bw.write(Double.toString(resultdelay));
-                        bw.newLine();
-                        bw.flush();}
-                catch (Exception e){
-                    e.printStackTrace();
-
-                }
+//                try{BufferedWriter bw =
+//                        new BufferedWriter(new FileWriter(file, true));
+//                        bw.write(Double.toString(resultdelay));
+//                        bw.newLine();
+//                        bw.flush();}
+//                catch (Exception e){
+//                    e.printStackTrace();
+//
+//                }
 
                 int i = 0;
                 while (i < newMarkerNum) {

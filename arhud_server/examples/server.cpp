@@ -26,7 +26,7 @@ extern "C" {
 #define IMAGE_DETECT 2
 #define BOUNDARY 3
 #define PORT 52727
-#define PACKET_SIZE 60000
+#define PACKET_SIZE 80000
 #define RES_SIZE 528
 #define TRAIN
 
@@ -257,7 +257,9 @@ void *ThreadReceiverFunction(void *socket) {
         if (curFrame.bufferSize==0) { continue;}
         imageDelay = time_receivepic - curFrame.timeCaptured;
          
-        output_receive << "receive frameID : " << curFrame.frmID << ", at time : " <<  time_receivepic << ", sent out from vehicle at time: " << curFrame.timeCaptured <<  ", has size: "<< curFrame.bufferSize << ", transmission delay: '" << time_receivepic - curFrame.timeCaptured << "' milliseconds" << endl;
+        output_receive << "receive frameID : " << curFrame.frmID << ", at time : " <<  to_string(time_receivepic) << 
+            ", sent out from device at time: " << to_string(curFrame.timeCaptured) <<  ", has size: "<< curFrame.bufferSize 
+            << ", transmission delay: '" << time_receivepic - curFrame.timeCaptured << "' milliseconds" << endl;
         output_delay << imageDelay << endl;
         cout<<"frame "<<curFrame.frmID<<" received, filesize: "<<curFrame.bufferSize << endl;
         curFrame.buffer = new char[curFrame.bufferSize];

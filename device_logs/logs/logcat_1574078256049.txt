@@ -1,0 +1,148 @@
+--------- beginning of main
+11-18 13:57:36.079 12585 12585 I Poster  :  onCreate() called.
+11-18 13:57:36.087 12585 12585 I DecorView: It non-support bigbang
+11-18 13:57:36.090 12585 12585 I PhoneWindow: isNeedChangeNaviBarColor taskInfo: [android.app.ActivityManager$RunningTaskInfo@c93a69a] size: 1
+11-18 13:57:36.090 12585 12585 I PhoneWindow: isAPPNeedChange pkgName: symlab.cloudridar.poster_edge needKeep: false
+11-18 13:57:36.090 12585 12585 I PhoneWindow: isNeedChangeNaviBarColor false
+11-18 13:57:36.091 12585 12585 I PhoneWindow: generateLayout mNavigationBarColor: ff000000
+11-18 13:57:36.091 12585 12585 I PhoneWindow: generateLayout isLightNavi false, Visibility: 0
+11-18 13:57:36.101 12585 12585 D OpenGLRenderer: Skia GL Pipeline
+11-18 13:57:36.105 12585 12585 I Rajawali: Rajawali | Bombshell | v1.1 Development 
+11-18 13:57:36.105 12585 12585 I Rajawali: THIS IS A DEV BRANCH CONTAINING SIGNIFICANT CHANGES. PLEASE REFER TO CHANGELOG.md FOR MORE INFORMATION.
+11-18 13:57:36.106 12585 12585 I Adreno  : QUALCOMM build                   : a4d39a0, I6fd668c4d3
+11-18 13:57:36.106 12585 12585 I Adreno  : Build Date                       : 10/05/18
+11-18 13:57:36.106 12585 12585 I Adreno  : OpenGL ES Shader Compiler Version: EV031.25.03.01
+11-18 13:57:36.106 12585 12585 I Adreno  : Local Branch                     : 
+11-18 13:57:36.106 12585 12585 I Adreno  : Remote Branch                    : refs/tags/AU_LINUX_ANDROID_LA.UM.7.2.R1.09.00.00.442.049
+11-18 13:57:36.106 12585 12585 I Adreno  : Remote Branch                    : NONE
+11-18 13:57:36.106 12585 12585 I Adreno  : Reconstruct Branch               : NOTHING
+11-18 13:57:36.106 12585 12585 I Adreno  : Build Config                     : S L 6.0.7 AArch32
+11-18 13:57:36.109 12585 12585 I Adreno  : PFP: 0x005ff112, ME: 0x005ff066
+11-18 13:57:36.113 12585 12585 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-18 13:57:36.113 12585 12585 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-18 13:57:36.135 12585 12585 I Poster  :  onStart() called.
+11-18 13:57:36.136 12585 12585 I Poster  :  onResume() called.
+11-18 13:57:36.235 12585 12622 D Poster  : UDP connection
+11-18 13:57:36.253 12585 12678 I Adreno  : QUALCOMM build                   : a4d39a0, I6fd668c4d3
+11-18 13:57:36.253 12585 12678 I Adreno  : Build Date                       : 10/05/18
+11-18 13:57:36.253 12585 12678 I Adreno  : OpenGL ES Shader Compiler Version: EV031.25.03.01
+11-18 13:57:36.253 12585 12678 I Adreno  : Local Branch                     : 
+11-18 13:57:36.253 12585 12678 I Adreno  : Remote Branch                    : refs/tags/AU_LINUX_ANDROID_LA.UM.7.2.R1.09.00.00.442.049
+11-18 13:57:36.253 12585 12678 I Adreno  : Remote Branch                    : NONE
+11-18 13:57:36.253 12585 12678 I Adreno  : Reconstruct Branch               : NOTHING
+11-18 13:57:36.253 12585 12678 I Adreno  : Build Config                     : S L 6.0.7 AArch32
+11-18 13:57:36.256 12585 12678 I Adreno  : PFP: 0x005ff112, ME: 0x005ff066
+11-18 13:57:36.259 12585 12678 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-18 13:57:36.259 12585 12678 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-18 13:57:36.259 12585 12678 I OpenGLRenderer: Initialized EGL, version 1.4
+11-18 13:57:36.259 12585 12678 D OpenGLRenderer: Swap behavior 2
+11-18 13:57:36.272 12585 12585 I Poster  :  surfaceCreated() called.
+11-18 13:57:36.316 12585 12585 I Poster  :  surfaceChanged() called.
+11-18 13:57:37.918 12585 12619 V Poster  : No object picked!
+11-18 13:57:37.955 12585 12622 D Evaluation: get gray scaled frame data at 1574078257954
+11-18 13:57:37.972 12585 12622 D Evaluation: frame 41 sent with size 14184 at 1574078257972
+11-18 13:57:38.088 12585 12622 V Poster  : something received
+11-18 13:57:38.089 12585 12622 D Evaluation: 0 res received at 1574078258089
+11-18 13:57:39.312 12585 12619 V Poster  : No object picked!
+11-18 13:57:39.330 12585 12622 D Evaluation: get gray scaled frame data at 1574078259330
+11-18 13:57:39.341 12585 12622 D Evaluation: frame 72 sent with size 20617 at 1574078259341
+11-18 13:57:39.549 12585 12622 V Poster  : something received
+11-18 13:57:39.549 12585 12622 D Evaluation: 0 res received at 1574078259549
+11-18 13:57:40.615 12585 12619 V Poster  : No object picked!
+11-18 13:57:40.688 12585 12622 D Evaluation: get gray scaled frame data at 1574078260688
+11-18 13:57:40.700 12585 12622 D Evaluation: frame 102 sent with size 18308 at 1574078260700
+11-18 13:57:40.914 12585 12622 V Poster  : something received
+11-18 13:57:40.914 12585 12622 D Evaluation: 0 res received at 1574078260914
+11-18 13:57:42.252 12585 12619 V Poster  : No object picked!
+11-18 13:57:42.293 12585 12622 D Evaluation: get gray scaled frame data at 1574078262293
+11-18 13:57:42.303 12585 12622 D Evaluation: frame 140 sent with size 15157 at 1574078262303
+11-18 13:57:42.452 12585 12622 V Poster  : something received
+11-18 13:57:42.456 12585 12622 D Evaluation: 1 res received at 1574078262456
+11-18 13:57:42.484 12585 12620 D Evaluation: image border created: 300.0 x 445.0
+11-18 13:57:43.743 12585 12599 W MapperHal: buffer descriptor with invalid usage bits 0x2000
+11-18 13:57:43.746 12585 12599 W MapperHal: buffer descriptor with invalid usage bits 0x2000
+11-18 13:57:43.748 12585 12599 W MapperHal: buffer descriptor with invalid usage bits 0x2000
+11-18 13:57:43.761 12585 12599 W MapperHal: buffer descriptor with invalid usage bits 0x2000
+11-18 13:57:43.769 12585 12599 W MapperHal: buffer descriptor with invalid usage bits 0x2000
+11-18 13:57:43.773 12585 12610 W MapperHal: buffer descriptor with invalid usage bits 0x2000
+11-18 13:57:43.826 12585 12599 W MapperHal: buffer descriptor with invalid usage bits 0x2000
+11-18 13:57:43.836 12585 12610 W MediaPlayerNative: info/warning (3, 0)
+11-18 13:57:43.837 12585 12599 W MapperHal: buffer descriptor with invalid usage bits 0x2000
+11-18 13:57:43.907 12585 12620 V MediaPlayer_JAVA: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+11-18 13:57:43.907 12585 12620 V MediaPlayer_JAVA: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+11-18 13:57:44.959 12585 12619 V Poster  : No object picked!
+11-18 13:57:44.983 12585 12622 D Evaluation: get gray scaled frame data at 1574078264983
+11-18 13:57:44.996 12585 12622 D Evaluation: frame 200 sent with size 15829 at 1574078264996
+11-18 13:57:45.179 12585 12622 V Poster  : something received
+11-18 13:57:45.180 12585 12622 D Evaluation: 1 res received at 1574078265180
+11-18 13:57:45.200 12585 12620 D Evaluation: image border created: 300.0 x 445.0
+11-18 13:57:46.318 12585 12620 V MediaPlayer_JAVA: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+11-18 13:57:46.318 12585 12620 V MediaPlayer_JAVA: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+11-18 13:57:46.410 12585 12599 W MapperHal: buffer descriptor with invalid usage bits 0x2000
+11-18 13:57:46.413 12585 12756 W MapperHal: buffer descriptor with invalid usage bits 0x2000
+11-18 13:57:46.424 12585 12599 W MapperHal: buffer descriptor with invalid usage bits 0x2000
+11-18 13:57:46.428 12585 12599 I chatty  : uid=10202(symlab.cloudridar.poster_edge) Binder:12585_2 identical 2 lines
+11-18 13:57:46.430 12585 12599 W MapperHal: buffer descriptor with invalid usage bits 0x2000
+11-18 13:57:46.432 12585 12599 W MapperHal: buffer descriptor with invalid usage bits 0x2000
+11-18 13:57:46.434 12585 12599 I chatty  : uid=10202(symlab.cloudridar.poster_edge) Binder:12585_2 identical 1 line
+11-18 13:57:46.435 12585 12599 W MapperHal: buffer descriptor with invalid usage bits 0x2000
+11-18 13:57:46.437 12585 12599 W MapperHal: buffer descriptor with invalid usage bits 0x2000
+11-18 13:57:46.438 12585 12599 W MapperHal: buffer descriptor with invalid usage bits 0x2000
+11-18 13:57:46.441 12585 12599 I chatty  : uid=10202(symlab.cloudridar.poster_edge) Binder:12585_2 identical 3 lines
+11-18 13:57:46.442 12585 12599 W MapperHal: buffer descriptor with invalid usage bits 0x2000
+11-18 13:57:46.444 12585 12599 W MapperHal: buffer descriptor with invalid usage bits 0x2000
+11-18 13:57:46.446 12585 12599 W MapperHal: buffer descriptor with invalid usage bits 0x2000
+11-18 13:57:46.447 12585 12599 W MapperHal: buffer descriptor with invalid usage bits 0x2000
+11-18 13:57:47.047 12585 12619 V Poster  : No object picked!
+11-18 13:57:47.105 12585 12622 D Evaluation: get gray scaled frame data at 1574078267105
+11-18 13:57:47.123 12585 12622 D Evaluation: frame 248 sent with size 14927 at 1574078267123
+11-18 13:57:47.220 12585 12622 V Poster  : something received
+11-18 13:57:47.221 12585 12622 D Evaluation: 1 res received at 1574078267221
+11-18 13:57:47.243 12585 12620 D Evaluation: image border created: 300.0 x 445.0
+11-18 13:57:48.247 12585 12620 V MediaPlayer_JAVA: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+11-18 13:57:48.247 12585 12620 V MediaPlayer_JAVA: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+11-18 13:57:49.052 12585 12619 V Poster  : No object picked!
+11-18 13:57:49.094 12585 12622 D Evaluation: get gray scaled frame data at 1574078269094
+11-18 13:57:49.104 12585 12622 D Evaluation: frame 296 sent with size 17630 at 1574078269104
+11-18 13:57:49.185 12585 12622 V Poster  : something received
+11-18 13:57:49.188 12585 12622 D Evaluation: 1 res received at 1574078269188
+11-18 13:57:49.203 12585 12620 D Evaluation: image border created: 300.0 x 445.0
+11-18 13:57:50.437 12585 12599 W MapperHal: buffer descriptor with invalid usage bits 0x2000
+11-18 13:57:50.439 12585 12599 W MapperHal: buffer descriptor with invalid usage bits 0x2000
+11-18 13:57:50.442 12585 12599 W MapperHal: buffer descriptor with invalid usage bits 0x2000
+11-18 13:57:50.444 12585 12756 W MapperHal: buffer descriptor with invalid usage bits 0x2000
+11-18 13:57:50.508 12585 12599 W MapperHal: buffer descriptor with invalid usage bits 0x2000
+11-18 13:57:50.510 12585 12599 W MapperHal: buffer descriptor with invalid usage bits 0x2000
+11-18 13:57:50.513 12585 12599 W MapperHal: buffer descriptor with invalid usage bits 0x2000
+11-18 13:57:50.526 12585 12756 W MediaPlayerNative: info/warning (3, 0)
+11-18 13:57:50.528 12585 12756 W MapperHal: buffer descriptor with invalid usage bits 0x2000
+11-18 13:57:50.772 12585 12756 W MapperHal: buffer descriptor with invalid usage bits 0x2000
+11-18 13:57:50.972 12585 12620 V MediaPlayer_JAVA: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+11-18 13:57:50.973 12585 12620 V MediaPlayer_JAVA: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+11-18 13:57:51.053 12585 12585 I Poster  :  onPause() called.
+11-18 13:57:51.805 12585 12585 V MediaPlayer_JAVA: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+11-18 13:57:51.805 12585 12585 V MediaPlayer_JAVA: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+11-18 13:57:51.806 12585 12585 V MediaPlayer_JAVA: resetDrmState:  mDrmInfo=null mDrmProvisioningThread=null mPrepareDrmInProgress=false mActiveDrmScheme=false
+11-18 13:57:51.806 12585 12585 V MediaPlayer_JAVA: cleanDrmObj: mDrmObj=null mDrmSessionId=null
+11-18 13:57:51.864 12585 12585 I Poster  :  surfaceDestroyed() called.
+11-18 13:57:51.868 12585 12585 I Poster  :  onStop() called.
+11-18 14:29:57.774 12585 12585 I Poster  :  onStart() called.
+11-18 14:29:57.775 12585 12585 I Poster  :  onResume() called.
+11-18 14:29:57.923 12585 12585 E libEGL  : call to OpenGL ES API with no current context (logged once per thread)
+11-18 14:29:57.945 12585 12585 I Poster  :  surfaceCreated() called.
+11-18 14:29:58.003 12585 12585 I Poster  :  surfaceChanged() called.
+--------- beginning of crash
+11-18 14:29:58.062 12585 12619 E AndroidRuntime: FATAL EXCEPTION: GLThread 1698
+11-18 14:29:58.062 12585 12619 E AndroidRuntime: Process: symlab.cloudridar.poster_edge, PID: 12585
+11-18 14:29:58.062 12585 12619 E AndroidRuntime: java.lang.IllegalStateException
+11-18 14:29:58.062 12585 12619 E AndroidRuntime: 	at android.media.MediaPlayer._setVideoSurface(Native Method)
+11-18 14:29:58.062 12585 12619 E AndroidRuntime: 	at android.media.MediaPlayer.setSurface(MediaPlayer.java:806)
+11-18 14:29:58.062 12585 12619 E AndroidRuntime: 	at org.rajawali3d.materials.textures.StreamingTexture.add(StreamingTexture.java:83)
+11-18 14:29:58.062 12585 12619 E AndroidRuntime: 	at org.rajawali3d.materials.textures.TextureManager.taskAdd(TextureManager.java:112)
+11-18 14:29:58.062 12585 12619 E AndroidRuntime: 	at org.rajawali3d.materials.textures.TextureManager.taskReload(TextureManager.java:211)
+11-18 14:29:58.062 12585 12619 E AndroidRuntime: 	at org.rajawali3d.renderer.Renderer.onRenderSurfaceSizeChanged(Renderer.java:363)
+11-18 14:29:58.062 12585 12619 E AndroidRuntime: 	at org.rajawali3d.view.SurfaceView$RendererDelegate.onSurfaceChanged(SurfaceView.java:230)
+11-18 14:29:58.062 12585 12619 E AndroidRuntime: 	at android.opengl.GLSurfaceView$GLThread.guardedRun(GLSurfaceView.java:1555)
+11-18 14:29:58.062 12585 12619 E AndroidRuntime: 	at android.opengl.GLSurfaceView$GLThread.run(GLSurfaceView.java:1270)
+11-18 14:29:58.100 12585 12585 I Poster  :  surfaceDestroyed() called.
+11-18 14:29:58.102 12585 12619 I Process : Sending signal. PID: 12585 SIG: 9

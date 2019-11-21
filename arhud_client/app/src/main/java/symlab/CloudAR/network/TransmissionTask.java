@@ -1,5 +1,6 @@
 package symlab.CloudAR.network;
 
+import android.os.Environment;
 import android.util.Log;
 
 import org.opencv.core.CvType;
@@ -8,6 +9,9 @@ import org.opencv.core.MatOfByte;
 import org.opencv.highgui.Highgui;
 import org.opencv.imgproc.Imgproc;
 
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.net.SocketAddress;
 import java.nio.ByteBuffer;
@@ -84,6 +88,11 @@ public class TransmissionTask implements Runnable {
 
     @Override
     public void run() {
+//        File appDirectory = new File( Environment.getExternalStorageDirectory() + "/CloudAR" );
+//        File logDirectory = new File( appDirectory + "/send_logs" );
+//        File file = new File(logDirectory,"send_"+System.currentTimeMillis()+".txt");
+        File sdcard = Environment.getExternalStorageDirectory();
+        File file = new File(sdcard,"CloudAR/send.txt");
         if (dataType == IMAGE_DETECT) {
             YUVMatTrans.put(0, 0, frameData);
 
@@ -123,10 +132,22 @@ public class TransmissionTask implements Runnable {
             buffer.flip();
             datagramChannel.send(buffer, serverAddress);
 
-            if (dataType == MESSAGE_META)
-                Log.d(Constants.Eval, "metadata " + frmID + " sent ");
-            else
-                Log.d(Constants.Eval, "Frame " + frmID + " sent at " + System.currentTimeMillis());
+//            if (dataType == MESSAGE_META)
+//                Log.d(Constants.Eval, "metadata " + frmID + " sent ");
+//            else
+//                Log.d(Constants.Eval, "Frame " + frmID + " sent at " + System.currentTimeMillis());
+            try{
+                BufferedWriter bw =
+                        new BufferedWriter(new FileWriter(file, true));
+                bw.write(Integer.toString(frmID));
+                bw.write(",");
+                bw.write(Double.toString(timeSend));
+                bw.newLine();
+                bw.flush();}
+            catch (Exception e){
+                e.printStackTrace();
+
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }

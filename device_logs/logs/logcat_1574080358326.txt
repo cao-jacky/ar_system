@@ -1,0 +1,69 @@
+--------- beginning of crash
+11-18 14:30:55.574 14254 14254 E AndroidRuntime: FATAL EXCEPTION: main
+11-18 14:30:55.574 14254 14254 E AndroidRuntime: Process: symlab.cloudridar.poster_edge, PID: 14254
+11-18 14:30:55.574 14254 14254 E AndroidRuntime: java.lang.NullPointerException: Attempt to invoke interface method 'void symlab.CloudAR.network.SendingTask.setData(int, byte[], int)' on a null object reference
+11-18 14:30:55.574 14254 14254 E AndroidRuntime: 	at symlab.CloudAR.manager.ARManager.recognize(ARManager.java:207)
+11-18 14:30:55.574 14254 14254 E AndroidRuntime: 	at symlab.posterApp.PosterActivity$4.onPreviewFrame(PosterActivity.java:253)
+11-18 14:30:55.574 14254 14254 E AndroidRuntime: 	at android.hardware.Camera$EventHandler.handleMessage(Camera.java:1318)
+11-18 14:30:55.574 14254 14254 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:107)
+11-18 14:30:55.574 14254 14254 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:198)
+11-18 14:30:55.574 14254 14254 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:6729)
+11-18 14:30:55.574 14254 14254 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-18 14:30:55.574 14254 14254 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+11-18 14:30:55.574 14254 14254 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+--------- beginning of main
+11-18 14:32:38.357 14478 14478 I Poster  :  onCreate() called.
+11-18 14:32:38.364 14478 14478 I DecorView: It non-support bigbang
+11-18 14:32:38.367 14478 14478 I PhoneWindow: isNeedChangeNaviBarColor taskInfo: [android.app.ActivityManager$RunningTaskInfo@c93a69a] size: 1
+11-18 14:32:38.367 14478 14478 I PhoneWindow: isAPPNeedChange pkgName: symlab.cloudridar.poster_edge needKeep: false
+11-18 14:32:38.367 14478 14478 I PhoneWindow: isNeedChangeNaviBarColor false
+11-18 14:32:38.367 14478 14478 I PhoneWindow: generateLayout mNavigationBarColor: ff000000
+11-18 14:32:38.367 14478 14478 I PhoneWindow: generateLayout isLightNavi false, Visibility: 0
+11-18 14:32:38.376 14478 14478 D OpenGLRenderer: Skia GL Pipeline
+11-18 14:32:38.379 14478 14478 I Rajawali: Rajawali | Bombshell | v1.1 Development 
+11-18 14:32:38.379 14478 14478 I Rajawali: THIS IS A DEV BRANCH CONTAINING SIGNIFICANT CHANGES. PLEASE REFER TO CHANGELOG.md FOR MORE INFORMATION.
+11-18 14:32:38.380 14478 14478 I Adreno  : QUALCOMM build                   : a4d39a0, I6fd668c4d3
+11-18 14:32:38.380 14478 14478 I Adreno  : Build Date                       : 10/05/18
+11-18 14:32:38.380 14478 14478 I Adreno  : OpenGL ES Shader Compiler Version: EV031.25.03.01
+11-18 14:32:38.380 14478 14478 I Adreno  : Local Branch                     : 
+11-18 14:32:38.380 14478 14478 I Adreno  : Remote Branch                    : refs/tags/AU_LINUX_ANDROID_LA.UM.7.2.R1.09.00.00.442.049
+11-18 14:32:38.380 14478 14478 I Adreno  : Remote Branch                    : NONE
+11-18 14:32:38.380 14478 14478 I Adreno  : Reconstruct Branch               : NOTHING
+11-18 14:32:38.381 14478 14478 I Adreno  : Build Config                     : S L 6.0.7 AArch32
+11-18 14:32:38.383 14478 14478 I Adreno  : PFP: 0x005ff112, ME: 0x005ff066
+11-18 14:32:38.387 14478 14478 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-18 14:32:38.387 14478 14478 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-18 14:32:38.409 14478 14478 I Poster  :  onStart() called.
+11-18 14:32:38.410 14478 14478 I Poster  :  onResume() called.
+11-18 14:32:38.508 14478 14516 D Poster  : config file error
+11-18 14:32:38.538 14478 14571 I Adreno  : QUALCOMM build                   : a4d39a0, I6fd668c4d3
+11-18 14:32:38.538 14478 14571 I Adreno  : Build Date                       : 10/05/18
+11-18 14:32:38.538 14478 14571 I Adreno  : OpenGL ES Shader Compiler Version: EV031.25.03.01
+11-18 14:32:38.538 14478 14571 I Adreno  : Local Branch                     : 
+11-18 14:32:38.538 14478 14571 I Adreno  : Remote Branch                    : refs/tags/AU_LINUX_ANDROID_LA.UM.7.2.R1.09.00.00.442.049
+11-18 14:32:38.538 14478 14571 I Adreno  : Remote Branch                    : NONE
+11-18 14:32:38.538 14478 14571 I Adreno  : Reconstruct Branch               : NOTHING
+11-18 14:32:38.538 14478 14571 I Adreno  : Build Config                     : S L 6.0.7 AArch32
+11-18 14:32:38.541 14478 14571 I Adreno  : PFP: 0x005ff112, ME: 0x005ff066
+11-18 14:32:38.542 14478 14571 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-18 14:32:38.542 14478 14571 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-18 14:32:38.543 14478 14571 I OpenGLRenderer: Initialized EGL, version 1.4
+11-18 14:32:38.543 14478 14571 D OpenGLRenderer: Swap behavior 2
+11-18 14:32:38.546 14478 14478 I Poster  :  surfaceCreated() called.
+11-18 14:32:38.589 14478 14478 I Poster  :  surfaceChanged() called.
+11-18 14:32:38.877 14478 14515 E cv::error(): OpenCV Error: Assertion failed (ncorners >= 0 && corners.depth() == CV_32F) in void cv::cornerSubPix(cv::InputArray, cv::InputOutputArray, cv::Size, cv::Size, cv::TermCriteria), file /hdd2/buildbot/slaves/slave_ardbeg1/50-SDK/opencv/modules/imgproc/src/cornersubpix.cpp, line 257
+11-18 14:32:38.885 14478 14515 E org.opencv.imgproc: imgproc::cornerSubPix_10() caught cv::Exception: /hdd2/buildbot/slaves/slave_ardbeg1/50-SDK/opencv/modules/imgproc/src/cornersubpix.cpp:257: error: (-215) ncorners >= 0 && corners.depth() == CV_32F in function void cv::cornerSubPix(cv::InputArray, cv::InputOutputArray, cv::Size, cv::Size, cv::TermCriteria)
+11-18 14:32:38.888 14478 14515 E AndroidRuntime: FATAL EXCEPTION: frame thread
+11-18 14:32:38.888 14478 14515 E AndroidRuntime: Process: symlab.cloudridar.poster_edge, PID: 14478
+11-18 14:32:38.888 14478 14515 E AndroidRuntime: CvException [org.opencv.core.CvException: cv::Exception: /hdd2/buildbot/slaves/slave_ardbeg1/50-SDK/opencv/modules/imgproc/src/cornersubpix.cpp:257: error: (-215) ncorners >= 0 && corners.depth() == CV_32F in function void cv::cornerSubPix(cv::InputArray, cv::InputOutputArray, cv::Size, cv::Size, cv::TermCriteria)
+11-18 14:32:38.888 14478 14515 E AndroidRuntime: ]
+11-18 14:32:38.888 14478 14515 E AndroidRuntime: 	at org.opencv.imgproc.Imgproc.cornerSubPix_0(Native Method)
+11-18 14:32:38.888 14478 14515 E AndroidRuntime: 	at org.opencv.imgproc.Imgproc.cornerSubPix(Imgproc.java:3840)
+11-18 14:32:38.888 14478 14515 E AndroidRuntime: 	at symlab.CloudAR.track.TrackingTask.initialize(TrackingTask.java:59)
+11-18 14:32:38.888 14478 14515 E AndroidRuntime: 	at symlab.CloudAR.track.TrackingTask.run(TrackingTask.java:128)
+11-18 14:32:38.888 14478 14515 E AndroidRuntime: 	at android.os.Handler.handleCallback(Handler.java:874)
+11-18 14:32:38.888 14478 14515 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+11-18 14:32:38.888 14478 14515 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:198)
+11-18 14:32:38.888 14478 14515 E AndroidRuntime: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-18 14:32:38.899 14478 14478 I Poster  :  onPause() called.
+11-18 14:32:38.910 14478 14515 I Process : Sending signal. PID: 14478 SIG: 9

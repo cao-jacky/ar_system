@@ -1,0 +1,465 @@
+--------- beginning of main
+11-21 09:24:45.564 14848 14848 I MultiDex: Installing application
+11-21 09:24:45.564 14848 14848 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+11-21 09:24:45.571 14848 14848 I Poster  :  onCreate() called.
+11-21 09:24:45.577 14848 14848 I DecorView: It non-support bigbang
+11-21 09:24:45.580 14848 14848 I PhoneWindow: isNeedChangeNaviBarColor taskInfo: [android.app.ActivityManager$RunningTaskInfo@fbf91f7] size: 1
+11-21 09:24:45.580 14848 14848 I PhoneWindow: isAPPNeedChange pkgName: symlab.cloudridar.arhud needKeep: false
+11-21 09:24:45.580 14848 14848 I PhoneWindow: isNeedChangeNaviBarColor false
+11-21 09:24:45.580 14848 14848 I PhoneWindow: generateLayout mNavigationBarColor: ff000000
+11-21 09:24:45.580 14848 14848 I PhoneWindow: generateLayout isLightNavi false, Visibility: 0
+11-21 09:24:45.588 14848 14848 D OpenGLRenderer: Skia GL Pipeline
+11-21 09:24:45.605 14848 14848 D LocationManager: [LocationManager] requestLocationUpdates(), 
+11-21 09:24:45.605 14848 14848 D LocationManager: java.lang.RuntimeException
+11-21 09:24:45.605 14848 14848 D LocationManager: 	at android.location.LocationManager.requestLocationUpdates(LocationManager.java:1013)
+11-21 09:24:45.605 14848 14848 D LocationManager: 	at android.location.LocationManager.requestLocationUpdates(LocationManager.java:562)
+11-21 09:24:45.605 14848 14848 D LocationManager: 	at symlab.ARHUD.MainActivity.onCreate(MainActivity.java:94)
+11-21 09:24:45.605 14848 14848 D LocationManager: 	at android.app.Activity.performCreate(Activity.java:7136)
+11-21 09:24:45.605 14848 14848 D LocationManager: 	at android.app.Activity.performCreate(Activity.java:7127)
+11-21 09:24:45.605 14848 14848 D LocationManager: 	at android.app.Instrumentation.callActivityOnCreate(Instrumentation.java:1272)
+11-21 09:24:45.605 14848 14848 D LocationManager: 	at android.app.ActivityThread.performLaunchActivity(ActivityThread.java:2908)
+11-21 09:24:45.605 14848 14848 D LocationManager: 	at android.app.ActivityThread.handleLaunchActivity(ActivityThread.java:3063)
+11-21 09:24:45.605 14848 14848 D LocationManager: 	at android.app.servertransaction.LaunchActivityItem.execute(LaunchActivityItem.java:78)
+11-21 09:24:45.605 14848 14848 D LocationManager: 	at android.app.servertransaction.TransactionExecutor.executeCallbacks(TransactionExecutor.java:108)
+11-21 09:24:45.605 14848 14848 D LocationManager: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:68)
+11-21 09:24:45.605 14848 14848 D LocationManager: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:1823)
+11-21 09:24:45.605 14848 14848 D LocationManager: 	at android.os.Handler.dispatchMessage(Handler.java:107)
+11-21 09:24:45.605 14848 14848 D LocationManager: 	at android.os.Looper.loop(Looper.java:198)
+11-21 09:24:45.605 14848 14848 D LocationManager: 	at android.app.ActivityThread.main(ActivityThread.java:6729)
+11-21 09:24:45.605 14848 14848 D LocationManager: 	at java.lang.reflect.Method.invoke(Native Method)
+11-21 09:24:45.605 14848 14848 D LocationManager: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:493)
+11-21 09:24:45.605 14848 14848 D LocationManager: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:858)
+11-21 09:24:45.626 14848 14848 D Poster  : Server details are IP 10.42.0.1 and port 52727
+11-21 09:24:45.632 14848 14848 D Poster  : Server bound to IP 10.42.0.1 and port 52727
+11-21 09:24:45.643 14848 14848 I Poster  :  onStart() called.
+11-21 09:24:45.644 14848 14848 I Poster  :  onResume() called.
+11-21 09:24:45.644 14848 14848 E libc    : Access denied finding property "vendor.camera.aux.packagelist"
+11-21 09:24:45.635 14848 14848 W loudridar.arhud: type=1400 audit(0.0:1007): avc: denied { read } for name="u:object_r:vendor_camera_prop:s0" dev="tmpfs" ino=5653 scontext=u:r:untrusted_app:s0:c203,c256,c512,c768 tcontext=u:object_r:vendor_camera_prop:s0 tclass=file permissive=0
+11-21 09:24:45.646 14848 14848 E libc    : Access denied finding property "vendor.camera.aux.packagelist"
+11-21 09:24:45.742 14848 14939 I Adreno  : QUALCOMM build                   : a4d39a0, I6fd668c4d3
+11-21 09:24:45.742 14848 14939 I Adreno  : Build Date                       : 10/05/18
+11-21 09:24:45.742 14848 14939 I Adreno  : OpenGL ES Shader Compiler Version: EV031.25.03.01
+11-21 09:24:45.742 14848 14939 I Adreno  : Local Branch                     : 
+11-21 09:24:45.742 14848 14939 I Adreno  : Remote Branch                    : refs/tags/AU_LINUX_ANDROID_LA.UM.7.2.R1.09.00.00.442.049
+11-21 09:24:45.742 14848 14939 I Adreno  : Remote Branch                    : NONE
+11-21 09:24:45.742 14848 14939 I Adreno  : Reconstruct Branch               : NOTHING
+11-21 09:24:45.742 14848 14939 I Adreno  : Build Config                     : S L 6.0.7 AArch32
+11-21 09:24:45.747 14848 14939 I Adreno  : PFP: 0x005ff112, ME: 0x005ff066
+11-21 09:24:45.750 14848 14939 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-21 09:24:45.750 14848 14939 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-21 09:24:45.751 14848 14939 I OpenGLRenderer: Initialized EGL, version 1.4
+11-21 09:24:45.751 14848 14939 D OpenGLRenderer: Swap behavior 2
+11-21 09:24:45.764 14848 14848 I Poster  :  surfaceCreated() called.
+11-21 09:24:45.764 14848 14848 I Poster  : initPreview() called
+11-21 09:24:45.776 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:45.813 14848 14848 I Poster  :  surfaceChanged() called.
+11-21 09:24:46.399 14848 14885 D Evaluation: 0 res for frame 6 received at 1574321086399
+11-21 09:24:46.428 14848 14885 D Evaluation: 0 res for frame 7 received at 1574321086428
+11-21 09:24:46.461 14848 14885 D Evaluation: 0 res for frame 8 received at 1574321086461
+11-21 09:24:46.496 14848 14885 D Evaluation: 0 res for frame 9 received at 1574321086496
+11-21 09:24:46.527 14848 14885 D Evaluation: 0 res for frame 10 received at 1574321086527
+11-21 09:24:46.561 14848 14885 D Evaluation: 0 res for frame 11 received at 1574321086561
+11-21 09:24:46.594 14848 14885 D Evaluation: 0 res for frame 12 received at 1574321086594
+11-21 09:24:46.628 14848 14885 D Evaluation: 0 res for frame 13 received at 1574321086628
+11-21 09:24:46.660 14848 14885 D Evaluation: 0 res for frame 14 received at 1574321086660
+11-21 09:24:46.694 14848 14885 D Evaluation: 0 res for frame 15 received at 1574321086694
+11-21 09:24:46.727 14848 14885 D Evaluation: 0 res for frame 16 received at 1574321086727
+11-21 09:24:46.761 14848 14885 D Evaluation: 1 res for frame 17 received at 1574321086761
+11-21 09:24:46.796 14848 14885 D Evaluation: 0 res for frame 18 received at 1574321086796
+11-21 09:24:46.827 14848 14885 D Evaluation: 0 res for frame 19 received at 1574321086827
+11-21 09:24:46.861 14848 14885 D Evaluation: 0 res for frame 20 received at 1574321086861
+11-21 09:24:46.895 14848 14885 D Evaluation: 0 res for frame 21 received at 1574321086895
+11-21 09:24:46.929 14848 14885 D Evaluation: 0 res for frame 22 received at 1574321086929
+11-21 09:24:46.963 14848 14885 D Evaluation: 0 res for frame 23 received at 1574321086963
+11-21 09:24:46.996 14848 14885 D Evaluation: 0 res for frame 24 received at 1574321086996
+11-21 09:24:47.001 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:47.004 14848 14868 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 30 lines
+11-21 09:24:47.004 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:47.004 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:47.004 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:47.004 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:47.005 14848 14868 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 8 lines
+11-21 09:24:47.005 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:47.029 14848 14885 D Evaluation: 0 res for frame 25 received at 1574321087029
+11-21 09:24:47.062 14848 14885 D Evaluation: 0 res for frame 26 received at 1574321087062
+11-21 09:24:47.093 14848 14885 D Evaluation: 0 res for frame 27 received at 1574321087093
+11-21 09:24:47.129 14848 14885 D Evaluation: 0 res for frame 28 received at 1574321087129
+11-21 09:24:47.164 14848 14885 D Evaluation: 0 res for frame 29 received at 1574321087164
+11-21 09:24:47.192 14848 14885 W System.err: java.net.SocketException: Message too long
+11-21 09:24:47.198 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-21 09:24:47.198 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-21 09:24:47.198 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-21 09:24:47.198 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-21 09:24:47.198 14848 14885 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-21 09:24:47.199 14848 14885 W System.err: 	at android.os.Handler.handleCallback(Handler.java:874)
+11-21 09:24:47.199 14848 14885 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+11-21 09:24:47.199 14848 14885 W System.err: 	at android.os.Looper.loop(Looper.java:198)
+11-21 09:24:47.199 14848 14885 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-21 09:24:47.201 14848 14885 D Evaluation: 0 res for frame 30 received at 1574321087201
+11-21 09:24:47.237 14848 14885 D Evaluation: 0 res for frame 31 received at 1574321087237
+11-21 09:24:47.261 14848 14885 W System.err: java.net.SocketException: Message too long
+11-21 09:24:47.261 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-21 09:24:47.261 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-21 09:24:47.261 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-21 09:24:47.261 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-21 09:24:47.261 14848 14885 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-21 09:24:47.261 14848 14885 W System.err: 	at android.os.Handler.handleCallback(Handler.java:874)
+11-21 09:24:47.261 14848 14885 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+11-21 09:24:47.261 14848 14885 W System.err: 	at android.os.Looper.loop(Looper.java:198)
+11-21 09:24:47.261 14848 14885 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-21 09:24:47.263 14848 14885 D Evaluation: 0 res for frame 32 received at 1574321087263
+11-21 09:24:47.330 14848 14885 D Evaluation: 0 res for frame 34 received at 1574321087330
+11-21 09:24:47.368 14848 14885 D Evaluation: 0 res for frame 36 received at 1574321087368
+11-21 09:24:47.400 14848 14885 D Evaluation: 0 res for frame 37 received at 1574321087400
+11-21 09:24:47.451 14848 14885 D Evaluation: 0 res for frame 38 received at 1574321087451
+11-21 09:24:47.473 14848 14885 D Evaluation: 0 res for frame 39 received at 1574321087473
+11-21 09:24:47.511 14848 14885 D Evaluation: 0 res for frame 41 received at 1574321087511
+11-21 09:24:47.551 14848 14885 D Evaluation: 0 res for frame 41 received at 1574321087551
+11-21 09:24:47.575 14848 14885 D Evaluation: 0 res for frame 42 received at 1574321087575
+11-21 09:24:47.600 14848 14885 D Evaluation: 0 res for frame 44 received at 1574321087600
+11-21 09:24:47.607 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:47.609 14848 14868 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 31 lines
+11-21 09:24:47.609 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:47.643 14848 14885 D Evaluation: 0 res for frame 44 received at 1574321087643
+11-21 09:24:47.731 14848 14885 D Evaluation: 0 res for frame 45 received at 1574321087731
+11-21 09:24:47.756 14848 14885 D Evaluation: 0 res for frame 46 received at 1574321087756
+11-21 09:24:47.806 14848 14885 D Evaluation: 0 res for frame 48 received at 1574321087806
+11-21 09:24:47.832 14848 14885 D Evaluation: 1 res for frame 48 received at 1574321087832
+11-21 09:24:47.873 14848 14885 D Evaluation: 2 res for frame 49 received at 1574321087873
+11-21 09:24:47.907 14848 14885 D Evaluation: 2 res for frame 50 received at 1574321087907
+11-21 09:24:47.941 14848 14885 D Evaluation: 2 res for frame 51 received at 1574321087941
+11-21 09:24:47.983 14848 14885 D Evaluation: 2 res for frame 52 received at 1574321087983
+11-21 09:24:48.008 14848 14885 D Evaluation: 2 res for frame 53 received at 1574321088008
+11-21 09:24:48.037 14848 14885 D Evaluation: 2 res for frame 54 received at 1574321088037
+11-21 09:24:48.098 14848 14885 D Evaluation: 2 res for frame 55 received at 1574321088098
+11-21 09:24:48.129 14848 14885 D Evaluation: 2 res for frame 56 received at 1574321088128
+11-21 09:24:48.172 14848 14885 D Evaluation: 2 res for frame 57 received at 1574321088172
+11-21 09:24:48.204 14848 14885 D Evaluation: 2 res for frame 58 received at 1574321088204
+11-21 09:24:48.234 14848 14885 D Evaluation: 2 res for frame 59 received at 1574321088234
+11-21 09:24:48.266 14848 14885 D Evaluation: 2 res for frame 60 received at 1574321088266
+11-21 09:24:48.301 14848 14885 D Evaluation: 2 res for frame 61 received at 1574321088301
+11-21 09:24:48.343 14848 14885 D Evaluation: 2 res for frame 62 received at 1574321088343
+11-21 09:24:48.369 14848 14885 D Evaluation: 2 res for frame 63 received at 1574321088369
+11-21 09:24:48.418 14848 14885 D Evaluation: 1 res for frame 64 received at 1574321088418
+11-21 09:24:48.428 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:48.431 14848 14868 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 41 lines
+11-21 09:24:48.431 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:48.444 14848 14885 D Evaluation: 1 res for frame 65 received at 1574321088444
+11-21 09:24:48.476 14848 14885 D Evaluation: 2 res for frame 66 received at 1574321088476
+11-21 09:24:48.545 14848 14885 D Evaluation: 2 res for frame 67 received at 1574321088545
+11-21 09:24:48.605 14848 14885 D Evaluation: 2 res for frame 68 received at 1574321088604
+11-21 09:24:48.631 14848 14885 D Evaluation: 1 res for frame 69 received at 1574321088631
+11-21 09:24:48.680 14848 14885 D Evaluation: 2 res for frame 70 received at 1574321088680
+11-21 09:24:48.705 14848 14885 D Evaluation: 2 res for frame 72 received at 1574321088705
+11-21 09:24:48.761 14848 14885 D Evaluation: 2 res for frame 72 received at 1574321088761
+11-21 09:24:48.790 14848 14885 D Evaluation: 2 res for frame 73 received at 1574321088789
+11-21 09:24:48.812 14848 14885 D Evaluation: 2 res for frame 74 received at 1574321088811
+11-21 09:24:48.884 14848 14885 D Evaluation: 2 res for frame 75 received at 1574321088884
+11-21 09:24:48.983 14848 14885 D Evaluation: 3 res for frame 77 received at 1574321088982
+11-21 09:24:49.012 14848 14885 D Evaluation: 2 res for frame 77 received at 1574321089012
+11-21 09:24:49.067 14848 14885 D Evaluation: 2 res for frame 78 received at 1574321089067
+11-21 09:24:49.099 14848 14885 D Evaluation: 2 res for frame 79 received at 1574321089099
+11-21 09:24:49.147 14848 14885 D Evaluation: 2 res for frame 80 received at 1574321089147
+11-21 09:24:49.177 14848 14885 D Evaluation: 2 res for frame 81 received at 1574321089177
+11-21 09:24:49.228 14848 14885 D Evaluation: 3 res for frame 82 received at 1574321089228
+11-21 09:24:49.314 14848 14885 D Evaluation: 2 res for frame 83 received at 1574321089314
+11-21 09:24:49.365 14848 14885 D Evaluation: 2 res for frame 84 received at 1574321089365
+11-21 09:24:49.383 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:49.383 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:49.383 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:49.383 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:49.383 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:49.383 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:49.384 14848 14868 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 8 lines
+11-21 09:24:49.384 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:49.384 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:49.386 14848 14868 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 23 lines
+11-21 09:24:49.386 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:49.396 14848 14885 D Evaluation: 2 res for frame 85 received at 1574321089395
+11-21 09:24:49.422 14848 14885 D Evaluation: 2 res for frame 87 received at 1574321089422
+11-21 09:24:49.471 14848 14885 D Evaluation: 2 res for frame 88 received at 1574321089471
+11-21 09:24:49.498 14848 14885 D Evaluation: 3 res for frame 89 received at 1574321089498
+11-21 09:24:49.532 14848 14885 D Evaluation: 4 res for frame 89 received at 1574321089532
+11-21 09:24:49.611 14848 14885 D Evaluation: 1 res for frame 90 received at 1574321089611
+11-21 09:24:49.645 14848 14885 D Evaluation: 1 res for frame 91 received at 1574321089645
+11-21 09:24:49.678 14848 14885 D Evaluation: 1 res for frame 92 received at 1574321089678
+11-21 09:24:49.706 14848 14885 D Evaluation: 2 res for frame 93 received at 1574321089706
+11-21 09:24:49.746 14848 14885 D Evaluation: 2 res for frame 94 received at 1574321089746
+11-21 09:24:49.772 14848 14885 D Evaluation: 2 res for frame 95 received at 1574321089772
+11-21 09:24:49.911 14848 14885 D Evaluation: 1 res for frame 96 received at 1574321089911
+11-21 09:24:49.980 14848 14885 D Evaluation: 2 res for frame 97 received at 1574321089980
+11-21 09:24:50.009 14848 14885 D Evaluation: 2 res for frame 98 received at 1574321090009
+11-21 09:24:50.043 14848 14885 D Evaluation: 1 res for frame 99 received at 1574321090042
+11-21 09:24:50.084 14848 14885 D Evaluation: 1 res for frame 100 received at 1574321090084
+11-21 09:24:50.114 14848 14885 D Evaluation: 0 res for frame 101 received at 1574321090114
+11-21 09:24:50.268 14848 14885 D Evaluation: 0 res for frame 102 received at 1574321090267
+11-21 09:24:50.294 14848 14885 D Evaluation: 0 res for frame 103 received at 1574321090294
+11-21 09:24:50.319 14848 14885 D Evaluation: 0 res for frame 104 received at 1574321090319
+11-21 09:24:50.376 14848 14885 D Evaluation: 0 res for frame 106 received at 1574321090376
+11-21 09:24:50.403 14848 14885 D Evaluation: 0 res for frame 107 received at 1574321090403
+11-21 09:24:50.414 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:50.416 14848 14868 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 44 lines
+11-21 09:24:50.416 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:50.451 14848 14885 D Evaluation: 0 res for frame 108 received at 1574321090451
+11-21 09:24:50.533 14848 14885 D Evaluation: 0 res for frame 108 received at 1574321090533
+11-21 09:24:50.584 14848 14885 D Evaluation: 0 res for frame 109 received at 1574321090584
+11-21 09:24:50.612 14848 14885 D Evaluation: 0 res for frame 110 received at 1574321090612
+11-21 09:24:50.634 14848 14885 D Evaluation: 0 res for frame 111 received at 1574321090634
+11-21 09:24:50.677 14848 14885 D Evaluation: 1 res for frame 112 received at 1574321090677
+11-21 09:24:50.707 14848 14885 D Evaluation: 0 res for frame 114 received at 1574321090707
+11-21 09:24:50.745 14848 14885 D Evaluation: 0 res for frame 115 received at 1574321090745
+11-21 09:24:50.790 14848 14885 D Evaluation: 0 res for frame 115 received at 1574321090790
+11-21 09:24:50.814 14848 14885 D Evaluation: 0 res for frame 116 received at 1574321090814
+11-21 09:24:50.862 14848 14885 D Evaluation: 0 res for frame 117 received at 1574321090862
+11-21 09:24:51.034 14848 14885 D Evaluation: 0 res for frame 118 received at 1574321091034
+11-21 09:24:51.071 14848 14885 D Evaluation: 0 res for frame 120 received at 1574321091071
+11-21 09:24:51.093 14848 14885 D Evaluation: 0 res for frame 120 received at 1574321091093
+11-21 09:24:51.122 14848 14885 D Evaluation: 0 res for frame 121 received at 1574321091122
+11-21 09:24:51.145 14848 14885 D Evaluation: 0 res for frame 123 received at 1574321091145
+11-21 09:24:51.195 14848 14885 D Evaluation: 0 res for frame 124 received at 1574321091195
+11-21 09:24:51.278 14848 14885 D Evaluation: 0 res for frame 125 received at 1574321091278
+11-21 09:24:51.302 14848 14885 D Evaluation: 0 res for frame 126 received at 1574321091302
+11-21 09:24:51.313 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:51.315 14848 14868 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 24 lines
+11-21 09:24:51.315 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:51.315 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:51.316 14848 14868 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 9 lines
+11-21 09:24:51.316 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:51.333 14848 14885 D Evaluation: 1 res for frame 126 received at 1574321091333
+11-21 09:24:51.371 14848 14885 D Evaluation: 0 res for frame 127 received at 1574321091371
+11-21 09:24:51.402 14848 14885 D Evaluation: 0 res for frame 129 received at 1574321091402
+11-21 09:24:51.432 14848 14885 D Evaluation: 0 res for frame 129 received at 1574321091432
+11-21 09:24:51.466 14848 14885 D Evaluation: 0 res for frame 130 received at 1574321091466
+11-21 09:24:51.506 14848 14885 D Evaluation: 0 res for frame 131 received at 1574321091506
+11-21 09:24:51.533 14848 14885 D Evaluation: 0 res for frame 132 received at 1574321091533
+11-21 09:24:51.574 14848 14885 D Evaluation: 0 res for frame 133 received at 1574321091574
+11-21 09:24:51.614 14848 14885 D Evaluation: 0 res for frame 134 received at 1574321091614
+11-21 09:24:51.637 14848 14885 D Evaluation: 0 res for frame 135 received at 1574321091637
+11-21 09:24:51.703 14848 14885 D Evaluation: 0 res for frame 136 received at 1574321091703
+11-21 09:24:51.732 14848 14885 D Evaluation: 0 res for frame 137 received at 1574321091732
+11-21 09:24:51.819 14848 14885 D Evaluation: 0 res for frame 138 received at 1574321091819
+11-21 09:24:51.857 14848 14885 D Evaluation: 0 res for frame 139 received at 1574321091857
+11-21 09:24:51.881 14848 14885 D Evaluation: 0 res for frame 140 received at 1574321091881
+11-21 09:24:51.903 14848 14885 D Evaluation: 0 res for frame 141 received at 1574321091903
+11-21 09:24:51.939 14848 14885 D Evaluation: 0 res for frame 142 received at 1574321091939
+11-21 09:24:51.972 14848 14885 D Evaluation: 0 res for frame 144 received at 1574321091972
+11-21 09:24:52.009 14848 14885 D Evaluation: 0 res for frame 144 received at 1574321092009
+11-21 09:24:52.086 14848 14885 D Evaluation: 0 res for frame 145 received at 1574321092086
+11-21 09:24:52.102 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:52.105 14848 14868 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 38 lines
+11-21 09:24:52.105 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:52.118 14848 14885 D Evaluation: 0 res for frame 146 received at 1574321092118
+11-21 09:24:52.142 14848 14885 D Evaluation: 0 res for frame 148 received at 1574321092142
+11-21 09:24:52.216 14848 14885 D Evaluation: 0 res for frame 149 received at 1574321092216
+11-21 09:24:52.316 14848 14885 D Evaluation: 0 res for frame 150 received at 1574321092316
+11-21 09:24:52.349 14848 14885 D Evaluation: 0 res for frame 151 received at 1574321092349
+11-21 09:24:52.374 14848 14885 D Evaluation: 0 res for frame 152 received at 1574321092374
+11-21 09:24:52.415 14848 14885 D Evaluation: 0 res for frame 153 received at 1574321092415
+11-21 09:24:52.444 14848 14885 D Evaluation: 1 res for frame 154 received at 1574321092444
+11-21 09:24:52.473 14848 14885 D Evaluation: 1 res for frame 155 received at 1574321092473
+11-21 09:24:52.545 14848 14885 D Evaluation: 1 res for frame 156 received at 1574321092545
+11-21 09:24:52.570 14848 14885 D Evaluation: 0 res for frame 157 received at 1574321092570
+11-21 09:24:52.687 14848 14885 D Evaluation: 0 res for frame 158 received at 1574321092687
+11-21 09:24:52.719 14848 14885 D Evaluation: 0 res for frame 159 received at 1574321092719
+11-21 09:24:52.762 14848 14885 D Evaluation: 1 res for frame 160 received at 1574321092762
+11-21 09:24:52.790 14848 14885 D Evaluation: 1 res for frame 162 received at 1574321092790
+11-21 09:24:52.814 14848 14885 D Evaluation: 1 res for frame 162 received at 1574321092814
+11-21 09:24:52.838 14848 14885 D Evaluation: 1 res for frame 164 received at 1574321092838
+11-21 09:24:52.861 14848 14885 D Evaluation: 0 res for frame 165 received at 1574321092861
+11-21 09:24:52.916 14848 14885 D Evaluation: 1 res for frame 166 received at 1574321092916
+11-21 09:24:52.926 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:52.929 14848 14868 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 36 lines
+11-21 09:24:52.929 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:52.944 14848 14885 D Evaluation: 1 res for frame 166 received at 1574321092944
+11-21 09:24:52.974 14848 14885 D Evaluation: 2 res for frame 167 received at 1574321092974
+11-21 09:24:52.996 14848 14885 D Evaluation: 0 res for frame 168 received at 1574321092996
+11-21 09:24:53.046 14848 14885 D Evaluation: 1 res for frame 169 received at 1574321093046
+11-21 09:24:53.070 14848 14885 D Evaluation: 1 res for frame 170 received at 1574321093070
+11-21 09:24:53.199 14848 14885 D Evaluation: 1 res for frame 171 received at 1574321093199
+11-21 09:24:53.280 14848 14885 D Evaluation: 1 res for frame 173 received at 1574321093280
+11-21 09:24:53.320 14848 14885 D Evaluation: 1 res for frame 173 received at 1574321093320
+11-21 09:24:53.347 14848 14885 D Evaluation: 0 res for frame 174 received at 1574321093347
+11-21 09:24:53.373 14848 14885 D Evaluation: 0 res for frame 176 received at 1574321093373
+11-21 09:24:53.395 14848 14885 D Evaluation: 0 res for frame 176 received at 1574321093395
+11-21 09:24:53.453 14848 14885 D Evaluation: 0 res for frame 178 received at 1574321093453
+11-21 09:24:53.475 14848 14885 D Evaluation: 0 res for frame 179 received at 1574321093475
+11-21 09:24:53.506 14848 14885 D Evaluation: 0 res for frame 179 received at 1574321093506
+11-21 09:24:53.590 14848 14885 D Evaluation: 0 res for frame 180 received at 1574321093590
+11-21 09:24:53.614 14848 14885 D Evaluation: 0 res for frame 181 received at 1574321093614
+11-21 09:24:53.660 14848 14885 D Evaluation: 0 res for frame 182 received at 1574321093660
+11-21 09:24:53.711 14848 14885 D Evaluation: 0 res for frame 184 received at 1574321093711
+11-21 09:24:53.733 14848 14885 D Evaluation: 0 res for frame 184 received at 1574321093733
+11-21 09:24:53.765 14848 14885 D Evaluation: 1 res for frame 185 received at 1574321093765
+11-21 09:24:53.775 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:53.777 14848 14868 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 38 lines
+11-21 09:24:53.777 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:53.806 14848 14885 D Evaluation: 1 res for frame 187 received at 1574321093805
+11-21 09:24:53.827 14848 14885 D Evaluation: 0 res for frame 187 received at 1574321093827
+11-21 09:24:53.862 14848 14885 D Evaluation: 0 res for frame 188 received at 1574321093862
+11-21 09:24:53.898 14848 14885 D Evaluation: 1 res for frame 189 received at 1574321093898
+11-21 09:24:53.929 14848 14885 D Evaluation: 1 res for frame 190 received at 1574321093929
+11-21 09:24:54.034 14848 14885 D Evaluation: 0 res for frame 191 received at 1574321094034
+11-21 09:24:54.060 14848 14885 D Evaluation: 0 res for frame 192 received at 1574321094060
+11-21 09:24:54.082 14848 14885 D Evaluation: 1 res for frame 193 received at 1574321094082
+11-21 09:24:54.149 14848 14885 D Evaluation: 1 res for frame 195 received at 1574321094149
+11-21 09:24:54.172 14848 14885 D Evaluation: 1 res for frame 196 received at 1574321094172
+11-21 09:24:54.252 14848 14885 D Evaluation: 0 res for frame 196 received at 1574321094252
+11-21 09:24:54.289 14848 14885 D Evaluation: 0 res for frame 197 received at 1574321094289
+11-21 09:24:54.313 14848 14885 D Evaluation: 0 res for frame 198 received at 1574321094313
+11-21 09:24:54.336 14848 14885 D Evaluation: 0 res for frame 199 received at 1574321094336
+11-21 09:24:54.375 14848 14885 D Evaluation: 1 res for frame 200 received at 1574321094375
+11-21 09:24:54.531 14848 14885 D Evaluation: 1 res for frame 201 received at 1574321094531
+11-21 09:24:54.561 14848 14885 D Evaluation: 1 res for frame 203 received at 1574321094561
+11-21 09:24:54.585 14848 14885 D Evaluation: 1 res for frame 203 received at 1574321094585
+11-21 09:24:54.608 14848 14885 D Evaluation: 1 res for frame 204 received at 1574321094608
+11-21 09:24:54.642 14848 14885 D Evaluation: 0 res for frame 206 received at 1574321094642
+11-21 09:24:54.651 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:54.652 14848 14868 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 8 lines
+11-21 09:24:54.652 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:54.652 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:54.652 14848 14868 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-21 09:24:54.652 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:54.652 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:54.656 14848 14868 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 25 lines
+11-21 09:24:54.656 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:54.672 14848 14885 D Evaluation: 0 res for frame 207 received at 1574321094672
+11-21 09:24:54.825 14848 14885 D Evaluation: 0 res for frame 208 received at 1574321094825
+11-21 09:24:54.847 14848 14885 D Evaluation: 0 res for frame 208 received at 1574321094847
+11-21 09:24:54.870 14848 14885 D Evaluation: 0 res for frame 209 received at 1574321094870
+11-21 09:24:54.935 14848 14885 D Evaluation: 0 res for frame 210 received at 1574321094935
+11-21 09:24:54.959 14848 14885 D Evaluation: 0 res for frame 212 received at 1574321094959
+11-21 09:24:54.980 14848 14885 D Evaluation: 0 res for frame 212 received at 1574321094980
+11-21 09:24:55.022 14848 14885 D Evaluation: 0 res for frame 213 received at 1574321095022
+11-21 09:24:55.045 14848 14885 D Evaluation: 0 res for frame 215 received at 1574321095045
+11-21 09:24:55.070 14848 14885 D Evaluation: 0 res for frame 216 received at 1574321095070
+11-21 09:24:55.116 14848 14885 D Evaluation: 0 res for frame 216 received at 1574321095116
+11-21 09:24:55.140 14848 14885 D Evaluation: 0 res for frame 218 received at 1574321095140
+11-21 09:24:55.164 14848 14885 D Evaluation: 0 res for frame 218 received at 1574321095164
+11-21 09:24:55.208 14848 14885 D Evaluation: 0 res for frame 219 received at 1574321095208
+11-21 09:24:55.230 14848 14885 D Evaluation: 0 res for frame 221 received at 1574321095230
+11-21 09:24:55.260 14848 14885 D Evaluation: 0 res for frame 221 received at 1574321095260
+11-21 09:24:55.292 14848 14885 D Evaluation: 0 res for frame 222 received at 1574321095292
+11-21 09:24:55.330 14848 14885 D Evaluation: 0 res for frame 223 received at 1574321095329
+11-21 09:24:55.485 14848 14885 D Evaluation: 0 res for frame 224 received at 1574321095485
+11-21 09:24:55.528 14848 14885 D Evaluation: 0 res for frame 225 received at 1574321095528
+11-21 09:24:55.557 14848 14885 D Evaluation: 0 res for frame 226 received at 1574321095557
+11-21 09:24:55.564 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:55.566 14848 14868 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 40 lines
+11-21 09:24:55.566 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:55.580 14848 14885 D Evaluation: 0 res for frame 227 received at 1574321095580
+11-21 09:24:55.603 14848 14885 D Evaluation: 0 res for frame 229 received at 1574321095603
+11-21 09:24:55.634 14848 14885 D Evaluation: 0 res for frame 231 received at 1574321095634
+11-21 09:24:55.715 14848 14885 D Evaluation: 0 res for frame 232 received at 1574321095715
+11-21 09:24:55.738 14848 14885 D Evaluation: 0 res for frame 232 received at 1574321095738
+11-21 09:24:55.764 14848 14885 D Evaluation: 0 res for frame 232 received at 1574321095764
+11-21 09:24:55.807 14848 14885 D Evaluation: 0 res for frame 233 received at 1574321095807
+11-21 09:24:55.843 14848 14885 D Evaluation: 0 res for frame 234 received at 1574321095843
+11-21 09:24:55.869 14848 14885 D Evaluation: 1 res for frame 235 received at 1574321095869
+11-21 09:24:55.900 14848 14885 D Evaluation: 2 res for frame 236 received at 1574321095899
+11-21 09:24:55.933 14848 14885 D Evaluation: 0 res for frame 237 received at 1574321095933
+11-21 09:24:56.059 14848 14885 D Evaluation: 2 res for frame 238 received at 1574321096059
+11-21 09:24:56.089 14848 14885 D Evaluation: 0 res for frame 239 received at 1574321096089
+11-21 09:24:56.117 14848 14885 D Evaluation: 0 res for frame 240 received at 1574321096117
+11-21 09:24:56.149 14848 14885 D Evaluation: 3 res for frame 241 received at 1574321096149
+11-21 09:24:56.172 14848 14885 D Evaluation: 0 res for frame 243 received at 1574321096172
+11-21 09:24:56.233 14848 14885 W System.err: java.net.SocketException: Message too long
+11-21 09:24:56.233 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-21 09:24:56.233 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-21 09:24:56.233 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-21 09:24:56.233 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-21 09:24:56.233 14848 14885 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-21 09:24:56.233 14848 14885 W System.err: 	at android.os.Handler.handleCallback(Handler.java:874)
+11-21 09:24:56.233 14848 14885 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+11-21 09:24:56.233 14848 14885 W System.err: 	at android.os.Looper.loop(Looper.java:198)
+11-21 09:24:56.233 14848 14885 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-21 09:24:56.235 14848 14885 D Evaluation: 3 res for frame 244 received at 1574321096235
+11-21 09:24:56.274 14848 14885 W System.err: java.net.SocketException: Message too long
+11-21 09:24:56.274 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-21 09:24:56.274 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-21 09:24:56.274 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-21 09:24:56.274 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-21 09:24:56.274 14848 14885 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-21 09:24:56.274 14848 14885 W System.err: 	at android.os.Handler.handleCallback(Handler.java:874)
+11-21 09:24:56.274 14848 14885 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+11-21 09:24:56.274 14848 14885 W System.err: 	at android.os.Looper.loop(Looper.java:198)
+11-21 09:24:56.274 14848 14885 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-21 09:24:56.277 14848 14885 D Evaluation: 1 res for frame 245 received at 1574321096277
+11-21 09:24:56.295 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:56.297 14848 14868 I chatty  : uid=10203(symlab.cloudridar.arhud) FinalizerDaemon identical 34 lines
+11-21 09:24:56.297 14848 14868 W System  : A resource failed to call close. 
+11-21 09:24:56.302 14848 14885 W System.err: java.net.SocketException: Message too long
+11-21 09:24:56.302 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-21 09:24:56.302 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-21 09:24:56.302 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-21 09:24:56.302 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-21 09:24:56.302 14848 14885 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-21 09:24:56.302 14848 14885 W System.err: 	at android.os.Handler.handleCallback(Handler.java:874)
+11-21 09:24:56.302 14848 14885 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+11-21 09:24:56.302 14848 14885 W System.err: 	at android.os.Looper.loop(Looper.java:198)
+11-21 09:24:56.302 14848 14885 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-21 09:24:56.304 14848 14885 D Evaluation: 0 res for frame 245 received at 1574321096304
+11-21 09:24:56.418 14848 14885 W System.err: java.net.SocketException: Message too long
+11-21 09:24:56.418 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-21 09:24:56.419 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-21 09:24:56.419 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-21 09:24:56.419 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-21 09:24:56.419 14848 14885 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-21 09:24:56.419 14848 14885 W System.err: 	at android.os.Handler.handleCallback(Handler.java:874)
+11-21 09:24:56.420 14848 14885 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+11-21 09:24:56.420 14848 14885 W System.err: 	at android.os.Looper.loop(Looper.java:198)
+11-21 09:24:56.420 14848 14885 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-21 09:24:56.425 14848 14885 D Evaluation: 1 res for frame 246 received at 1574321096425
+11-21 09:24:56.468 14848 14885 W System.err: java.net.SocketException: Message too long
+11-21 09:24:56.468 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-21 09:24:56.468 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-21 09:24:56.468 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-21 09:24:56.468 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-21 09:24:56.468 14848 14885 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-21 09:24:56.468 14848 14885 W System.err: 	at android.os.Handler.handleCallback(Handler.java:874)
+11-21 09:24:56.468 14848 14885 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+11-21 09:24:56.469 14848 14885 W System.err: 	at android.os.Looper.loop(Looper.java:198)
+11-21 09:24:56.469 14848 14885 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-21 09:24:56.499 14848 14885 W System.err: java.net.SocketException: Message too long
+11-21 09:24:56.499 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-21 09:24:56.499 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-21 09:24:56.499 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-21 09:24:56.499 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-21 09:24:56.499 14848 14885 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-21 09:24:56.499 14848 14885 W System.err: 	at android.os.Handler.handleCallback(Handler.java:874)
+11-21 09:24:56.500 14848 14885 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+11-21 09:24:56.500 14848 14885 W System.err: 	at android.os.Looper.loop(Looper.java:198)
+11-21 09:24:56.500 14848 14885 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-21 09:24:56.528 14848 14885 W System.err: java.net.SocketException: Message too long
+11-21 09:24:56.528 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-21 09:24:56.528 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-21 09:24:56.528 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-21 09:24:56.528 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-21 09:24:56.528 14848 14885 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-21 09:24:56.528 14848 14885 W System.err: 	at android.os.Handler.handleCallback(Handler.java:874)
+11-21 09:24:56.528 14848 14885 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+11-21 09:24:56.528 14848 14885 W System.err: 	at android.os.Looper.loop(Looper.java:198)
+11-21 09:24:56.528 14848 14885 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-21 09:24:56.552 14848 14885 W System.err: java.net.SocketException: Message too long
+11-21 09:24:56.552 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-21 09:24:56.552 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-21 09:24:56.552 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-21 09:24:56.552 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-21 09:24:56.552 14848 14885 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-21 09:24:56.552 14848 14885 W System.err: 	at android.os.Handler.handleCallback(Handler.java:874)
+11-21 09:24:56.552 14848 14885 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+11-21 09:24:56.552 14848 14885 W System.err: 	at android.os.Looper.loop(Looper.java:198)
+11-21 09:24:56.552 14848 14885 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-21 09:24:56.625 14848 14885 W System.err: java.net.SocketException: Message too long
+11-21 09:24:56.625 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-21 09:24:56.625 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-21 09:24:56.625 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-21 09:24:56.625 14848 14885 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-21 09:24:56.625 14848 14885 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-21 09:24:56.625 14848 14885 W System.err: 	at android.os.Handler.handleCallback(Handler.java:874)
+11-21 09:24:56.625 14848 14885 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:100)
+11-21 09:24:56.626 14848 14885 W System.err: 	at android.os.Looper.loop(Looper.java:198)
+11-21 09:24:56.626 14848 14885 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-21 09:24:56.695 14848 14848 I Poster  :  onPause() called.
+11-21 09:24:57.329 14848 14848 I Poster  :  surfaceDestroyed() called.
+11-21 09:24:57.332 14848 14848 I Poster  :  onStop() called.
+11-21 09:24:59.242 14848 14848 I Poster  :  onDestroy() called.

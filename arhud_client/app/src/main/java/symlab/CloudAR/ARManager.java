@@ -146,9 +146,9 @@ public class ARManager {
         }
     }*/
     //------------------pengzhou: timestamp-------------------
-    public void recognizeTime(int frameID, byte[] frameData, double timeCaptured, double timeSend) {
+    public void recognizeTime(int frameID, byte[] frameData){// double timeCaptured, double timeSend) {
         if(ARManager.isCloudBased) {
-            taskTransmission.setData(frameID, frameData, timeCaptured, timeSend);
+            taskTransmission.setData(frameID, frameData);//, timeCaptured, timeSend);
             handlerNetwork.post(taskTransmission);
             taskReceiving.updateLatestSentID(frameID);
         }

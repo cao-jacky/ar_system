@@ -1,0 +1,56 @@
+--------- beginning of system
+11-26 13:52:56.448 21789 21789 D ActivityThread: Attach thread to application
+11-26 13:52:56.576 21789 21789 V ActivityThread: callActivityOnCreate
+--------- beginning of main
+11-26 13:52:56.576 21789 21789 I Poster  :  onCreate() called.
+11-26 13:52:56.579 21789 21789 I HwApsImpl: APS: new HwApsImpl created
+11-26 13:52:56.588 21789 21789 V HwWidgetFactory: : successes to get AllImpl object and return....
+11-26 13:52:56.596 21789 21789 D OpenGLRenderer: Skia GL Pipeline
+11-26 13:52:56.600 21789 21789 I Rajawali: Rajawali | Bombshell | v1.1 Development 
+11-26 13:52:56.600 21789 21789 I Rajawali: THIS IS A DEV BRANCH CONTAINING SIGNIFICANT CHANGES. PLEASE REFER TO CHANGELOG.md FOR MORE INFORMATION.
+11-26 13:52:56.604 21789 21789 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-26 13:52:56.604 21789 21789 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-26 13:52:56.605 21789 21789 I iGraphics: [0020080c] pn: symlab.cloudridar.poster_edge, p: 21789
+11-26 13:52:56.620 21789 21789 D ActivityThread: add activity client record, r= ActivityRecord{4d8f3ee token=android.os.BinderProxy@4a2b1d8 {symlab.cloudridar.poster_edge/symlab.posterApp.PosterActivity}} token= android.os.BinderProxy@4a2b1d8
+11-26 13:52:56.622 21789 21789 I Poster  :  onStart() called.
+11-26 13:52:56.623 21789 21789 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-26 13:52:56.624 21789 21789 I Poster  :  onResume() called.
+11-26 13:52:56.628 21789 21789 I PermissionManager: camera remind result:true
+11-26 13:52:56.628 21789 21789 I Camera  : open camera: 0, package name: symlab.cloudridar.poster_edge
+11-26 13:52:56.629 21789 21789 I BackgroundPermManager: pkgName: symlab.cloudridar.poster_edge,pid: 21789 ,uidOf3RdApk: 10148 ,permType: 0 ,permCfg: 1
+11-26 13:52:56.630 21789 21789 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = true
+11-26 13:52:56.641 21789 21789 D ActivityThread: isOptEnabled=false isWechatScanOpt=false
+11-26 13:52:56.645 21789 21789 I HwSecImmHelper: mSecurityInputMethodService is null
+11-26 13:52:56.649 21789 21789 D OpenGLRenderer:   HWUI Binary is  enabled
+11-26 13:52:56.656 21789 21789 I ViewRootImpl[PosterActivity]: view add KeepScreenOnFlag
+11-26 13:52:56.658 21789 21846 D Poster  : UDP connection
+11-26 13:52:56.670 21789 21864 D HiTouch_PressGestureDetector: onAttached, package=symlab.cloudridar.poster_edge, windowType=1, mHiTouchRestricted=false
+11-26 13:52:56.675 21789 21863 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-26 13:52:56.675 21789 21863 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-26 13:52:56.675 21789 21863 I OpenGLRenderer: Initialized EGL, version 1.4, mEglDisplay 0x1
+11-26 13:52:56.675 21789 21863 D OpenGLRenderer: Swap behavior 2
+11-26 13:52:56.687 21789 21863 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+11-26 13:52:56.696 21789 21789 I Poster  :  surfaceCreated() called.
+11-26 13:52:56.702 21789 21789 I PermissionManager: camera remind result:true
+11-26 13:52:56.706 21789 21789 I Poster  :  surfaceChanged() called.
+11-26 13:52:56.714 21789 21843 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+11-26 13:52:56.737 21789 21789 W InputMethodManager: startInputReason = 1
+11-26 13:52:56.739 21789 21789 W InputMethodManager: startInputReason = 5
+11-26 13:52:58.714 21789 21789 D stylus  : init stylus touchlistener.
+11-26 13:52:58.720 21789 21789 W Settings: Setting device_provisioned has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+11-26 13:52:58.721 21789 21789 V HiTouch_HiTouchSensor: User setup is finished.
+11-26 13:52:58.736 21789 21843 V Poster  : No object picked!
+11-26 13:52:58.760 21789 21846 D Evaluation: get gray scaled frame data at 1574769178759
+11-26 13:52:58.774 21789 21846 D Evaluation: frame 51 sent with size 19378 at 1574769178774
+11-26 13:52:59.042 21789 21846 W System.err: java.net.NoRouteToHostException: No route to host
+11-26 13:52:59.042 21789 21846 W System.err: 	at sun.nio.ch.DatagramChannelImpl.receive0(Native Method)
+11-26 13:52:59.042 21789 21846 W System.err: 	at sun.nio.ch.DatagramChannelImpl.receiveIntoNativeBuffer(DatagramChannelImpl.java:464)
+11-26 13:52:59.042 21789 21846 W System.err: 	at sun.nio.ch.DatagramChannelImpl.receive(DatagramChannelImpl.java:450)
+11-26 13:52:59.042 21789 21846 W System.err: 	at sun.nio.ch.DatagramChannelImpl.receive(DatagramChannelImpl.java:393)
+11-26 13:52:59.042 21789 21846 W System.err: 	at symlab.CloudAR.network.UDPReceivingTask.run(UDPReceivingTask.java:71)
+11-26 13:52:59.042 21789 21846 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 13:52:59.042 21789 21846 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 13:52:59.042 21789 21846 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 13:52:59.042 21789 21846 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 13:52:59.048 21789 21801 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 13:52:59.070 21789 21799 W System  : A resource failed to call close. 

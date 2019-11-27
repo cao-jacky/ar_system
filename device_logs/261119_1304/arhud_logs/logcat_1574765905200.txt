@@ -1,0 +1,402 @@
+--------- beginning of main
+11-26 12:58:25.211 11348 11348 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-26 12:58:25.212 11348 11374 D ZrHung.AppEyeUiProbe: Runnable thread started.
+11-26 12:58:25.212 11348 11374 D IMonitor: Load library imonitor_jni
+11-26 12:58:25.214 11371 11371 W logcat  : type=1400 audit(0.0:3437): avc: granted { create } for name="logcat_1574765905200.txt" scontext=u:r:untrusted_app:s0:c147,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0:c147,c256,c512,c768 tclass=file
+11-26 12:58:25.214 11348 11374 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0102]
+11-26 12:58:25.214 11348 11374 W ZrHung.AppEyeUiProbe: Failed to get config from zrhung
+11-26 12:58:25.217 11348 11348 I MultiDex: Installing application
+11-26 12:58:25.217 11348 11348 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+--------- beginning of system
+11-26 12:58:25.221 11348 11348 V ActivityThread: callActivityOnCreate
+11-26 12:58:25.221 11348 11348 I Poster  :  onCreate() called.
+11-26 12:58:25.224 11348 11348 I HwApsImpl: APS: new HwApsImpl created
+11-26 12:58:25.230 11348 11348 V HwWidgetFactory: : successes to get AllImpl object and return....
+11-26 12:58:25.238 11348 11348 D OpenGLRenderer: Skia GL Pipeline
+11-26 12:58:25.257 11348 11348 D Poster  : Server details are IP 193.166.28.132 and port 52727
+11-26 12:58:25.262 11348 11348 D Poster  : Server bound to IP 193.166.28.132 and port 52727
+11-26 12:58:25.265 11348 11348 D ActivityThread: add activity client record, r= ActivityRecord{2c6908f token=android.os.BinderProxy@442f816 {symlab.cloudridar.arhud/symlab.ARHUD.MainActivity}} token= android.os.BinderProxy@442f816
+11-26 12:58:25.268 11348 11348 I Poster  :  onStart() called.
+11-26 12:58:25.269 11348 11348 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-26 12:58:25.270 11348 11348 I Poster  :  onResume() called.
+11-26 12:58:25.274 11348 11348 I PermissionManager: camera remind result:true
+11-26 12:58:25.274 11348 11348 I Camera  : open camera: 0, package name: symlab.cloudridar.arhud
+11-26 12:58:25.275 11348 11348 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 11348 ,uidOf3RdApk: 10147 ,permType: 0 ,permCfg: 1
+11-26 12:58:25.276 11348 11348 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = true
+11-26 12:58:25.284 11348 11348 D ActivityThread: isOptEnabled=false isWechatScanOpt=false
+11-26 12:58:25.286 11348 11348 I HwSecImmHelper: mSecurityInputMethodService is null
+11-26 12:58:25.296 11348 11348 D OpenGLRenderer:   HWUI Binary is  enabled
+11-26 12:58:25.319 11348 11406 D HiTouch_PressGestureDetector: onAttached, package=symlab.cloudridar.arhud, windowType=1, mHiTouchRestricted=false
+11-26 12:58:25.330 11348 11404 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-26 12:58:25.330 11348 11404 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-26 12:58:25.330 11348 11404 I iGraphics: [0020080c] pn: symlab.cloudridar.arhud, p: 11348
+11-26 12:58:25.330 11348 11404 I OpenGLRenderer: Initialized EGL, version 1.4, mEglDisplay 0x1
+11-26 12:58:25.331 11348 11404 D OpenGLRenderer: Swap behavior 2
+11-26 12:58:25.342 11348 11404 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+11-26 12:58:25.349 11348 11348 I Poster  :  surfaceCreated() called.
+11-26 12:58:25.350 11348 11348 I Poster  : initPreview() called
+11-26 12:58:25.355 11348 11348 I PermissionManager: camera remind result:true
+11-26 12:58:25.358 11348 11348 I Poster  :  surfaceChanged() called.
+11-26 12:58:25.373 11348 11348 W InputMethodManager: startInputReason = 1
+11-26 12:58:25.388 11348 11348 W InputMethodManager: startInputReason = 5
+11-26 12:58:26.143 11348 11359 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 12:58:26.155 11348 11357 W System  : A resource failed to call close. 
+11-26 12:58:26.156 11348 11357 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 15 lines
+11-26 12:58:26.156 11348 11357 W System  : A resource failed to call close. 
+11-26 12:58:26.380 11348 11384 D Evaluation: 1 res for frame 6 received at 1574765906380
+11-26 12:58:26.878 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:26.878 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:26.878 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:26.878 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:26.879 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:26.879 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:26.879 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:26.879 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:26.879 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:26.879 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:26.966 11348 11359 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 12:58:26.967 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:26.967 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:26.967 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:26.967 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:26.967 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:26.967 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:26.967 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:26.967 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:26.967 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:26.967 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:26.983 11348 11357 W System  : A resource failed to call close. 
+11-26 12:58:26.985 11348 11357 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 21 lines
+11-26 12:58:26.985 11348 11357 W System  : A resource failed to call close. 
+11-26 12:58:27.005 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:27.005 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:27.005 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:27.005 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:27.005 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:27.006 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:27.006 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:27.006 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:27.006 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:27.006 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:27.036 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:27.036 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:27.036 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:27.036 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:27.036 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:27.036 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:27.036 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:27.036 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:27.036 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:27.036 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:27.079 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:27.079 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:27.079 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:27.079 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:27.079 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:27.079 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:27.080 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:27.080 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:27.080 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:27.080 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:27.114 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:27.114 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:27.114 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:27.114 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:27.114 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:27.114 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:27.114 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:27.114 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:27.114 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:27.114 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:27.143 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:27.143 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:27.144 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:27.144 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:27.144 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:27.144 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:27.144 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:27.144 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:27.144 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:27.144 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:27.182 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:27.182 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:27.183 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:27.183 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:27.183 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:27.183 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:27.183 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:27.183 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:27.183 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:27.183 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:27.212 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:27.212 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:27.212 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:27.212 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:27.212 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:27.212 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:27.212 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:27.212 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:27.212 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:27.213 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:27.243 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:27.243 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:27.243 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:27.243 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:27.243 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:27.243 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:27.243 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:27.243 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:27.243 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:27.243 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:27.284 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:27.284 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:27.285 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:27.285 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:27.285 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:27.285 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:27.285 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:27.285 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:27.285 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:27.285 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:27.316 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:27.316 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:27.316 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:27.316 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:27.316 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:27.316 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:27.316 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:27.316 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:27.316 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:27.316 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:27.345 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:27.345 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:27.345 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:27.345 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:27.345 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:27.345 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:27.345 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:27.345 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:27.345 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:27.345 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:27.368 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:27.368 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:27.368 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:27.368 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:27.368 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:27.368 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:27.368 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:27.368 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:27.368 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:27.368 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:27.410 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:27.410 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:27.410 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:27.410 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:27.410 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:27.410 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:27.410 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:27.410 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:27.410 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:27.410 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:27.444 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:27.444 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:27.444 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:27.444 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:27.444 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:27.444 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:27.444 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:27.444 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:27.444 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:27.444 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:27.498 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:27.498 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:27.498 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:27.498 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:27.498 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:27.498 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:27.498 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:27.498 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:27.498 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:27.498 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:27.532 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:27.532 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:27.532 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:27.532 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:27.532 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:27.532 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:27.532 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:27.532 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:27.532 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:27.532 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:27.565 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:27.565 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:27.565 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:27.565 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:27.565 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:27.565 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:27.565 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:27.565 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:27.565 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:27.565 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:27.630 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:27.630 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:27.630 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:27.630 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:27.630 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:27.630 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:27.630 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:27.631 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:27.631 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:27.631 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:27.668 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:27.668 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:27.668 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:27.668 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:27.668 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:27.668 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:27.668 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:27.668 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:27.668 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:27.668 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:27.704 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:27.704 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:27.704 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:27.704 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:27.704 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:27.704 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:27.704 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:27.704 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:27.704 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:27.704 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:27.740 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:27.741 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:27.741 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:27.741 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:27.741 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:27.741 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:27.741 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:27.741 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:27.741 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:27.741 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:27.774 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:27.774 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:27.774 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:27.774 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:27.774 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:27.774 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:27.775 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:27.775 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:27.775 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:27.775 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:27.804 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:27.804 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:27.804 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:27.804 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:27.804 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:27.804 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:27.804 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:27.804 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:27.804 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:27.804 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:27.851 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:27.851 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:27.851 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:27.851 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:27.851 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:27.851 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:27.851 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:27.851 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:27.851 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:27.851 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:27.881 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:27.881 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:27.881 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:27.881 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:27.881 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:27.881 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:27.881 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:27.881 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:27.881 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:27.881 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:27.911 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:27.912 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:27.912 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:27.912 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:27.912 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:27.912 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:27.912 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:27.912 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:27.912 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:27.912 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:27.948 11348 11359 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 12:58:27.949 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:27.949 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:27.949 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:27.949 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:27.949 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:27.949 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:27.949 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:27.950 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:27.950 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:27.950 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:27.980 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:27.980 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:27.980 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:27.980 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:27.980 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:27.980 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:27.980 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:27.980 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:27.980 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:27.980 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:28.010 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:28.010 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:28.010 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:28.010 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:28.010 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:28.010 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:28.011 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:28.011 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:28.011 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:28.011 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:28.037 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:28.037 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:28.037 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:28.037 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:28.037 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:28.037 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:28.037 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:28.037 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:28.037 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:28.037 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:28.076 11348 11384 W System.err: java.net.SocketException: Message too long
+11-26 12:58:28.076 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 12:58:28.076 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 12:58:28.076 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 12:58:28.076 11348 11384 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 12:58:28.076 11348 11384 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 12:58:28.076 11348 11384 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 12:58:28.076 11348 11384 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 12:58:28.076 11348 11384 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 12:58:28.076 11348 11384 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 12:58:28.607 11348 11348 D stylus  : init stylus touchlistener.
+11-26 12:58:28.616 11348 11348 W Settings: Setting device_provisioned has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+11-26 12:58:28.617 11348 11348 V HiTouch_HiTouchSensor: User setup is finished.
+11-26 12:58:28.627 11348 11348 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:74.02417, limit is:60The moving distance of Y is:33.352966, limit is:60
+11-26 12:58:28.814 11348 11384 D Evaluation: 1 res for frame 72 received at 1574765908814
+11-26 12:58:28.996 11348 11359 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 12:58:29.008 11348 11357 W System  : A resource failed to call close. 
+11-26 12:58:29.009 11348 11357 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 25 lines
+11-26 12:58:29.009 11348 11357 W System  : A resource failed to call close. 
+11-26 12:58:29.410 11348 11348 I Poster  :  onPause() called.
+11-26 12:58:29.522 11348 11348 I Camera  : close camera: 0, package name: symlab.cloudridar.arhud
+11-26 12:58:29.522 11348 11348 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 11348 ,uidOf3RdApk: 10147 ,permType: 0 ,permCfg: 0
+11-26 12:58:29.524 11348 11348 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = false
+11-26 12:58:29.614 11348 11348 D ZrHung.AppEyeUiProbe: stop checker.
+11-26 12:58:29.665 11348 11348 I Poster  :  surfaceDestroyed() called.
+11-26 12:58:29.666 11348 11348 D ViewRootImpl[MainActivity]: surface should not be released
+11-26 12:58:29.666 11348 11348 I Poster  :  onStop() called.
+11-26 12:58:29.678 11348 11404 W libEGL  : EGLNativeWindowType 0xe2ff0008 disconnect failed
+11-26 12:58:30.201 11348 11348 I AwareBitmapCacher: init lrucache size: 2097152 pid=11348
+11-26 12:58:30.215 11348 11374 D ZrHung.AppEyeUiProbe: Current Activity:false
+11-26 12:58:30.216 11348 11374 D ZrHung.AppEyeUiProbe: not watching, wait.

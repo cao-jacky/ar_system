@@ -1,0 +1,1560 @@
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 6 sent by observer at time: 1574767186925.708984375000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 7 sent by observer at time: 1574767186958.639892578125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 8 sent by observer at time: 1574767186972.822998046875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 9 sent by observer at time: 1574767187053.031005859375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 10 sent by observer at time: 1574767187120.185058593750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 12 sent by observer at time: 1574767187136.647949218750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 12 sent by observer at time: 1574767187147.550048828125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 13 sent by observer at time: 1574767187287.217041015625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 14 sent by observer at time: 1574767187319.960937500000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 15 sent by observer at time: 1574767187347.364990234375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 16 sent by observer at time: 1574767187388.228027343750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 17 sent by observer at time: 1574767187409.248046875000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 18 sent by observer at time: 1574767187444.476074218750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 19 sent by observer at time: 1574767187498.656005859375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 20 sent by observer at time: 1574767187518.310058593750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 22 sent by observer at time: 1574767187672.011962890625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 23 sent by observer at time: 1574767187689.550048828125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 24 sent by observer at time: 1574767187723.378906250000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 25 sent by observer at time: 1574767187774.239013671875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 26 sent by observer at time: 1574767187789.492919921875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 26 sent by observer at time: 1574767187803.474121093750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 27 sent by observer at time: 1574767187874.493896484375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 28 sent by observer at time: 1574767187911.864990234375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 29 sent by observer at time: 1574767187978.754882812500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 31 sent by observer at time: 1574767188011.504882812500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 31 sent by observer at time: 1574767188036.508056640625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 33 sent by observer at time: 1574767188196.044921875000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 35 sent by observer at time: 1574767188213.465087890625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 35 sent by observer at time: 1574767188226.633056640625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 36 sent by observer at time: 1574767188244.242919921875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 37 sent by observer at time: 1574767188280.564941406250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 38 sent by observer at time: 1574767188320.178955078125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 40 sent by observer at time: 1574767188423.495117187500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 41 sent by observer at time: 1574767188439.907958984375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 42 sent by observer at time: 1574767188452.958007812500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 44 sent by observer at time: 1574767188656.054931640625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 45 sent by observer at time: 1574767188682.355957031250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 46 sent by observer at time: 1574767188702.814941406250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 47 sent by observer at time: 1574767188739.125976562500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 49 sent by observer at time: 1574767188873.163085937500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 50 sent by observer at time: 1574767188957.939941406250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 52 sent by observer at time: 1574767189097.229980468750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 56 sent by observer at time: 1574767189215.924072265625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 56 sent by observer at time: 1574767189232.149902343750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 59 sent by observer at time: 1574767189405.531005859375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 60 sent by observer at time: 1574767189422.990966796875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 62 sent by observer at time: 1574767189552.220947265625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 63 sent by observer at time: 1574767189568.216064453125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 63 sent by observer at time: 1574767189580.968017578125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 64 sent by observer at time: 1574767189591.543945312500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 65 sent by observer at time: 1574767189602.185058593750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 66 sent by observer at time: 1574767189640.208984375000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 67 sent by observer at time: 1574767189670.371093750000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 70 sent by observer at time: 1574767189769.885986328125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 70 sent by observer at time: 1574767189785.022949218750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 72 sent by observer at time: 1574767189825.929931640625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 72 sent by observer at time: 1574767189856.887939453125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 73 sent by observer at time: 1574767189895.611083984375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 74 sent by observer at time: 1574767189925.288085937500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 76 sent by observer at time: 1574767190003.138916015625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 76 sent by observer at time: 1574767190019.495117187500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 77 sent by observer at time: 1574767190031.612060546875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 78 sent by observer at time: 1574767190059.413085937500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 79 sent by observer at time: 1574767190137.847900390625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 80 sent by observer at time: 1574767190191.843017578125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 81 sent by observer at time: 1574767190257.928955078125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 83 sent by observer at time: 1574767190278.521972656250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 83 sent by observer at time: 1574767190302.378906250000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 84 sent by observer at time: 1574767190338.370117187500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 86 sent by observer at time: 1574767190394.501953125000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 88 sent by observer at time: 1574767190570.339111328125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 89 sent by observer at time: 1574767190585.683105468750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 91 sent by observer at time: 1574767190638.773925781250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 91 sent by observer at time: 1574767190666.867919921875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 92 sent by observer at time: 1574767190750.051025390625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 93 sent by observer at time: 1574767190774.021972656250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 94 sent by observer at time: 1574767190790.208984375000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 95 sent by observer at time: 1574767190816.594970703125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 96 sent by observer at time: 1574767190884.564941406250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 99 sent by observer at time: 1574767190968.586914062500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 101 sent by observer at time: 1574767191093.275878906250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 102 sent by observer at time: 1574767191159.275878906250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 104 sent by observer at time: 1574767191201.031005859375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 104 sent by observer at time: 1574767191220.809082031250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 106 sent by observer at time: 1574767191301.422119140625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 107 sent by observer at time: 1574767191330.970947265625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 108 sent by observer at time: 1574767191357.302001953125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 108 sent by observer at time: 1574767191371.489013671875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 109 sent by observer at time: 1574767191399.168945312500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 110 sent by observer at time: 1574767191422.354980468750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 111 sent by observer at time: 1574767191454.373046875000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 113 sent by observer at time: 1574767191564.935058593750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 113 sent by observer at time: 1574767191582.388916015625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 114 sent by observer at time: 1574767191607.675048828125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 115 sent by observer at time: 1574767191664.528076171875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 117 sent by observer at time: 1574767191735.170898437500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 118 sent by observer at time: 1574767191752.580078125000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 119 sent by observer at time: 1574767191778.826904296875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 120 sent by observer at time: 1574767191807.812988281250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 121 sent by observer at time: 1574767191831.750976562500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 121 sent by observer at time: 1574767191852.204101562500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 122 sent by observer at time: 1574767191883.268066406250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 123 sent by observer at time: 1574767191919.544921875000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 124 sent by observer at time: 1574767191955.240966796875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 126 sent by observer at time: 1574767192026.043945312500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 127 sent by observer at time: 1574767192089.634033203125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 128 sent by observer at time: 1574767192110.257080078125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 130 sent by observer at time: 1574767192129.941894531250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 130 sent by observer at time: 1574767192154.831054687500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 130 sent by observer at time: 1574767192186.485107421875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 131 sent by observer at time: 1574767192224.913085937500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 133 sent by observer at time: 1574767192377.373046875000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 134 sent by observer at time: 1574767192393.742919921875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 135 sent by observer at time: 1574767192408.875976562500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 136 sent by observer at time: 1574767192436.508056640625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 139 sent by observer at time: 1574767192663.414062500000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 140 sent by observer at time: 1574767192679.719970703125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 141 sent by observer at time: 1574767192691.736083984375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 142 sent by observer at time: 1574767192721.811035156250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 154 sent by observer at time: 1574767193232.572021484375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 154 sent by observer at time: 1574767193244.275878906250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 154 sent by observer at time: 1574767193262.345947265625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 155 sent by observer at time: 1574767193285.662109375000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 156 sent by observer at time: 1574767193320.702880859375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 157 sent by observer at time: 1574767193349.009033203125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 158 sent by observer at time: 1574767193388.995117187500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 160 sent by observer at time: 1574767193498.097900390625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 162 sent by observer at time: 1574767193537.149902343750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 163 sent by observer at time: 1574767193560.094970703125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 190 sent by observer at time: 1574767194730.395019531250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 191 sent by observer at time: 1574767194748.809082031250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 192 sent by observer at time: 1574767194760.875976562500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 246 sent by observer at time: 1574767196842.475097656250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 249 sent by observer at time: 1574767196952.498046875000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 250 sent by observer at time: 1574767196969.590087890625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 253 sent by observer at time: 1574767197136.428955078125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 277 sent by observer at time: 1574767198162.970947265625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 279 sent by observer at time: 1574767198179.310058593750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 348 sent by observer at time: 1574767201421.905029296875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 349 sent by observer at time: 1574767201438.980957031250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 349 sent by observer at time: 1574767201450.684082031250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 350 sent by observer at time: 1574767201461.312011718750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 351 sent by observer at time: 1574767201491.894042968750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 352 sent by observer at time: 1574767201531.833007812500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 354 sent by observer at time: 1574767201568.126953125000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 354 sent by observer at time: 1574767201607.818115234375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 355 sent by observer at time: 1574767201627.439941406250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 357 sent by observer at time: 1574767201672.326904296875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 357 sent by observer at time: 1574767201701.898925781250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 359 sent by observer at time: 1574767201792.431884765625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 359 sent by observer at time: 1574767201808.760986328125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 360 sent by observer at time: 1574767201926.405029296875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 362 sent by observer at time: 1574767202051.647949218750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 365 sent by observer at time: 1574767202069.154052734375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 365 sent by observer at time: 1574767202099.639892578125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 365 sent by observer at time: 1574767202126.025878906250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 366 sent by observer at time: 1574767202147.858886718750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 367 sent by observer at time: 1574767202200.955078125000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 367 sent by observer at time: 1574767202216.146972656250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 369 sent by observer at time: 1574767202273.639892578125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 370 sent by observer at time: 1574767202303.449951171875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 370 sent by observer at time: 1574767202328.483886718750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 371 sent by observer at time: 1574767202371.670898437500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 372 sent by observer at time: 1574767202400.020019531250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 374 sent by observer at time: 1574767202463.914062500000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 374 sent by observer at time: 1574767202480.188964843750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 376 sent by observer at time: 1574767202593.035888671875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 377 sent by observer at time: 1574767202609.352050781250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 378 sent by observer at time: 1574767202646.486083984375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 379 sent by observer at time: 1574767202661.717041015625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 380 sent by observer at time: 1574767202683.622070312500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 380 sent by observer at time: 1574767202706.534912109375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 381 sent by observer at time: 1574767202737.186035156250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 382 sent by observer at time: 1574767202768.456054687500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 383 sent by observer at time: 1574767202802.074951171875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 385 sent by observer at time: 1574767202901.696044921875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 386 sent by observer at time: 1574767202919.190917968750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 387 sent by observer at time: 1574767202944.377929687500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 387 sent by observer at time: 1574767202966.012939453125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 388 sent by observer at time: 1574767202988.875000000000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 390 sent by observer at time: 1574767203186.700927734375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 391 sent by observer at time: 1574767203203.103027343750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 392 sent by observer at time: 1574767203215.145996093750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 393 sent by observer at time: 1574767203232.470947265625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 394 sent by observer at time: 1574767203257.923095703125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 394 sent by observer at time: 1574767203278.691894531250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 395 sent by observer at time: 1574767203401.448974609375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 397 sent by observer at time: 1574767203443.155029296875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 398 sent by observer at time: 1574767203475.606933593750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 398 sent by observer at time: 1574767203497.245117187500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 399 sent by observer at time: 1574767203582.376953125000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 401 sent by observer at time: 1574767203613.139892578125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 402 sent by observer at time: 1574767203652.580078125000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 402 sent by observer at time: 1574767203666.708984375000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 403 sent by observer at time: 1574767203682.997070312500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 404 sent by observer at time: 1574767203839.824951171875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 406 sent by observer at time: 1574767203888.960937500000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 406 sent by observer at time: 1574767203902.028076171875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 408 sent by observer at time: 1574767203939.589111328125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 409 sent by observer at time: 1574767204000.205078125000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 409 sent by observer at time: 1574767204016.329101562500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 410 sent by observer at time: 1574767204073.138916015625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 411 sent by observer at time: 1574767204111.629882812500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 412 sent by observer at time: 1574767204184.309082031250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 413 sent by observer at time: 1574767204197.389892578125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 416 sent by observer at time: 1574767204348.649902343750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 416 sent by observer at time: 1574767204365.033935546875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 417 sent by observer at time: 1574767204376.970947265625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 418 sent by observer at time: 1574767204440.114990234375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 419 sent by observer at time: 1574767204471.872070312500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 419 sent by observer at time: 1574767204501.878906250000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 420 sent by observer at time: 1574767204536.343994140625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 421 sent by observer at time: 1574767204561.958007812500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 422 sent by observer at time: 1574767204595.787109375000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 423 sent by observer at time: 1574767204625.199951171875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 424 sent by observer at time: 1574767204690.288085937500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 425 sent by observer at time: 1574767204730.459960937500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 426 sent by observer at time: 1574767204817.633056640625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 428 sent by observer at time: 1574767204894.017089843750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 429 sent by observer at time: 1574767204910.174072265625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 429 sent by observer at time: 1574767204923.221923828125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 431 sent by observer at time: 1574767205021.270019531250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 431 sent by observer at time: 1574767205040.959960937500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 433 sent by observer at time: 1574767205072.251953125000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 434 sent by observer at time: 1574767205109.143066406250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 435 sent by observer at time: 1574767205133.319091796875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 435 sent by observer at time: 1574767205177.708984375000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 436 sent by observer at time: 1574767205236.347900390625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 438 sent by observer at time: 1574767205321.563964843750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 439 sent by observer at time: 1574767205353.294921875000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 441 sent by observer at time: 1574767205391.797119140625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 441 sent by observer at time: 1574767205420.215087890625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 442 sent by observer at time: 1574767205445.145996093750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 442 sent by observer at time: 1574767205466.918945312500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 444 sent by observer at time: 1574767205622.424072265625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 445 sent by observer at time: 1574767205638.870117187500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 446 sent by observer at time: 1574767205655.094970703125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 446 sent by observer at time: 1574767205675.013916015625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 447 sent by observer at time: 1574767205706.205078125000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 448 sent by observer at time: 1574767205743.096923828125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 449 sent by observer at time: 1574767205792.341064453125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 450 sent by observer at time: 1574767205844.322998046875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 451 sent by observer at time: 1574767205864.020019531250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 452 sent by observer at time: 1574767205933.439941406250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 453 sent by observer at time: 1574767205980.964111328125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 454 sent by observer at time: 1574767206001.645019531250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 455 sent by observer at time: 1574767206053.702880859375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 456 sent by observer at time: 1574767206072.114990234375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 457 sent by observer at time: 1574767206116.144042968750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 458 sent by observer at time: 1574767206145.418945312500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 459 sent by observer at time: 1574767206169.373046875000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 460 sent by observer at time: 1574767206218.041992187500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 461 sent by observer at time: 1574767206250.845947265625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 462 sent by observer at time: 1574767206275.803955078125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 463 sent by observer at time: 1574767206326.552001953125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 464 sent by observer at time: 1574767206367.146972656250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 465 sent by observer at time: 1574767206383.571044921875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 466 sent by observer at time: 1574767206407.590087890625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 467 sent by observer at time: 1574767206438.173095703125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 469 sent by observer at time: 1574767206524.092041015625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 481 sent by observer at time: 1574767206951.898925781250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 482 sent by observer at time: 1574767206969.373046875000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 484 sent by observer at time: 1574767207000.625976562500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 486 sent by observer at time: 1574767207071.246093750000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 486 sent by observer at time: 1574767207090.824951171875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 487 sent by observer at time: 1574767207136.689941406250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 488 sent by observer at time: 1574767207156.243896484375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 490 sent by observer at time: 1574767207257.377929687500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 490 sent by observer at time: 1574767207273.822998046875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 491 sent by observer at time: 1574767207356.391113281250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 492 sent by observer at time: 1574767207371.405029296875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 493 sent by observer at time: 1574767207435.454101562500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 495 sent by observer at time: 1574767207578.454101562500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 497 sent by observer at time: 1574767207624.841064453125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 498 sent by observer at time: 1574767207663.376953125000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 499 sent by observer at time: 1574767207692.868896484375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 500 sent by observer at time: 1574767207717.996093750000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 500 sent by observer at time: 1574767207742.897949218750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 500 sent by observer at time: 1574767207758.082031250000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 501 sent by observer at time: 1574767207796.076904296875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 502 sent by observer at time: 1574767207829.758056640625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 504 sent by observer at time: 1574767207891.823974609375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 505 sent by observer at time: 1574767207922.489990234375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 505 sent by observer at time: 1574767207946.523925781250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 507 sent by observer at time: 1574767208049.512939453125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 508 sent by observer at time: 1574767208064.707031250000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 508 sent by observer at time: 1574767208086.485107421875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 509 sent by observer at time: 1574767208107.266113281250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 510 sent by observer at time: 1574767208134.739990234375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 512 sent by observer at time: 1574767208261.617919921875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 513 sent by observer at time: 1574767208278.741943359375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 514 sent by observer at time: 1574767208298.030029296875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 514 sent by observer at time: 1574767208322.927001953125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 515 sent by observer at time: 1574767208350.212890625000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 517 sent by observer at time: 1574767208512.829101562500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 517 sent by observer at time: 1574767208529.206054687500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 518 sent by observer at time: 1574767208541.240966796875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 520 sent by observer at time: 1574767208599.766113281250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 520 sent by observer at time: 1574767208629.436035156250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 522 sent by observer at time: 1574767208741.017089843750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 523 sent by observer at time: 1574767208757.267089843750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 524 sent by observer at time: 1574767208796.021972656250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 524 sent by observer at time: 1574767208815.587890625000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 526 sent by observer at time: 1574767208968.895996093750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 526 sent by observer at time: 1574767208985.038085937500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 528 sent by observer at time: 1574767209020.260009765625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 529 sent by observer at time: 1574767209050.992919921875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 529 sent by observer at time: 1574767209080.753906250000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 530 sent by observer at time: 1574767209103.769042968750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 531 sent by observer at time: 1574767209135.501953125000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 532 sent by observer at time: 1574767209190.024902343750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 533 sent by observer at time: 1574767209220.451904296875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 534 sent by observer at time: 1574767209258.342041015625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 535 sent by observer at time: 1574767209285.495117187500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 536 sent by observer at time: 1574767209307.406982421875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 537 sent by observer at time: 1574767209418.925048828125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 539 sent by observer at time: 1574767209579.222900390625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 543 sent by observer at time: 1574767209732.667968750000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 562 sent by observer at time: 1574767210662.427001953125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 563 sent by observer at time: 1574767210678.831054687500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 564 sent by observer at time: 1574767210690.803955078125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 564 sent by observer at time: 1574767210701.616943359375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 565 sent by observer at time: 1574767210720.096923828125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 566 sent by observer at time: 1574767210868.153076171875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 568 sent by observer at time: 1574767210892.240966796875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 569 sent by observer at time: 1574767210926.788085937500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 569 sent by observer at time: 1574767210952.190917968750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 570 sent by observer at time: 1574767211027.028076171875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 571 sent by observer at time: 1574767211051.008056640625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 572 sent by observer at time: 1574767211124.302001953125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 574 sent by observer at time: 1574767211177.172119140625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 575 sent by observer at time: 1574767211211.733886718750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 576 sent by observer at time: 1574767211242.227050781250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 577 sent by observer at time: 1574767211276.055908203125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 578 sent by observer at time: 1574767211300.201904296875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 578 sent by observer at time: 1574767211321.948974609375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 580 sent by observer at time: 1574767211447.476074218750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 581 sent by observer at time: 1574767211461.472900390625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 582 sent by observer at time: 1574767211491.736083984375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 583 sent by observer at time: 1574767211516.476074218750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 583 sent by observer at time: 1574767211543.563964843750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 584 sent by observer at time: 1574767211580.315917968750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 585 sent by observer at time: 1574767211616.427001953125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 586 sent by observer at time: 1574767211651.104003906250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 587 sent by observer at time: 1574767211694.419921875000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 588 sent by observer at time: 1574767211720.615966796875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 589 sent by observer at time: 1574767211853.458984375000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 590 sent by observer at time: 1574767211906.111083984375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 591 sent by observer at time: 1574767211923.539062500000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 593 sent by observer at time: 1574767211970.618896484375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 594 sent by observer at time: 1574767212007.448974609375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 595 sent by observer at time: 1574767212048.457031250000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 596 sent by observer at time: 1574767212083.250976562500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 597 sent by observer at time: 1574767212101.547119140625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 597 sent by observer at time: 1574767212119.003906250000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 599 sent by observer at time: 1574767212269.101074218750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 600 sent by observer at time: 1574767212285.479003906250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 600 sent by observer at time: 1574767212297.275878906250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 602 sent by observer at time: 1574767212311.466064453125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 602 sent by observer at time: 1574767212353.514892578125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 603 sent by observer at time: 1574767212448.656005859375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 604 sent by observer at time: 1574767212488.155029296875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 605 sent by observer at time: 1574767212517.643066406250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 606 sent by observer at time: 1574767212576.899902343750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 608 sent by observer at time: 1574767212678.777099609375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 609 sent by observer at time: 1574767212696.134033203125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 609 sent by observer at time: 1574767212718.993896484375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 610 sent by observer at time: 1574767212775.595947265625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 613 sent by observer at time: 1574767212961.275878906250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 615 sent by observer at time: 1574767212994.168945312500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 615 sent by observer at time: 1574767213032.657958984375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 615 sent by observer at time: 1574767213064.094970703125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 615 sent by observer at time: 1574767213098.020019531250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 617 sent by observer at time: 1574767213244.489990234375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 618 sent by observer at time: 1574767213260.928955078125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 619 sent by observer at time: 1574767213271.806884765625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 620 sent by observer at time: 1574767213287.008056640625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 621 sent by observer at time: 1574767213312.031982421875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 621 sent by observer at time: 1574767213335.142089843750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 622 sent by observer at time: 1574767213390.406005859375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 623 sent by observer at time: 1574767213415.495117187500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 625 sent by observer at time: 1574767213463.851074218750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 625 sent by observer at time: 1574767213494.260986328125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 626 sent by observer at time: 1574767213513.468017578125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 628 sent by observer at time: 1574767213606.230957031250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 629 sent by observer at time: 1574767213642.350097656250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 630 sent by observer at time: 1574767213671.821044921875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 631 sent by observer at time: 1574767213698.331054687500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 631 sent by observer at time: 1574767213740.233886718750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 632 sent by observer at time: 1574767213777.530029296875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 633 sent by observer at time: 1574767213807.665039062500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 634 sent by observer at time: 1574767213836.070068359375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 635 sent by observer at time: 1574767213887.592041015625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 636 sent by observer at time: 1574767213927.041015625000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 637 sent by observer at time: 1574767213945.626953125000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 639 sent by observer at time: 1574767214008.209960937500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 639 sent by observer at time: 1574767214024.612060546875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 640 sent by observer at time: 1574767214037.614013671875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 641 sent by observer at time: 1574767214201.833984375000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 643 sent by observer at time: 1574767214226.978027343750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 644 sent by observer at time: 1574767214254.482910156250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 645 sent by observer at time: 1574767214278.739013671875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 645 sent by observer at time: 1574767214307.587890625000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 646 sent by observer at time: 1574767214338.237060546875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 647 sent by observer at time: 1574767214373.404052734375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 648 sent by observer at time: 1574767214403.298095703125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 649 sent by observer at time: 1574767214434.705078125000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 650 sent by observer at time: 1574767214472.908935546875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 652 sent by observer at time: 1574767214535.114990234375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 652 sent by observer at time: 1574767214555.742919921875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 653 sent by observer at time: 1574767214573.163085937500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 654 sent by observer at time: 1574767214619.135986328125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 655 sent by observer at time: 1574767214645.418945312500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 656 sent by observer at time: 1574767214757.479980468750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 657 sent by observer at time: 1574767214792.197998046875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 658 sent by observer at time: 1574767214885.090087890625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 659 sent by observer at time: 1574767214923.209960937500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 661 sent by observer at time: 1574767214947.156982421875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 661 sent by observer at time: 1574767214972.721923828125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 663 sent by observer at time: 1574767215091.485107421875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 663 sent by observer at time: 1574767215108.566894531250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 665 sent by observer at time: 1574767215171.391113281250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 665 sent by observer at time: 1574767215198.305908203125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 667 sent by observer at time: 1574767215306.308105468750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 667 sent by observer at time: 1574767215324.949951171875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 668 sent by observer at time: 1574767215409.739013671875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 669 sent by observer at time: 1574767215450.232910156250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 670 sent by observer at time: 1574767215555.616943359375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 672 sent by observer at time: 1574767215704.209960937500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 673 sent by observer at time: 1574767215720.605957031250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 677 sent by observer at time: 1574767216027.851074218750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 681 sent by observer at time: 1574767216133.366943359375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 682 sent by observer at time: 1574767216146.427001953125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 684 sent by observer at time: 1574767216369.399902343750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 685 sent by observer at time: 1574767216385.481933593750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 686 sent by observer at time: 1574767216397.291015625000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 709 sent by observer at time: 1574767217459.826904296875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 710 sent by observer at time: 1574767217476.228027343750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 711 sent by observer at time: 1574767217488.150878906250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 712 sent by observer at time: 1574767217498.903076171875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 712 sent by observer at time: 1574767217509.803955078125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 714 sent by observer at time: 1574767217593.120117187500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 714 sent by observer at time: 1574767217618.149902343750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 715 sent by observer at time: 1574767217656.733886718750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 716 sent by observer at time: 1574767217690.418945312500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 717 sent by observer at time: 1574767217718.552978515625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 718 sent by observer at time: 1574767217739.221923828125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 719 sent by observer at time: 1574767217769.906982421875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 720 sent by observer at time: 1574767217803.451904296875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 722 sent by observer at time: 1574767217970.876953125000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 723 sent by observer at time: 1574767217987.982910156250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 724 sent by observer at time: 1574767218000.777099609375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 724 sent by observer at time: 1574767218011.385009765625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 725 sent by observer at time: 1574767218049.382080078125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 726 sent by observer at time: 1574767218065.634033203125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 727 sent by observer at time: 1574767218118.399902343750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 728 sent by observer at time: 1574767218134.721923828125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 729 sent by observer at time: 1574767218222.239990234375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 731 sent by observer at time: 1574767218321.897949218750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 733 sent by observer at time: 1574767218355.512939453125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 733 sent by observer at time: 1574767218389.238037109375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 734 sent by observer at time: 1574767218420.919921875000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 734 sent by observer at time: 1574767218443.568115234375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 735 sent by observer at time: 1574767218472.791015625000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 736 sent by observer at time: 1574767218529.688964843750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 737 sent by observer at time: 1574767218544.893066406250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 738 sent by observer at time: 1574767218567.711914062500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 739 sent by observer at time: 1574767218628.965087890625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 740 sent by observer at time: 1574767218771.227050781250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 742 sent by observer at time: 1574767218863.060058593750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 743 sent by observer at time: 1574767218913.195068359375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 744 sent by observer at time: 1574767218943.506103515625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 744 sent by observer at time: 1574767218960.813964843750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 745 sent by observer at time: 1574767219016.724121093750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 746 sent by observer at time: 1574767219030.746093750000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 747 sent by observer at time: 1574767219078.905029296875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 749 sent by observer at time: 1574767219161.696044921875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 750 sent by observer at time: 1574767219180.215087890625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 750 sent by observer at time: 1574767219203.992919921875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 751 sent by observer at time: 1574767219240.327880859375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 752 sent by observer at time: 1574767219274.125976562500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 753 sent by observer at time: 1574767219305.996093750000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 754 sent by observer at time: 1574767219351.076904296875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 755 sent by observer at time: 1574767219375.062011718750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 757 sent by observer at time: 1574767219486.836914062500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 757 sent by observer at time: 1574767219503.238037109375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 758 sent by observer at time: 1574767219527.053955078125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 759 sent by observer at time: 1574767219558.729980468750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 760 sent by observer at time: 1574767219602.638916015625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 761 sent by observer at time: 1574767219641.979980468750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 762 sent by observer at time: 1574767219683.558105468750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 764 sent by observer at time: 1574767219721.660888671875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 764 sent by observer at time: 1574767219745.590087890625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 765 sent by observer at time: 1574767219769.340087890625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 767 sent by observer at time: 1574767219828.709960937500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 767 sent by observer at time: 1574767219856.300048828125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 769 sent by observer at time: 1574767219949.080078125000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 770 sent by observer at time: 1574767219965.477050781250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 770 sent by observer at time: 1574767219982.072998046875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 772 sent by observer at time: 1574767220065.193115234375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 772 sent by observer at time: 1574767220092.522949218750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 774 sent by observer at time: 1574767220195.625976562500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 775 sent by observer at time: 1574767220218.517089843750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 776 sent by observer at time: 1574767220253.648925781250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 776 sent by observer at time: 1574767220281.979003906250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 777 sent by observer at time: 1574767220456.659912109375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 778 sent by observer at time: 1574767220492.875976562500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 780 sent by observer at time: 1574767220523.593017578125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 781 sent by observer at time: 1574767220549.577880859375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 781 sent by observer at time: 1574767220574.645996093750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 782 sent by observer at time: 1574767220602.980957031250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 783 sent by observer at time: 1574767220633.641113281250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 784 sent by observer at time: 1574767220676.270996093750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 785 sent by observer at time: 1574767220825.104003906250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 787 sent by observer at time: 1574767220854.392089843750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 788 sent by observer at time: 1574767220882.624023437500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 788 sent by observer at time: 1574767220907.789062500000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 789 sent by observer at time: 1574767220924.968994140625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 791 sent by observer at time: 1574767221070.575927734375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 792 sent by observer at time: 1574767221087.987060546875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 793 sent by observer at time: 1574767221100.968017578125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 793 sent by observer at time: 1574767221113.947998046875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 794 sent by observer at time: 1574767221143.058105468750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 795 sent by observer at time: 1574767221178.460937500000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 796 sent by observer at time: 1574767221327.021972656250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 797 sent by observer at time: 1574767221344.512939453125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 798 sent by observer at time: 1574767221373.680908203125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 799 sent by observer at time: 1574767221402.367919921875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 800 sent by observer at time: 1574767221550.395019531250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 801 sent by observer at time: 1574767221567.851074218750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 803 sent by observer at time: 1574767221651.607910156250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 804 sent by observer at time: 1574767221672.937011718750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 805 sent by observer at time: 1574767221703.533935546875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 806 sent by observer at time: 1574767221734.797119140625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 807 sent by observer at time: 1574767221752.187011718750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 807 sent by observer at time: 1574767221771.687988281250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 808 sent by observer at time: 1574767221848.404052734375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 809 sent by observer at time: 1574767221884.916992187500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 811 sent by observer at time: 1574767221936.261962890625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 812 sent by observer at time: 1574767221975.424072265625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 813 sent by observer at time: 1574767222009.135009765625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 814 sent by observer at time: 1574767222025.529052734375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 815 sent by observer at time: 1574767222048.691894531250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 815 sent by observer at time: 1574767222069.568115234375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 817 sent by observer at time: 1574767222201.297119140625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 818 sent by observer at time: 1574767222217.606933593750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 819 sent by observer at time: 1574767222229.511962890625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 820 sent by observer at time: 1574767222240.281005859375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 820 sent by observer at time: 1574767222263.149902343750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 821 sent by observer at time: 1574767222393.701904296875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 823 sent by observer at time: 1574767222425.289062500000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 823 sent by observer at time: 1574767222452.208007812500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 824 sent by observer at time: 1574767222475.187011718750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 826 sent by observer at time: 1574767222598.261962890625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 826 sent by observer at time: 1574767222614.270996093750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 827 sent by observer at time: 1574767222627.153076171875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 828 sent by observer at time: 1574767222756.601074218750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 830 sent by observer at time: 1574767222788.781005859375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 831 sent by observer at time: 1574767222833.707031250000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 831 sent by observer at time: 1574767222852.229980468750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 832 sent by observer at time: 1574767222884.229980468750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 833 sent by observer at time: 1574767222914.135009765625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 835 sent by observer at time: 1574767223042.851074218750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 836 sent by observer at time: 1574767223060.086914062500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 836 sent by observer at time: 1574767223072.178955078125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 838 sent by observer at time: 1574767223111.387939453125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 838 sent by observer at time: 1574767223140.831054687500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 839 sent by observer at time: 1574767223175.271972656250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 841 sent by observer at time: 1574767223262.895019531250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 841 sent by observer at time: 1574767223279.219970703125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 842 sent by observer at time: 1574767223303.491943359375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 843 sent by observer at time: 1574767223334.585937500000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 844 sent by observer at time: 1574767223358.693115234375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 846 sent by observer at time: 1574767223497.010986328125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 847 sent by observer at time: 1574767223512.163085937500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 848 sent by observer at time: 1574767223523.970947265625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 849 sent by observer at time: 1574767223543.528076171875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 849 sent by observer at time: 1574767223568.344970703125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 851 sent by observer at time: 1574767223707.315917968750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 852 sent by observer at time: 1574767223723.565917968750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 853 sent by observer at time: 1574767223736.333984375000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 853 sent by observer at time: 1574767223754.884033203125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 854 sent by observer at time: 1574767223779.545898437500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 855 sent by observer at time: 1574767223802.285888671875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 856 sent by observer at time: 1574767223956.375000000000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 858 sent by observer at time: 1574767223999.782958984375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 859 sent by observer at time: 1574767224064.028076171875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 861 sent by observer at time: 1574767224101.318115234375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 862 sent by observer at time: 1574767224127.519042968750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 862 sent by observer at time: 1574767224152.552001953125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 864 sent by observer at time: 1574767224179.858886718750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 864 sent by observer at time: 1574767224208.562011718750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 865 sent by observer at time: 1574767224249.250000000000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 866 sent by observer at time: 1574767224286.964111328125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 867 sent by observer at time: 1574767224329.677001953125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 868 sent by observer at time: 1574767224363.420898437500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 870 sent by observer at time: 1574767224386.335937500000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 870 sent by observer at time: 1574767224407.258056640625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 873 sent by observer at time: 1574767224627.511962890625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 873 sent by observer at time: 1574767224643.920898437500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 875 sent by observer at time: 1574767224678.672119140625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 875 sent by observer at time: 1574767224704.045898437500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 876 sent by observer at time: 1574767224727.048095703125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 878 sent by observer at time: 1574767224805.262939453125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 879 sent by observer at time: 1574767224820.445068359375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 880 sent by observer at time: 1574767224839.904052734375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 880 sent by observer at time: 1574767224864.270996093750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 881 sent by observer at time: 1574767224905.281982421875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 883 sent by observer at time: 1574767225022.072021484375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 884 sent by observer at time: 1574767225038.270996093750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 884 sent by observer at time: 1574767225051.086914062500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 885 sent by observer at time: 1574767225088.549072265625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 886 sent by observer at time: 1574767225125.958984375000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 887 sent by observer at time: 1574767225167.268066406250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 888 sent by observer at time: 1574767225212.448974609375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 889 sent by observer at time: 1574767225260.623046875000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 890 sent by observer at time: 1574767225304.582031250000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 891 sent by observer at time: 1574767225333.798095703125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 892 sent by observer at time: 1574767225365.270019531250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 893 sent by observer at time: 1574767225421.002929687500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 895 sent by observer at time: 1574767225454.552978515625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 895 sent by observer at time: 1574767225477.565917968750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 896 sent by observer at time: 1574767225500.718994140625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 897 sent by observer at time: 1574767225533.741943359375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 898 sent by observer at time: 1574767225596.503906250000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 900 sent by observer at time: 1574767225652.043945312500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 901 sent by observer at time: 1574767225710.757080078125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 901 sent by observer at time: 1574767225726.020996093750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 902 sent by observer at time: 1574767225740.137939453125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 904 sent by observer at time: 1574767225813.258056640625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 906 sent by observer at time: 1574767225845.458984375000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 906 sent by observer at time: 1574767225904.114013671875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 907 sent by observer at time: 1574767225922.278076171875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 908 sent by observer at time: 1574767225935.052001953125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 908 sent by observer at time: 1574767225945.717041015625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 909 sent by observer at time: 1574767226047.242919921875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 911 sent by observer at time: 1574767226063.555908203125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 911 sent by observer at time: 1574767226080.875976562500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 912 sent by observer at time: 1574767226112.707031250000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 913 sent by observer at time: 1574767226142.452880859375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 914 sent by observer at time: 1574767226175.235107421875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 915 sent by observer at time: 1574767226208.579101562500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 916 sent by observer at time: 1574767226253.596923828125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 917 sent by observer at time: 1574767226274.329101562500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 918 sent by observer at time: 1574767226409.937011718750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 920 sent by observer at time: 1574767226449.504882812500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 921 sent by observer at time: 1574767226476.887939453125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 922 sent by observer at time: 1574767226505.495117187500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 923 sent by observer at time: 1574767226529.222900390625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 924 sent by observer at time: 1574767226561.565917968750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 924 sent by observer at time: 1574767226573.485107421875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 925 sent by observer at time: 1574767226593.135986328125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 926 sent by observer at time: 1574767226629.148925781250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 927 sent by observer at time: 1574767226699.135986328125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 928 sent by observer at time: 1574767226714.326904296875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 929 sent by observer at time: 1574767226729.613037109375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 930 sent by observer at time: 1574767226774.624023437500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 931 sent by observer at time: 1574767226806.035888671875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 934 sent by observer at time: 1574767226954.959960937500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 934 sent by observer at time: 1574767226970.287109375000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 935 sent by observer at time: 1574767227004.266113281250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 935 sent by observer at time: 1574767227018.468994140625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 936 sent by observer at time: 1574767227205.133056640625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 938 sent by observer at time: 1574767227220.481933593750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 938 sent by observer at time: 1574767227233.562011718750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 939 sent by observer at time: 1574767227273.906982421875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 940 sent by observer at time: 1574767227313.535888671875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 942 sent by observer at time: 1574767227389.740966796875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 943 sent by observer at time: 1574767227429.208984375000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 943 sent by observer at time: 1574767227444.366943359375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 944 sent by observer at time: 1574767227464.853027343750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 945 sent by observer at time: 1574767227559.301025390625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 946 sent by observer at time: 1574767227574.590087890625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 947 sent by observer at time: 1574767227603.126953125000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 949 sent by observer at time: 1574767227646.581054687500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 949 sent by observer at time: 1574767227675.102050781250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 950 sent by observer at time: 1574767227721.366943359375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 952 sent by observer at time: 1574767227781.564941406250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 953 sent by observer at time: 1574767227810.871093750000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 954 sent by observer at time: 1574767227840.022949218750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 954 sent by observer at time: 1574767227861.606933593750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 955 sent by observer at time: 1574767227887.812988281250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 956 sent by observer at time: 1574767228059.782958984375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 958 sent by observer at time: 1574767228081.753906250000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 959 sent by observer at time: 1574767228127.528076171875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 959 sent by observer at time: 1574767228142.730957031250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 960 sent by observer at time: 1574767228200.889892578125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 963 sent by observer at time: 1574767228358.333984375000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 964 sent by observer at time: 1574767228374.741943359375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 965 sent by observer at time: 1574767228387.689941406250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 965 sent by observer at time: 1574767228414.261962890625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 965 sent by observer at time: 1574767228439.398925781250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 966 sent by observer at time: 1574767228461.634033203125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 967 sent by observer at time: 1574767228488.870117187500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 968 sent by observer at time: 1574767228540.513916015625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 969 sent by observer at time: 1574767228646.041015625000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 971 sent by observer at time: 1574767228686.805908203125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 972 sent by observer at time: 1574767228731.829101562500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 973 sent by observer at time: 1574767228769.024902343750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 974 sent by observer at time: 1574767228784.104980468750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 978 sent by observer at time: 1574767229006.068115234375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 980 sent by observer at time: 1574767229024.569091796875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 980 sent by observer at time: 1574767229037.649902343750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 982 sent by observer at time: 1574767229182.650878906250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 984 sent by observer at time: 1574767229199.064941406250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 985 sent by observer at time: 1574767229226.318115234375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 986 sent by observer at time: 1574767229257.602050781250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 987 sent by observer at time: 1574767229288.219970703125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 988 sent by observer at time: 1574767229315.945068359375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 989 sent by observer at time: 1574767229345.231933593750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 989 sent by observer at time: 1574767229368.103027343750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 990 sent by observer at time: 1574767229392.137939453125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 990 sent by observer at time: 1574767229411.727050781250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 991 sent by observer at time: 1574767229434.854980468750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 992 sent by observer at time: 1574767229458.014892578125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 993 sent by observer at time: 1574767229488.552978515625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 994 sent by observer at time: 1574767229556.242919921875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 995 sent by observer at time: 1574767229571.437011718750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 996 sent by observer at time: 1574767229628.347900390625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 997 sent by observer at time: 1574767229663.549072265625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 999 sent by observer at time: 1574767229773.308105468750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1000 sent by observer at time: 1574767229790.740966796875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1000 sent by observer at time: 1574767229802.663085937500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1001 sent by observer at time: 1574767229825.322998046875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1002 sent by observer at time: 1574767229902.241943359375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1003 sent by observer at time: 1574767229937.678955078125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1005 sent by observer at time: 1574767230031.482910156250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1006 sent by observer at time: 1574767230046.770996093750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1007 sent by observer at time: 1574767230068.548095703125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1007 sent by observer at time: 1574767230093.023925781250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1008 sent by observer at time: 1574767230119.760009765625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1009 sent by observer at time: 1574767230157.677001953125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1010 sent by observer at time: 1574767230199.520996093750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1012 sent by observer at time: 1574767230240.321044921875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1013 sent by observer at time: 1574767230272.166015625000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1013 sent by observer at time: 1574767230301.795898437500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1014 sent by observer at time: 1574767230330.208007812500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1015 sent by observer at time: 1574767230358.665039062500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1017 sent by observer at time: 1574767230459.144042968750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1017 sent by observer at time: 1574767230475.560058593750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1018 sent by observer at time: 1574767230499.458007812500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1019 sent by observer at time: 1574767230530.552978515625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1020 sent by observer at time: 1574767230553.949951171875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1021 sent by observer at time: 1574767230582.489990234375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1022 sent by observer at time: 1574767230611.503906250000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1023 sent by observer at time: 1574767230645.010986328125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1024 sent by observer at time: 1574767230761.274902343750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1026 sent by observer at time: 1574767230779.771972656250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1026 sent by observer at time: 1574767230791.695068359375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1027 sent by observer at time: 1574767230809.241943359375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1028 sent by observer at time: 1574767230841.406982421875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1030 sent by observer at time: 1574767231018.301025390625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1032 sent by observer at time: 1574767231042.268066406250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1033 sent by observer at time: 1574767231065.335937500000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1034 sent by observer at time: 1574767231093.660888671875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1034 sent by observer at time: 1574767231115.475097656250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1035 sent by observer at time: 1574767231135.169921875000000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1035 sent by observer at time: 1574767231161.261962890625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1036 sent by observer at time: 1574767231186.465087890625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1037 sent by observer at time: 1574767231220.351074218750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1038 sent by observer at time: 1574767231247.288085937500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1040 sent by observer at time: 1574767231346.565917968750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1040 sent by observer at time: 1574767231363.920898437500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1042 sent by observer at time: 1574767231501.372070312500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1043 sent by observer at time: 1574767231518.697021484375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1044 sent by observer at time: 1574767231533.870117187500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1045 sent by observer at time: 1574767231560.780029296875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1045 sent by observer at time: 1574767231585.299072265625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1046 sent by observer at time: 1574767231610.686035156250000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1047 sent by observer at time: 1574767231691.459960937500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1049 sent by observer at time: 1574767231707.827880859375000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1050 sent by observer at time: 1574767231731.791992187500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1050 sent by observer at time: 1574767231752.388916015625000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1051 sent by observer at time: 1574767231778.563964843750000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1052 sent by observer at time: 1574767231840.584960937500000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1053 sent by observer at time: 1574767231947.905029296875000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1055 sent by observer at time: 1574767231970.718017578125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1055 sent by observer at time: 1574767231992.468017578125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1056 sent by observer at time: 1574767232019.966064453125000 whose size is: 528
+sending to the 1 device, whose ip is 10.42.0.112
+send_result of frameID of: 1057 sent by observer at time: 1574767232075.167968750000000 whose size is: 528

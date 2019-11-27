@@ -27,7 +27,7 @@ extern "C" {
 #define BOUNDARY 3
 #define PORT 52727
 #define PACKET_SIZE 80000
-#define RES_SIZE 528
+#define RES_SIZE 512
 #define TRAIN
 
 using namespace std;
@@ -247,24 +247,21 @@ void *ThreadReceiverFunction(void *socket) {
             continue;
 
         }
-        memcpy(Tmp, &(buffer[8]), 8);
-        curFrame.timeCaptured = *(double*)Tmp;
-        //curFrame.longtitude = *(double*)Tmp;
-        memcpy(Tmp, &(buffer[16]), 8);
-        curFrame.timeSend = *(double*)Tmp;
-        memcpy(tmp, &(buffer[24]), 4);
+        //memcpy(Tmp, &(buffer[8]), 8);
+        //curFrame.timeCaptured = *(double*)Tmp;
+        //memcpy(Tmp, &(buffer[16]), 8);
+        //curFrame.timeSend = *(double*)Tmp;
+        memcpy(tmp, &(buffer[8]), 4);
         curFrame.bufferSize = *(int*)tmp;
         if (curFrame.bufferSize==0) { continue;}
-        imageDelay = time_receivepic - curFrame.timeCaptured;
+        //imageDelay = time_receivepic - curFrame.timeCaptured;
          
-        output_receive << "receive frameID : " << curFrame.frmID << ", at time : " <<  to_string(time_receivepic) << 
-            ", sent out from device at time: " << to_string(curFrame.timeCaptured) <<  ", has size: "<< curFrame.bufferSize 
-            << ", transmission delay: '" << time_receivepic - curFrame.timeCaptured << "' milliseconds" << endl;
-        output_delay << imageDelay << endl;
-        cout<<"frame "<<curFrame.frmID<<" received, filesize: "<<curFrame.bufferSize << endl;
+        //output_receive << "receive frameID : " << curFrame.frmID << ", at time : " <<  time_receivepic << ", sent out from vehicle at time: " << curFrame.timeCaptured <<  ", has size: "<< curFrame.bufferSize << ", transmission delay: '" << time_receivepic - curFrame.timeCaptured << "' milliseconds" << endl;
+        //output_delay << imageDelay << endl;
+        //cout<<"frame "<<curFrame.frmID<<" received, filesize: "<<curFrame.bufferSize << endl;
         curFrame.buffer = new char[curFrame.bufferSize];
         memset(curFrame.buffer, 0, curFrame.bufferSize);
-        memcpy(curFrame.buffer, &(buffer[28]), curFrame.bufferSize);
+        memcpy(curFrame.buffer, &(buffer[12]), curFrame.bufferSize);
 
         frames.push(curFrame);
         //delete curFrame.buffer;
@@ -295,28 +292,28 @@ void *ThreadSenderFunction(void *socket) {
         memset(buffer, 0, sizeof(buffer));
         memcpy(buffer, curRes.resID.b, 4);
         memcpy(&(buffer[4]), curRes.resType.b, 4);
-        memcpy(&(buffer[8]), curRes.resLatitude.b, 8);
+        //memcpy(&(buffer[8]), curRes.resLatitude.b, 8);
         // pengzhou:currently, use longtitue to transfer the timestamp of result sent out by ES.
         // it shoud be written as timeSend etc., however keeping current state to save efforts... 
-        curRes.resLongtitude.d = what_time_is_it_now();
-        memcpy(&(buffer[16]), curRes.resLongtitude.b, 8);
-        memcpy(&(buffer[24]), curRes.markerNum.b, 4);
+        //curRes.resLongtitude.d = what_time_is_it_now();
+        //memcpy(&(buffer[16]), curRes.resLongtitude.b, 8);
+        memcpy(&(buffer[8]), curRes.markerNum.b, 4);
         if(curRes.markerNum.i != 0)
-            memcpy(&(buffer[28]), curRes.buffer, 100 * curRes.markerNum.i);
+            memcpy(&(buffer[12]), curRes.buffer, 100 * curRes.markerNum.i);
         map<string, int>::iterator it_device = mapOfDevices.begin();
         while(it_device != mapOfDevices.end()){
             memset((char*)&remoteAddr, 0, sizeof(remoteAddr));
             remoteAddr.sin_family = AF_INET;
             remoteAddr.sin_addr.s_addr = inet_addr((it_device->first).c_str());
             remoteAddr.sin_port = htons(51919);
-            output_send << "sending to the " << it_device->second<< " device, whose ip is "<< it_device->first << endl ;
-            cout << "sending to the " << it_device->second<< " device, whose ip is "<< it_device->first << endl ;
+            //output_send << "sending to the " << it_device->second<< " device, whose ip is "<< it_device->first << endl ;
+            //cout << "sending to the " << it_device->second<< " device, whose ip is "<< it_device->first << endl ;
             sendto(sock, buffer, sizeof(buffer), 0, (struct sockaddr *)&remoteAddr, addrlen);
-            output_send << "send_result of frameID of: " << curRes.resID.i << " sent by observer at time: " << std::fixed << std::setprecision(15) << curRes.resLongtitude.d << " whose size is: " << sizeof(buffer) << endl;
-            cout << "send_result of frameID of: " << curRes.resID.i << " sent by observer at time: " << curRes.resLongtitude.d << " whose size is: " << sizeof(buffer) << endl;
+            //output_send << "send_result of frameID of: " << curRes.resID.i << " sent by observer at time: " << std::fixed << std::setprecision(15) << curRes.resLongtitude.d << " whose size is: " << sizeof(buffer) << endl;
+            //cout << "send_result of frameID of: " << curRes.resID.i << " sent by observer at time: " << curRes.resLongtitude.d << " whose size is: " << sizeof(buffer) << endl;
             it_device++;} 
-            cout<<"frame "<<curRes.resID.i<<" res sent, "<<"marker#: "<<curRes.markerNum.i;
-            cout<<" at "<<setprecision(15)<<wallclock()<<endl<<endl;
+            //cout<<"frame "<<curRes.resID.i<<" res sent, "<<"marker#: "<<curRes.markerNum.i;
+            //cout<<" at "<<setprecision(15)<<wallclock()<<endl<<endl;
         //memset(curRes.buffer,1,sizeof(curRes.buffer)); 
         //memset(buffer,1,sizeof(buffer)); 
         //memset(str_buffer,1,sizeof(str_buffer)); 
@@ -362,8 +359,8 @@ void *ThreadProcessFunction(void *param) {
         // pengzhou:currently, device send the timestamp of image instead of geolocation, therefore we use 0 to temporarily for location.
         //double latitude = curFrame.latitude;
         //double longtitude = curFrame.longtitude;
-        double latitude = 0;
-        double longtitude = 0;
+        //double latitude = 0;
+        //double longtitude = 0;
         int frmSize = curFrame.bufferSize;
         char* frmdata = curFrame.buffer;
         
@@ -381,10 +378,10 @@ void *ThreadProcessFunction(void *param) {
                 //res = detect(frmID);
                 res = detect();
                 output_process << "time_process_pic of frameid of: " << frmID << " takes: '" <<  what_time_is_it_now() - time_process_start<< "' milliseconds" << endl;
-                cout << "time_process_pic of frameid of: " << frmID << " takes: " <<  what_time_is_it_now() - time_process_start << " milliseconds" << endl;
+                //cout << "time_process_pic of frameid of: " << frmID << " takes: " <<  what_time_is_it_now() - time_process_start << " milliseconds" << endl;
                 objectDetected = true;
-                output_process << "resultss: " << res->num << endl;
-                cout << "resultss: " << res->num << endl;
+                //output_process << "resultss: " << res->num << endl;
+                //cout << "resultss: " << res->num << endl;
             } 
         } else if(frmDataType == EDGE) {
              cout << frmdata << endl;
@@ -409,8 +406,8 @@ void *ThreadProcessFunction(void *param) {
             charfloat p;
             charint ci;
             curRes.resID.i = frmID;
-            curRes.resLatitude.d = latitude;
-            curRes.resLongtitude.d = curFrame.timeSend;
+            //curRes.resLatitude.d = latitude;
+            //curRes.resLongtitude.d = curFrame.timeSend;
             curRes.resType.i = BOUNDARY;
             if(res->num <= 5)
                 curRes.markerNum.i = res->num;
@@ -500,4 +497,3 @@ int main(int argc, char *argv[])
 
     return 0;
 }
-

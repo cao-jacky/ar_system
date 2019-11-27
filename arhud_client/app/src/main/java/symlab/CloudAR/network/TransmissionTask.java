@@ -50,6 +50,7 @@ public class TransmissionTask implements Runnable {
     private SocketAddress serverAddress;
 
     public Mat YUVMatTrans, YUVMatScaled, GrayScaled;
+    private long time;
 
     public TransmissionTask(DatagramChannel datagramChannel, SocketAddress serverAddress) {
         this.datagramChannel = datagramChannel;
@@ -112,30 +113,30 @@ public class TransmissionTask implements Runnable {
             datasize = 0;
             frmdataToSend = null;
         }
-        packetContent = new byte[28 + datasize];
+        packetContent = new byte[12 + datasize];
 
         frmid = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(frmID).array();
         datatype = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(dataType).array();
-        TimeCaptured = ByteBuffer.allocate(8).order(ByteOrder.LITTLE_ENDIAN).putDouble(timeCaptured).array();
-        TimeSend = ByteBuffer.allocate(8).order(ByteOrder.LITTLE_ENDIAN).putDouble(timeSend).array();
+//        TimeCaptured = ByteBuffer.allocate(8).order(ByteOrder.LITTLE_ENDIAN).putDouble(timeCaptured).array();
+//        TimeSend = ByteBuffer.allocate(8).order(ByteOrder.LITTLE_ENDIAN).putDouble(timeSend).array();
         frmsize = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(datasize).array();
         System.arraycopy(frmid, 0, packetContent, 0, 4);
         System.arraycopy(datatype, 0, packetContent, 4, 4);
-        System.arraycopy(TimeCaptured, 0, packetContent, 8, 8);
-        System.arraycopy(TimeSend, 0, packetContent, 16, 8);
-        System.arraycopy(frmsize, 0, packetContent, 24, 4);
+//        System.arraycopy(TimeCaptured, 0, packetContent, 8, 8);
+//        System.arraycopy(TimeSend, 0, packetContent, 16, 8);
+        System.arraycopy(frmsize, 0, packetContent, 8, 4);
+
+        time = System.currentTimeMillis();
+        timeSend = (double)time;
+
         if (frmdataToSend != null)
-            System.arraycopy(frmdataToSend, 0, packetContent, 28, datasize);
+            System.arraycopy(frmdataToSend, 0, packetContent, 12, datasize);
 
         try {
             ByteBuffer buffer = ByteBuffer.allocate(packetContent.length).put(packetContent);
             buffer.flip();
             datagramChannel.send(buffer, serverAddress);
 
-//            if (dataType == MESSAGE_META)
-//                Log.d(Constants.Eval, "metadata " + frmID + " sent ");
-//            else
-//                Log.d(Constants.Eval, "Frame " + frmID + " sent at " + System.currentTimeMillis());
             try{
                 BufferedWriter bw =
                         new BufferedWriter(new FileWriter(file, true));
@@ -146,8 +147,12 @@ public class TransmissionTask implements Runnable {
                 bw.flush();}
             catch (Exception e){
                 e.printStackTrace();
-
             }
+//            if (dataType == MESSAGE_META)
+//                Log.d(Constants.Eval, "metadata " + frmID + " sent ");
+//            else
+//                Log.d(Constants.Eval, "Frame " + frmID + " sent at " + System.currentTimeMillis());
+
         } catch (IOException e) {
             e.printStackTrace();
         }

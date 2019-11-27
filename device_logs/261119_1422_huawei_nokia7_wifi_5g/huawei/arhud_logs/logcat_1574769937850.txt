@@ -1,0 +1,950 @@
+--------- beginning of main
+11-26 14:05:37.860 27052 27052 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-26 14:05:37.860 27052 27078 D ZrHung.AppEyeUiProbe: Runnable thread started.
+11-26 14:05:37.860 27052 27078 D IMonitor: Load library imonitor_jni
+11-26 14:05:37.862 27075 27075 W logcat  : type=1400 audit(0.0:11859): avc: granted { create } for name="logcat_1574769937850.txt" scontext=u:r:untrusted_app:s0:c147,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0:c147,c256,c512,c768 tclass=file
+11-26 14:05:37.863 27052 27078 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0102]
+11-26 14:05:37.863 27052 27078 W ZrHung.AppEyeUiProbe: Failed to get config from zrhung
+11-26 14:05:37.881 27052 27052 I MultiDex: Installing application
+11-26 14:05:37.881 27052 27052 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+--------- beginning of system
+11-26 14:05:37.883 27052 27052 V ActivityThread: callActivityOnCreate
+11-26 14:05:37.883 27052 27052 I Poster  :  onCreate() called.
+11-26 14:05:37.886 27052 27052 I HwApsImpl: APS: new HwApsImpl created
+11-26 14:05:37.892 27052 27052 V HwWidgetFactory: : successes to get AllImpl object and return....
+11-26 14:05:37.899 27052 27052 D OpenGLRenderer: Skia GL Pipeline
+11-26 14:05:37.919 27052 27052 D Poster  : Server details are IP 193.166.28.132 and port 52727
+11-26 14:05:37.923 27052 27052 D Poster  : Server bound to IP 193.166.28.132 and port 52727
+11-26 14:05:37.928 27052 27052 D ActivityThread: add activity client record, r= ActivityRecord{2c6908f token=android.os.BinderProxy@442f816 {symlab.cloudridar.arhud/symlab.ARHUD.MainActivity}} token= android.os.BinderProxy@442f816
+11-26 14:05:37.930 27052 27052 I Poster  :  onStart() called.
+11-26 14:05:37.931 27052 27052 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-26 14:05:37.932 27052 27052 I Poster  :  onResume() called.
+11-26 14:05:37.936 27052 27052 I PermissionManager: camera remind result:true
+11-26 14:05:37.936 27052 27052 I Camera  : open camera: 0, package name: symlab.cloudridar.arhud
+11-26 14:05:37.936 27052 27052 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 27052 ,uidOf3RdApk: 10147 ,permType: 0 ,permCfg: 1
+11-26 14:05:37.937 27052 27052 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = true
+11-26 14:05:37.945 27052 27052 D ActivityThread: isOptEnabled=false isWechatScanOpt=false
+11-26 14:05:37.946 27052 27052 I HwSecImmHelper: mSecurityInputMethodService is null
+11-26 14:05:37.952 27052 27052 D OpenGLRenderer:   HWUI Binary is  enabled
+11-26 14:05:37.977 27052 27110 D HiTouch_PressGestureDetector: onAttached, package=symlab.cloudridar.arhud, windowType=1, mHiTouchRestricted=false
+11-26 14:05:37.986 27052 27103 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-26 14:05:37.986 27052 27103 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-26 14:05:37.986 27052 27103 I iGraphics: [0020080c] pn: symlab.cloudridar.arhud, p: 27052
+11-26 14:05:37.986 27052 27103 I OpenGLRenderer: Initialized EGL, version 1.4, mEglDisplay 0x1
+11-26 14:05:37.986 27052 27103 D OpenGLRenderer: Swap behavior 2
+11-26 14:05:37.998 27052 27103 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+11-26 14:05:38.006 27052 27052 I Poster  :  surfaceCreated() called.
+11-26 14:05:38.006 27052 27052 I Poster  : initPreview() called
+11-26 14:05:38.007 27052 27063 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 14:05:38.011 27052 27052 I PermissionManager: camera remind result:true
+11-26 14:05:38.016 27052 27052 I Poster  :  surfaceChanged() called.
+11-26 14:05:38.035 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:38.038 27052 27052 W InputMethodManager: startInputReason = 1
+11-26 14:05:38.049 27052 27052 W InputMethodManager: startInputReason = 5
+11-26 14:05:38.746 27052 27086 D Evaluation: 0 res for frame 6 received at 1574769938746
+11-26 14:05:38.847 27052 27086 D Evaluation: 0 res for frame 7 received at 1574769938847
+11-26 14:05:38.881 27052 27086 D Evaluation: 0 res for frame 8 received at 1574769938881
+11-26 14:05:38.918 27052 27086 D Evaluation: 0 res for frame 9 received at 1574769938918
+11-26 14:05:38.949 27052 27086 D Evaluation: 0 res for frame 10 received at 1574769938949
+11-26 14:05:38.982 27052 27086 D Evaluation: 0 res for frame 11 received at 1574769938982
+11-26 14:05:39.015 27052 27086 D Evaluation: 0 res for frame 12 received at 1574769939015
+11-26 14:05:39.083 27052 27086 D Evaluation: 0 res for frame 13 received at 1574769939083
+11-26 14:05:39.116 27052 27086 D Evaluation: 0 res for frame 14 received at 1574769939116
+11-26 14:05:39.313 27052 27086 D Evaluation: 1 res for frame 15 received at 1574769939313
+11-26 14:05:39.346 27052 27086 D Evaluation: 1 res for frame 16 received at 1574769939346
+11-26 14:05:39.369 27052 27086 D Evaluation: 0 res for frame 17 received at 1574769939369
+11-26 14:05:39.401 27052 27086 D Evaluation: 1 res for frame 18 received at 1574769939401
+11-26 14:05:39.442 27052 27086 D Evaluation: 1 res for frame 19 received at 1574769939442
+11-26 14:05:39.478 27052 27086 D Evaluation: 0 res for frame 20 received at 1574769939478
+11-26 14:05:39.509 27052 27063 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 14:05:39.510 27052 27086 D Evaluation: 0 res for frame 21 received at 1574769939510
+11-26 14:05:39.522 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:39.522 27052 27061 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-26 14:05:39.522 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:39.522 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:39.522 27052 27061 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 8 lines
+11-26 14:05:39.522 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:39.523 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:39.523 27052 27061 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-26 14:05:39.523 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:39.523 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:39.524 27052 27061 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 31 lines
+11-26 14:05:39.524 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:39.546 27052 27086 D Evaluation: 0 res for frame 23 received at 1574769939546
+11-26 14:05:39.565 27052 27086 D Evaluation: 1 res for frame 24 received at 1574769939565
+11-26 14:05:39.601 27052 27086 D Evaluation: 0 res for frame 25 received at 1574769939601
+11-26 14:05:39.633 27052 27086 D Evaluation: 0 res for frame 26 received at 1574769939633
+11-26 14:05:39.678 27052 27086 D Evaluation: 0 res for frame 27 received at 1574769939678
+11-26 14:05:39.707 27052 27086 D Evaluation: 0 res for frame 28 received at 1574769939707
+11-26 14:05:39.742 27052 27086 D Evaluation: 0 res for frame 29 received at 1574769939742
+11-26 14:05:39.778 27052 27086 D Evaluation: 0 res for frame 30 received at 1574769939778
+11-26 14:05:39.816 27052 27086 D Evaluation: 1 res for frame 31 received at 1574769939816
+11-26 14:05:39.849 27052 27086 D Evaluation: 1 res for frame 32 received at 1574769939849
+11-26 14:05:39.881 27052 27086 D Evaluation: 1 res for frame 33 received at 1574769939881
+11-26 14:05:39.912 27052 27086 D Evaluation: 1 res for frame 34 received at 1574769939912
+11-26 14:05:39.943 27052 27086 D Evaluation: 1 res for frame 35 received at 1574769939943
+11-26 14:05:39.981 27052 27086 D Evaluation: 0 res for frame 36 received at 1574769939981
+11-26 14:05:40.002 27052 27086 D Evaluation: 0 res for frame 37 received at 1574769940002
+11-26 14:05:40.042 27052 27086 D Evaluation: 0 res for frame 38 received at 1574769940042
+11-26 14:05:40.086 27052 27086 D Evaluation: 1 res for frame 39 received at 1574769940086
+11-26 14:05:40.094 27052 27052 D Poster  : At 1574769940093 location is 65.05792799978879 (latitude), and 25.46990599991731 (longitude)
+11-26 14:05:40.099 27052 27052 D Poster  : Connected to WiFi
+11-26 14:05:40.126 27052 27086 D Evaluation: 1 res for frame 40 received at 1574769940126
+11-26 14:05:40.146 27052 27086 D Evaluation: 0 res for frame 41 received at 1574769940146
+11-26 14:05:40.168 27052 27086 D Evaluation: 0 res for frame 42 received at 1574769940168
+11-26 14:05:40.201 27052 27086 D Evaluation: 1 res for frame 43 received at 1574769940201
+11-26 14:05:40.271 27052 27086 D Evaluation: 0 res for frame 44 received at 1574769940271
+11-26 14:05:40.304 27052 27086 D Evaluation: 1 res for frame 45 received at 1574769940304
+11-26 14:05:40.348 27052 27086 D Evaluation: 2 res for frame 46 received at 1574769940348
+11-26 14:05:40.376 27052 27086 D Evaluation: 2 res for frame 47 received at 1574769940376
+11-26 14:05:40.417 27052 27086 D Evaluation: 2 res for frame 48 received at 1574769940417
+11-26 14:05:40.438 27052 27086 D Evaluation: 2 res for frame 49 received at 1574769940438
+11-26 14:05:40.493 27052 27086 D Evaluation: 1 res for frame 50 received at 1574769940493
+11-26 14:05:40.521 27052 27086 D Evaluation: 2 res for frame 51 received at 1574769940521
+11-26 14:05:40.551 27052 27086 D Evaluation: 2 res for frame 52 received at 1574769940551
+11-26 14:05:40.573 27052 27063 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 14:05:40.574 27052 27086 D Evaluation: 2 res for frame 53 received at 1574769940574
+11-26 14:05:40.594 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:40.598 27052 27061 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 60 lines
+11-26 14:05:40.598 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:40.608 27052 27086 D Evaluation: 2 res for frame 54 received at 1574769940608
+11-26 14:05:40.644 27052 27086 D Evaluation: 2 res for frame 55 received at 1574769940644
+11-26 14:05:40.710 27052 27086 D Evaluation: 2 res for frame 56 received at 1574769940710
+11-26 14:05:40.749 27052 27086 D Evaluation: 2 res for frame 57 received at 1574769940749
+11-26 14:05:40.782 27052 27086 D Evaluation: 2 res for frame 58 received at 1574769940782
+11-26 14:05:40.820 27052 27086 D Evaluation: 2 res for frame 59 received at 1574769940820
+11-26 14:05:40.886 27052 27086 D Evaluation: 2 res for frame 60 received at 1574769940886
+11-26 14:05:40.911 27052 27086 D Evaluation: 2 res for frame 61 received at 1574769940911
+11-26 14:05:40.944 27052 27086 D Evaluation: 2 res for frame 62 received at 1574769940944
+11-26 14:05:40.983 27052 27086 D Evaluation: 2 res for frame 63 received at 1574769940983
+11-26 14:05:41.049 27052 27086 D Evaluation: 2 res for frame 64 received at 1574769941049
+11-26 14:05:41.102 27052 27086 D Evaluation: 2 res for frame 65 received at 1574769941102
+11-26 14:05:41.124 27052 27086 D Evaluation: 2 res for frame 66 received at 1574769941124
+11-26 14:05:41.147 27052 27086 D Evaluation: 2 res for frame 67 received at 1574769941147
+11-26 14:05:41.184 27052 27086 D Evaluation: 1 res for frame 68 received at 1574769941183
+11-26 14:05:41.226 27052 27086 D Evaluation: 1 res for frame 69 received at 1574769941226
+11-26 14:05:41.256 27052 27086 D Evaluation: 2 res for frame 70 received at 1574769941256
+11-26 14:05:41.281 27052 27086 D Evaluation: 2 res for frame 71 received at 1574769941281
+11-26 14:05:41.326 27052 27086 D Evaluation: 2 res for frame 72 received at 1574769941326
+11-26 14:05:41.345 27052 27086 D Evaluation: 2 res for frame 73 received at 1574769941345
+11-26 14:05:41.388 27052 27086 D Evaluation: 2 res for frame 74 received at 1574769941388
+11-26 14:05:41.414 27052 27086 D Evaluation: 2 res for frame 75 received at 1574769941414
+11-26 14:05:41.464 27052 27086 D Evaluation: 2 res for frame 76 received at 1574769941464
+11-26 14:05:41.492 27052 27086 D Evaluation: 2 res for frame 77 received at 1574769941492
+11-26 14:05:41.524 27052 27086 D Evaluation: 2 res for frame 78 received at 1574769941524
+11-26 14:05:41.561 27052 27086 D Evaluation: 2 res for frame 80 received at 1574769941561
+11-26 14:05:41.595 27052 27086 D Evaluation: 2 res for frame 80 received at 1574769941595
+11-26 14:05:41.620 27052 27086 D Evaluation: 2 res for frame 81 received at 1574769941620
+11-26 14:05:41.666 27052 27086 D Evaluation: 2 res for frame 82 received at 1574769941666
+11-26 14:05:41.696 27052 27063 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 14:05:41.699 27052 27086 D Evaluation: 2 res for frame 83 received at 1574769941699
+11-26 14:05:41.721 27052 27086 D Evaluation: 2 res for frame 84 received at 1574769941721
+11-26 14:05:41.727 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:41.729 27052 27061 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 11 lines
+11-26 14:05:41.729 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:41.729 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:41.729 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:41.729 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:41.729 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:41.729 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:41.730 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:41.730 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:41.730 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:41.730 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:41.730 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:41.730 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:41.730 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:41.730 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:41.735 27052 27061 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 34 lines
+11-26 14:05:41.735 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:41.757 27052 27086 D Evaluation: 2 res for frame 85 received at 1574769941757
+11-26 14:05:41.788 27052 27086 D Evaluation: 2 res for frame 86 received at 1574769941788
+11-26 14:05:41.837 27052 27086 D Evaluation: 1 res for frame 87 received at 1574769941837
+11-26 14:05:41.910 27052 27086 D Evaluation: 2 res for frame 88 received at 1574769941910
+11-26 14:05:41.938 27052 27086 D Evaluation: 2 res for frame 89 received at 1574769941938
+11-26 14:05:42.014 27052 27086 D Evaluation: 2 res for frame 90 received at 1574769942014
+11-26 14:05:42.057 27052 27086 D Evaluation: 2 res for frame 91 received at 1574769942057
+11-26 14:05:42.103 27052 27086 D Evaluation: 1 res for frame 92 received at 1574769942103
+11-26 14:05:42.129 27052 27086 D Evaluation: 2 res for frame 93 received at 1574769942129
+11-26 14:05:42.178 27052 27086 D Evaluation: 2 res for frame 94 received at 1574769942178
+11-26 14:05:42.199 27052 27086 D Evaluation: 2 res for frame 95 received at 1574769942199
+11-26 14:05:42.243 27052 27086 D Evaluation: 2 res for frame 96 received at 1574769942243
+11-26 14:05:42.264 27052 27086 D Evaluation: 2 res for frame 97 received at 1574769942264
+11-26 14:05:42.302 27052 27086 D Evaluation: 2 res for frame 98 received at 1574769942302
+11-26 14:05:42.331 27052 27086 D Evaluation: 2 res for frame 99 received at 1574769942331
+11-26 14:05:42.375 27052 27086 D Evaluation: 2 res for frame 100 received at 1574769942375
+11-26 14:05:42.401 27052 27086 D Evaluation: 1 res for frame 101 received at 1574769942401
+11-26 14:05:42.432 27052 27086 D Evaluation: 1 res for frame 102 received at 1574769942432
+11-26 14:05:42.476 27052 27086 D Evaluation: 1 res for frame 103 received at 1574769942476
+11-26 14:05:42.513 27052 27086 D Evaluation: 1 res for frame 104 received at 1574769942513
+11-26 14:05:42.534 27052 27086 D Evaluation: 2 res for frame 105 received at 1574769942534
+11-26 14:05:42.561 27052 27086 D Evaluation: 2 res for frame 106 received at 1574769942561
+11-26 14:05:42.591 27052 27086 D Evaluation: 1 res for frame 107 received at 1574769942591
+11-26 14:05:42.631 27052 27086 D Evaluation: 1 res for frame 108 received at 1574769942631
+11-26 14:05:42.662 27052 27086 D Evaluation: 1 res for frame 109 received at 1574769942662
+11-26 14:05:42.696 27052 27086 D Evaluation: 1 res for frame 110 received at 1574769942696
+11-26 14:05:42.726 27052 27086 D Evaluation: 1 res for frame 111 received at 1574769942726
+11-26 14:05:42.759 27052 27086 D Evaluation: 1 res for frame 112 received at 1574769942759
+11-26 14:05:42.788 27052 27086 D Evaluation: 2 res for frame 113 received at 1574769942788
+11-26 14:05:42.834 27052 27063 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 14:05:42.836 27052 27069 I loudridar.arhu: Waiting for a blocking GC ProfileSaver
+11-26 14:05:42.838 27052 27086 D Evaluation: 2 res for frame 114 received at 1574769942838
+11-26 14:05:42.849 27052 27052 I AwareBitmapCacher: init lrucache size: 2097152 pid=27052
+11-26 14:05:42.855 27052 27069 I loudridar.arhu: WaitForGcToComplete blocked ProfileSaver on HeapTrim for 19.710ms
+11-26 14:05:42.857 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:42.866 27052 27061 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 58 lines
+11-26 14:05:42.866 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:42.866 27052 27086 D Evaluation: 0 res for frame 115 received at 1574769942866
+11-26 14:05:42.905 27052 27086 D Evaluation: 0 res for frame 116 received at 1574769942905
+11-26 14:05:42.929 27052 27086 D Evaluation: 0 res for frame 117 received at 1574769942929
+11-26 14:05:42.978 27052 27086 D Evaluation: 1 res for frame 118 received at 1574769942978
+11-26 14:05:43.001 27052 27086 D Evaluation: 1 res for frame 119 received at 1574769943001
+11-26 14:05:43.040 27052 27086 D Evaluation: 1 res for frame 120 received at 1574769943040
+11-26 14:05:43.068 27052 27086 D Evaluation: 1 res for frame 121 received at 1574769943068
+11-26 14:05:43.112 27052 27086 D Evaluation: 2 res for frame 122 received at 1574769943112
+11-26 14:05:43.142 27052 27086 D Evaluation: 2 res for frame 123 received at 1574769943142
+11-26 14:05:43.163 27052 27086 D Evaluation: 2 res for frame 124 received at 1574769943163
+11-26 14:05:43.207 27052 27086 D Evaluation: 1 res for frame 125 received at 1574769943207
+11-26 14:05:43.229 27052 27086 D Evaluation: 1 res for frame 126 received at 1574769943229
+11-26 14:05:43.263 27052 27086 D Evaluation: 4 res for frame 127 received at 1574769943263
+11-26 14:05:43.302 27052 27086 D Evaluation: 5 res for frame 128 received at 1574769943302
+11-26 14:05:43.333 27052 27086 D Evaluation: 5 res for frame 129 received at 1574769943333
+11-26 14:05:43.374 27052 27086 D Evaluation: 4 res for frame 130 received at 1574769943374
+11-26 14:05:43.414 27052 27086 D Evaluation: 2 res for frame 131 received at 1574769943414
+11-26 14:05:43.436 27052 27086 D Evaluation: 4 res for frame 133 received at 1574769943436
+11-26 14:05:43.485 27052 27086 D Evaluation: 2 res for frame 134 received at 1574769943485
+11-26 14:05:43.504 27052 27086 D Evaluation: 4 res for frame 135 received at 1574769943504
+11-26 14:05:43.548 27052 27086 D Evaluation: 4 res for frame 136 received at 1574769943548
+11-26 14:05:43.570 27052 27086 D Evaluation: 3 res for frame 137 received at 1574769943570
+11-26 14:05:43.607 27052 27086 D Evaluation: 3 res for frame 138 received at 1574769943607
+11-26 14:05:43.639 27052 27086 D Evaluation: 1 res for frame 139 received at 1574769943639
+11-26 14:05:43.734 27052 27086 D Evaluation: 2 res for frame 140 received at 1574769943734
+11-26 14:05:43.755 27052 27063 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 14:05:43.762 27052 27086 D Evaluation: 2 res for frame 141 received at 1574769943762
+11-26 14:05:43.787 27052 27086 D Evaluation: 1 res for frame 142 received at 1574769943787
+11-26 14:05:43.789 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:43.793 27052 27061 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 34 lines
+11-26 14:05:43.794 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:43.794 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:43.795 27052 27061 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-26 14:05:43.795 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:43.795 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:43.797 27052 27061 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 10 lines
+11-26 14:05:43.797 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:43.850 27052 27086 D Evaluation: 3 res for frame 143 received at 1574769943850
+11-26 14:05:43.872 27052 27086 D Evaluation: 3 res for frame 144 received at 1574769943872
+11-26 14:05:43.925 27052 27086 D Evaluation: 2 res for frame 146 received at 1574769943925
+11-26 14:05:43.948 27052 27086 D Evaluation: 2 res for frame 146 received at 1574769943948
+11-26 14:05:43.977 27052 27086 D Evaluation: 3 res for frame 147 received at 1574769943977
+11-26 14:05:44.009 27052 27086 D Evaluation: 3 res for frame 148 received at 1574769944009
+11-26 14:05:44.033 27052 27086 D Evaluation: 3 res for frame 149 received at 1574769944033
+11-26 14:05:44.072 27052 27086 D Evaluation: 2 res for frame 150 received at 1574769944072
+11-26 14:05:44.116 27052 27086 D Evaluation: 5 res for frame 151 received at 1574769944116
+11-26 14:05:44.158 27052 27086 D Evaluation: 4 res for frame 152 received at 1574769944158
+11-26 14:05:44.186 27052 27086 D Evaluation: 4 res for frame 154 received at 1574769944186
+11-26 14:05:44.218 27052 27086 D Evaluation: 4 res for frame 154 received at 1574769944218
+11-26 14:05:44.245 27052 27086 D Evaluation: 4 res for frame 155 received at 1574769944245
+11-26 14:05:44.279 27052 27086 D Evaluation: 3 res for frame 156 received at 1574769944279
+11-26 14:05:44.323 27052 27086 D Evaluation: 3 res for frame 157 received at 1574769944323
+11-26 14:05:44.351 27052 27086 D Evaluation: 3 res for frame 158 received at 1574769944351
+11-26 14:05:44.385 27052 27086 D Evaluation: 3 res for frame 159 received at 1574769944385
+11-26 14:05:44.411 27052 27086 D Evaluation: 3 res for frame 160 received at 1574769944411
+11-26 14:05:44.444 27052 27086 D Evaluation: 3 res for frame 161 received at 1574769944444
+11-26 14:05:44.480 27052 27086 D Evaluation: 4 res for frame 162 received at 1574769944480
+11-26 14:05:44.524 27052 27086 D Evaluation: 4 res for frame 163 received at 1574769944524
+11-26 14:05:44.532 27052 27052 D stylus  : init stylus touchlistener.
+11-26 14:05:44.537 27052 27052 W Settings: Setting device_provisioned has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+11-26 14:05:44.537 27052 27052 V HiTouch_HiTouchSensor: User setup is finished.
+11-26 14:05:44.546 27052 27086 D Evaluation: 3 res for frame 164 received at 1574769944546
+11-26 14:05:44.583 27052 27086 D Evaluation: 3 res for frame 165 received at 1574769944583
+11-26 14:05:44.594 27052 27052 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:29.587234, limit is:60The moving distance of Y is:110.898705, limit is:60
+11-26 14:05:44.621 27052 27086 D Evaluation: 3 res for frame 166 received at 1574769944621
+11-26 14:05:44.647 27052 27086 D Evaluation: 3 res for frame 167 received at 1574769944647
+11-26 14:05:44.679 27052 27086 D Evaluation: 3 res for frame 168 received at 1574769944679
+11-26 14:05:44.703 27052 27063 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 14:05:44.705 27052 27086 D Evaluation: 4 res for frame 169 received at 1574769944705
+11-26 14:05:44.721 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:44.724 27052 27061 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 54 lines
+11-26 14:05:44.724 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:44.736 27052 27086 D Evaluation: 3 res for frame 170 received at 1574769944736
+11-26 14:05:44.769 27052 27086 D Evaluation: 3 res for frame 171 received at 1574769944769
+11-26 14:05:44.809 27052 27086 D Evaluation: 3 res for frame 172 received at 1574769944809
+11-26 14:05:44.840 27052 27086 D Evaluation: 4 res for frame 173 received at 1574769944840
+11-26 14:05:44.871 27052 27086 D Evaluation: 3 res for frame 174 received at 1574769944871
+11-26 14:05:44.906 27052 27086 D Evaluation: 3 res for frame 175 received at 1574769944906
+11-26 14:05:44.937 27052 27086 D Evaluation: 3 res for frame 176 received at 1574769944937
+11-26 14:05:44.972 27052 27086 D Evaluation: 3 res for frame 177 received at 1574769944972
+11-26 14:05:45.008 27052 27086 D Evaluation: 5 res for frame 178 received at 1574769945007
+11-26 14:05:45.039 27052 27086 D Evaluation: 2 res for frame 179 received at 1574769945039
+11-26 14:05:45.081 27052 27086 D Evaluation: 4 res for frame 180 received at 1574769945081
+11-26 14:05:45.114 27052 27086 D Evaluation: 2 res for frame 181 received at 1574769945114
+11-26 14:05:45.147 27052 27086 D Evaluation: 3 res for frame 182 received at 1574769945147
+11-26 14:05:45.179 27052 27086 D Evaluation: 5 res for frame 183 received at 1574769945179
+11-26 14:05:45.215 27052 27086 D Evaluation: 5 res for frame 184 received at 1574769945215
+11-26 14:05:45.248 27052 27086 D Evaluation: 5 res for frame 185 received at 1574769945248
+11-26 14:05:45.272 27052 27086 D Evaluation: 5 res for frame 186 received at 1574769945272
+11-26 14:05:45.306 27052 27086 D Evaluation: 5 res for frame 187 received at 1574769945306
+11-26 14:05:45.347 27052 27086 D Evaluation: 5 res for frame 188 received at 1574769945347
+11-26 14:05:45.372 27052 27086 D Evaluation: 4 res for frame 189 received at 1574769945372
+11-26 14:05:45.407 27052 27086 D Evaluation: 3 res for frame 190 received at 1574769945407
+11-26 14:05:45.444 27052 27086 D Evaluation: 3 res for frame 191 received at 1574769945444
+11-26 14:05:45.507 27052 27086 D Evaluation: 4 res for frame 192 received at 1574769945507
+11-26 14:05:45.526 27052 27086 D Evaluation: 4 res for frame 193 received at 1574769945526
+11-26 14:05:45.549 27052 27086 D Evaluation: 4 res for frame 194 received at 1574769945549
+11-26 14:05:45.571 27052 27086 D Evaluation: 4 res for frame 195 received at 1574769945571
+11-26 14:05:45.610 27052 27086 D Evaluation: 3 res for frame 196 received at 1574769945610
+11-26 14:05:45.647 27052 27086 D Evaluation: 3 res for frame 197 received at 1574769945647
+11-26 14:05:45.688 27052 27063 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 14:05:45.690 27052 27086 D Evaluation: 3 res for frame 198 received at 1574769945690
+11-26 14:05:45.704 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:45.707 27052 27061 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 57 lines
+11-26 14:05:45.707 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:45.712 27052 27086 D Evaluation: 2 res for frame 199 received at 1574769945712
+11-26 14:05:45.785 27052 27086 D Evaluation: 1 res for frame 200 received at 1574769945785
+11-26 14:05:45.814 27052 27086 D Evaluation: 1 res for frame 201 received at 1574769945814
+11-26 14:05:45.844 27052 27086 D Evaluation: 2 res for frame 202 received at 1574769945844
+11-26 14:05:45.887 27052 27086 D Evaluation: 3 res for frame 203 received at 1574769945887
+11-26 14:05:45.921 27052 27086 D Evaluation: 2 res for frame 204 received at 1574769945921
+11-26 14:05:45.951 27052 27086 D Evaluation: 3 res for frame 206 received at 1574769945951
+11-26 14:05:45.979 27052 27086 D Evaluation: 3 res for frame 206 received at 1574769945979
+11-26 14:05:46.010 27052 27086 D Evaluation: 3 res for frame 207 received at 1574769946010
+11-26 14:05:46.080 27052 27086 D Evaluation: 2 res for frame 208 received at 1574769946080
+11-26 14:05:46.109 27052 27086 D Evaluation: 3 res for frame 209 received at 1574769946109
+11-26 14:05:46.149 27052 27086 D Evaluation: 3 res for frame 210 received at 1574769946149
+11-26 14:05:46.182 27052 27086 D Evaluation: 2 res for frame 211 received at 1574769946182
+11-26 14:05:46.216 27052 27086 D Evaluation: 3 res for frame 212 received at 1574769946216
+11-26 14:05:46.248 27052 27086 D Evaluation: 2 res for frame 213 received at 1574769946248
+11-26 14:05:46.295 27052 27086 D Evaluation: 3 res for frame 214 received at 1574769946295
+11-26 14:05:46.319 27052 27086 D Evaluation: 3 res for frame 215 received at 1574769946319
+11-26 14:05:46.348 27052 27086 D Evaluation: 0 res for frame 216 received at 1574769946348
+11-26 14:05:46.382 27052 27086 D Evaluation: 1 res for frame 217 received at 1574769946382
+11-26 14:05:46.416 27052 27086 D Evaluation: 2 res for frame 218 received at 1574769946416
+11-26 14:05:46.449 27052 27086 D Evaluation: 2 res for frame 219 received at 1574769946449
+11-26 14:05:46.486 27052 27086 D Evaluation: 2 res for frame 220 received at 1574769946486
+11-26 14:05:46.517 27052 27086 D Evaluation: 2 res for frame 221 received at 1574769946517
+11-26 14:05:46.550 27052 27086 D Evaluation: 2 res for frame 222 received at 1574769946550
+11-26 14:05:46.579 27052 27086 D Evaluation: 2 res for frame 223 received at 1574769946579
+11-26 14:05:46.625 27052 27086 D Evaluation: 2 res for frame 224 received at 1574769946624
+11-26 14:05:46.652 27052 27086 D Evaluation: 2 res for frame 225 received at 1574769946652
+11-26 14:05:46.686 27052 27086 D Evaluation: 2 res for frame 226 received at 1574769946686
+11-26 14:05:46.752 27052 27063 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 14:05:46.753 27052 27086 D Evaluation: 2 res for frame 227 received at 1574769946753
+11-26 14:05:46.772 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:46.775 27052 27061 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 56 lines
+11-26 14:05:46.775 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:46.786 27052 27086 D Evaluation: 2 res for frame 228 received at 1574769946786
+11-26 14:05:46.822 27052 27086 D Evaluation: 2 res for frame 229 received at 1574769946822
+11-26 14:05:46.851 27052 27086 D Evaluation: 2 res for frame 230 received at 1574769946851
+11-26 14:05:46.888 27052 27086 D Evaluation: 2 res for frame 231 received at 1574769946888
+11-26 14:05:46.917 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:46.917 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:46.917 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:46.917 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:46.917 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:46.918 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:46.918 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:46.918 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:46.918 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:46.918 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:46.918 27052 27086 D Evaluation: 2 res for frame 232 received at 1574769946918
+11-26 14:05:46.949 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:46.949 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:46.949 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:46.949 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:46.949 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:46.949 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:46.949 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:46.949 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:46.949 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:46.949 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:46.950 27052 27086 D Evaluation: 2 res for frame 233 received at 1574769946950
+11-26 14:05:46.984 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:46.984 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:46.984 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:46.984 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:46.984 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:46.984 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:46.984 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:46.984 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:46.984 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:46.984 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:46.985 27052 27086 D Evaluation: 2 res for frame 234 received at 1574769946985
+11-26 14:05:47.020 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:47.020 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:47.020 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:47.020 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:47.020 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:47.020 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:47.020 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:47.021 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:47.021 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:47.021 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:47.021 27052 27086 D Evaluation: 2 res for frame 235 received at 1574769947021
+11-26 14:05:47.052 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:47.052 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:47.052 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:47.052 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:47.052 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:47.052 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:47.052 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:47.052 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:47.052 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:47.052 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:47.053 27052 27086 D Evaluation: 2 res for frame 236 received at 1574769947053
+11-26 14:05:47.087 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:47.087 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:47.087 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:47.087 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:47.087 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:47.087 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:47.087 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:47.087 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:47.088 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:47.088 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:47.088 27052 27086 D Evaluation: 2 res for frame 237 received at 1574769947088
+11-26 14:05:47.122 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:47.122 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:47.122 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:47.122 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:47.122 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:47.122 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:47.122 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:47.122 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:47.122 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:47.122 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:47.123 27052 27086 D Evaluation: 2 res for frame 238 received at 1574769947123
+11-26 14:05:47.161 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:47.161 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:47.161 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:47.161 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:47.161 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:47.161 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:47.161 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:47.161 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:47.161 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:47.162 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:47.163 27052 27086 D Evaluation: 2 res for frame 239 received at 1574769947163
+11-26 14:05:47.187 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:47.187 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:47.187 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:47.187 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:47.187 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:47.187 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:47.187 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:47.187 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:47.187 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:47.187 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:47.188 27052 27086 D Evaluation: 3 res for frame 240 received at 1574769947188
+11-26 14:05:47.228 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:47.228 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:47.228 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:47.228 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:47.228 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:47.228 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:47.228 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:47.228 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:47.228 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:47.228 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:47.255 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:47.255 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:47.255 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:47.255 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:47.256 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:47.256 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:47.256 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:47.256 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:47.256 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:47.256 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:47.330 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:47.330 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:47.330 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:47.330 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:47.330 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:47.330 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:47.330 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:47.330 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:47.330 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:47.331 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:47.354 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:47.354 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:47.354 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:47.355 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:47.355 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:47.355 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:47.355 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:47.355 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:47.355 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:47.355 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:47.367 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:47.367 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:47.367 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:47.367 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:47.367 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:47.367 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:47.367 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:47.367 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:47.367 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:47.367 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:47.385 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:47.385 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:47.385 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:47.385 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:47.385 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:47.385 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:47.385 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:47.385 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:47.385 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:47.385 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:47.416 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:47.416 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:47.416 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:47.416 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:47.416 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:47.416 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:47.416 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:47.416 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:47.416 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:47.416 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:47.450 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:47.450 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:47.450 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:47.450 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:47.451 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:47.451 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:47.451 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:47.451 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:47.451 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:47.451 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:47.484 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:47.484 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:47.484 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:47.484 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:47.484 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:47.484 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:47.484 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:47.484 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:47.484 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:47.484 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:47.518 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:47.518 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:47.518 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:47.518 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:47.518 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:47.519 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:47.519 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:47.519 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:47.519 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:47.519 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:47.555 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:47.555 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:47.555 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:47.555 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:47.555 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:47.555 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:47.555 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:47.555 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:47.555 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:47.555 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:47.589 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:47.589 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:47.589 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:47.589 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:47.589 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:47.589 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:47.589 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:47.589 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:47.589 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:47.589 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:47.658 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:47.658 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:47.658 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:47.658 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:47.658 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:47.658 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:47.658 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:47.658 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:47.659 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:47.659 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:47.692 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:47.692 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:47.692 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:47.692 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:47.692 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:47.693 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:47.693 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:47.693 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:47.693 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:47.693 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:47.729 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:47.729 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:47.729 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:47.729 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:47.729 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:47.729 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:47.729 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:47.729 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:47.729 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:47.729 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:47.759 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:47.759 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:47.759 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:47.759 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:47.759 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:47.759 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:47.759 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:47.759 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:47.760 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:47.760 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:47.792 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:47.792 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:47.792 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:47.792 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:47.792 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:47.792 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:47.792 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:47.792 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:47.792 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:47.792 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:47.827 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:47.827 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:47.827 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:47.827 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:47.827 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:47.827 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:47.827 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:47.827 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:47.827 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:47.827 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:47.859 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:47.859 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:47.859 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:47.859 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:47.859 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:47.859 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:47.859 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:47.859 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:47.859 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:47.859 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:47.893 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:47.893 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:47.893 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:47.893 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:47.893 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:47.893 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:47.893 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:47.893 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:47.893 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:47.893 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:47.967 27052 27063 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 14:05:47.967 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:47.968 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:47.968 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:47.968 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:47.968 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:47.968 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:47.968 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:47.968 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:47.968 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:47.968 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:47.983 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:47.984 27052 27061 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-26 14:05:47.984 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:47.984 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:47.984 27052 27061 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 11 lines
+11-26 14:05:47.985 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:48.005 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:48.006 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:48.006 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:48.006 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:48.006 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:48.006 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:48.006 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:48.006 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:48.006 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:48.006 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:48.025 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:48.025 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:48.025 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:48.025 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:48.025 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:48.025 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:48.025 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:48.025 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:48.025 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:48.025 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:48.061 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:48.061 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:48.061 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:48.061 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:48.061 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:48.061 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:48.061 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:48.061 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:48.061 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:48.061 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:48.092 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:48.093 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:48.093 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:48.093 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:48.093 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:48.093 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:48.093 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:48.093 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:48.093 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:48.093 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:48.126 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:48.126 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:48.127 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:48.127 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:48.127 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:48.127 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:48.127 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:48.127 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:48.127 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:48.127 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:48.161 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:48.161 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:48.161 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:48.161 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:48.161 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:48.161 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:48.161 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:48.161 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:48.161 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:48.161 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:48.194 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:48.194 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:48.195 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:48.195 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:48.195 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:48.195 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:48.195 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:48.195 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:48.195 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:48.195 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:48.231 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:48.231 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:48.232 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:48.232 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:48.232 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:48.232 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:48.232 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:48.232 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:48.232 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:48.232 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:48.263 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:48.263 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:48.263 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:48.263 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:48.263 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:48.263 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:48.263 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:48.263 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:48.263 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:48.263 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:48.298 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:48.298 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:48.298 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:48.298 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:48.298 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:48.298 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:48.298 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:48.298 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:48.298 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:48.298 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:48.329 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:48.329 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:48.329 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:48.329 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:48.329 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:48.329 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:48.329 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:48.329 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:48.329 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:48.329 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:48.362 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:48.362 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:48.362 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:48.362 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:48.362 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:48.362 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:48.362 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:48.362 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:48.362 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:48.362 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:48.395 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:48.396 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:48.396 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:48.396 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:48.396 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:48.396 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:48.396 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:48.396 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:48.396 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:48.396 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:48.427 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:48.427 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:48.427 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:48.427 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:48.427 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:48.427 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:48.428 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:48.428 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:48.428 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:48.428 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:48.466 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:48.466 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:48.466 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:48.466 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:48.466 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:48.466 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:48.466 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:48.466 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:48.466 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:48.466 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:48.509 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:48.509 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:48.509 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:48.509 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:48.509 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:48.509 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:48.509 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:48.509 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:48.509 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:48.510 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:48.534 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:48.534 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:48.534 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:48.534 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:48.534 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:48.534 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:48.534 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:48.534 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:48.534 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:48.534 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:48.564 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:48.564 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:48.564 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:48.564 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:48.564 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:48.564 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:48.564 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:48.564 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:48.564 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:48.564 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:48.600 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:48.600 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:48.600 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:48.600 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:48.600 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:48.600 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:48.600 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:48.600 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:48.600 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:48.600 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:48.631 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:48.631 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:48.632 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:48.632 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:48.632 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:48.632 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:48.632 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:48.632 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:48.632 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:48.632 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:48.658 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:48.658 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:48.658 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:48.658 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:48.658 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:48.658 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:48.658 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:48.658 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:48.658 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:48.658 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:48.698 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:48.698 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:48.698 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:48.698 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:48.698 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:48.698 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:48.698 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:48.698 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:48.698 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:48.698 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:48.731 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:48.731 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:48.731 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:48.731 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:48.731 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:48.731 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:48.731 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:48.731 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:48.731 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:48.731 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:48.766 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:48.766 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:48.766 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:48.766 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:48.766 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:48.766 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:48.766 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:48.766 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:48.766 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:48.766 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:48.800 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:48.800 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:48.800 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:48.800 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:48.800 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:48.801 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:48.801 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:48.801 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:48.801 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:48.801 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:48.835 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:48.835 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:48.835 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:48.835 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:48.835 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:48.835 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:48.835 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:48.835 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:48.835 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:48.835 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:48.868 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:48.868 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:48.868 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:48.868 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:48.868 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:48.868 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:48.868 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:48.868 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:48.868 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:48.868 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:48.898 27052 27086 W System.err: java.net.SocketException: Network is unreachable
+11-26 14:05:48.898 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 14:05:48.898 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 14:05:48.898 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 14:05:48.898 27052 27086 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 14:05:48.898 27052 27086 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 14:05:48.898 27052 27086 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 14:05:48.898 27052 27086 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 14:05:48.898 27052 27086 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 14:05:48.898 27052 27086 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 14:05:49.212 27052 27063 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 14:05:49.229 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:49.229 27052 27061 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 6 lines
+11-26 14:05:49.230 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:49.546 27052 27086 D Evaluation: 2 res for frame 303 received at 1574769949546
+11-26 14:05:50.092 27052 27052 D Poster  : At 1574769950092 location is 65.05792799978879 (latitude), and 25.46990599991731 (longitude)
+11-26 14:05:50.096 27052 27052 D Poster  : Connected to mobile network 20
+11-26 14:05:50.351 27052 27063 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 14:05:50.374 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:50.376 27052 27061 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 34 lines
+11-26 14:05:50.376 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:50.496 27052 27052 V InputMethodManager: Reporting focus gain, without startInput
+11-26 14:05:51.468 27052 27063 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 14:05:51.493 27052 27061 W System  : A resource failed to call close. 
+11-26 14:05:51.498 27052 27061 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 30 lines
+11-26 14:05:51.498 27052 27061 W System  : A resource failed to call close. 

@@ -1,0 +1,45 @@
+--------- beginning of main
+11-26 14:02:43.814 25872 25872 W logcat  : type=1400 audit(0.0:11413): avc: granted { create } for name="logcat_1574769763802.txt" scontext=u:r:untrusted_app:s0:c147,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0:c147,c256,c512,c768 tclass=file
+11-26 14:02:43.816 25849 25849 I MultiDex: Installing application
+11-26 14:02:43.816 25849 25849 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+--------- beginning of system
+11-26 14:02:43.819 25849 25849 V ActivityThread: callActivityOnCreate
+11-26 14:02:43.819 25849 25849 I Poster  :  onCreate() called.
+11-26 14:02:43.822 25849 25849 I HwApsImpl: APS: new HwApsImpl created
+11-26 14:02:43.828 25849 25849 V HwWidgetFactory: : successes to get AllImpl object and return....
+11-26 14:02:43.835 25849 25849 D OpenGLRenderer: Skia GL Pipeline
+11-26 14:02:43.854 25849 25849 D Poster  : Server details are IP 193.166.28.132 and port 52727
+11-26 14:02:43.859 25849 25849 D Poster  : Server bound to IP 193.166.28.132 and port 52727
+11-26 14:02:43.863 25849 25849 D ActivityThread: add activity client record, r= ActivityRecord{2c6908f token=android.os.BinderProxy@442f816 {symlab.cloudridar.arhud/symlab.ARHUD.MainActivity}} token= android.os.BinderProxy@442f816
+11-26 14:02:43.866 25849 25849 I Poster  :  onStart() called.
+11-26 14:02:43.866 25849 25849 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-26 14:02:43.867 25849 25849 I Poster  :  onResume() called.
+11-26 14:02:43.871 25849 25849 I PermissionManager: camera remind result:true
+11-26 14:02:43.871 25849 25849 I Camera  : open camera: 0, package name: symlab.cloudridar.arhud
+11-26 14:02:43.871 25849 25849 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 25849 ,uidOf3RdApk: 10147 ,permType: 0 ,permCfg: 1
+11-26 14:02:43.872 25849 25849 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = true
+11-26 14:02:43.882 25849 25849 D ActivityThread: isOptEnabled=false isWechatScanOpt=false
+11-26 14:02:43.884 25849 25849 I HwSecImmHelper: mSecurityInputMethodService is null
+11-26 14:02:43.889 25849 25849 D OpenGLRenderer:   HWUI Binary is  enabled
+11-26 14:02:43.915 25849 25901 D HiTouch_PressGestureDetector: onAttached, package=symlab.cloudridar.arhud, windowType=1, mHiTouchRestricted=false
+11-26 14:02:43.923 25849 25900 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-26 14:02:43.923 25849 25900 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-26 14:02:43.924 25849 25900 I iGraphics: [0020080c] pn: symlab.cloudridar.arhud, p: 25849
+11-26 14:02:43.924 25849 25900 I OpenGLRenderer: Initialized EGL, version 1.4, mEglDisplay 0x1
+11-26 14:02:43.924 25849 25900 D OpenGLRenderer: Swap behavior 2
+11-26 14:02:43.933 25849 25900 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+11-26 14:02:43.943 25849 25849 I Poster  :  surfaceCreated() called.
+11-26 14:02:43.943 25849 25849 I Poster  : initPreview() called
+11-26 14:02:43.948 25849 25849 I PermissionManager: camera remind result:true
+11-26 14:02:43.952 25849 25849 I Poster  :  surfaceChanged() called.
+11-26 14:02:43.967 25849 25849 W InputMethodManager: startInputReason = 1
+11-26 14:02:43.975 25849 25849 W InputMethodManager: startInputReason = 5
+11-26 14:02:44.298 25849 25860 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 14:02:44.307 25849 25858 W System  : A resource failed to call close. 
+11-26 14:02:44.307 25849 25858 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-26 14:02:44.307 25849 25858 W System  : A resource failed to call close. 
+11-26 14:02:45.049 25849 25883 D Evaluation: 2 res for frame 6 received at 1574769765049
+11-26 14:02:45.403 25849 25860 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 14:02:45.421 25849 25858 W System  : A resource failed to call close. 
+11-26 14:02:45.423 25849 25858 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 30 lines
+11-26 14:02:45.423 25849 25858 W System  : A resource failed to call close. 

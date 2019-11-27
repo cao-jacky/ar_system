@@ -290,10 +290,10 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
 
             frameID++;
 
-            long time= System.currentTimeMillis();
-            timeCaptured = (double)time;
-            timeSend = (double)time;
-            ARManager.getInstance().recognizeTime(frameID, data, timeCaptured, timeSend);
+//            long time= System.currentTimeMillis();
+//            timeCaptured = (double)time;
+//            timeSend = (double)time;
+            ARManager.getInstance().recognizeTime(frameID, data);//, timeCaptured, timeSend);
             ARManager.getInstance().driveFrame(data);
             mDraw.invalidate();
         }

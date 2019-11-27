@@ -1,0 +1,43 @@
+--------- beginning of main
+11-26 12:18:12.490  4292  4292 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-26 12:18:12.500  4292  4354 D ZrHung.AppEyeUiProbe: Runnable thread started.
+11-26 12:18:12.500  4292  4354 D IMonitor: Load library imonitor_jni
+11-26 12:18:12.502  4292  4292 I MultiDex: Installing application
+11-26 12:18:12.502  4292  4292 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+11-26 12:18:12.518  4349  4349 W logcat  : type=1400 audit(0.0:424): avc: granted { create } for name="logcat_1574763492474.txt" scontext=u:r:untrusted_app:s0:c147,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0:c147,c256,c512,c768 tclass=file
+--------- beginning of system
+11-26 12:18:12.518  4292  4292 V ActivityThread: callActivityOnCreate
+11-26 12:18:12.521  4292  4292 I Poster  :  onCreate() called.
+11-26 12:18:12.524  4292  4292 I HwApsImpl: APS: new HwApsImpl created
+11-26 12:18:12.536  4292  4341 E AwareLog: AtomicFileUtils: readFileLines file not exist: android.util.AtomicFile@b4bb76d
+11-26 12:18:12.542  4292  4354 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0102]
+11-26 12:18:12.542  4292  4354 W ZrHung.AppEyeUiProbe: Failed to get config from zrhung
+11-26 12:18:12.543  4292  4292 V HwWidgetFactory: : successes to get AllImpl object and return....
+11-26 12:18:12.544  4292  4341 E AwareLog: AtomicFileUtils: readFileLines file not exist: android.util.AtomicFile@f3be433
+11-26 12:18:12.551  4292  4292 D OpenGLRenderer: Skia GL Pipeline
+11-26 12:18:12.578  4292  4292 D Poster  : Server details are IP 193.166.28.132 and port 52727
+11-26 12:18:12.583  4292  4292 D Poster  : Server bound to IP 193.166.28.132 and port 52727
+11-26 12:18:12.587  4292  4292 D ActivityThread: add activity client record, r= ActivityRecord{2c6908f token=android.os.BinderProxy@4a2b1d8 {symlab.cloudridar.arhud/symlab.ARHUD.MainActivity}} token= android.os.BinderProxy@4a2b1d8
+11-26 12:18:12.590  4292  4292 I Poster  :  onStart() called.
+11-26 12:18:12.590  4292  4292 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-26 12:18:12.593  4292  4292 I Poster  :  onResume() called.
+11-26 12:18:12.604  4292  4292 I PermissionManager: camera remind result:true
+11-26 12:18:12.604  4292  4292 I Camera  : open camera: 0, package name: symlab.cloudridar.arhud
+11-26 12:18:12.605  4292  4292 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 4292 ,uidOf3RdApk: 10147 ,permType: 0 ,permCfg: 1
+11-26 12:18:12.606  4292  4292 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = true
+11-26 12:18:12.624  4292  4292 D ActivityThread: isOptEnabled=false isWechatScanOpt=false
+11-26 12:18:12.636  4292  4292 I HwSecImmHelper: mSecurityInputMethodService is null
+11-26 12:18:12.648  4292  4292 D OpenGLRenderer:   HWUI Binary is  enabled
+11-26 12:18:12.670  4292  4457 D HiTouch_PressGestureDetector: onAttached, package=symlab.cloudridar.arhud, windowType=1, mHiTouchRestricted=false
+11-26 12:18:12.682  4292  4448 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-26 12:18:12.682  4292  4448 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-26 12:18:12.682  4292  4448 I iGraphics: [0020080c] pn: symlab.cloudridar.arhud, p: 4292
+11-26 12:18:12.682  4292  4448 I OpenGLRenderer: Initialized EGL, version 1.4, mEglDisplay 0x1
+11-26 12:18:12.682  4292  4448 D OpenGLRenderer: Swap behavior 2
+11-26 12:18:12.692  4292  4448 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+11-26 12:18:12.693  4292  4292 I Poster  :  surfaceCreated() called.
+11-26 12:18:12.693  4292  4292 I Poster  : initPreview() called
+11-26 12:18:12.698  4292  4292 I PermissionManager: camera remind result:true
+11-26 12:18:12.724  4292  4292 I Poster  :  surfaceChanged() called.
+11-26 12:18:12.742  4292  4292 W InputMethodManager: startInputReason = 1
+11-26 12:18:12.766  4292  4292 W InputMethodManager: startInputReason = 5

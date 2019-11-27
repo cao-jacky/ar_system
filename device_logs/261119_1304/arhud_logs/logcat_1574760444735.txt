@@ -1,0 +1,821 @@
+--------- beginning of main
+11-26 11:27:24.742  9828  9853 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0102]
+11-26 11:27:24.742  9828  9853 W ZrHung.AppEyeUiProbe: Failed to get config from zrhung
+11-26 11:27:24.745  9851  9851 W logcat  : type=1400 audit(0.0:70896): avc: granted { create } for name="logcat_1574760444735.txt" scontext=u:r:untrusted_app:s0:c147,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0:c147,c256,c512,c768 tclass=file
+11-26 11:27:24.755  9828  9828 I MultiDex: Installing application
+11-26 11:27:24.756  9828  9828 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+--------- beginning of system
+11-26 11:27:24.759  9828  9828 V ActivityThread: callActivityOnCreate
+11-26 11:27:24.759  9828  9828 I Poster  :  onCreate() called.
+11-26 11:27:24.762  9828  9828 I HwApsImpl: APS: new HwApsImpl created
+11-26 11:27:24.768  9828  9828 V HwWidgetFactory: : successes to get AllImpl object and return....
+11-26 11:27:24.775  9828  9828 D OpenGLRenderer: Skia GL Pipeline
+11-26 11:27:24.795  9828  9828 D Poster  : Server details are IP 193.166.28.132 and port 52727
+11-26 11:27:24.800  9828  9828 D Poster  : Server bound to IP 193.166.28.132 and port 52727
+11-26 11:27:24.805  9828  9828 D ActivityThread: add activity client record, r= ActivityRecord{a00892 token=android.os.BinderProxy@a805765 {symlab.cloudridar.arhud/symlab.ARHUD.MainActivity}} token= android.os.BinderProxy@a805765
+11-26 11:27:24.807  9828  9828 I Poster  :  onStart() called.
+11-26 11:27:24.807  9828  9828 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-26 11:27:24.809  9828  9828 I Poster  :  onResume() called.
+11-26 11:27:24.812  9828  9828 I PermissionManager: camera remind result:true
+11-26 11:27:24.812  9828  9828 I Camera  : open camera: 0, package name: symlab.cloudridar.arhud
+11-26 11:27:24.812  9828  9828 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 9828 ,uidOf3RdApk: 10147 ,permType: 0 ,permCfg: 1
+11-26 11:27:24.813  9828  9828 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = true
+11-26 11:27:24.823  9828  9828 D ActivityThread: isOptEnabled=false isWechatScanOpt=false
+11-26 11:27:24.825  9828  9828 I HwSecImmHelper: mSecurityInputMethodService is null
+11-26 11:27:24.831  9828  9828 D OpenGLRenderer:   HWUI Binary is  enabled
+11-26 11:27:24.850  9828  9881 D HiTouch_PressGestureDetector: onAttached, package=symlab.cloudridar.arhud, windowType=1, mHiTouchRestricted=false
+11-26 11:27:24.859  9828  9880 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-26 11:27:24.859  9828  9880 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-26 11:27:24.860  9828  9880 I iGraphics: [0020080c] pn: symlab.cloudridar.arhud, p: 9828
+11-26 11:27:24.860  9828  9880 I OpenGLRenderer: Initialized EGL, version 1.4, mEglDisplay 0x1
+11-26 11:27:24.860  9828  9880 D OpenGLRenderer: Swap behavior 2
+11-26 11:27:24.869  9828  9880 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+11-26 11:27:24.880  9828  9828 I Poster  :  surfaceCreated() called.
+11-26 11:27:24.880  9828  9828 I Poster  : initPreview() called
+11-26 11:27:24.882  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:27:24.885  9828  9828 I PermissionManager: camera remind result:true
+11-26 11:27:24.892  9828  9828 I Poster  :  surfaceChanged() called.
+11-26 11:27:24.896  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:24.907  9828  9828 W InputMethodManager: startInputReason = 1
+11-26 11:27:24.916  9828  9828 D Poster  : At 1574760444915 location is 65.05804334022059 (latitude), and 25.469060798468075 (longitude)
+11-26 11:27:24.918  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:24.920  9828  9828 W InputMethodManager: startInputReason = 5
+11-26 11:27:25.865  9828  9828 D Poster  : At 1574760445865 location is 65.05804942728969 (latitude), and 25.469082351556278 (longitude)
+11-26 11:27:25.866  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:26.786  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:27:26.800  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:26.803  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 43 lines
+11-26 11:27:26.803  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:26.881  9828  9828 D Poster  : At 1574760446881 location is 65.05805139154722 (latitude), and 25.469085006066283 (longitude)
+11-26 11:27:26.883  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:27.875  9828  9828 D Poster  : At 1574760447875 location is 65.05805335118295 (latitude), and 25.469082024104825 (longitude)
+11-26 11:27:27.877  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:28.395  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:27:28.415  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:28.417  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 41 lines
+11-26 11:27:28.417  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:28.874  9828  9828 D Poster  : At 1574760448873 location is 65.05806298532015 (latitude), and 25.469067363913624 (longitude)
+11-26 11:27:28.876  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:29.733  9828  9828 I AwareBitmapCacher: init lrucache size: 2097152 pid=9828
+11-26 11:27:29.884  9828  9828 D Poster  : At 1574760449884 location is 65.05806617581572 (latitude), and 25.469062508960853 (longitude)
+11-26 11:27:29.887  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:30.001  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:27:30.017  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:30.023  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 45 lines
+11-26 11:27:30.023  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:30.885  9828  9828 D Poster  : At 1574760450885 location is 65.05808844863611 (latitude), and 25.469028616557555 (longitude)
+11-26 11:27:30.887  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:31.524  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:27:31.545  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:31.548  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 43 lines
+11-26 11:27:31.548  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:31.884  9828  9828 D Poster  : At 1574760451883 location is 65.05809426044475 (latitude), and 25.46905022131505 (longitude)
+11-26 11:27:31.886  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:32.887  9828  9828 D Poster  : At 1574760452887 location is 65.05810114694991 (latitude), and 25.469067443542112 (longitude)
+11-26 11:27:32.891  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:32.912  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:27:32.927  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:32.927  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 5 lines
+11-26 11:27:32.928  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:32.928  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:32.928  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:32.928  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:32.928  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:32.928  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:32.929  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:32.929  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-26 11:27:32.929  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:32.929  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:32.929  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:32.929  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:32.929  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:32.930  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:32.930  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:32.930  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:32.930  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:32.931  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 6 lines
+11-26 11:27:32.931  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:32.931  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:32.932  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 9 lines
+11-26 11:27:32.932  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:33.875  9828  9828 D Poster  : At 1574760453875 location is 65.0581238080372 (latitude), and 25.469032960299874 (longitude)
+11-26 11:27:33.877  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:34.217  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:27:34.236  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:34.236  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-26 11:27:34.237  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:34.237  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:34.238  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 31 lines
+11-26 11:27:34.239  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:34.239  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:34.239  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:34.879  9828  9828 D Poster  : At 1574760454878 location is 65.05813410392355 (latitude), and 25.469006063353255 (longitude)
+11-26 11:27:34.882  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:35.617  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:27:35.641  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:35.642  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-26 11:27:35.642  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:35.642  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:35.642  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:35.643  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:35.643  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:35.643  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:35.644  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:35.644  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:35.644  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:35.644  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:35.647  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 25 lines
+11-26 11:27:35.647  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:35.891  9828  9828 D Poster  : At 1574760455891 location is 65.05813824633303 (latitude), and 25.468942973746753 (longitude)
+11-26 11:27:35.895  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:36.877  9828  9828 D Poster  : At 1574760456877 location is 65.05813175057274 (latitude), and 25.468904668524385 (longitude)
+11-26 11:27:36.878  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:37.234  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:27:37.268  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:37.269  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 5 lines
+11-26 11:27:37.269  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:37.269  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:37.270  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:37.270  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:37.270  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:37.276  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 36 lines
+11-26 11:27:37.276  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:37.879  9828  9828 D Poster  : At 1574760457879 location is 65.05813640403602 (latitude), and 25.46889873680565 (longitude)
+11-26 11:27:37.881  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:38.878  9828  9828 D Poster  : At 1574760458878 location is 65.05812448259253 (latitude), and 25.468846664954995 (longitude)
+11-26 11:27:38.880  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:38.984  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:27:39.011  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:39.014  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 18 lines
+11-26 11:27:39.014  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:39.014  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:39.014  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:39.015  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:39.015  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:39.015  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-26 11:27:39.015  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:39.015  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:39.015  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:39.015  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-26 11:27:39.016  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:39.016  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:39.016  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:39.016  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-26 11:27:39.016  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:39.018  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:39.018  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:39.018  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:39.018  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:39.019  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:39.021  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 6 lines
+11-26 11:27:39.021  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:39.888  9828  9828 D Poster  : At 1574760459888 location is 65.05810894705768 (latitude), and 25.468778807879907 (longitude)
+11-26 11:27:39.891  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:40.384  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:27:40.412  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:40.412  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:40.412  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:40.413  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:40.417  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 35 lines
+11-26 11:27:40.417  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:40.885  9828  9828 D Poster  : At 1574760460884 location is 65.05810683355628 (latitude), and 25.468762818666402 (longitude)
+11-26 11:27:40.888  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:41.664  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:27:41.688  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:41.690  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 34 lines
+11-26 11:27:41.690  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:41.870  9828  9828 D Poster  : At 1574760461870 location is 65.05811604767551 (latitude), and 25.468721574675218 (longitude)
+11-26 11:27:41.872  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:41.976  9828  9862 W System.err: java.net.SocketException: Message too long
+11-26 11:27:41.976  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 11:27:41.976  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 11:27:41.976  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 11:27:41.976  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 11:27:41.976  9828  9862 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 11:27:41.976  9828  9862 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 11:27:41.976  9828  9862 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 11:27:41.976  9828  9862 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 11:27:41.976  9828  9862 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 11:27:42.507  9828  9828 D stylus  : init stylus touchlistener.
+11-26 11:27:42.514  9828  9828 W Settings: Setting device_provisioned has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+11-26 11:27:42.516  9828  9828 V HiTouch_HiTouchSensor: User setup is finished.
+11-26 11:27:42.644  9828  9828 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:53.711517, limit is:60The moving distance of Y is:61.678284, limit is:60
+11-26 11:27:42.874  9828  9828 D Poster  : At 1574760462874 location is 65.05813791891913 (latitude), and 25.468711199758708 (longitude)
+11-26 11:27:42.876  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:43.887  9828  9828 D Poster  : At 1574760463886 location is 65.05813791891913 (latitude), and 25.468711199758708 (longitude)
+11-26 11:27:43.892  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:44.476  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:27:44.500  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:44.504  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 57 lines
+11-26 11:27:44.504  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:44.896  9828  9828 D Poster  : At 1574760464895 location is 65.058132466147 (latitude), and 25.468770767631842 (longitude)
+11-26 11:27:44.898  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:45.288  9828  9828 W HiTouch_PressGestureDetector: HiTouch Miss: Too large time interval(TwoFingers), 2771
+11-26 11:27:45.897  9828  9828 D Poster  : At 1574760465897 location is 65.05812899029945 (latitude), and 25.46883510161966 (longitude)
+11-26 11:27:45.898  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:46.178  9828  9862 W System.err: java.net.SocketException: Message too long
+11-26 11:27:46.178  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 11:27:46.178  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 11:27:46.178  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 11:27:46.178  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 11:27:46.178  9828  9862 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 11:27:46.178  9828  9862 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 11:27:46.178  9828  9862 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 11:27:46.178  9828  9862 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 11:27:46.178  9828  9862 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 11:27:46.209  9828  9862 W System.err: java.net.SocketException: Message too long
+11-26 11:27:46.209  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 11:27:46.209  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 11:27:46.209  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 11:27:46.209  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 11:27:46.209  9828  9862 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 11:27:46.209  9828  9862 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 11:27:46.209  9828  9862 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 11:27:46.209  9828  9862 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 11:27:46.209  9828  9862 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 11:27:46.423  9828  9862 W System.err: java.net.SocketException: Message too long
+11-26 11:27:46.424  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 11:27:46.424  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 11:27:46.424  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 11:27:46.424  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 11:27:46.424  9828  9862 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 11:27:46.424  9828  9862 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 11:27:46.424  9828  9862 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 11:27:46.424  9828  9862 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 11:27:46.424  9828  9862 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 11:27:46.443  9828  9862 W System.err: java.net.SocketException: Message too long
+11-26 11:27:46.443  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 11:27:46.443  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 11:27:46.443  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 11:27:46.443  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 11:27:46.443  9828  9862 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 11:27:46.443  9828  9862 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 11:27:46.443  9828  9862 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 11:27:46.443  9828  9862 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 11:27:46.443  9828  9862 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 11:27:46.512  9828  9862 W System.err: java.net.SocketException: Message too long
+11-26 11:27:46.512  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 11:27:46.512  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 11:27:46.512  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 11:27:46.512  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 11:27:46.512  9828  9862 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 11:27:46.512  9828  9862 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 11:27:46.512  9828  9862 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 11:27:46.512  9828  9862 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 11:27:46.512  9828  9862 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 11:27:46.554  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:27:46.571  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:46.573  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 36 lines
+11-26 11:27:46.573  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:46.579  9828  9862 W System.err: java.net.SocketException: Message too long
+11-26 11:27:46.579  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 11:27:46.579  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 11:27:46.579  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 11:27:46.579  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 11:27:46.579  9828  9862 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 11:27:46.579  9828  9862 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 11:27:46.579  9828  9862 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 11:27:46.579  9828  9862 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 11:27:46.580  9828  9862 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 11:27:46.616  9828  9862 W System.err: java.net.SocketException: Message too long
+11-26 11:27:46.616  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 11:27:46.616  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 11:27:46.616  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 11:27:46.616  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 11:27:46.616  9828  9862 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 11:27:46.616  9828  9862 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 11:27:46.616  9828  9862 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 11:27:46.616  9828  9862 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 11:27:46.616  9828  9862 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 11:27:46.897  9828  9828 D Poster  : At 1574760466897 location is 65.05813205871964 (latitude), and 25.46889853542258 (longitude)
+11-26 11:27:46.900  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:47.549  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:27:47.565  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:47.566  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 26 lines
+11-26 11:27:47.566  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:47.900  9828  9828 D Poster  : At 1574760467900 location is 65.05812394791108 (latitude), and 25.468944862681433 (longitude)
+11-26 11:27:47.902  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:48.902  9828  9828 D Poster  : At 1574760468902 location is 65.05812079602131 (latitude), and 25.46907698422105 (longitude)
+11-26 11:27:48.904  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:49.012  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:27:49.029  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:49.035  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 42 lines
+11-26 11:27:49.035  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:49.897  9828  9828 D Poster  : At 1574760469897 location is 65.05811961430243 (latitude), and 25.469140772460356 (longitude)
+11-26 11:27:49.901  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:50.453  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:27:50.481  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:50.487  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 38 lines
+11-26 11:27:50.487  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:50.893  9828  9828 D Poster  : At 1574760470892 location is 65.0581204664839 (latitude), and 25.469204590232223 (longitude)
+11-26 11:27:50.896  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:51.769  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:27:51.791  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:51.798  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 35 lines
+11-26 11:27:51.798  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:51.893  9828  9828 D Poster  : At 1574760471892 location is 65.05812224057658 (latitude), and 25.4692641423962 (longitude)
+11-26 11:27:51.895  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:52.893  9828  9828 D Poster  : At 1574760472892 location is 65.05810998836176 (latitude), and 25.46928293603074 (longitude)
+11-26 11:27:52.894  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:53.189  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:27:53.214  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:53.214  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:53.214  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-26 11:27:53.214  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:53.215  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:53.215  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-26 11:27:53.215  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:53.215  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:53.215  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:53.215  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:53.215  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:53.216  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 9 lines
+11-26 11:27:53.216  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:53.216  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:53.216  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 9 lines
+11-26 11:27:53.216  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:53.216  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:53.216  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-26 11:27:53.217  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:53.217  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:53.217  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 5 lines
+11-26 11:27:53.217  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:53.893  9828  9828 D Poster  : At 1574760473893 location is 65.05811115886479 (latitude), and 25.469295172433487 (longitude)
+11-26 11:27:53.896  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:54.889  9828  9828 D Poster  : At 1574760474888 location is 65.05811001398176 (latitude), and 25.46930242289139 (longitude)
+11-26 11:27:54.890  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:54.961  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:27:54.988  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:55.001  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 47 lines
+11-26 11:27:55.002  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:55.899  9828  9828 D Poster  : At 1574760475899 location is 65.0581071416581 (latitude), and 25.469310200263195 (longitude)
+11-26 11:27:55.901  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:56.903  9828  9828 D Poster  : At 1574760476903 location is 65.05810373368251 (latitude), and 25.46931936294613 (longitude)
+11-26 11:27:56.905  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:56.931  9828  9828 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:51.908447, limit is:60The moving distance of Y is:89.50446, limit is:60
+11-26 11:27:57.262  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:27:57.280  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:57.283  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 54 lines
+11-26 11:27:57.283  9828  9837 W System  : A resource failed to call close. 
+11-26 11:27:57.895  9828  9828 D Poster  : At 1574760477894 location is 65.058101257376 (latitude), and 25.46933683298283 (longitude)
+11-26 11:27:57.897  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:58.892  9828  9828 D Poster  : At 1574760478892 location is 65.05810128167371 (latitude), and 25.469345848273804 (longitude)
+11-26 11:27:58.895  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:27:59.896  9828  9828 D Poster  : At 1574760479895 location is 65.05810370396082 (latitude), and 25.469353132697957 (longitude)
+11-26 11:27:59.897  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:00.157  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:28:00.170  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:00.172  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 45 lines
+11-26 11:28:00.172  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:00.904  9828  9828 D Poster  : At 1574760480904 location is 65.05810664159507 (latitude), and 25.469355028817876 (longitude)
+11-26 11:28:00.908  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:01.895  9828  9828 D Poster  : At 1574760481895 location is 65.05810648812016 (latitude), and 25.469358392991307 (longitude)
+11-26 11:28:01.898  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:02.903  9828  9828 D Poster  : At 1574760482902 location is 65.05810492412245 (latitude), and 25.469362966194186 (longitude)
+11-26 11:28:02.905  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:02.911  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:28:02.935  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:02.938  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 47 lines
+11-26 11:28:02.938  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:03.893  9828  9828 D Poster  : At 1574760483893 location is 65.05810498819027 (latitude), and 25.469365629059748 (longitude)
+11-26 11:28:03.895  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:04.893  9828  9828 D Poster  : At 1574760484893 location is 65.05810078211346 (latitude), and 25.469371726241437 (longitude)
+11-26 11:28:04.894  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:05.259  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:28:05.280  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:05.283  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 50 lines
+11-26 11:28:05.284  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:05.897  9828  9828 D Poster  : At 1574760485897 location is 65.05809761522696 (latitude), and 25.469403087549434 (longitude)
+11-26 11:28:05.899  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:06.898  9828  9828 D Poster  : At 1574760486897 location is 65.05809473557652 (latitude), and 25.469424195439476 (longitude)
+11-26 11:28:06.899  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:07.028  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:28:07.050  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:07.050  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:07.057  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 47 lines
+11-26 11:28:07.057  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:07.903  9828  9828 D Poster  : At 1574760487903 location is 65.05809124694615 (latitude), and 25.469436925581295 (longitude)
+11-26 11:28:07.904  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:08.899  9828  9828 D Poster  : At 1574760488899 location is 65.05807983437785 (latitude), and 25.469450662583142 (longitude)
+11-26 11:28:08.902  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:09.904  9828  9828 D Poster  : At 1574760489904 location is 65.05807051879984 (latitude), and 25.46946187548351 (longitude)
+11-26 11:28:09.908  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:10.131  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:28:10.161  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:10.165  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 52 lines
+11-26 11:28:10.165  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:10.907  9828  9828 D Poster  : At 1574760490907 location is 65.05806809276719 (latitude), and 25.469471637056447 (longitude)
+11-26 11:28:10.910  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:11.903  9828  9828 D Poster  : At 1574760491903 location is 65.05806809276719 (latitude), and 25.469471637056447 (longitude)
+11-26 11:28:11.905  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:12.894  9828  9828 D Poster  : At 1574760492894 location is 65.05806163009369 (latitude), and 25.469490272951354 (longitude)
+11-26 11:28:12.897  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:13.144  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:28:13.166  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:13.171  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 57 lines
+11-26 11:28:13.171  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:13.892  9828  9828 D Poster  : At 1574760493891 location is 65.0580565908508 (latitude), and 25.469505956997086 (longitude)
+11-26 11:28:13.893  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:14.902  9828  9828 D Poster  : At 1574760494901 location is 65.05805159729613 (latitude), and 25.469509939300433 (longitude)
+11-26 11:28:14.904  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:15.896  9828  9828 D Poster  : At 1574760495896 location is 65.05804532687809 (latitude), and 25.46950688327976 (longitude)
+11-26 11:28:15.898  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:16.118  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:28:16.147  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:16.154  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 55 lines
+11-26 11:28:16.154  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:16.906  9828  9828 D Poster  : At 1574760496906 location is 65.05803581310171 (latitude), and 25.469517863656343 (longitude)
+11-26 11:28:16.908  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:17.896  9828  9828 D Poster  : At 1574760497896 location is 65.0580282319056 (latitude), and 25.469532402218693 (longitude)
+11-26 11:28:17.901  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:18.782  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:28:18.806  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:18.810  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 50 lines
+11-26 11:28:18.810  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:18.907  9828  9828 D Poster  : At 1574760498907 location is 65.05802099299089 (latitude), and 25.469543087284933 (longitude)
+11-26 11:28:18.909  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:19.900  9828  9828 D Poster  : At 1574760499899 location is 65.05801456166316 (latitude), and 25.469550773502462 (longitude)
+11-26 11:28:19.902  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:20.900  9828  9828 D Poster  : At 1574760500899 location is 65.05801456166316 (latitude), and 25.469550773502462 (longitude)
+11-26 11:28:20.902  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:21.054  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:28:21.088  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:21.089  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 16 lines
+11-26 11:28:21.089  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:21.089  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:21.090  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 31 lines
+11-26 11:28:21.091  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:21.898  9828  9828 D Poster  : At 1574760501898 location is 65.05801456166316 (latitude), and 25.469550773502462 (longitude)
+11-26 11:28:21.900  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:22.588  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:28:22.612  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:22.619  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 43 lines
+11-26 11:28:22.619  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:22.895  9828  9828 D Poster  : At 1574760502894 location is 65.05801456166316 (latitude), and 25.469550773502462 (longitude)
+11-26 11:28:22.897  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:23.897  9828  9828 D Poster  : At 1574760503897 location is 65.05801488755229 (latitude), and 25.469550119086147 (longitude)
+11-26 11:28:23.899  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:24.200  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:28:24.234  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:24.238  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 43 lines
+11-26 11:28:24.238  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:24.659  9828  9828 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:25.92688, limit is:60The moving distance of Y is:71.96273, limit is:60
+11-26 11:28:24.896  9828  9828 D Poster  : At 1574760504896 location is 65.05801615164181 (latitude), and 25.469548465846184 (longitude)
+11-26 11:28:24.898  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:25.678  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:28:25.698  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:25.700  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 38 lines
+11-26 11:28:25.700  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:25.893  9828  9828 D Poster  : At 1574760505893 location is 65.05801895197804 (latitude), and 25.46954863028448 (longitude)
+11-26 11:28:25.894  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:26.899  9828  9828 D Poster  : At 1574760506899 location is 65.0580234461965 (latitude), and 25.469549411187433 (longitude)
+11-26 11:28:26.901  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:26.977  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:28:26.996  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:26.998  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 37 lines
+11-26 11:28:26.998  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:27.894  9828  9828 D Poster  : At 1574760507894 location is 65.05802832600598 (latitude), and 25.46956610773873 (longitude)
+11-26 11:28:27.895  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:28.458  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:28:28.476  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:28.478  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 41 lines
+11-26 11:28:28.478  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:28.893  9828  9828 D Poster  : At 1574760508892 location is 65.058031651725 (latitude), and 25.469569104952654 (longitude)
+11-26 11:28:28.894  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:29.894  9828  9828 D Poster  : At 1574760509894 location is 65.05803582294246 (latitude), and 25.469569116190534 (longitude)
+11-26 11:28:29.896  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:29.988  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:28:30.009  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:30.014  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 43 lines
+11-26 11:28:30.014  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:30.881  9828  9828 D Poster  : At 1574760510881 location is 65.05803917160652 (latitude), and 25.469566803115395 (longitude)
+11-26 11:28:30.883  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:31.826  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:28:31.848  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:31.854  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 50 lines
+11-26 11:28:31.854  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:31.894  9828  9828 D Poster  : At 1574760511894 location is 65.05804191451031 (latitude), and 25.469560077260663 (longitude)
+11-26 11:28:31.896  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:32.893  9828  9828 D Poster  : At 1574760512893 location is 65.05804325594441 (latitude), and 25.46955428568205 (longitude)
+11-26 11:28:32.894  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:33.749  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:28:33.771  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:33.777  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 50 lines
+11-26 11:28:33.777  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:33.890  9828  9828 D Poster  : At 1574760513890 location is 65.05804290383782 (latitude), and 25.469549873351703 (longitude)
+11-26 11:28:33.892  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:34.882  9828  9828 D Poster  : At 1574760514882 location is 65.05804150147799 (latitude), and 25.469545075096242 (longitude)
+11-26 11:28:34.884  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:35.296  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:28:35.320  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:35.323  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 26 lines
+11-26 11:28:35.323  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:35.323  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:35.323  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:35.324  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:35.324  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:35.328  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:35.329  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 12 lines
+11-26 11:28:35.329  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:35.877  9828  9828 D Poster  : At 1574760515877 location is 65.0580439391126 (latitude), and 25.46953778963629 (longitude)
+11-26 11:28:35.879  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:36.878  9828  9828 D Poster  : At 1574760516877 location is 65.05804557779676 (latitude), and 25.469527773547366 (longitude)
+11-26 11:28:36.880  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:37.011  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:28:37.044  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:37.044  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 7 lines
+11-26 11:28:37.044  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:37.044  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:37.044  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:37.044  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:37.044  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-26 11:28:37.044  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:37.045  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:37.045  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-26 11:28:37.045  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:37.045  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:37.046  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 29 lines
+11-26 11:28:37.046  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:37.082  9828  9828 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:37.022827, limit is:60The moving distance of Y is:98.564354, limit is:60
+11-26 11:28:37.742  9828  9862 W System.err: java.net.SocketException: Message too long
+11-26 11:28:37.742  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-26 11:28:37.742  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-26 11:28:37.742  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-26 11:28:37.742  9828  9862 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-26 11:28:37.742  9828  9862 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:133)
+11-26 11:28:37.742  9828  9862 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-26 11:28:37.742  9828  9862 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-26 11:28:37.742  9828  9862 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-26 11:28:37.742  9828  9862 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-26 11:28:37.895  9828  9828 D Poster  : At 1574760517895 location is 65.05804872589714 (latitude), and 25.469528335555005 (longitude)
+11-26 11:28:37.897  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:38.366  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:28:38.387  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:38.389  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 36 lines
+11-26 11:28:38.389  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:38.882  9828  9828 D Poster  : At 1574760518882 location is 65.0580500895573 (latitude), and 25.469527047650185 (longitude)
+11-26 11:28:38.884  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:39.444  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:28:39.459  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:39.460  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 30 lines
+11-26 11:28:39.460  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:39.890  9828  9828 D Poster  : At 1574760519890 location is 65.05805339623754 (latitude), and 25.469523467090188 (longitude)
+11-26 11:28:39.891  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:40.888  9828  9828 D Poster  : At 1574760520888 location is 65.05805614614209 (latitude), and 25.46951647089329 (longitude)
+11-26 11:28:40.889  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:41.025  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:28:41.048  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:41.048  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:41.050  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 42 lines
+11-26 11:28:41.050  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:41.890  9828  9828 D Poster  : At 1574760521890 location is 65.0580579907654 (latitude), and 25.4695092549801 (longitude)
+11-26 11:28:41.892  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:42.980  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:28:43.002  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:43.004  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 47 lines
+11-26 11:28:43.005  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:44.412  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:28:44.441  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:44.442  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 10 lines
+11-26 11:28:44.442  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:44.442  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:44.444  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 26 lines
+11-26 11:28:44.444  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:45.996  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:28:46.022  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:46.024  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 25 lines
+11-26 11:28:46.024  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:46.024  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:46.024  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:46.024  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:46.024  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:46.024  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:46.024  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:46.024  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:46.024  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-26 11:28:46.025  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:46.026  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:46.026  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-26 11:28:46.026  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:46.026  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:46.026  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-26 11:28:46.026  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:47.748  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:28:47.781  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:47.781  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 10 lines
+11-26 11:28:47.781  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:47.781  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:47.782  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 9 lines
+11-26 11:28:47.782  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:47.782  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:47.782  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-26 11:28:47.782  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:47.782  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:47.782  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:47.782  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:47.782  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-26 11:28:47.782  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:47.782  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:47.783  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 5 lines
+11-26 11:28:47.783  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:47.783  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:47.783  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-26 11:28:47.783  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:47.783  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:47.783  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:47.783  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 4 lines
+11-26 11:28:47.783  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:49.730  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:28:49.740  9828  9846 I loudridar.arhu: Waiting for a blocking GC ProfileSaver
+11-26 11:28:49.749  9828  9846 I loudridar.arhu: WaitForGcToComplete blocked ProfileSaver on HeapTrim for 8.572ms
+11-26 11:28:49.750  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:49.754  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 54 lines
+11-26 11:28:49.754  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:51.835  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:28:51.861  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:51.861  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-26 11:28:51.861  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:51.861  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:51.861  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:51.862  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-26 11:28:51.862  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:51.862  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:51.862  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-26 11:28:51.862  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:51.862  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:51.862  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:51.862  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:51.863  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:51.864  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 9 lines
+11-26 11:28:51.864  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:51.865  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:51.865  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:51.866  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 10 lines
+11-26 11:28:51.866  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:51.867  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:51.867  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:51.867  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:51.867  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:51.867  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:51.867  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:51.867  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:51.868  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-26 11:28:51.868  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:51.868  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:51.869  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:51.869  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:51.869  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:51.870  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:51.870  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:51.870  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:51.870  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:51.881  9828  9828 D Poster  : At 1574760531881 location is 65.05803396955783 (latitude), and 25.469264736516877 (longitude)
+11-26 11:28:51.886  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:52.884  9828  9828 D Poster  : At 1574760532883 location is 65.05802262296456 (latitude), and 25.469045877553075 (longitude)
+11-26 11:28:52.886  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:53.557  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:28:53.586  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:53.586  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 6 lines
+11-26 11:28:53.586  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:53.586  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:53.586  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:53.587  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 7 lines
+11-26 11:28:53.587  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:53.587  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:53.587  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 4 lines
+11-26 11:28:53.587  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:53.587  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:53.587  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:53.587  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:53.587  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:53.587  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-26 11:28:53.587  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:53.587  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:53.587  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:53.587  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:53.587  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:53.588  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 12 lines
+11-26 11:28:53.588  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:53.588  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:53.588  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-26 11:28:53.588  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:53.888  9828  9828 D Poster  : At 1574760533887 location is 65.05801370104156 (latitude), and 25.469059884705292 (longitude)
+11-26 11:28:53.890  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:54.878  9828  9828 D Poster  : At 1574760534878 location is 65.05800538619883 (latitude), and 25.469100097021563 (longitude)
+11-26 11:28:54.882  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:55.876  9828  9828 D Poster  : At 1574760535876 location is 65.05799295117781 (latitude), and 25.46912399971396 (longitude)
+11-26 11:28:55.879  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:56.134  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:28:56.167  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:56.174  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 72 lines
+11-26 11:28:56.174  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:56.867  9828  9828 D Poster  : At 1574760536867 location is 65.05797092043419 (latitude), and 25.469121290034966 (longitude)
+11-26 11:28:56.870  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:57.873  9828  9828 D Poster  : At 1574760537873 location is 65.05796237419317 (latitude), and 25.469122040262135 (longitude)
+11-26 11:28:57.875  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:58.255  9828  9828 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:9.513397, limit is:60The moving distance of Y is:84.580414, limit is:60
+11-26 11:28:58.674  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:28:58.689  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:58.691  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 70 lines
+11-26 11:28:58.691  9828  9837 W System  : A resource failed to call close. 
+11-26 11:28:58.871  9828  9828 D Poster  : At 1574760538871 location is 65.05793157003741 (latitude), and 25.469105225339565 (longitude)
+11-26 11:28:58.873  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:28:59.885  9828  9828 D Poster  : At 1574760539885 location is 65.05793157003741 (latitude), and 25.469105225339565 (longitude)
+11-26 11:28:59.886  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:29:00.874  9828  9828 D Poster  : At 1574760540874 location is 65.05793157003741 (latitude), and 25.469105225339565 (longitude)
+11-26 11:29:00.876  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:29:01.092  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:29:01.107  9828  9837 W System  : A resource failed to call close. 
+11-26 11:29:01.110  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 67 lines
+11-26 11:29:01.110  9828  9837 W System  : A resource failed to call close. 
+11-26 11:29:01.870  9828  9828 D Poster  : At 1574760541870 location is 65.05783192201775 (latitude), and 25.469086374759705 (longitude)
+11-26 11:29:01.871  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:29:02.181  9828  9828 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:11.514389, limit is:60The moving distance of Y is:78.13594, limit is:60
+11-26 11:29:02.870  9828  9828 D Poster  : At 1574760542870 location is 65.05780703747403 (latitude), and 25.46906198983642 (longitude)
+11-26 11:29:02.872  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:29:03.513  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:29:03.528  9828  9837 W System  : A resource failed to call close. 
+11-26 11:29:03.529  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 27 lines
+11-26 11:29:03.529  9828  9837 W System  : A resource failed to call close. 
+11-26 11:29:03.530  9828  9837 W System  : A resource failed to call close. 
+11-26 11:29:03.530  9828  9837 W System  : A resource failed to call close. 
+11-26 11:29:03.530  9828  9837 W System  : A resource failed to call close. 
+11-26 11:29:03.530  9828  9837 W System  : A resource failed to call close. 
+11-26 11:29:03.530  9828  9837 W System  : A resource failed to call close. 
+11-26 11:29:03.530  9828  9837 W System  : A resource failed to call close. 
+11-26 11:29:03.530  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-26 11:29:03.530  9828  9837 W System  : A resource failed to call close. 
+11-26 11:29:03.530  9828  9837 W System  : A resource failed to call close. 
+11-26 11:29:03.530  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-26 11:29:03.530  9828  9837 W System  : A resource failed to call close. 
+11-26 11:29:03.532  9828  9837 W System  : A resource failed to call close. 
+11-26 11:29:03.533  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 24 lines
+11-26 11:29:03.533  9828  9837 W System  : A resource failed to call close. 
+11-26 11:29:03.866  9828  9828 D Poster  : At 1574760543866 location is 65.05780703747403 (latitude), and 25.46906198983642 (longitude)
+11-26 11:29:03.868  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:29:04.870  9828  9828 D Poster  : At 1574760544870 location is 65.05780703747403 (latitude), and 25.46906198983642 (longitude)
+11-26 11:29:04.872  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:29:05.878  9828  9828 D Poster  : At 1574760545878 location is 65.05775059214294 (latitude), and 25.468982038508127 (longitude)
+11-26 11:29:05.880  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:29:05.931  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:29:05.950  9828  9837 W System  : A resource failed to call close. 
+11-26 11:29:05.952  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 67 lines
+11-26 11:29:05.953  9828  9837 W System  : A resource failed to call close. 
+11-26 11:29:06.872  9828  9828 D Poster  : At 1574760546871 location is 65.05774323896843 (latitude), and 25.468954560059316 (longitude)
+11-26 11:29:06.874  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:29:07.867  9828  9828 D Poster  : At 1574760547867 location is 65.05773589146186 (latitude), and 25.468925813521956 (longitude)
+11-26 11:29:07.870  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:29:08.339  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:29:08.365  9828  9837 W System  : A resource failed to call close. 
+11-26 11:29:08.367  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 48 lines
+11-26 11:29:08.367  9828  9837 W System  : A resource failed to call close. 
+11-26 11:29:08.367  9828  9837 W System  : A resource failed to call close. 
+11-26 11:29:08.368  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 7 lines
+11-26 11:29:08.368  9828  9837 W System  : A resource failed to call close. 
+11-26 11:29:08.368  9828  9837 W System  : A resource failed to call close. 
+11-26 11:29:08.374  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 6 lines
+11-26 11:29:08.374  9828  9837 W System  : A resource failed to call close. 
+11-26 11:29:08.868  9828  9828 D Poster  : At 1574760548868 location is 65.05773318634806 (latitude), and 25.46890714081107 (longitude)
+11-26 11:29:08.872  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:29:09.874  9828  9828 D Poster  : At 1574760549874 location is 65.05773318634806 (latitude), and 25.46890714081107 (longitude)
+11-26 11:29:09.876  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:29:10.068  9828  9828 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:1.1733856, limit is:60The moving distance of Y is:101.14551, limit is:60
+11-26 11:29:10.698  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:29:10.715  9828  9837 W System  : A resource failed to call close. 
+11-26 11:29:10.718  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 66 lines
+11-26 11:29:10.718  9828  9837 W System  : A resource failed to call close. 
+11-26 11:29:10.871  9828  9828 D Poster  : At 1574760550871 location is 65.05773318634806 (latitude), and 25.46890714081107 (longitude)
+11-26 11:29:10.873  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:29:11.870  9828  9828 D Poster  : At 1574760551869 location is 65.05773318634806 (latitude), and 25.46890714081107 (longitude)
+11-26 11:29:11.871  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:29:12.872  9828  9828 D Poster  : At 1574760552871 location is 65.05773318634806 (latitude), and 25.46890714081107 (longitude)
+11-26 11:29:12.874  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:29:13.019  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:29:13.038  9828  9837 W System  : A resource failed to call close. 
+11-26 11:29:13.040  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 64 lines
+11-26 11:29:13.040  9828  9837 W System  : A resource failed to call close. 
+11-26 11:29:13.872  9828  9828 D Poster  : At 1574760553872 location is 65.05773318634806 (latitude), and 25.46890714081107 (longitude)
+11-26 11:29:13.875  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:29:14.093  9828  9828 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:77.13086, limit is:60The moving distance of Y is:25.223907, limit is:60
+11-26 11:29:14.747  9828  9828 I Poster  :  onPause() called.
+11-26 11:29:14.855  9828  9828 I Camera  : close camera: 0, package name: symlab.cloudridar.arhud
+11-26 11:29:14.856  9828  9828 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 9828 ,uidOf3RdApk: 10147 ,permType: 0 ,permCfg: 0
+11-26 11:29:14.858  9828  9828 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = false
+11-26 11:29:14.959  9828  9828 D ZrHung.AppEyeUiProbe: stop checker.
+11-26 11:29:14.983  9828  9828 D Poster  : At 1574760554983 location is 65.05773318634806 (latitude), and 25.46890714081107 (longitude)
+11-26 11:29:14.986  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:29:15.002  9828  9828 I Poster  :  surfaceDestroyed() called.
+11-26 11:29:15.006  9828  9828 D ViewRootImpl[MainActivity]: surface should not be released
+11-26 11:29:15.006  9828  9828 I Poster  :  onStop() called.
+11-26 11:29:15.019  9828  9880 W libEGL  : EGLNativeWindowType 0xe4370008 disconnect failed
+11-26 11:29:15.783  9828  9853 D ZrHung.AppEyeUiProbe: Current Activity:false
+11-26 11:29:15.783  9828  9853 D ZrHung.AppEyeUiProbe: not watching, wait.
+11-26 11:29:15.865  9828  9828 D Poster  : At 1574760555865 location is 65.05773318634806 (latitude), and 25.46890714081107 (longitude)
+11-26 11:29:15.866  9828  9828 D Poster  : Connected to mobile network 20
+11-26 11:29:15.877  9828  9828 D Latitude: status
+11-26 11:29:19.751  9828  9828 I AwareBitmapCacher: handleReleaseCache: pid=9828
+11-26 11:29:19.751  9828  9828 I AwareBitmapCacher: init lrucache size: 2097152 pid=9828
+11-26 11:29:20.010  9828  9839 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-26 11:29:20.037  9828  9837 W System  : A resource failed to call close. 
+11-26 11:29:20.041  9828  9837 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 47 lines
+11-26 11:29:20.041  9828  9837 W System  : A resource failed to call close. 

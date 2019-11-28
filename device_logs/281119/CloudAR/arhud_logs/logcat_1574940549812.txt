@@ -1,0 +1,350 @@
+--------- beginning of main
+11-28 13:29:09.599 27233 27233 I loudridar.arhu: Late-enabling -Xcheck:jni
+11-28 13:29:09.620 27233 27233 I loudridar.arhu: Reinit property: dalvik.vm.checkjni= false
+11-28 13:29:09.628 27233 27233 D ZrHung.AppEyeUiProbe: AppEyeUIP created.
+11-28 13:29:09.632 27233 27233 E libc    : Access denied finding property "runtime.mmitest.isrunning"
+11-28 13:29:09.627 27233 27233 W re-initialized>: type=1400 audit(0.0:35321): avc: denied { read } for name="u:object_r:mmi_prop:s0" dev="tmpfs" ino=16663 scontext=u:r:untrusted_app:s0:c147,c256,c512,c768 tcontext=u:object_r:mmi_prop:s0 tclass=file permissive=0
+--------- beginning of system
+11-28 13:29:09.641 27233 27233 D ActivityThread: Attach thread to application
+11-28 13:29:09.735 27233 27258 I HwApiCacheMangerEx: apicache path=/storage/emulated/0 state=mounted key=symlab.cloudridar.arhud#10147#256
+11-28 13:29:09.736 27233 27258 I HwApiCacheMangerEx: apicache path=/storage/emulated/0 state=mounted key=symlab.cloudridar.arhud#10147#0
+11-28 13:29:09.802 27233 27233 I loudridar.arhu: QarthPatchMonintor::Init
+11-28 13:29:09.802 27233 27233 I loudridar.arhu: 
+11-28 13:29:09.802 27233 27233 I loudridar.arhu: QarthPatchMonintor::StartWatch
+11-28 13:29:09.802 27233 27233 I loudridar.arhu: 
+11-28 13:29:09.802 27233 27233 I loudridar.arhu: QarthPatchMonintor::WatchPackage: /data/hotpatch/fwkhotpatch/
+11-28 13:29:09.803 27233 27233 I loudridar.arhu: 
+11-28 13:29:09.803 27233 27233 I loudridar.arhu: QarthPatchMonintor::CheckAndWatchPatch: /data/hotpatch/fwkhotpatch/symlab.cloudridar.arhud
+11-28 13:29:09.803 27233 27233 I loudridar.arhu: 
+11-28 13:29:09.803 27233 27233 I loudridar.arhu: QarthPatchMonintor::CheckAndWatchPatch: /data/hotpatch/fwkhotpatch/all
+11-28 13:29:09.803 27233 27233 I loudridar.arhu: 
+11-28 13:29:09.803 27233 27233 I loudridar.arhu: QarthPatchMonintor::Run
+11-28 13:29:09.803 27233 27233 I loudridar.arhu: 
+11-28 13:29:09.803 27233 27266 I loudridar.arhu: QarthPatchMonintor::Reading
+11-28 13:29:09.803 27233 27266 I loudridar.arhu: 
+11-28 13:29:09.803 27233 27266 I loudridar.arhu: QarthPatchMonintor::CheckNotifyEvent
+11-28 13:29:09.803 27233 27266 I loudridar.arhu: 
+11-28 13:29:09.803 27233 27266 I loudridar.arhu: QarthPatchMonintor::CheckNotifyEvent before read
+11-28 13:29:09.803 27233 27266 I loudridar.arhu: 
+11-28 13:29:09.806 27233 27233 I MultiDex: VM with version 2.1.0 has multidex support
+11-28 13:29:09.806 27233 27233 I MultiDex: Installing application
+11-28 13:29:09.807 27233 27233 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+11-28 13:29:09.808 27233 27258 I AwareBitmapCacher: init processName:symlab.cloudridar.arhud pid=27233 uid=10147
+11-28 13:29:09.810 27233 27268 E AwareLog: AtomicFileUtils: readFileLines file not exist: android.util.AtomicFile@919d802
+11-28 13:29:09.811 27233 27268 E AwareLog: AtomicFileUtils: readFileLines file not exist: android.util.AtomicFile@35dc513
+11-28 13:29:09.811 27233 27233 I FirebaseInitProvider: FirebaseApp initialization unsuccessful
+11-28 13:29:09.817 27233 27233 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-28 13:29:09.817 27233 27273 D ZrHung.AppEyeUiProbe: Runnable thread started.
+11-28 13:29:09.818 27233 27273 D IMonitor: Load library imonitor_jni
+11-28 13:29:09.820 27233 27273 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0102]
+11-28 13:29:09.820 27233 27273 W ZrHung.AppEyeUiProbe: Failed to get config from zrhung
+11-28 13:29:09.826 27233 27233 I MultiDex: Installing application
+11-28 13:29:09.826 27233 27233 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+11-28 13:29:09.828 27233 27233 V ActivityThread: callActivityOnCreate
+11-28 13:29:09.829 27233 27233 I Poster  :  onCreate() called.
+11-28 13:29:09.827 27271 27271 W logcat  : type=1400 audit(0.0:35322): avc: granted { create } for name="logcat_1574940549812.txt" scontext=u:r:untrusted_app:s0:c147,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0:c147,c256,c512,c768 tclass=file
+11-28 13:29:09.832 27233 27233 I HwApsImpl: APS: new HwApsImpl created
+11-28 13:29:09.838 27233 27233 V HwWidgetFactory: : successes to get AllImpl object and return....
+11-28 13:29:09.845 27233 27233 D OpenGLRenderer: Skia GL Pipeline
+11-28 13:29:09.866 27233 27233 D Poster  : Server details are IP 193.166.28.132 and port 52727
+11-28 13:29:09.870 27233 27233 D Poster  : Server bound to IP 193.166.28.132 and port 52727
+11-28 13:29:09.875 27233 27233 D ActivityThread: add activity client record, r= ActivityRecord{db8bbd token=android.os.BinderProxy@c62e47c {symlab.cloudridar.arhud/symlab.ARHUD.MainActivity}} token= android.os.BinderProxy@c62e47c
+11-28 13:29:09.875 27233 27281 D Evaluation: Frame 0 sent at 1.574940549874E12
+11-28 13:29:09.877 27233 27233 I Poster  :  onStart() called.
+11-28 13:29:09.878 27233 27233 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-28 13:29:09.879 27233 27233 I Poster  :  onResume() called.
+11-28 13:29:09.883 27233 27233 I PermissionManager: camera remind result:true
+11-28 13:29:09.883 27233 27233 I Camera  : open camera: 0, package name: symlab.cloudridar.arhud
+11-28 13:29:09.883 27233 27233 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 27233 ,uidOf3RdApk: 10147 ,permType: 0 ,permCfg: 1
+11-28 13:29:09.884 27233 27233 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = true
+11-28 13:29:09.894 27233 27233 D ActivityThread: isOptEnabled=false isWechatScanOpt=false
+11-28 13:29:09.895 27233 27233 I HwSecImmHelper: mSecurityInputMethodService is null
+11-28 13:29:09.901 27233 27233 D OpenGLRenderer:   HWUI Binary is  enabled
+11-28 13:29:09.920 27233 27299 D HiTouch_PressGestureDetector: onAttached, package=symlab.cloudridar.arhud, windowType=1, mHiTouchRestricted=false
+11-28 13:29:09.931 27233 27297 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-28 13:29:09.931 27233 27297 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-28 13:29:09.931 27233 27297 I iGraphics: [0020080c] pn: symlab.cloudridar.arhud, p: 27233
+11-28 13:29:09.931 27233 27297 I OpenGLRenderer: Initialized EGL, version 1.4, mEglDisplay 0x1
+11-28 13:29:09.931 27233 27297 D OpenGLRenderer: Swap behavior 2
+11-28 13:29:09.939 27233 27297 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+11-28 13:29:09.948 27233 27233 I Poster  :  surfaceCreated() called.
+11-28 13:29:09.948 27233 27233 I Poster  : initPreview() called
+11-28 13:29:09.953 27233 27233 I PermissionManager: camera remind result:true
+11-28 13:29:09.959 27233 27233 I Poster  :  surfaceChanged() called.
+11-28 13:29:09.981 27233 27233 W InputMethodManager: startInputReason = 1
+11-28 13:29:09.997 27233 27233 W InputMethodManager: startInputReason = 5
+11-28 13:29:10.256 27233 27281 D Evaluation: Frame 1 sent at 1.574940550256E12
+11-28 13:29:10.287 27233 27281 D Evaluation: Frame 2 sent at 1.574940550287E12
+11-28 13:29:10.324 27233 27281 D Evaluation: Frame 3 sent at 1.574940550324E12
+11-28 13:29:10.357 27233 27281 D Evaluation: Frame 4 sent at 1.574940550357E12
+11-28 13:29:10.392 27233 27281 D Evaluation: Frame 5 sent at 1.574940550391E12
+11-28 13:29:10.444 27233 27281 D Evaluation: Frame 6 sent at 1.574940550444E12
+11-28 13:29:10.468 27233 27281 D Evaluation: Frame 7 sent at 1.574940550467E12
+11-28 13:29:10.501 27233 27281 D Evaluation: Frame 8 sent at 1.574940550501E12
+11-28 13:29:10.534 27233 27281 D Evaluation: Frame 9 sent at 1.574940550534E12
+11-28 13:29:10.577 27233 27281 D Evaluation: Frame 10 sent at 1.574940550576E12
+11-28 13:29:10.603 27233 27281 D Evaluation: Frame 11 sent at 1.574940550603E12
+11-28 13:29:10.639 27233 27281 D Evaluation: Frame 12 sent at 1.574940550639E12
+11-28 13:29:10.669 27233 27281 D Evaluation: Frame 13 sent at 1.574940550668E12
+11-28 13:29:10.706 27233 27281 D Evaluation: Frame 14 sent at 1.574940550706E12
+11-28 13:29:10.737 27233 27281 D Evaluation: Frame 15 sent at 1.574940550736E12
+11-28 13:29:10.772 27233 27281 D Evaluation: Frame 16 sent at 1.574940550772E12
+11-28 13:29:10.806 27233 27281 D Evaluation: Frame 17 sent at 1.574940550805E12
+11-28 13:29:10.840 27233 27281 D Evaluation: Frame 18 sent at 1.57494055084E12
+11-28 13:29:10.870 27233 27281 D Evaluation: Frame 19 sent at 1.57494055087E12
+11-28 13:29:10.904 27233 27281 D Evaluation: Frame 20 sent at 1.574940550904E12
+11-28 13:29:10.940 27233 27281 D Evaluation: Frame 21 sent at 1.574940550939E12
+11-28 13:29:10.940 27233 27281 D Evaluation: Frame 6 received at 1.57494055094E12
+11-28 13:29:10.940 27233 27281 D Evaluation: 0 res for frame 6 received at 1574940550940
+11-28 13:29:10.971 27233 27281 D Evaluation: Frame 22 sent at 1.574940550971E12
+11-28 13:29:11.009 27233 27281 D Evaluation: Frame 23 sent at 1.574940551008E12
+11-28 13:29:11.038 27233 27281 D Evaluation: Frame 24 sent at 1.574940551038E12
+11-28 13:29:11.075 27233 27281 D Evaluation: Frame 25 sent at 1.574940551075E12
+11-28 13:29:11.122 27233 27245 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:29:11.123 27233 27281 D Evaluation: Frame 26 sent at 1.574940551122E12
+11-28 13:29:11.154 27233 27281 D Evaluation: Frame 27 sent at 1.574940551154E12
+11-28 13:29:11.193 27233 27281 D Evaluation: Frame 28 sent at 1.574940551193E12
+11-28 13:29:11.194 27233 27281 D Evaluation: Frame 7 received at 1.574940551194E12
+11-28 13:29:11.194 27233 27281 D Evaluation: 0 res for frame 7 received at 1574940551194
+11-28 13:29:11.226 27233 27281 D Evaluation: Frame 29 sent at 1.574940551226E12
+11-28 13:29:11.261 27233 27281 D Evaluation: Frame 30 sent at 1.574940551261E12
+11-28 13:29:11.295 27233 27281 D Evaluation: Frame 31 sent at 1.574940551294E12
+11-28 13:29:11.319 27233 27281 D Evaluation: Frame 32 sent at 1.574940551319E12
+11-28 13:29:11.363 27233 27281 D Evaluation: Frame 33 sent at 1.574940551363E12
+11-28 13:29:11.402 27233 27281 D Evaluation: Frame 34 sent at 1.574940551401E12
+11-28 13:29:11.426 27233 27281 D Evaluation: Frame 35 sent at 1.574940551426E12
+11-28 13:29:11.466 27233 27281 D Evaluation: Frame 36 sent at 1.574940551465E12
+11-28 13:29:11.500 27233 27281 D Evaluation: Frame 37 sent at 1.574940551499E12
+11-28 13:29:11.533 27233 27281 D Evaluation: Frame 38 sent at 1.574940551532E12
+11-28 13:29:11.561 27233 27281 D Evaluation: Frame 39 sent at 1.57494055156E12
+11-28 13:29:11.615 27233 27281 D Evaluation: Frame 41 sent at 1.574940551614E12
+11-28 13:29:11.630 27233 27281 D Evaluation: Frame 41 sent at 1.574940551629E12
+11-28 13:29:11.660 27233 27281 D Evaluation: Frame 42 sent at 1.57494055166E12
+11-28 13:29:11.689 27233 27281 D Evaluation: Frame 43 sent at 1.574940551689E12
+11-28 13:29:11.737 27233 27281 D Evaluation: Frame 44 sent at 1.574940551736E12
+11-28 13:29:11.764 27233 27281 D Evaluation: Frame 45 sent at 1.574940551763E12
+11-28 13:29:11.804 27233 27281 D Evaluation: Frame 46 sent at 1.574940551804E12
+11-28 13:29:11.831 27233 27281 D Evaluation: Frame 47 sent at 1.574940551831E12
+11-28 13:29:11.865 27233 27281 D Evaluation: Frame 48 sent at 1.574940551864E12
+11-28 13:29:11.900 27233 27281 D Evaluation: Frame 49 sent at 1.5749405519E12
+11-28 13:29:11.931 27233 27281 D Evaluation: Frame 50 sent at 1.57494055193E12
+11-28 13:29:11.963 27233 27281 D Evaluation: Frame 51 sent at 1.574940551962E12
+11-28 13:29:11.996 27233 27281 D Evaluation: Frame 52 sent at 1.574940551995E12
+11-28 13:29:12.037 27233 27281 D Evaluation: Frame 53 sent at 1.574940552036E12
+11-28 13:29:12.075 27233 27281 D Evaluation: Frame 54 sent at 1.574940552074E12
+11-28 13:29:12.106 27233 27281 D Evaluation: Frame 55 sent at 1.574940552106E12
+11-28 13:29:12.135 27233 27281 D Evaluation: Frame 56 sent at 1.574940552134E12
+11-28 13:29:12.164 27233 27281 D Evaluation: Frame 57 sent at 1.574940552164E12
+11-28 13:29:12.198 27233 27281 D Evaluation: Frame 58 sent at 1.574940552197E12
+11-28 13:29:12.232 27233 27281 D Evaluation: Frame 59 sent at 1.574940552231E12
+11-28 13:29:12.272 27233 27281 D Evaluation: Frame 60 sent at 1.574940552272E12
+11-28 13:29:12.303 27233 27281 D Evaluation: Frame 61 sent at 1.574940552303E12
+11-28 13:29:12.334 27233 27281 D Evaluation: Frame 62 sent at 1.574940552333E12
+11-28 13:29:12.372 27233 27281 D Evaluation: Frame 63 sent at 1.574940552372E12
+11-28 13:29:12.407 27233 27281 D Evaluation: Frame 64 sent at 1.574940552406E12
+11-28 13:29:12.438 27233 27281 D Evaluation: Frame 65 sent at 1.574940552437E12
+11-28 13:29:12.471 27233 27281 D Evaluation: Frame 66 sent at 1.57494055247E12
+11-28 13:29:12.502 27233 27281 D Evaluation: Frame 67 sent at 1.574940552502E12
+11-28 13:29:12.534 27233 27281 D Evaluation: Frame 68 sent at 1.574940552534E12
+11-28 13:29:12.568 27233 27281 D Evaluation: Frame 69 sent at 1.574940552568E12
+11-28 13:29:12.613 27233 27281 D Evaluation: Frame 70 sent at 1.574940552612E12
+11-28 13:29:12.632 27233 27281 D Evaluation: Frame 71 sent at 1.574940552631E12
+11-28 13:29:12.659 27233 27281 D Evaluation: Frame 72 sent at 1.574940552659E12
+11-28 13:29:12.702 27233 27281 D Evaluation: Frame 73 sent at 1.574940552701E12
+11-28 13:29:12.740 27233 27281 D Evaluation: Frame 74 sent at 1.574940552739E12
+11-28 13:29:12.776 27233 27281 D Evaluation: Frame 75 sent at 1.574940552774E12
+11-28 13:29:12.814 27233 27281 D Evaluation: Frame 76 sent at 1.574940552813E12
+11-28 13:29:12.843 27233 27281 D Evaluation: Frame 77 sent at 1.574940552843E12
+11-28 13:29:12.875 27233 27281 D Evaluation: Frame 78 sent at 1.574940552874E12
+11-28 13:29:12.907 27233 27281 D Evaluation: Frame 79 sent at 1.574940552907E12
+11-28 13:29:12.940 27233 27281 D Evaluation: Frame 80 sent at 1.57494055294E12
+11-28 13:29:12.971 27233 27281 D Evaluation: Frame 81 sent at 1.574940552971E12
+11-28 13:29:13.004 27233 27281 D Evaluation: Frame 82 sent at 1.574940553003E12
+11-28 13:29:13.036 27233 27281 D Evaluation: Frame 83 sent at 1.574940553035E12
+11-28 13:29:13.074 27233 27281 D Evaluation: Frame 84 sent at 1.574940553074E12
+11-28 13:29:13.111 27233 27281 D Evaluation: Frame 85 sent at 1.57494055311E12
+11-28 13:29:13.111 27233 27245 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:29:13.141 27233 27281 D Evaluation: Frame 86 sent at 1.57494055314E12
+11-28 13:29:13.176 27233 27281 D Evaluation: Frame 87 sent at 1.574940553176E12
+11-28 13:29:13.204 27233 27281 D Evaluation: Frame 88 sent at 1.574940553203E12
+11-28 13:29:13.243 27233 27281 D Evaluation: Frame 89 sent at 1.574940553242E12
+11-28 13:29:13.282 27233 27281 D Evaluation: Frame 90 sent at 1.574940553282E12
+11-28 13:29:13.317 27233 27281 D Evaluation: Frame 91 sent at 1.574940553316E12
+11-28 13:29:13.347 27233 27281 D Evaluation: Frame 92 sent at 1.574940553347E12
+11-28 13:29:13.376 27233 27281 D Evaluation: Frame 93 sent at 1.574940553375E12
+11-28 13:29:13.415 27233 27281 D Evaluation: Frame 94 sent at 1.574940553414E12
+11-28 13:29:13.448 27233 27281 D Evaluation: Frame 95 sent at 1.574940553447E12
+11-28 13:29:13.474 27233 27281 D Evaluation: Frame 96 sent at 1.574940553474E12
+11-28 13:29:13.514 27233 27281 D Evaluation: Frame 97 sent at 1.574940553513E12
+11-28 13:29:13.548 27233 27281 D Evaluation: Frame 98 sent at 1.574940553547E12
+11-28 13:29:13.582 27233 27281 D Evaluation: Frame 99 sent at 1.574940553582E12
+11-28 13:29:13.616 27233 27281 D Evaluation: Frame 100 sent at 1.574940553616E12
+11-28 13:29:13.646 27233 27281 D Evaluation: Frame 101 sent at 1.574940553646E12
+11-28 13:29:13.677 27233 27281 D Evaluation: Frame 102 sent at 1.574940553676E12
+11-28 13:29:13.723 27233 27281 D Evaluation: Frame 103 sent at 1.574940553723E12
+11-28 13:29:13.737 27233 27233 D stylus  : init stylus touchlistener.
+11-28 13:29:13.744 27233 27233 W Settings: Setting device_provisioned has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+11-28 13:29:13.746 27233 27233 V HiTouch_HiTouchSensor: User setup is finished.
+11-28 13:29:13.754 27233 27281 D Evaluation: Frame 104 sent at 1.574940553753E12
+11-28 13:29:13.782 27233 27281 D Evaluation: Frame 105 sent at 1.574940553781E12
+11-28 13:29:13.817 27233 27281 D Evaluation: Frame 106 sent at 1.574940553816E12
+11-28 13:29:13.840 27233 27233 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:4.7700195, limit is:60The moving distance of Y is:85.028824, limit is:60
+11-28 13:29:13.845 27233 27281 D Evaluation: Frame 107 sent at 1.574940553844E12
+11-28 13:29:13.884 27233 27281 D Evaluation: Frame 108 sent at 1.574940553883E12
+11-28 13:29:13.912 27233 27281 D Evaluation: Frame 109 sent at 1.574940553911E12
+11-28 13:29:13.950 27233 27281 D Evaluation: Frame 110 sent at 1.57494055395E12
+11-28 13:29:13.972 27233 27281 D Evaluation: Frame 111 sent at 1.574940553972E12
+11-28 13:29:14.004 27233 27281 D Evaluation: Frame 112 sent at 1.574940554003E12
+11-28 13:29:14.038 27233 27281 D Evaluation: Frame 113 sent at 1.574940554038E12
+11-28 13:29:14.071 27233 27281 D Evaluation: Frame 114 sent at 1.574940554071E12
+11-28 13:29:14.109 27233 27281 D Evaluation: Frame 115 sent at 1.574940554109E12
+11-28 13:29:14.141 27233 27281 D Evaluation: Frame 116 sent at 1.574940554141E12
+11-28 13:29:14.174 27233 27281 D Evaluation: Frame 117 sent at 1.574940554174E12
+11-28 13:29:14.208 27233 27281 D Evaluation: Frame 118 sent at 1.574940554208E12
+11-28 13:29:14.238 27233 27281 D Evaluation: Frame 119 sent at 1.574940554238E12
+11-28 13:29:14.276 27233 27281 D Evaluation: Frame 120 sent at 1.574940554276E12
+11-28 13:29:14.306 27233 27281 D Evaluation: Frame 121 sent at 1.574940554306E12
+11-28 13:29:14.340 27233 27281 D Evaluation: Frame 122 sent at 1.57494055434E12
+11-28 13:29:14.372 27233 27281 D Evaluation: Frame 123 sent at 1.574940554372E12
+11-28 13:29:14.443 27233 27281 D Evaluation: Frame 124 sent at 1.574940554442E12
+11-28 13:29:14.492 27233 27281 D Evaluation: Frame 125 sent at 1.574940554491E12
+11-28 13:29:14.509 27233 27281 D Evaluation: Frame 126 sent at 1.574940554509E12
+11-28 13:29:14.542 27233 27281 D Evaluation: Frame 127 sent at 1.574940554542E12
+11-28 13:29:14.577 27233 27281 D Evaluation: Frame 128 sent at 1.574940554576E12
+11-28 13:29:14.611 27233 27281 D Evaluation: Frame 129 sent at 1.57494055461E12
+11-28 13:29:14.643 27233 27281 D Evaluation: Frame 130 sent at 1.574940554643E12
+11-28 13:29:14.679 27233 27281 D Evaluation: Frame 131 sent at 1.574940554678E12
+11-28 13:29:14.711 27233 27281 D Evaluation: Frame 132 sent at 1.57494055471E12
+11-28 13:29:14.743 27233 27281 D Evaluation: Frame 133 sent at 1.574940554743E12
+11-28 13:29:14.780 27233 27281 D Evaluation: Frame 134 sent at 1.574940554779E12
+11-28 13:29:14.801 27233 27265 I loudridar.arhu: Starting profile saver IsSaveProfileNow end.
+11-28 13:29:14.809 27233 27233 I AwareBitmapCacher: init lrucache size: 2097152 pid=27233
+11-28 13:29:14.814 27233 27281 D Evaluation: Frame 135 sent at 1.574940554814E12
+11-28 13:29:14.846 27233 27281 D Evaluation: Frame 136 sent at 1.574940554845E12
+11-28 13:29:14.879 27233 27281 D Evaluation: Frame 137 sent at 1.574940554879E12
+11-28 13:29:14.915 27233 27281 D Evaluation: Frame 138 sent at 1.574940554914E12
+11-28 13:29:14.951 27233 27281 D Evaluation: Frame 139 sent at 1.574940554951E12
+11-28 13:29:14.979 27233 27281 D Evaluation: Frame 140 sent at 1.574940554977E12
+11-28 13:29:15.033 27233 27281 D Evaluation: Frame 142 sent at 1.574940555031E12
+11-28 13:29:15.047 27233 27281 D Evaluation: Frame 142 sent at 1.574940555047E12
+11-28 13:29:15.076 27233 27281 D Evaluation: Frame 143 sent at 1.574940555076E12
+11-28 13:29:15.112 27233 27245 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:29:15.112 27233 27281 D Evaluation: Frame 144 sent at 1.574940555112E12
+11-28 13:29:15.149 27233 27281 D Evaluation: Frame 145 sent at 1.574940555148E12
+11-28 13:29:15.178 27233 27281 D Evaluation: Frame 146 sent at 1.574940555178E12
+11-28 13:29:15.213 27233 27281 D Evaluation: Frame 147 sent at 1.574940555213E12
+11-28 13:29:15.244 27233 27281 D Evaluation: Frame 148 sent at 1.574940555243E12
+11-28 13:29:15.285 27233 27281 D Evaluation: Frame 149 sent at 1.574940555284E12
+11-28 13:29:15.313 27233 27281 D Evaluation: Frame 150 sent at 1.574940555313E12
+11-28 13:29:15.346 27233 27281 D Evaluation: Frame 151 sent at 1.574940555346E12
+11-28 13:29:15.381 27233 27281 D Evaluation: Frame 152 sent at 1.574940555381E12
+11-28 13:29:15.415 27233 27281 D Evaluation: Frame 153 sent at 1.574940555415E12
+11-28 13:29:15.451 27233 27281 D Evaluation: Frame 154 sent at 1.57494055545E12
+11-28 13:29:15.484 27233 27281 D Evaluation: Frame 155 sent at 1.574940555484E12
+11-28 13:29:15.516 27233 27281 D Evaluation: Frame 156 sent at 1.574940555515E12
+11-28 13:29:15.562 27233 27281 D Evaluation: Frame 157 sent at 1.574940555561E12
+11-28 13:29:15.581 27233 27281 D Evaluation: Frame 158 sent at 1.57494055558E12
+11-28 13:29:15.619 27233 27281 D Evaluation: Frame 159 sent at 1.574940555619E12
+11-28 13:29:15.651 27233 27281 D Evaluation: Frame 160 sent at 1.574940555651E12
+11-28 13:29:15.680 27233 27281 D Evaluation: Frame 161 sent at 1.57494055568E12
+11-28 13:29:15.717 27233 27281 D Evaluation: Frame 162 sent at 1.574940555716E12
+11-28 13:29:15.754 27233 27281 D Evaluation: Frame 163 sent at 1.574940555754E12
+11-28 13:29:15.788 27233 27281 D Evaluation: Frame 164 sent at 1.574940555787E12
+11-28 13:29:15.826 27233 27281 D Evaluation: Frame 165 sent at 1.574940555825E12
+11-28 13:29:15.852 27233 27281 D Evaluation: Frame 166 sent at 1.574940555852E12
+11-28 13:29:15.886 27233 27281 D Evaluation: Frame 167 sent at 1.574940555885E12
+11-28 13:29:15.922 27233 27281 D Evaluation: Frame 168 sent at 1.574940555922E12
+11-28 13:29:15.954 27233 27281 D Evaluation: Frame 169 sent at 1.574940555953E12
+11-28 13:29:15.985 27233 27281 D Evaluation: Frame 170 sent at 1.574940555984E12
+11-28 13:29:16.019 27233 27281 D Evaluation: Frame 171 sent at 1.574940556018E12
+11-28 13:29:16.053 27233 27281 D Evaluation: Frame 172 sent at 1.574940556052E12
+11-28 13:29:16.092 27233 27281 D Evaluation: Frame 173 sent at 1.574940556092E12
+11-28 13:29:16.121 27233 27281 D Evaluation: Frame 174 sent at 1.57494055612E12
+11-28 13:29:16.158 27233 27281 D Evaluation: Frame 175 sent at 1.574940556158E12
+11-28 13:29:16.189 27233 27281 D Evaluation: Frame 176 sent at 1.574940556188E12
+11-28 13:29:16.225 27233 27281 D Evaluation: Frame 177 sent at 1.574940556225E12
+11-28 13:29:16.255 27233 27281 D Evaluation: Frame 178 sent at 1.574940556255E12
+11-28 13:29:16.292 27233 27281 D Evaluation: Frame 179 sent at 1.574940556291E12
+11-28 13:29:16.319 27233 27281 D Evaluation: Frame 180 sent at 1.574940556318E12
+11-28 13:29:16.372 27233 27281 D Evaluation: Frame 181 sent at 1.574940556371E12
+11-28 13:29:16.386 27233 27281 D Evaluation: Frame 182 sent at 1.574940556386E12
+11-28 13:29:16.425 27233 27281 D Evaluation: Frame 183 sent at 1.574940556425E12
+11-28 13:29:16.459 27233 27281 D Evaluation: Frame 184 sent at 1.574940556459E12
+11-28 13:29:16.495 27233 27281 D Evaluation: Frame 185 sent at 1.574940556495E12
+11-28 13:29:16.525 27233 27281 D Evaluation: Frame 186 sent at 1.574940556525E12
+11-28 13:29:16.558 27233 27281 D Evaluation: Frame 187 sent at 1.574940556557E12
+11-28 13:29:16.593 27233 27281 D Evaluation: Frame 188 sent at 1.574940556592E12
+11-28 13:29:16.628 27233 27281 D Evaluation: Frame 189 sent at 1.574940556627E12
+11-28 13:29:16.657 27233 27281 D Evaluation: Frame 190 sent at 1.574940556657E12
+11-28 13:29:16.690 27233 27281 D Evaluation: Frame 191 sent at 1.574940556689E12
+11-28 13:29:16.724 27233 27281 D Evaluation: Frame 192 sent at 1.574940556723E12
+11-28 13:29:16.761 27233 27281 D Evaluation: Frame 193 sent at 1.57494055676E12
+11-28 13:29:16.792 27233 27281 D Evaluation: Frame 194 sent at 1.574940556791E12
+11-28 13:29:16.829 27233 27281 D Evaluation: Frame 195 sent at 1.574940556828E12
+11-28 13:29:16.857 27233 27281 D Evaluation: Frame 196 sent at 1.574940556856E12
+11-28 13:29:16.937 27233 27281 D Evaluation: Frame 197 sent at 1.574940556936E12
+11-28 13:29:16.963 27233 27281 D Evaluation: Frame 198 sent at 1.574940556962E12
+11-28 13:29:16.995 27233 27281 D Evaluation: Frame 199 sent at 1.574940556995E12
+11-28 13:29:17.029 27233 27281 D Evaluation: Frame 200 sent at 1.574940557028E12
+11-28 13:29:17.060 27233 27281 D Evaluation: Frame 201 sent at 1.574940557059E12
+11-28 13:29:17.098 27233 27281 D Evaluation: Frame 202 sent at 1.574940557097E12
+11-28 13:29:17.127 27233 27281 D Evaluation: Frame 203 sent at 1.574940557126E12
+11-28 13:29:17.169 27233 27245 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:29:17.170 27233 27281 D Evaluation: Frame 204 sent at 1.574940557169E12
+11-28 13:29:17.198 27233 27281 D Evaluation: Frame 205 sent at 1.574940557197E12
+11-28 13:29:17.229 27233 27281 D Evaluation: Frame 206 sent at 1.574940557228E12
+11-28 13:29:17.262 27233 27281 D Evaluation: Frame 207 sent at 1.574940557262E12
+11-28 13:29:17.296 27233 27281 D Evaluation: Frame 208 sent at 1.574940557296E12
+11-28 13:29:17.327 27233 27281 D Evaluation: Frame 209 sent at 1.574940557327E12
+11-28 13:29:17.363 27233 27281 D Evaluation: Frame 210 sent at 1.574940557362E12
+11-28 13:29:17.396 27233 27281 D Evaluation: Frame 211 sent at 1.574940557396E12
+11-28 13:29:17.433 27233 27281 D Evaluation: Frame 212 sent at 1.574940557432E12
+11-28 13:29:17.480 27233 27281 D Evaluation: Frame 213 sent at 1.57494055748E12
+11-28 13:29:17.502 27233 27281 D Evaluation: Frame 214 sent at 1.574940557501E12
+11-28 13:29:17.531 27233 27281 D Evaluation: Frame 215 sent at 1.574940557531E12
+11-28 13:29:17.565 27233 27281 D Evaluation: Frame 216 sent at 1.574940557565E12
+11-28 13:29:17.600 27233 27281 D Evaluation: Frame 217 sent at 1.574940557599E12
+11-28 13:29:17.640 27233 27281 D Evaluation: Frame 218 sent at 1.574940557639E12
+11-28 13:29:17.665 27233 27281 D Evaluation: Frame 219 sent at 1.574940557665E12
+11-28 13:29:17.699 27233 27281 D Evaluation: Frame 220 sent at 1.574940557699E12
+11-28 13:29:17.735 27233 27281 D Evaluation: Frame 221 sent at 1.574940557735E12
+11-28 13:29:17.768 27233 27281 D Evaluation: Frame 222 sent at 1.574940557768E12
+11-28 13:29:17.800 27233 27281 D Evaluation: Frame 223 sent at 1.5749405578E12
+11-28 13:29:17.835 27233 27281 D Evaluation: Frame 224 sent at 1.574940557834E12
+11-28 13:29:17.868 27233 27281 D Evaluation: Frame 225 sent at 1.574940557868E12
+11-28 13:29:17.903 27233 27281 D Evaluation: Frame 226 sent at 1.574940557902E12
+11-28 13:29:17.935 27233 27281 D Evaluation: Frame 227 sent at 1.574940557935E12
+11-28 13:29:17.974 27233 27281 D Evaluation: Frame 228 sent at 1.574940557974E12
+11-28 13:29:18.023 27233 27281 D Evaluation: Frame 230 sent at 1.574940558023E12
+11-28 13:29:18.041 27233 27281 D Evaluation: Frame 230 sent at 1.57494055804E12
+11-28 13:29:18.065 27233 27233 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:173.35962, limit is:60The moving distance of Y is:33.351562, limit is:60
+11-28 13:29:18.068 27233 27281 D Evaluation: Frame 231 sent at 1.574940558068E12
+11-28 13:29:18.103 27233 27281 D Evaluation: Frame 232 sent at 1.574940558103E12
+11-28 13:29:18.136 27233 27281 D Evaluation: Frame 233 sent at 1.574940558136E12
+11-28 13:29:18.174 27233 27281 D Evaluation: Frame 234 sent at 1.574940558173E12
+11-28 13:29:18.202 27233 27281 D Evaluation: Frame 235 sent at 1.574940558201E12
+11-28 13:29:18.239 27233 27281 D Evaluation: Frame 236 sent at 1.574940558238E12
+11-28 13:29:18.271 27233 27281 D Evaluation: Frame 237 sent at 1.57494055827E12
+11-28 13:29:18.302 27233 27281 D Evaluation: Frame 238 sent at 1.574940558302E12
+11-28 13:29:18.338 27233 27281 D Evaluation: Frame 239 sent at 1.574940558337E12
+11-28 13:29:18.369 27233 27281 D Evaluation: Frame 240 sent at 1.574940558369E12
+11-28 13:29:18.402 27233 27281 D Evaluation: Frame 241 sent at 1.574940558402E12
+11-28 13:29:18.438 27233 27281 D Evaluation: Frame 242 sent at 1.574940558438E12
+11-28 13:29:18.471 27233 27281 D Evaluation: Frame 243 sent at 1.574940558471E12
+11-28 13:29:18.514 27233 27281 D Evaluation: Frame 244 sent at 1.574940558513E12
+11-28 13:29:18.545 27233 27281 D Evaluation: Frame 245 sent at 1.574940558544E12
+11-28 13:29:18.588 27233 27281 D Evaluation: Frame 246 sent at 1.574940558587E12
+11-28 13:29:18.608 27233 27281 D Evaluation: Frame 247 sent at 1.574940558608E12
+11-28 13:29:18.640 27233 27281 D Evaluation: Frame 248 sent at 1.57494055864E12
+11-28 13:29:18.641 27233 27233 I Poster  :  onPause() called.
+11-28 13:29:18.770 27233 27233 I Camera  : close camera: 0, package name: symlab.cloudridar.arhud
+11-28 13:29:18.771 27233 27233 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 27233 ,uidOf3RdApk: 10147 ,permType: 0 ,permCfg: 0
+11-28 13:29:18.773 27233 27233 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = false
+11-28 13:29:18.828 27233 27233 D ZrHung.AppEyeUiProbe: stop checker.
+11-28 13:29:18.860 27233 27233 I Poster  :  surfaceDestroyed() called.
+11-28 13:29:18.862 27233 27233 D ViewRootImpl[MainActivity]: surface should not be released
+11-28 13:29:18.862 27233 27233 I Poster  :  onStop() called.
+11-28 13:29:18.883 27233 27297 W libEGL  : EGLNativeWindowType 0xf07f0008 disconnect failed
+11-28 13:29:19.824 27233 27273 D ZrHung.AppEyeUiProbe: Current Activity:false
+11-28 13:29:19.824 27233 27273 D ZrHung.AppEyeUiProbe: not watching, wait.
+11-28 13:29:20.038 27233 27233 I Poster  :  onDestroy() called.

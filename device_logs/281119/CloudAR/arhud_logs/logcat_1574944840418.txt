@@ -1,0 +1,765 @@
+--------- beginning of main
+11-28 14:40:40.286 12226 12226 I loudridar.arhu: Late-enabling -Xcheck:jni
+11-28 14:40:40.323 12226 12226 I loudridar.arhu: Reinit property: dalvik.vm.checkjni= false
+11-28 14:40:40.337 12226 12226 D ZrHung.AppEyeUiProbe: AppEyeUIP created.
+11-28 14:40:40.339 12226 12226 E libc    : Access denied finding property "runtime.mmitest.isrunning"
+11-28 14:40:40.331 12226 12226 W re-initialized>: type=1400 audit(0.0:2047): avc: denied { read } for name="u:object_r:mmi_prop:s0" dev="tmpfs" ino=16463 scontext=u:r:untrusted_app:s0:c150,c256,c512,c768 tcontext=u:object_r:mmi_prop:s0 tclass=file permissive=0
+--------- beginning of system
+11-28 14:40:40.340 12226 12226 D ActivityThread: Attach thread to application
+11-28 14:40:40.344 12226 12237 E loudridar.arhu: Failed to send DDMS packet REAQ to debugger (-1 of 20): Broken pipe
+11-28 14:40:40.409 12226 12253 I HwApiCacheMangerEx: apicache path=/storage/emulated/0 state=mounted key=symlab.cloudridar.arhud#10150#256
+11-28 14:40:40.409 12226 12253 I HwApiCacheMangerEx: apicache path=/storage/emulated/0 state=mounted key=symlab.cloudridar.arhud#10150#0
+11-28 14:40:40.411 12226 12226 I loudridar.arhu: QarthPatchMonintor::Init
+11-28 14:40:40.411 12226 12226 I loudridar.arhu: 
+11-28 14:40:40.411 12226 12226 I loudridar.arhu: QarthPatchMonintor::StartWatch
+11-28 14:40:40.411 12226 12226 I loudridar.arhu: 
+11-28 14:40:40.411 12226 12226 I loudridar.arhu: QarthPatchMonintor::WatchPackage: /data/hotpatch/fwkhotpatch/
+11-28 14:40:40.411 12226 12226 I loudridar.arhu: 
+11-28 14:40:40.411 12226 12226 I loudridar.arhu: QarthPatchMonintor::CheckAndWatchPatch: /data/hotpatch/fwkhotpatch/symlab.cloudridar.arhud
+11-28 14:40:40.411 12226 12226 I loudridar.arhu: 
+11-28 14:40:40.411 12226 12226 I loudridar.arhu: QarthPatchMonintor::CheckAndWatchPatch: /data/hotpatch/fwkhotpatch/all
+11-28 14:40:40.411 12226 12226 I loudridar.arhu: 
+11-28 14:40:40.411 12226 12226 I loudridar.arhu: QarthPatchMonintor::Run
+11-28 14:40:40.411 12226 12226 I loudridar.arhu: 
+11-28 14:40:40.411 12226 12260 I loudridar.arhu: QarthPatchMonintor::Reading
+11-28 14:40:40.411 12226 12260 I loudridar.arhu: 
+11-28 14:40:40.412 12226 12260 I loudridar.arhu: QarthPatchMonintor::CheckNotifyEvent
+11-28 14:40:40.412 12226 12260 I loudridar.arhu: 
+11-28 14:40:40.412 12226 12260 I loudridar.arhu: QarthPatchMonintor::CheckNotifyEvent before read
+11-28 14:40:40.412 12226 12260 I loudridar.arhu: 
+11-28 14:40:40.414 12226 12226 I MultiDex: VM with version 2.1.0 has multidex support
+11-28 14:40:40.414 12226 12226 I MultiDex: Installing application
+11-28 14:40:40.414 12226 12226 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+11-28 14:40:40.416 12226 12226 I FirebaseInitProvider: FirebaseApp initialization unsuccessful
+11-28 14:40:40.416 12226 12253 I AwareBitmapCacher: init processName:symlab.cloudridar.arhud pid=12226 uid=10150
+11-28 14:40:40.417 12226 12263 E AwareLog: AtomicFileUtils: readFileLines file not exist: android.util.AtomicFile@b47137e
+11-28 14:40:40.419 12226 12263 E AwareLog: AtomicFileUtils: readFileLines file not exist: android.util.AtomicFile@6a7e0df
+11-28 14:40:40.423 12226 12226 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-28 14:40:40.424 12226 12268 D ZrHung.AppEyeUiProbe: Runnable thread started.
+11-28 14:40:40.424 12226 12268 D IMonitor: Load library imonitor_jni
+11-28 14:40:40.431 12226 12226 I MultiDex: Installing application
+11-28 14:40:40.431 12226 12226 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+11-28 14:40:40.432 12226 12268 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0102]
+11-28 14:40:40.432 12226 12268 W ZrHung.AppEyeUiProbe: Failed to get config from zrhung
+11-28 14:40:40.427 12266 12266 W logcat  : type=1400 audit(0.0:2048): avc: granted { create } for name="logcat_1574944840418.txt" scontext=u:r:untrusted_app:s0:c150,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0:c150,c256,c512,c768 tclass=file
+11-28 14:40:40.434 12226 12226 V ActivityThread: callActivityOnCreate
+11-28 14:40:40.434 12226 12226 I Poster  :  onCreate() called.
+11-28 14:40:40.438 12226 12226 I HwApsImpl: APS: new HwApsImpl created
+11-28 14:40:40.444 12226 12226 V HwWidgetFactory: : successes to get AllImpl object and return....
+11-28 14:40:40.452 12226 12226 D OpenGLRenderer: Skia GL Pipeline
+11-28 14:40:40.471 12226 12226 D Poster  : Server details are IP 193.166.28.132 and port 52727
+11-28 14:40:40.475 12226 12226 D Poster  : Server bound to IP 193.166.28.132 and port 52727
+11-28 14:40:40.478 12226 12226 D ActivityThread: add activity client record, r= ActivityRecord{dcc1e30 token=android.os.BinderProxy@753abfb {symlab.cloudridar.arhud/symlab.ARHUD.MainActivity}} token= android.os.BinderProxy@753abfb
+11-28 14:40:40.481 12226 12226 I Poster  :  onStart() called.
+11-28 14:40:40.481 12226 12226 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-28 14:40:40.483 12226 12226 I Poster  :  onResume() called.
+11-28 14:40:40.487 12226 12226 I PermissionManager: camera remind result:true
+11-28 14:40:40.487 12226 12226 I Camera  : open camera: 0, package name: symlab.cloudridar.arhud
+11-28 14:40:40.487 12226 12226 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 12226 ,uidOf3RdApk: 10150 ,permType: 0 ,permCfg: 1
+11-28 14:40:40.488 12226 12226 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = true
+11-28 14:40:40.500 12226 12226 D ActivityThread: isOptEnabled=false isWechatScanOpt=false
+11-28 14:40:40.502 12226 12226 I HwSecImmHelper: mSecurityInputMethodService is null
+11-28 14:40:40.509 12226 12226 D OpenGLRenderer:   HWUI Binary is  enabled
+11-28 14:40:40.530 12226 12302 D HiTouch_PressGestureDetector: onAttached, package=symlab.cloudridar.arhud, windowType=1, mHiTouchRestricted=false
+11-28 14:40:40.539 12226 12297 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-28 14:40:40.539 12226 12297 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-28 14:40:40.540 12226 12297 I iGraphics: [0020080c] pn: symlab.cloudridar.arhud, p: 12226
+11-28 14:40:40.540 12226 12297 I OpenGLRenderer: Initialized EGL, version 1.4, mEglDisplay 0x1
+11-28 14:40:40.540 12226 12297 D OpenGLRenderer: Swap behavior 2
+11-28 14:40:40.552 12226 12297 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+11-28 14:40:40.558 12226 12226 I Poster  :  surfaceCreated() called.
+11-28 14:40:40.559 12226 12226 I Poster  : initPreview() called
+11-28 14:40:40.563 12226 12226 I PermissionManager: camera remind result:true
+11-28 14:40:40.569 12226 12226 I Poster  :  surfaceChanged() called.
+11-28 14:40:40.592 12226 12226 W InputMethodManager: startInputReason = 1
+11-28 14:40:40.609 12226 12226 W InputMethodManager: startInputReason = 5
+11-28 14:40:41.191 12226 12226 W symlab.cloudridar.arhud: type=1400 audit(0.0:2053): avc: granted { create } for comm=6E6574776F726B20746872656164 name="receive.txt" scontext=u:r:untrusted_app:s0:c150,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0:c150,c256,c512,c768 tclass=file
+11-28 14:40:41.199 12226 12278 D Evaluation: 0 res for frame 6 received at 1574944841199
+11-28 14:40:41.233 12226 12278 D Evaluation: 0 res for frame 7 received at 1574944841233
+11-28 14:40:41.265 12226 12278 D Evaluation: 0 res for frame 8 received at 1574944841265
+11-28 14:40:41.297 12226 12278 D Evaluation: 0 res for frame 9 received at 1574944841297
+11-28 14:40:41.330 12226 12278 D Evaluation: 0 res for frame 10 received at 1574944841330
+11-28 14:40:41.364 12226 12278 D Evaluation: 0 res for frame 11 received at 1574944841364
+11-28 14:40:41.408 12226 12278 D Evaluation: 0 res for frame 12 received at 1574944841408
+11-28 14:40:41.464 12226 12278 D Evaluation: 0 res for frame 13 received at 1574944841464
+11-28 14:40:41.501 12226 12278 D Evaluation: 0 res for frame 14 received at 1574944841501
+11-28 14:40:41.532 12226 12278 D Evaluation: 0 res for frame 15 received at 1574944841532
+11-28 14:40:41.567 12226 12278 D Evaluation: 0 res for frame 16 received at 1574944841566
+11-28 14:40:41.602 12226 12278 D Evaluation: 0 res for frame 17 received at 1574944841602
+11-28 14:40:41.632 12226 12278 D Evaluation: 0 res for frame 18 received at 1574944841632
+11-28 14:40:41.665 12226 12278 D Evaluation: 0 res for frame 19 received at 1574944841665
+11-28 14:40:41.702 12226 12241 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 14:40:41.703 12226 12278 D Evaluation: 0 res for frame 20 received at 1574944841703
+11-28 14:40:41.711 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:41.713 12226 12239 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 35 lines
+11-28 14:40:41.713 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:41.733 12226 12278 D Evaluation: 0 res for frame 21 received at 1574944841733
+11-28 14:40:41.776 12226 12278 D Evaluation: 0 res for frame 22 received at 1574944841776
+11-28 14:40:41.806 12226 12278 D Evaluation: 0 res for frame 23 received at 1574944841806
+11-28 14:40:41.847 12226 12278 D Evaluation: 0 res for frame 24 received at 1574944841847
+11-28 14:40:41.886 12226 12278 D Evaluation: 0 res for frame 25 received at 1574944841886
+11-28 14:40:41.915 12226 12278 D Evaluation: 0 res for frame 26 received at 1574944841915
+11-28 14:40:41.945 12226 12278 D Evaluation: 0 res for frame 27 received at 1574944841945
+11-28 14:40:41.975 12226 12278 D Evaluation: 0 res for frame 28 received at 1574944841975
+11-28 14:40:42.010 12226 12278 D Evaluation: 0 res for frame 29 received at 1574944842010
+11-28 14:40:42.046 12226 12278 D Evaluation: 1 res for frame 30 received at 1574944842046
+11-28 14:40:42.080 12226 12278 D Evaluation: 0 res for frame 31 received at 1574944842080
+11-28 14:40:42.115 12226 12278 D Evaluation: 0 res for frame 32 received at 1574944842115
+11-28 14:40:42.148 12226 12278 D Evaluation: 0 res for frame 33 received at 1574944842148
+11-28 14:40:42.188 12226 12278 D Evaluation: 0 res for frame 34 received at 1574944842188
+11-28 14:40:42.223 12226 12278 D Evaluation: 1 res for frame 35 received at 1574944842223
+11-28 14:40:42.259 12226 12278 D Evaluation: 1 res for frame 36 received at 1574944842259
+11-28 14:40:42.288 12226 12278 D Evaluation: 0 res for frame 37 received at 1574944842288
+11-28 14:40:42.321 12226 12278 D Evaluation: 1 res for frame 38 received at 1574944842321
+11-28 14:40:42.352 12226 12278 D Evaluation: 0 res for frame 39 received at 1574944842352
+11-28 14:40:42.390 12226 12278 D Evaluation: 0 res for frame 40 received at 1574944842390
+11-28 14:40:42.463 12226 12278 D Evaluation: 1 res for frame 42 received at 1574944842463
+11-28 14:40:42.490 12226 12278 D Evaluation: 1 res for frame 43 received at 1574944842490
+11-28 14:40:42.521 12226 12278 D Evaluation: 0 res for frame 44 received at 1574944842521
+11-28 14:40:42.557 12226 12278 D Evaluation: 0 res for frame 45 received at 1574944842557
+11-28 14:40:42.598 12226 12278 D Evaluation: 1 res for frame 46 received at 1574944842598
+11-28 14:40:42.622 12226 12278 D Evaluation: 1 res for frame 47 received at 1574944842622
+11-28 14:40:42.662 12226 12278 D Evaluation: 1 res for frame 48 received at 1574944842662
+11-28 14:40:42.696 12226 12278 D Evaluation: 1 res for frame 49 received at 1574944842696
+11-28 14:40:42.728 12226 12278 D Evaluation: 0 res for frame 50 received at 1574944842728
+11-28 14:40:42.753 12226 12278 D Evaluation: 0 res for frame 51 received at 1574944842753
+11-28 14:40:42.786 12226 12278 D Evaluation: 1 res for frame 52 received at 1574944842786
+11-28 14:40:42.817 12226 12278 D Evaluation: 0 res for frame 53 received at 1574944842817
+11-28 14:40:42.854 12226 12278 D Evaluation: 0 res for frame 54 received at 1574944842854
+11-28 14:40:42.894 12226 12278 D Evaluation: 0 res for frame 55 received at 1574944842894
+11-28 14:40:42.929 12226 12278 D Evaluation: 0 res for frame 56 received at 1574944842929
+11-28 14:40:42.958 12226 12278 D Evaluation: 0 res for frame 57 received at 1574944842958
+11-28 14:40:42.990 12226 12278 D Evaluation: 0 res for frame 58 received at 1574944842990
+11-28 14:40:43.027 12226 12278 D Evaluation: 0 res for frame 59 received at 1574944843027
+11-28 14:40:43.059 12226 12278 D Evaluation: 0 res for frame 60 received at 1574944843059
+11-28 14:40:43.090 12226 12278 D Evaluation: 0 res for frame 61 received at 1574944843090
+11-28 14:40:43.127 12226 12278 D Evaluation: 0 res for frame 62 received at 1574944843127
+11-28 14:40:43.164 12226 12278 D Evaluation: 0 res for frame 63 received at 1574944843164
+11-28 14:40:43.195 12226 12278 D Evaluation: 0 res for frame 64 received at 1574944843195
+11-28 14:40:43.280 12226 12278 D Evaluation: 1 res for frame 65 received at 1574944843280
+11-28 14:40:43.311 12226 12241 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 14:40:43.312 12226 12278 D Evaluation: 2 res for frame 66 received at 1574944843312
+11-28 14:40:43.333 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:43.337 12226 12239 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 61 lines
+11-28 14:40:43.337 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:43.337 12226 12278 D Evaluation: 2 res for frame 67 received at 1574944843337
+11-28 14:40:43.337 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:43.337 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:43.337 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:43.337 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:43.337 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:43.337 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:43.337 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:43.337 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:43.337 12226 12239 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 4 lines
+11-28 14:40:43.337 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:43.337 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:43.338 12226 12239 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 4 lines
+11-28 14:40:43.338 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:43.338 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:43.338 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:43.338 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:43.338 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:43.338 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:43.338 12226 12239 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 5 lines
+11-28 14:40:43.338 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:43.372 12226 12278 D Evaluation: 2 res for frame 68 received at 1574944843372
+11-28 14:40:43.401 12226 12278 D Evaluation: 2 res for frame 69 received at 1574944843401
+11-28 14:40:43.434 12226 12278 D Evaluation: 2 res for frame 70 received at 1574944843434
+11-28 14:40:43.474 12226 12278 D Evaluation: 2 res for frame 71 received at 1574944843474
+11-28 14:40:43.507 12226 12278 D Evaluation: 1 res for frame 72 received at 1574944843507
+11-28 14:40:43.530 12226 12278 D Evaluation: 2 res for frame 73 received at 1574944843530
+11-28 14:40:43.560 12226 12278 D Evaluation: 2 res for frame 74 received at 1574944843560
+11-28 14:40:43.606 12226 12278 D Evaluation: 0 res for frame 75 received at 1574944843606
+11-28 14:40:43.632 12226 12278 D Evaluation: 0 res for frame 76 received at 1574944843632
+11-28 14:40:43.679 12226 12278 D Evaluation: 0 res for frame 77 received at 1574944843679
+11-28 14:40:43.701 12226 12278 D Evaluation: 0 res for frame 78 received at 1574944843701
+11-28 14:40:43.733 12226 12278 D Evaluation: 0 res for frame 79 received at 1574944843733
+11-28 14:40:43.769 12226 12278 D Evaluation: 0 res for frame 80 received at 1574944843769
+11-28 14:40:43.800 12226 12278 D Evaluation: 0 res for frame 81 received at 1574944843800
+11-28 14:40:43.834 12226 12278 D Evaluation: 0 res for frame 82 received at 1574944843834
+11-28 14:40:43.871 12226 12278 D Evaluation: 2 res for frame 83 received at 1574944843871
+11-28 14:40:43.901 12226 12278 D Evaluation: 1 res for frame 84 received at 1574944843901
+11-28 14:40:43.936 12226 12278 D Evaluation: 1 res for frame 85 received at 1574944843936
+11-28 14:40:43.966 12226 12278 D Evaluation: 2 res for frame 86 received at 1574944843966
+11-28 14:40:44.000 12226 12278 D Evaluation: 2 res for frame 87 received at 1574944844000
+11-28 14:40:44.035 12226 12278 D Evaluation: 1 res for frame 88 received at 1574944844035
+11-28 14:40:44.062 12226 12278 D Evaluation: 1 res for frame 89 received at 1574944844062
+11-28 14:40:44.107 12226 12278 D Evaluation: 0 res for frame 90 received at 1574944844107
+11-28 14:40:44.138 12226 12278 D Evaluation: 0 res for frame 91 received at 1574944844138
+11-28 14:40:44.172 12226 12278 D Evaluation: 0 res for frame 92 received at 1574944844172
+11-28 14:40:44.205 12226 12278 D Evaluation: 0 res for frame 93 received at 1574944844205
+11-28 14:40:44.236 12226 12278 D Evaluation: 0 res for frame 94 received at 1574944844236
+11-28 14:40:44.268 12226 12278 D Evaluation: 0 res for frame 95 received at 1574944844268
+11-28 14:40:44.304 12226 12278 D Evaluation: 0 res for frame 96 received at 1574944844304
+11-28 14:40:44.335 12226 12278 D Evaluation: 0 res for frame 97 received at 1574944844335
+11-28 14:40:44.370 12226 12278 D Evaluation: 0 res for frame 98 received at 1574944844370
+11-28 14:40:44.399 12226 12278 D Evaluation: 0 res for frame 99 received at 1574944844399
+11-28 14:40:44.438 12226 12278 D Evaluation: 0 res for frame 100 received at 1574944844438
+11-28 14:40:44.484 12226 12278 D Evaluation: 0 res for frame 101 received at 1574944844484
+11-28 14:40:44.510 12226 12278 D Evaluation: 0 res for frame 102 received at 1574944844510
+11-28 14:40:44.542 12226 12278 D Evaluation: 0 res for frame 103 received at 1574944844542
+11-28 14:40:44.580 12226 12278 D Evaluation: 0 res for frame 104 received at 1574944844580
+11-28 14:40:44.612 12226 12278 D Evaluation: 0 res for frame 105 received at 1574944844612
+11-28 14:40:44.648 12226 12278 D Evaluation: 0 res for frame 106 received at 1574944844648
+11-28 14:40:44.676 12226 12278 D Evaluation: 0 res for frame 107 received at 1574944844676
+11-28 14:40:44.715 12226 12278 D Evaluation: 0 res for frame 108 received at 1574944844715
+11-28 14:40:44.749 12226 12278 D Evaluation: 0 res for frame 109 received at 1574944844749
+11-28 14:40:44.783 12226 12278 D Evaluation: 0 res for frame 110 received at 1574944844783
+11-28 14:40:44.812 12226 12241 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 14:40:44.812 12226 12278 D Evaluation: 0 res for frame 111 received at 1574944844812
+11-28 14:40:44.833 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:44.839 12226 12239 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 88 lines
+11-28 14:40:44.839 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:44.846 12226 12278 D Evaluation: 0 res for frame 112 received at 1574944844846
+11-28 14:40:44.883 12226 12278 D Evaluation: 0 res for frame 113 received at 1574944844883
+11-28 14:40:44.912 12226 12278 D Evaluation: 0 res for frame 114 received at 1574944844912
+11-28 14:40:44.946 12226 12278 D Evaluation: 0 res for frame 115 received at 1574944844946
+11-28 14:40:44.976 12226 12278 D Evaluation: 0 res for frame 116 received at 1574944844976
+11-28 14:40:45.013 12226 12278 D Evaluation: 0 res for frame 117 received at 1574944845013
+11-28 14:40:45.046 12226 12278 D Evaluation: 0 res for frame 118 received at 1574944845046
+11-28 14:40:45.079 12226 12278 D Evaluation: 0 res for frame 119 received at 1574944845079
+11-28 14:40:45.116 12226 12278 D Evaluation: 0 res for frame 120 received at 1574944845116
+11-28 14:40:45.147 12226 12278 D Evaluation: 0 res for frame 121 received at 1574944845147
+11-28 14:40:45.182 12226 12278 D Evaluation: 1 res for frame 122 received at 1574944845182
+11-28 14:40:45.212 12226 12278 D Evaluation: 0 res for frame 123 received at 1574944845212
+11-28 14:40:45.248 12226 12278 D Evaluation: 0 res for frame 124 received at 1574944845248
+11-28 14:40:45.290 12226 12278 D Evaluation: 0 res for frame 125 received at 1574944845290
+11-28 14:40:45.316 12226 12278 D Evaluation: 0 res for frame 126 received at 1574944845316
+11-28 14:40:45.350 12226 12278 D Evaluation: 0 res for frame 127 received at 1574944845350
+11-28 14:40:45.375 12226 12278 D Evaluation: 0 res for frame 128 received at 1574944845375
+11-28 14:40:45.417 12226 12226 I AwareBitmapCacher: init lrucache size: 2097152 pid=12226
+11-28 14:40:45.417 12226 12278 D Evaluation: 0 res for frame 129 received at 1574944845417
+11-28 14:40:45.494 12226 12278 D Evaluation: 0 res for frame 130 received at 1574944845493
+11-28 14:40:45.518 12226 12278 D Evaluation: 0 res for frame 131 received at 1574944845518
+11-28 14:40:45.546 12226 12278 D Evaluation: 0 res for frame 132 received at 1574944845546
+11-28 14:40:45.583 12226 12278 D Evaluation: 0 res for frame 133 received at 1574944845583
+11-28 14:40:45.621 12226 12278 D Evaluation: 0 res for frame 134 received at 1574944845621
+11-28 14:40:45.661 12226 12278 D Evaluation: 0 res for frame 135 received at 1574944845661
+11-28 14:40:45.686 12226 12278 D Evaluation: 0 res for frame 136 received at 1574944845686
+11-28 14:40:45.716 12226 12278 D Evaluation: 0 res for frame 137 received at 1574944845716
+11-28 14:40:45.750 12226 12278 D Evaluation: 0 res for frame 138 received at 1574944845750
+11-28 14:40:45.781 12226 12278 D Evaluation: 0 res for frame 139 received at 1574944845781
+11-28 14:40:45.813 12226 12278 D Evaluation: 0 res for frame 140 received at 1574944845813
+11-28 14:40:45.853 12226 12278 D Evaluation: 1 res for frame 141 received at 1574944845852
+11-28 14:40:45.891 12226 12278 D Evaluation: 0 res for frame 142 received at 1574944845891
+11-28 14:40:45.915 12226 12278 D Evaluation: 1 res for frame 143 received at 1574944845915
+11-28 14:40:45.955 12226 12278 D Evaluation: 0 res for frame 144 received at 1574944845955
+11-28 14:40:46.002 12226 12278 D Evaluation: 0 res for frame 145 received at 1574944846002
+11-28 14:40:46.024 12226 12278 D Evaluation: 0 res for frame 146 received at 1574944846024
+11-28 14:40:46.059 12226 12278 D Evaluation: 1 res for frame 147 received at 1574944846059
+11-28 14:40:46.124 12226 12278 D Evaluation: 0 res for frame 149 received at 1574944846124
+11-28 14:40:46.159 12226 12278 D Evaluation: 0 res for frame 149 received at 1574944846159
+11-28 14:40:46.188 12226 12278 D Evaluation: 2 res for frame 150 received at 1574944846188
+11-28 14:40:46.226 12226 12278 D Evaluation: 0 res for frame 151 received at 1574944846226
+11-28 14:40:46.308 12226 12278 D Evaluation: 0 res for frame 152 received at 1574944846308
+11-28 14:40:46.332 12226 12278 D Evaluation: 2 res for frame 153 received at 1574944846332
+11-28 14:40:46.353 12226 12278 D Evaluation: 0 res for frame 154 received at 1574944846353
+11-28 14:40:46.389 12226 12278 D Evaluation: 1 res for frame 155 received at 1574944846389
+11-28 14:40:46.419 12226 12241 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 14:40:46.421 12226 12278 D Evaluation: 0 res for frame 157 received at 1574944846421
+11-28 14:40:46.444 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:46.450 12226 12239 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 87 lines
+11-28 14:40:46.450 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:46.464 12226 12278 D Evaluation: 0 res for frame 157 received at 1574944846464
+11-28 14:40:46.494 12226 12278 D Evaluation: 0 res for frame 158 received at 1574944846494
+11-28 14:40:46.527 12226 12278 D Evaluation: 0 res for frame 159 received at 1574944846527
+11-28 14:40:46.554 12226 12278 D Evaluation: 0 res for frame 160 received at 1574944846554
+11-28 14:40:46.594 12226 12278 D Evaluation: 1 res for frame 161 received at 1574944846594
+11-28 14:40:46.631 12226 12278 D Evaluation: 0 res for frame 162 received at 1574944846631
+11-28 14:40:46.669 12226 12278 D Evaluation: 1 res for frame 163 received at 1574944846669
+11-28 14:40:46.692 12226 12278 D Evaluation: 0 res for frame 164 received at 1574944846692
+11-28 14:40:46.726 12226 12278 D Evaluation: 0 res for frame 165 received at 1574944846726
+11-28 14:40:46.759 12226 12278 D Evaluation: 0 res for frame 166 received at 1574944846759
+11-28 14:40:46.793 12226 12278 D Evaluation: 0 res for frame 167 received at 1574944846793
+11-28 14:40:46.828 12226 12278 D Evaluation: 0 res for frame 168 received at 1574944846828
+11-28 14:40:46.852 12226 12278 D Evaluation: 0 res for frame 169 received at 1574944846852
+11-28 14:40:46.895 12226 12278 D Evaluation: 0 res for frame 170 received at 1574944846895
+11-28 14:40:46.934 12226 12278 D Evaluation: 0 res for frame 171 received at 1574944846933
+11-28 14:40:46.976 12226 12278 D Evaluation: 0 res for frame 172 received at 1574944846976
+11-28 14:40:47.003 12226 12278 D Evaluation: 0 res for frame 173 received at 1574944847003
+11-28 14:40:47.027 12226 12278 D Evaluation: 0 res for frame 174 received at 1574944847027
+11-28 14:40:47.057 12226 12278 D Evaluation: 0 res for frame 175 received at 1574944847057
+11-28 14:40:47.136 12226 12278 D Evaluation: 0 res for frame 176 received at 1574944847136
+11-28 14:40:47.176 12226 12278 D Evaluation: 0 res for frame 177 received at 1574944847176
+11-28 14:40:47.207 12226 12278 D Evaluation: 0 res for frame 178 received at 1574944847207
+11-28 14:40:47.233 12226 12278 D Evaluation: 0 res for frame 179 received at 1574944847233
+11-28 14:40:47.268 12226 12278 D Evaluation: 0 res for frame 180 received at 1574944847268
+11-28 14:40:47.298 12226 12278 D Evaluation: 0 res for frame 181 received at 1574944847298
+11-28 14:40:47.331 12226 12278 D Evaluation: 0 res for frame 182 received at 1574944847331
+11-28 14:40:47.364 12226 12278 D Evaluation: 0 res for frame 183 received at 1574944847364
+11-28 14:40:47.396 12226 12278 D Evaluation: 0 res for frame 184 received at 1574944847396
+11-28 14:40:47.435 12226 12278 D Evaluation: 0 res for frame 185 received at 1574944847435
+11-28 14:40:47.466 12226 12278 D Evaluation: 0 res for frame 186 received at 1574944847466
+11-28 14:40:47.496 12226 12278 D Evaluation: 0 res for frame 187 received at 1574944847496
+11-28 14:40:47.537 12226 12278 D Evaluation: 0 res for frame 188 received at 1574944847537
+11-28 14:40:47.570 12226 12278 D Evaluation: 0 res for frame 189 received at 1574944847570
+11-28 14:40:47.605 12226 12278 D Evaluation: 0 res for frame 190 received at 1574944847605
+11-28 14:40:47.642 12226 12278 D Evaluation: 0 res for frame 191 received at 1574944847642
+11-28 14:40:47.675 12226 12278 D Evaluation: 0 res for frame 192 received at 1574944847674
+11-28 14:40:47.702 12226 12278 D Evaluation: 0 res for frame 193 received at 1574944847702
+11-28 14:40:47.738 12226 12278 D Evaluation: 0 res for frame 194 received at 1574944847738
+11-28 14:40:47.764 12226 12278 D Evaluation: 0 res for frame 195 received at 1574944847764
+11-28 14:40:47.801 12226 12278 D Evaluation: 0 res for frame 196 received at 1574944847801
+11-28 14:40:47.835 12226 12278 D Evaluation: 0 res for frame 197 received at 1574944847835
+11-28 14:40:47.868 12226 12278 D Evaluation: 0 res for frame 198 received at 1574944847868
+11-28 14:40:47.902 12226 12278 D Evaluation: 0 res for frame 199 received at 1574944847902
+11-28 14:40:47.935 12226 12278 D Evaluation: 0 res for frame 200 received at 1574944847935
+11-28 14:40:47.974 12226 12278 D Evaluation: 0 res for frame 201 received at 1574944847974
+11-28 14:40:48.008 12226 12241 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 14:40:48.011 12226 12278 D Evaluation: 0 res for frame 202 received at 1574944848011
+11-28 14:40:48.032 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:48.034 12226 12239 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 11 lines
+11-28 14:40:48.034 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:48.034 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:48.034 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:48.034 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:48.034 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:48.034 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:48.035 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:48.035 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:48.035 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:48.035 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:48.035 12226 12239 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-28 14:40:48.035 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:48.035 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:48.035 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:48.036 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:48.036 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:48.036 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:48.036 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:48.038 12226 12239 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 11 lines
+11-28 14:40:48.038 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:48.038 12226 12278 D Evaluation: 1 res for frame 203 received at 1574944848038
+11-28 14:40:48.038 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:48.038 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:48.038 12226 12239 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-28 14:40:48.038 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:48.039 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:48.046 12226 12239 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 45 lines
+11-28 14:40:48.046 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:48.067 12226 12278 D Evaluation: 0 res for frame 204 received at 1574944848066
+11-28 14:40:48.102 12226 12278 D Evaluation: 0 res for frame 205 received at 1574944848102
+11-28 14:40:48.178 12226 12278 D Evaluation: 0 res for frame 206 received at 1574944848178
+11-28 14:40:48.223 12226 12278 D Evaluation: 0 res for frame 207 received at 1574944848223
+11-28 14:40:48.253 12226 12278 D Evaluation: 1 res for frame 208 received at 1574944848253
+11-28 14:40:48.274 12226 12278 D Evaluation: 1 res for frame 209 received at 1574944848274
+11-28 14:40:48.306 12226 12278 D Evaluation: 0 res for frame 210 received at 1574944848306
+11-28 14:40:48.333 12226 12278 D Evaluation: 0 res for frame 211 received at 1574944848333
+11-28 14:40:48.374 12226 12278 D Evaluation: 0 res for frame 212 received at 1574944848374
+11-28 14:40:48.410 12226 12278 D Evaluation: 0 res for frame 213 received at 1574944848410
+11-28 14:40:48.438 12226 12278 D Evaluation: 0 res for frame 214 received at 1574944848438
+11-28 14:40:48.476 12226 12278 D Evaluation: 0 res for frame 215 received at 1574944848476
+11-28 14:40:48.514 12226 12278 D Evaluation: 0 res for frame 216 received at 1574944848514
+11-28 14:40:48.586 12226 12278 D Evaluation: 0 res for frame 217 received at 1574944848586
+11-28 14:40:48.626 12226 12278 D Evaluation: 0 res for frame 218 received at 1574944848626
+11-28 14:40:48.651 12226 12278 D Evaluation: 0 res for frame 219 received at 1574944848651
+11-28 14:40:48.684 12226 12278 D Evaluation: 0 res for frame 220 received at 1574944848684
+11-28 14:40:48.710 12226 12278 D Evaluation: 0 res for frame 221 received at 1574944848710
+11-28 14:40:48.736 12226 12278 D Evaluation: 0 res for frame 222 received at 1574944848736
+11-28 14:40:48.775 12226 12278 D Evaluation: 0 res for frame 223 received at 1574944848775
+11-28 14:40:48.815 12226 12278 D Evaluation: 0 res for frame 224 received at 1574944848815
+11-28 14:40:48.853 12226 12278 D Evaluation: 0 res for frame 225 received at 1574944848853
+11-28 14:40:48.931 12226 12278 D Evaluation: 0 res for frame 226 received at 1574944848931
+11-28 14:40:48.955 12226 12278 D Evaluation: 0 res for frame 227 received at 1574944848955
+11-28 14:40:48.981 12226 12278 D Evaluation: 0 res for frame 228 received at 1574944848981
+11-28 14:40:49.012 12226 12278 D Evaluation: 0 res for frame 229 received at 1574944849011
+11-28 14:40:49.039 12226 12278 D Evaluation: 0 res for frame 230 received at 1574944849039
+11-28 14:40:49.079 12226 12278 D Evaluation: 0 res for frame 231 received at 1574944849079
+11-28 14:40:49.110 12226 12278 D Evaluation: 0 res for frame 232 received at 1574944849110
+11-28 14:40:49.147 12226 12278 D Evaluation: 0 res for frame 233 received at 1574944849147
+11-28 14:40:49.191 12226 12278 D Evaluation: 0 res for frame 234 received at 1574944849191
+11-28 14:40:49.209 12226 12278 D Evaluation: 0 res for frame 235 received at 1574944849209
+11-28 14:40:49.247 12226 12278 D Evaluation: 0 res for frame 236 received at 1574944849247
+11-28 14:40:49.270 12226 12278 D Evaluation: 0 res for frame 237 received at 1574944849270
+11-28 14:40:49.319 12226 12278 D Evaluation: 0 res for frame 238 received at 1574944849319
+11-28 14:40:49.353 12226 12278 D Evaluation: 0 res for frame 239 received at 1574944849353
+11-28 14:40:49.376 12226 12278 D Evaluation: 0 res for frame 240 received at 1574944849376
+11-28 14:40:49.410 12226 12278 D Evaluation: 0 res for frame 241 received at 1574944849410
+11-28 14:40:49.447 12226 12278 D Evaluation: 0 res for frame 242 received at 1574944849447
+11-28 14:40:49.475 12226 12278 D Evaluation: 0 res for frame 243 received at 1574944849475
+11-28 14:40:49.518 12226 12278 D Evaluation: 0 res for frame 244 received at 1574944849518
+11-28 14:40:49.545 12226 12278 D Evaluation: 0 res for frame 245 received at 1574944849545
+11-28 14:40:49.589 12226 12278 D Evaluation: 0 res for frame 246 received at 1574944849589
+11-28 14:40:49.611 12226 12278 D Evaluation: 0 res for frame 247 received at 1574944849611
+11-28 14:40:49.650 12226 12278 D Evaluation: 0 res for frame 248 received at 1574944849650
+11-28 14:40:49.680 12226 12241 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 14:40:49.682 12226 12278 D Evaluation: 0 res for frame 249 received at 1574944849682
+11-28 14:40:49.704 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:49.715 12226 12239 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 78 lines
+11-28 14:40:49.716 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:49.716 12226 12278 D Evaluation: 0 res for frame 250 received at 1574944849716
+11-28 14:40:49.716 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:49.717 12226 12239 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 11 lines
+11-28 14:40:49.717 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:49.753 12226 12278 D Evaluation: 0 res for frame 251 received at 1574944849753
+11-28 14:40:49.789 12226 12278 D Evaluation: 0 res for frame 252 received at 1574944849789
+11-28 14:40:49.820 12226 12278 D Evaluation: 0 res for frame 253 received at 1574944849820
+11-28 14:40:49.899 12226 12278 D Evaluation: 0 res for frame 254 received at 1574944849899
+11-28 14:40:49.923 12226 12278 D Evaluation: 0 res for frame 255 received at 1574944849923
+11-28 14:40:49.951 12226 12278 D Evaluation: 0 res for frame 256 received at 1574944849951
+11-28 14:40:49.985 12226 12278 D Evaluation: 0 res for frame 257 received at 1574944849985
+11-28 14:40:50.013 12226 12278 D Evaluation: 0 res for frame 258 received at 1574944850013
+11-28 14:40:50.050 12226 12278 D Evaluation: 0 res for frame 259 received at 1574944850050
+11-28 14:40:50.086 12226 12278 D Evaluation: 0 res for frame 260 received at 1574944850086
+11-28 14:40:50.114 12226 12278 D Evaluation: 0 res for frame 261 received at 1574944850114
+11-28 14:40:50.146 12226 12278 D Evaluation: 0 res for frame 262 received at 1574944850146
+11-28 14:40:50.185 12226 12278 D Evaluation: 0 res for frame 263 received at 1574944850185
+11-28 14:40:50.226 12226 12278 D Evaluation: 1 res for frame 264 received at 1574944850226
+11-28 14:40:50.255 12226 12278 D Evaluation: 0 res for frame 265 received at 1574944850255
+11-28 14:40:50.297 12226 12278 D Evaluation: 0 res for frame 266 received at 1574944850297
+11-28 14:40:50.330 12226 12278 D Evaluation: 1 res for frame 267 received at 1574944850330
+11-28 14:40:50.362 12226 12278 D Evaluation: 0 res for frame 268 received at 1574944850362
+11-28 14:40:50.388 12226 12278 D Evaluation: 1 res for frame 269 received at 1574944850388
+11-28 14:40:50.412 12226 12278 D Evaluation: 1 res for frame 270 received at 1574944850412
+11-28 14:40:50.450 12226 12278 D Evaluation: 1 res for frame 271 received at 1574944850450
+11-28 14:40:50.486 12226 12278 D Evaluation: 0 res for frame 272 received at 1574944850486
+11-28 14:40:50.528 12226 12278 D Evaluation: 0 res for frame 273 received at 1574944850528
+11-28 14:40:50.556 12226 12278 D Evaluation: 0 res for frame 274 received at 1574944850556
+11-28 14:40:50.588 12226 12278 D Evaluation: 0 res for frame 275 received at 1574944850588
+11-28 14:40:50.625 12226 12278 D Evaluation: 0 res for frame 276 received at 1574944850625
+11-28 14:40:50.652 12226 12278 D Evaluation: 0 res for frame 277 received at 1574944850651
+11-28 14:40:50.687 12226 12278 D Evaluation: 0 res for frame 278 received at 1574944850687
+11-28 14:40:50.725 12226 12278 D Evaluation: 0 res for frame 279 received at 1574944850725
+11-28 14:40:50.757 12226 12278 D Evaluation: 0 res for frame 280 received at 1574944850757
+11-28 14:40:50.797 12226 12278 D Evaluation: 0 res for frame 281 received at 1574944850797
+11-28 14:40:50.831 12226 12278 D Evaluation: 0 res for frame 282 received at 1574944850831
+11-28 14:40:50.865 12226 12278 D Evaluation: 0 res for frame 283 received at 1574944850865
+11-28 14:40:50.891 12226 12278 D Evaluation: 0 res for frame 284 received at 1574944850891
+11-28 14:40:50.925 12226 12278 D Evaluation: 0 res for frame 285 received at 1574944850925
+11-28 14:40:50.957 12226 12278 D Evaluation: 0 res for frame 286 received at 1574944850957
+11-28 14:40:50.988 12226 12278 D Evaluation: 0 res for frame 287 received at 1574944850988
+11-28 14:40:51.017 12226 12278 D Evaluation: 0 res for frame 288 received at 1574944851017
+11-28 14:40:51.054 12226 12278 D Evaluation: 0 res for frame 289 received at 1574944851054
+11-28 14:40:51.092 12226 12241 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 14:40:51.097 12226 12278 D Evaluation: 0 res for frame 290 received at 1574944851097
+11-28 14:40:51.117 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:51.121 12226 12239 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 30 lines
+11-28 14:40:51.121 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:51.122 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:51.125 12226 12239 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 23 lines
+11-28 14:40:51.125 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:51.125 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:51.125 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:51.126 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:51.126 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:51.126 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:51.126 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:51.126 12226 12239 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-28 14:40:51.126 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:51.127 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:51.127 12226 12239 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-28 14:40:51.127 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:51.130 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:51.131 12226 12239 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 10 lines
+11-28 14:40:51.131 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:51.137 12226 12278 D Evaluation: 0 res for frame 291 received at 1574944851136
+11-28 14:40:51.157 12226 12278 D Evaluation: 0 res for frame 292 received at 1574944851157
+11-28 14:40:51.193 12226 12278 D Evaluation: 0 res for frame 293 received at 1574944851193
+11-28 14:40:51.225 12226 12278 D Evaluation: 0 res for frame 294 received at 1574944851225
+11-28 14:40:51.262 12226 12278 D Evaluation: 0 res for frame 295 received at 1574944851262
+11-28 14:40:51.291 12226 12278 D Evaluation: 0 res for frame 296 received at 1574944851291
+11-28 14:40:51.328 12226 12278 D Evaluation: 0 res for frame 297 received at 1574944851327
+11-28 14:40:51.357 12226 12278 D Evaluation: 0 res for frame 298 received at 1574944851357
+11-28 14:40:51.402 12226 12278 D Evaluation: 0 res for frame 299 received at 1574944851402
+11-28 14:40:51.441 12226 12278 D Evaluation: 0 res for frame 300 received at 1574944851441
+11-28 14:40:51.466 12226 12278 D Evaluation: 0 res for frame 301 received at 1574944851466
+11-28 14:40:51.497 12226 12278 D Evaluation: 0 res for frame 302 received at 1574944851497
+11-28 14:40:51.535 12226 12278 D Evaluation: 0 res for frame 303 received at 1574944851535
+11-28 14:40:51.565 12226 12278 D Evaluation: 0 res for frame 304 received at 1574944851565
+11-28 14:40:51.594 12226 12278 D Evaluation: 0 res for frame 305 received at 1574944851594
+11-28 14:40:51.629 12226 12278 D Evaluation: 0 res for frame 306 received at 1574944851629
+11-28 14:40:51.665 12226 12278 D Evaluation: 0 res for frame 307 received at 1574944851665
+11-28 14:40:51.693 12226 12278 D Evaluation: 0 res for frame 308 received at 1574944851693
+11-28 14:40:51.729 12226 12278 D Evaluation: 0 res for frame 309 received at 1574944851729
+11-28 14:40:51.760 12226 12278 D Evaluation: 1 res for frame 310 received at 1574944851760
+11-28 14:40:51.806 12226 12278 D Evaluation: 1 res for frame 311 received at 1574944851806
+11-28 14:40:51.831 12226 12278 D Evaluation: 0 res for frame 312 received at 1574944851831
+11-28 14:40:51.867 12226 12278 D Evaluation: 2 res for frame 313 received at 1574944851867
+11-28 14:40:51.895 12226 12278 D Evaluation: 0 res for frame 314 received at 1574944851894
+11-28 14:40:51.936 12226 12278 D Evaluation: 0 res for frame 315 received at 1574944851935
+11-28 14:40:51.967 12226 12278 D Evaluation: 0 res for frame 316 received at 1574944851967
+11-28 14:40:52.000 12226 12278 D Evaluation: 1 res for frame 317 received at 1574944852000
+11-28 14:40:52.029 12226 12278 D Evaluation: 0 res for frame 318 received at 1574944852029
+11-28 14:40:52.061 12226 12278 D Evaluation: 1 res for frame 319 received at 1574944852061
+11-28 14:40:52.152 12226 12278 D Evaluation: 0 res for frame 320 received at 1574944852152
+11-28 14:40:52.175 12226 12278 D Evaluation: 0 res for frame 321 received at 1574944852175
+11-28 14:40:52.200 12226 12278 D Evaluation: 2 res for frame 322 received at 1574944852200
+11-28 14:40:52.319 12226 12278 D Evaluation: 1 res for frame 323 received at 1574944852319
+11-28 14:40:52.344 12226 12278 D Evaluation: 1 res for frame 325 received at 1574944852344
+11-28 14:40:52.368 12226 12278 D Evaluation: 0 res for frame 325 received at 1574944852368
+11-28 14:40:52.408 12226 12278 D Evaluation: 1 res for frame 326 received at 1574944852408
+11-28 14:40:52.436 12226 12278 D Evaluation: 0 res for frame 327 received at 1574944852436
+11-28 14:40:52.474 12226 12278 D Evaluation: 0 res for frame 328 received at 1574944852474
+11-28 14:40:52.505 12226 12278 D Evaluation: 0 res for frame 329 received at 1574944852504
+11-28 14:40:52.537 12226 12278 D Evaluation: 0 res for frame 330 received at 1574944852537
+11-28 14:40:52.577 12226 12278 D Evaluation: 0 res for frame 331 received at 1574944852577
+11-28 14:40:52.606 12226 12278 D Evaluation: 0 res for frame 332 received at 1574944852606
+11-28 14:40:52.633 12226 12278 D Evaluation: 0 res for frame 333 received at 1574944852633
+11-28 14:40:52.680 12226 12278 D Evaluation: 0 res for frame 334 received at 1574944852680
+11-28 14:40:52.700 12226 12278 D Evaluation: 1 res for frame 335 received at 1574944852700
+11-28 14:40:52.730 12226 12278 D Evaluation: 1 res for frame 336 received at 1574944852730
+11-28 14:40:52.766 12226 12241 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 14:40:52.766 12226 12278 D Evaluation: 1 res for frame 337 received at 1574944852766
+11-28 14:40:52.788 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:52.791 12226 12239 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 50 lines
+11-28 14:40:52.791 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:52.791 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:52.794 12226 12239 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 42 lines
+11-28 14:40:52.794 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:52.799 12226 12278 D Evaluation: 1 res for frame 339 received at 1574944852799
+11-28 14:40:52.833 12226 12278 D Evaluation: 1 res for frame 339 received at 1574944852833
+11-28 14:40:52.835 12226 12226 D stylus  : init stylus touchlistener.
+11-28 14:40:52.839 12226 12226 W Settings: Setting device_provisioned has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+11-28 14:40:52.840 12226 12226 V HiTouch_HiTouchSensor: User setup is finished.
+11-28 14:40:52.875 12226 12278 D Evaluation: 0 res for frame 340 received at 1574944852875
+11-28 14:40:52.905 12226 12278 D Evaluation: 0 res for frame 341 received at 1574944852905
+11-28 14:40:52.918 12226 12226 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:14.470825, limit is:60The moving distance of Y is:77.837036, limit is:60
+11-28 14:40:52.945 12226 12278 D Evaluation: 0 res for frame 342 received at 1574944852945
+11-28 14:40:52.971 12226 12278 D Evaluation: 0 res for frame 343 received at 1574944852971
+11-28 14:40:53.005 12226 12278 D Evaluation: 0 res for frame 344 received at 1574944853005
+11-28 14:40:53.030 12226 12278 D Evaluation: 0 res for frame 345 received at 1574944853030
+11-28 14:40:53.062 12226 12278 D Evaluation: 0 res for frame 346 received at 1574944853062
+11-28 14:40:53.096 12226 12278 D Evaluation: 0 res for frame 347 received at 1574944853096
+11-28 14:40:53.128 12226 12278 D Evaluation: 0 res for frame 348 received at 1574944853128
+11-28 14:40:53.162 12226 12278 D Evaluation: 0 res for frame 349 received at 1574944853162
+11-28 14:40:53.196 12226 12278 D Evaluation: 1 res for frame 350 received at 1574944853196
+11-28 14:40:53.230 12226 12278 D Evaluation: 1 res for frame 351 received at 1574944853230
+11-28 14:40:53.272 12226 12278 D Evaluation: 0 res for frame 352 received at 1574944853272
+11-28 14:40:53.298 12226 12278 D Evaluation: 2 res for frame 353 received at 1574944853298
+11-28 14:40:53.335 12226 12278 D Evaluation: 2 res for frame 354 received at 1574944853335
+11-28 14:40:53.364 12226 12278 D Evaluation: 1 res for frame 355 received at 1574944853364
+11-28 14:40:53.399 12226 12278 D Evaluation: 1 res for frame 356 received at 1574944853399
+11-28 14:40:53.436 12226 12278 D Evaluation: 1 res for frame 357 received at 1574944853436
+11-28 14:40:53.467 12226 12278 D Evaluation: 1 res for frame 358 received at 1574944853467
+11-28 14:40:53.499 12226 12278 D Evaluation: 1 res for frame 359 received at 1574944853499
+11-28 14:40:53.551 12226 12278 D Evaluation: 0 res for frame 360 received at 1574944853551
+11-28 14:40:53.569 12226 12278 D Evaluation: 0 res for frame 361 received at 1574944853569
+11-28 14:40:53.605 12226 12278 D Evaluation: 0 res for frame 362 received at 1574944853605
+11-28 14:40:53.632 12226 12278 D Evaluation: 0 res for frame 363 received at 1574944853632
+11-28 14:40:53.671 12226 12278 D Evaluation: 0 res for frame 364 received at 1574944853670
+11-28 14:40:53.700 12226 12278 D Evaluation: 0 res for frame 365 received at 1574944853700
+11-28 14:40:53.735 12226 12278 D Evaluation: 0 res for frame 366 received at 1574944853735
+11-28 14:40:53.769 12226 12278 D Evaluation: 0 res for frame 367 received at 1574944853769
+11-28 14:40:53.801 12226 12278 D Evaluation: 0 res for frame 368 received at 1574944853801
+11-28 14:40:53.835 12226 12278 D Evaluation: 0 res for frame 369 received at 1574944853835
+11-28 14:40:53.870 12226 12278 D Evaluation: 0 res for frame 370 received at 1574944853870
+11-28 14:40:53.904 12226 12278 D Evaluation: 0 res for frame 371 received at 1574944853904
+11-28 14:40:53.939 12226 12278 D Evaluation: 1 res for frame 372 received at 1574944853939
+11-28 14:40:53.971 12226 12278 D Evaluation: 0 res for frame 373 received at 1574944853971
+11-28 14:40:54.008 12226 12278 D Evaluation: 0 res for frame 374 received at 1574944854008
+11-28 14:40:54.034 12226 12278 D Evaluation: 1 res for frame 375 received at 1574944854034
+11-28 14:40:54.076 12226 12278 D Evaluation: 0 res for frame 376 received at 1574944854076
+11-28 14:40:54.107 12226 12278 D Evaluation: 1 res for frame 377 received at 1574944854107
+11-28 14:40:54.137 12226 12278 D Evaluation: 1 res for frame 378 received at 1574944854137
+11-28 14:40:54.170 12226 12278 D Evaluation: 1 res for frame 379 received at 1574944854170
+11-28 14:40:54.204 12226 12278 D Evaluation: 1 res for frame 380 received at 1574944854204
+11-28 14:40:54.239 12226 12278 D Evaluation: 0 res for frame 381 received at 1574944854239
+11-28 14:40:54.275 12226 12278 D Evaluation: 0 res for frame 382 received at 1574944854275
+11-28 14:40:54.309 12226 12278 D Evaluation: 0 res for frame 383 received at 1574944854309
+11-28 14:40:54.353 12226 12278 D Evaluation: 1 res for frame 384 received at 1574944854353
+11-28 14:40:54.377 12226 12278 D Evaluation: 2 res for frame 385 received at 1574944854377
+11-28 14:40:54.404 12226 12241 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 14:40:54.406 12226 12278 D Evaluation: 1 res for frame 386 received at 1574944854406
+11-28 14:40:54.420 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:54.426 12226 12239 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 94 lines
+11-28 14:40:54.426 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:54.437 12226 12278 D Evaluation: 1 res for frame 387 received at 1574944854437
+11-28 14:40:54.473 12226 12278 D Evaluation: 0 res for frame 388 received at 1574944854473
+11-28 14:40:54.506 12226 12278 D Evaluation: 0 res for frame 389 received at 1574944854506
+11-28 14:40:54.537 12226 12278 D Evaluation: 0 res for frame 390 received at 1574944854537
+11-28 14:40:54.576 12226 12278 D Evaluation: 2 res for frame 391 received at 1574944854576
+11-28 14:40:54.615 12226 12278 D Evaluation: 1 res for frame 392 received at 1574944854615
+11-28 14:40:54.639 12226 12278 D Evaluation: 1 res for frame 393 received at 1574944854639
+11-28 14:40:54.676 12226 12278 D Evaluation: 1 res for frame 394 received at 1574944854676
+11-28 14:40:54.708 12226 12278 D Evaluation: 0 res for frame 395 received at 1574944854708
+11-28 14:40:54.742 12226 12278 D Evaluation: 0 res for frame 396 received at 1574944854742
+11-28 14:40:54.778 12226 12278 D Evaluation: 0 res for frame 397 received at 1574944854778
+11-28 14:40:54.810 12226 12278 D Evaluation: 0 res for frame 398 received at 1574944854810
+11-28 14:40:54.842 12226 12278 D Evaluation: 0 res for frame 399 received at 1574944854842
+11-28 14:40:54.886 12226 12278 D Evaluation: 0 res for frame 400 received at 1574944854886
+11-28 14:40:54.908 12226 12278 D Evaluation: 0 res for frame 401 received at 1574944854908
+11-28 14:40:54.948 12226 12278 D Evaluation: 1 res for frame 402 received at 1574944854948
+11-28 14:40:54.978 12226 12278 D Evaluation: 0 res for frame 403 received at 1574944854978
+11-28 14:40:55.015 12226 12278 D Evaluation: 1 res for frame 404 received at 1574944855015
+11-28 14:40:55.048 12226 12278 D Evaluation: 1 res for frame 405 received at 1574944855048
+11-28 14:40:55.080 12226 12278 D Evaluation: 1 res for frame 406 received at 1574944855080
+11-28 14:40:55.114 12226 12278 D Evaluation: 1 res for frame 407 received at 1574944855114
+11-28 14:40:55.146 12226 12278 D Evaluation: 2 res for frame 408 received at 1574944855146
+11-28 14:40:55.179 12226 12278 D Evaluation: 2 res for frame 409 received at 1574944855179
+11-28 14:40:55.215 12226 12278 D Evaluation: 2 res for frame 410 received at 1574944855215
+11-28 14:40:55.247 12226 12278 D Evaluation: 1 res for frame 411 received at 1574944855247
+11-28 14:40:55.280 12226 12278 D Evaluation: 0 res for frame 412 received at 1574944855280
+11-28 14:40:55.313 12226 12278 D Evaluation: 1 res for frame 413 received at 1574944855313
+11-28 14:40:55.347 12226 12278 D Evaluation: 1 res for frame 414 received at 1574944855347
+11-28 14:40:55.378 12226 12278 D Evaluation: 1 res for frame 415 received at 1574944855378
+11-28 14:40:55.419 12226 12278 D Evaluation: 2 res for frame 416 received at 1574944855419
+11-28 14:40:55.452 12226 12278 D Evaluation: 2 res for frame 417 received at 1574944855452
+11-28 14:40:55.483 12226 12278 D Evaluation: 2 res for frame 418 received at 1574944855483
+11-28 14:40:55.519 12226 12278 D Evaluation: 1 res for frame 419 received at 1574944855519
+11-28 14:40:55.552 12226 12278 D Evaluation: 1 res for frame 420 received at 1574944855552
+11-28 14:40:55.584 12226 12278 D Evaluation: 1 res for frame 421 received at 1574944855584
+11-28 14:40:55.653 12226 12278 D Evaluation: 2 res for frame 422 received at 1574944855653
+11-28 14:40:55.696 12226 12278 D Evaluation: 2 res for frame 423 received at 1574944855696
+11-28 14:40:55.720 12226 12278 D Evaluation: 1 res for frame 424 received at 1574944855720
+11-28 14:40:55.749 12226 12278 D Evaluation: 1 res for frame 425 received at 1574944855749
+11-28 14:40:55.784 12226 12278 D Evaluation: 1 res for frame 426 received at 1574944855784
+11-28 14:40:55.817 12226 12278 D Evaluation: 1 res for frame 427 received at 1574944855817
+11-28 14:40:55.853 12226 12278 D Evaluation: 1 res for frame 428 received at 1574944855853
+11-28 14:40:55.886 12226 12278 D Evaluation: 1 res for frame 429 received at 1574944855886
+11-28 14:40:55.918 12226 12278 D Evaluation: 1 res for frame 430 received at 1574944855918
+11-28 14:40:55.954 12226 12278 D Evaluation: 1 res for frame 431 received at 1574944855954
+11-28 14:40:55.988 12226 12278 D Evaluation: 1 res for frame 432 received at 1574944855988
+11-28 14:40:56.024 12226 12278 D Evaluation: 1 res for frame 433 received at 1574944856024
+11-28 14:40:56.049 12226 12241 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 14:40:56.051 12226 12278 D Evaluation: 1 res for frame 434 received at 1574944856051
+11-28 14:40:56.066 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:56.067 12226 12239 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 20 lines
+11-28 14:40:56.067 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:56.067 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:56.068 12226 12239 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 14 lines
+11-28 14:40:56.068 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:56.068 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:56.069 12226 12239 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 10 lines
+11-28 14:40:56.069 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:56.069 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:56.069 12226 12239 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 6 lines
+11-28 14:40:56.069 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:56.069 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:56.069 12226 12239 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 6 lines
+11-28 14:40:56.069 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:56.070 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:56.070 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:56.070 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:56.070 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:56.070 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:56.070 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:56.070 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:56.071 12226 12239 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 22 lines
+11-28 14:40:56.071 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:56.085 12226 12278 D Evaluation: 1 res for frame 435 received at 1574944856085
+11-28 14:40:56.119 12226 12278 D Evaluation: 1 res for frame 436 received at 1574944856119
+11-28 14:40:56.153 12226 12278 D Evaluation: 1 res for frame 437 received at 1574944856153
+11-28 14:40:56.186 12226 12278 D Evaluation: 1 res for frame 438 received at 1574944856186
+11-28 14:40:56.231 12226 12278 D Evaluation: 1 res for frame 439 received at 1574944856231
+11-28 14:40:56.255 12226 12278 D Evaluation: 0 res for frame 440 received at 1574944856255
+11-28 14:40:56.289 12226 12278 D Evaluation: 0 res for frame 441 received at 1574944856289
+11-28 14:40:56.324 12226 12278 D Evaluation: 0 res for frame 442 received at 1574944856324
+11-28 14:40:56.357 12226 12278 D Evaluation: 0 res for frame 443 received at 1574944856357
+11-28 14:40:56.386 12226 12278 D Evaluation: 0 res for frame 444 received at 1574944856386
+11-28 14:40:56.420 12226 12278 D Evaluation: 0 res for frame 445 received at 1574944856420
+11-28 14:40:56.454 12226 12278 D Evaluation: 0 res for frame 446 received at 1574944856454
+11-28 14:40:56.536 12226 12278 D Evaluation: 1 res for frame 447 received at 1574944856536
+11-28 14:40:56.556 12226 12278 D Evaluation: 0 res for frame 448 received at 1574944856556
+11-28 14:40:56.591 12226 12278 D Evaluation: 0 res for frame 449 received at 1574944856591
+11-28 14:40:56.624 12226 12278 D Evaluation: 0 res for frame 450 received at 1574944856624
+11-28 14:40:56.654 12226 12278 D Evaluation: 0 res for frame 451 received at 1574944856654
+11-28 14:40:56.690 12226 12278 D Evaluation: 1 res for frame 452 received at 1574944856690
+11-28 14:40:56.722 12226 12278 D Evaluation: 1 res for frame 453 received at 1574944856722
+11-28 14:40:56.755 12226 12278 D Evaluation: 1 res for frame 454 received at 1574944856755
+11-28 14:40:56.792 12226 12278 D Evaluation: 1 res for frame 455 received at 1574944856792
+11-28 14:40:56.825 12226 12278 D Evaluation: 1 res for frame 456 received at 1574944856825
+11-28 14:40:56.858 12226 12278 D Evaluation: 2 res for frame 457 received at 1574944856858
+11-28 14:40:56.893 12226 12278 D Evaluation: 1 res for frame 458 received at 1574944856893
+11-28 14:40:56.928 12226 12278 D Evaluation: 1 res for frame 459 received at 1574944856928
+11-28 14:40:56.957 12226 12278 D Evaluation: 1 res for frame 460 received at 1574944856957
+11-28 14:40:56.994 12226 12278 D Evaluation: 0 res for frame 461 received at 1574944856994
+11-28 14:40:57.028 12226 12278 D Evaluation: 0 res for frame 462 received at 1574944857028
+11-28 14:40:57.066 12226 12278 D Evaluation: 0 res for frame 463 received at 1574944857066
+11-28 14:40:57.091 12226 12278 D Evaluation: 0 res for frame 464 received at 1574944857091
+11-28 14:40:57.128 12226 12278 D Evaluation: 0 res for frame 465 received at 1574944857128
+11-28 14:40:57.158 12226 12278 D Evaluation: 0 res for frame 466 received at 1574944857158
+11-28 14:40:57.195 12226 12278 D Evaluation: 0 res for frame 467 received at 1574944857195
+11-28 14:40:57.228 12226 12278 D Evaluation: 0 res for frame 468 received at 1574944857228
+11-28 14:40:57.262 12226 12278 D Evaluation: 0 res for frame 469 received at 1574944857262
+11-28 14:40:57.301 12226 12278 D Evaluation: 0 res for frame 470 received at 1574944857300
+11-28 14:40:57.332 12226 12278 D Evaluation: 0 res for frame 471 received at 1574944857332
+11-28 14:40:57.368 12226 12278 D Evaluation: 0 res for frame 472 received at 1574944857368
+11-28 14:40:57.402 12226 12278 D Evaluation: 0 res for frame 473 received at 1574944857402
+11-28 14:40:57.437 12226 12278 D Evaluation: 0 res for frame 474 received at 1574944857437
+11-28 14:40:57.475 12226 12278 D Evaluation: 0 res for frame 475 received at 1574944857475
+11-28 14:40:57.505 12226 12278 D Evaluation: 1 res for frame 476 received at 1574944857504
+11-28 14:40:57.539 12226 12278 D Evaluation: 1 res for frame 477 received at 1574944857539
+11-28 14:40:57.570 12226 12278 D Evaluation: 0 res for frame 478 received at 1574944857570
+11-28 14:40:57.606 12226 12278 D Evaluation: 0 res for frame 479 received at 1574944857606
+11-28 14:40:57.638 12226 12278 D Evaluation: 0 res for frame 480 received at 1574944857638
+11-28 14:40:57.728 12226 12278 D Evaluation: 1 res for frame 481 received at 1574944857728
+11-28 14:40:57.752 12226 12278 D Evaluation: 0 res for frame 482 received at 1574944857752
+11-28 14:40:57.814 12226 12241 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 14:40:57.819 12226 12278 D Evaluation: 0 res for frame 483 received at 1574944857819
+11-28 14:40:57.850 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:57.856 12226 12239 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 47 lines
+11-28 14:40:57.856 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:57.856 12226 12278 D Evaluation: 0 res for frame 484 received at 1574944857856
+11-28 14:40:57.856 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:57.860 12226 12239 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 47 lines
+11-28 14:40:57.860 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:57.879 12226 12278 D Evaluation: 0 res for frame 486 received at 1574944857879
+11-28 14:40:57.907 12226 12278 D Evaluation: 0 res for frame 486 received at 1574944857907
+11-28 14:40:57.937 12226 12278 D Evaluation: 0 res for frame 487 received at 1574944857937
+11-28 14:40:57.984 12226 12278 D Evaluation: 0 res for frame 489 received at 1574944857984
+11-28 14:40:58.020 12226 12278 D Evaluation: 0 res for frame 489 received at 1574944858020
+11-28 14:40:58.051 12226 12278 D Evaluation: 0 res for frame 490 received at 1574944858051
+11-28 14:40:58.079 12226 12278 D Evaluation: 0 res for frame 491 received at 1574944858079
+11-28 14:40:58.116 12226 12278 D Evaluation: 0 res for frame 492 received at 1574944858116
+11-28 14:40:58.149 12226 12278 D Evaluation: 0 res for frame 493 received at 1574944858149
+11-28 14:40:58.172 12226 12278 D Evaluation: 0 res for frame 494 received at 1574944858172
+11-28 14:40:58.216 12226 12278 D Evaluation: 0 res for frame 495 received at 1574944858216
+11-28 14:40:58.253 12226 12278 D Evaluation: 0 res for frame 496 received at 1574944858252
+11-28 14:40:58.279 12226 12278 D Evaluation: 0 res for frame 497 received at 1574944858279
+11-28 14:40:58.319 12226 12278 D Evaluation: 0 res for frame 498 received at 1574944858319
+11-28 14:40:58.343 12226 12278 D Evaluation: 0 res for frame 499 received at 1574944858343
+11-28 14:40:58.379 12226 12278 D Evaluation: 0 res for frame 500 received at 1574944858379
+11-28 14:40:58.415 12226 12278 D Evaluation: 0 res for frame 501 received at 1574944858415
+11-28 14:40:58.453 12226 12278 D Evaluation: 0 res for frame 502 received at 1574944858453
+11-28 14:40:58.488 12226 12278 D Evaluation: 0 res for frame 503 received at 1574944858488
+11-28 14:40:58.512 12226 12278 D Evaluation: 0 res for frame 504 received at 1574944858512
+11-28 14:40:58.546 12226 12278 D Evaluation: 0 res for frame 505 received at 1574944858546
+11-28 14:40:58.580 12226 12278 D Evaluation: 0 res for frame 506 received at 1574944858580
+11-28 14:40:58.615 12226 12278 D Evaluation: 0 res for frame 507 received at 1574944858615
+11-28 14:40:58.644 12226 12278 D Evaluation: 0 res for frame 508 received at 1574944858644
+11-28 14:40:58.672 12226 12278 D Evaluation: 0 res for frame 509 received at 1574944858672
+11-28 14:40:58.706 12226 12278 D Evaluation: 0 res for frame 510 received at 1574944858706
+11-28 14:40:58.736 12226 12278 D Evaluation: 0 res for frame 511 received at 1574944858736
+11-28 14:40:58.771 12226 12278 D Evaluation: 0 res for frame 512 received at 1574944858771
+11-28 14:40:58.808 12226 12278 D Evaluation: 0 res for frame 513 received at 1574944858808
+11-28 14:40:58.840 12226 12278 D Evaluation: 0 res for frame 514 received at 1574944858840
+11-28 14:40:58.875 12226 12278 D Evaluation: 0 res for frame 515 received at 1574944858875
+11-28 14:40:58.918 12226 12278 D Evaluation: 0 res for frame 516 received at 1574944858918
+11-28 14:40:58.941 12226 12278 D Evaluation: 0 res for frame 517 received at 1574944858941
+11-28 14:40:58.976 12226 12278 D Evaluation: 0 res for frame 518 received at 1574944858976
+11-28 14:40:59.009 12226 12278 D Evaluation: 0 res for frame 519 received at 1574944859009
+11-28 14:40:59.044 12226 12278 D Evaluation: 0 res for frame 520 received at 1574944859044
+11-28 14:40:59.075 12226 12226 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:130.14136, limit is:60The moving distance of Y is:108.91843, limit is:60
+11-28 14:40:59.075 12226 12278 D Evaluation: 0 res for frame 521 received at 1574944859075
+11-28 14:40:59.110 12226 12278 D Evaluation: 0 res for frame 522 received at 1574944859110
+11-28 14:40:59.143 12226 12278 D Evaluation: 0 res for frame 523 received at 1574944859143
+11-28 14:40:59.180 12226 12278 D Evaluation: 0 res for frame 524 received at 1574944859180
+11-28 14:40:59.212 12226 12278 D Evaluation: 0 res for frame 525 received at 1574944859212
+11-28 14:40:59.245 12226 12278 D Evaluation: 1 res for frame 526 received at 1574944859245
+11-28 14:40:59.279 12226 12278 D Evaluation: 1 res for frame 527 received at 1574944859279
+11-28 14:40:59.312 12226 12278 D Evaluation: 1 res for frame 528 received at 1574944859312
+11-28 14:40:59.345 12226 12278 D Evaluation: 1 res for frame 529 received at 1574944859345
+11-28 14:40:59.378 12226 12241 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 14:40:59.380 12226 12278 D Evaluation: 1 res for frame 530 received at 1574944859380
+11-28 14:40:59.396 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:59.399 12226 12239 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 93 lines
+11-28 14:40:59.399 12226 12239 W System  : A resource failed to call close. 
+11-28 14:40:59.409 12226 12278 D Evaluation: 0 res for frame 531 received at 1574944859409
+11-28 14:40:59.456 12226 12278 D Evaluation: 0 res for frame 532 received at 1574944859456
+11-28 14:40:59.481 12226 12278 D Evaluation: 0 res for frame 533 received at 1574944859481
+11-28 14:40:59.513 12226 12278 D Evaluation: 0 res for frame 534 received at 1574944859513
+11-28 14:40:59.549 12226 12278 D Evaluation: 0 res for frame 535 received at 1574944859549
+11-28 14:40:59.594 12226 12278 D Evaluation: 0 res for frame 536 received at 1574944859594
+11-28 14:40:59.611 12226 12278 D Evaluation: 0 res for frame 537 received at 1574944859611
+11-28 14:40:59.615 12226 12226 I Poster  :  onPause() called.
+11-28 14:40:59.724 12226 12226 I Camera  : close camera: 0, package name: symlab.cloudridar.arhud
+11-28 14:40:59.724 12226 12226 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 12226 ,uidOf3RdApk: 10150 ,permType: 0 ,permCfg: 0
+11-28 14:40:59.726 12226 12226 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = false
+11-28 14:40:59.754 12226 12226 D ZrHung.AppEyeUiProbe: stop checker.
+11-28 14:40:59.783 12226 12226 I Poster  :  surfaceDestroyed() called.
+11-28 14:40:59.783 12226 12226 D ViewRootImpl[MainActivity]: surface should not be released
+11-28 14:40:59.783 12226 12226 I Poster  :  onStop() called.
+11-28 14:40:59.812 12226 12297 W libEGL  : EGLNativeWindowType 0xe3470008 disconnect failed
+11-28 14:41:00.437 12226 12268 D ZrHung.AppEyeUiProbe: Current Activity:false
+11-28 14:41:00.437 12226 12268 D ZrHung.AppEyeUiProbe: not watching, wait.

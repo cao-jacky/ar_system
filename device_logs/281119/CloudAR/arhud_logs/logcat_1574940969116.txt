@@ -1,0 +1,1565 @@
+--------- beginning of main
+11-28 13:36:08.907 30074 30074 I loudridar.arhu: Late-enabling -Xcheck:jni
+11-28 13:36:08.939 30074 30074 I loudridar.arhu: Reinit property: dalvik.vm.checkjni= false
+11-28 13:36:08.952 30074 30074 D ZrHung.AppEyeUiProbe: AppEyeUIP created.
+11-28 13:36:08.954 30074 30074 E libc    : Access denied finding property "runtime.mmitest.isrunning"
+11-28 13:36:08.951 30074 30074 W re-initialized>: type=1400 audit(0.0:36021): avc: denied { read } for name="u:object_r:mmi_prop:s0" dev="tmpfs" ino=16663 scontext=u:r:untrusted_app:s0:c147,c256,c512,c768 tcontext=u:object_r:mmi_prop:s0 tclass=file permissive=0
+--------- beginning of system
+11-28 13:36:08.956 30074 30074 D ActivityThread: Attach thread to application
+11-28 13:36:08.958 30074 30084 E loudridar.arhu: Failed to send DDMS packet REAQ to debugger (-1 of 20): Broken pipe
+11-28 13:36:09.043 30074 30102 I HwApiCacheMangerEx: apicache path=/storage/emulated/0 state=mounted key=symlab.cloudridar.arhud#10147#256
+11-28 13:36:09.044 30074 30102 I HwApiCacheMangerEx: apicache path=/storage/emulated/0 state=mounted key=symlab.cloudridar.arhud#10147#0
+11-28 13:36:09.106 30074 30074 I loudridar.arhu: QarthPatchMonintor::Init
+11-28 13:36:09.106 30074 30074 I loudridar.arhu: 
+11-28 13:36:09.106 30074 30074 I loudridar.arhu: QarthPatchMonintor::StartWatch
+11-28 13:36:09.106 30074 30074 I loudridar.arhu: 
+11-28 13:36:09.106 30074 30074 I loudridar.arhu: QarthPatchMonintor::WatchPackage: /data/hotpatch/fwkhotpatch/
+11-28 13:36:09.106 30074 30074 I loudridar.arhu: 
+11-28 13:36:09.106 30074 30074 I loudridar.arhu: QarthPatchMonintor::CheckAndWatchPatch: /data/hotpatch/fwkhotpatch/symlab.cloudridar.arhud
+11-28 13:36:09.106 30074 30074 I loudridar.arhu: 
+11-28 13:36:09.106 30074 30074 I loudridar.arhu: QarthPatchMonintor::CheckAndWatchPatch: /data/hotpatch/fwkhotpatch/all
+11-28 13:36:09.106 30074 30074 I loudridar.arhu: 
+11-28 13:36:09.106 30074 30074 I loudridar.arhu: QarthPatchMonintor::Run
+11-28 13:36:09.106 30074 30074 I loudridar.arhu: 
+11-28 13:36:09.107 30074 30109 I loudridar.arhu: QarthPatchMonintor::Reading
+11-28 13:36:09.107 30074 30109 I loudridar.arhu: 
+11-28 13:36:09.107 30074 30109 I loudridar.arhu: QarthPatchMonintor::CheckNotifyEvent
+11-28 13:36:09.107 30074 30109 I loudridar.arhu: 
+11-28 13:36:09.107 30074 30109 I loudridar.arhu: QarthPatchMonintor::CheckNotifyEvent before read
+11-28 13:36:09.107 30074 30109 I loudridar.arhu: 
+11-28 13:36:09.110 30074 30074 I MultiDex: VM with version 2.1.0 has multidex support
+11-28 13:36:09.111 30074 30074 I MultiDex: Installing application
+11-28 13:36:09.111 30074 30074 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+11-28 13:36:09.113 30074 30102 I AwareBitmapCacher: init processName:symlab.cloudridar.arhud pid=30074 uid=10147
+11-28 13:36:09.114 30074 30110 E AwareLog: AtomicFileUtils: readFileLines file not exist: android.util.AtomicFile@919d802
+11-28 13:36:09.115 30074 30074 I FirebaseInitProvider: FirebaseApp initialization unsuccessful
+11-28 13:36:09.116 30074 30110 E AwareLog: AtomicFileUtils: readFileLines file not exist: android.util.AtomicFile@aae350
+11-28 13:36:09.126 30074 30074 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-28 13:36:09.127 30074 30116 D ZrHung.AppEyeUiProbe: Runnable thread started.
+11-28 13:36:09.127 30074 30116 D IMonitor: Load library imonitor_jni
+11-28 13:36:09.130 30074 30116 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0102]
+11-28 13:36:09.130 30074 30116 W ZrHung.AppEyeUiProbe: Failed to get config from zrhung
+11-28 13:36:09.133 30074 30074 I MultiDex: Installing application
+11-28 13:36:09.133 30074 30074 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+11-28 13:36:09.131 30114 30114 W logcat  : type=1400 audit(0.0:36022): avc: granted { create } for name="logcat_1574940969116.txt" scontext=u:r:untrusted_app:s0:c147,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0:c147,c256,c512,c768 tclass=file
+11-28 13:36:09.135 30074 30074 V ActivityThread: callActivityOnCreate
+11-28 13:36:09.135 30074 30074 I Poster  :  onCreate() called.
+11-28 13:36:09.138 30074 30074 I HwApsImpl: APS: new HwApsImpl created
+11-28 13:36:09.144 30074 30074 V HwWidgetFactory: : successes to get AllImpl object and return....
+11-28 13:36:09.151 30074 30074 D OpenGLRenderer: Skia GL Pipeline
+11-28 13:36:09.172 30074 30074 D Poster  : Server details are IP 193.166.28.132 and port 52727
+11-28 13:36:09.177 30074 30074 D Poster  : Server bound to IP 193.166.28.132 and port 52727
+11-28 13:36:09.182 30074 30074 D ActivityThread: add activity client record, r= ActivityRecord{db8bbd token=android.os.BinderProxy@c62e47c {symlab.cloudridar.arhud/symlab.ARHUD.MainActivity}} token= android.os.BinderProxy@c62e47c
+11-28 13:36:09.184 30074 30074 I Poster  :  onStart() called.
+11-28 13:36:09.185 30074 30074 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-28 13:36:09.186 30074 30074 I Poster  :  onResume() called.
+11-28 13:36:09.190 30074 30074 I PermissionManager: camera remind result:true
+11-28 13:36:09.190 30074 30074 I Camera  : open camera: 0, package name: symlab.cloudridar.arhud
+11-28 13:36:09.191 30074 30074 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 30074 ,uidOf3RdApk: 10147 ,permType: 0 ,permCfg: 1
+11-28 13:36:09.192 30074 30074 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = true
+11-28 13:36:09.201 30074 30074 D ActivityThread: isOptEnabled=false isWechatScanOpt=false
+11-28 13:36:09.203 30074 30074 I HwSecImmHelper: mSecurityInputMethodService is null
+11-28 13:36:09.215 30074 30074 D OpenGLRenderer:   HWUI Binary is  enabled
+11-28 13:36:09.240 30074 30148 D HiTouch_PressGestureDetector: onAttached, package=symlab.cloudridar.arhud, windowType=1, mHiTouchRestricted=false
+11-28 13:36:09.250 30074 30143 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-28 13:36:09.250 30074 30143 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-28 13:36:09.251 30074 30143 I iGraphics: [0020080c] pn: symlab.cloudridar.arhud, p: 30074
+11-28 13:36:09.251 30074 30143 I OpenGLRenderer: Initialized EGL, version 1.4, mEglDisplay 0x1
+11-28 13:36:09.251 30074 30143 D OpenGLRenderer: Swap behavior 2
+11-28 13:36:09.253 30074 30074 I Poster  :  surfaceCreated() called.
+11-28 13:36:09.253 30074 30074 I Poster  : initPreview() called
+11-28 13:36:09.257 30074 30074 I PermissionManager: camera remind result:true
+11-28 13:36:09.262 30074 30074 I Poster  :  surfaceChanged() called.
+11-28 13:36:09.262 30074 30143 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+11-28 13:36:09.280 30074 30074 W InputMethodManager: startInputReason = 1
+11-28 13:36:09.294 30074 30074 W InputMethodManager: startInputReason = 5
+11-28 13:36:09.929 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:09.938 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:09.939 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 10 lines
+11-28 13:36:09.939 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:10.296 30074 30124 D Evaluation: 0 res for frame 6 received at 1574940970296
+11-28 13:36:11.187 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:11.204 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:11.207 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 35 lines
+11-28 13:36:11.207 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:12.433 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:12.448 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:12.453 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 32 lines
+11-28 13:36:12.453 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:13.634 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:13.662 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:13.666 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 35 lines
+11-28 13:36:13.666 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:14.104 30074 30108 I loudridar.arhu: Starting profile saver IsSaveProfileNow end.
+11-28 13:36:14.117 30074 30074 I AwareBitmapCacher: init lrucache size: 2097152 pid=30074
+11-28 13:36:14.650 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:14.675 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:14.679 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 25 lines
+11-28 13:36:14.679 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:15.640 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:15.660 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:15.667 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 23 lines
+11-28 13:36:15.667 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:16.505 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:16.526 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:16.528 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 18 lines
+11-28 13:36:16.529 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:16.529 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:16.529 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:16.530 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:16.530 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:16.530 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:16.530 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:17.341 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:17.357 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:17.357 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:17.363 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 22 lines
+11-28 13:36:17.363 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:18.261 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:18.287 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:18.288 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-28 13:36:18.288 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:18.288 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:18.288 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-28 13:36:18.288 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:18.289 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:18.290 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 7 lines
+11-28 13:36:18.290 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:18.290 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:18.291 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 7 lines
+11-28 13:36:18.291 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:19.188 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:19.210 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:19.214 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 23 lines
+11-28 13:36:19.215 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:19.215 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:20.102 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:20.122 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:20.123 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 7 lines
+11-28 13:36:20.123 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:20.123 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:20.124 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 16 lines
+11-28 13:36:20.124 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:21.034 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:21.059 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:21.063 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 26 lines
+11-28 13:36:21.063 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:21.939 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:21.972 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:21.975 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 14 lines
+11-28 13:36:21.976 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:21.976 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:21.976 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:21.976 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:21.976 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:21.976 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:21.977 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:21.981 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:21.984 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-28 13:36:21.984 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:22.203 30074 30074 D Poster  : At 1574940982202 location is 65.05786988051022 (latitude), and 25.470121976268473 (longitude)
+11-28 13:36:22.215 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:22.883 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:22.900 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:22.901 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 6 lines
+11-28 13:36:22.901 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:22.901 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:22.904 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 17 lines
+11-28 13:36:22.904 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:23.190 30074 30074 D Poster  : At 1574940983190 location is 65.05796853313197 (latitude), and 25.47010986604218 (longitude)
+11-28 13:36:23.192 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:23.822 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:23.842 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:23.844 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 24 lines
+11-28 13:36:23.844 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:24.173 30074 30074 D Poster  : At 1574940984173 location is 65.05800824410214 (latitude), and 25.470142194604048 (longitude)
+11-28 13:36:24.176 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:24.759 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:24.792 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:24.793 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:24.793 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:24.793 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:24.794 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 14 lines
+11-28 13:36:24.794 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:24.794 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:24.794 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:24.794 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 6 lines
+11-28 13:36:24.794 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:25.178 30074 30074 D Poster  : At 1574940985178 location is 65.0580029713729 (latitude), and 25.470156293608888 (longitude)
+11-28 13:36:25.181 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:25.682 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:25.707 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:25.710 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 25 lines
+11-28 13:36:25.710 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:26.176 30074 30074 D Poster  : At 1574940986176 location is 65.05792196440241 (latitude), and 25.47018590537445 (longitude)
+11-28 13:36:26.179 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:26.683 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:26.704 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:26.706 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 25 lines
+11-28 13:36:26.706 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:27.180 30074 30074 D Poster  : At 1574940987178 location is 65.05791598435994 (latitude), and 25.470181097160054 (longitude)
+11-28 13:36:27.186 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:27.615 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:27.643 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:27.645 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 18 lines
+11-28 13:36:27.645 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:27.646 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:27.646 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:27.646 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 4 lines
+11-28 13:36:27.646 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:28.178 30074 30074 D Poster  : At 1574940988177 location is 65.05792261304464 (latitude), and 25.470187238157756 (longitude)
+11-28 13:36:28.180 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:28.534 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:28.564 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:28.568 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 25 lines
+11-28 13:36:28.568 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:29.194 30074 30074 D Poster  : At 1574940989193 location is 65.05792991506853 (latitude), and 25.470177371378835 (longitude)
+11-28 13:36:29.196 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:29.335 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:29.336 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:29.336 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:29.336 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:29.336 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:29.336 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:29.336 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:29.336 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:29.336 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:29.336 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:29.403 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:29.403 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:29.403 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:29.403 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:29.403 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:29.403 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:29.403 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:29.404 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:29.404 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:29.404 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:29.438 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:29.438 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:29.439 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:29.439 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:29.439 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:29.439 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:29.439 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:29.439 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:29.439 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:29.439 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:29.439 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:29.469 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:29.469 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-28 13:36:29.469 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:29.469 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:29.470 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 10 lines
+11-28 13:36:29.471 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:29.471 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:29.471 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 4 lines
+11-28 13:36:29.471 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:29.471 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:29.471 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:29.471 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:29.471 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:29.471 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:29.471 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:29.471 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:29.472 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:29.472 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:29.472 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:29.472 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:29.472 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:29.507 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:29.507 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:29.507 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:29.507 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:29.507 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:29.507 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:29.507 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:29.507 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:29.507 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:29.507 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:29.536 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:29.536 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:29.536 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:29.536 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:29.536 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:29.536 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:29.536 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:29.536 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:29.536 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:29.536 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:29.570 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:29.571 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:29.571 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:29.571 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:29.571 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:29.571 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:29.571 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:29.571 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:29.571 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:29.571 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:29.594 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:29.594 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:29.594 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:29.594 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:29.594 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:29.594 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:29.594 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:29.594 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:29.594 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:29.594 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:29.626 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:29.627 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:29.627 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:29.627 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:29.627 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:29.627 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:29.627 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:29.627 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:29.627 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:29.627 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:29.657 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:29.657 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:29.657 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:29.657 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:29.657 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:29.657 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:29.658 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:29.658 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:29.658 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:29.658 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:29.696 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:29.697 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:29.697 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:29.697 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:29.697 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:29.697 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:29.697 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:29.697 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:29.697 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:29.697 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:30.003 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:30.003 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:30.003 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:30.003 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:30.003 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:30.003 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:30.003 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:30.003 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:30.003 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:30.003 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:30.043 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:30.044 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:30.044 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:30.044 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:30.044 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:30.044 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:30.044 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:30.044 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:30.044 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:30.044 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:30.078 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:30.078 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:30.078 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:30.078 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:30.079 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:30.079 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:30.079 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:30.079 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:30.079 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:30.079 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:30.104 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:30.104 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:30.104 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:30.104 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:30.104 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:30.104 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:30.104 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:30.104 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:30.104 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:30.104 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:30.183 30074 30074 D Poster  : At 1574940990183 location is 65.05792953660382 (latitude), and 25.470169933219648 (longitude)
+11-28 13:36:30.185 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:30.186 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:30.186 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:30.186 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:30.186 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:30.186 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:30.186 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:30.186 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:30.186 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:30.186 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:30.186 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:30.217 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:30.218 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:30.218 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:30.218 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:30.218 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:30.218 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:30.218 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:30.218 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:30.218 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:30.218 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:30.303 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:30.304 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:30.304 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:30.304 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:30.304 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:30.304 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:30.304 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:30.304 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:30.304 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:30.304 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:30.336 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:30.336 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:30.336 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:30.336 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:30.336 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:30.336 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:30.336 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:30.336 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:30.336 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:30.336 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:30.336 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:30.366 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:30.368 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 9 lines
+11-28 13:36:30.368 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:30.381 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:30.382 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:30.382 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:30.382 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:30.382 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:30.382 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:30.382 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:30.382 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:30.382 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:30.382 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:30.417 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:30.417 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:30.417 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:30.417 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:30.417 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:30.418 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:30.418 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:30.418 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:30.418 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:30.418 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:30.442 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:30.442 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:30.442 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:30.442 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:30.442 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:30.442 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:30.442 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:30.442 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:30.442 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:30.442 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:30.505 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:30.505 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:30.505 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:30.505 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:30.505 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:30.505 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:30.505 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:30.505 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:30.505 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:30.505 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:30.543 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:30.544 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:30.544 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:30.544 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:30.544 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:30.544 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:30.544 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:30.544 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:30.544 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:30.544 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:30.578 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:30.578 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:30.578 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:30.578 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:30.578 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:30.578 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:30.578 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:30.578 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:30.578 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:30.579 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:30.738 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:30.738 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:30.738 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:30.738 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:30.738 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:30.738 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:30.738 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:30.738 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:30.738 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:30.738 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:30.773 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:30.773 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:30.773 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:30.773 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:30.773 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:30.773 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:30.773 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:30.773 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:30.773 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:30.773 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:30.913 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:30.913 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:30.913 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:30.913 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:30.913 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:30.913 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:30.913 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:30.913 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:30.913 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:30.913 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:30.947 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:30.947 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:30.947 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:30.947 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:30.947 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:30.947 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:30.947 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:30.947 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:30.947 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:30.947 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:30.977 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:30.977 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:30.977 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:30.977 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:30.977 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:30.977 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:30.977 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:30.977 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:30.977 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:30.977 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:31.016 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:31.016 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:31.016 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:31.016 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:31.016 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:31.016 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:31.016 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:31.016 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:31.016 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:31.016 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:31.047 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:31.047 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:31.047 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:31.047 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:31.047 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:31.047 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:31.047 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:31.047 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:31.047 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:31.047 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:31.082 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:31.082 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:31.082 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:31.082 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:31.082 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:31.082 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:31.082 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:31.082 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:31.082 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:31.082 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:31.144 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:31.144 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:31.144 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:31.144 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:31.144 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:31.144 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:31.144 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:31.144 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:31.144 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:31.144 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:31.187 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:31.187 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:31.188 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:31.188 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:31.188 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:31.188 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:31.188 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:31.188 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:31.188 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:31.188 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:31.192 30074 30074 D Poster  : At 1574940991192 location is 65.05793476433163 (latitude), and 25.470155572997783 (longitude)
+11-28 13:36:31.194 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:31.212 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:31.213 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:31.213 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:31.213 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:31.213 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:31.213 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:31.213 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:31.213 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:31.213 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:31.213 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:31.237 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:31.237 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:31.237 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:31.237 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:31.237 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:31.237 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:31.237 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:31.237 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:31.237 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:31.237 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:31.282 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:31.282 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:31.282 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:31.282 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:31.282 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:31.282 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:31.282 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:31.282 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:31.282 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:31.282 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:31.308 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:31.337 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:31.339 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 7 lines
+11-28 13:36:31.339 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:31.444 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:31.444 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:31.444 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:31.444 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:31.444 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:31.444 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:31.444 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:31.444 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:31.444 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:31.444 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:31.483 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:31.483 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:31.483 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:31.483 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:31.483 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:31.483 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:31.483 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:31.484 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:31.484 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:31.484 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:31.520 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:31.520 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:31.520 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:31.520 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:31.520 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:31.520 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:31.520 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:31.520 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:31.520 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:31.520 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:31.619 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:31.619 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:31.619 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:31.619 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:31.619 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:31.619 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:31.619 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:31.620 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:31.620 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:31.620 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:31.655 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:31.655 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:31.655 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:31.655 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:31.655 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:31.655 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:31.655 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:31.655 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:31.655 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:31.655 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:31.676 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:31.676 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:31.676 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:31.676 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:31.676 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:31.676 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:31.676 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:31.676 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:31.676 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:31.676 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:31.718 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:31.718 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:31.718 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:31.718 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:31.718 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:31.718 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:31.718 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:31.718 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:31.718 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:31.718 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:31.752 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:31.752 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:31.752 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:31.752 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:31.752 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:31.752 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:31.752 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:31.753 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:31.753 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:31.753 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:31.776 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:31.776 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:31.776 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:31.776 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:31.776 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:31.776 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:31.776 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:31.776 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:31.776 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:31.776 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:31.821 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:31.821 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:31.821 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:31.821 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:31.821 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:31.821 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:31.821 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:31.821 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:31.821 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:31.821 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:31.865 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:31.865 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:31.865 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:31.865 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:31.865 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:31.865 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:31.865 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:31.865 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:31.865 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:31.865 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:31.889 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:31.889 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:31.889 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:31.889 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:31.889 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:31.889 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:31.889 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:31.889 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:31.889 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:31.889 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:31.916 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:31.916 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:31.916 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:31.916 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:31.916 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:31.916 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:31.916 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:31.916 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:31.916 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:31.916 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:31.954 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:31.954 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:31.954 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:31.954 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:31.954 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:31.954 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:31.954 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:31.954 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:31.954 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:31.954 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:31.983 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:31.983 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:31.983 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:31.983 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:31.983 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:31.983 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:31.983 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:31.983 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:31.983 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:31.983 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:32.020 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:32.020 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:32.020 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:32.020 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:32.020 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:32.020 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:32.020 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:32.020 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:32.020 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:32.020 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:32.178 30074 30074 D Poster  : At 1574940992178 location is 65.05793707093103 (latitude), and 25.470159435136516 (longitude)
+11-28 13:36:32.182 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:32.249 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:32.249 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:32.249 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:32.249 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:32.249 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:32.249 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:32.249 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:32.249 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:32.249 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:32.249 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:32.250 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:32.275 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:32.276 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 9 lines
+11-28 13:36:32.276 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:32.414 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:32.415 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:32.415 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:32.415 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:32.415 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:32.415 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:32.415 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:32.415 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:32.415 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:32.415 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:32.594 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:32.594 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:32.594 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:32.594 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:32.594 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:32.594 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:32.594 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:32.594 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:32.594 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:32.594 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:32.621 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:32.621 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:32.621 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:32.621 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:32.621 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:32.621 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:32.621 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:32.621 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:32.621 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:32.621 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:32.660 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:32.661 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:32.661 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:32.661 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:32.661 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:32.661 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:32.661 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:32.661 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:32.661 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:32.661 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:32.698 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:32.699 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:32.699 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:32.699 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:32.699 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:32.699 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:32.699 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:32.699 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:32.699 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:32.699 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:32.723 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:32.723 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:32.723 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:32.723 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:32.723 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:32.723 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:32.723 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:32.723 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:32.723 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:32.723 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:32.960 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:32.960 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:32.960 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:32.960 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:32.960 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:32.960 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:32.960 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:32.960 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:32.960 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:32.960 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:33.062 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:33.062 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:33.062 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:33.063 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:33.063 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:33.063 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:33.063 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:33.063 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:33.063 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:33.063 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:33.092 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:33.092 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:33.092 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:33.092 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:33.092 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:33.092 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:33.092 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:33.092 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:33.092 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:33.092 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:33.188 30074 30074 D Poster  : At 1574940993188 location is 65.05794103425788 (latitude), and 25.470167124280604 (longitude)
+11-28 13:36:33.190 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:33.203 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:33.204 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:33.204 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:33.204 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:33.204 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:33.204 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:33.204 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:33.204 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:33.204 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:33.204 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:33.204 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:33.222 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:33.224 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 16 lines
+11-28 13:36:33.224 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:33.348 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:33.348 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:33.348 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:33.348 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:33.348 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:33.348 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:33.348 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:33.348 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:33.348 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:33.348 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:33.392 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:33.392 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:33.392 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:33.392 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:33.392 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:33.392 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:33.392 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:33.392 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:33.392 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:33.392 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:33.421 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:33.421 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:33.421 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:33.421 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:33.421 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:33.421 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:33.421 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:33.421 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:33.421 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:33.421 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:33.467 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:33.467 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:33.467 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:33.467 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:33.467 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:33.467 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:33.467 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:33.467 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:33.467 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:33.467 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:33.539 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:33.539 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:33.539 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:33.539 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:33.539 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:33.539 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:33.539 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:33.539 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:33.539 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:33.539 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:33.562 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:33.562 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:33.562 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:33.562 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:33.562 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:33.562 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:33.562 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:33.562 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:33.562 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:33.562 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:33.749 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:33.749 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:33.749 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:33.749 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:33.749 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:33.750 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:33.750 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:33.750 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:33.750 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:33.750 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:33.830 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:33.830 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:33.830 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:33.830 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:33.830 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:33.830 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:33.830 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:33.830 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:33.830 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:33.830 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:33.864 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:33.864 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:33.864 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:33.864 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:33.864 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:33.864 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:33.864 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:33.864 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:33.864 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:33.864 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:33.898 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:33.899 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:33.899 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:33.899 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:33.899 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:33.899 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:33.899 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:33.899 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:33.899 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:33.899 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:34.005 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:34.005 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:34.005 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:34.005 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:34.005 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:34.005 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:34.005 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:34.005 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:34.005 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:34.005 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:34.028 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:34.028 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:34.028 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:34.028 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:34.028 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:34.028 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:34.028 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:34.028 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:34.028 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:34.028 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:34.168 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:34.172 30074 30074 D Poster  : At 1574940994171 location is 65.05794296606219 (latitude), and 25.470154696314733 (longitude)
+11-28 13:36:34.176 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:34.188 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:34.189 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 13 lines
+11-28 13:36:34.189 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:34.214 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:34.215 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:34.215 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:34.215 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:34.215 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:34.215 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:34.215 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:34.215 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:34.215 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:34.215 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:34.236 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:34.236 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:34.236 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:34.236 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:34.236 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:34.236 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:34.236 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:34.236 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:34.236 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:34.236 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:34.263 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:34.263 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:34.263 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:34.263 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:34.263 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:34.263 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:34.263 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:34.263 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:34.263 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:34.263 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:34.379 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:34.379 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:34.379 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:34.379 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:34.379 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:34.379 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:34.380 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:34.380 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:34.380 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:34.380 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:34.409 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:34.409 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:34.409 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:34.409 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:34.409 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:34.409 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:34.409 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:34.409 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:34.409 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:34.409 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:34.428 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:34.428 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:34.428 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:34.428 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:34.428 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:34.428 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:34.428 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:34.428 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:34.428 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:34.428 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:34.508 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:34.508 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:34.508 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:34.508 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:34.508 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:34.508 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:34.508 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:34.508 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:34.509 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:34.509 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:34.549 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:34.549 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:34.549 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:34.549 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:34.549 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:34.549 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:34.549 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:34.549 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:34.549 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:34.549 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:34.572 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:34.572 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:34.572 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:34.573 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:34.573 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:34.573 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:34.573 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:34.573 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:34.573 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:34.573 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:34.603 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:34.603 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:34.603 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:34.603 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:34.604 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:34.604 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:34.604 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:34.604 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:34.604 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:34.604 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:34.641 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:34.641 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:34.641 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:34.641 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:34.641 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:34.641 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:34.641 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:34.641 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:34.641 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:34.641 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:34.668 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:34.668 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:34.668 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:34.668 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:34.668 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:34.668 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:34.668 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:34.668 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:34.668 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:34.668 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:34.698 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:34.698 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:34.698 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:34.698 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:34.698 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:34.698 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:34.698 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:34.698 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:34.698 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:34.698 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:34.736 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:34.737 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:34.737 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:34.737 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:34.737 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:34.737 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:34.737 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:34.737 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:34.737 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:34.737 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:34.773 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:34.773 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:34.773 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:34.773 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:34.773 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:34.774 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:34.774 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:34.774 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:34.774 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:34.774 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:34.884 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:34.884 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:34.884 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:34.884 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:34.884 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:34.884 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:34.884 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:34.884 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:34.884 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:34.884 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:34.974 30074 30124 W System.err: java.net.SocketException: Message too long
+11-28 13:36:34.975 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:36:34.975 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:36:34.975 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:36:34.975 30074 30124 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:36:34.975 30074 30124 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:36:34.975 30074 30124 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:36:34.975 30074 30124 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:36:34.975 30074 30124 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:36:34.975 30074 30124 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:36:35.133 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:35.153 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:35.154 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 10 lines
+11-28 13:36:35.154 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:35.166 30074 30074 D Poster  : At 1574940995166 location is 65.05794610438302 (latitude), and 25.47016382243256 (longitude)
+11-28 13:36:35.168 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:36.182 30074 30074 D Poster  : At 1574940996181 location is 65.05795298312034 (latitude), and 25.470155798070095 (longitude)
+11-28 13:36:36.185 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:36.582 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:36.605 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:36.611 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 25 lines
+11-28 13:36:36.611 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:36.617 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:36.618 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 6 lines
+11-28 13:36:36.619 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:36.619 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:36.619 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 6 lines
+11-28 13:36:36.619 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:37.173 30074 30074 D Poster  : At 1574940997172 location is 65.05795066756093 (latitude), and 25.470147333999282 (longitude)
+11-28 13:36:37.176 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:38.173 30074 30074 D Poster  : At 1574940998172 location is 65.0579606696133 (latitude), and 25.470118530972105 (longitude)
+11-28 13:36:38.175 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:38.403 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:38.439 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:38.444 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 50 lines
+11-28 13:36:38.444 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:39.170 30074 30074 D Poster  : At 1574940999170 location is 65.05796244758427 (latitude), and 25.470122506381657 (longitude)
+11-28 13:36:39.172 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:40.147 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:40.170 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:40.170 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:40.173 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 19 lines
+11-28 13:36:40.173 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:40.176 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:40.176 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:40.176 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:40.176 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:40.176 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:40.178 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 12 lines
+11-28 13:36:40.178 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:40.178 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:40.180 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 10 lines
+11-28 13:36:40.180 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:40.194 30074 30074 D Poster  : At 1574941000193 location is 65.05795473229111 (latitude), and 25.470112781004488 (longitude)
+11-28 13:36:40.195 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:41.175 30074 30074 D Poster  : At 1574941001175 location is 65.05795765327863 (latitude), and 25.47011762857857 (longitude)
+11-28 13:36:41.178 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:41.897 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:41.923 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:41.926 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 33 lines
+11-28 13:36:41.926 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:41.926 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:41.926 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:41.926 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-28 13:36:41.926 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:41.926 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:41.926 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-28 13:36:41.927 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:41.927 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:41.927 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-28 13:36:41.927 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:41.927 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:41.927 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:42.191 30074 30074 D Poster  : At 1574941002190 location is 65.05796503618407 (latitude), and 25.47011814728944 (longitude)
+11-28 13:36:42.194 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:43.170 30074 30074 D Poster  : At 1574941003169 location is 65.05796920892074 (latitude), and 25.470103550235052 (longitude)
+11-28 13:36:43.173 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:43.335 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:43.366 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:43.368 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 13 lines
+11-28 13:36:43.368 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:43.368 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:43.368 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:43.369 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:43.369 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:43.369 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:43.369 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-28 13:36:43.369 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:43.369 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:43.370 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-28 13:36:43.370 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:43.370 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:43.370 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-28 13:36:43.370 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:43.370 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:43.370 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:43.370 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-28 13:36:43.370 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:43.371 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:43.371 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:43.371 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:43.371 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:43.371 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-28 13:36:43.371 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:44.176 30074 30074 D Poster  : At 1574941004176 location is 65.05797531668301 (latitude), and 25.470095210147186 (longitude)
+11-28 13:36:44.179 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:44.681 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:44.703 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:44.708 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 34 lines
+11-28 13:36:44.708 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:44.708 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:44.708 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-28 13:36:44.708 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:45.174 30074 30074 D Poster  : At 1574941005174 location is 65.05798634313729 (latitude), and 25.470086138019695 (longitude)
+11-28 13:36:45.176 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:46.025 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:46.052 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:46.056 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 18 lines
+11-28 13:36:46.056 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:46.056 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:46.056 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:46.056 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:46.056 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:46.057 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:46.058 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:46.058 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:46.058 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:46.058 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:46.059 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:46.060 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 6 lines
+11-28 13:36:46.061 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:46.062 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:46.063 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:46.063 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-28 13:36:46.063 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:46.193 30074 30074 D Poster  : At 1574941006193 location is 65.0579849133948 (latitude), and 25.47008245070059 (longitude)
+11-28 13:36:46.196 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:47.175 30074 30074 D Poster  : At 1574941007175 location is 65.05797500457895 (latitude), and 25.4700778109138 (longitude)
+11-28 13:36:47.177 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:47.370 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:47.390 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:47.394 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 27 lines
+11-28 13:36:47.394 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:47.398 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:47.399 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 8 lines
+11-28 13:36:47.399 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:48.196 30074 30074 D Poster  : At 1574941008196 location is 65.05796648830606 (latitude), and 25.47007338869328 (longitude)
+11-28 13:36:48.200 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:48.776 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:48.796 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:48.801 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 39 lines
+11-28 13:36:48.802 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:49.174 30074 30074 D Poster  : At 1574941009174 location is 65.05796325836083 (latitude), and 25.470070167716795 (longitude)
+11-28 13:36:49.176 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:50.126 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:50.153 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:50.153 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 10 lines
+11-28 13:36:50.153 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:50.153 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:50.154 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:50.155 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 24 lines
+11-28 13:36:50.155 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:50.176 30074 30074 D Poster  : At 1574941010176 location is 65.05796272440111 (latitude), and 25.47006615671756 (longitude)
+11-28 13:36:50.178 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:51.191 30074 30074 D Poster  : At 1574941011190 location is 65.05796266449897 (latitude), and 25.470057091093068 (longitude)
+11-28 13:36:51.193 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:51.463 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:51.488 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:51.496 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 39 lines
+11-28 13:36:51.496 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:52.189 30074 30074 D Poster  : At 1574941012189 location is 65.05796370380305 (latitude), and 25.470057070464435 (longitude)
+11-28 13:36:52.191 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:52.771 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:52.789 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:52.790 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-28 13:36:52.790 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:52.791 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:52.802 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 32 lines
+11-28 13:36:52.802 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:53.175 30074 30074 D Poster  : At 1574941013174 location is 65.05796662020884 (latitude), and 25.470053093276345 (longitude)
+11-28 13:36:53.177 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:54.183 30074 30074 D Poster  : At 1574941014183 location is 65.05797139958081 (latitude), and 25.470043107023265 (longitude)
+11-28 13:36:54.186 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:54.281 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:54.303 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:54.308 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 43 lines
+11-28 13:36:54.308 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:55.187 30074 30074 D Poster  : At 1574941015187 location is 65.05797185453912 (latitude), and 25.470029813810758 (longitude)
+11-28 13:36:55.189 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:55.694 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:55.724 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:55.728 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 40 lines
+11-28 13:36:55.728 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:56.183 30074 30074 D Poster  : At 1574941016183 location is 65.05797406487328 (latitude), and 25.470022683879044 (longitude)
+11-28 13:36:56.185 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:57.076 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:57.093 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:57.098 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 37 lines
+11-28 13:36:57.098 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:57.177 30074 30074 D Poster  : At 1574941017177 location is 65.05797288904527 (latitude), and 25.470016367787554 (longitude)
+11-28 13:36:57.179 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:58.196 30074 30074 D Poster  : At 1574941018196 location is 65.05796814680227 (latitude), and 25.47000738460432 (longitude)
+11-28 13:36:58.198 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:36:58.452 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:36:58.471 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:58.475 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 6 lines
+11-28 13:36:58.477 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:58.477 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:58.479 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 11 lines
+11-28 13:36:58.479 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:58.481 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:58.481 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:58.481 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:58.481 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:58.481 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-28 13:36:58.482 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:58.482 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:58.482 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:58.482 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:58.482 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:58.482 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:58.482 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 7 lines
+11-28 13:36:58.482 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:58.482 30074 30086 W System  : A resource failed to call close. 
+11-28 13:36:59.179 30074 30074 D Poster  : At 1574941019179 location is 65.05795969067522 (latitude), and 25.469996938931303 (longitude)
+11-28 13:36:59.183 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:37:00.035 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:37:00.056 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:00.057 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 13 lines
+11-28 13:37:00.057 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:00.057 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:00.062 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 30 lines
+11-28 13:37:00.062 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:00.194 30074 30074 D Poster  : At 1574941020194 location is 65.05795053573333 (latitude), and 25.469990120261134 (longitude)
+11-28 13:37:00.199 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:37:01.192 30074 30074 D Poster  : At 1574941021192 location is 65.05794728070525 (latitude), and 25.469986685055797 (longitude)
+11-28 13:37:01.194 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:37:01.540 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:37:01.566 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:01.567 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 7 lines
+11-28 13:37:01.567 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:01.567 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:01.572 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 33 lines
+11-28 13:37:01.572 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:02.184 30074 30074 D Poster  : At 1574941022184 location is 65.05794687965448 (latitude), and 25.469968186228837 (longitude)
+11-28 13:37:02.186 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:37:02.916 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:37:02.947 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:02.947 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-28 13:37:02.947 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:02.948 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:02.948 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:02.948 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:02.949 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 9 lines
+11-28 13:37:02.949 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:02.949 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:02.951 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:02.953 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:02.953 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:02.954 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-28 13:37:02.954 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:02.954 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:02.954 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:02.955 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-28 13:37:02.956 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:02.957 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:02.959 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 10 lines
+11-28 13:37:02.959 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:03.179 30074 30074 D Poster  : At 1574941023179 location is 65.05795080747836 (latitude), and 25.469949464613737 (longitude)
+11-28 13:37:03.181 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:37:04.171 30074 30074 D Poster  : At 1574941024171 location is 65.05795151804593 (latitude), and 25.469935615162424 (longitude)
+11-28 13:37:04.173 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:37:04.296 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:37:04.325 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:04.327 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 39 lines
+11-28 13:37:04.327 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:05.188 30074 30074 D Poster  : At 1574941025187 location is 65.05795316210457 (latitude), and 25.469884980092463 (longitude)
+11-28 13:37:05.189 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:37:05.673 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:37:05.699 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:05.704 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 38 lines
+11-28 13:37:05.704 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:06.180 30074 30074 D Poster  : At 1574941026179 location is 65.0579540654625 (latitude), and 25.46986823124367 (longitude)
+11-28 13:37:06.182 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:37:07.011 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:37:07.037 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:07.045 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 38 lines
+11-28 13:37:07.045 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:07.178 30074 30074 D Poster  : At 1574941027178 location is 65.05795766022601 (latitude), and 25.469834030614233 (longitude)
+11-28 13:37:07.180 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:37:08.171 30074 30074 D Poster  : At 1574941028171 location is 65.05795885519244 (latitude), and 25.4698188167265 (longitude)
+11-28 13:37:08.172 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:37:08.395 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:37:08.422 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:08.425 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 21 lines
+11-28 13:37:08.425 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:08.425 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:08.425 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:08.425 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:08.425 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:08.425 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:08.425 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:08.426 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:08.426 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:08.426 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:08.426 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:08.426 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:08.426 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:08.426 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:08.426 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:08.426 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:08.426 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:08.427 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:09.197 30074 30074 D Poster  : At 1574941029196 location is 65.05795680655396 (latitude), and 25.469830761767593 (longitude)
+11-28 13:37:09.199 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:37:09.763 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:37:09.783 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:09.787 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 36 lines
+11-28 13:37:09.787 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:09.788 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:09.788 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:10.198 30074 30074 D Poster  : At 1574941030198 location is 65.0579554738011 (latitude), and 25.469826822792392 (longitude)
+11-28 13:37:10.200 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:37:10.935 30074 30074 D stylus  : init stylus touchlistener.
+11-28 13:37:10.944 30074 30074 W Settings: Setting device_provisioned has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+11-28 13:37:10.944 30074 30074 V HiTouch_HiTouchSensor: User setup is finished.
+11-28 13:37:10.956 30074 30074 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:66.970215, limit is:60The moving distance of Y is:12.987976, limit is:60
+11-28 13:37:11.180 30074 30074 D Poster  : At 1574941031180 location is 65.05795013290071 (latitude), and 25.46984277549857 (longitude)
+11-28 13:37:11.181 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:37:11.333 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:37:11.349 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:11.352 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 44 lines
+11-28 13:37:11.352 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:12.179 30074 30074 D Poster  : At 1574941032179 location is 65.05795013290071 (latitude), and 25.46984277549857 (longitude)
+11-28 13:37:12.180 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:37:12.812 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:37:12.835 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:12.837 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 42 lines
+11-28 13:37:12.837 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:13.176 30074 30074 D Poster  : At 1574941033176 location is 65.05790089815588 (latitude), and 25.469876343744318 (longitude)
+11-28 13:37:13.178 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:37:13.888 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:37:13.908 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:13.909 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 30 lines
+11-28 13:37:13.909 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:14.187 30074 30074 D Poster  : At 1574941034187 location is 65.05791265624522 (latitude), and 25.469947274216537 (longitude)
+11-28 13:37:14.189 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:37:15.007 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:37:15.028 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:15.032 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 31 lines
+11-28 13:37:15.032 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:15.176 30074 30074 D Poster  : At 1574941035176 location is 65.05789956209496 (latitude), and 25.46994225133228 (longitude)
+11-28 13:37:15.178 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:37:15.767 30074 30074 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:99.68115, limit is:60The moving distance of Y is:71.97742, limit is:60
+11-28 13:37:16.103 30074 30088 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:37:16.119 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:16.121 30074 30086 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 31 lines
+11-28 13:37:16.121 30074 30086 W System  : A resource failed to call close. 
+11-28 13:37:16.183 30074 30074 D Poster  : At 1574941036183 location is 65.05788589642033 (latitude), and 25.469936850900183 (longitude)
+11-28 13:37:16.187 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:37:16.949 30074 30074 I Poster  :  onPause() called.
+11-28 13:37:17.097 30074 30074 I Camera  : close camera: 0, package name: symlab.cloudridar.arhud
+11-28 13:37:17.097 30074 30074 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 30074 ,uidOf3RdApk: 10147 ,permType: 0 ,permCfg: 0
+11-28 13:37:17.100 30074 30074 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = false
+11-28 13:37:17.214 30074 30074 D ZrHung.AppEyeUiProbe: stop checker.
+11-28 13:37:17.235 30074 30074 D Poster  : At 1574941037235 location is 65.05786938695971 (latitude), and 25.469935796960385 (longitude)
+11-28 13:37:17.243 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:37:17.286 30074 30074 I Poster  :  surfaceDestroyed() called.
+11-28 13:37:17.286 30074 30074 D ViewRootImpl[MainActivity]: surface should not be released
+11-28 13:37:17.287 30074 30074 I Poster  :  onStop() called.
+11-28 13:37:17.308 30074 30143 W libEGL  : EGLNativeWindowType 0xf07f0008 disconnect failed
+11-28 13:37:18.163 30074 30116 D ZrHung.AppEyeUiProbe: Current Activity:false
+11-28 13:37:18.163 30074 30116 D ZrHung.AppEyeUiProbe: not watching, wait.
+11-28 13:37:18.180 30074 30074 D Poster  : At 1574941038179 location is 65.05786907810564 (latitude), and 25.46993298338318 (longitude)
+11-28 13:37:18.186 30074 30074 D Poster  : Connected to mobile network 20
+11-28 13:37:18.190 30074 30074 D Latitude: status

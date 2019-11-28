@@ -1,0 +1,81 @@
+--------- beginning of main
+11-28 14:24:40.587  9897  9897 W logcat  : type=1400 audit(0.0:1331): avc: granted { create } for name="logcat_1574943880583.txt" scontext=u:r:untrusted_app:s0:c150,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0:c150,c256,c512,c768 tclass=file
+11-28 14:24:40.593  9873  9873 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-28 14:24:40.593  9873  9900 D ZrHung.AppEyeUiProbe: Runnable thread started.
+11-28 14:24:40.593  9873  9900 D IMonitor: Load library imonitor_jni
+11-28 14:24:40.596  9873  9900 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0102]
+11-28 14:24:40.596  9873  9900 W ZrHung.AppEyeUiProbe: Failed to get config from zrhung
+11-28 14:24:40.599  9873  9873 I MultiDex: Installing application
+11-28 14:24:40.599  9873  9873 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+--------- beginning of system
+11-28 14:24:40.602  9873  9873 V ActivityThread: callActivityOnCreate
+11-28 14:24:40.602  9873  9873 I Poster  :  onCreate() called.
+11-28 14:24:40.605  9873  9873 I HwApsImpl: APS: new HwApsImpl created
+11-28 14:24:40.611  9873  9873 V HwWidgetFactory: : successes to get AllImpl object and return....
+11-28 14:24:40.618  9873  9873 D OpenGLRenderer: Skia GL Pipeline
+11-28 14:24:40.642  9873  9873 D Poster  : Server details are IP 193.166.28.132 and port 52727
+11-28 14:24:40.647  9873  9873 D Poster  : Server bound to IP 193.166.28.132 and port 52727
+11-28 14:24:40.650  9873  9873 D ActivityThread: add activity client record, r= ActivityRecord{dcc1e30 token=android.os.BinderProxy@753abfb {symlab.cloudridar.arhud/symlab.ARHUD.MainActivity}} token= android.os.BinderProxy@753abfb
+11-28 14:24:40.652  9873  9873 I Poster  :  onStart() called.
+11-28 14:24:40.652  9873  9873 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-28 14:24:40.654  9873  9873 I Poster  :  onResume() called.
+11-28 14:24:40.659  9873  9873 I PermissionManager: camera remind result:true
+11-28 14:24:40.659  9873  9873 I Camera  : open camera: 0, package name: symlab.cloudridar.arhud
+11-28 14:24:40.659  9873  9873 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 9873 ,uidOf3RdApk: 10150 ,permType: 0 ,permCfg: 1
+11-28 14:24:40.660  9873  9873 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = true
+11-28 14:24:40.668  9873  9873 D ActivityThread: isOptEnabled=false isWechatScanOpt=false
+11-28 14:24:40.670  9873  9873 I HwSecImmHelper: mSecurityInputMethodService is null
+11-28 14:24:40.678  9873  9873 D OpenGLRenderer:   HWUI Binary is  enabled
+11-28 14:24:40.705  9873  9929 D HiTouch_PressGestureDetector: onAttached, package=symlab.cloudridar.arhud, windowType=1, mHiTouchRestricted=false
+11-28 14:24:40.714  9873  9928 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-28 14:24:40.714  9873  9928 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-28 14:24:40.715  9873  9928 I iGraphics: [0020080c] pn: symlab.cloudridar.arhud, p: 9873
+11-28 14:24:40.715  9873  9928 I OpenGLRenderer: Initialized EGL, version 1.4, mEglDisplay 0x1
+11-28 14:24:40.715  9873  9928 D OpenGLRenderer: Swap behavior 2
+11-28 14:24:40.727  9873  9928 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+11-28 14:24:40.734  9873  9873 I Poster  :  surfaceCreated() called.
+11-28 14:24:40.734  9873  9873 I Poster  : initPreview() called
+11-28 14:24:40.739  9873  9873 I PermissionManager: camera remind result:true
+11-28 14:24:40.744  9873  9873 I Poster  :  surfaceChanged() called.
+11-28 14:24:40.760  9873  9873 W InputMethodManager: startInputReason = 1
+11-28 14:24:40.768  9873  9873 W InputMethodManager: startInputReason = 5
+11-28 14:24:41.442  9873  9909 D Evaluation: 5 res for frame 7 received at 1574943881442
+11-28 14:24:41.476  9873  9909 D Evaluation: 5 res for frame 8 received at 1574943881476
+11-28 14:24:41.547  9873  9909 D Evaluation: 5 res for frame 9 received at 1574943881547
+11-28 14:24:41.613  9873  9884 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 14:24:41.614  9873  9909 D Evaluation: 4 res for frame 10 received at 1574943881614
+11-28 14:24:41.622  9873  9882 W System  : A resource failed to call close. 
+11-28 14:24:41.623  9873  9882 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 19 lines
+11-28 14:24:41.623  9873  9882 W System  : A resource failed to call close. 
+11-28 14:24:41.648  9873  9909 D Evaluation: 5 res for frame 11 received at 1574943881648
+11-28 14:24:41.715  9873  9909 D Evaluation: 3 res for frame 12 received at 1574943881715
+11-28 14:24:41.782  9873  9909 D Evaluation: 5 res for frame 13 received at 1574943881782
+11-28 14:24:41.812  9873  9909 D Evaluation: 3 res for frame 14 received at 1574943881812
+11-28 14:24:41.881  9873  9909 D Evaluation: 5 res for frame 15 received at 1574943881881
+11-28 14:24:41.912  9873  9909 D Evaluation: 5 res for frame 16 received at 1574943881912
+11-28 14:24:41.994  9873  9909 D Evaluation: 5 res for frame 17 received at 1574943881994
+11-28 14:24:42.677  9873  9884 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 14:24:42.696  9873  9882 W System  : A resource failed to call close. 
+11-28 14:24:42.699  9873  9882 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 37 lines
+11-28 14:24:42.699  9873  9882 W System  : A resource failed to call close. 
+11-28 14:24:43.637  9873  9873 D stylus  : init stylus touchlistener.
+11-28 14:24:43.643  9873  9873 W Settings: Setting device_provisioned has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+11-28 14:24:43.644  9873  9873 V HiTouch_HiTouchSensor: User setup is finished.
+11-28 14:24:43.731  9873  9873 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:69.67871, limit is:60The moving distance of Y is:1.9981384, limit is:60
+11-28 14:24:43.833  9873  9884 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 14:24:43.847  9873  9882 W System  : A resource failed to call close. 
+11-28 14:24:43.849  9873  9882 I chatty  : uid=10150(symlab.cloudridar.arhud) FinalizerDaemon identical 33 lines
+11-28 14:24:43.849  9873  9882 W System  : A resource failed to call close. 
+11-28 14:24:44.306  9873  9873 I Poster  :  onPause() called.
+11-28 14:24:44.425  9873  9873 I Camera  : close camera: 0, package name: symlab.cloudridar.arhud
+11-28 14:24:44.425  9873  9873 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 9873 ,uidOf3RdApk: 10150 ,permType: 0 ,permCfg: 0
+11-28 14:24:44.427  9873  9873 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = false
+11-28 14:24:44.510  9873  9873 D ZrHung.AppEyeUiProbe: stop checker.
+11-28 14:24:44.576  9873  9873 I Poster  :  surfaceDestroyed() called.
+11-28 14:24:44.576  9873  9873 D ViewRootImpl[MainActivity]: surface should not be released
+11-28 14:24:44.576  9873  9873 I Poster  :  onStop() called.
+11-28 14:24:44.590  9873  9928 W libEGL  : EGLNativeWindowType 0xe3470008 disconnect failed
+11-28 14:24:44.597  9873  9900 D ZrHung.AppEyeUiProbe: Current Activity:false
+11-28 14:24:44.597  9873  9900 D ZrHung.AppEyeUiProbe: not watching, wait.
+11-28 14:24:45.585  9873  9873 I AwareBitmapCacher: init lrucache size: 2097152 pid=9873
+11-28 14:24:45.837  9873  9873 I Poster  :  onDestroy() called.

@@ -1,0 +1,529 @@
+--------- beginning of main
+11-28 13:35:21.629 29526 29526 W MessageQueue: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.629 29526 29526 W MessageQueue: java.lang.IllegalStateException: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.629 29526 29526 W MessageQueue: 	at android.os.MessageQueue.enqueueMessage(MessageQueue.java:650)
+11-28 13:35:21.629 29526 29526 W MessageQueue: 	at android.os.Handler.enqueueMessage(Handler.java:769)
+11-28 13:35:21.629 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageAtTime(Handler.java:718)
+11-28 13:35:21.629 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageDelayed(Handler.java:688)
+11-28 13:35:21.629 29526 29526 W MessageQueue: 	at android.os.Handler.post(Handler.java:405)
+11-28 13:35:21.629 29526 29526 W MessageQueue: 	at symlab.CloudAR.ARManager.recognizeTime(ARManager.java:152)
+11-28 13:35:21.629 29526 29526 W MessageQueue: 	at symlab.ARHUD.MainActivity$3.onPreviewFrame(MainActivity.java:296)
+11-28 13:35:21.629 29526 29526 W MessageQueue: 	at android.hardware.Camera$EventHandler.handleMessage(Camera.java:1278)
+11-28 13:35:21.629 29526 29526 W MessageQueue: 	at android.os.Handler.dispatchMessage(Handler.java:112)
+11-28 13:35:21.629 29526 29526 W MessageQueue: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:35:21.629 29526 29526 W MessageQueue: 	at android.app.ActivityThread.main(ActivityThread.java:7579)
+11-28 13:35:21.629 29526 29526 W MessageQueue: 	at java.lang.reflect.Method.invoke(Native Method)
+11-28 13:35:21.629 29526 29526 W MessageQueue: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+11-28 13:35:21.629 29526 29526 W MessageQueue: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+11-28 13:35:21.629 29526 29526 W MessageQueue: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.629 29526 29526 W MessageQueue: java.lang.IllegalStateException: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.629 29526 29526 W MessageQueue: 	at android.os.MessageQueue.enqueueMessage(MessageQueue.java:650)
+11-28 13:35:21.629 29526 29526 W MessageQueue: 	at android.os.Handler.enqueueMessage(Handler.java:769)
+11-28 13:35:21.629 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageAtTime(Handler.java:718)
+11-28 13:35:21.629 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageDelayed(Handler.java:688)
+11-28 13:35:21.629 29526 29526 W MessageQueue: 	at android.os.Handler.post(Handler.java:405)
+11-28 13:35:21.629 29526 29526 W MessageQueue: 	at symlab.CloudAR.ARManager.driveFrame(ARManager.java:157)
+11-28 13:35:21.629 29526 29526 W MessageQueue: 	at symlab.ARHUD.MainActivity$3.onPreviewFrame(MainActivity.java:297)
+11-28 13:35:21.629 29526 29526 W MessageQueue: 	at android.hardware.Camera$EventHandler.handleMessage(Camera.java:1278)
+11-28 13:35:21.629 29526 29526 W MessageQueue: 	at android.os.Handler.dispatchMessage(Handler.java:112)
+11-28 13:35:21.629 29526 29526 W MessageQueue: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:35:21.629 29526 29526 W MessageQueue: 	at android.app.ActivityThread.main(ActivityThread.java:7579)
+11-28 13:35:21.629 29526 29526 W MessageQueue: 	at java.lang.reflect.Method.invoke(Native Method)
+11-28 13:35:21.629 29526 29526 W MessageQueue: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+11-28 13:35:21.629 29526 29526 W MessageQueue: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+11-28 13:35:21.655 29526 29526 W MessageQueue: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.655 29526 29526 W MessageQueue: java.lang.IllegalStateException: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.655 29526 29526 W MessageQueue: 	at android.os.MessageQueue.enqueueMessage(MessageQueue.java:650)
+11-28 13:35:21.655 29526 29526 W MessageQueue: 	at android.os.Handler.enqueueMessage(Handler.java:769)
+11-28 13:35:21.655 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageAtTime(Handler.java:718)
+11-28 13:35:21.655 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageDelayed(Handler.java:688)
+11-28 13:35:21.655 29526 29526 W MessageQueue: 	at android.os.Handler.post(Handler.java:405)
+11-28 13:35:21.655 29526 29526 W MessageQueue: 	at symlab.CloudAR.ARManager.recognizeTime(ARManager.java:152)
+11-28 13:35:21.655 29526 29526 W MessageQueue: 	at symlab.ARHUD.MainActivity$3.onPreviewFrame(MainActivity.java:296)
+11-28 13:35:21.655 29526 29526 W MessageQueue: 	at android.hardware.Camera$EventHandler.handleMessage(Camera.java:1278)
+11-28 13:35:21.655 29526 29526 W MessageQueue: 	at android.os.Handler.dispatchMessage(Handler.java:112)
+11-28 13:35:21.655 29526 29526 W MessageQueue: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:35:21.655 29526 29526 W MessageQueue: 	at android.app.ActivityThread.main(ActivityThread.java:7579)
+11-28 13:35:21.655 29526 29526 W MessageQueue: 	at java.lang.reflect.Method.invoke(Native Method)
+11-28 13:35:21.655 29526 29526 W MessageQueue: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+11-28 13:35:21.655 29526 29526 W MessageQueue: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+11-28 13:35:21.655 29526 29526 W MessageQueue: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.655 29526 29526 W MessageQueue: java.lang.IllegalStateException: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.655 29526 29526 W MessageQueue: 	at android.os.MessageQueue.enqueueMessage(MessageQueue.java:650)
+11-28 13:35:21.655 29526 29526 W MessageQueue: 	at android.os.Handler.enqueueMessage(Handler.java:769)
+11-28 13:35:21.655 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageAtTime(Handler.java:718)
+11-28 13:35:21.655 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageDelayed(Handler.java:688)
+11-28 13:35:21.655 29526 29526 W MessageQueue: 	at android.os.Handler.post(Handler.java:405)
+11-28 13:35:21.655 29526 29526 W MessageQueue: 	at symlab.CloudAR.ARManager.driveFrame(ARManager.java:157)
+11-28 13:35:21.655 29526 29526 W MessageQueue: 	at symlab.ARHUD.MainActivity$3.onPreviewFrame(MainActivity.java:297)
+11-28 13:35:21.655 29526 29526 W MessageQueue: 	at android.hardware.Camera$EventHandler.handleMessage(Camera.java:1278)
+11-28 13:35:21.655 29526 29526 W MessageQueue: 	at android.os.Handler.dispatchMessage(Handler.java:112)
+11-28 13:35:21.655 29526 29526 W MessageQueue: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:35:21.655 29526 29526 W MessageQueue: 	at android.app.ActivityThread.main(ActivityThread.java:7579)
+11-28 13:35:21.655 29526 29526 W MessageQueue: 	at java.lang.reflect.Method.invoke(Native Method)
+11-28 13:35:21.655 29526 29526 W MessageQueue: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+11-28 13:35:21.655 29526 29526 W MessageQueue: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+11-28 13:35:21.689 29526 29526 W MessageQueue: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.689 29526 29526 W MessageQueue: java.lang.IllegalStateException: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.689 29526 29526 W MessageQueue: 	at android.os.MessageQueue.enqueueMessage(MessageQueue.java:650)
+11-28 13:35:21.689 29526 29526 W MessageQueue: 	at android.os.Handler.enqueueMessage(Handler.java:769)
+11-28 13:35:21.689 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageAtTime(Handler.java:718)
+11-28 13:35:21.689 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageDelayed(Handler.java:688)
+11-28 13:35:21.689 29526 29526 W MessageQueue: 	at android.os.Handler.post(Handler.java:405)
+11-28 13:35:21.689 29526 29526 W MessageQueue: 	at symlab.CloudAR.ARManager.recognizeTime(ARManager.java:152)
+11-28 13:35:21.689 29526 29526 W MessageQueue: 	at symlab.ARHUD.MainActivity$3.onPreviewFrame(MainActivity.java:296)
+11-28 13:35:21.689 29526 29526 W MessageQueue: 	at android.hardware.Camera$EventHandler.handleMessage(Camera.java:1278)
+11-28 13:35:21.689 29526 29526 W MessageQueue: 	at android.os.Handler.dispatchMessage(Handler.java:112)
+11-28 13:35:21.689 29526 29526 W MessageQueue: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:35:21.689 29526 29526 W MessageQueue: 	at android.app.ActivityThread.main(ActivityThread.java:7579)
+11-28 13:35:21.689 29526 29526 W MessageQueue: 	at java.lang.reflect.Method.invoke(Native Method)
+11-28 13:35:21.689 29526 29526 W MessageQueue: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+11-28 13:35:21.689 29526 29526 W MessageQueue: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+11-28 13:35:21.690 29526 29526 W MessageQueue: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.690 29526 29526 W MessageQueue: java.lang.IllegalStateException: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.690 29526 29526 W MessageQueue: 	at android.os.MessageQueue.enqueueMessage(MessageQueue.java:650)
+11-28 13:35:21.690 29526 29526 W MessageQueue: 	at android.os.Handler.enqueueMessage(Handler.java:769)
+11-28 13:35:21.690 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageAtTime(Handler.java:718)
+11-28 13:35:21.690 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageDelayed(Handler.java:688)
+11-28 13:35:21.690 29526 29526 W MessageQueue: 	at android.os.Handler.post(Handler.java:405)
+11-28 13:35:21.690 29526 29526 W MessageQueue: 	at symlab.CloudAR.ARManager.driveFrame(ARManager.java:157)
+11-28 13:35:21.690 29526 29526 W MessageQueue: 	at symlab.ARHUD.MainActivity$3.onPreviewFrame(MainActivity.java:297)
+11-28 13:35:21.690 29526 29526 W MessageQueue: 	at android.hardware.Camera$EventHandler.handleMessage(Camera.java:1278)
+11-28 13:35:21.690 29526 29526 W MessageQueue: 	at android.os.Handler.dispatchMessage(Handler.java:112)
+11-28 13:35:21.690 29526 29526 W MessageQueue: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:35:21.690 29526 29526 W MessageQueue: 	at android.app.ActivityThread.main(ActivityThread.java:7579)
+11-28 13:35:21.690 29526 29526 W MessageQueue: 	at java.lang.reflect.Method.invoke(Native Method)
+11-28 13:35:21.690 29526 29526 W MessageQueue: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+11-28 13:35:21.690 29526 29526 W MessageQueue: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+11-28 13:35:21.729 29526 29526 W MessageQueue: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.729 29526 29526 W MessageQueue: java.lang.IllegalStateException: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.729 29526 29526 W MessageQueue: 	at android.os.MessageQueue.enqueueMessage(MessageQueue.java:650)
+11-28 13:35:21.729 29526 29526 W MessageQueue: 	at android.os.Handler.enqueueMessage(Handler.java:769)
+11-28 13:35:21.729 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageAtTime(Handler.java:718)
+11-28 13:35:21.729 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageDelayed(Handler.java:688)
+11-28 13:35:21.729 29526 29526 W MessageQueue: 	at android.os.Handler.post(Handler.java:405)
+11-28 13:35:21.729 29526 29526 W MessageQueue: 	at symlab.CloudAR.ARManager.recognizeTime(ARManager.java:152)
+11-28 13:35:21.729 29526 29526 W MessageQueue: 	at symlab.ARHUD.MainActivity$3.onPreviewFrame(MainActivity.java:296)
+11-28 13:35:21.729 29526 29526 W MessageQueue: 	at android.hardware.Camera$EventHandler.handleMessage(Camera.java:1278)
+11-28 13:35:21.729 29526 29526 W MessageQueue: 	at android.os.Handler.dispatchMessage(Handler.java:112)
+11-28 13:35:21.729 29526 29526 W MessageQueue: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:35:21.729 29526 29526 W MessageQueue: 	at android.app.ActivityThread.main(ActivityThread.java:7579)
+11-28 13:35:21.729 29526 29526 W MessageQueue: 	at java.lang.reflect.Method.invoke(Native Method)
+11-28 13:35:21.729 29526 29526 W MessageQueue: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+11-28 13:35:21.729 29526 29526 W MessageQueue: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+11-28 13:35:21.729 29526 29526 W MessageQueue: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.729 29526 29526 W MessageQueue: java.lang.IllegalStateException: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.729 29526 29526 W MessageQueue: 	at android.os.MessageQueue.enqueueMessage(MessageQueue.java:650)
+11-28 13:35:21.729 29526 29526 W MessageQueue: 	at android.os.Handler.enqueueMessage(Handler.java:769)
+11-28 13:35:21.729 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageAtTime(Handler.java:718)
+11-28 13:35:21.729 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageDelayed(Handler.java:688)
+11-28 13:35:21.729 29526 29526 W MessageQueue: 	at android.os.Handler.post(Handler.java:405)
+11-28 13:35:21.729 29526 29526 W MessageQueue: 	at symlab.CloudAR.ARManager.driveFrame(ARManager.java:157)
+11-28 13:35:21.729 29526 29526 W MessageQueue: 	at symlab.ARHUD.MainActivity$3.onPreviewFrame(MainActivity.java:297)
+11-28 13:35:21.729 29526 29526 W MessageQueue: 	at android.hardware.Camera$EventHandler.handleMessage(Camera.java:1278)
+11-28 13:35:21.729 29526 29526 W MessageQueue: 	at android.os.Handler.dispatchMessage(Handler.java:112)
+11-28 13:35:21.729 29526 29526 W MessageQueue: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:35:21.729 29526 29526 W MessageQueue: 	at android.app.ActivityThread.main(ActivityThread.java:7579)
+11-28 13:35:21.729 29526 29526 W MessageQueue: 	at java.lang.reflect.Method.invoke(Native Method)
+11-28 13:35:21.729 29526 29526 W MessageQueue: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+11-28 13:35:21.729 29526 29526 W MessageQueue: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+11-28 13:35:21.757 29526 29526 W MessageQueue: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.757 29526 29526 W MessageQueue: java.lang.IllegalStateException: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.757 29526 29526 W MessageQueue: 	at android.os.MessageQueue.enqueueMessage(MessageQueue.java:650)
+11-28 13:35:21.757 29526 29526 W MessageQueue: 	at android.os.Handler.enqueueMessage(Handler.java:769)
+11-28 13:35:21.757 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageAtTime(Handler.java:718)
+11-28 13:35:21.757 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageDelayed(Handler.java:688)
+11-28 13:35:21.757 29526 29526 W MessageQueue: 	at android.os.Handler.post(Handler.java:405)
+11-28 13:35:21.757 29526 29526 W MessageQueue: 	at symlab.CloudAR.ARManager.recognizeTime(ARManager.java:152)
+11-28 13:35:21.757 29526 29526 W MessageQueue: 	at symlab.ARHUD.MainActivity$3.onPreviewFrame(MainActivity.java:296)
+11-28 13:35:21.757 29526 29526 W MessageQueue: 	at android.hardware.Camera$EventHandler.handleMessage(Camera.java:1278)
+11-28 13:35:21.757 29526 29526 W MessageQueue: 	at android.os.Handler.dispatchMessage(Handler.java:112)
+11-28 13:35:21.757 29526 29526 W MessageQueue: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:35:21.757 29526 29526 W MessageQueue: 	at android.app.ActivityThread.main(ActivityThread.java:7579)
+11-28 13:35:21.757 29526 29526 W MessageQueue: 	at java.lang.reflect.Method.invoke(Native Method)
+11-28 13:35:21.757 29526 29526 W MessageQueue: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+11-28 13:35:21.757 29526 29526 W MessageQueue: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+11-28 13:35:21.757 29526 29526 W MessageQueue: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.757 29526 29526 W MessageQueue: java.lang.IllegalStateException: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.757 29526 29526 W MessageQueue: 	at android.os.MessageQueue.enqueueMessage(MessageQueue.java:650)
+11-28 13:35:21.757 29526 29526 W MessageQueue: 	at android.os.Handler.enqueueMessage(Handler.java:769)
+11-28 13:35:21.757 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageAtTime(Handler.java:718)
+11-28 13:35:21.757 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageDelayed(Handler.java:688)
+11-28 13:35:21.757 29526 29526 W MessageQueue: 	at android.os.Handler.post(Handler.java:405)
+11-28 13:35:21.757 29526 29526 W MessageQueue: 	at symlab.CloudAR.ARManager.driveFrame(ARManager.java:157)
+11-28 13:35:21.757 29526 29526 W MessageQueue: 	at symlab.ARHUD.MainActivity$3.onPreviewFrame(MainActivity.java:297)
+11-28 13:35:21.757 29526 29526 W MessageQueue: 	at android.hardware.Camera$EventHandler.handleMessage(Camera.java:1278)
+11-28 13:35:21.757 29526 29526 W MessageQueue: 	at android.os.Handler.dispatchMessage(Handler.java:112)
+11-28 13:35:21.757 29526 29526 W MessageQueue: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:35:21.757 29526 29526 W MessageQueue: 	at android.app.ActivityThread.main(ActivityThread.java:7579)
+11-28 13:35:21.757 29526 29526 W MessageQueue: 	at java.lang.reflect.Method.invoke(Native Method)
+11-28 13:35:21.757 29526 29526 W MessageQueue: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+11-28 13:35:21.757 29526 29526 W MessageQueue: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+11-28 13:35:21.790 29526 29526 W MessageQueue: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.790 29526 29526 W MessageQueue: java.lang.IllegalStateException: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.790 29526 29526 W MessageQueue: 	at android.os.MessageQueue.enqueueMessage(MessageQueue.java:650)
+11-28 13:35:21.790 29526 29526 W MessageQueue: 	at android.os.Handler.enqueueMessage(Handler.java:769)
+11-28 13:35:21.790 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageAtTime(Handler.java:718)
+11-28 13:35:21.790 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageDelayed(Handler.java:688)
+11-28 13:35:21.790 29526 29526 W MessageQueue: 	at android.os.Handler.post(Handler.java:405)
+11-28 13:35:21.790 29526 29526 W MessageQueue: 	at symlab.CloudAR.ARManager.recognizeTime(ARManager.java:152)
+11-28 13:35:21.790 29526 29526 W MessageQueue: 	at symlab.ARHUD.MainActivity$3.onPreviewFrame(MainActivity.java:296)
+11-28 13:35:21.790 29526 29526 W MessageQueue: 	at android.hardware.Camera$EventHandler.handleMessage(Camera.java:1278)
+11-28 13:35:21.790 29526 29526 W MessageQueue: 	at android.os.Handler.dispatchMessage(Handler.java:112)
+11-28 13:35:21.790 29526 29526 W MessageQueue: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:35:21.790 29526 29526 W MessageQueue: 	at android.app.ActivityThread.main(ActivityThread.java:7579)
+11-28 13:35:21.790 29526 29526 W MessageQueue: 	at java.lang.reflect.Method.invoke(Native Method)
+11-28 13:35:21.790 29526 29526 W MessageQueue: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+11-28 13:35:21.790 29526 29526 W MessageQueue: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+11-28 13:35:21.790 29526 29526 W MessageQueue: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.790 29526 29526 W MessageQueue: java.lang.IllegalStateException: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.790 29526 29526 W MessageQueue: 	at android.os.MessageQueue.enqueueMessage(MessageQueue.java:650)
+11-28 13:35:21.790 29526 29526 W MessageQueue: 	at android.os.Handler.enqueueMessage(Handler.java:769)
+11-28 13:35:21.790 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageAtTime(Handler.java:718)
+11-28 13:35:21.790 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageDelayed(Handler.java:688)
+11-28 13:35:21.790 29526 29526 W MessageQueue: 	at android.os.Handler.post(Handler.java:405)
+11-28 13:35:21.790 29526 29526 W MessageQueue: 	at symlab.CloudAR.ARManager.driveFrame(ARManager.java:157)
+11-28 13:35:21.790 29526 29526 W MessageQueue: 	at symlab.ARHUD.MainActivity$3.onPreviewFrame(MainActivity.java:297)
+11-28 13:35:21.790 29526 29526 W MessageQueue: 	at android.hardware.Camera$EventHandler.handleMessage(Camera.java:1278)
+11-28 13:35:21.790 29526 29526 W MessageQueue: 	at android.os.Handler.dispatchMessage(Handler.java:112)
+11-28 13:35:21.790 29526 29526 W MessageQueue: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:35:21.790 29526 29526 W MessageQueue: 	at android.app.ActivityThread.main(ActivityThread.java:7579)
+11-28 13:35:21.790 29526 29526 W MessageQueue: 	at java.lang.reflect.Method.invoke(Native Method)
+11-28 13:35:21.790 29526 29526 W MessageQueue: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+11-28 13:35:21.790 29526 29526 W MessageQueue: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+11-28 13:35:21.828 29526 29526 W MessageQueue: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.828 29526 29526 W MessageQueue: java.lang.IllegalStateException: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.828 29526 29526 W MessageQueue: 	at android.os.MessageQueue.enqueueMessage(MessageQueue.java:650)
+11-28 13:35:21.828 29526 29526 W MessageQueue: 	at android.os.Handler.enqueueMessage(Handler.java:769)
+11-28 13:35:21.828 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageAtTime(Handler.java:718)
+11-28 13:35:21.828 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageDelayed(Handler.java:688)
+11-28 13:35:21.828 29526 29526 W MessageQueue: 	at android.os.Handler.post(Handler.java:405)
+11-28 13:35:21.828 29526 29526 W MessageQueue: 	at symlab.CloudAR.ARManager.recognizeTime(ARManager.java:152)
+11-28 13:35:21.828 29526 29526 W MessageQueue: 	at symlab.ARHUD.MainActivity$3.onPreviewFrame(MainActivity.java:296)
+11-28 13:35:21.828 29526 29526 W MessageQueue: 	at android.hardware.Camera$EventHandler.handleMessage(Camera.java:1278)
+11-28 13:35:21.828 29526 29526 W MessageQueue: 	at android.os.Handler.dispatchMessage(Handler.java:112)
+11-28 13:35:21.828 29526 29526 W MessageQueue: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:35:21.828 29526 29526 W MessageQueue: 	at android.app.ActivityThread.main(ActivityThread.java:7579)
+11-28 13:35:21.828 29526 29526 W MessageQueue: 	at java.lang.reflect.Method.invoke(Native Method)
+11-28 13:35:21.828 29526 29526 W MessageQueue: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+11-28 13:35:21.828 29526 29526 W MessageQueue: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+11-28 13:35:21.828 29526 29526 W MessageQueue: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.828 29526 29526 W MessageQueue: java.lang.IllegalStateException: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.828 29526 29526 W MessageQueue: 	at android.os.MessageQueue.enqueueMessage(MessageQueue.java:650)
+11-28 13:35:21.828 29526 29526 W MessageQueue: 	at android.os.Handler.enqueueMessage(Handler.java:769)
+11-28 13:35:21.828 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageAtTime(Handler.java:718)
+11-28 13:35:21.828 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageDelayed(Handler.java:688)
+11-28 13:35:21.828 29526 29526 W MessageQueue: 	at android.os.Handler.post(Handler.java:405)
+11-28 13:35:21.828 29526 29526 W MessageQueue: 	at symlab.CloudAR.ARManager.driveFrame(ARManager.java:157)
+11-28 13:35:21.828 29526 29526 W MessageQueue: 	at symlab.ARHUD.MainActivity$3.onPreviewFrame(MainActivity.java:297)
+11-28 13:35:21.828 29526 29526 W MessageQueue: 	at android.hardware.Camera$EventHandler.handleMessage(Camera.java:1278)
+11-28 13:35:21.828 29526 29526 W MessageQueue: 	at android.os.Handler.dispatchMessage(Handler.java:112)
+11-28 13:35:21.828 29526 29526 W MessageQueue: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:35:21.828 29526 29526 W MessageQueue: 	at android.app.ActivityThread.main(ActivityThread.java:7579)
+11-28 13:35:21.828 29526 29526 W MessageQueue: 	at java.lang.reflect.Method.invoke(Native Method)
+11-28 13:35:21.828 29526 29526 W MessageQueue: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+11-28 13:35:21.828 29526 29526 W MessageQueue: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+11-28 13:35:21.856 29526 29526 W MessageQueue: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.856 29526 29526 W MessageQueue: java.lang.IllegalStateException: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.856 29526 29526 W MessageQueue: 	at android.os.MessageQueue.enqueueMessage(MessageQueue.java:650)
+11-28 13:35:21.856 29526 29526 W MessageQueue: 	at android.os.Handler.enqueueMessage(Handler.java:769)
+11-28 13:35:21.856 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageAtTime(Handler.java:718)
+11-28 13:35:21.856 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageDelayed(Handler.java:688)
+11-28 13:35:21.856 29526 29526 W MessageQueue: 	at android.os.Handler.post(Handler.java:405)
+11-28 13:35:21.856 29526 29526 W MessageQueue: 	at symlab.CloudAR.ARManager.recognizeTime(ARManager.java:152)
+11-28 13:35:21.856 29526 29526 W MessageQueue: 	at symlab.ARHUD.MainActivity$3.onPreviewFrame(MainActivity.java:296)
+11-28 13:35:21.856 29526 29526 W MessageQueue: 	at android.hardware.Camera$EventHandler.handleMessage(Camera.java:1278)
+11-28 13:35:21.856 29526 29526 W MessageQueue: 	at android.os.Handler.dispatchMessage(Handler.java:112)
+11-28 13:35:21.856 29526 29526 W MessageQueue: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:35:21.856 29526 29526 W MessageQueue: 	at android.app.ActivityThread.main(ActivityThread.java:7579)
+11-28 13:35:21.856 29526 29526 W MessageQueue: 	at java.lang.reflect.Method.invoke(Native Method)
+11-28 13:35:21.856 29526 29526 W MessageQueue: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+11-28 13:35:21.856 29526 29526 W MessageQueue: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+11-28 13:35:21.857 29526 29526 W MessageQueue: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.857 29526 29526 W MessageQueue: java.lang.IllegalStateException: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.857 29526 29526 W MessageQueue: 	at android.os.MessageQueue.enqueueMessage(MessageQueue.java:650)
+11-28 13:35:21.857 29526 29526 W MessageQueue: 	at android.os.Handler.enqueueMessage(Handler.java:769)
+11-28 13:35:21.857 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageAtTime(Handler.java:718)
+11-28 13:35:21.857 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageDelayed(Handler.java:688)
+11-28 13:35:21.857 29526 29526 W MessageQueue: 	at android.os.Handler.post(Handler.java:405)
+11-28 13:35:21.857 29526 29526 W MessageQueue: 	at symlab.CloudAR.ARManager.driveFrame(ARManager.java:157)
+11-28 13:35:21.857 29526 29526 W MessageQueue: 	at symlab.ARHUD.MainActivity$3.onPreviewFrame(MainActivity.java:297)
+11-28 13:35:21.857 29526 29526 W MessageQueue: 	at android.hardware.Camera$EventHandler.handleMessage(Camera.java:1278)
+11-28 13:35:21.857 29526 29526 W MessageQueue: 	at android.os.Handler.dispatchMessage(Handler.java:112)
+11-28 13:35:21.857 29526 29526 W MessageQueue: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:35:21.857 29526 29526 W MessageQueue: 	at android.app.ActivityThread.main(ActivityThread.java:7579)
+11-28 13:35:21.857 29526 29526 W MessageQueue: 	at java.lang.reflect.Method.invoke(Native Method)
+11-28 13:35:21.857 29526 29526 W MessageQueue: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+11-28 13:35:21.857 29526 29526 W MessageQueue: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+11-28 13:35:21.892 29526 29526 W MessageQueue: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.892 29526 29526 W MessageQueue: java.lang.IllegalStateException: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.892 29526 29526 W MessageQueue: 	at android.os.MessageQueue.enqueueMessage(MessageQueue.java:650)
+11-28 13:35:21.892 29526 29526 W MessageQueue: 	at android.os.Handler.enqueueMessage(Handler.java:769)
+11-28 13:35:21.892 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageAtTime(Handler.java:718)
+11-28 13:35:21.892 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageDelayed(Handler.java:688)
+11-28 13:35:21.892 29526 29526 W MessageQueue: 	at android.os.Handler.post(Handler.java:405)
+11-28 13:35:21.892 29526 29526 W MessageQueue: 	at symlab.CloudAR.ARManager.recognizeTime(ARManager.java:152)
+11-28 13:35:21.892 29526 29526 W MessageQueue: 	at symlab.ARHUD.MainActivity$3.onPreviewFrame(MainActivity.java:296)
+11-28 13:35:21.892 29526 29526 W MessageQueue: 	at android.hardware.Camera$EventHandler.handleMessage(Camera.java:1278)
+11-28 13:35:21.892 29526 29526 W MessageQueue: 	at android.os.Handler.dispatchMessage(Handler.java:112)
+11-28 13:35:21.892 29526 29526 W MessageQueue: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:35:21.892 29526 29526 W MessageQueue: 	at android.app.ActivityThread.main(ActivityThread.java:7579)
+11-28 13:35:21.892 29526 29526 W MessageQueue: 	at java.lang.reflect.Method.invoke(Native Method)
+11-28 13:35:21.892 29526 29526 W MessageQueue: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+11-28 13:35:21.892 29526 29526 W MessageQueue: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+11-28 13:35:21.892 29526 29526 W MessageQueue: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.892 29526 29526 W MessageQueue: java.lang.IllegalStateException: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.892 29526 29526 W MessageQueue: 	at android.os.MessageQueue.enqueueMessage(MessageQueue.java:650)
+11-28 13:35:21.892 29526 29526 W MessageQueue: 	at android.os.Handler.enqueueMessage(Handler.java:769)
+11-28 13:35:21.892 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageAtTime(Handler.java:718)
+11-28 13:35:21.892 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageDelayed(Handler.java:688)
+11-28 13:35:21.892 29526 29526 W MessageQueue: 	at android.os.Handler.post(Handler.java:405)
+11-28 13:35:21.892 29526 29526 W MessageQueue: 	at symlab.CloudAR.ARManager.driveFrame(ARManager.java:157)
+11-28 13:35:21.892 29526 29526 W MessageQueue: 	at symlab.ARHUD.MainActivity$3.onPreviewFrame(MainActivity.java:297)
+11-28 13:35:21.892 29526 29526 W MessageQueue: 	at android.hardware.Camera$EventHandler.handleMessage(Camera.java:1278)
+11-28 13:35:21.892 29526 29526 W MessageQueue: 	at android.os.Handler.dispatchMessage(Handler.java:112)
+11-28 13:35:21.892 29526 29526 W MessageQueue: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:35:21.892 29526 29526 W MessageQueue: 	at android.app.ActivityThread.main(ActivityThread.java:7579)
+11-28 13:35:21.892 29526 29526 W MessageQueue: 	at java.lang.reflect.Method.invoke(Native Method)
+11-28 13:35:21.892 29526 29526 W MessageQueue: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+11-28 13:35:21.892 29526 29526 W MessageQueue: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+11-28 13:35:21.917 29526 29526 W MessageQueue: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.917 29526 29526 W MessageQueue: java.lang.IllegalStateException: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.917 29526 29526 W MessageQueue: 	at android.os.MessageQueue.enqueueMessage(MessageQueue.java:650)
+11-28 13:35:21.917 29526 29526 W MessageQueue: 	at android.os.Handler.enqueueMessage(Handler.java:769)
+11-28 13:35:21.917 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageAtTime(Handler.java:718)
+11-28 13:35:21.917 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageDelayed(Handler.java:688)
+11-28 13:35:21.917 29526 29526 W MessageQueue: 	at android.os.Handler.post(Handler.java:405)
+11-28 13:35:21.917 29526 29526 W MessageQueue: 	at symlab.CloudAR.ARManager.recognizeTime(ARManager.java:152)
+11-28 13:35:21.917 29526 29526 W MessageQueue: 	at symlab.ARHUD.MainActivity$3.onPreviewFrame(MainActivity.java:296)
+11-28 13:35:21.917 29526 29526 W MessageQueue: 	at android.hardware.Camera$EventHandler.handleMessage(Camera.java:1278)
+11-28 13:35:21.917 29526 29526 W MessageQueue: 	at android.os.Handler.dispatchMessage(Handler.java:112)
+11-28 13:35:21.917 29526 29526 W MessageQueue: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:35:21.917 29526 29526 W MessageQueue: 	at android.app.ActivityThread.main(ActivityThread.java:7579)
+11-28 13:35:21.917 29526 29526 W MessageQueue: 	at java.lang.reflect.Method.invoke(Native Method)
+11-28 13:35:21.917 29526 29526 W MessageQueue: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+11-28 13:35:21.917 29526 29526 W MessageQueue: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+11-28 13:35:21.918 29526 29526 W MessageQueue: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.918 29526 29526 W MessageQueue: java.lang.IllegalStateException: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.918 29526 29526 W MessageQueue: 	at android.os.MessageQueue.enqueueMessage(MessageQueue.java:650)
+11-28 13:35:21.918 29526 29526 W MessageQueue: 	at android.os.Handler.enqueueMessage(Handler.java:769)
+11-28 13:35:21.918 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageAtTime(Handler.java:718)
+11-28 13:35:21.918 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageDelayed(Handler.java:688)
+11-28 13:35:21.918 29526 29526 W MessageQueue: 	at android.os.Handler.post(Handler.java:405)
+11-28 13:35:21.918 29526 29526 W MessageQueue: 	at symlab.CloudAR.ARManager.driveFrame(ARManager.java:157)
+11-28 13:35:21.918 29526 29526 W MessageQueue: 	at symlab.ARHUD.MainActivity$3.onPreviewFrame(MainActivity.java:297)
+11-28 13:35:21.918 29526 29526 W MessageQueue: 	at android.hardware.Camera$EventHandler.handleMessage(Camera.java:1278)
+11-28 13:35:21.918 29526 29526 W MessageQueue: 	at android.os.Handler.dispatchMessage(Handler.java:112)
+11-28 13:35:21.918 29526 29526 W MessageQueue: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:35:21.918 29526 29526 W MessageQueue: 	at android.app.ActivityThread.main(ActivityThread.java:7579)
+11-28 13:35:21.918 29526 29526 W MessageQueue: 	at java.lang.reflect.Method.invoke(Native Method)
+11-28 13:35:21.918 29526 29526 W MessageQueue: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+11-28 13:35:21.918 29526 29526 W MessageQueue: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+11-28 13:35:21.947 29526 29526 W MessageQueue: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.947 29526 29526 W MessageQueue: java.lang.IllegalStateException: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.947 29526 29526 W MessageQueue: 	at android.os.MessageQueue.enqueueMessage(MessageQueue.java:650)
+11-28 13:35:21.947 29526 29526 W MessageQueue: 	at android.os.Handler.enqueueMessage(Handler.java:769)
+11-28 13:35:21.947 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageAtTime(Handler.java:718)
+11-28 13:35:21.947 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageDelayed(Handler.java:688)
+11-28 13:35:21.947 29526 29526 W MessageQueue: 	at android.os.Handler.post(Handler.java:405)
+11-28 13:35:21.947 29526 29526 W MessageQueue: 	at symlab.CloudAR.ARManager.recognizeTime(ARManager.java:152)
+11-28 13:35:21.947 29526 29526 W MessageQueue: 	at symlab.ARHUD.MainActivity$3.onPreviewFrame(MainActivity.java:296)
+11-28 13:35:21.947 29526 29526 W MessageQueue: 	at android.hardware.Camera$EventHandler.handleMessage(Camera.java:1278)
+11-28 13:35:21.947 29526 29526 W MessageQueue: 	at android.os.Handler.dispatchMessage(Handler.java:112)
+11-28 13:35:21.947 29526 29526 W MessageQueue: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:35:21.947 29526 29526 W MessageQueue: 	at android.app.ActivityThread.main(ActivityThread.java:7579)
+11-28 13:35:21.947 29526 29526 W MessageQueue: 	at java.lang.reflect.Method.invoke(Native Method)
+11-28 13:35:21.947 29526 29526 W MessageQueue: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+11-28 13:35:21.947 29526 29526 W MessageQueue: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+11-28 13:35:21.947 29526 29526 W MessageQueue: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.947 29526 29526 W MessageQueue: java.lang.IllegalStateException: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:21.947 29526 29526 W MessageQueue: 	at android.os.MessageQueue.enqueueMessage(MessageQueue.java:650)
+11-28 13:35:21.947 29526 29526 W MessageQueue: 	at android.os.Handler.enqueueMessage(Handler.java:769)
+11-28 13:35:21.947 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageAtTime(Handler.java:718)
+11-28 13:35:21.947 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageDelayed(Handler.java:688)
+11-28 13:35:21.947 29526 29526 W MessageQueue: 	at android.os.Handler.post(Handler.java:405)
+11-28 13:35:21.947 29526 29526 W MessageQueue: 	at symlab.CloudAR.ARManager.driveFrame(ARManager.java:157)
+11-28 13:35:21.947 29526 29526 W MessageQueue: 	at symlab.ARHUD.MainActivity$3.onPreviewFrame(MainActivity.java:297)
+11-28 13:35:21.947 29526 29526 W MessageQueue: 	at android.hardware.Camera$EventHandler.handleMessage(Camera.java:1278)
+11-28 13:35:21.947 29526 29526 W MessageQueue: 	at android.os.Handler.dispatchMessage(Handler.java:112)
+11-28 13:35:21.947 29526 29526 W MessageQueue: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:35:21.947 29526 29526 W MessageQueue: 	at android.app.ActivityThread.main(ActivityThread.java:7579)
+11-28 13:35:21.947 29526 29526 W MessageQueue: 	at java.lang.reflect.Method.invoke(Native Method)
+11-28 13:35:21.947 29526 29526 W MessageQueue: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+11-28 13:35:21.947 29526 29526 W MessageQueue: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+11-28 13:35:21.951 29526 29526 I Poster  :  onPause() called.
+11-28 13:35:22.031 29526 29526 I Camera  : close camera: 0, package name: symlab.cloudridar.arhud
+--------- beginning of system
+11-28 13:35:22.031 29526 29526 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 29526 ,uidOf3RdApk: 10147 ,permType: 0 ,permCfg: 0
+11-28 13:35:22.033 29526 29526 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = false
+11-28 13:35:22.147 29526 29526 W MessageQueue: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:22.147 29526 29526 W MessageQueue: java.lang.IllegalStateException: Handler (android.os.Handler) {67e9d44} sending message to a Handler on a dead thread
+11-28 13:35:22.147 29526 29526 W MessageQueue: 	at android.os.MessageQueue.enqueueMessage(MessageQueue.java:650)
+11-28 13:35:22.147 29526 29526 W MessageQueue: 	at android.os.Handler.enqueueMessage(Handler.java:769)
+11-28 13:35:22.147 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageAtTime(Handler.java:718)
+11-28 13:35:22.147 29526 29526 W MessageQueue: 	at android.os.Handler.sendMessageDelayed(Handler.java:688)
+11-28 13:35:22.147 29526 29526 W MessageQueue: 	at android.os.Handler.post(Handler.java:405)
+11-28 13:35:22.147 29526 29526 W MessageQueue: 	at symlab.CloudAR.ARManager.stop(ARManager.java:117)
+11-28 13:35:22.147 29526 29526 W MessageQueue: 	at symlab.ARHUD.MainActivity.onPause(MainActivity.java:206)
+11-28 13:35:22.147 29526 29526 W MessageQueue: 	at android.app.Activity.performPause(Activity.java:7711)
+11-28 13:35:22.147 29526 29526 W MessageQueue: 	at android.app.Instrumentation.callActivityOnPause(Instrumentation.java:1481)
+11-28 13:35:22.147 29526 29526 W MessageQueue: 	at android.app.ActivityThread.performPauseActivityIfNeeded(ActivityThread.java:4700)
+11-28 13:35:22.147 29526 29526 W MessageQueue: 	at android.app.ActivityThread.performPauseActivity(ActivityThread.java:4665)
+11-28 13:35:22.147 29526 29526 W MessageQueue: 	at android.app.ActivityThread.handlePauseActivity(ActivityThread.java:4612)
+11-28 13:35:22.147 29526 29526 W MessageQueue: 	at android.app.servertransaction.PauseActivityItem.execute(PauseActivityItem.java:45)
+11-28 13:35:22.147 29526 29526 W MessageQueue: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:154)
+11-28 13:35:22.147 29526 29526 W MessageQueue: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:76)
+11-28 13:35:22.147 29526 29526 W MessageQueue: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2208)
+11-28 13:35:22.147 29526 29526 W MessageQueue: 	at android.os.Handler.dispatchMessage(Handler.java:112)
+11-28 13:35:22.147 29526 29526 W MessageQueue: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:35:22.147 29526 29526 W MessageQueue: 	at android.app.ActivityThread.main(ActivityThread.java:7579)
+11-28 13:35:22.147 29526 29526 W MessageQueue: 	at java.lang.reflect.Method.invoke(Native Method)
+11-28 13:35:22.147 29526 29526 W MessageQueue: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+11-28 13:35:22.147 29526 29526 W MessageQueue: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+11-28 13:35:22.147 29526 29526 D ZrHung.AppEyeUiProbe: stop checker.
+11-28 13:35:22.205 29526 29526 I Poster  :  surfaceDestroyed() called.
+11-28 13:35:22.206 29526 29526 D ViewRootImpl[MainActivity]: surface should not be released
+11-28 13:35:22.206 29526 29526 I Poster  :  onStop() called.
+11-28 13:35:22.229 29526 29597 W libEGL  : EGLNativeWindowType 0xf07f0008 disconnect failed
+11-28 13:35:22.328 29526 29526 I AwareBitmapCacher: handleReleaseCache: pid=29526
+11-28 13:35:22.328 29526 29526 I AwareBitmapCacher: init lrucache size: 2097152 pid=29526
+11-28 13:35:22.801 29526 29572 D ZrHung.AppEyeUiProbe: Current Activity:false
+11-28 13:35:22.801 29526 29572 D ZrHung.AppEyeUiProbe: not watching, wait.
+11-28 13:35:22.991 29526 29526 I Poster  :  onDestroy() called.
+11-28 13:35:22.992 29526 29526 D ActivityThread: Remove activity client record, r= ActivityRecord{db8bbd token=android.os.BinderProxy@c62e47c {symlab.cloudridar.arhud/symlab.ARHUD.MainActivity}} token= android.os.BinderProxy@c62e47c
+11-28 13:35:22.993 29526 29526 E BpSurfaceComposerClient: Failed to transact (-1)
+11-28 13:35:24.404 29790 29790 I loudridar.arhu: Late-enabling -Xcheck:jni
+11-28 13:35:24.431 29790 29790 I loudridar.arhu: Reinit property: dalvik.vm.checkjni= false
+11-28 13:35:24.442 29790 29790 D ZrHung.AppEyeUiProbe: AppEyeUIP created.
+11-28 13:35:24.443 29790 29790 E libc    : Access denied finding property "runtime.mmitest.isrunning"
+11-28 13:35:24.439 29790 29790 W re-initialized>: type=1400 audit(0.0:35980): avc: denied { read } for name="u:object_r:mmi_prop:s0" dev="tmpfs" ino=16663 scontext=u:r:untrusted_app:s0:c147,c256,c512,c768 tcontext=u:object_r:mmi_prop:s0 tclass=file permissive=0
+11-28 13:35:24.444 29790 29790 D ActivityThread: Attach thread to application
+11-28 13:35:24.451 29790 29797 E loudridar.arhu: Unable to peek into adb socket due to error. Closing socket.: Connection reset by peer
+11-28 13:35:24.518 29790 29812 I HwApiCacheMangerEx: apicache path=/storage/emulated/0 state=mounted key=symlab.cloudridar.arhud#10147#256
+11-28 13:35:24.520 29790 29812 I HwApiCacheMangerEx: apicache path=/storage/emulated/0 state=mounted key=symlab.cloudridar.arhud#10147#0
+11-28 13:35:24.586 29790 29790 I loudridar.arhu: QarthPatchMonintor::Init
+11-28 13:35:24.586 29790 29790 I loudridar.arhu: 
+11-28 13:35:24.586 29790 29790 I loudridar.arhu: QarthPatchMonintor::StartWatch
+11-28 13:35:24.586 29790 29790 I loudridar.arhu: 
+11-28 13:35:24.586 29790 29790 I loudridar.arhu: QarthPatchMonintor::WatchPackage: /data/hotpatch/fwkhotpatch/
+11-28 13:35:24.586 29790 29790 I loudridar.arhu: 
+11-28 13:35:24.586 29790 29790 I loudridar.arhu: QarthPatchMonintor::CheckAndWatchPatch: /data/hotpatch/fwkhotpatch/symlab.cloudridar.arhud
+11-28 13:35:24.586 29790 29790 I loudridar.arhu: 
+11-28 13:35:24.586 29790 29790 I loudridar.arhu: QarthPatchMonintor::CheckAndWatchPatch: /data/hotpatch/fwkhotpatch/all
+11-28 13:35:24.586 29790 29790 I loudridar.arhu: 
+11-28 13:35:24.586 29790 29790 I loudridar.arhu: QarthPatchMonintor::Run
+11-28 13:35:24.586 29790 29790 I loudridar.arhu: 
+11-28 13:35:24.586 29790 29818 I loudridar.arhu: QarthPatchMonintor::Reading
+11-28 13:35:24.586 29790 29818 I loudridar.arhu: 
+11-28 13:35:24.586 29790 29818 I loudridar.arhu: QarthPatchMonintor::CheckNotifyEvent
+11-28 13:35:24.586 29790 29818 I loudridar.arhu: 
+11-28 13:35:24.586 29790 29818 I loudridar.arhu: QarthPatchMonintor::CheckNotifyEvent before read
+11-28 13:35:24.586 29790 29818 I loudridar.arhu: 
+11-28 13:35:24.590 29790 29790 I MultiDex: VM with version 2.1.0 has multidex support
+11-28 13:35:24.590 29790 29790 I MultiDex: Installing application
+11-28 13:35:24.590 29790 29790 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+11-28 13:35:24.591 29790 29812 I AwareBitmapCacher: init processName:symlab.cloudridar.arhud pid=29790 uid=10147
+11-28 13:35:24.593 29790 29820 E AwareLog: AtomicFileUtils: readFileLines file not exist: android.util.AtomicFile@919d802
+11-28 13:35:24.593 29790 29820 E AwareLog: AtomicFileUtils: readFileLines file not exist: android.util.AtomicFile@35dc513
+11-28 13:35:24.594 29790 29790 I FirebaseInitProvider: FirebaseApp initialization unsuccessful
+11-28 13:35:24.600 29790 29790 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-28 13:35:24.601 29790 29825 D ZrHung.AppEyeUiProbe: Runnable thread started.
+11-28 13:35:24.601 29790 29825 D IMonitor: Load library imonitor_jni
+11-28 13:35:24.605 29790 29825 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0102]
+11-28 13:35:24.605 29790 29825 W ZrHung.AppEyeUiProbe: Failed to get config from zrhung
+11-28 13:35:24.610 29790 29790 I MultiDex: Installing application
+11-28 13:35:24.610 29790 29790 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+11-28 13:35:24.607 29823 29823 W logcat  : type=1400 audit(0.0:35981): avc: granted { create } for name="logcat_1574940924596.txt" scontext=u:r:untrusted_app:s0:c147,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0:c147,c256,c512,c768 tclass=file
+11-28 13:35:24.613 29790 29790 V ActivityThread: callActivityOnCreate
+11-28 13:35:24.613 29790 29790 I Poster  :  onCreate() called.
+11-28 13:35:24.616 29790 29790 I HwApsImpl: APS: new HwApsImpl created
+11-28 13:35:24.623 29790 29790 V HwWidgetFactory: : successes to get AllImpl object and return....
+11-28 13:35:24.630 29790 29790 D OpenGLRenderer: Skia GL Pipeline
+11-28 13:35:24.650 29790 29790 D Poster  : Server details are IP 193.166.28.132 and port 52727
+11-28 13:35:24.655 29790 29790 D Poster  : Server bound to IP 193.166.28.132 and port 52727
+11-28 13:35:24.659 29790 29790 D ActivityThread: add activity client record, r= ActivityRecord{db8bbd token=android.os.BinderProxy@c62e47c {symlab.cloudridar.arhud/symlab.ARHUD.MainActivity}} token= android.os.BinderProxy@c62e47c
+11-28 13:35:24.662 29790 29790 I Poster  :  onStart() called.
+11-28 13:35:24.662 29790 29790 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-28 13:35:24.663 29790 29790 I Poster  :  onResume() called.
+11-28 13:35:24.668 29790 29790 I PermissionManager: camera remind result:true
+11-28 13:35:24.668 29790 29790 I Camera  : open camera: 0, package name: symlab.cloudridar.arhud
+11-28 13:35:24.668 29790 29790 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 29790 ,uidOf3RdApk: 10147 ,permType: 0 ,permCfg: 1
+11-28 13:35:24.669 29790 29790 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = true
+11-28 13:35:24.678 29790 29790 D ActivityThread: isOptEnabled=false isWechatScanOpt=false
+11-28 13:35:24.679 29790 29790 I HwSecImmHelper: mSecurityInputMethodService is null
+11-28 13:35:24.685 29790 29790 D OpenGLRenderer:   HWUI Binary is  enabled
+11-28 13:35:24.700 29790 29851 D HiTouch_PressGestureDetector: onAttached, package=symlab.cloudridar.arhud, windowType=1, mHiTouchRestricted=false
+11-28 13:35:24.710 29790 29850 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-28 13:35:24.710 29790 29850 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-28 13:35:24.710 29790 29850 I iGraphics: [0020080c] pn: symlab.cloudridar.arhud, p: 29790
+11-28 13:35:24.710 29790 29850 I OpenGLRenderer: Initialized EGL, version 1.4, mEglDisplay 0x1
+11-28 13:35:24.710 29790 29850 D OpenGLRenderer: Swap behavior 2
+11-28 13:35:24.719 29790 29850 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+11-28 13:35:24.729 29790 29790 I Poster  :  surfaceCreated() called.
+11-28 13:35:24.729 29790 29790 I Poster  : initPreview() called
+11-28 13:35:24.734 29790 29790 I PermissionManager: camera remind result:true
+11-28 13:35:24.739 29790 29790 I Poster  :  surfaceChanged() called.
+11-28 13:35:24.759 29790 29790 W InputMethodManager: startInputReason = 1
+11-28 13:35:24.774 29790 29790 W InputMethodManager: startInputReason = 5
+11-28 13:35:25.357 29790 29801 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:35:25.368 29790 29799 W System  : A resource failed to call close. 
+11-28 13:35:25.369 29790 29799 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 8 lines
+11-28 13:35:25.369 29790 29799 W System  : A resource failed to call close. 
+11-28 13:35:25.895 29790 29834 D Evaluation: 3 res for frame 6 received at 1574940925895
+11-28 13:35:26.198 29790 29790 D Poster  : At 1574940926198 location is 65.05776630182329 (latitude), and 25.46974842531761 (longitude)
+11-28 13:35:26.204 29790 29790 D Poster  : Connected to mobile network 20
+11-28 13:35:26.306 29790 29801 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:35:26.323 29790 29799 W System  : A resource failed to call close. 
+11-28 13:35:26.325 29790 29799 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 27 lines
+11-28 13:35:26.325 29790 29799 W System  : A resource failed to call close. 
+11-28 13:35:27.178 29790 29790 D Poster  : At 1574940927178 location is 65.05782430383097 (latitude), and 25.469795193786858 (longitude)
+11-28 13:35:27.182 29790 29790 D Poster  : Connected to mobile network 20
+11-28 13:35:27.367 29790 29790 D stylus  : init stylus touchlistener.
+11-28 13:35:27.376 29790 29790 W Settings: Setting device_provisioned has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+11-28 13:35:27.376 29790 29790 V HiTouch_HiTouchSensor: User setup is finished.
+11-28 13:35:27.570 29790 29801 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:35:27.585 29790 29799 W System  : A resource failed to call close. 
+11-28 13:35:27.585 29790 29799 W System  : A resource failed to call close. 
+11-28 13:35:27.585 29790 29799 W System  : A resource failed to call close. 
+11-28 13:35:27.585 29790 29799 W System  : A resource failed to call close. 
+11-28 13:35:27.585 29790 29799 W System  : A resource failed to call close. 
+11-28 13:35:27.585 29790 29799 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-28 13:35:27.586 29790 29799 W System  : A resource failed to call close. 
+11-28 13:35:27.586 29790 29799 W System  : A resource failed to call close. 
+11-28 13:35:27.586 29790 29799 W System  : A resource failed to call close. 
+11-28 13:35:27.586 29790 29799 W System  : A resource failed to call close. 
+11-28 13:35:27.586 29790 29799 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 4 lines
+11-28 13:35:27.586 29790 29799 W System  : A resource failed to call close. 
+11-28 13:35:27.586 29790 29799 W System  : A resource failed to call close. 
+11-28 13:35:27.587 29790 29799 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 15 lines
+11-28 13:35:27.587 29790 29799 W System  : A resource failed to call close. 
+11-28 13:35:28.174 29790 29790 D Poster  : At 1574940928174 location is 65.05788386505608 (latitude), and 25.469884384441954 (longitude)
+11-28 13:35:28.176 29790 29790 D Poster  : Connected to mobile network 20
+11-28 13:35:29.088 29790 29801 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:35:29.103 29790 29799 W System  : A resource failed to call close. 
+11-28 13:35:29.106 29790 29799 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 43 lines
+11-28 13:35:29.106 29790 29799 W System  : A resource failed to call close. 
+11-28 13:35:29.173 29790 29790 D Poster  : At 1574940929173 location is 65.05790729522448 (latitude), and 25.46989470418762 (longitude)
+11-28 13:35:29.176 29790 29790 D Poster  : Connected to mobile network 20
+11-28 13:35:29.205 29790 29790 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:132.84473, limit is:60The moving distance of Y is:62.417175, limit is:60
+11-28 13:35:29.592 29790 29790 I AwareBitmapCacher: init lrucache size: 2097152 pid=29790
+11-28 13:35:29.673 29790 29790 I Poster  :  onPause() called.
+11-28 13:35:29.789 29790 29790 I Camera  : close camera: 0, package name: symlab.cloudridar.arhud
+11-28 13:35:29.789 29790 29790 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 29790 ,uidOf3RdApk: 10147 ,permType: 0 ,permCfg: 0
+11-28 13:35:29.799 29790 29790 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = false
+11-28 13:35:29.896 29790 29790 D ZrHung.AppEyeUiProbe: stop checker.
+11-28 13:35:29.937 29790 29790 I Poster  :  surfaceDestroyed() called.
+11-28 13:35:29.940 29790 29790 D ViewRootImpl[MainActivity]: surface should not be released
+11-28 13:35:29.940 29790 29790 I Poster  :  onStop() called.
+11-28 13:35:29.947 29790 29850 W libEGL  : EGLNativeWindowType 0xf07f0008 disconnect failed
+11-28 13:35:30.175 29790 29790 D Poster  : At 1574940930173 location is 65.05793962922937 (latitude), and 25.469906906741613 (longitude)
+11-28 13:35:30.179 29790 29790 D Poster  : Connected to mobile network 20
+11-28 13:35:30.188 29790 29790 D Latitude: status
+11-28 13:35:30.607 29790 29825 D ZrHung.AppEyeUiProbe: Current Activity:false
+11-28 13:35:30.607 29790 29825 D ZrHung.AppEyeUiProbe: not watching, wait.
+11-28 13:35:34.676 29790 29790 I AwareBitmapCacher: handleReleaseCache: pid=29790
+11-28 13:35:34.677 29790 29790 I AwareBitmapCacher: init lrucache size: 2097152 pid=29790
+11-28 13:35:34.917 29790 29801 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:35:34.957 29790 29799 W System  : A resource failed to call close. 
+11-28 13:35:34.961 29790 29799 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 14 lines
+11-28 13:35:34.961 29790 29799 W System  : A resource failed to call close. 

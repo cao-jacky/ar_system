@@ -1,0 +1,383 @@
+--------- beginning of main
+11-28 13:02:08.672 23296 23296 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-28 13:02:08.673 23296 23358 D ZrHung.AppEyeUiProbe: Runnable thread started.
+11-28 13:02:08.673 23296 23358 D IMonitor: Load library imonitor_jni
+11-28 13:02:08.678 23296 23358 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0102]
+11-28 13:02:08.678 23296 23358 W ZrHung.AppEyeUiProbe: Failed to get config from zrhung
+11-28 13:02:08.679 23356 23356 W logcat  : type=1400 audit(0.0:32289): avc: granted { create } for name="logcat_1574938928661.txt" scontext=u:r:untrusted_app:s0:c147,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0:c147,c256,c512,c768 tclass=file
+11-28 13:02:08.680 23296 23296 I MultiDex: Installing application
+11-28 13:02:08.680 23296 23296 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+--------- beginning of system
+11-28 13:02:08.683 23296 23296 V ActivityThread: callActivityOnCreate
+11-28 13:02:08.683 23296 23296 I Poster  :  onCreate() called.
+11-28 13:02:08.686 23296 23296 I HwApsImpl: APS: new HwApsImpl created
+11-28 13:02:08.693 23296 23296 V HwWidgetFactory: : successes to get AllImpl object and return....
+11-28 13:02:08.700 23296 23296 D OpenGLRenderer: Skia GL Pipeline
+11-28 13:02:08.721 23296 23296 D Poster  : Server details are IP 193.166.28.132 and port 52727
+11-28 13:02:08.725 23296 23296 D Poster  : Server bound to IP 193.166.28.132 and port 52727
+11-28 13:02:08.733 23296 23296 D ActivityThread: add activity client record, r= ActivityRecord{db8bbd token=android.os.BinderProxy@c62e47c {symlab.cloudridar.arhud/symlab.ARHUD.MainActivity}} token= android.os.BinderProxy@c62e47c
+11-28 13:02:08.735 23296 23296 I Poster  :  onStart() called.
+11-28 13:02:08.735 23296 23296 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-28 13:02:08.737 23296 23296 I Poster  :  onResume() called.
+11-28 13:02:08.741 23296 23296 I PermissionManager: camera remind result:true
+11-28 13:02:08.741 23296 23296 I Camera  : open camera: 0, package name: symlab.cloudridar.arhud
+11-28 13:02:08.741 23296 23296 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 23296 ,uidOf3RdApk: 10147 ,permType: 0 ,permCfg: 1
+11-28 13:02:08.742 23296 23296 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = true
+11-28 13:02:08.753 23296 23296 D ActivityThread: isOptEnabled=false isWechatScanOpt=false
+11-28 13:02:08.755 23296 23296 I HwSecImmHelper: mSecurityInputMethodService is null
+11-28 13:02:08.761 23296 23296 D OpenGLRenderer:   HWUI Binary is  enabled
+11-28 13:02:08.779 23296 23393 D HiTouch_PressGestureDetector: onAttached, package=symlab.cloudridar.arhud, windowType=1, mHiTouchRestricted=false
+11-28 13:02:08.787 23296 23391 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasWideColorDisplay retrieved: 0
+11-28 13:02:08.787 23296 23391 I ConfigStore: android::hardware::configstore::V1_0::ISurfaceFlingerConfigs::hasHDRDisplay retrieved: 0
+11-28 13:02:08.788 23296 23391 I iGraphics: [0020080c] pn: symlab.cloudridar.arhud, p: 23296
+11-28 13:02:08.788 23296 23391 I OpenGLRenderer: Initialized EGL, version 1.4, mEglDisplay 0x1
+11-28 13:02:08.788 23296 23391 D OpenGLRenderer: Swap behavior 2
+11-28 13:02:08.796 23296 23391 D mali_winsys: EGLint new_window_surface(egl_winsys_display *, void *, EGLSurface, EGLConfig, egl_winsys_surface **, EGLBoolean) returns 0x3000
+11-28 13:02:08.805 23296 23296 I Poster  :  surfaceCreated() called.
+11-28 13:02:08.805 23296 23296 I Poster  : initPreview() called
+11-28 13:02:08.809 23296 23296 I PermissionManager: camera remind result:true
+11-28 13:02:08.815 23296 23296 I Poster  :  surfaceChanged() called.
+11-28 13:02:08.832 23296 23296 W InputMethodManager: startInputReason = 1
+11-28 13:02:08.843 23296 23296 W InputMethodManager: startInputReason = 5
+11-28 13:02:09.348 23296 23366 W System.err: java.net.SocketException: Message too long
+11-28 13:02:09.348 23296 23366 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:02:09.348 23296 23366 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:02:09.348 23296 23366 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:02:09.348 23296 23366 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:02:09.348 23296 23366 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:02:09.348 23296 23366 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:02:09.348 23296 23366 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:02:09.348 23296 23366 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:02:09.348 23296 23366 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:02:09.382 23296 23366 W System.err: java.net.SocketException: Message too long
+11-28 13:02:09.382 23296 23366 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:02:09.382 23296 23366 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:02:09.382 23296 23366 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:02:09.382 23296 23366 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:02:09.382 23296 23366 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:02:09.382 23296 23366 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:02:09.382 23296 23366 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:02:09.382 23296 23366 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:02:09.382 23296 23366 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:02:09.423 23296 23366 W System.err: java.net.SocketException: Message too long
+11-28 13:02:09.423 23296 23366 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:02:09.423 23296 23366 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:02:09.423 23296 23366 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:02:09.423 23296 23366 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:02:09.423 23296 23366 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:02:09.423 23296 23366 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:02:09.423 23296 23366 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:02:09.423 23296 23366 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:02:09.423 23296 23366 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:02:09.453 23296 23366 W System.err: java.net.SocketException: Message too long
+11-28 13:02:09.453 23296 23366 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send0(Native Method)
+11-28 13:02:09.453 23296 23366 W System.err: 	at sun.nio.ch.DatagramChannelImpl.sendFromNativeBuffer(DatagramChannelImpl.java:573)
+11-28 13:02:09.453 23296 23366 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:550)
+11-28 13:02:09.454 23296 23366 W System.err: 	at sun.nio.ch.DatagramChannelImpl.send(DatagramChannelImpl.java:514)
+11-28 13:02:09.454 23296 23366 W System.err: 	at symlab.CloudAR.network.TransmissionTask.run(TransmissionTask.java:138)
+11-28 13:02:09.454 23296 23366 W System.err: 	at android.os.Handler.handleCallback(Handler.java:907)
+11-28 13:02:09.454 23296 23366 W System.err: 	at android.os.Handler.dispatchMessage(Handler.java:105)
+11-28 13:02:09.454 23296 23366 W System.err: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:02:09.454 23296 23366 W System.err: 	at android.os.HandlerThread.run(HandlerThread.java:65)
+11-28 13:02:09.551 23296 23326 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:02:09.560 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:09.561 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 8 lines
+11-28 13:02:09.561 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:10.053 23296 23366 D Evaluation: 0 res for frame 6 received at 1574938930053
+11-28 13:02:11.547 23296 23326 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:02:11.563 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:11.566 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 47 lines
+11-28 13:02:11.566 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:12.652 23296 23296 D stylus  : init stylus touchlistener.
+11-28 13:02:12.657 23296 23296 W Settings: Setting device_provisioned has moved from android.provider.Settings.Secure to android.provider.Settings.Global.
+11-28 13:02:12.657 23296 23296 V HiTouch_HiTouchSensor: User setup is finished.
+11-28 13:02:12.662 23296 23296 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:6.622925, limit is:60The moving distance of Y is:60.555367, limit is:60
+11-28 13:02:13.223 23296 23326 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:02:13.243 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:13.246 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 47 lines
+11-28 13:02:13.246 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:13.645 23296 23349 I loudridar.arhu: Starting profile saver IsSaveProfileNow end.
+11-28 13:02:13.657 23296 23296 I AwareBitmapCacher: init lrucache size: 2097152 pid=23296
+11-28 13:02:14.999 23296 23326 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:02:15.017 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:15.022 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 50 lines
+11-28 13:02:15.023 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:17.012 23296 23326 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:02:17.036 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:17.040 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 57 lines
+11-28 13:02:17.041 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:18.908 23296 23326 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:02:18.931 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:18.932 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:18.932 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:18.932 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:18.936 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 52 lines
+11-28 13:02:18.936 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:20.960 23296 23326 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:02:20.989 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:20.990 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 5 lines
+11-28 13:02:20.990 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:20.990 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:20.991 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 7 lines
+11-28 13:02:20.991 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:20.991 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:20.996 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 36 lines
+11-28 13:02:20.997 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:20.997 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:20.997 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:20.998 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:20.998 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:22.940 23296 23326 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:02:22.965 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:22.968 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 10 lines
+11-28 13:02:22.968 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:22.968 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:22.969 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-28 13:02:22.969 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:22.969 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:22.969 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:22.969 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:22.970 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:22.970 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:22.971 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 8 lines
+11-28 13:02:22.971 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:22.973 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:22.974 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-28 13:02:22.974 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:22.974 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:22.974 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:22.974 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:22.975 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:22.975 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-28 13:02:22.975 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:22.975 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:22.975 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-28 13:02:22.975 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:22.975 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:22.976 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:22.976 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:22.976 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:22.976 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:22.976 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:22.976 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-28 13:02:22.977 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:22.977 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:22.978 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 5 lines
+11-28 13:02:22.978 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:24.947 23296 23326 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:02:24.970 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:24.972 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 11 lines
+11-28 13:02:24.973 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:24.973 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:24.976 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 44 lines
+11-28 13:02:24.977 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:26.971 23296 23326 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:02:26.992 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:26.999 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 57 lines
+11-28 13:02:26.999 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:28.719 23296 23326 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:02:28.753 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:28.755 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 13 lines
+11-28 13:02:28.755 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:28.756 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:28.756 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-28 13:02:28.756 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:28.757 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:28.760 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 26 lines
+11-28 13:02:28.760 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:28.761 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:28.763 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:28.763 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-28 13:02:28.763 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:30.110 23296 23326 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:02:30.127 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:30.127 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:30.127 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-28 13:02:30.128 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:30.128 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:30.131 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 34 lines
+11-28 13:02:30.132 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:31.465 23296 23326 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:02:31.481 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:31.489 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 37 lines
+11-28 13:02:31.489 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:32.822 23296 23326 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:02:32.839 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:32.844 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 39 lines
+11-28 13:02:32.844 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:34.102 23296 23326 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:02:34.131 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:34.132 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-28 13:02:34.132 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:34.132 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:34.132 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 7 lines
+11-28 13:02:34.132 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:34.132 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:34.132 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:34.132 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:34.132 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:34.133 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:34.133 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:34.133 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 5 lines
+11-28 13:02:34.133 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:34.133 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:34.133 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:34.133 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:34.133 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:34.133 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:34.134 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 7 lines
+11-28 13:02:34.134 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:35.372 23296 23326 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:02:35.392 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:35.393 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-28 13:02:35.393 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:35.393 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:35.394 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 7 lines
+11-28 13:02:35.395 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:35.397 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:35.397 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-28 13:02:35.398 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:35.398 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:35.398 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:35.398 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:35.399 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:35.399 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-28 13:02:35.399 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:35.399 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:35.399 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-28 13:02:35.399 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:35.399 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:35.400 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:35.400 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:35.400 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:35.400 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:35.400 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:35.400 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:35.400 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:35.400 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:36.649 23296 23326 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:02:36.679 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:36.682 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 37 lines
+11-28 13:02:36.682 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:37.917 23296 23326 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:02:37.936 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:37.940 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 35 lines
+11-28 13:02:37.940 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:39.166 23296 23326 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:02:39.189 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:39.193 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 30 lines
+11-28 13:02:39.193 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:39.193 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:39.194 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-28 13:02:39.194 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:40.475 23296 23326 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:02:40.503 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:40.504 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 6 lines
+11-28 13:02:40.504 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:40.504 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:40.504 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:40.504 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:40.504 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:40.504 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:40.504 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:40.504 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-28 13:02:40.505 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:40.505 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:40.505 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-28 13:02:40.505 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:40.505 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:40.505 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-28 13:02:40.505 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:40.505 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:40.505 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:40.505 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:40.506 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-28 13:02:40.506 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:40.506 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:40.506 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:40.506 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:40.506 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:40.506 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:40.506 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:40.506 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:41.817 23296 23326 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:02:41.840 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:41.843 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 19 lines
+11-28 13:02:41.843 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:41.843 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:41.844 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:41.844 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:41.844 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 1 line
+11-28 13:02:41.844 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:41.844 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:41.847 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:41.847 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 9 lines
+11-28 13:02:41.847 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:43.126 23296 23326 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:02:43.153 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:43.157 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 31 lines
+11-28 13:02:43.157 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:43.159 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:43.159 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:43.160 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-28 13:02:43.160 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:44.440 23296 23326 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:02:44.461 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:44.463 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 18 lines
+11-28 13:02:44.463 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:44.463 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:44.463 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:44.464 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:44.464 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:44.464 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:44.464 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:44.464 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:44.464 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:44.465 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-28 13:02:44.465 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:44.465 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:44.465 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:44.466 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 5 lines
+11-28 13:02:44.466 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:45.744 23296 23326 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:02:45.766 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:45.770 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 36 lines
+11-28 13:02:45.770 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:47.138 23296 23326 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:02:47.157 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:47.157 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:47.157 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:47.157 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:47.157 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:47.157 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:47.157 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:47.158 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 18 lines
+11-28 13:02:47.158 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:47.158 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:47.159 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 9 lines
+11-28 13:02:47.159 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:47.159 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:47.159 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 2 lines
+11-28 13:02:47.159 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:48.535 23296 23326 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0008]
+11-28 13:02:48.558 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:48.562 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 24 lines
+11-28 13:02:48.562 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:48.562 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:48.563 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 3 lines
+11-28 13:02:48.563 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:48.563 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:48.564 23296 23324 I chatty  : uid=10147(symlab.cloudridar.arhud) FinalizerDaemon identical 7 lines
+11-28 13:02:48.564 23296 23324 W System  : A resource failed to call close. 
+11-28 13:02:49.192 23296 23296 W HiTouch_PressGestureDetector: Touch pointer move a lot. The moving distance of X is:124.4314, limit is:60The moving distance of Y is:59.14337, limit is:60
+11-28 13:02:49.823 23296 23296 I Poster  :  onPause() called.
+11-28 13:02:49.951 23296 23296 I Camera  : close camera: 0, package name: symlab.cloudridar.arhud
+11-28 13:02:49.951 23296 23296 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 23296 ,uidOf3RdApk: 10147 ,permType: 0 ,permCfg: 0
+11-28 13:02:49.952 23296 23296 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = false
+11-28 13:02:49.981 23296 23296 D ZrHung.AppEyeUiProbe: stop checker.
+11-28 13:02:49.998 23296 23296 I Poster  :  surfaceDestroyed() called.
+11-28 13:02:49.998 23296 23296 D ViewRootImpl[MainActivity]: surface should not be released
+11-28 13:02:49.998 23296 23296 I Poster  :  onStop() called.
+11-28 13:02:50.012 23296 23391 W libEGL  : EGLNativeWindowType 0xf07f0008 disconnect failed
+11-28 13:02:50.695 23296 23358 D ZrHung.AppEyeUiProbe: Current Activity:false
+11-28 13:02:50.695 23296 23358 D ZrHung.AppEyeUiProbe: not watching, wait.

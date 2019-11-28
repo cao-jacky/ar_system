@@ -1,0 +1,88 @@
+--------- beginning of main
+11-28 13:28:55.229 27093 27093 I loudridar.arhu: Late-enabling -Xcheck:jni
+11-28 13:28:55.262 27093 27093 I loudridar.arhu: Reinit property: dalvik.vm.checkjni= false
+11-28 13:28:55.299 27093 27093 D ZrHung.AppEyeUiProbe: AppEyeUIP created.
+11-28 13:28:55.299 27093 27093 W re-initialized>: type=1400 audit(0.0:35085): avc: denied { read } for name="u:object_r:mmi_prop:s0" dev="tmpfs" ino=16663 scontext=u:r:untrusted_app:s0:c147,c256,c512,c768 tcontext=u:object_r:mmi_prop:s0 tclass=file permissive=0
+11-28 13:28:55.304 27093 27093 E libc    : Access denied finding property "runtime.mmitest.isrunning"
+--------- beginning of system
+11-28 13:28:55.308 27093 27093 D ActivityThread: Attach thread to application
+11-28 13:28:55.367 27093 27136 I HwApiCacheMangerEx: apicache path=/storage/emulated/0 state=mounted key=symlab.cloudridar.arhud#10147#256
+11-28 13:28:55.370 27093 27136 I HwApiCacheMangerEx: apicache path=/storage/emulated/0 state=mounted key=symlab.cloudridar.arhud#10147#0
+11-28 13:28:55.579 27093 27093 I loudridar.arhu: QarthPatchMonintor::Init
+11-28 13:28:55.579 27093 27093 I loudridar.arhu: 
+11-28 13:28:55.579 27093 27093 I loudridar.arhu: QarthPatchMonintor::StartWatch
+11-28 13:28:55.579 27093 27093 I loudridar.arhu: 
+11-28 13:28:55.579 27093 27093 I loudridar.arhu: QarthPatchMonintor::WatchPackage: /data/hotpatch/fwkhotpatch/
+11-28 13:28:55.579 27093 27093 I loudridar.arhu: 
+11-28 13:28:55.579 27093 27093 I loudridar.arhu: QarthPatchMonintor::CheckAndWatchPatch: /data/hotpatch/fwkhotpatch/symlab.cloudridar.arhud
+11-28 13:28:55.579 27093 27093 I loudridar.arhu: 
+11-28 13:28:55.579 27093 27093 I loudridar.arhu: QarthPatchMonintor::CheckAndWatchPatch: /data/hotpatch/fwkhotpatch/all
+11-28 13:28:55.579 27093 27093 I loudridar.arhu: 
+11-28 13:28:55.580 27093 27093 I loudridar.arhu: QarthPatchMonintor::Run
+11-28 13:28:55.580 27093 27093 I loudridar.arhu: 
+11-28 13:28:55.580 27093 27153 I loudridar.arhu: QarthPatchMonintor::Reading
+11-28 13:28:55.580 27093 27153 I loudridar.arhu: 
+11-28 13:28:55.580 27093 27153 I loudridar.arhu: QarthPatchMonintor::CheckNotifyEvent
+11-28 13:28:55.580 27093 27153 I loudridar.arhu: 
+11-28 13:28:55.580 27093 27153 I loudridar.arhu: QarthPatchMonintor::CheckNotifyEvent before read
+11-28 13:28:55.580 27093 27153 I loudridar.arhu: 
+11-28 13:28:55.589 27093 27093 I MultiDex: VM with version 2.1.0 has multidex support
+11-28 13:28:55.590 27093 27093 I MultiDex: Installing application
+11-28 13:28:55.590 27093 27093 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+11-28 13:28:55.592 27093 27136 I AwareBitmapCacher: init processName:symlab.cloudridar.arhud pid=27093 uid=10147
+11-28 13:28:55.595 27093 27155 E AwareLog: AtomicFileUtils: readFileLines file not exist: android.util.AtomicFile@919d802
+11-28 13:28:55.596 27093 27155 E AwareLog: AtomicFileUtils: readFileLines file not exist: android.util.AtomicFile@35dc513
+11-28 13:28:55.600 27093 27093 I FirebaseInitProvider: FirebaseApp initialization unsuccessful
+11-28 13:28:55.620 27093 27093 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-28 13:28:55.622 27093 27160 D ZrHung.AppEyeUiProbe: Runnable thread started.
+11-28 13:28:55.622 27093 27160 D IMonitor: Load library imonitor_jni
+11-28 13:28:55.626 27093 27160 E         : [ZeroHung]zrhung_get_config: Get config failed for wp[0x0102]
+11-28 13:28:55.626 27093 27160 W ZrHung.AppEyeUiProbe: Failed to get config from zrhung
+11-28 13:28:55.639 27158 27158 W logcat  : type=1400 audit(0.0:35086): avc: granted { create } for name="logcat_1574940535604.txt" scontext=u:r:untrusted_app:s0:c147,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0:c147,c256,c512,c768 tclass=file
+11-28 13:28:55.643 27093 27093 I MultiDex: Installing application
+11-28 13:28:55.643 27093 27093 I MultiDex: VM has multidex support, MultiDex support library is disabled.
+11-28 13:28:55.649 27093 27093 V ActivityThread: callActivityOnCreate
+11-28 13:28:55.649 27093 27093 I Poster  :  onCreate() called.
+11-28 13:28:55.655 27093 27093 I HwApsImpl: APS: new HwApsImpl created
+11-28 13:28:55.673 27093 27093 V HwWidgetFactory: : successes to get AllImpl object and return....
+11-28 13:28:55.693 27093 27093 D OpenGLRenderer: Skia GL Pipeline
+11-28 13:28:55.751 27093 27093 D Poster  : Server details are IP 193.166.28.132 and port 52727
+11-28 13:28:55.766 27093 27093 D Poster  : Server bound to IP 193.166.28.132 and port 52727
+11-28 13:28:55.780 27093 27169 D Evaluation: Frame 0 sent at 1.574940535779E12
+11-28 13:28:55.781 27093 27093 D ActivityThread: add activity client record, r= ActivityRecord{db8bbd token=android.os.BinderProxy@c62e47c {symlab.cloudridar.arhud/symlab.ARHUD.MainActivity}} token= android.os.BinderProxy@c62e47c
+11-28 13:28:55.788 27093 27093 I Poster  :  onStart() called.
+11-28 13:28:55.789 27093 27093 D ZrHung.AppEyeUiProbe: notify runnable to start.
+11-28 13:28:55.792 27093 27093 I Poster  :  onResume() called.
+11-28 13:28:55.801 27093 27093 I PermissionManager: camera remind result:true
+11-28 13:28:55.802 27093 27093 I Camera  : open camera: 0, package name: symlab.cloudridar.arhud
+11-28 13:28:55.802 27093 27093 I BackgroundPermManager: pkgName: symlab.cloudridar.arhud,pid: 27093 ,uidOf3RdApk: 10147 ,permType: 0 ,permCfg: 1
+11-28 13:28:55.804 27093 27093 I HwCameraUtil: notifySurfaceFlingerCameraStatus : isFront = false , isOpend = true
+11-28 13:28:55.859 27093 27093 W CameraBase: An error occurred while connecting to camera 0: Status(-8): '6: validateClientPermissionsLocked:1076: Caller "symlab.cloudridar.arhud" (PID 10147, UID 27093) cannot open camera "0" from background'
+11-28 13:28:55.861 27093 27093 D AndroidRuntime: Shutting down VM
+11-28 13:28:55.863 27093 27093 W loudridar.arhu: Accessing hidden method Lcom/msic/qarth/PatchStore;->createDisableExceptionQarthFile(Ljava/lang/Throwable;)Z (blacklist, JNI)
+11-28 13:28:55.863 27093 27093 E loudridar.arhu: [qarth_debug:]  get PatchStore::createDisableExceptionQarthFile method fail.
+--------- beginning of crash
+11-28 13:28:55.873 27093 27093 E AndroidRuntime: FATAL EXCEPTION: main
+11-28 13:28:55.873 27093 27093 E AndroidRuntime: Process: symlab.cloudridar.arhud, PID: 27093
+11-28 13:28:55.873 27093 27093 E AndroidRuntime: java.lang.RuntimeException: Unable to resume activity {symlab.cloudridar.arhud/symlab.ARHUD.MainActivity}: java.lang.RuntimeException: Fail to connect to camera service
+11-28 13:28:55.873 27093 27093 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:4444)
+11-28 13:28:55.873 27093 27093 E AndroidRuntime: 	at android.app.ActivityThread.handleResumeActivity(ActivityThread.java:4484)
+11-28 13:28:55.873 27093 27093 E AndroidRuntime: 	at android.app.servertransaction.ResumeActivityItem.execute(ResumeActivityItem.java:51)
+11-28 13:28:55.873 27093 27093 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.executeLifecycleState(TransactionExecutor.java:154)
+11-28 13:28:55.873 27093 27093 E AndroidRuntime: 	at android.app.servertransaction.TransactionExecutor.execute(TransactionExecutor.java:76)
+11-28 13:28:55.873 27093 27093 E AndroidRuntime: 	at android.app.ActivityThread$H.handleMessage(ActivityThread.java:2208)
+11-28 13:28:55.873 27093 27093 E AndroidRuntime: 	at android.os.Handler.dispatchMessage(Handler.java:112)
+11-28 13:28:55.873 27093 27093 E AndroidRuntime: 	at android.os.Looper.loop(Looper.java:216)
+11-28 13:28:55.873 27093 27093 E AndroidRuntime: 	at android.app.ActivityThread.main(ActivityThread.java:7579)
+11-28 13:28:55.873 27093 27093 E AndroidRuntime: 	at java.lang.reflect.Method.invoke(Native Method)
+11-28 13:28:55.873 27093 27093 E AndroidRuntime: 	at com.android.internal.os.RuntimeInit$MethodAndArgsCaller.run(RuntimeInit.java:524)
+11-28 13:28:55.873 27093 27093 E AndroidRuntime: 	at com.android.internal.os.ZygoteInit.main(ZygoteInit.java:1034)
+11-28 13:28:55.873 27093 27093 E AndroidRuntime: Caused by: java.lang.RuntimeException: Fail to connect to camera service
+11-28 13:28:55.873 27093 27093 E AndroidRuntime: 	at android.hardware.Camera.<init>(Camera.java:581)
+11-28 13:28:55.873 27093 27093 E AndroidRuntime: 	at android.hardware.Camera.open(Camera.java:417)
+11-28 13:28:55.873 27093 27093 E AndroidRuntime: 	at symlab.ARHUD.MainActivity.onResume(MainActivity.java:189)
+11-28 13:28:55.873 27093 27093 E AndroidRuntime: 	at android.app.Instrumentation.callActivityOnResume(Instrumentation.java:1426)
+11-28 13:28:55.873 27093 27093 E AndroidRuntime: 	at android.app.Activity.performResume(Activity.java:7663)
+11-28 13:28:55.873 27093 27093 E AndroidRuntime: 	at android.app.ActivityThread.performResumeActivity(ActivityThread.java:4426)
+11-28 13:28:55.873 27093 27093 E AndroidRuntime: 	... 11 more
+11-28 13:28:55.906 27093 27093 I Process : Sending signal. PID: 27093 SIG: 9

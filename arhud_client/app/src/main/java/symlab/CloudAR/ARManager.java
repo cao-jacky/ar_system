@@ -9,7 +9,6 @@ import android.os.Environment;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Process;
-import android.telephony.TelephonyManager;
 import android.util.Log;
 
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -44,8 +43,6 @@ public class ARManager {
     private String ip;
     private int port;
 
-    private String networkType;
-
     private static boolean isCloudBased;
 
     private ARManager(){ super(); }
@@ -71,7 +68,6 @@ public class ARManager {
 
             ip = br.readLine();
             port = Integer.parseInt(br.readLine());
-            Log.d(Constants.TAG, "Server details are IP " + ip + " and port " + port);
             br.close();
 
             serverAddr = new InetSocketAddress(ip, port);
@@ -80,7 +76,6 @@ public class ARManager {
             // pengzhou: the receiving phone needs the following sentence
             dataChannel.bind(new InetSocketAddress(51919));
             //dataChannel.socket().connect(serverAddr);
-            Log.d(Constants.TAG, "Server bound to IP " + ip + " and port " + port);
         } catch (IOException e) {
             Log.d(Constants.TAG, "config file error");
         } catch (Exception e) {}

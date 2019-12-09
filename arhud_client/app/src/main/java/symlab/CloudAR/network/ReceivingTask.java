@@ -46,7 +46,6 @@ public class ReceivingTask implements Runnable{
     private double timeReceived;
 
 
-
     public ReceivingTask(DatagramChannel datagramChannel){
         this.datagramChannel = datagramChannel;
     }
@@ -57,8 +56,14 @@ public class ReceivingTask implements Runnable{
 
     @Override
     public void run() {
+        //pengzhou : record result transmission delay
+        File sdcard = Environment.getExternalStorageDirectory();
+        File file = new File(sdcard,"CloudAR/receive.txt");
+
         resPacket.clear();
         try {
+            time = System.currentTimeMillis();
+            timeReceived = (double)time;
             if (datagramChannel.receive(resPacket) != null) {
                 res = resPacket.array();
                 //Log.v(Constants.TAG, "something received");
@@ -68,33 +73,24 @@ public class ReceivingTask implements Runnable{
         } catch (IOException e) {
             e.printStackTrace();
         }
-        //pengzhou : record result transmission delay
-//        File appDirectory = new File( Environment.getExternalStorageDirectory() + "/CloudAR" );
-//        File logDirectory = new File( appDirectory + "/receive_logs" );
-//        File file = new File(logDirectory,"receive_"+System.currentTimeMillis()+".txt");
-        File sdcard = Environment.getExternalStorageDirectory();
-        File file = new File(sdcard,"CloudAR/receive.txt");
 
         if (res != null) {
-            time = System.currentTimeMillis();
-            timeReceived = (double)time;
             System.arraycopy(res, 0, tmp, 0, 4);
             int resultID = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
 
-//            System.arraycopy(res, 8, Tmp, 0, 8);
+            //System.arraycopy(res, 8, Tmp, 0, 8);
             //resultLat = ByteBuffer.wrap(Tmp).order(ByteOrder.LITTLE_ENDIAN).getDouble();
-//            resultTimecap = ByteBuffer.wrap(Tmp).order(ByteOrder.LITTLE_ENDIAN).getDouble();
+            //resultTimecap = ByteBuffer.wrap(Tmp).order(ByteOrder.LITTLE_ENDIAN).getDouble();
 
-//            System.arraycopy(res, 16, Tmp, 0, 8);
+            //System.arraycopy(res, 16, Tmp, 0, 8);
             //resultLong = ByteBuffer.wrap(Tmp).order(ByteOrder.LITTLE_ENDIAN).getDouble();
-//            resultTimesend = ByteBuffer.wrap(Tmp).order(ByteOrder.LITTLE_ENDIAN).getDouble();
+            //resultTimesend = ByteBuffer.wrap(Tmp).order(ByteOrder.LITTLE_ENDIAN).getDouble();
 
             System.arraycopy(res, 8, tmp, 0, 4);
             newMarkerNum = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
 
-//            resultdelay = time - resultTimesend;
-//            Log.d(Constants.Eval, resultID + " " + time + " " + String.valueOf(resultTimesend) +
-//             " " + String.valueOf(resultdelay));
+            //resultdelay = time - resultTimesend;
+            //Log.d(Constants.Eval, resultID + " " + time + " " + String.valueOf(resultTimesend) + " " + String.valueOf(resultdelay));
             try{BufferedWriter bw =
                     new BufferedWriter(new FileWriter(file, true));
                 bw.write(Integer.toString(resultID));
@@ -108,19 +104,18 @@ public class ReceivingTask implements Runnable{
             }
 
             if (newMarkerNum >= 0) {
-                Log.d(Constants.Eval, "" + newMarkerNum + " res for frame " + resultID +
-                        " received at " + System.currentTimeMillis());
+                Log.d(Constants.Eval, "" + newMarkerNum + " res " + resultID + " received ");
                 Detected detected[] = new Detected[newMarkerNum];
 
-//                try{BufferedWriter bw =
-//                        new BufferedWriter(new FileWriter(file, true));
-//                        bw.write(Double.toString(resultdelay));
-//                        bw.newLine();
-//                        bw.flush();}
-//                catch (Exception e){
-//                    e.printStackTrace();
-//
-//                }
+                /*try{BufferedWriter bw =
+                        new BufferedWriter(new FileWriter(file, true));
+                        bw.write(Double.toString(resultdelay));
+                        bw.newLine();
+                        bw.flush();}
+                catch (Exception e){
+                    e.printStackTrace();
+
+                }*/
 
                 int i = 0;
                 while (i < newMarkerNum) {

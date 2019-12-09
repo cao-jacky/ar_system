@@ -308,7 +308,7 @@ void *ThreadSenderFunction(void *socket) {
             remoteAddr.sin_port = htons(51919);
             //output_send << "sending to the " << it_device->second<< " device, whose ip is "<< it_device->first << endl ;
             //cout << "sending to the " << it_device->second<< " device, whose ip is "<< it_device->first << endl ;
-            sendto(sock, buffer, sizeof(buffer), 0, (struct sockaddr *)&remoteAddr, addrlen);
+            sendto(sock, buffer, sizeof(buffer), 0, (struct sockaddr *)&frontAddr, addrlen);
             //output_send << "send_result of frameID of: " << curRes.resID.i << " sent by observer at time: " << std::fixed << std::setprecision(15) << curRes.resLongtitude.d << " whose size is: " << sizeof(buffer) << endl;
             //cout << "send_result of frameID of: " << curRes.resID.i << " sent by observer at time: " << curRes.resLongtitude.d << " whose size is: " << sizeof(buffer) << endl;
             it_device++;} 

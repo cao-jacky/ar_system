@@ -298,7 +298,6 @@ public class MainActivity_send extends Activity implements LocationListener, Sen
 
                 //ARManager.getInstance().recognize(frameID, data s);
                 //------------------pengzhou: location---------------------------
-//                ARManager.getInstance().recognizeTime(frameID, data, timeCaptured, timeSend);
                 ARManager.getInstance().recognizeTime(frameID, data);
                 recoFlag = false;
             } else {

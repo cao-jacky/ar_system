@@ -89,9 +89,6 @@ public class TransmissionTask implements Runnable {
 
     @Override
     public void run() {
-//        File appDirectory = new File( Environment.getExternalStorageDirectory() + "/CloudAR" );
-//        File logDirectory = new File( appDirectory + "/send_logs" );
-//        File file = new File(logDirectory,"send_"+System.currentTimeMillis()+".txt");
         File sdcard = Environment.getExternalStorageDirectory();
         File file = new File(sdcard,"CloudAR/send.txt");
         if (dataType == IMAGE_DETECT) {
@@ -117,17 +114,14 @@ public class TransmissionTask implements Runnable {
 
         frmid = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(frmID).array();
         datatype = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(dataType).array();
-//        TimeCaptured = ByteBuffer.allocate(8).order(ByteOrder.LITTLE_ENDIAN).putDouble(timeCaptured).array();
-//        TimeSend = ByteBuffer.allocate(8).order(ByteOrder.LITTLE_ENDIAN).putDouble(timeSend).array();
+        //TimeCaptured = ByteBuffer.allocate(8).order(ByteOrder.LITTLE_ENDIAN).putDouble(timeCaptured).array();
+        //TimeSend = ByteBuffer.allocate(8).order(ByteOrder.LITTLE_ENDIAN).putDouble(timeSend).array();
         frmsize = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(datasize).array();
         System.arraycopy(frmid, 0, packetContent, 0, 4);
         System.arraycopy(datatype, 0, packetContent, 4, 4);
-//        System.arraycopy(TimeCaptured, 0, packetContent, 8, 8);
-//        System.arraycopy(TimeSend, 0, packetContent, 16, 8);
+        //System.arraycopy(TimeCaptured, 0, packetContent, 8, 8);
+        //System.arraycopy(TimeSend, 0, packetContent, 16, 8);
         System.arraycopy(frmsize, 0, packetContent, 8, 4);
-
-        time = System.currentTimeMillis();
-        timeSend = (double)time;
 
         if (frmdataToSend != null)
             System.arraycopy(frmdataToSend, 0, packetContent, 12, datasize);
@@ -136,10 +130,19 @@ public class TransmissionTask implements Runnable {
             ByteBuffer buffer = ByteBuffer.allocate(packetContent.length).put(packetContent);
             buffer.flip();
             datagramChannel.send(buffer, serverAddress);
+            time = System.currentTimeMillis();
+            timeSend = (double)time;
+
+            Log.d(Constants.Eval, frmID + " sent to " + serverAddress);
+
+            //if (dataType == MESSAGE_META)
+            //    Log.d(Constants.Eval, "metadata " + frmID + " sent ");
+            //else
+                //Log.d(Constants.Eval, frmID + " sent at " +  timeSend );
 
             try{
                 BufferedWriter bw =
-                        new BufferedWriter(new FileWriter(file, true));
+                    new BufferedWriter(new FileWriter(file, true));
                 bw.write(Integer.toString(frmID));
                 bw.write(",");
                 bw.write(Double.toString(timeSend));
@@ -147,12 +150,8 @@ public class TransmissionTask implements Runnable {
                 bw.flush();}
             catch (Exception e){
                 e.printStackTrace();
-            }
-//            if (dataType == MESSAGE_META)
-//                Log.d(Constants.Eval, "metadata " + frmID + " sent ");
-//            else
-//                Log.d(Constants.Eval, "Frame " + frmID + " sent at " + System.currentTimeMillis());
 
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }

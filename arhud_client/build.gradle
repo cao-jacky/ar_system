@@ -58,4 +58,3 @@ boolean isTag() {
 def buildNumber() {
     return System.getenv('TRAVIS_BUILD_NUMBER') ?: "0"
 }
-

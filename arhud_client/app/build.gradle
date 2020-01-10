@@ -36,5 +36,6 @@ dependencies {
     compile 'com.google.android.gms:play-services-location:16.0.0'
     compile 'com.android.support:multidex:1.0.3'
     compile 'com.github.medavox:MuTime:v0.5'
+    compile 'com.github.instacart.truetime-android:library:3.3'
 
 }

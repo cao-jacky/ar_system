@@ -20,6 +20,8 @@ import java.nio.channels.DatagramChannel;
 
 import symlab.CloudAR.Constants;
 
+import static symlab.ARHUD.MainActivity.getTrueTime;
+
 /**
  * Created by st0rm23 on 2017/2/20.
  */
@@ -51,6 +53,7 @@ public class TransmissionTask implements Runnable {
 
     public Mat YUVMatTrans, YUVMatScaled, GrayScaled;
     private long time;
+    private long true_time;
 
     public TransmissionTask(DatagramChannel datagramChannel, SocketAddress serverAddress) {
         this.datagramChannel = datagramChannel;
@@ -130,8 +133,10 @@ public class TransmissionTask implements Runnable {
             ByteBuffer buffer = ByteBuffer.allocate(packetContent.length).put(packetContent);
             buffer.flip();
             datagramChannel.send(buffer, serverAddress);
+            true_time = getTrueTime().getTime();
             time = System.currentTimeMillis();
             timeSend = (double)time;
+            Log.d(Constants.TAG, "true time sent for " + frmID + " is " + true_time + " and system time is " + time);
 
             Log.d(Constants.Eval, frmID + " sent to " + serverAddress);
 

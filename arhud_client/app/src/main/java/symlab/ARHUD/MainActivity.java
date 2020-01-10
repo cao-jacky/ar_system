@@ -14,6 +14,8 @@ import android.hardware.Camera;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Bundle;
 import android.support.multidex.MultiDex;
 import android.support.v4.app.ActivityCompat;
@@ -30,10 +32,13 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 
 
+import com.instacart.library.truetime.TrueTime;
+
 import symlab.CloudAR.ARManager;
 import symlab.CloudAR.Constants;
 import symlab.CloudAR.Detected;
 import java.text.DecimalFormat;
+import java.util.Date;
 
 //-----------pengzhou---------------
 //-----------pengzhou---------------
@@ -74,9 +79,14 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
     private final float[] mOrientationAngles = new float[3];
     private double angle;
 
+    String TAG = "DBG";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        initTrueTime(this);
+        Log.d(Constants.TAG, "true time is " + getTrueTime().getTime());
+        Log.d(Constants.TAG, "system time is " + System.currentTimeMillis());
+
         Log.i(Constants.TAG, " onCreate() called.");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -118,6 +128,29 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
             }
         });
     }
+
+    public static Date getTrueTime() {
+        Date date = TrueTime.isInitialized() ? TrueTime.now() : new Date();
+        return date;
+    }
+
+    public static void initTrueTime(Context ctx) {
+        if (isNetworkConnected(ctx)) {
+            if (!TrueTime.isInitialized()) {
+                InitTrueTimeAsyncTask trueTime = new InitTrueTimeAsyncTask(ctx);
+                trueTime.execute();
+            }
+        }
+    }
+
+    public static boolean isNetworkConnected(Context ctx) {
+        ConnectivityManager cm = (ConnectivityManager) ctx
+                .getSystemService (Context.CONNECTIVITY_SERVICE);
+        NetworkInfo ni = cm.getActiveNetworkInfo();
+
+        return ni != null && ni.isConnectedOrConnecting();
+    }
+
     //-----------------------------------pengzhou: location service---------------------------------
     @Override
     protected void attachBaseContext(Context context) {

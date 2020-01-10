@@ -18,6 +18,8 @@ import java.io.BufferedWriter;
 import symlab.CloudAR.Constants;
 import symlab.CloudAR.Detected;
 
+import static symlab.ARHUD.MainActivity.getTrueTime;
+
 /**
  * Created by st0rm23 on 2017/2/20.
  */
@@ -42,6 +44,7 @@ public class ReceivingTask implements Runnable{
 
     private DatagramChannel datagramChannel;
     private long time;
+    private long true_time;
     private double resultdelay;
     private double timeReceived;
 
@@ -62,6 +65,7 @@ public class ReceivingTask implements Runnable{
 
         resPacket.clear();
         try {
+            true_time = getTrueTime().getTime();
             time = System.currentTimeMillis();
             timeReceived = (double)time;
             if (datagramChannel.receive(resPacket) != null) {
@@ -105,6 +109,7 @@ public class ReceivingTask implements Runnable{
 
             if (newMarkerNum >= 0) {
                 Log.d(Constants.Eval, "" + newMarkerNum + " res " + resultID + " received ");
+                Log.d(Constants.TAG, "true time received for " + resultID + " is " + true_time + " and system time is " + time);
                 Detected detected[] = new Detected[newMarkerNum];
 
                 /*try{BufferedWriter bw =

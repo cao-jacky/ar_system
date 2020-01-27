@@ -1,6 +1,0 @@
---------- beginning of system
-11-05 10:46:41.421  9266  9266 D ActivityThread: Attach thread to application
---------- beginning of main
-11-05 10:46:41.464  9266  9286 I HwApiCacheMangerEx: apicache path=/storage/emulated/0 state=mounted key=symlab.cloudridar.arhud#10149#256
-11-05 10:46:41.465  9266  9286 I HwApiCacheMangerEx: apicache path=/storage/emulated/0 state=mounted key=symlab.cloudridar.arhud#10149#0
-11-05 10:46:41.591  9307  9307 W logcat  : type=1400 audit(0.0:2814): avc: granted { create } for name="logcat_1572943601572.txt" scontext=u:r:untrusted_app:s0:c149,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0:c149,c256,c512,c768 tclass=file

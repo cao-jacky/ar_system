@@ -1,4 +1,0 @@
---------- beginning of system
-11-05 10:48:17.626  9583  9583 D ActivityThread: Attach thread to application
---------- beginning of main
-11-05 10:48:17.815  9644  9644 W logcat  : type=1400 audit(0.0:3284): avc: granted { create } for name="logcat_1572943697799.txt" scontext=u:r:untrusted_app:s0:c149,c256,c512,c768 tcontext=u:object_r:sdcardfs:s0:c149,c256,c512,c768 tclass=file

@@ -1,3 +1,0 @@
-/home/jacky/Desktop/arhud/arhud_mock_client/CMakeFiles/rebuild_cache.dir
-/home/jacky/Desktop/arhud/arhud_mock_client/CMakeFiles/client.dir
-/home/jacky/Desktop/arhud/arhud_mock_client/CMakeFiles/edit_cache.dir

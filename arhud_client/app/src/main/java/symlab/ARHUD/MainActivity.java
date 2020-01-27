@@ -5,8 +5,6 @@ import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
 import android.content.pm.PackageManager;
-import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -37,12 +35,7 @@ import com.instacart.library.truetime.TrueTime;
 import symlab.CloudAR.ARManager;
 import symlab.CloudAR.Constants;
 import symlab.CloudAR.Detected;
-import java.text.DecimalFormat;
 import java.util.Date;
-
-//-----------pengzhou---------------
-//-----------pengzhou---------------
-
 
 public class MainActivity extends Activity implements LocationListener, SensorEventListener, View.OnTouchListener {
 

@@ -99,7 +99,7 @@ public class ReceivingTask implements Runnable{
                     new BufferedWriter(new FileWriter(file, true));
                 bw.write(Integer.toString(resultID));
                 bw.write(",");
-                bw.write(Double.toString(timeReceived));
+                bw.write(Double.toString(true_time));
                 bw.newLine();
                 bw.flush();}
             catch (Exception e){

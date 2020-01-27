@@ -150,7 +150,7 @@ public class TransmissionTask implements Runnable {
                     new BufferedWriter(new FileWriter(file, true));
                 bw.write(Integer.toString(frmID));
                 bw.write(",");
-                bw.write(Double.toString(timeSend));
+                bw.write(Double.toString(true_time));
                 bw.newLine();
                 bw.flush();}
             catch (Exception e){

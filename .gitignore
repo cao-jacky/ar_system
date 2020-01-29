@@ -1,2 +1,4 @@
 *.tar
 *.zip
+/arhud_client/opencv/javadoc/*.html
+/arhud_client/opencv/org/*

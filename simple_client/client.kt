@@ -8,10 +8,13 @@ import javax.imageio.ImageIO
 import java.awt.image.BufferedImage
 import java.io.ByteArrayOutputStream
 
+import java.nio.ByteBuffer
+import java.nio.ByteOrder
+
 // Server details
 class ServerDetails {
     var ServerIP: String = "10.42.0.1"
-    var ServerPort: Int = 51717
+    var ServerPort: Int = 52727
 
     constructor()
     init{}
@@ -23,7 +26,7 @@ val ServerSettings = ServerDetails()
 //threadWithRunnable.start()
 
 fun main() {
-    println("Hello, World!")
+    val charset = Charsets.UTF_8
 
     // Preparing UDP socket
     val socket = DatagramSocket()
@@ -39,14 +42,32 @@ fun main() {
     var imageBytes: ByteArray = queryImageBytes.toByteArray() 
     queryImageBytes.close()
 
-    println(imageBytes)
+    var packetToSend = ByteArray(12+imageBytes.size)
+    val dataType: Int = 2 // IMAGE_DETECT is given by 2
+
+    var loopCounter: Int = 1 
 
     // send image as UDP packet to server at an interval
     val ses = Executors.newScheduledThreadPool(10)
     ses.scheduleAtFixedRate(Runnable {
-        val sendPacket = DatagramPacket(imageBytes, imageBytes.size, 
+        println("Current frame ID is " + loopCounter)
+        // var frameIDBytes: ByteArray = loopCounter.toString().toByteArray(charset) 
+        var frameIDBytes = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(loopCounter).array()
+        frameIDBytes.copyInto(packetToSend, 0, 0, 4)
+
+        var dataTypeBytes = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(dataType).array()
+        dataTypeBytes.copyInto(packetToSend, 4, 0, 4)
+
+        var frameSizeBytes = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(imageBytes.size).array()
+        frameSizeBytes.copyInto(packetToSend, 8, 0, 4)
+        
+        imageBytes.copyInto(packetToSend, 12, 0, imageBytes.size)
+        
+        val sendPacket = DatagramPacket(packetToSend, packetToSend.size, 
             InetAddress.getByName(ServerSettings.ServerIP), ServerSettings.ServerPort)
         socket.send(sendPacket)
+
+        loopCounter = loopCounter + 1
         println("sent at " + System.currentTimeMillis())
     }, 0, 2, TimeUnit.SECONDS)
 

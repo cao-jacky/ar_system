@@ -30,6 +30,12 @@ fun main() {
     val socket = DatagramSocket(51919)
     socket.broadcast = true
 
+    // establish an initial echo message
+    val echoArray = ByteArray(30000)
+    val echoPacket = DatagramPacket(echoArray, echoArray.size, 
+        InetAddress.getByName(ServerSettings.ServerIP), ServerSettings.ServerPort)
+    socket.send(echoPacket)
+
     // load query.jpg
     var queryImage: BufferedImage = ImageIO.read(File("./query.jpg"))
 

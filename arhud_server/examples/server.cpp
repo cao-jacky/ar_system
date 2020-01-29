@@ -258,7 +258,7 @@ void *ThreadReceiverFunction(void *socket) {
          
         //output_receive << "receive frameID : " << curFrame.frmID << ", at time : " <<  time_receivepic << ", sent out from vehicle at time: " << curFrame.timeCaptured <<  ", has size: "<< curFrame.bufferSize << ", transmission delay: '" << time_receivepic - curFrame.timeCaptured << "' milliseconds" << endl;
         //output_delay << imageDelay << endl;
-        //cout<<"frame "<<curFrame.frmID<<" received, filesize: "<<curFrame.bufferSize << endl;
+        // cout<<"frame "<<curFrame.frmID<<" received, filesize: "<<curFrame.bufferSize << endl;
         curFrame.buffer = new char[curFrame.bufferSize];
         memset(curFrame.buffer, 0, curFrame.bufferSize);
         memcpy(curFrame.buffer, &(buffer[12]), curFrame.bufferSize);
@@ -300,20 +300,24 @@ void *ThreadSenderFunction(void *socket) {
         memcpy(&(buffer[8]), curRes.markerNum.b, 4);
         if(curRes.markerNum.i != 0)
             memcpy(&(buffer[12]), curRes.buffer, 100 * curRes.markerNum.i);
+        cout<<"test"<<endl;
         map<string, int>::iterator it_device = mapOfDevices.begin();
+
         while(it_device != mapOfDevices.end()){
             memset((char*)&remoteAddr, 0, sizeof(remoteAddr));
             remoteAddr.sin_family = AF_INET;
             remoteAddr.sin_addr.s_addr = inet_addr((it_device->first).c_str());
             remoteAddr.sin_port = htons(51919);
-            //output_send << "sending to the " << it_device->second<< " device, whose ip is "<< it_device->first << endl ;
-            //cout << "sending to the " << it_device->second<< " device, whose ip is "<< it_device->first << endl ;
+            // output_send << "sending to the " << it_device->second<< " device, whose ip is "<< it_device->first << endl ;
+            // cout << "sending to the " << it_device->second<< " device, whose ip is "<< it_device->first << endl ;
             sendto(sock, buffer, sizeof(buffer), 0, (struct sockaddr *)&frontAddr, addrlen);
             //output_send << "send_result of frameID of: " << curRes.resID.i << " sent by observer at time: " << std::fixed << std::setprecision(15) << curRes.resLongtitude.d << " whose size is: " << sizeof(buffer) << endl;
             //cout << "send_result of frameID of: " << curRes.resID.i << " sent by observer at time: " << curRes.resLongtitude.d << " whose size is: " << sizeof(buffer) << endl;
             it_device++;} 
             //cout<<"frame "<<curRes.resID.i<<" res sent, "<<"marker#: "<<curRes.markerNum.i;
             //cout<<" at "<<setprecision(15)<<wallclock()<<endl<<endl;
+
+
         //memset(curRes.buffer,1,sizeof(curRes.buffer)); 
         //memset(buffer,1,sizeof(buffer)); 
         //memset(str_buffer,1,sizeof(str_buffer)); 

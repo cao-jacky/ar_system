@@ -134,9 +134,9 @@ public class TransmissionTask implements Runnable {
             buffer.flip();
             datagramChannel.send(buffer, serverAddress);
             true_time = getTrueTime().getTime();
-            time = System.currentTimeMillis();
-            timeSend = (double)time;
-            Log.d(Constants.TAG, "true time sent for " + frmID + " is " + true_time + " and system time is " + time);
+            //time = System.currentTimeMillis();
+            //timeSend = (double)time;
+            //Log.d(Constants.TAG, "true time sent for " + frmID + " is " + true_time + " and system time is " + time);
 
             Log.d(Constants.Eval, frmID + " sent to " + serverAddress);
 

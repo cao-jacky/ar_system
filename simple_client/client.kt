@@ -26,10 +26,8 @@ val ServerSettings = ServerDetails()
 //threadWithRunnable.start()
 
 fun main() {
-    val charset = Charsets.UTF_8
-
     // Preparing UDP socket
-    val socket = DatagramSocket()
+    val socket = DatagramSocket(51919)
     socket.broadcast = true
 
     // load query.jpg

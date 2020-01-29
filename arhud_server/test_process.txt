@@ -1,0 +1,6 @@
+time_process_pic of frameid of: 1 takes: '19.281' milliseconds
+time_process_pic of frameid of: 2 takes: '22.4409' milliseconds
+time_process_pic of frameid of: 3 takes: '10.137' milliseconds
+time_process_pic of frameid of: 4 takes: '6.25098' milliseconds
+time_process_pic of frameid of: 5 takes: '8.95605' milliseconds
+time_process_pic of frameid of: 6 takes: '25.2158' milliseconds

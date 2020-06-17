@@ -258,7 +258,7 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
                 callbackBuffer = new byte[(height + height / 2) * width];
                 params.setFocusMode(Camera.Parameters.FOCUS_MODE_AUTO);
                 params.set("camera-id", 2);
-                //mCamera.setParameters(params);
+                mCamera.setParameters(params);
                 mCameraConfigured = true;
             }
 
@@ -318,8 +318,8 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         private boolean ShowEdge = true;
         private boolean ShowName = true;
         private int preFrameID;
-        private float dispScale = Constants.recoScale;
-        //private int dispScale = Constants.recoScale;
+        private float dispScale = Constants.dispScale;
+        private int axisShift = Constants.axisShift;
         private Detected[] detecteds;
         private double distance;
         //private Drawable mCustomImage_pedestrian;
@@ -405,13 +405,12 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         protected void onDraw(final Canvas canvas) {
             super.onDraw(canvas);
 
-
-
             if(detecteds != null) {
                 for (Detected detected : detecteds) {
-                    canvas.drawText(detected.name +  ". Prob: " + detected.prob, (detected.left-2)*dispScale, (detected.top-2)*dispScale, paintWord);
-
-                    canvas.drawRect(detected.left*dispScale, detected.top*dispScale, detected.right*dispScale, detected.bot*dispScale, paintLine);
+                    canvas.drawText(detected.name +  ". Prob: " + detected.prob,
+                            (detected.left-2+axisShift)*dispScale, (detected.top-2)*dispScale, paintWord);
+                    canvas.drawRect((detected.left+axisShift)*dispScale, (detected.top)*dispScale,
+                            (detected.right+axisShift)*dispScale, (detected.bot)*dispScale, paintLine);
 
 
                 }

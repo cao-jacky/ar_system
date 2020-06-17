@@ -300,7 +300,7 @@ void *ThreadSenderFunction(void *socket) {
         memcpy(&(buffer[8]), curRes.markerNum.b, 4);
         if(curRes.markerNum.i != 0)
             memcpy(&(buffer[12]), curRes.buffer, 100 * curRes.markerNum.i);
-        cout<<"test"<<endl;
+        // cout<<"test"<<endl;
         map<string, int>::iterator it_device = mapOfDevices.begin();
 
         while(it_device != mapOfDevices.end()){

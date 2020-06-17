@@ -16,7 +16,9 @@ public class Constants {
     static public final int previewWidth = 1920;
     static public final int previewHeight = 1080;
     static public final int scale = 4;
-    static public final int recoScale = 4;
+    static public final int recoScale = 7;
+    static public final int dispScale = 10;
+    static public final int axisShift = 25;
     static public final int MAX_POINTS = 100;
     static public final org.opencv.core.Size winSize = new org.opencv.core.Size(10, 10);
     static public final org.opencv.core.Size subPixWinSize = new org.opencv.core.Size(1, 1);

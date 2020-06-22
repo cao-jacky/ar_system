@@ -24,6 +24,50 @@ union charfloat {
     float f;
 };
 
+struct result{
+    int num;
+    struct object *objects;
+};
+
+struct object{
+    char *name;
+    float prob;
+    int left;
+    int right;
+    int top;
+    int bot;
+};
+
+struct detector_identify {
+    char *datacfg; 
+    char *cfg;
+    char *weights;
+    char *filename; 
+    float thresh;
+    float hier_thresh; 
+    int dont_show;
+    int ext_output;
+    int save_labels;
+    char *outfile;
+    int letter_box;
+    int benchmark_layers;
+};
+
+struct detector_arguments {
+    char *datacfg; 
+    char *cfg;
+    char *weights;
+    char *filename; 
+    float thresh;
+    float hier_thresh; 
+    int dont_show;
+    int ext_output;
+    int save_labels;
+    char *outfile;
+    int letter_box;
+    int benchmark_layers;
+};
+
 struct frameBuffer {
     int frmID;
     int dataType;

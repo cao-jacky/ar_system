@@ -64,20 +64,12 @@ map<string, int> mapOfDevices;
 
 int check_mistakes = 0;
 
-struct detector_arguments {
-    char *datacfg; 
-    char *cfg;
-    char *weights;
-    char *filename; 
-    float thresh;
-    float hier_thresh; 
-    int dont_show;
-    int ext_output;
-    int save_labels;
-    char *outfile;
-    int letter_box;
-    int benchmark_layers;
-};
+list *options;
+char *name_list;
+char **names;
+image **alphabet;
+network net;
+struct result results;
 
 static int coco_ids[] = { 1,2,3,4,5,6,7,8,9,10,11,13,14,15,16,17,18,19,20,21,22,23,24,25,27,28,31,32,33,34,35,36,37,38,39,40,41,42,43,44,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,67,70,72,73,74,75,76,77,78,79,80,81,82,84,85,86,87,88,89,90 };
 
@@ -1765,161 +1757,108 @@ void test_detector(char *datacfg, char *cfgfile, char *weightfile, char *filenam
     free_network(net);
 }
 
-void test_detector_server(char *datacfg, char *cfgfile, char *weightfile, char *filename, float thresh,
-    float hier_thresh, int dont_show, int ext_output, int save_labels, char *outfile, int letter_box, int benchmark_layers)
-{
-    list *options = read_data_cfg(datacfg);
-    char *name_list = option_find_str(options, "names", "data/names.list");
-    int names_size = 0;
-    char **names = get_labels_custom(name_list, &names_size); //get_labels(name_list);
+int names_size = 0;
 
-    image **alphabet = load_alphabet();
-    network net = parse_network_cfg_custom(cfgfile, 1, 1); // set batch=1
-    if (weightfile) {
-        load_weights(&net, weightfile);
-    }
-    net.benchmark_layers = benchmark_layers;
+void load_params() {
+    options = read_data_cfg("cfg/coco.data");
+    name_list = option_find_str(options, "names", "data/names.list");
+    names = get_labels_custom(name_list, &names_size); //get_labels(name_list);
+
+    alphabet = load_alphabet();
+    net = parse_network_cfg_custom("cfg/yolov3-tiny.cfg", 1, 1); // set batch=1
+    load_weights(&net, "yolov3-tiny.weights");
+    
+}
+
+struct result* input()
+{
     fuse_conv_batchnorm(net);
     calculate_binary_weights(net);
-    if (net.layers[net.n - 1].classes != names_size) {
-        printf("\n Error: in the file %s number of names %d that isn't equal to classes=%d in the file %s \n",
-            name_list, names_size, net.layers[net.n - 1].classes, cfgfile);
-        if (net.layers[net.n - 1].classes > names_size) getchar();
-    }
+
     srand(2222222);
     char buff[256];
     char *input = buff;
     char *json_buf = NULL;
     int json_image_id = 0;
-    FILE* json_file = NULL;
-    if (outfile) {
-        json_file = fopen(outfile, "wb");
-        if(!json_file) {
-          error("fopen failed");
-        }
-        char *tmp = "[\n";
-        fwrite(tmp, sizeof(char), strlen(tmp), json_file);
-    }
+
     int j;
     float nms = .45;    // 0.4F
-    while (1) {
-        if (filename) {
-            strncpy(input, filename, 256);
-            if (strlen(input) > 0)
-                if (input[strlen(input) - 1] == 0x0d) input[strlen(input) - 1] = 0;
-        }
-        else {
-            printf("Enter Image Path: ");
-            fflush(stdout);
-            input = fgets(input, 256, stdin);
-            if (!input) break;
-            strtok(input, "\n");
-        }
-        //image im;
-        //image sized = load_image_resize(input, net.w, net.h, net.c, &im);
-        image im = load_image("received.jpg", 0, 0, net.c);
-        image sized;
-        if(letter_box) sized = letterbox_image(im, net.w, net.h);
-        else sized = resize_image(im, net.w, net.h);
-        layer l = net.layers[net.n - 1];
+    float thresh = .25;
+    float hier_thresh = .5;
+    int letter_box = 0;
+    int ext_output = 0;
+ 
+    //image im;
+    //image sized = load_image_resize(input, net.w, net.h, net.c, &im);
+    image im = load_image("received.jpg", 0, 0, net.c);
+    image sized;
+    sized = letterbox_image(im, net.w, net.h);
+    //else sized = resize_image(im, net.w, net.h);
+    layer l = net.layers[net.n - 1];
 
-        //box *boxes = calloc(l.w*l.h*l.n, sizeof(box));
-        //float **probs = calloc(l.w*l.h*l.n, sizeof(float*));
-        //for(j = 0; j < l.w*l.h*l.n; ++j) probs[j] = (float*)xcalloc(l.classes, sizeof(float));
+    //box *boxes = calloc(l.w*l.h*l.n, sizeof(box));
+    //float **probs = calloc(l.w*l.h*l.n, sizeof(float*));
+    //for(j = 0; j < l.w*l.h*l.n; ++j) probs[j] = (float*)xcalloc(l.classes, sizeof(float));
 
-        float *X = sized.data;
+    float *X = sized.data;
 
-        //time= what_time_is_it_now();
-        double time = get_time_point();
-        network_predict(net, X);
-        //network_predict_image(&net, im); letterbox = 1;
-        printf("%s: Predicted in %lf milli-seconds.\n", input, ((double)get_time_point() - time) / 1000);
-        //printf("%s: Predicted in %f seconds.\n", input, (what_time_is_it_now()-time));
+    //time= what_time_is_it_now();
+    double time = get_time_point();
+    network_predict(net, X);
+    //network_predict_image(&net, im); letterbox = 1;
+    printf("%s: Predicted in %lf milli-seconds.\n", input, ((double)get_time_point() - time) / 1000);
+    //printf("%s: Predicted in %f seconds.\n", input, (what_time_is_it_now()-time));
 
-        int nboxes = 0;
-        detection *dets = get_network_boxes(&net, im.w, im.h, thresh, hier_thresh, 0, 1, &nboxes, letter_box);
-        if (nms) {
-            if (l.nms_kind == DEFAULT_NMS) do_nms_sort(dets, nboxes, l.classes, nms);
-            else diounms_sort(dets, nboxes, l.classes, nms, l.nms_kind, l.beta_nms);
-        }
-        draw_detections_v3(im, dets, nboxes, thresh, names, alphabet, l.classes, ext_output);
-        save_image(im, "predictions");
-        if (!dont_show) {
-            show_image(im, "predictions");
-        }
+    int nboxes = 0;
+    detection *dets = get_network_boxes(&net, im.w, im.h, thresh, hier_thresh, 0, 1, &nboxes, letter_box);
+    if (nms) {
+        if (l.nms_kind == DEFAULT_NMS) do_nms_sort(dets, nboxes, l.classes, nms);
+        else diounms_sort(dets, nboxes, l.classes, nms, l.nms_kind, l.beta_nms);
+    }
+    draw_detections_v3(im, dets, nboxes, thresh, names, alphabet, l.classes, ext_output);
+    cout<<(nboxes)<<names<<endl;
+    save_image(im, "predictions");
 
-        if (json_file) {
-            if (json_buf) {
-                char *tmp = ", \n";
-                fwrite(tmp, sizeof(char), strlen(tmp), json_file);
+    results.num = 0;
+    for (int i = 0; i < nboxes; i++) {
+        for (int j = 0; j < dets[i].classes; j++) {
+            if (dets[i].prob[j] > .5) {
+                results.num++;
             }
-            ++json_image_id;
-            json_buf = detection_to_json(dets, nboxes, l.classes, names, json_image_id, input);
-
-            fwrite(json_buf, sizeof(char), strlen(json_buf), json_file);
-            free(json_buf);
         }
+    }   
 
-        // pseudo labeling concept - fast.ai
-        if (save_labels)
-        {
-            char labelpath[4096];
-            replace_image_to_label(input, labelpath);
+    results.objects = (struct object*)malloc(sizeof(struct object)*results.num);
 
-            FILE* fw = fopen(labelpath, "wb");
-            int i;
-            for (i = 0; i < nboxes; ++i) {
-                char buff[1024];
-                int class_id = -1;
-                float prob = 0;
-                for (j = 0; j < l.classes; ++j) {
-                    if (dets[i].prob[j] > thresh && dets[i].prob[j] > prob) {
-                        prob = dets[i].prob[j];
-                        class_id = j;
-                    }
-                }
-                if (class_id >= 0) {
-                    sprintf(buff, "%d %2.4f %2.4f %2.4f %2.4f\n", class_id, dets[i].bbox.x, dets[i].bbox.y, dets[i].bbox.w, dets[i].bbox.h);
-                    fwrite(buff, sizeof(char), strlen(buff), fw);
-                }
+    int idx = 0;
+    for (int i = 0; i < nboxes; i++) {
+        for (int j = 0; j < dets[i].classes; j++) {
+            if (dets[i].prob[j] > .45) {
+                struct object *cur = &(results.objects[idx]);
+                cur->name = names[j];
+                cur->prob = dets[i].prob[j];
+                box b = dets[i].bbox;
+                
+                int left = (b.x - b.w/2.0) * im.w;
+                int right = (b.x + b.w/2.0) * im.w;
+                int top = (b.y - b.h/2.0) * im.h;
+                int bot = (b.y + b.h/2.0) * im.h;
+
+                if(left < 0) left = 0;
+                if(right > im.w-1) right = im.w-1;
+                if(top < 0) top = 0;
+                if(bot > im.h-1) bot = im.h-1;
+
+                cur->left = left;
+                cur->right = right;
+                cur->top = top;
+                cur->bot = bot;
+                idx++;
             }
-            fclose(fw);
         }
-
-        free_detections(dets, nboxes);
-        free_image(im);
-        free_image(sized);
-
-        if (!dont_show) {
-            wait_until_press_key_cv();
-            destroy_all_windows_cv();
-        }
-
-        if (filename) break;
     }
-
-    if (json_file) {
-        char *tmp = "\n]";
-        fwrite(tmp, sizeof(char), strlen(tmp), json_file);
-        fclose(json_file);
-    }
-
-    // free memory
-    free_ptrs((void**)names, net.layers[net.n - 1].classes);
-    free_list_contents_kvp(options);
-    free_list(options);
-
-    int i;
-    const int nsize = 8;
-    for (j = 0; j < nsize; ++j) {
-        for (i = 32; i < 127; ++i) {
-            free_image(alphabet[j][i]);
-        }
-        free(alphabet[j]);
-    }
-    free(alphabet);
-
-    free_network(net);
+    
+    return &results;
 }
 
 
@@ -2264,6 +2203,8 @@ void *ThreadProcessFunction(void *arguments) {
     double time_process_start;
     double time_process;
 
+    load_params();
+
     struct detector_arguments *args = (struct detector_arguments *)arguments;
 
     char *datacfg = (args->datacfg); 
@@ -2278,11 +2219,6 @@ void *ThreadProcessFunction(void *arguments) {
     char *outfile = (args->outfile);
     int letter_box = (args->letter_box);
     int benchmark_layers = (args->benchmark_layers);
-
-    printf(datacfg);
-
-    test_detector_server(datacfg, cfg, weights, filename, thresh, hier_thresh, dont_show, ext_output, save_labels, outfile, letter_box, benchmark_layers);
-
 
     ofstream output_process("test_process.txt");
     ofstream output_process_delay("test_processdelay.txt");
@@ -2299,20 +2235,13 @@ void *ThreadProcessFunction(void *arguments) {
 
         int frmID = curFrame.frmID;
         int frmDataType = curFrame.dataType;
-        // pengzhou:currently, device send the timestamp of image instead of geolocation, therefore we use 0 to temporarily for location.
-        //double latitude = curFrame.latitude;
-        //double longtitude = curFrame.longtitude;
-        //double latitude = 0;
-        //double longtitude = 0;
+
         int frmSize = curFrame.bufferSize;
         char* frmdata = curFrame.buffer;
-        
+    
         if(frmDataType == IMAGE_DETECT) {
-            // last change
             ofstream file("received.jpg", ios::out | ios::binary);
-            //char picname[20];
-            //sprintf(picname, "%d_received.jpg", frmID);
-            //ofstream file(picname, ios::out | ios::binary);
+ 
             if(file.is_open()) {
                 file.write(frmdata, frmSize);
                 file.close();
@@ -2320,6 +2249,11 @@ void *ThreadProcessFunction(void *arguments) {
                 time_process_start = what_time_is_it_now();
                 //res = detect(frmID);
                 //res = detect();
+                //test_detector_server(datacfg, cfg, weights, filename, thresh, hier_thresh, dont_show, ext_output, save_labels, outfile, letter_box, benchmark_layers);
+
+                result* res;
+                res = input();
+
                 output_process << "time_process_pic of frameid of: " << frmID << " takes: '" <<  what_time_is_it_now() - time_process_start<< "' milliseconds" << endl;
                 //cout << "time_process_pic of frameid of: " << frmID << " takes: " <<  what_time_is_it_now() - time_process_start << " milliseconds" << endl;
                 objectDetected = true;
@@ -2433,9 +2367,6 @@ void *ThreadSenderFunction(void *socket) {
     }    
     output_send.close();
 }
-
-
-
 
 void run_detector_server(int argc, char **argv)
 {

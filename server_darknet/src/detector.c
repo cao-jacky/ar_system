@@ -37,8 +37,6 @@ typedef __compar_fn_t comparison_fn_t;
 #endif
 #endif
 
-#include "http_stream.h"
-
 #define MESSAGE_ECHO 0
 #define EDGE 1
 #define IMAGE_DETECT 2
@@ -1770,16 +1768,10 @@ void load_params() {
     
 }
 
-struct result* input()
+struct result* detect()
 {
     fuse_conv_batchnorm(net);
     calculate_binary_weights(net);
-
-    srand(2222222);
-    char buff[256];
-    char *input = buff;
-    char *json_buf = NULL;
-    int json_image_id = 0;
 
     int j;
     float nms = .45;    // 0.4F
@@ -1791,8 +1783,7 @@ struct result* input()
     //image im;
     //image sized = load_image_resize(input, net.w, net.h, net.c, &im);
     image im = load_image("received.jpg", 0, 0, net.c);
-    image sized;
-    sized = letterbox_image(im, net.w, net.h);
+    image sized = letterbox_image(im, net.w, net.h);
     //else sized = resize_image(im, net.w, net.h);
     layer l = net.layers[net.n - 1];
 
@@ -1806,7 +1797,7 @@ struct result* input()
     double time = get_time_point();
     network_predict(net, X);
     //network_predict_image(&net, im); letterbox = 1;
-    printf("%s: Predicted in %lf milli-seconds.\n", input, ((double)get_time_point() - time) / 1000);
+    printf("[STATUS] Predicted in %lf milli-seconds.\n", ((double)get_time_point() - time) / 1000);
     //printf("%s: Predicted in %f seconds.\n", input, (what_time_is_it_now()-time));
 
     int nboxes = 0;
@@ -1815,9 +1806,8 @@ struct result* input()
         if (l.nms_kind == DEFAULT_NMS) do_nms_sort(dets, nboxes, l.classes, nms);
         else diounms_sort(dets, nboxes, l.classes, nms, l.nms_kind, l.beta_nms);
     }
-    draw_detections_v3(im, dets, nboxes, thresh, names, alphabet, l.classes, ext_output);
-    cout<<(nboxes)<<names<<endl;
-    save_image(im, "predictions");
+    //draw_detections_v3(im, dets, nboxes, thresh, names, alphabet, l.classes, ext_output);
+    //save_image(im, "predictions");
 
     results.num = 0;
     for (int i = 0; i < nboxes; i++) {
@@ -1828,7 +1818,7 @@ struct result* input()
         }
     }   
 
-    results.objects = (struct object*)malloc(sizeof(struct object)*results.num);
+    results.objects = (struct object*)malloc(sizeof(struct object)*results.num+64);
 
     int idx = 0;
     for (int i = 0; i < nboxes; i++) {
@@ -1857,10 +1847,14 @@ struct result* input()
             }
         }
     }
+
+    free_detections(dets, nboxes);
+
+    free_image(im);
+    free_image(sized);
     
     return &results;
 }
-
 
 #if defined(OPENCV) && defined(GPU)
 
@@ -2131,7 +2125,6 @@ void run_detector(int argc, char **argv)
 void *ThreadReceiverFunction(void *socket) {
     printf("[STATUS] Receiver Thread Created!\n");
     char tmp[4];
-    char Tmp[8];
     char buffer[PACKET_SIZE];
     int sock = *((int*)socket);
     cout << " sock is  " << sock << "\n" ;
@@ -2195,34 +2188,18 @@ void *ThreadReceiverFunction(void *socket) {
 
 }
 
-void *ThreadProcessFunction(void *arguments) {
-    printf("Process Thread Created!\n");
+void *ThreadProcessFunction(void *param) {
+    printf("[STATUS] Process Thread Created!\n");
     recognizedMarker marker;
     bool objectDetected = false;
-    // resultss* res;
+    result* res;
     double time_process_start;
     double time_process;
 
     load_params();
 
-    struct detector_arguments *args = (struct detector_arguments *)arguments;
-
-    char *datacfg = (args->datacfg); 
-    char *cfg = (args->cfg);
-    char *weights = (args->weights);
-    char *filename = (args->filename); 
-    float thresh = (args->thresh);
-    float hier_thresh = (args->hier_thresh); 
-    int dont_show = (args->dont_show);
-    int ext_output = (args->ext_output);
-    int save_labels = (args->save_labels);
-    char *outfile = (args->outfile);
-    int letter_box = (args->letter_box);
-    int benchmark_layers = (args->benchmark_layers);
-
     ofstream output_process("test_process.txt");
     ofstream output_process_delay("test_processdelay.txt");
-    //load_params();
 
     while (1) {
         if(frames.empty()) {
@@ -2247,18 +2224,10 @@ void *ThreadProcessFunction(void *arguments) {
                 file.close();
 
                 time_process_start = what_time_is_it_now();
-                //res = detect(frmID);
-                //res = detect();
-                //test_detector_server(datacfg, cfg, weights, filename, thresh, hier_thresh, dont_show, ext_output, save_labels, outfile, letter_box, benchmark_layers);
-
-                result* res;
-                res = input();
+                res = detect();
 
                 output_process << "time_process_pic of frameid of: " << frmID << " takes: '" <<  what_time_is_it_now() - time_process_start<< "' milliseconds" << endl;
-                //cout << "time_process_pic of frameid of: " << frmID << " takes: " <<  what_time_is_it_now() - time_process_start << " milliseconds" << endl;
                 objectDetected = true;
-                //output_process << "resultss: " << res->num << endl;
-                //cout << "resultss: " << res->num << endl;
             } 
         } else if(frmDataType == EDGE) {
              cout << frmdata << endl;
@@ -2275,57 +2244,53 @@ void *ThreadProcessFunction(void *arguments) {
         }
         //memset(curFrame.buffer,1,sizeof(curFrame.buffer));
         //memset(frmdata,1,sizeof(frmdata));
-        int personNum = 0;
-        int carNum = 0;
 
-        // resBuffer curRes;
-        // if(objectDetected) {
-        //     charfloat p;
-        //     charint ci;
-        //     curRes.resID.i = frmID;
-        //     //curRes.resLatitude.d = latitude;
-        //     //curRes.resLongtitude.d = curFrame.timeSend;
-        //     curRes.resType.i = BOUNDARY;
-        //     if(res->num <= 5)
-        //         curRes.markerNum.i = res->num;
-        //     else
-        //         curRes.markerNum.i = 5;
-        //     curRes.buffer = new char[100 * curRes.markerNum.i];
+        resBuffer curRes;
+        if(objectDetected) {
+            charfloat p;
+            charint ci;
+            curRes.resID.i = frmID;
+            curRes.resType.i = BOUNDARY;
+            if(res->num <= 5)
+                curRes.markerNum.i = res->num;
+            else
+                curRes.markerNum.i = 5;
+            curRes.buffer = new char[100 * curRes.markerNum.i];
 
-        //     for(int i = 0; i < curRes.markerNum.i; i++) {
-        //         int pointer = 100 * i;
-        //         struct object *cur = &(res->objects[i]); 
+            for(int i = 0; i < curRes.markerNum.i; i++) {
+                int pointer = 100 * i;
+                struct object *cur = &(res->objects[i]); 
 
-        //         p.f = cur->prob;
-        //         memcpy(&(curRes.buffer[pointer]), p.b, 4);
-        //         pointer += 4;
-        //         ci.i = cur->left;
-        //         memcpy(&(curRes.buffer[pointer]), ci.b, 4);
-        //         pointer += 4;
-        //         ci.i = cur->right;
-        //         memcpy(&(curRes.buffer[pointer]), ci.b, 4);
-        //         pointer += 4;
-        //         ci.i = cur->top;
-        //         memcpy(&(curRes.buffer[pointer]), ci.b, 4);
-        //         pointer += 4;
-        //         ci.i = cur->bot;
-        //         memcpy(&(curRes.buffer[pointer]), ci.b, 4);
-        //         pointer += 4;
+                p.f = cur->prob;
+                memcpy(&(curRes.buffer[pointer]), p.b, 4);
+                pointer += 4;
+                ci.i = cur->left;
+                memcpy(&(curRes.buffer[pointer]), ci.b, 4);
+                pointer += 4;
+                ci.i = cur->right;
+                memcpy(&(curRes.buffer[pointer]), ci.b, 4);
+                pointer += 4;
+                ci.i = cur->top;
+                memcpy(&(curRes.buffer[pointer]), ci.b, 4);
+                pointer += 4;
+                ci.i = cur->bot;
+                memcpy(&(curRes.buffer[pointer]), ci.b, 4);
+                pointer += 4;
 
-        //         memcpy(&(curRes.buffer[pointer]), cur->name, strlen(cur->name));
-        //         pointer += strlen(cur->name);
-        //         curRes.buffer[pointer] = '.';
-        //     }
-        // }
-        // else {
-        //     curRes.resID.i = frmID;
-        //     curRes.markerNum.i = 0;
-        // }
-        // //free(res->objects);
-        // delete res->objects;
-        // res->objects = NULL;
+                memcpy(&(curRes.buffer[pointer]), cur->name, strlen(cur->name));
+                pointer += strlen(cur->name);
+                curRes.buffer[pointer] = '.';
+            }
+        }
+        else {
+            curRes.resID.i = frmID;
+            curRes.markerNum.i = 0;
+        }
+        //free(res->objects);
+        delete res->objects;
+        res->objects = NULL;
 
-        // resultss.push(curRes);
+        resultss.push(curRes);
     }
     output_process.close();
     output_process_delay.close();
@@ -2363,6 +2328,7 @@ void *ThreadSenderFunction(void *socket) {
             remoteAddr.sin_port = htons(51919);
             sendto(sock, buffer, sizeof(buffer), 0, (struct sockaddr *)&frontAddr, addrlen);
            it_device++;} 
+           //cout<<"[STATUS] Sent results to client"<<endl;
 
     }    
     output_send.close();
@@ -2370,7 +2336,7 @@ void *ThreadSenderFunction(void *socket) {
 
 void run_detector_server(int argc, char **argv)
 {
-    printf("Running detector code\n");
+    cout<<("[STATUS] Running detector code")<<endl;
 
     pthread_t senderThread, receiverThread, processThread, annotationThread;
     int ret1, ret2, ret3;
@@ -2399,11 +2365,6 @@ void run_detector_server(int argc, char **argv)
     }
     printf("[STATUS] Server started, waiting for incoming clients\n");
 
-
-    if (argc < 3) {
-        fprintf(stderr, "usage: %s %s [data] [cfg] [weights (optional)]\n", argv[0], argv[1]);
-        return;
-    }
     char *gpu_list = find_char_arg(argc, argv, "-gpus", 0);
     int *gpus = 0;
     int gpu = 0;
@@ -2428,57 +2389,13 @@ void run_detector_server(int argc, char **argv)
         ngpus = 1;
     }
 
-    int dont_show = find_arg(argc, argv, "-dont_show");
-    int benchmark = find_arg(argc, argv, "-benchmark");
-    int benchmark_layers = find_arg(argc, argv, "-benchmark_layers");
-    //if (benchmark_layers) benchmark = 1;
-    if (benchmark) dont_show = 1;
-    int show = find_arg(argc, argv, "-show");
-    int letter_box = find_arg(argc, argv, "-letter_box");
-    char *outfile = find_char_arg(argc, argv, "-out", 0);
-    char *prefix = find_char_arg(argc, argv, "-prefix", 0);
-    float thresh = find_float_arg(argc, argv, "-thresh", .1);    // 0.24
-    float hier_thresh = find_float_arg(argc, argv, "-hier", .5);
-    int width = find_int_arg(argc, argv, "-width", -1);
-    int height = find_int_arg(argc, argv, "-height", -1);
-    // extended output in test mode (output of rect bound coords)
-    // and for recall mode (extended output table-like format with results for best_class fit)
-    int ext_output = find_arg(argc, argv, "-ext_output");
-    int save_labels = find_arg(argc, argv, "-save_labels");
-    char* chart_path = find_char_arg(argc, argv, "-chart", 0);
-
-    char *datacfg = argv[3];
-    char *cfg = argv[4];
-    char *weights = (argc > 5) ? argv[5] : 0;
-    if (weights)
-        if (strlen(weights) > 0)
-            if (weights[strlen(weights) - 1] == 0x0d) weights[strlen(weights) - 1] = 0;
-    //char *filename = (argc > 6) ? argv[6] : 0;
-
-    int clear = find_arg(argc, argv, "-clear");
-
-    struct detector_arguments *arguments = (struct detector_arguments *)malloc(sizeof(struct detector_arguments));
-    arguments->datacfg = datacfg;
-    arguments->cfg = cfg;
-    arguments->weights = weights;
-    arguments->filename = "received.jpg";
-    arguments->thresh = thresh;
-    arguments->hier_thresh = hier_thresh;
-    arguments->dont_show = dont_show;
-    arguments->ext_output = ext_output;
-    arguments->save_labels = save_labels;
-    arguments->outfile = outfile;
-    arguments->letter_box = letter_box;
-    arguments->benchmark_layers = benchmark_layers;
-
-
     ret1 = pthread_create(&receiverThread, NULL, ThreadReceiverFunction, (void *)&sockUDP);
-    ret2 = pthread_create(&processThread, NULL, ThreadProcessFunction, arguments);
+    ret2 = pthread_create(&processThread, NULL, ThreadProcessFunction, NULL);
     ret3 = pthread_create(&senderThread, NULL, ThreadSenderFunction, (void *)&sockUDP);
 
     pthread_join(receiverThread, NULL);
     pthread_join(processThread, NULL);
     pthread_join(senderThread, NULL);
 
-    if (gpus && gpu_list && ngpus > 1) free(gpus);
+    //if (gpus && gpu_list && ngpus > 1) free(gpus);
 }

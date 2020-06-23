@@ -1818,7 +1818,7 @@ struct result* detect()
         }
     }   
 
-    results.objects = (struct object*)malloc(sizeof(struct object)*results.num+64);
+    results.objects = (struct object*)malloc(sizeof(struct object)*results.num+128);
 
     int idx = 0;
     for (int i = 0; i < nboxes; i++) {
@@ -2137,8 +2137,8 @@ void *ThreadReceiverFunction(void *socket) {
     double time_receivepic;
     double imageDelay;
 
-    ofstream output_receive ("test_receive.txt");
-    ofstream output_delay ("test_imagedelay.txt");
+    //ofstream output_receive ("test_receive.txt");
+    //ofstream output_delay ("test_imagedelay.txt");
     while (1) {
         memset(buffer, 0, sizeof(buffer));
         recvfrom(sock, buffer, PACKET_SIZE, 0, (struct sockaddr *)&frontAddr, &addrlen);
@@ -2158,17 +2158,17 @@ void *ThreadReceiverFunction(void *socket) {
 
             inet_ntop(AF_INET, &(frontAddr.sin_addr), str_front, len);
             if (mapOfDevices.find(string(str_front)) != mapOfDevices.end()) {
-                output_receive<<"receiving from an old " << (device_ind-1) << " device, whose ip is " << str_front << endl;
+                //output_receive<<"receiving from an old " << (device_ind-1) << " device, whose ip is " << str_front << endl;
                 cout<<"receiving from an old  " << (device_ind-1) << " device, whose ip is " << str_front << endl;
                 continue;}
             cout<<"receiving from the " << device_ind << " device, whose ip is " << str_front << endl;
             //pair<map<int, string>::iterator,bool> ret;
             mapOfDevices.insert(pair<string, int>(string(str_front), device_ind));
             device_ind += 1; 
-            printf("device_ind now has increased to %d\n", device_ind); 
+            printf("[STATUS] device_ind now has increased to %d\n", device_ind); 
             map<string, int>::iterator it_device = mapOfDevices.begin();
             while(it_device != mapOfDevices.end()){
-                output_receive << it_device->first << " "  << it_device->second << "\n" ;
+                //output_receive << it_device->first << " "  << it_device->second << "\n" ;
                 cout << it_device->first << " "  << it_device->second << "\n" ;
                 it_device ++;}
             continue;
@@ -2183,8 +2183,8 @@ void *ThreadReceiverFunction(void *socket) {
 
         frames.push(curFrame);
     }
-    output_receive.close();
-    output_delay.close();
+    //output_receive.close();
+    //output_delay.close();
 
 }
 
@@ -2199,7 +2199,7 @@ void *ThreadProcessFunction(void *param) {
     load_params();
 
     ofstream output_process("test_process.txt");
-    ofstream output_process_delay("test_processdelay.txt");
+    //ofstream output_process_delay("test_processdelay.txt");
 
     while (1) {
         if(frames.empty()) {
@@ -2293,7 +2293,7 @@ void *ThreadProcessFunction(void *param) {
         resultss.push(curRes);
     }
     output_process.close();
-    output_process_delay.close();
+    //output_process_delay.close();
 }
 
 void *ThreadSenderFunction(void *socket) {
@@ -2302,7 +2302,7 @@ void *ThreadSenderFunction(void *socket) {
     int sock = *((int*)socket);
     int len =20;
     char str_buffer[len];
-    ofstream output_send ("test_send.txt");
+    //ofstream output_send ("test_send.txt");
 
     while (1) {
         if(resultss.empty()) {
@@ -2331,7 +2331,7 @@ void *ThreadSenderFunction(void *socket) {
            //cout<<"[STATUS] Sent results to client"<<endl;
 
     }    
-    output_send.close();
+    //output_send.close();
 }
 
 void run_detector_server(int argc, char **argv)

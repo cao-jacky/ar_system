@@ -1,2 +1,7 @@
 *.tar
 *.zip
+*.weights
+
+arhud_server/results/
+
+server_darknet/results/

@@ -1,0 +1,3614 @@
+time_process_pic of frameid of: 6 takes: '17.2781' milliseconds
+resultss: 0
+time_process_pic of frameid of: 7 takes: '13.7759' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8 takes: '38.8369' milliseconds
+resultss: 0
+time_process_pic of frameid of: 99 takes: '12.1128' milliseconds
+resultss: 0
+time_process_pic of frameid of: 100 takes: '11.792' milliseconds
+resultss: 0
+time_process_pic of frameid of: 101 takes: '36.824' milliseconds
+resultss: 0
+time_process_pic of frameid of: 102 takes: '17.4331' milliseconds
+resultss: 0
+time_process_pic of frameid of: 103 takes: '37.624' milliseconds
+resultss: 0
+time_process_pic of frameid of: 104 takes: '19.2739' milliseconds
+resultss: 0
+time_process_pic of frameid of: 105 takes: '37.2319' milliseconds
+resultss: 0
+time_process_pic of frameid of: 106 takes: '17.3989' milliseconds
+resultss: 0
+time_process_pic of frameid of: 108 takes: '37.7549' milliseconds
+resultss: 0
+time_process_pic of frameid of: 109 takes: '17.03' milliseconds
+resultss: 0
+time_process_pic of frameid of: 109 takes: '29.1331' milliseconds
+resultss: 0
+time_process_pic of frameid of: 110 takes: '28.29' milliseconds
+resultss: 0
+time_process_pic of frameid of: 111 takes: '20.0759' milliseconds
+resultss: 0
+time_process_pic of frameid of: 112 takes: '36.8792' milliseconds
+resultss: 0
+time_process_pic of frameid of: 113 takes: '16.906' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6 takes: '55.467' milliseconds
+resultss: 1
+time_process_pic of frameid of: 7 takes: '12.332' milliseconds
+resultss: 1
+time_process_pic of frameid of: 8 takes: '37.7231' milliseconds
+resultss: 1
+time_process_pic of frameid of: 9 takes: '14.916' milliseconds
+resultss: 1
+time_process_pic of frameid of: 10 takes: '38.72' milliseconds
+resultss: 0
+time_process_pic of frameid of: 11 takes: '34.322' milliseconds
+resultss: 1
+time_process_pic of frameid of: 6 takes: '47.47' milliseconds
+resultss: 0
+time_process_pic of frameid of: 7 takes: '37.0378' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8 takes: '38.251' milliseconds
+resultss: 0
+time_process_pic of frameid of: 52 takes: '38.2771' milliseconds
+resultss: 0
+time_process_pic of frameid of: 672 takes: '42.0161' milliseconds
+resultss: 0
+time_process_pic of frameid of: 673 takes: '21.5181' milliseconds
+resultss: 0
+time_process_pic of frameid of: 674 takes: '21.269' milliseconds
+resultss: 0
+time_process_pic of frameid of: 675 takes: '34.311' milliseconds
+resultss: 0
+time_process_pic of frameid of: 676 takes: '16.5991' milliseconds
+resultss: 0
+time_process_pic of frameid of: 677 takes: '11.0901' milliseconds
+resultss: 0
+time_process_pic of frameid of: 678 takes: '28.832' milliseconds
+resultss: 0
+time_process_pic of frameid of: 679 takes: '37.5781' milliseconds
+resultss: 0
+time_process_pic of frameid of: 680 takes: '16.823' milliseconds
+resultss: 0
+time_process_pic of frameid of: 681 takes: '35.343' milliseconds
+resultss: 0
+time_process_pic of frameid of: 682 takes: '16.5569' milliseconds
+resultss: 0
+time_process_pic of frameid of: 683 takes: '35.7581' milliseconds
+resultss: 0
+time_process_pic of frameid of: 684 takes: '19.863' milliseconds
+resultss: 0
+time_process_pic of frameid of: 685 takes: '32.3789' milliseconds
+resultss: 0
+time_process_pic of frameid of: 686 takes: '15.7358' milliseconds
+resultss: 0
+time_process_pic of frameid of: 687 takes: '36.7249' milliseconds
+resultss: 0
+time_process_pic of frameid of: 688 takes: '35.741' milliseconds
+resultss: 0
+time_process_pic of frameid of: 689 takes: '15.823' milliseconds
+resultss: 0
+time_process_pic of frameid of: 690 takes: '11.4209' milliseconds
+resultss: 0
+time_process_pic of frameid of: 691 takes: '39.3621' milliseconds
+resultss: 0
+time_process_pic of frameid of: 692 takes: '36.8782' milliseconds
+resultss: 0
+time_process_pic of frameid of: 693 takes: '13.488' milliseconds
+resultss: 0
+time_process_pic of frameid of: 694 takes: '36.1631' milliseconds
+resultss: 0
+time_process_pic of frameid of: 695 takes: '18.7109' milliseconds
+resultss: 0
+time_process_pic of frameid of: 696 takes: '17.3049' milliseconds
+resultss: 0
+time_process_pic of frameid of: 697 takes: '34.5032' milliseconds
+resultss: 0
+time_process_pic of frameid of: 698 takes: '16.9189' milliseconds
+resultss: 0
+time_process_pic of frameid of: 699 takes: '36.3999' milliseconds
+resultss: 0
+time_process_pic of frameid of: 700 takes: '12.105' milliseconds
+resultss: 0
+time_process_pic of frameid of: 701 takes: '16.4939' milliseconds
+resultss: 0
+time_process_pic of frameid of: 702 takes: '14.1631' milliseconds
+resultss: 0
+time_process_pic of frameid of: 703 takes: '23.5769' milliseconds
+resultss: 0
+time_process_pic of frameid of: 704 takes: '23.0581' milliseconds
+resultss: 0
+time_process_pic of frameid of: 705 takes: '30.813' milliseconds
+resultss: 0
+time_process_pic of frameid of: 706 takes: '18.177' milliseconds
+resultss: 0
+time_process_pic of frameid of: 707 takes: '34.7251' milliseconds
+resultss: 0
+time_process_pic of frameid of: 708 takes: '16.4861' milliseconds
+resultss: 0
+time_process_pic of frameid of: 709 takes: '34.6602' milliseconds
+resultss: 0
+time_process_pic of frameid of: 710 takes: '16.417' milliseconds
+resultss: 0
+time_process_pic of frameid of: 711 takes: '34.321' milliseconds
+resultss: 0
+time_process_pic of frameid of: 712 takes: '15.186' milliseconds
+resultss: 0
+time_process_pic of frameid of: 713 takes: '24.656' milliseconds
+resultss: 0
+time_process_pic of frameid of: 714 takes: '34.3701' milliseconds
+resultss: 0
+time_process_pic of frameid of: 715 takes: '16.6191' milliseconds
+resultss: 0
+time_process_pic of frameid of: 716 takes: '37.2659' milliseconds
+resultss: 0
+time_process_pic of frameid of: 717 takes: '16.5618' milliseconds
+resultss: 0
+time_process_pic of frameid of: 718 takes: '35.198' milliseconds
+resultss: 0
+time_process_pic of frameid of: 719 takes: '13.5249' milliseconds
+resultss: 0
+time_process_pic of frameid of: 720 takes: '13.1689' milliseconds
+resultss: 0
+time_process_pic of frameid of: 721 takes: '34.8101' milliseconds
+resultss: 0
+time_process_pic of frameid of: 722 takes: '34.948' milliseconds
+resultss: 0
+time_process_pic of frameid of: 723 takes: '16.4038' milliseconds
+resultss: 0
+time_process_pic of frameid of: 724 takes: '34.7461' milliseconds
+resultss: 0
+time_process_pic of frameid of: 725 takes: '22.8689' milliseconds
+resultss: 0
+time_process_pic of frameid of: 726 takes: '32.156' milliseconds
+resultss: 0
+time_process_pic of frameid of: 727 takes: '15.2991' milliseconds
+resultss: 0
+time_process_pic of frameid of: 728 takes: '33.53' milliseconds
+resultss: 0
+time_process_pic of frameid of: 729 takes: '14.4849' milliseconds
+resultss: 0
+time_process_pic of frameid of: 730 takes: '35.6531' milliseconds
+resultss: 0
+time_process_pic of frameid of: 731 takes: '32.6089' milliseconds
+resultss: 0
+time_process_pic of frameid of: 732 takes: '13.824' milliseconds
+resultss: 0
+time_process_pic of frameid of: 733 takes: '25.0752' milliseconds
+resultss: 0
+time_process_pic of frameid of: 734 takes: '34.7871' milliseconds
+resultss: 0
+time_process_pic of frameid of: 735 takes: '16.7671' milliseconds
+resultss: 0
+time_process_pic of frameid of: 736 takes: '34.1311' milliseconds
+resultss: 0
+time_process_pic of frameid of: 737 takes: '16.625' milliseconds
+resultss: 0
+time_process_pic of frameid of: 738 takes: '34.4949' milliseconds
+resultss: 0
+time_process_pic of frameid of: 739 takes: '28.9951' milliseconds
+resultss: 0
+time_process_pic of frameid of: 740 takes: '36.1379' milliseconds
+resultss: 0
+time_process_pic of frameid of: 741 takes: '20.196' milliseconds
+resultss: 0
+time_process_pic of frameid of: 742 takes: '23.3381' milliseconds
+resultss: 0
+time_process_pic of frameid of: 743 takes: '24.627' milliseconds
+resultss: 0
+time_process_pic of frameid of: 744 takes: '31.5381' milliseconds
+resultss: 0
+time_process_pic of frameid of: 745 takes: '14.6812' milliseconds
+resultss: 0
+time_process_pic of frameid of: 746 takes: '9.43799' milliseconds
+resultss: 0
+time_process_pic of frameid of: 747 takes: '11.624' milliseconds
+resultss: 0
+time_process_pic of frameid of: 748 takes: '35.3469' milliseconds
+resultss: 0
+time_process_pic of frameid of: 749 takes: '16.635' milliseconds
+resultss: 0
+time_process_pic of frameid of: 750 takes: '36.6851' milliseconds
+resultss: 0
+time_process_pic of frameid of: 751 takes: '18.926' milliseconds
+resultss: 0
+time_process_pic of frameid of: 752 takes: '12.8701' milliseconds
+resultss: 0
+time_process_pic of frameid of: 753 takes: '36.4849' milliseconds
+resultss: 0
+time_process_pic of frameid of: 754 takes: '17.7019' milliseconds
+resultss: 0
+time_process_pic of frameid of: 755 takes: '35.176' milliseconds
+resultss: 0
+time_process_pic of frameid of: 756 takes: '19.968' milliseconds
+resultss: 0
+time_process_pic of frameid of: 757 takes: '33.7051' milliseconds
+resultss: 0
+time_process_pic of frameid of: 758 takes: '19.3479' milliseconds
+resultss: 0
+time_process_pic of frameid of: 759 takes: '24.1301' milliseconds
+resultss: 0
+time_process_pic of frameid of: 760 takes: '36.4102' milliseconds
+resultss: 0
+time_process_pic of frameid of: 761 takes: '16.03' milliseconds
+resultss: 0
+time_process_pic of frameid of: 762 takes: '16.387' milliseconds
+resultss: 0
+time_process_pic of frameid of: 763 takes: '36.7129' milliseconds
+resultss: 0
+time_process_pic of frameid of: 764 takes: '36.5872' milliseconds
+resultss: 0
+time_process_pic of frameid of: 765 takes: '21.5569' milliseconds
+resultss: 0
+time_process_pic of frameid of: 766 takes: '21.2251' milliseconds
+resultss: 0
+time_process_pic of frameid of: 767 takes: '22.6069' milliseconds
+resultss: 0
+time_process_pic of frameid of: 768 takes: '35.0901' milliseconds
+resultss: 0
+time_process_pic of frameid of: 769 takes: '34.0918' milliseconds
+resultss: 0
+time_process_pic of frameid of: 770 takes: '17.5718' milliseconds
+resultss: 0
+time_process_pic of frameid of: 771 takes: '35.1111' milliseconds
+resultss: 0
+time_process_pic of frameid of: 772 takes: '16.7749' milliseconds
+resultss: 0
+time_process_pic of frameid of: 773 takes: '31.8301' milliseconds
+resultss: 0
+time_process_pic of frameid of: 774 takes: '22.8391' milliseconds
+resultss: 0
+time_process_pic of frameid of: 775 takes: '21.719' milliseconds
+resultss: 0
+time_process_pic of frameid of: 776 takes: '16.031' milliseconds
+resultss: 0
+time_process_pic of frameid of: 777 takes: '8.96094' milliseconds
+resultss: 0
+time_process_pic of frameid of: 778 takes: '11.3479' milliseconds
+resultss: 0
+time_process_pic of frameid of: 779 takes: '9.06812' milliseconds
+resultss: 0
+time_process_pic of frameid of: 780 takes: '19.6191' milliseconds
+resultss: 0
+time_process_pic of frameid of: 781 takes: '38.4812' milliseconds
+resultss: 0
+time_process_pic of frameid of: 782 takes: '16.2209' milliseconds
+resultss: 0
+time_process_pic of frameid of: 783 takes: '9.83398' milliseconds
+resultss: 0
+time_process_pic of frameid of: 784 takes: '14.2449' milliseconds
+resultss: 0
+time_process_pic of frameid of: 785 takes: '27.3892' milliseconds
+resultss: 0
+time_process_pic of frameid of: 786 takes: '24.5149' milliseconds
+resultss: 0
+time_process_pic of frameid of: 787 takes: '21.146' milliseconds
+resultss: 0
+time_process_pic of frameid of: 788 takes: '32.6238' milliseconds
+resultss: 0
+time_process_pic of frameid of: 789 takes: '16.2422' milliseconds
+resultss: 0
+time_process_pic of frameid of: 790 takes: '34.8081' milliseconds
+resultss: 0
+time_process_pic of frameid of: 791 takes: '14.188' milliseconds
+resultss: 0
+time_process_pic of frameid of: 792 takes: '40.665' milliseconds
+resultss: 0
+time_process_pic of frameid of: 793 takes: '10.812' milliseconds
+resultss: 0
+time_process_pic of frameid of: 794 takes: '12.895' milliseconds
+resultss: 0
+time_process_pic of frameid of: 795 takes: '35.811' milliseconds
+resultss: 0
+time_process_pic of frameid of: 796 takes: '20.104' milliseconds
+resultss: 0
+time_process_pic of frameid of: 797 takes: '38.385' milliseconds
+resultss: 0
+time_process_pic of frameid of: 798 takes: '17.615' milliseconds
+resultss: 0
+time_process_pic of frameid of: 799 takes: '33.75' milliseconds
+resultss: 0
+time_process_pic of frameid of: 800 takes: '12.7419' milliseconds
+resultss: 0
+time_process_pic of frameid of: 801 takes: '15.4771' milliseconds
+resultss: 0
+time_process_pic of frameid of: 802 takes: '35.7261' milliseconds
+resultss: 0
+time_process_pic of frameid of: 803 takes: '14.3079' milliseconds
+resultss: 0
+time_process_pic of frameid of: 804 takes: '36.916' milliseconds
+resultss: 0
+time_process_pic of frameid of: 805 takes: '14.1711' milliseconds
+resultss: 0
+time_process_pic of frameid of: 806 takes: '35.657' milliseconds
+resultss: 0
+time_process_pic of frameid of: 807 takes: '14.792' milliseconds
+resultss: 0
+time_process_pic of frameid of: 808 takes: '14.5552' milliseconds
+resultss: 0
+time_process_pic of frameid of: 809 takes: '26.5188' milliseconds
+resultss: 0
+time_process_pic of frameid of: 810 takes: '24.0959' milliseconds
+resultss: 0
+time_process_pic of frameid of: 811 takes: '18.1992' milliseconds
+resultss: 0
+time_process_pic of frameid of: 812 takes: '34.562' milliseconds
+resultss: 0
+time_process_pic of frameid of: 813 takes: '16.832' milliseconds
+resultss: 0
+time_process_pic of frameid of: 814 takes: '37.6912' milliseconds
+resultss: 0
+time_process_pic of frameid of: 815 takes: '16.7971' milliseconds
+resultss: 0
+time_process_pic of frameid of: 816 takes: '34.9421' milliseconds
+resultss: 0
+time_process_pic of frameid of: 817 takes: '17.2378' milliseconds
+resultss: 0
+time_process_pic of frameid of: 818 takes: '34.9551' milliseconds
+resultss: 0
+time_process_pic of frameid of: 819 takes: '19.3491' milliseconds
+resultss: 0
+time_process_pic of frameid of: 820 takes: '35.1099' milliseconds
+resultss: 0
+time_process_pic of frameid of: 821 takes: '17.1279' milliseconds
+resultss: 0
+time_process_pic of frameid of: 822 takes: '23.0278' milliseconds
+resultss: 0
+time_process_pic of frameid of: 823 takes: '34.752' milliseconds
+resultss: 0
+time_process_pic of frameid of: 824 takes: '13.4709' milliseconds
+resultss: 0
+time_process_pic of frameid of: 825 takes: '14.3579' milliseconds
+resultss: 0
+time_process_pic of frameid of: 826 takes: '38.093' milliseconds
+resultss: 0
+time_process_pic of frameid of: 827 takes: '16.425' milliseconds
+resultss: 0
+time_process_pic of frameid of: 828 takes: '21.0781' milliseconds
+resultss: 0
+time_process_pic of frameid of: 829 takes: '37.751' milliseconds
+resultss: 0
+time_process_pic of frameid of: 830 takes: '16.532' milliseconds
+resultss: 0
+time_process_pic of frameid of: 831 takes: '22.082' milliseconds
+resultss: 0
+time_process_pic of frameid of: 832 takes: '35.228' milliseconds
+resultss: 0
+time_process_pic of frameid of: 833 takes: '14.1179' milliseconds
+resultss: 0
+time_process_pic of frameid of: 834 takes: '34.9561' milliseconds
+resultss: 0
+time_process_pic of frameid of: 835 takes: '13.9421' milliseconds
+resultss: 0
+time_process_pic of frameid of: 836 takes: '32.4219' milliseconds
+resultss: 0
+time_process_pic of frameid of: 837 takes: '16.7302' milliseconds
+resultss: 0
+time_process_pic of frameid of: 838 takes: '36.7' milliseconds
+resultss: 0
+time_process_pic of frameid of: 839 takes: '15.9761' milliseconds
+resultss: 0
+time_process_pic of frameid of: 840 takes: '12.8169' milliseconds
+resultss: 0
+time_process_pic of frameid of: 841 takes: '36.572' milliseconds
+resultss: 0
+time_process_pic of frameid of: 842 takes: '19.7129' milliseconds
+resultss: 0
+time_process_pic of frameid of: 843 takes: '29.4351' milliseconds
+resultss: 0
+time_process_pic of frameid of: 844 takes: '34.8599' milliseconds
+resultss: 0
+time_process_pic of frameid of: 845 takes: '17.9231' milliseconds
+resultss: 0
+time_process_pic of frameid of: 846 takes: '35.043' milliseconds
+resultss: 0
+time_process_pic of frameid of: 847 takes: '16.439' milliseconds
+resultss: 0
+time_process_pic of frameid of: 848 takes: '22.124' milliseconds
+resultss: 0
+time_process_pic of frameid of: 849 takes: '30.6599' milliseconds
+resultss: 0
+time_process_pic of frameid of: 850 takes: '18.8772' milliseconds
+resultss: 0
+time_process_pic of frameid of: 851 takes: '32.446' milliseconds
+resultss: 0
+time_process_pic of frameid of: 852 takes: '17.075' milliseconds
+resultss: 0
+time_process_pic of frameid of: 853 takes: '34.77' milliseconds
+resultss: 0
+time_process_pic of frameid of: 854 takes: '16.5688' milliseconds
+resultss: 0
+time_process_pic of frameid of: 855 takes: '34.989' milliseconds
+resultss: 0
+time_process_pic of frameid of: 856 takes: '16.6702' milliseconds
+resultss: 0
+time_process_pic of frameid of: 857 takes: '36.731' milliseconds
+resultss: 0
+time_process_pic of frameid of: 858 takes: '16.2761' milliseconds
+resultss: 0
+time_process_pic of frameid of: 859 takes: '24.45' milliseconds
+resultss: 0
+time_process_pic of frameid of: 860 takes: '24.4021' milliseconds
+resultss: 0
+time_process_pic of frameid of: 861 takes: '17.0759' milliseconds
+resultss: 0
+time_process_pic of frameid of: 862 takes: '34.7412' milliseconds
+resultss: 0
+time_process_pic of frameid of: 863 takes: '18.2061' milliseconds
+resultss: 0
+time_process_pic of frameid of: 864 takes: '36.7131' milliseconds
+resultss: 0
+time_process_pic of frameid of: 865 takes: '16.1428' milliseconds
+resultss: 0
+time_process_pic of frameid of: 866 takes: '30.804' milliseconds
+resultss: 0
+time_process_pic of frameid of: 867 takes: '18.146' milliseconds
+resultss: 0
+time_process_pic of frameid of: 868 takes: '35.95' milliseconds
+resultss: 0
+time_process_pic of frameid of: 869 takes: '14.6619' milliseconds
+resultss: 0
+time_process_pic of frameid of: 870 takes: '13.6021' milliseconds
+resultss: 0
+time_process_pic of frameid of: 871 takes: '35.948' milliseconds
+resultss: 0
+time_process_pic of frameid of: 872 takes: '14.5569' milliseconds
+resultss: 0
+time_process_pic of frameid of: 873 takes: '25.2451' milliseconds
+resultss: 0
+time_process_pic of frameid of: 874 takes: '22.571' milliseconds
+resultss: 0
+time_process_pic of frameid of: 875 takes: '8.94897' milliseconds
+resultss: 0
+time_process_pic of frameid of: 876 takes: '39.6892' milliseconds
+resultss: 0
+time_process_pic of frameid of: 877 takes: '16.4968' milliseconds
+resultss: 0
+time_process_pic of frameid of: 878 takes: '28.3789' milliseconds
+resultss: 0
+time_process_pic of frameid of: 879 takes: '32.3301' milliseconds
+resultss: 0
+time_process_pic of frameid of: 880 takes: '14.541' milliseconds
+resultss: 0
+time_process_pic of frameid of: 881 takes: '35.9319' milliseconds
+resultss: 0
+time_process_pic of frameid of: 882 takes: '35.9641' milliseconds
+resultss: 0
+time_process_pic of frameid of: 883 takes: '15.3591' milliseconds
+resultss: 0
+time_process_pic of frameid of: 884 takes: '10.136' milliseconds
+resultss: 0
+time_process_pic of frameid of: 885 takes: '38.594' milliseconds
+resultss: 0
+time_process_pic of frameid of: 887 takes: '37.355' milliseconds
+resultss: 0
+time_process_pic of frameid of: 887 takes: '12.8979' milliseconds
+resultss: 0
+time_process_pic of frameid of: 888 takes: '17.5381' milliseconds
+resultss: 0
+time_process_pic of frameid of: 889 takes: '37.5959' milliseconds
+resultss: 0
+time_process_pic of frameid of: 890 takes: '37.2239' milliseconds
+resultss: 0
+time_process_pic of frameid of: 891 takes: '17.489' milliseconds
+resultss: 0
+time_process_pic of frameid of: 892 takes: '37.582' milliseconds
+resultss: 0
+time_process_pic of frameid of: 893 takes: '36.7739' milliseconds
+resultss: 0
+time_process_pic of frameid of: 1835 takes: '34.3589' milliseconds
+resultss: 3
+time_process_pic of frameid of: 1835 takes: '37.8381' milliseconds
+resultss: 2
+time_process_pic of frameid of: 1893 takes: '38.2048' milliseconds
+resultss: 3
+time_process_pic of frameid of: 1894 takes: '39.343' milliseconds
+resultss: 4
+time_process_pic of frameid of: 1905 takes: '37.0901' milliseconds
+resultss: 3
+time_process_pic of frameid of: 1967 takes: '14.053' milliseconds
+resultss: 5
+time_process_pic of frameid of: 1967 takes: '38.176' milliseconds
+resultss: 3
+time_process_pic of frameid of: 2057 takes: '38.385' milliseconds
+resultss: 2
+time_process_pic of frameid of: 2058 takes: '39.3301' milliseconds
+resultss: 3
+time_process_pic of frameid of: 2101 takes: '13.6721' milliseconds
+resultss: 5
+time_process_pic of frameid of: 2103 takes: '38.8862' milliseconds
+resultss: 6
+time_process_pic of frameid of: 3045 takes: '53.749' milliseconds
+resultss: 6
+time_process_pic of frameid of: 3046 takes: '39.4829' milliseconds
+resultss: 6
+time_process_pic of frameid of: 3735 takes: '49.0549' milliseconds
+resultss: 0
+time_process_pic of frameid of: 3736 takes: '13.9109' milliseconds
+resultss: 0
+time_process_pic of frameid of: 3774 takes: '38.7649' milliseconds
+resultss: 1
+time_process_pic of frameid of: 3775 takes: '40.5361' milliseconds
+resultss: 0
+time_process_pic of frameid of: 3859 takes: '38.7759' milliseconds
+resultss: 0
+time_process_pic of frameid of: 3860 takes: '38.0342' milliseconds
+resultss: 3
+time_process_pic of frameid of: 3861 takes: '12.8521' milliseconds
+resultss: 0
+time_process_pic of frameid of: 3903 takes: '38.876' milliseconds
+resultss: 1
+time_process_pic of frameid of: 3904 takes: '39.2891' milliseconds
+resultss: 2
+time_process_pic of frameid of: 3962 takes: '39.5559' milliseconds
+resultss: 2
+time_process_pic of frameid of: 3963 takes: '14.136' milliseconds
+resultss: 3
+time_process_pic of frameid of: 3982 takes: '38.637' milliseconds
+resultss: 1
+time_process_pic of frameid of: 3983 takes: '38.2859' milliseconds
+resultss: 1
+time_process_pic of frameid of: 3984 takes: '13.521' milliseconds
+resultss: 1
+time_process_pic of frameid of: 4026 takes: '39.009' milliseconds
+resultss: 8
+time_process_pic of frameid of: 4027 takes: '40.0059' milliseconds
+resultss: 10
+time_process_pic of frameid of: 4091 takes: '39.884' milliseconds
+resultss: 11
+time_process_pic of frameid of: 4092 takes: '40.437' milliseconds
+resultss: 9
+time_process_pic of frameid of: 4136 takes: '40.5681' milliseconds
+resultss: 3
+time_process_pic of frameid of: 4139 takes: '27.198' milliseconds
+resultss: 3
+time_process_pic of frameid of: 4161 takes: '14.0449' milliseconds
+resultss: 2
+time_process_pic of frameid of: 4162 takes: '37.4768' milliseconds
+resultss: 5
+time_process_pic of frameid of: 4172 takes: '39.0032' milliseconds
+resultss: 4
+time_process_pic of frameid of: 4979 takes: '47.0959' milliseconds
+resultss: 5
+time_process_pic of frameid of: 4980 takes: '38.7219' milliseconds
+resultss: 3
+time_process_pic of frameid of: 5080 takes: '36.4531' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5081 takes: '12.676' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5082 takes: '11.937' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5083 takes: '11.9402' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5084 takes: '16.563' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5085 takes: '16.5151' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5086 takes: '15.103' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5087 takes: '15.043' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5088 takes: '36.335' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5089 takes: '22.8621' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5090 takes: '21.437' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5091 takes: '36.8962' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5092 takes: '16.6421' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5093 takes: '37.8528' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5094 takes: '35.6831' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5095 takes: '15.79' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5096 takes: '13.679' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5097 takes: '34.0791' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5098 takes: '32.0071' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5099 takes: '13.179' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5100 takes: '21.134' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5101 takes: '32.407' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5102 takes: '21.7871' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5103 takes: '35.1501' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5104 takes: '21.4729' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5105 takes: '16.9309' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5106 takes: '17.312' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5107 takes: '36.9631' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5108 takes: '16.5801' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5109 takes: '34.561' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5110 takes: '17.8372' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5111 takes: '29.5879' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5112 takes: '19.679' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5113 takes: '18.594' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5114 takes: '9.43604' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5115 takes: '35.0442' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5116 takes: '16.5898' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5117 takes: '36.3369' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5118 takes: '21.873' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5119 takes: '13.592' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5120 takes: '28.406' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5121 takes: '35.259' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5122 takes: '16.646' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5123 takes: '27.196' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5124 takes: '38.9138' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5125 takes: '16.1299' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5126 takes: '32.438' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5127 takes: '20.4719' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5128 takes: '34.738' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5129 takes: '16.1069' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5130 takes: '34.824' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5131 takes: '17.0271' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5132 takes: '15.8071' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5133 takes: '36.3711' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5134 takes: '16.5989' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5135 takes: '34.978' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5136 takes: '16.71' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5137 takes: '34.7339' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5138 takes: '16.49' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5139 takes: '35.469' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5140 takes: '17.0791' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5141 takes: '16.915' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5142 takes: '16.562' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5143 takes: '35.813' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5144 takes: '36.9819' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5145 takes: '15.604' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5146 takes: '12.906' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5147 takes: '36.6528' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5148 takes: '15.8669' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5149 takes: '30.158' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5150 takes: '18.468' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5151 takes: '28.3462' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5152 takes: '9.77808' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5153 takes: '36.4661' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5154 takes: '18.6741' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5155 takes: '19.9709' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5156 takes: '34.9399' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5157 takes: '14.4719' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5158 takes: '32.759' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5159 takes: '25.562' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5160 takes: '23.7949' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5161 takes: '34.6489' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5162 takes: '18.3311' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5163 takes: '34.698' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5164 takes: '14.9031' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5165 takes: '36.6829' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5166 takes: '30.0952' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5167 takes: '14.198' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5168 takes: '13.1831' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5169 takes: '15.136' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5170 takes: '35.3279' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5171 takes: '16.1069' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5172 takes: '34.332' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5173 takes: '29.4658' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5174 takes: '37.998' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5175 takes: '16.3508' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5176 takes: '11.7471' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5177 takes: '9.39087' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5178 takes: '37.5388' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5179 takes: '19.1082' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5180 takes: '19.2471' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5181 takes: '20.592' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5182 takes: '19.585' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5183 takes: '28.6399' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5184 takes: '18.593' milliseconds
+resultss: 1
+time_process_pic of frameid of: 5185 takes: '37.3818' milliseconds
+resultss: 3
+time_process_pic of frameid of: 5186 takes: '22.269' milliseconds
+resultss: 3
+time_process_pic of frameid of: 5187 takes: '33.728' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5188 takes: '13.8481' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5189 takes: '13.5181' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5190 takes: '35.7419' milliseconds
+resultss: 0
+time_process_pic of frameid of: 5275 takes: '13.5171' milliseconds
+resultss: 4
+time_process_pic of frameid of: 5276 takes: '38.377' milliseconds
+resultss: 1
+time_process_pic of frameid of: 5277 takes: '19.8291' milliseconds
+resultss: 1
+time_process_pic of frameid of: 5356 takes: '37.519' milliseconds
+resultss: 7
+time_process_pic of frameid of: 5357 takes: '38.605' milliseconds
+resultss: 7
+time_process_pic of frameid of: 5452 takes: '36.821' milliseconds
+resultss: 6
+time_process_pic of frameid of: 5453 takes: '38.415' milliseconds
+resultss: 4
+time_process_pic of frameid of: 6143 takes: '33.6062' milliseconds
+resultss: 3
+time_process_pic of frameid of: 6144 takes: '37.4949' milliseconds
+resultss: 3
+time_process_pic of frameid of: 6229 takes: '38.7122' milliseconds
+resultss: 6
+time_process_pic of frameid of: 6230 takes: '37.396' milliseconds
+resultss: 6
+time_process_pic of frameid of: 6356 takes: '36.9331' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6357 takes: '13.887' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6358 takes: '9.52783' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6359 takes: '35.6599' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6360 takes: '14.0869' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6361 takes: '36.686' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6362 takes: '20.3821' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6363 takes: '17.0198' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6364 takes: '37.198' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6365 takes: '21.689' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6366 takes: '27.5901' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6367 takes: '16.6292' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6368 takes: '35.9419' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6369 takes: '14.1931' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6370 takes: '40.1001' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6371 takes: '16.8911' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6372 takes: '13.7449' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6373 takes: '18.688' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6374 takes: '12.7991' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6375 takes: '36.3828' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6376 takes: '13.1382' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6377 takes: '13.1411' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6378 takes: '22.5229' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6379 takes: '35.72' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6380 takes: '14.022' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6381 takes: '16.0371' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6382 takes: '16.887' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6383 takes: '17.2349' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6384 takes: '13.123' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6385 takes: '35.9929' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6386 takes: '17.0811' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6387 takes: '26.1531' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6388 takes: '34.0471' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6389 takes: '22.668' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6390 takes: '23.198' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6391 takes: '35.228' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6392 takes: '19.3188' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6393 takes: '32.6108' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6394 takes: '34.4819' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6395 takes: '16.699' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6396 takes: '34.1829' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6397 takes: '17.1328' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6398 takes: '35.251' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6399 takes: '14.8' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6400 takes: '10.585' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6401 takes: '12.7739' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6402 takes: '18.178' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6403 takes: '34.4031' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6404 takes: '13.9829' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6405 takes: '17.9919' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6406 takes: '10.999' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6408 takes: '37.6912' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6409 takes: '34.0042' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6409 takes: '36.4211' milliseconds
+resultss: 0
+time_process_pic of frameid of: 6410 takes: '40.144' milliseconds
+resultss: 1
+time_process_pic of frameid of: 6473 takes: '13.5369' milliseconds
+resultss: 3
+time_process_pic of frameid of: 6473 takes: '37.3188' milliseconds
+resultss: 3
+time_process_pic of frameid of: 6512 takes: '38.0171' milliseconds
+resultss: 1
+time_process_pic of frameid of: 7344 takes: '29.1101' milliseconds
+resultss: 1
+time_process_pic of frameid of: 7345 takes: '39.063' milliseconds
+resultss: 2
+time_process_pic of frameid of: 7388 takes: '37.5999' milliseconds
+resultss: 1
+time_process_pic of frameid of: 7392 takes: '12.8179' milliseconds
+resultss: 2
+time_process_pic of frameid of: 7393 takes: '36.3279' milliseconds
+resultss: 1
+time_process_pic of frameid of: 7435 takes: '38.4199' milliseconds
+resultss: 1
+time_process_pic of frameid of: 7437 takes: '39.564' milliseconds
+resultss: 1
+time_process_pic of frameid of: 7510 takes: '39.0562' milliseconds
+resultss: 3
+time_process_pic of frameid of: 7511 takes: '18.2549' milliseconds
+resultss: 3
+time_process_pic of frameid of: 7573 takes: '40.1941' milliseconds
+resultss: 11
+time_process_pic of frameid of: 7590 takes: '38.2781' milliseconds
+resultss: 10
+time_process_pic of frameid of: 7592 takes: '37.9431' milliseconds
+resultss: 12
+time_process_pic of frameid of: 7634 takes: '14.511' milliseconds
+resultss: 11
+time_process_pic of frameid of: 7635 takes: '35.6672' milliseconds
+resultss: 8
+time_process_pic of frameid of: 8062 takes: '13.3931' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8063 takes: '10.0942' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8064 takes: '13.2439' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8065 takes: '14.594' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8066 takes: '14.271' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8067 takes: '14.9402' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8068 takes: '11.343' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8069 takes: '10.231' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8070 takes: '9.06909' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8071 takes: '9.44702' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8072 takes: '11.4641' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8073 takes: '13.4292' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8074 takes: '9.62598' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8075 takes: '9.04883' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8076 takes: '9.0769' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8077 takes: '9.44312' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8078 takes: '9.41089' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8079 takes: '10.5239' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8080 takes: '9.68091' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8081 takes: '10.2991' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8082 takes: '9.448' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8083 takes: '16.7319' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8084 takes: '20.71' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8085 takes: '20.1851' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8086 takes: '13.303' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8087 takes: '29.957' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8088 takes: '22.4402' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8089 takes: '36.9319' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8090 takes: '16.4109' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8091 takes: '13.0042' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8092 takes: '13.272' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8093 takes: '32.697' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8094 takes: '36.4231' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8095 takes: '17.1582' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8096 takes: '33.8901' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8097 takes: '30.9119' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8098 takes: '8.97998' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8099 takes: '29.0051' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8100 takes: '12.6538' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8101 takes: '37.7891' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8102 takes: '14.304' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8103 takes: '15.179' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8104 takes: '16.0898' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8105 takes: '31.396' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8106 takes: '9.86499' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8107 takes: '15.3921' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8108 takes: '35.0281' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8109 takes: '34.6189' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8110 takes: '12.9609' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8111 takes: '21.0691' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8112 takes: '24.8069' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8113 takes: '19.1829' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8114 takes: '36.3662' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8115 takes: '16.8521' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8116 takes: '35.853' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8117 takes: '16.6099' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8118 takes: '36.251' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8119 takes: '10.9839' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8120 takes: '11.1431' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8121 takes: '37.415' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8122 takes: '19.2529' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8123 takes: '18.6069' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8124 takes: '9.38013' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8125 takes: '20.103' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8126 takes: '36.229' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8127 takes: '14.23' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8128 takes: '35.8901' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8129 takes: '14.116' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8130 takes: '35.635' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8131 takes: '9.06494' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8132 takes: '10.5449' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8133 takes: '14.731' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8134 takes: '36.823' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8135 takes: '16.957' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8136 takes: '9.82397' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8137 takes: '14.8792' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8138 takes: '35.3921' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8139 takes: '14.6099' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8140 takes: '10.208' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8141 takes: '12.4229' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8142 takes: '28.991' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8143 takes: '12.873' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8144 takes: '28.2019' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8146 takes: '36.3708' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8146 takes: '37.5469' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8148 takes: '37.0032' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8148 takes: '36.229' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8149 takes: '36.021' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8285 takes: '13.8391' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8286 takes: '9.48511' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8287 takes: '11.4551' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8288 takes: '13.844' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8289 takes: '17.365' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8290 takes: '17.5581' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8291 takes: '17.4712' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8292 takes: '17.6379' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8293 takes: '14.9348' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8294 takes: '14.824' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8295 takes: '17.3501' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8296 takes: '16.7419' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8297 takes: '16.6611' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8298 takes: '17.7419' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8299 takes: '16.6628' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8300 takes: '11.873' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8301 takes: '10.2131' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8302 takes: '13.8049' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8303 takes: '20.0139' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8304 takes: '24.157' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8396 takes: '36.051' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8397 takes: '15.5291' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8398 takes: '10.217' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8521 takes: '10.2942' milliseconds
+resultss: 4
+time_process_pic of frameid of: 8684 takes: '37.0481' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8685 takes: '20.3472' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8686 takes: '14.2351' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8687 takes: '35.429' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8688 takes: '16.9929' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8689 takes: '26.165' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8690 takes: '29.4749' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8691 takes: '17.71' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8692 takes: '35.5781' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8693 takes: '16.5769' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8694 takes: '16.469' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8695 takes: '34.8989' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8696 takes: '14.165' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8697 takes: '11.7839' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8698 takes: '41.5339' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8699 takes: '27.6099' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8700 takes: '12.593' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8701 takes: '35.4761' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8702 takes: '19.541' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8703 takes: '35.074' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8704 takes: '16.8079' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8705 takes: '16.458' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8706 takes: '35.4739' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8707 takes: '19.0879' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8708 takes: '35.397' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8709 takes: '15.313' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8710 takes: '15.5681' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8711 takes: '35.5491' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8712 takes: '16.4761' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8713 takes: '30.24' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8714 takes: '9.38208' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8715 takes: '16.835' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8716 takes: '35.7141' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8717 takes: '16.8' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8718 takes: '35.4851' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8719 takes: '16.625' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8720 takes: '22.8469' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8721 takes: '35.521' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8722 takes: '20.3401' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8723 takes: '33.01' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8724 takes: '14.6062' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8725 takes: '35.842' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8726 takes: '22.9329' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8727 takes: '15.342' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8728 takes: '35.332' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8729 takes: '16.8242' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8730 takes: '36.095' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8731 takes: '16.5798' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8732 takes: '21.6592' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8733 takes: '38.26' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8734 takes: '20.196' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8735 takes: '35.9839' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8736 takes: '16.7029' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8737 takes: '36.5969' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8738 takes: '16.7842' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8739 takes: '16.9341' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8740 takes: '16.8572' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8741 takes: '14.158' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8742 takes: '12.5439' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8743 takes: '20.6711' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8744 takes: '14.1489' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8745 takes: '8.92798' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8746 takes: '35.0569' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8747 takes: '17.0898' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8748 takes: '28.7458' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8749 takes: '19.2319' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8750 takes: '23.822' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8751 takes: '18.5051' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8752 takes: '9.93921' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8753 takes: '9.21802' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8754 takes: '17.842' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8755 takes: '36.6741' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8756 takes: '27.5659' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8757 takes: '11.252' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8758 takes: '21.7939' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8759 takes: '36.356' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8760 takes: '31.2358' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8761 takes: '10.6389' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8762 takes: '8.97192' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8763 takes: '20.0391' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8764 takes: '24.105' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8765 takes: '26.2671' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8766 takes: '18.8811' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8767 takes: '27.658' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8768 takes: '8.99512' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8769 takes: '10.3152' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8770 takes: '13.0569' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8771 takes: '12.5449' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8772 takes: '17.03' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8773 takes: '35.146' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8774 takes: '16.6619' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8775 takes: '9.17505' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8776 takes: '9.09497' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8777 takes: '9.41699' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8778 takes: '9.32397' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8779 takes: '11.4851' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8780 takes: '36.4619' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8781 takes: '21.0991' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8782 takes: '19.313' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8783 takes: '16.052' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8784 takes: '17.0972' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8785 takes: '35.803' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8786 takes: '16.6428' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8787 takes: '9.31104' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8788 takes: '37.9089' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8789 takes: '14.3091' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8790 takes: '36.3682' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8791 takes: '26.7678' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8792 takes: '12.1589' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8793 takes: '36.2939' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8794 takes: '15.5869' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8795 takes: '28.606' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8796 takes: '33.1111' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8797 takes: '17.1821' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8798 takes: '19.3921' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8799 takes: '22.719' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8800 takes: '11.8892' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8801 takes: '33.2361' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8802 takes: '22.8071' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8803 takes: '18.4761' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8804 takes: '33.238' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8805 takes: '17.5259' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8806 takes: '35.167' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8807 takes: '16.271' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8808 takes: '12.5278' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8809 takes: '11.1589' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8810 takes: '28.2419' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8811 takes: '35.7009' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8812 takes: '16.572' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8813 takes: '28.8179' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8814 takes: '32.897' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8815 takes: '16.5669' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8816 takes: '26.489' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8817 takes: '21.7112' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8818 takes: '20.459' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8819 takes: '20.1001' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8820 takes: '35.6619' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8821 takes: '16.7239' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8822 takes: '23.8149' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8823 takes: '25.4199' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8824 takes: '9.88721' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8825 takes: '9.34814' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8826 takes: '9.64819' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8827 takes: '9.92896' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8828 takes: '20.5181' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8829 takes: '35.1328' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8830 takes: '26.3511' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8831 takes: '25.9561' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8832 takes: '35.75' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8833 takes: '28.304' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8834 takes: '17.499' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8835 takes: '13.686' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8836 takes: '23.26' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8837 takes: '10.4209' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8838 takes: '36.6392' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8839 takes: '16.752' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8840 takes: '17.2432' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8841 takes: '37.2009' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8842 takes: '20.7319' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8843 takes: '10.8091' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8844 takes: '23.6321' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8845 takes: '29.573' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8846 takes: '15.2659' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8847 takes: '35.1948' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8848 takes: '20.3369' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8849 takes: '23.155' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8850 takes: '35.8918' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8851 takes: '16.7688' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8852 takes: '36.1519' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8853 takes: '16.4341' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8854 takes: '35.2209' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8855 takes: '30.0381' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8856 takes: '37.2148' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8857 takes: '20.249' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8858 takes: '25.291' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8859 takes: '12.374' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8860 takes: '31.2549' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8861 takes: '18.531' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8862 takes: '32.0259' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8863 takes: '21.5659' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8864 takes: '21.5701' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8865 takes: '38.417' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8866 takes: '14.2249' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8867 takes: '35.3081' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8868 takes: '14.1309' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8869 takes: '25.5071' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8870 takes: '26.4312' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8871 takes: '35.429' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8872 takes: '16.395' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8873 takes: '16.1809' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8874 takes: '36.1731' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8875 takes: '16.96' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8876 takes: '22.425' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8877 takes: '37.5801' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8878 takes: '19.5461' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8879 takes: '25.761' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8880 takes: '18.3088' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8881 takes: '36.3662' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8882 takes: '35.9001' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8883 takes: '16.6521' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8884 takes: '35.3259' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8885 takes: '16.72' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8886 takes: '35.2781' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8887 takes: '16.5471' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8888 takes: '26.2439' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8889 takes: '36.9521' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8890 takes: '20.5071' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8891 takes: '19.3918' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8892 takes: '38.7761' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8893 takes: '15.749' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8894 takes: '18.332' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8895 takes: '35.396' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8896 takes: '16.5972' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8897 takes: '36.0078' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8898 takes: '17.593' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8899 takes: '29.3069' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8900 takes: '23.7959' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8901 takes: '37.3198' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8902 takes: '24.4031' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8903 takes: '22.698' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8904 takes: '37.364' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8905 takes: '14.1321' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8906 takes: '12.426' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8907 takes: '10.0911' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8908 takes: '10.0449' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8909 takes: '12.312' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8910 takes: '14.4221' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8911 takes: '28.7161' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8912 takes: '36.386' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8913 takes: '16.885' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8914 takes: '36.219' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8915 takes: '14.9048' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8916 takes: '17.7512' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8917 takes: '35.365' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8918 takes: '12.5811' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8919 takes: '35.541' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8920 takes: '26.627' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8921 takes: '28.3059' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8922 takes: '14.718' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8923 takes: '35.4651' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8924 takes: '16.46' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8925 takes: '22.8909' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8926 takes: '36.363' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8927 takes: '16.5129' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8928 takes: '35.7742' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8929 takes: '16.6689' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8930 takes: '37.2031' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8931 takes: '14.106' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8932 takes: '26.593' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8933 takes: '35.541' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8934 takes: '17.498' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8935 takes: '35.188' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8936 takes: '17.071' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8937 takes: '35.5349' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8938 takes: '16.8162' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8939 takes: '35.844' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8940 takes: '13.6479' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8941 takes: '30.353' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8942 takes: '34.1208' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8943 takes: '14.6841' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8944 takes: '38.2681' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8945 takes: '30.4829' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8946 takes: '14.25' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8947 takes: '35.999' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8948 takes: '17.427' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8949 takes: '22.3708' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8950 takes: '37.7891' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8951 takes: '16.6179' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8952 takes: '34.8' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8953 takes: '35.408' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8954 takes: '16.2969' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8955 takes: '19.7961' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8956 takes: '35.321' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8957 takes: '8.95215' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8958 takes: '23.897' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8959 takes: '24.1321' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8960 takes: '16.8091' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8961 takes: '35.7681' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8962 takes: '35.896' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8963 takes: '22.9509' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8964 takes: '18.0571' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8965 takes: '35.4741' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8966 takes: '12.364' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8967 takes: '38.0471' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8968 takes: '15.9851' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8969 takes: '33.385' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8970 takes: '32.592' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8971 takes: '19.05' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8972 takes: '21.4771' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8973 takes: '35.219' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8974 takes: '17.8279' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8975 takes: '19.4038' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8976 takes: '22.863' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8977 takes: '21.313' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8978 takes: '35.4878' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8979 takes: '16.4929' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8980 takes: '35.7468' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8981 takes: '15.489' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8982 takes: '14.281' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8983 takes: '21.5901' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8984 takes: '14.5591' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8985 takes: '37.5649' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8986 takes: '20.9912' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8987 takes: '24.666' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8988 takes: '25.2112' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8989 takes: '22.7429' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8990 takes: '36.915' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8991 takes: '22.0688' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8992 takes: '19.6411' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8993 takes: '38.2029' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8994 takes: '14.5022' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8995 takes: '13.605' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8996 takes: '33.4529' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8997 takes: '14.175' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8998 takes: '32.437' milliseconds
+resultss: 0
+time_process_pic of frameid of: 8999 takes: '26.4558' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9000 takes: '16.708' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9001 takes: '13.6958' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9002 takes: '33.283' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9003 takes: '15.2739' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9004 takes: '14.5129' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9005 takes: '24.749' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9006 takes: '31.7739' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9007 takes: '18.3381' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9008 takes: '38.2229' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9009 takes: '12.5662' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9010 takes: '29.9211' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9011 takes: '22.0129' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9012 takes: '17.4231' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9013 takes: '35.863' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9014 takes: '25.895' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9015 takes: '33.1931' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9016 takes: '14.178' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9017 takes: '33.2261' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9018 takes: '12.9202' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9019 takes: '20.207' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9020 takes: '35.1792' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9021 takes: '16.469' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9022 takes: '37.9771' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9023 takes: '19.7029' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9024 takes: '16.9929' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9025 takes: '24.958' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9026 takes: '25.228' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9027 takes: '16.708' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9028 takes: '18.781' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9029 takes: '31.2051' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9030 takes: '32.999' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9031 takes: '14.1279' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9032 takes: '30.252' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9033 takes: '33.2942' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9034 takes: '14.874' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9035 takes: '20.7881' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9036 takes: '35.6331' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9037 takes: '17.5889' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9038 takes: '35.739' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9039 takes: '17.4749' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9040 takes: '22.478' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9041 takes: '36.3081' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9042 takes: '31.0918' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9043 takes: '13.7749' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9044 takes: '30.4338' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9045 takes: '32.832' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9046 takes: '18.5381' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9047 takes: '35.488' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9048 takes: '17.085' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9049 takes: '33.2639' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9050 takes: '19.085' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9051 takes: '27.4558' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9052 takes: '28.1108' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9053 takes: '21.3708' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9054 takes: '35.5188' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9055 takes: '16.4551' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9056 takes: '19.907' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9057 takes: '32.9871' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9058 takes: '18.2219' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9059 takes: '21.533' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9060 takes: '9.83301' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9061 takes: '35.855' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9062 takes: '16.873' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9063 takes: '35.407' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9064 takes: '14.9551' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9065 takes: '35.175' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9066 takes: '16.3499' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9067 takes: '35.356' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9068 takes: '17.49' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9069 takes: '22.9312' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9070 takes: '36.343' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9071 takes: '14.0588' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9072 takes: '17.699' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9073 takes: '35.687' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9074 takes: '19.9958' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9075 takes: '28.1008' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9076 takes: '21.9011' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9077 takes: '20.8191' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9078 takes: '35.7729' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9079 takes: '16.7361' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9080 takes: '22.8889' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9081 takes: '35.7468' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9082 takes: '16.6089' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9083 takes: '21.4111' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9084 takes: '19.4031' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9085 takes: '35.436' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9086 takes: '16.417' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9087 takes: '35.022' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9088 takes: '16.5342' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9089 takes: '27.9028' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9090 takes: '26.1509' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9091 takes: '19.1858' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9092 takes: '33.998' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9093 takes: '14.114' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9094 takes: '37.8591' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9095 takes: '16.7529' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9096 takes: '30.5239' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9097 takes: '27.3579' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9098 takes: '24.324' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9099 takes: '20.3191' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9100 takes: '35.6511' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9101 takes: '24.459' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9102 takes: '14.208' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9103 takes: '35.145' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9104 takes: '17.1279' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9105 takes: '32.084' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9106 takes: '19.0012' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9107 takes: '22.8691' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9108 takes: '10.3472' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9109 takes: '13.3601' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9110 takes: '13.3391' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9111 takes: '10.7532' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9112 takes: '35.3931' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9113 takes: '19.998' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9114 takes: '35.197' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9115 takes: '16.439' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9116 takes: '19.0891' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9117 takes: '35.4548' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9118 takes: '18.9839' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9119 takes: '12.1321' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9120 takes: '38.5181' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9121 takes: '16.467' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9122 takes: '13.364' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9123 takes: '19.864' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9124 takes: '35.511' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9125 takes: '12.0452' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9126 takes: '19.457' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9127 takes: '35.6028' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9128 takes: '17.5168' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9129 takes: '35.46' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9130 takes: '16.5471' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9131 takes: '23.395' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9132 takes: '21.468' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9133 takes: '35.9651' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9134 takes: '30.614' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9135 takes: '33.9709' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9136 takes: '29.8711' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9137 takes: '14.6299' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9138 takes: '25.564' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9139 takes: '31.3' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9140 takes: '15.802' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9141 takes: '33.676' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9142 takes: '21.0291' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9143 takes: '36.178' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9144 takes: '20.2681' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9145 takes: '13.137' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9146 takes: '9.24097' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9147 takes: '37.5181' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9148 takes: '30.3508' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9149 takes: '14.252' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9150 takes: '35.042' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9151 takes: '17.1008' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9152 takes: '32.8608' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9153 takes: '18.011' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9154 takes: '20.926' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9155 takes: '11.0989' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9156 takes: '36.7639' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9157 takes: '20.0149' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9158 takes: '38.595' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9159 takes: '23.1011' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9160 takes: '18.074' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9161 takes: '13.4309' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9162 takes: '11.844' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9163 takes: '30.5752' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9164 takes: '11.1519' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9165 takes: '35.4548' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9166 takes: '16.7151' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9167 takes: '36.311' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9168 takes: '16.25' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9169 takes: '15.96' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9170 takes: '36.843' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9171 takes: '20.0349' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9172 takes: '34.7119' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9173 takes: '16.772' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9174 takes: '12.8708' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9175 takes: '22.468' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9176 takes: '33.2219' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9177 takes: '14.1521' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9178 takes: '18.373' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9179 takes: '21.321' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9180 takes: '36.064' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9181 takes: '33.021' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9182 takes: '25.093' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9183 takes: '14.5911' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9184 takes: '33.4739' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9185 takes: '22.3582' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9186 takes: '32.728' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9187 takes: '13.394' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9188 takes: '27.9839' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9189 takes: '27.876' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9190 takes: '11.397' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9191 takes: '18.168' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9192 takes: '35.51' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9193 takes: '19.2871' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9194 takes: '33.041' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9195 takes: '16.7471' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9196 takes: '35.2429' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9197 takes: '16.825' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9198 takes: '18.0242' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9199 takes: '10.7979' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9200 takes: '36.0081' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9201 takes: '16.728' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9202 takes: '12.8999' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9203 takes: '19.5222' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9204 takes: '35.3652' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9205 takes: '16.4639' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9206 takes: '35.25' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9207 takes: '16.8301' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9208 takes: '13.323' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9209 takes: '16.7649' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9210 takes: '35.6921' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9211 takes: '16.4309' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9212 takes: '35.842' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9213 takes: '16.4199' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9214 takes: '36.3511' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9215 takes: '26.2161' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9216 takes: '13.792' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9217 takes: '35.6079' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9218 takes: '30.04' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9219 takes: '32.73' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9220 takes: '14.1731' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9221 takes: '15.939' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9222 takes: '13.124' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9223 takes: '30.356' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9224 takes: '9.59912' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9225 takes: '14.9771' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9226 takes: '36.0259' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9227 takes: '28.2051' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9228 takes: '15.3572' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9229 takes: '31.8931' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9230 takes: '8.94214' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9231 takes: '39.6831' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9232 takes: '14.946' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9233 takes: '22.731' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9234 takes: '35.3271' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9235 takes: '25.5852' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9236 takes: '21.907' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9237 takes: '35.2612' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9238 takes: '16.4592' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9239 takes: '38.8198' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9240 takes: '26.5952' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9241 takes: '33.0679' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9242 takes: '18.1289' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9243 takes: '36.873' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9244 takes: '20.3' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9245 takes: '34.8469' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9246 takes: '16.2881' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9247 takes: '35.3889' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9248 takes: '16.5571' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9249 takes: '18.0769' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9250 takes: '25.377' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9251 takes: '13.595' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9252 takes: '35.967' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9253 takes: '16.863' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9254 takes: '15.1709' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9255 takes: '35.751' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9256 takes: '20.3391' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9257 takes: '13.219' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9258 takes: '19.8818' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9259 takes: '20.2129' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9260 takes: '38.3708' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9261 takes: '16.5862' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9262 takes: '36.457' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9263 takes: '16.5291' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9264 takes: '37.0352' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9265 takes: '16.606' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9266 takes: '16.645' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9267 takes: '28.3879' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9268 takes: '16.0361' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9269 takes: '37.6372' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9270 takes: '20.23' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9271 takes: '12.875' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9272 takes: '12.0581' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9273 takes: '16.9331' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9274 takes: '35.6531' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9275 takes: '17.1201' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9276 takes: '35.387' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9277 takes: '16.322' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9278 takes: '35.21' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9279 takes: '16.4089' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9280 takes: '31.313' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9281 takes: '26.522' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9282 takes: '34.8049' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9283 takes: '30.386' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9284 takes: '19.4751' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9285 takes: '35.396' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9286 takes: '19.175' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9287 takes: '35.3801' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9288 takes: '16.6021' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9289 takes: '19.5229' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9290 takes: '13.416' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9291 takes: '24.3818' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9292 takes: '32.8472' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9293 takes: '14.02' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9294 takes: '35.0269' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9295 takes: '33.332' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9296 takes: '14.439' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9297 takes: '12.491' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9298 takes: '13.1162' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9299 takes: '16.9822' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9300 takes: '35.2449' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9301 takes: '38.8088' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9302 takes: '14.7271' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9303 takes: '12.593' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9304 takes: '22.25' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9305 takes: '35.5559' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9306 takes: '16.5151' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9307 takes: '36.502' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9308 takes: '17.2439' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9309 takes: '33.5481' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9310 takes: '15.1628' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9311 takes: '32.9839' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9312 takes: '19.147' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9313 takes: '22.825' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9314 takes: '37.772' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9315 takes: '24.1628' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9316 takes: '23.3171' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9317 takes: '13.5789' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9318 takes: '35.6682' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9319 takes: '11.0039' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9320 takes: '12.592' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9321 takes: '19.324' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9322 takes: '35.3191' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9323 takes: '16.1631' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9324 takes: '30.2271' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9325 takes: '27.3308' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9326 takes: '16.208' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9327 takes: '35.686' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9328 takes: '16.4731' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9329 takes: '29.6279' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9330 takes: '11.2859' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9331 takes: '36.9722' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9332 takes: '16.6201' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9333 takes: '35.7842' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9334 takes: '16.4612' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9335 takes: '23.158' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9336 takes: '35.272' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9337 takes: '14.2971' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9338 takes: '19.7429' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9339 takes: '34.9299' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9340 takes: '16.7598' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9341 takes: '38.46' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9342 takes: '19.0649' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9343 takes: '18.8901' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9344 takes: '36.4211' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9345 takes: '17.334' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9346 takes: '33.3169' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9347 takes: '14.1631' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9348 takes: '35.717' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9349 takes: '14.0229' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9350 takes: '13.0471' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9351 takes: '34.8472' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9352 takes: '32.9031' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9353 takes: '14.1201' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9354 takes: '9.78101' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9355 takes: '35.1731' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9356 takes: '16.7671' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9357 takes: '33.0449' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9358 takes: '18.751' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9359 takes: '16.9749' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9360 takes: '12.364' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9361 takes: '19.7651' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9362 takes: '17.6169' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9363 takes: '14.894' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9364 takes: '13.6931' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9365 takes: '35.4851' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9366 takes: '16.563' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9367 takes: '35.417' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9368 takes: '17.7219' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9369 takes: '16.4878' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9370 takes: '36.5342' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9371 takes: '16.802' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9372 takes: '32.322' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9373 takes: '18.991' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9374 takes: '26.2661' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9375 takes: '34.9519' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9376 takes: '32.394' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9377 takes: '12.4548' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9378 takes: '35.8682' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9379 takes: '13.894' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9380 takes: '10.022' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9381 takes: '38.769' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9382 takes: '14.2432' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9383 takes: '31.821' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9384 takes: '20.0972' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9385 takes: '36.6992' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9386 takes: '15.741' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9387 takes: '13.8779' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9388 takes: '36.3472' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9389 takes: '30.6792' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9390 takes: '13.769' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9391 takes: '11.7991' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9392 takes: '12.7639' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9393 takes: '14.855' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9394 takes: '37.5901' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9395 takes: '20.2139' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9396 takes: '23.408' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9397 takes: '10.4441' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9398 takes: '36.033' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9399 takes: '16.2778' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9400 takes: '35.457' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9401 takes: '14.946' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9402 takes: '14.062' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9403 takes: '35.916' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9404 takes: '16.7488' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9405 takes: '35.1548' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9406 takes: '14.8992' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9407 takes: '34.9729' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9408 takes: '16.5432' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9409 takes: '16.584' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9410 takes: '37.4658' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9411 takes: '32.7371' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9412 takes: '13.981' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9413 takes: '12.637' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9414 takes: '9.89209' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9415 takes: '9.80688' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9416 takes: '36.0898' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9417 takes: '19.062' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9418 takes: '35.916' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9419 takes: '15.0889' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9420 takes: '11.3198' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9421 takes: '35.886' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9422 takes: '17.1821' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9423 takes: '24.0239' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9424 takes: '36.384' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9425 takes: '16.594' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9426 takes: '35.9932' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9427 takes: '15.5369' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9428 takes: '21.7822' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9429 takes: '21.4331' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9430 takes: '32.749' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9431 takes: '14.7231' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9432 takes: '33.501' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9433 takes: '14.1968' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9434 takes: '11.1311' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9435 takes: '19.397' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9436 takes: '33.7429' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9437 takes: '14.0601' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9438 takes: '35.2029' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9439 takes: '16.418' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9440 takes: '15.7341' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9441 takes: '13.0681' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9442 takes: '34.9229' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9443 takes: '19.2361' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9444 takes: '21.0271' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9445 takes: '12.75' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9446 takes: '12.207' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9447 takes: '28.2119' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9448 takes: '29.657' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9449 takes: '16.1941' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9450 takes: '35.199' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9451 takes: '16.5071' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9452 takes: '35.438' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9453 takes: '16.759' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9454 takes: '22.5769' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9455 takes: '35.364' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9456 takes: '16.521' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9457 takes: '13.8081' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9458 takes: '29.845' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9459 takes: '20.5559' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9460 takes: '22.3459' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9461 takes: '36.333' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9462 takes: '30.3899' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9463 takes: '16.6292' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9464 takes: '13.0469' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9465 takes: '20.042' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9466 takes: '10.0969' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9467 takes: '19.467' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9468 takes: '35.0381' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9469 takes: '16.2551' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9470 takes: '23.791' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9471 takes: '37.2751' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9472 takes: '14.051' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9473 takes: '9.23315' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9474 takes: '13.583' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9475 takes: '37.2468' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9476 takes: '15.4531' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9477 takes: '13.707' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9478 takes: '34.6948' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9479 takes: '17.675' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9480 takes: '13.8799' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9481 takes: '40.4319' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9482 takes: '9.28198' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9483 takes: '12.4922' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9484 takes: '36.0872' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9485 takes: '16.801' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9486 takes: '14.28' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9487 takes: '32.332' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9488 takes: '8.96387' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9489 takes: '10.5642' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9490 takes: '34.627' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9491 takes: '14.1418' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9492 takes: '12.2891' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9493 takes: '35.6169' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9494 takes: '16.5251' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9495 takes: '37.156' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9496 takes: '23.439' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9497 takes: '39.5239' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9498 takes: '15.4861' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9499 takes: '10.512' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9500 takes: '19.3489' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9501 takes: '21.5959' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9502 takes: '13.269' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9503 takes: '10.658' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9505 takes: '15.0979' milliseconds
+resultss: 2
+time_process_pic of frameid of: 9505 takes: '33.8899' milliseconds
+resultss: 0
+time_process_pic of frameid of: 9506 takes: '20.491' milliseconds
+resultss: 2
+time_process_pic of frameid of: 9507 takes: '35.7429' milliseconds
+resultss: 3
+time_process_pic of frameid of: 9508 takes: '25.9429' milliseconds
+resultss: 1
+time_process_pic of frameid of: 9510 takes: '15.6541' milliseconds
+resultss: 1
+time_process_pic of frameid of: 9510 takes: '38.999' milliseconds
+resultss: 2
+time_process_pic of frameid of: 9534 takes: '44.2769' milliseconds
+resultss: 4
+time_process_pic of frameid of: 10330 takes: '35.74' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10331 takes: '10.0188' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10332 takes: '15.6711' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10333 takes: '19.5911' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10334 takes: '10.7251' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10335 takes: '17.7339' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10336 takes: '35.3779' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10337 takes: '17.1389' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10338 takes: '13.229' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10339 takes: '12.238' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10340 takes: '10.2949' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10341 takes: '37.2668' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10342 takes: '14.4509' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10343 takes: '34.2949' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10344 takes: '15.188' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10345 takes: '28.02' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10346 takes: '21.667' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10347 takes: '36.8728' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10348 takes: '15.334' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10349 takes: '14.262' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10350 takes: '34.5962' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10351 takes: '16.2109' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10352 takes: '37.7981' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10353 takes: '19.709' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10354 takes: '20.2371' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10355 takes: '36.2639' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10356 takes: '9.55713' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10357 takes: '11.5959' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10358 takes: '13.833' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10359 takes: '35.521' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10360 takes: '16.2542' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10361 takes: '9.18018' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10362 takes: '15.0161' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10363 takes: '34.2522' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10364 takes: '18.386' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10365 takes: '19.509' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10366 takes: '35.3889' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10367 takes: '14.616' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10368 takes: '20.124' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10369 takes: '36.7422' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10370 takes: '23.0391' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10371 takes: '35.2361' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10372 takes: '17.9009' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10373 takes: '35.4609' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10374 takes: '14.5691' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10375 takes: '10.583' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10376 takes: '9.52905' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10377 takes: '36.4678' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10378 takes: '22.7629' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10379 takes: '11.457' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10380 takes: '35.6392' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10381 takes: '17.719' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10382 takes: '29.8569' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10383 takes: '18.4121' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10384 takes: '35.9041' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10385 takes: '22.26' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10386 takes: '24.7122' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10387 takes: '15.7449' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10388 takes: '29.969' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10389 takes: '33.7771' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10390 takes: '14.4819' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10391 takes: '38.186' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10392 takes: '24.9421' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10393 takes: '12.8879' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10394 takes: '9.45996' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10395 takes: '35.6511' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10396 takes: '14.731' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10397 takes: '20.6428' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10398 takes: '18.458' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10399 takes: '9.3291' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10400 takes: '9.34204' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10401 takes: '34.908' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10402 takes: '34.499' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10403 takes: '14.6431' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10404 takes: '14.2849' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10405 takes: '36.5791' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10406 takes: '17.334' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10407 takes: '25.4749' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10408 takes: '23.645' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10409 takes: '36.522' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10410 takes: '16.7461' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10411 takes: '14.8831' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10412 takes: '30.0571' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10413 takes: '9.62598' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10414 takes: '36.5569' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10415 takes: '14.8708' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10416 takes: '15.7322' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10417 takes: '20.7581' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10418 takes: '25.7229' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10419 takes: '34.665' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10420 takes: '22.324' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10421 takes: '23.1621' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10422 takes: '24.6399' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10423 takes: '20.363' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10424 takes: '19.7869' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10425 takes: '27.5601' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10426 takes: '9.573' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10427 takes: '10.3921' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10428 takes: '15.4089' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10429 takes: '14.4451' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10430 takes: '19.925' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10431 takes: '17.8459' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10432 takes: '9.78613' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10433 takes: '11.761' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10434 takes: '36.501' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10435 takes: '15.8079' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10436 takes: '35.9409' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10437 takes: '16.324' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10438 takes: '21.6802' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10439 takes: '35.708' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10440 takes: '14.5859' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10441 takes: '9.73389' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10442 takes: '36.0281' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10443 takes: '20.4731' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10444 takes: '18.8152' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10445 takes: '36.3889' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10446 takes: '33.1702' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10447 takes: '14.9441' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10448 takes: '18.9861' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10449 takes: '24.5901' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10450 takes: '14.5' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10451 takes: '35.512' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10452 takes: '27.3071' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10453 takes: '29.2539' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10454 takes: '32.2419' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10455 takes: '26.4141' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10456 takes: '16.8289' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10457 takes: '14.4941' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10458 takes: '33.26' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10459 takes: '13.9819' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10460 takes: '22.585' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10461 takes: '9.68604' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10462 takes: '37.677' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10463 takes: '19.6389' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10464 takes: '19.564' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10465 takes: '16.2629' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10466 takes: '12.7561' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10467 takes: '11.001' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10468 takes: '35.833' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10469 takes: '21.0498' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10470 takes: '18.104' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10471 takes: '35.8689' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10472 takes: '14.5481' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10473 takes: '19.3928' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10474 takes: '9.42212' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10475 takes: '9.39111' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10476 takes: '9.17578' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10477 takes: '9.65918' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10478 takes: '18.8101' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10479 takes: '18.551' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10480 takes: '35.605' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10481 takes: '18.5059' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10482 takes: '29.4519' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10483 takes: '32.8179' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10484 takes: '15.6191' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10485 takes: '18.1638' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10486 takes: '35.1211' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10487 takes: '18.252' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10488 takes: '35.5769' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10489 takes: '14.564' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10490 takes: '22.0642' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10491 takes: '19.5681' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10492 takes: '13.645' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10493 takes: '10.2419' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10494 takes: '9.89819' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10495 takes: '38.802' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10496 takes: '17.488' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10497 takes: '13.4299' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10498 takes: '20.8279' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10499 takes: '31.324' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10500 takes: '13.7329' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10501 takes: '34.7432' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10502 takes: '16.9521' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10503 takes: '11.8611' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10504 takes: '35.8171' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10505 takes: '9.26782' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10506 takes: '13.407' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10507 takes: '13.219' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10508 takes: '9.18286' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10509 takes: '9.646' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10510 takes: '9.41895' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10511 takes: '9.6189' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10512 takes: '37.968' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10513 takes: '35.3142' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10514 takes: '18.2219' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10515 takes: '20.2319' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10516 takes: '38.3779' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10517 takes: '14.7852' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10518 takes: '9.49805' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10519 takes: '9.67896' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10520 takes: '10.312' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10521 takes: '10.106' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10522 takes: '9.16699' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10523 takes: '32.7319' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10524 takes: '13.8889' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10525 takes: '13.0071' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10526 takes: '37.542' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10527 takes: '17.292' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10528 takes: '17.5391' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10529 takes: '10.7732' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10530 takes: '10.269' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10531 takes: '17.469' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10532 takes: '34.4241' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10533 takes: '24.239' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10534 takes: '22.1279' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10535 takes: '9.63892' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10536 takes: '37.8569' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10537 takes: '15.5598' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10538 takes: '12.9841' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10539 takes: '24.5898' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10540 takes: '13.0811' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10541 takes: '32.5171' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10542 takes: '12.624' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10543 takes: '12.603' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10544 takes: '11.76' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10545 takes: '27.9199' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10546 takes: '15.2839' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10547 takes: '14.9419' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10548 takes: '14.6399' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10549 takes: '15.2651' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10550 takes: '37.8359' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10551 takes: '14.8708' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10552 takes: '24.8079' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10553 takes: '22.3691' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10554 takes: '13.9751' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10555 takes: '38.186' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10556 takes: '17.303' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10557 takes: '36.384' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10558 takes: '13.147' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10559 takes: '10.239' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10560 takes: '10.9009' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10561 takes: '30.9241' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10562 takes: '12.937' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10563 takes: '14.123' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10564 takes: '17.7549' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10565 takes: '37.353' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10566 takes: '14.803' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10567 takes: '16.9561' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10568 takes: '22.521' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10569 takes: '11.261' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10570 takes: '9.25098' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10571 takes: '35.2979' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10572 takes: '14.7109' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10573 takes: '36.7888' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10574 takes: '18.1111' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10575 takes: '16.989' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10576 takes: '36.0049' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10577 takes: '29' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10578 takes: '12.8569' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10579 takes: '18.5' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10580 takes: '13.8191' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10581 takes: '39.6338' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10582 takes: '14.4341' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10583 takes: '38.696' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10584 takes: '14.697' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10585 takes: '36.071' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10586 takes: '13.7581' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10587 takes: '19.853' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10588 takes: '15.6511' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10589 takes: '39.988' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10590 takes: '13.4731' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10591 takes: '25.521' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10592 takes: '15.592' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10593 takes: '35.6169' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10594 takes: '15.3381' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10595 takes: '18.1721' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10596 takes: '34.0859' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10597 takes: '15.353' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10598 takes: '28.2971' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10599 takes: '13.593' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10600 takes: '11.05' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10601 takes: '9.69116' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10602 takes: '9.448' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10603 takes: '10.5989' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10604 takes: '9.82593' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10605 takes: '9.75391' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10606 takes: '10.0139' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10607 takes: '9.14404' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10608 takes: '16.658' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10609 takes: '9.34399' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10610 takes: '17.6621' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10611 takes: '9.58789' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10612 takes: '10.5229' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10613 takes: '11.645' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10614 takes: '10.1311' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10615 takes: '11.7312' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10616 takes: '35.748' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10617 takes: '11.1492' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10618 takes: '10.502' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10619 takes: '13.6831' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10620 takes: '17.7349' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10621 takes: '32.3921' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10622 takes: '11.9858' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10623 takes: '12.8499' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10624 takes: '18.8511' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10625 takes: '38.8999' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10626 takes: '13.7139' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10627 takes: '35.5459' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10628 takes: '14.531' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10629 takes: '14.582' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10630 takes: '14.7798' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10631 takes: '15.592' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10632 takes: '11.04' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10633 takes: '33.7981' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10634 takes: '13.0349' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10635 takes: '12.1169' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10636 takes: '20.0991' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10637 takes: '10.7979' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10638 takes: '12.6472' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10639 takes: '11.4299' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10640 takes: '38.5229' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10641 takes: '14.9722' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10642 takes: '34.1331' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10643 takes: '17.1851' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10644 takes: '42.731' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10645 takes: '15.386' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10646 takes: '12.0911' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10647 takes: '35.449' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10648 takes: '15.4822' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10649 takes: '36.377' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10650 takes: '15.0898' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10651 takes: '18.2949' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10652 takes: '27.189' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10653 takes: '25.49' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10654 takes: '19.3621' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10655 takes: '36.2761' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10656 takes: '15.354' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10657 takes: '18.397' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10658 takes: '28.2979' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10659 takes: '29.2419' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10660 takes: '12.95' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10661 takes: '13.03' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10662 takes: '37.666' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10663 takes: '15.832' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10664 takes: '29.0259' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10665 takes: '23.6101' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10666 takes: '21.8459' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10667 takes: '14.8569' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10668 takes: '18.4829' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10669 takes: '40.9431' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10670 takes: '37.5901' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10671 takes: '18.406' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10672 takes: '9.27515' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10673 takes: '9.86597' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10674 takes: '13.1421' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10675 takes: '10.3821' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10676 takes: '9.85498' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10677 takes: '9.81494' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10678 takes: '9.63794' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10679 takes: '9.87305' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10680 takes: '12.311' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10681 takes: '37.6028' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10682 takes: '14.491' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10683 takes: '25.4409' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10684 takes: '21.5229' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10685 takes: '37.1299' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10686 takes: '14.783' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10687 takes: '16.313' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10688 takes: '35.1741' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10689 takes: '17.1492' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10690 takes: '26.293' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10691 takes: '36.822' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10692 takes: '14.676' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10693 takes: '33.675' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10694 takes: '12.7351' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10695 takes: '10.8979' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10696 takes: '31.4299' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10697 takes: '9.698' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10698 takes: '9.427' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10699 takes: '9.86401' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10700 takes: '10.7419' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10701 takes: '37.8669' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10702 takes: '16.8171' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10703 takes: '36.52' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10704 takes: '14.593' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10705 takes: '37.8721' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10706 takes: '14.772' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10707 takes: '19.114' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10708 takes: '27.145' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10709 takes: '14.8311' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10710 takes: '24.8401' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10711 takes: '33.918' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10712 takes: '9.80518' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10713 takes: '23.6829' milliseconds
+resultss: 0
+time_process_pic of frameid of: 10714 takes: '28.052' milliseconds
+resultss: 0

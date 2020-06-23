@@ -1,8 +1,10 @@
-# arhud
+# ar_system
 
-# arhud_server
-Pls refer to darknet for the requirements of arhud_server. To compile, simply run make.
+# server_darknet
+AR server software for a Linux-based PC which has an NVIDIA GPU and CUDA installed. It runs using Darknet YOLOv4, to compile `cd` into main directory and then execute `run` make command.
 
+# client_android
+AR Android app which connects to `server_darknet` to provide object detection and recognition.
 
-# arhud_client
-Install and run in android. Needs to write the port and IP of server in a local file on the phone, the directory of the file refers to "ARManager.java"
+# client_simple
+Simple client which sends and receives frames, it is written in Kotlin and compiled to be a Java executable.  

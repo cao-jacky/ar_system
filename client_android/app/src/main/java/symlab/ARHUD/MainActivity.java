@@ -1,9 +1,9 @@
 package symlab.ARHUD;
 
-
 import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -12,6 +12,7 @@ import android.hardware.Camera;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
+import android.media.Image;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -23,6 +24,9 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.FrameLayout;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -30,12 +34,9 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 
 
-import com.instacart.library.truetime.TrueTime;
-
 import symlab.CloudAR.ARManager;
 import symlab.CloudAR.Constants;
 import symlab.CloudAR.Detected;
-import java.util.Date;
 
 public class MainActivity extends Activity implements LocationListener, SensorEventListener, View.OnTouchListener {
 
@@ -72,28 +73,44 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
     private final float[] mOrientationAngles = new float[3];
     private double angle;
 
+    public static ImageView uploadStatus;
+    public static ImageView downloadStatus;
+
+    FrameLayout settingsButton;
+
     String TAG = "DBG";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        initTrueTime(this);
-        Log.d(Constants.TAG, "true time is " + getTrueTime().getTime());
         Log.d(Constants.TAG, "system time is " + System.currentTimeMillis());
 
         Log.i(Constants.TAG, " onCreate() called.");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         txtLat = findViewById(R.id.text1);
+
+        // Status indicators for sending and receiving from server
+        uploadStatus = (ImageView)findViewById(R.id.statusUpload);
+        downloadStatus = (ImageView)findViewById(R.id.statusDownload);
+
+        // Settings button
+        settingsButton = (FrameLayout)findViewById(R.id.settingsButton);
+        settingsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openSettingsActivity();
+            }
+        });
+
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         //mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            // TODO: Consider calling
             return;
         }
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, this);
         //-----------------------------------pengzhou: location service-----------------------------
 
-        mPreview = findViewById(R.id.preview);
+        mPreview = findViewById(R.id.cameraPreview);
         mPreview.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE
                 | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
                 | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
@@ -122,18 +139,9 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         });
     }
 
-    public static Date getTrueTime() {
-        Date date = TrueTime.isInitialized() ? TrueTime.now() : new Date();
-        return date;
-    }
-
-    public static void initTrueTime(Context ctx) {
-        if (isNetworkConnected(ctx)) {
-            if (!TrueTime.isInitialized()) {
-                InitTrueTimeAsyncTask trueTime = new InitTrueTimeAsyncTask(ctx);
-                trueTime.execute();
-            }
-        }
+    public void openSettingsActivity(){
+        Intent intent = new Intent(this, SettingsActivity.class);
+        startActivity(intent);
     }
 
     public static boolean isNetworkConnected(Context ctx) {
@@ -153,13 +161,13 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
 
     @Override
     public void onLocationChanged(Location location) {
-        txtLat = findViewById(R.id.text1);
-        txtLat.setText("Latitude:" + location.getLatitude() + ", Longitude:" + location.getLongitude());
-        String locationstring = txtLat.getText().toString();
-        locationbyte = locationstring.getBytes();
-        latitude =  location.getLatitude();
-        longitude = location.getLongitude();
-        bearing = location.getBearing();
+        //txtLat = findViewById(R.id.text1);
+        //txtLat.setText("Latitude:" + location.getLatitude() + ", Longitude:" + location.getLongitude());
+        //String locationstring = txtLat.getText().toString();
+//        locationbyte = locationstring.getBytes();
+//        latitude =  location.getLatitude();
+//        longitude = location.getLongitude();
+//        bearing = location.getBearing();
     }
 
     @Override
@@ -299,10 +307,7 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
 
             frameID++;
 
-            //long time= System.currentTimeMillis();
-            //timeCaptured = (double)time;
-            //timeSend = (double)time;
-            ARManager.getInstance().recognizeTime(frameID, data);//, timeCaptured, timeSend);
+            ARManager.getInstance().recognizeTime(frameID, data);
             ARManager.getInstance().driveFrame(data);
             mDraw.invalidate();
         }
@@ -332,8 +337,9 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
             paintWord.setStyle(Paint.Style.STROKE);
             paintWord.setStrokeWidth(5);
             paintWord.setColor(Color.BLUE);
-            paintWord.setTextAlign(Paint.Align.CENTER);
+            paintWord.setTextAlign(Paint.Align.LEFT);
             paintWord.setTextSize(50);
+            paintWord.setAlpha(70);
 
             paintAlarm = new Paint();
             paintAlarm.setStyle(Paint.Style.STROKE);
@@ -346,7 +352,7 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
             paintLine.setStyle(Paint.Style.STROKE);
             paintLine.setStrokeWidth(10);
             paintLine.setColor(Color.GREEN);
-
+            paintLine.setAlpha(70);
 
             paintIcon = new Paint();
             paintIcon.setColor(Color.CYAN);

@@ -5,14 +5,91 @@
     xmlns:surfaceview="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
-    <SurfaceView  android:id="@+id/preview"
+    <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-    </SurfaceView>
+        android:layout_height="match_parent">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/text1"/>
+        <SurfaceView
+            android:id="@+id/cameraPreview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            surfaceview:layout_constraintBottom_toBottomOf="parent"
+            surfaceview:layout_constraintEnd_toEndOf="parent"
+            surfaceview:layout_constraintStart_toStartOf="parent"
+            surfaceview:layout_constraintTop_toTopOf="parent"></SurfaceView>
 
+        <LinearLayout
+            android:id="@+id/networkStatusBackground"
+            android:layout_width="59dp"
+            android:layout_height="28dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="16dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            surfaceview:layout_constraintEnd_toEndOf="parent"
+            surfaceview:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/statusUpload"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:alpha="0.5"
+                android:src="@drawable/baseline_arrow_upward_black_48dp" />
+
+            <ImageView
+                android:id="@+id/statusDownload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha="0.5"
+                android:background="#FFFFFF"
+                android:src="@drawable/baseline_arrow_downward_black_48dp" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/settingsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_shape"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="5dp"
+            android:visibility="visible"
+            surfaceview:layout_constraintStart_toStartOf="parent"
+            surfaceview:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/settings_icon" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/statsButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_shape"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="5dp"
+            android:visibility="visible"
+            surfaceview:layout_constraintStart_toEndOf="@+id/settingsButton"
+            surfaceview:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/info_icon" />
+
+        </FrameLayout>
+
+    </android.support.constraint.ConstraintLayout>
 </RelativeLayout>

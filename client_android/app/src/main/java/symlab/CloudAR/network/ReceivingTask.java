@@ -15,10 +15,10 @@ import java.io.FileWriter;
 import java.io.FileOutputStream;
 import java.io.BufferedWriter;
 
+import symlab.ARHUD.MainActivity;
 import symlab.CloudAR.Constants;
 import symlab.CloudAR.Detected;
 
-import static symlab.ARHUD.MainActivity.getTrueTime;
 
 /**
  * Created by st0rm23 on 2017/2/20.
@@ -65,7 +65,6 @@ public class ReceivingTask implements Runnable{
 
         resPacket.clear();
         try {
-            true_time = getTrueTime().getTime();
             time = System.currentTimeMillis();
             timeReceived = (double)time;
             if (datagramChannel.receive(resPacket) != null) {
@@ -79,6 +78,9 @@ public class ReceivingTask implements Runnable{
         }
 
         if (res != null) {
+
+            MainActivity.downloadStatus.setImageAlpha(0);
+
             System.arraycopy(res, 0, tmp, 0, 4);
             int resultID = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
 
@@ -108,8 +110,8 @@ public class ReceivingTask implements Runnable{
             }
 
             if (newMarkerNum >= 0) {
-                Log.d(Constants.Eval, "" + newMarkerNum + " res " + resultID + " received ");
-                Log.d(Constants.TAG, "true time received for " + resultID + " is " + true_time + " and system time is " + time);
+//                Log.d(Constants.Eval, "" + newMarkerNum + " res " + resultID + " received ");
+//                Log.d(Constants.TAG, "true time received for " + resultID + " is " + true_time + " and system time is " + time);
                 Detected detected[] = new Detected[newMarkerNum];
 
                 /*try{BufferedWriter bw =
@@ -151,6 +153,8 @@ public class ReceivingTask implements Runnable{
                     callback.onReceive(resultID, detected);
                 }
             }
+
+            MainActivity.downloadStatus.setImageAlpha(255);
         }
     }
 

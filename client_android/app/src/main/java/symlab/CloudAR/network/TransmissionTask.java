@@ -1,7 +1,9 @@
 package symlab.CloudAR.network;
 
+import android.app.Activity;
 import android.os.Environment;
 import android.util.Log;
+import android.widget.ImageView;
 
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;
@@ -18,15 +20,15 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.channels.DatagramChannel;
 
+import symlab.ARHUD.MainActivity;
+import symlab.ARHUD.R;
 import symlab.CloudAR.Constants;
-
-import static symlab.ARHUD.MainActivity.getTrueTime;
 
 /**
  * Created by st0rm23 on 2017/2/20.
  */
 
-public class TransmissionTask implements Runnable {
+public class TransmissionTask extends Activity implements Runnable {
 
     private final int MESSAGE_META = 0;
     private final int IMAGE_DETECT = 2;
@@ -54,6 +56,7 @@ public class TransmissionTask implements Runnable {
     public Mat YUVMatTrans, YUVMatScaled, GrayScaled;
     private long time;
     private long true_time;
+
 
     public TransmissionTask(DatagramChannel datagramChannel, SocketAddress serverAddress) {
         this.datagramChannel = datagramChannel;
@@ -94,6 +97,9 @@ public class TransmissionTask implements Runnable {
     public void run() {
         File sdcard = Environment.getExternalStorageDirectory();
         File file = new File(sdcard,"CloudAR/send.txt");
+
+        MainActivity.uploadStatus.setImageAlpha(0);
+
         if (dataType == IMAGE_DETECT) {
             YUVMatTrans.put(0, 0, frameData);
 
@@ -133,17 +139,18 @@ public class TransmissionTask implements Runnable {
             ByteBuffer buffer = ByteBuffer.allocate(packetContent.length).put(packetContent);
             buffer.flip();
             datagramChannel.send(buffer, serverAddress);
-            true_time = getTrueTime().getTime();
             //time = System.currentTimeMillis();
             //timeSend = (double)time;
             //Log.d(Constants.TAG, "true time sent for " + frmID + " is " + true_time + " and system time is " + time);
 
-            Log.d(Constants.Eval, frmID + " sent to " + serverAddress);
+            //Log.d(Constants.Eval, frmID + " sent to " + serverAddress);
 
             //if (dataType == MESSAGE_META)
             //    Log.d(Constants.Eval, "metadata " + frmID + " sent ");
             //else
                 //Log.d(Constants.Eval, frmID + " sent at " +  timeSend );
+
+            MainActivity.uploadStatus.setImageAlpha(255);
 
             try{
                 BufferedWriter bw =

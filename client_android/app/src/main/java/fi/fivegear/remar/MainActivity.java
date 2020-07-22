@@ -8,6 +8,7 @@ import android.content.pm.PackageManager;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.graphics.Typeface;
 import android.hardware.Camera;
 import android.location.Location;
 import android.location.LocationListener;
@@ -19,12 +20,15 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.multidex.MultiDex;
 import android.support.v4.app.ActivityCompat;
+import android.util.DisplayMetrics;
 import android.util.Log;
+import android.view.Display;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -37,6 +41,9 @@ import fi.fivegear.remar.R;
 
 import static fi.fivegear.remar.Constants.axisShiftHorizontal;
 import static fi.fivegear.remar.Constants.axisShiftVertical;
+import static fi.fivegear.remar.Constants.previewHeight;
+import static fi.fivegear.remar.Constants.previewWidth;
+import static fi.fivegear.remar.Constants.recoScale;
 
 public class MainActivity extends Activity implements LocationListener, SensorEventListener, View.OnTouchListener {
 
@@ -76,6 +83,9 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
     public static ImageView uploadStatus;
     public static ImageView downloadStatus;
 
+    public static int screenWidth;
+    public static int screenHeight;
+
     FrameLayout settingsButton;
 
     String TAG = "DBG";
@@ -101,6 +111,8 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
                 openSettingsActivity();
             }
         });
+
+        getScreenResolution(this);
 
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         //mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
@@ -137,6 +149,16 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
                 //mDraw.updateOrientationAngles();
             }
         });
+    }
+
+    private void getScreenResolution(Context context)
+    {
+        WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
+        Display display = wm.getDefaultDisplay();
+        DisplayMetrics metrics = new DisplayMetrics();
+        display.getMetrics(metrics);
+        screenWidth = metrics.widthPixels;
+        screenHeight = metrics.heightPixels;
     }
 
     public void checkPermission() {
@@ -311,7 +333,7 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
     SurfaceHolder.Callback surfaceCallback = new SurfaceHolder.Callback() {
         public void surfaceCreated(SurfaceHolder holder) {
             Log.i(Constants.TAG, " surfaceCreated() called.");
-            initPreview(Constants.previewWidth, Constants.previewHeight);
+            initPreview(previewWidth, Constants.previewHeight);
             if (mCameraConfigured && mCamera != null) {
                 mCamera.setDisplayOrientation(90);
                 mCamera.startPreview();
@@ -348,6 +370,7 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         Paint paintLine;
         Paint paintAlarm;
         Paint paintIcon;
+        Paint paintBackground;
         private boolean ShowFPS = true;
         private boolean ShowEdge = true;
         private boolean ShowName = true;
@@ -363,31 +386,24 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         public DrawOnTop(Context context) {
             super(context);
 
+            paintBackground = new Paint();
+            paintBackground.setColor(Color.parseColor("#FAFAFA"));
+//            paintBackground.setAlpha(90);
+
             paintWord = new Paint();
             paintWord.setStyle(Paint.Style.STROKE);
             paintWord.setStrokeWidth(5);
-            paintWord.setColor(Color.BLUE);
+            paintWord.setColor(Color.BLACK);
             paintWord.setTextAlign(Paint.Align.LEFT);
             paintWord.setTextSize(50);
-            paintWord.setAlpha(70);
-
-            paintAlarm = new Paint();
-            paintAlarm.setStyle(Paint.Style.STROKE);
-            paintAlarm.setStrokeWidth(10);
-            paintAlarm.setColor(Color.RED);
-            paintAlarm.setTextAlign(Paint.Align.CENTER);
-            paintAlarm.setTextSize(100);
+//            paintWord.setAlpha(90);
+            paintWord.setTypeface(Typeface.create("sans-serif-thin", Typeface.NORMAL));
 
             paintLine = new Paint();
             paintLine.setStyle(Paint.Style.STROKE);
-            paintLine.setStrokeWidth(10);
-            paintLine.setColor(Color.GREEN);
-            paintLine.setAlpha(70);
-
-            paintIcon = new Paint();
-            paintIcon.setColor(Color.CYAN);
-            //mCustomImage_pedestrian = ContextCompat.getDrawable(context, R.drawable.pedestrian);
-            //mCustomImage_cup = ContextCompat.getDrawable(context, R.drawable.cup);
+            paintLine.setStrokeWidth(7);
+            paintLine.setColor(Color.parseColor("#FAFAFA"));
+//            paintLine.setAlpha(90);
 
         }
 
@@ -443,12 +459,14 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
 
             if(detecteds != null) {
                 for (Detected detected : detecteds) {
-                    canvas.drawText(detected.name +  ". Prob: " + detected.prob,
-                            (detected.left-2-axisShiftHorizontal)*dispScale, (detected.top-2+axisShiftVertical)*dispScale, paintWord);
-                    canvas.drawRect((detected.left-axisShiftHorizontal)*dispScale, (detected.top+axisShiftVertical)*dispScale,
-                            (detected.right-axisShiftHorizontal)*dispScale, (detected.bot+axisShiftVertical)*dispScale, paintLine);
-
-
+                    float scale_width = (previewWidth-screenWidth);
+                    float scale_height = (previewHeight-screenHeight+screenHeight/2-screenHeight/6);
+                    canvas.drawRect((detected.left)*dispScale-scale_width-5, (detected.top)*(dispScale)-scale_height-50,
+                            (detected.right)*dispScale-scale_width, (detected.top)*(dispScale)-scale_height, paintBackground);
+                    canvas.drawText(detected.name +  " " + detected.prob,
+                            (detected.left)*dispScale-scale_width, (detected.top)*dispScale-scale_height-10, paintWord);
+                    canvas.drawRect((detected.left)*dispScale-scale_width, (detected.top)*(dispScale)-scale_height,
+                            (detected.right)*dispScale-scale_width, (detected.bot)*(dispScale)-scale_height, paintLine);
                 }
 
             }

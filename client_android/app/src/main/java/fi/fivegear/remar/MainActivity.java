@@ -35,6 +35,9 @@ import android.hardware.SensorManager;
 
 import fi.fivegear.remar.R;
 
+import static fi.fivegear.remar.Constants.axisShiftHorizontal;
+import static fi.fivegear.remar.Constants.axisShiftVertical;
+
 public class MainActivity extends Activity implements LocationListener, SensorEventListener, View.OnTouchListener {
 
     private SurfaceView mPreview;
@@ -310,6 +313,7 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
             Log.i(Constants.TAG, " surfaceCreated() called.");
             initPreview(Constants.previewWidth, Constants.previewHeight);
             if (mCameraConfigured && mCamera != null) {
+                mCamera.setDisplayOrientation(90);
                 mCamera.startPreview();
                 mCamera.autoFocus(null);
                 mInPreview = true;
@@ -349,7 +353,8 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         private boolean ShowName = true;
         private int preFrameID;
         private float dispScale = Constants.dispScale;
-        private int axisShift = Constants.axisShift;
+        private int axisShiftHorizontal = Constants.axisShiftHorizontal;
+        private int axisShiftVertical = Constants.axisShiftVertical;
         private Detected[] detecteds;
         private double distance;
         //private Drawable mCustomImage_pedestrian;
@@ -439,9 +444,9 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
             if(detecteds != null) {
                 for (Detected detected : detecteds) {
                     canvas.drawText(detected.name +  ". Prob: " + detected.prob,
-                            (detected.left-2+axisShift)*dispScale, (detected.top-2)*dispScale, paintWord);
-                    canvas.drawRect((detected.left+axisShift)*dispScale, (detected.top)*dispScale,
-                            (detected.right+axisShift)*dispScale, (detected.bot)*dispScale, paintLine);
+                            (detected.left-2-axisShiftHorizontal)*dispScale, (detected.top-2+axisShiftVertical)*dispScale, paintWord);
+                    canvas.drawRect((detected.left-axisShiftHorizontal)*dispScale, (detected.top+axisShiftVertical)*dispScale,
+                            (detected.right-axisShiftHorizontal)*dispScale, (detected.bot+axisShiftVertical)*dispScale, paintLine);
 
 
                 }

@@ -1782,7 +1782,8 @@ struct result* detect()
  
     //image im;
     //image sized = load_image_resize(input, net.w, net.h, net.c, &im);
-    image im = load_image("received.jpg", 0, 0, net.c);
+    image im_load = load_image("received.jpg", 0, 0, net.c);
+    image im = rotate_image(im_load, -1.57079632679);
     image sized = letterbox_image(im, net.w, net.h);
     //else sized = resize_image(im, net.w, net.h);
     layer l = net.layers[net.n - 1];

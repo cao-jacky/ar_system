@@ -7,10 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.Toast;
 
 import fi.fivegear.remar.R;
-import fi.fivegear.remar.SettingsActivity;
 import fi.fivegear.remar.activities.presetsActivity;
 
 public class settingServer extends Fragment {
@@ -18,7 +16,7 @@ public class settingServer extends Fragment {
     Button editPresetsButton;
 
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        view = inflater.inflate(R.layout.settings_server_fragment, container, false);
+        view = inflater.inflate(R.layout.activity_settings_server, container, false);
 
         editPresetsButton = (Button) view.findViewById(R.id.editPresets);
         editPresetsButton.setOnClickListener(new View.OnClickListener() {

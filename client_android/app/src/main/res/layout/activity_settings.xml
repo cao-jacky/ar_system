@@ -8,73 +8,47 @@
     android:background="#fafafa">
 
     <LinearLayout
-        android:layout_width="729dp"
-        android:layout_height="409dp"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
         app:layout_constraintTop_toTopOf="parent">
 
-        <ScrollView
-            android:id="@+id/splitLeft"
-            android:layout_width="345dp"
-            android:layout_height="match_parent">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <TextView
-                    android:id="@+id/settingsTitle"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:paddingTop="30dp"
-                    android:paddingBottom="10dp"
-                    android:text="Settings"
-                    android:textColor="#000000"
-                    android:textSize="24sp" />
-
-                <TextView
-                    android:id="@+id/settingServer"
-                    android:layout_width="match_parent"
-                    android:layout_height="37dp"
-                    android:alpha="1"
-                    android:text="Server Details"
-                    android:textColor="@drawable/selector_grey_black"
-                    android:textSize="18sp"
-                    android:onClick="onClick"
-                    android:clickable="true"
-                    android:focusable="true"/>
-
-                <TextView
-                    android:id="@+id/settingProtocolSending"
-                    android:layout_width="match_parent"
-                    android:layout_height="37dp"
-                    android:alpha="1"
-                    android:text="Protocol and Sending Rate"
-                    android:textColor="@drawable/selector_grey_black"
-                    android:textSize="18sp"
-                    android:onClick="onClick"
-                    android:clickable="true"
-                    android:focusable="true"/>
-
-            </LinearLayout>
-        </ScrollView>
-
-        <View
-            android:id="@+id/view"
-            android:layout_width="1dp"
-            android:layout_height="match_parent"
-            android:alpha="0.3"
-            android:background="@android:color/darker_gray" />
-
-        <FrameLayout
-            android:id="@+id/frameLayout"
+        <TextView
+            android:id="@+id/settingsTitle"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="10dp" />
+            android:paddingTop="70dp"
+            android:paddingBottom="20dp"
+            android:text="Settings"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/settingServer"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:alpha="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onClick"
+            android:paddingBottom="10dp"
+            android:text="Server Details"
+            android:textColor="@drawable/selector_grey_black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/settingProtocolSending"
+            android:layout_width="match_parent"
+            android:layout_height="37dp"
+            android:alpha="1"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onClick"
+            android:paddingBottom="10dp"
+            android:text="Protocol and Sending Rate"
+            android:textColor="@drawable/selector_grey_black"
+            android:textSize="18sp" />
 
     </LinearLayout>
 

@@ -16,6 +16,7 @@ import java.io.BufferedWriter;
 import fi.fivegear.remar.MainActivity;
 import fi.fivegear.remar.Constants;
 import fi.fivegear.remar.Detected;
+import fi.fivegear.remar.R;
 
 
 /**
@@ -76,7 +77,7 @@ public class ReceivingTask implements Runnable{
         }
 
         if (res != null) {
-
+//            MainActivity.downloadStatus.setImageResource(R.drawable.status_download_coloured);
             MainActivity.downloadStatus.setImageAlpha(0);
 
             System.arraycopy(res, 0, tmp, 0, 4);

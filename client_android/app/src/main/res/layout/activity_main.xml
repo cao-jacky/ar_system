@@ -24,7 +24,7 @@
             android:layout_height="28dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
-            android:background="#FFFFFF"
+            android:background="@drawable/rounded_rectangle"
             android:orientation="horizontal"
             surfaceview:layout_constraintEnd_toEndOf="parent"
             surfaceview:layout_constraintTop_toTopOf="parent">
@@ -34,17 +34,16 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:alpha="0.5"
-                android:src="@drawable/baseline_arrow_upward_black_48dp" />
+                android:alpha="1.0"
+                android:src="@drawable/status_upload_coloured" />
 
             <ImageView
                 android:id="@+id/statusDownload"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:alpha="0.5"
-                android:background="#FFFFFF"
-                android:src="@drawable/baseline_arrow_downward_black_48dp" />
+                android:alpha="1.0"
+                android:src="@drawable/status_download_coloured" />
         </LinearLayout>
 
         <FrameLayout

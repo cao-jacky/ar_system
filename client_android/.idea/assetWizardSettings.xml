@@ -37,7 +37,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="imagePath" value="$PROJECT_DIR$/app/src/main/res/drawable/baseline_arrow_upward_black_48dp.png" />
+                                                <entry key="imagePath" value="$PROJECT_DIR$/app/src/main/res/drawable/baseline_arrow_downward_black_48dp.png" />
                                                 <entry key="opacityPercent" value="80" />
                                               </map>
                                             </option>
@@ -71,10 +71,10 @@
                                   <option name="values">
                                     <map>
                                       <entry key="assetType" value="IMAGE" />
-                                      <entry key="imageAsset" value="$PROJECT_DIR$/app/src/main/res/drawable/baseline_arrow_upward_black_48dp.png" />
-                                      <entry key="outputName" value="statusUpload" />
+                                      <entry key="imageAsset" value="$PROJECT_DIR$/app/src/main/res/drawable/baseline_arrow_downward_black_48dp.png" />
+                                      <entry key="outputName" value="statusDownloadColoured" />
                                       <entry key="theme" value="CUSTOM" />
-                                      <entry key="themeColor" value="000000" />
+                                      <entry key="themeColor" value="dd2c00" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -304,6 +304,11 @@
                                 </PersistentState>
                               </value>
                             </entry>
+                          </map>
+                        </option>
+                        <option name="values">
+                          <map>
+                            <entry key="outputIconType" value="ACTIONBAR" />
                           </map>
                         </option>
                       </PersistentState>

@@ -1,8 +1,9 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme">
-        <!-- Customize your theme here. -->
+    <style name="AppTheme" parent="android:Theme.Material.Light">
+        <item name="android:colorPrimary">#69F0AE</item>
+        <item name="android:colorAccent">#ffb300</item>
     </style>
 
 </resources>

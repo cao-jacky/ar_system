@@ -35,7 +35,7 @@ public class ARManager {
 
     private DatagramChannel dataChannel;
     private SocketAddress serverAddr;
-    private String ip;
+    public static String serverIP;
     private int port;
 
     private static boolean isCloudBased;
@@ -61,11 +61,11 @@ public class ARManager {
         try {
             BufferedReader br = new BufferedReader(new FileReader(file));
 
-            ip = br.readLine();
+            serverIP = br.readLine();
             port = Integer.parseInt(br.readLine());
             br.close();
 
-            serverAddr = new InetSocketAddress(ip, port);
+            serverAddr = new InetSocketAddress(serverIP, port);
             dataChannel = DatagramChannel.open();
             dataChannel.configureBlocking(false);
             // pengzhou: the receiving phone needs the following sentence

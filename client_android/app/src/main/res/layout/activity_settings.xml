@@ -42,9 +42,11 @@
                     android:layout_height="37dp"
                     android:alpha="1"
                     android:text="Server Details"
+                    android:textColor="@drawable/selector_grey_black"
                     android:textSize="18sp"
                     android:onClick="onClick"
-                    android:clickable="true"/>
+                    android:clickable="true"
+                    android:focusable="true"/>
 
                 <TextView
                     android:id="@+id/settingProtocolSending"
@@ -52,12 +54,21 @@
                     android:layout_height="37dp"
                     android:alpha="1"
                     android:text="Protocol and Sending Rate"
+                    android:textColor="@drawable/selector_grey_black"
                     android:textSize="18sp"
                     android:onClick="onClick"
-                    android:clickable="true"/>
+                    android:clickable="true"
+                    android:focusable="true"/>
 
             </LinearLayout>
         </ScrollView>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:alpha="0.3"
+            android:background="@android:color/darker_gray" />
 
         <FrameLayout
             android:id="@+id/frameLayout"

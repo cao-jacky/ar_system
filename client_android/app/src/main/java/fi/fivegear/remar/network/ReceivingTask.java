@@ -1,7 +1,6 @@
-package symlab.CloudAR.network;
+package fi.fivegear.remar.network;
 
 import android.os.Environment;
-import android.util.Log;
 
 import org.opencv.core.Point;
 
@@ -12,12 +11,11 @@ import java.nio.channels.DatagramChannel;
 
 import java.io.File;
 import java.io.FileWriter;
-import java.io.FileOutputStream;
 import java.io.BufferedWriter;
 
-import symlab.ARHUD.MainActivity;
-import symlab.CloudAR.Constants;
-import symlab.CloudAR.Detected;
+import fi.fivegear.remar.MainActivity;
+import fi.fivegear.remar.Constants;
+import fi.fivegear.remar.Detected;
 
 
 /**

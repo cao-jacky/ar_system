@@ -1,17 +1,12 @@
-package symlab.CloudAR;
+package fi.fivegear.remar;
 
 import android.content.Context;
-import android.location.Location;
-import android.location.LocationListener;
-import android.location.LocationProvider;
 import android.os.Build;
 import android.os.Environment;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Process;
 import android.util.Log;
-
-import com.google.android.gms.common.api.GoogleApiClient;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -21,8 +16,8 @@ import java.net.InetSocketAddress;
 import java.net.SocketAddress;
 import java.nio.channels.DatagramChannel;
 
-import symlab.CloudAR.network.ReceivingTask;
-import symlab.CloudAR.network.TransmissionTask;
+import fi.fivegear.remar.network.ReceivingTask;
+import fi.fivegear.remar.network.TransmissionTask;
 
 /**
  * Created by st0rm23 on 2017/2/18.

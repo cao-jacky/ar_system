@@ -1,4 +1,4 @@
-package symlab.ARHUD;
+package fi.fivegear.remar;
 
 import android.Manifest;
 import android.app.Activity;
@@ -12,10 +12,11 @@ import android.hardware.Camera;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
-import android.media.Image;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.multidex.MultiDex;
 import android.support.v4.app.ActivityCompat;
 import android.util.Log;
@@ -24,7 +25,6 @@ import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -33,10 +33,7 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 
-
-import symlab.CloudAR.ARManager;
-import symlab.CloudAR.Constants;
-import symlab.CloudAR.Detected;
+import fi.fivegear.remar.R;
 
 public class MainActivity extends Activity implements LocationListener, SensorEventListener, View.OnTouchListener {
 
@@ -82,12 +79,12 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        Log.d(Constants.TAG, "system time is " + System.currentTimeMillis());
-
-        Log.i(Constants.TAG, " onCreate() called.");
         super.onCreate(savedInstanceState);
+
+        // Check for user permissions before loading main activity
+        checkPermission();
+
         setContentView(R.layout.activity_main);
-        txtLat = findViewById(R.id.text1);
 
         // Status indicators for sending and receiving from server
         uploadStatus = (ImageView)findViewById(R.id.statusUpload);
@@ -137,6 +134,33 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
                 //mDraw.updateOrientationAngles();
             }
         });
+    }
+
+    public void checkPermission() {
+        if (Build.VERSION.SDK_INT >= 23) {
+            if (checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED
+                    && checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED
+                    && checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED
+                    && checkSelfPermission(android.Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+
+            } else {
+                ActivityCompat.requestPermissions(this, new String[]{
+                        Manifest.permission.CAMERA,
+                        Manifest.permission.WRITE_EXTERNAL_STORAGE,
+                        Manifest.permission.ACCESS_FINE_LOCATION,
+                        Manifest.permission.ACCESS_COARSE_LOCATION,}, 1);
+            }
+        }
+    }
+
+
+    @Override
+    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+        if (requestCode == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED && grantResults[1] == PackageManager.PERMISSION_GRANTED) {
+
+        } else {
+            checkPermission();
+        }
     }
 
     public void openSettingsActivity(){
@@ -203,8 +227,10 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         Log.i(Constants.TAG, " onResume() called.");
         super.onResume();
 
-        mCamera = Camera.open();
-        ARManager.getInstance().start();
+        if (checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
+            mCamera = Camera.open();
+            ARManager.getInstance().start();
+        }
     }
 
     @Override

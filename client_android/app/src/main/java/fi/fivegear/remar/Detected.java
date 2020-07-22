@@ -1,4 +1,4 @@
-package symlab.CloudAR;
+package fi.fivegear.remar;
 
 public class Detected {
     public String name;

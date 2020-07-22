@@ -1,4 +1,4 @@
-package symlab.ARHUD;
+package fi.fivegear.remar;
 
 import android.app.Activity;
 import android.app.Fragment;
@@ -6,10 +6,10 @@ import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
-import symlab.ARHUD.fragments.settingServer;
+import fi.fivegear.remar.R;
+import fi.fivegear.remar.fragments.settingServer;
 
 
 public class SettingsActivity extends Activity {

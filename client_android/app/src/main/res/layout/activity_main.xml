@@ -3,7 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:surfaceview="http://schemas.android.com/apk/res-auto"
-    tools:context=".MainActivity">
+    tools:context=".remar.MainActivity">
 
     <android.support.constraint.ConstraintLayout
         android:layout_width="match_parent"

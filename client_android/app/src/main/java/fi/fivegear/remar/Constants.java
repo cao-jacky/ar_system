@@ -1,4 +1,4 @@
-package symlab.CloudAR;
+package fi.fivegear.remar;
 
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;

@@ -2,7 +2,7 @@ package fi.fivegear.remar.network;
 
 import android.app.Activity;
 import android.os.Environment;
-import android.support.v4.content.ContextCompat;
+import androidx.core.content.ContextCompat;
 
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;
@@ -21,7 +21,6 @@ import java.nio.channels.DatagramChannel;
 
 import fi.fivegear.remar.MainActivity;
 import fi.fivegear.remar.Constants;
-import fi.fivegear.remar.R;
 
 /**
  * Created by st0rm23 on 2017/2/20.

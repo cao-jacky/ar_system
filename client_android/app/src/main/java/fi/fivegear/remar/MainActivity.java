@@ -17,9 +17,9 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.multidex.MultiDex;
-import android.support.v4.app.ActivityCompat;
+import androidx.annotation.NonNull;
+import androidx.multidex.MultiDex;
+import androidx.core.app.ActivityCompat;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Display;
@@ -37,7 +37,6 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 
-import fi.fivegear.remar.R;
 import fi.fivegear.remar.activities.SettingsActivity;
 
 import static fi.fivegear.remar.Constants.previewHeight;

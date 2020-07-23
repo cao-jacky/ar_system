@@ -38,12 +38,10 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 
 import fi.fivegear.remar.R;
+import fi.fivegear.remar.activities.SettingsActivity;
 
-import static fi.fivegear.remar.Constants.axisShiftHorizontal;
-import static fi.fivegear.remar.Constants.axisShiftVertical;
 import static fi.fivegear.remar.Constants.previewHeight;
 import static fi.fivegear.remar.Constants.previewWidth;
-import static fi.fivegear.remar.Constants.recoScale;
 
 public class MainActivity extends Activity implements LocationListener, SensorEventListener, View.OnTouchListener {
 

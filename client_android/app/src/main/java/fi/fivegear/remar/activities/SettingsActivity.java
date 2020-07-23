@@ -1,4 +1,4 @@
-package fi.fivegear.remar;
+package fi.fivegear.remar.activities;
 
 import android.app.Activity;
 import android.app.Fragment;

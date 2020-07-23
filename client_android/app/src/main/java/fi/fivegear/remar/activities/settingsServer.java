@@ -2,6 +2,7 @@ package fi.fivegear.remar.activities;
 
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
@@ -30,20 +31,12 @@ public class settingsServer extends Activity {
 
     Button editServerDetails;
 
-    private String m_Text = "";
-
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings_server);
 
         // using SharedPreferences to set current server IP and port
         sharedPreferences = getSharedPreferences(currServerSettings, Context.MODE_PRIVATE);
-
-//        // testing sharedpreferences
-//        SharedPreferences.Editor editor = sharedPreferences.edit();
-//        editor.putString("currServerIP", "100.68.116.246");
-//        editor.putInt("currServerPort", 52727);
-//        editor.apply();
 
         String serverIP = sharedPreferences.getString("currServerIP", "0.0.0.0");
         int serverPort = sharedPreferences.getInt("currServerPort", 0);
@@ -79,18 +72,45 @@ public class settingsServer extends Activity {
     public void editServerDetailsModal() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         LayoutInflater inflater = this.getLayoutInflater();
-        builder.setTitle("Custom view with 4 EditTexts");
-        builder.setMessage("AlertDialog");
-        builder.setView(R.layout.popup_server_details);
-        //In case it gives you an error for setView(View) try
+        builder.setTitle("Set server details");
+//        builder.setMessage("AlertDialog");
+//        builder.setView(R.layout.popup_server_details);
         builder.setView(inflater.inflate(R.layout.popup_server_details, null));
-        builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(settingsServer.this, "assdasdasd", Toast.LENGTH_SHORT).show();
+                Dialog d = (Dialog) dialog;
+                EditText serverIPET, serverPortET;
+
+                serverIPET = (EditText)d.findViewById(R.id.setServerIP);
+                serverPortET = (EditText)d.findViewById(R.id.setServerPort);
+
+                String setServerIP = serverIPET.getText().toString();
+                int setServerPort = Integer.parseInt(serverPortET.getText().toString());
+
+                // setting new SharedPreferences variables
+                sharedPreferences = getSharedPreferences(currServerSettings, Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPreferences.edit();
+                editor.putString("currServerIP", setServerIP);
+                editor.putInt("currServerPort", setServerPort);
+                editor.apply();
+
+//                Toast.makeText(settingsServer.this, "aaahhh " + setServerIP, Toast.LENGTH_SHORT).show();
                 dialog.cancel();
+
+                // changing text of the currently set server details
+                TextView currServerIPTV = (TextView)findViewById(R.id.serverIPText);
+                currServerIPTV.setText(setServerIP);
+
+                TextView currServerPortTV = (TextView)findViewById(R.id.serverPortText);
+                currServerPortTV.setText(Integer.toString(setServerPort));
+
+                // Refereshing the activity to show new changes
+//                finish();
+//                startActivity(getIntent());
             }
         });
+        builder.create();
         builder.show();
     }
 }

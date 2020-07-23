@@ -1,6 +1,8 @@
 package fi.fivegear.remar;
 
 import android.content.Context;
+import android.content.SharedPreferences;
+import android.net.InetAddresses;
 import android.os.Build;
 import android.os.Environment;
 import android.os.Handler;
@@ -8,9 +10,6 @@ import android.os.HandlerThread;
 import android.os.Process;
 import android.util.Log;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.SocketAddress;
@@ -19,9 +18,7 @@ import java.nio.channels.DatagramChannel;
 import fi.fivegear.remar.network.ReceivingTask;
 import fi.fivegear.remar.network.TransmissionTask;
 
-/**
- * Created by st0rm23 on 2017/2/18.
- */
+import static fi.fivegear.remar.activities.settingsServer.currServerSettings;
 
 public class ARManager {
 
@@ -35,10 +32,10 @@ public class ARManager {
 
     private DatagramChannel dataChannel;
     private SocketAddress serverAddr;
-    public static String serverIP;
-    private int port;
 
     private static boolean isCloudBased;
+
+    SharedPreferences sharedPreferences;
 
     private ARManager(){ super(); }
 
@@ -55,32 +52,41 @@ public class ARManager {
         return new Handler(handlerThread.getLooper());
     }
 
-    private void initConnection() {
-        File sdcard = Environment.getExternalStorageDirectory();
-        File file = new File(sdcard,"CloudAR/cloudConfigarhud.txt");
+    private void initConnection(String serverIP, int serverPort) {
         try {
-            BufferedReader br = new BufferedReader(new FileReader(file));
-
-            serverIP = br.readLine();
-            port = Integer.parseInt(br.readLine());
-            br.close();
-
-            serverAddr = new InetSocketAddress(serverIP, port);
+            serverAddr = new InetSocketAddress(serverIP, serverPort);
             dataChannel = DatagramChannel.open();
             dataChannel.configureBlocking(false);
-            // pengzhou: the receiving phone needs the following sentence
             dataChannel.bind(new InetSocketAddress(51919));
             //dataChannel.socket().connect(serverAddr);
-        } catch (IOException e) {
+        } catch (Exception e) {
             Log.d(Constants.TAG, "config file error");
-        } catch (Exception e) {}
+        }
     }
 
     public void init(Context context, boolean isCloudBased){
         ARManager.isCloudBased = isCloudBased;
 
+        // using SharedPreferences to set current server IP and port
+        sharedPreferences = context.getSharedPreferences(currServerSettings, Context.MODE_PRIVATE);
+        String serverIP = sharedPreferences.getString("currServerIP", "0.0.0.0");
+        int serverPort = sharedPreferences.getInt("currServerPort", 0);
+
+        // validating whether IP address is valid, if not, default to 0.0.0.0 and change preferences
+        boolean isValid = InetAddresses.isNumericAddress(serverIP);
+        if(isValid == false) {
+            serverIP = "0.0.0.0";
+
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.putString("currServerIP", serverIP);
+            editor.apply();
+
+            // Add a message about this somewhere, in a log? Create another table for logging messages?
+            // could be easy as a text file log
+        }
+
         System.loadLibrary("opencv_java");
-        if(isCloudBased) initConnection();
+        if(isCloudBased) initConnection(serverIP, serverPort);
 
         this.handlerUtil = createAndStartThread("util thread", Process.THREAD_PRIORITY_DEFAULT); //start util thread
         this.handlerNetwork = createAndStartThread("network thread", 1);

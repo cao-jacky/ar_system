@@ -250,6 +250,15 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
 
         if (checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
             mCamera = Camera.open();
+            ARManager.getInstance().init(this, true);
+            ARManager.getInstance().setCallback(new ARManager.Callback() {
+                @Override
+                public void onObjectsDetected(Detected[] detected) {
+                    mDraw.updateData(detected);
+                    //mDraw.updateData(frameID);
+                    //mDraw.updateOrientationAngles();
+                }
+            });
             ARManager.getInstance().start();
         }
     }
@@ -267,13 +276,14 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         mCamera = null;
         mInPreview = false;
     //mSensorManager.unregisterListener(this);
-        ARManager.getInstance().stop();
+        //ARManager.getInstance().stop();
 
     }
 
     @Override
     public void onStop() {
         Log.i(Constants.TAG, " onStop() called.");
+        ARManager.getInstance().stop();
         super.onStop();
 
     }

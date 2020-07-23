@@ -2,6 +2,8 @@ package fi.fivegear.remar.network;
 
 import android.app.Activity;
 import android.os.Environment;
+import android.util.Log;
+
 import androidx.core.content.ContextCompat;
 
 import org.opencv.core.CvType;
@@ -141,7 +143,7 @@ public class TransmissionTask extends Activity implements Runnable {
             //timeSend = (double)time;
             //Log.d(Constants.TAG, "true time sent for " + frmID + " is " + true_time + " and system time is " + time);
 
-            //Log.d(Constants.Eval, frmID + " sent to " + serverAddress);
+//            Log.d(Constants.Eval, frmID + " sent to " + serverAddress);
 
             //if (dataType == MESSAGE_META)
             //    Log.d(Constants.Eval, "metadata " + frmID + " sent ");

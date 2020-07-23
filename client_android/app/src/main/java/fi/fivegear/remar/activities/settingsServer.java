@@ -6,6 +6,7 @@ import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
+import android.net.InetAddresses;
 import android.os.Bundle;
 import android.text.InputType;
 import android.util.Log;
@@ -31,6 +32,9 @@ public class settingsServer extends Activity {
 
     Button editServerDetails;
 
+    String serverIP;
+    int serverPort;
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings_server);
@@ -38,8 +42,8 @@ public class settingsServer extends Activity {
         // using SharedPreferences to set current server IP and port
         sharedPreferences = getSharedPreferences(currServerSettings, Context.MODE_PRIVATE);
 
-        String serverIP = sharedPreferences.getString("currServerIP", "0.0.0.0");
-        int serverPort = sharedPreferences.getInt("currServerPort", 0);
+        serverIP = sharedPreferences.getString("currServerIP", "0.0.0.0");
+        serverPort = sharedPreferences.getInt("currServerPort", 0);
 
         // setting displayed current values to that of which is found in shared values
         TextView currServerIPTV = (TextView)findViewById(R.id.serverIPText);
@@ -69,6 +73,18 @@ public class settingsServer extends Activity {
 
     }
 
+    public static boolean isNumeric(String strNum) {
+        if (strNum == null) {
+            return false;
+        }
+        try {
+            int d = Integer.parseInt(strNum);
+        } catch (NumberFormatException nfe) {
+            return false;
+        }
+        return true;
+    }
+
     public void editServerDetailsModal() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         LayoutInflater inflater = this.getLayoutInflater();
@@ -86,28 +102,43 @@ public class settingsServer extends Activity {
                 serverPortET = (EditText)d.findViewById(R.id.setServerPort);
 
                 String setServerIP = serverIPET.getText().toString();
-                int setServerPort = Integer.parseInt(serverPortET.getText().toString());
+                String setServerPortString = serverPortET.getText().toString();
 
-                // setting new SharedPreferences variables
-                sharedPreferences = getSharedPreferences(currServerSettings, Context.MODE_PRIVATE);
-                SharedPreferences.Editor editor = sharedPreferences.edit();
-                editor.putString("currServerIP", setServerIP);
-                editor.putInt("currServerPort", setServerPort);
-                editor.apply();
+                // performs verification of the provided IP and port
+                boolean isIPValid = InetAddresses.isNumericAddress(setServerIP);
+                boolean isPortValid = isNumeric(setServerPortString);
+                if (!isIPValid && !isPortValid) {
+                    Toast.makeText(settingsServer.this, "Both IP and port are invalid", Toast.LENGTH_SHORT).show();
+                } else if (!isIPValid) {
+                    Toast.makeText(settingsServer.this, "Invalid IP", Toast.LENGTH_SHORT).show();
+                } else if (!isPortValid) {
+                    Toast.makeText(settingsServer.this, "Invalid port", Toast.LENGTH_SHORT).show();
+                } else {
+                    int setServerPort = Integer.parseInt(serverPortET.getText().toString());
 
-//                Toast.makeText(settingsServer.this, "aaahhh " + setServerIP, Toast.LENGTH_SHORT).show();
-                dialog.cancel();
+                    // setting new SharedPreferences variables
+                    sharedPreferences = getSharedPreferences(currServerSettings, Context.MODE_PRIVATE);
+                    SharedPreferences.Editor editor = sharedPreferences.edit();
+                    editor.putString("currServerIP", setServerIP);
+                    editor.putInt("currServerPort", setServerPort);
+                    editor.apply();
 
-                // changing text of the currently set server details
-                TextView currServerIPTV = (TextView)findViewById(R.id.serverIPText);
-                currServerIPTV.setText(setServerIP);
+                    Toast.makeText(settingsServer.this, "Successfully changed details", Toast.LENGTH_SHORT).show();
+                    dialog.cancel();
 
-                TextView currServerPortTV = (TextView)findViewById(R.id.serverPortText);
-                currServerPortTV.setText(Integer.toString(setServerPort));
+                    // changing text of the currently set server details
+                    TextView currServerIPTV = (TextView)findViewById(R.id.serverIPText);
+                    currServerIPTV.setText(setServerIP);
 
-                // Refereshing the activity to show new changes
+                    TextView currServerPortTV = (TextView)findViewById(R.id.serverPortText);
+                    currServerPortTV.setText(Integer.toString(setServerPort));
+
+                    // Refereshing the activity to show new changes
 //                finish();
 //                startActivity(getIntent());
+
+                }
+
             }
         });
         builder.create();

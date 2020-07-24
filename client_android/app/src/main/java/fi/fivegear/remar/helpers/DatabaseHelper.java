@@ -156,7 +156,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             do {
                 ServerInfo si = new ServerInfo();
                 si.setId(c.getInt((c.getColumnIndex(KEY_SERVER_ID))));
-                si.setUnixTimeAdded(c.getInt(c.getColumnIndex(KEY_UNIX_TIME_ADDED)));
+                si.setUnixTimeAdded(c.getString(c.getColumnIndex(KEY_UNIX_TIME_ADDED)));
                 si.setServerIP(c.getString(c.getColumnIndex(KEY_SERVER_IP)));
                 si.setServerPort(c.getInt(c.getColumnIndex(KEY_SERVER_PORT)));
 
@@ -180,7 +180,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 RequestEntry re = new RequestEntry();
                 re.setRequestID(c.getInt(c.getColumnIndex(KEY_REQUEST_ID)));
                 re.setRecognitionID(c.getString(c.getColumnIndex(KEY_RECOGNITION_ID)));
-                re.setUnixTimeRequestSent(c.getInt(c.getColumnIndex(KEY_UNIX_TIME_REQUEST_SENT)));
+                re.setUnixTimeRequestSent(c.getString(c.getColumnIndex(KEY_UNIX_TIME_REQUEST_SENT)));
                 re.setServerIP(c.getString(c.getColumnIndex(KEY_SERVER_IP)));
                 re.setServerPort(c.getInt(c.getColumnIndex(KEY_SERVER_PORT)));
                 re.setRequestArrayLength(c.getInt(c.getColumnIndex(KEY_REQUEST_ARRAY_LENGTH)));
@@ -205,7 +205,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 ResultsEntry re = new ResultsEntry();
                 re.setResultsID(c.getInt(c.getColumnIndex(KEY_RESULTS_ID)));
                 re.setRecognitionID(c.getString(c.getColumnIndex(KEY_RECOGNITION_ID)));
-                re.setUnixTimeResultsRec(c.getInt(c.getColumnIndex(KEY_UNIX_TIME_RESULTS_REC)));
+                re.setUnixTimeResultsRec(c.getString(c.getColumnIndex(KEY_UNIX_TIME_RESULTS_REC)));
                 re.setServerIP(c.getString(c.getColumnIndex(KEY_SERVER_IP)));
                 re.setServerPort(c.getInt(c.getColumnIndex(KEY_SERVER_PORT)));
                 re.setReceivedResults(c.getString(c.getColumnIndex(KEY_RECEIVED_RESULTS)));

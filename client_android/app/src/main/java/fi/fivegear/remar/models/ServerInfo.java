@@ -2,7 +2,7 @@ package fi.fivegear.remar.models;
 
 public class ServerInfo {
     int serverID;
-    long unixTimeAdded;
+    String unixTimeAdded;
     String serverIP;
     int serverPort;
 
@@ -10,13 +10,13 @@ public class ServerInfo {
     public ServerInfo() {
     }
 
-    public ServerInfo(long unixTimeAdded, String serverIP, int serverPort) {
+    public ServerInfo(String unixTimeAdded, String serverIP, int serverPort) {
         this.unixTimeAdded = unixTimeAdded;
         this.serverIP = serverIP;
         this.serverPort = serverPort;
     }
 
-    public ServerInfo(int serverID, long unixTimeAdded, String serverIP, int serverPort) {
+    public ServerInfo(int serverID, String unixTimeAdded, String serverIP, int serverPort) {
         this.serverID = serverID;
         this.unixTimeAdded = unixTimeAdded;
         this.serverIP = serverIP;
@@ -28,7 +28,7 @@ public class ServerInfo {
         this.serverID = serverID;
     }
 
-    public void setUnixTimeAdded(long unixTimeAdded) {
+    public void setUnixTimeAdded(String unixTimeAdded) {
         this.unixTimeAdded = unixTimeAdded;
     }
 
@@ -45,7 +45,7 @@ public class ServerInfo {
         return this.serverID;
     }
 
-    public long getUnixTimeAdded() {
+    public String getUnixTimeAdded() {
         return this.unixTimeAdded;
     }
 

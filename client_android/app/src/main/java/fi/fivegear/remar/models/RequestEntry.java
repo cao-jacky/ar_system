@@ -3,7 +3,7 @@ package fi.fivegear.remar.models;
 public class RequestEntry {
     int requestID;
     String recognitionID;
-    long unixTimeRequestSent;
+    String unixTimeRequestSent;
     String serverIP;
     int serverPort;
     int requestArrayLength;
@@ -14,7 +14,7 @@ public class RequestEntry {
     public RequestEntry() {
     }
 
-    public RequestEntry(int id, String recognitionID, long unixTimeRequestSent, String serverIP,
+    public RequestEntry(int id, String recognitionID, String unixTimeRequestSent, String serverIP,
                         int serverPort, int requestArrayLength, String requestGPSCoord,
                         String protocol) {
         this.requestID = id;
@@ -36,7 +36,7 @@ public class RequestEntry {
         this.recognitionID = recognitionID;
     }
 
-    public void setUnixTimeRequestSent(long unixTimeRequestSent) {
+    public void setUnixTimeRequestSent(String unixTimeRequestSent) {
         this.unixTimeRequestSent = unixTimeRequestSent;
     }
 
@@ -69,7 +69,7 @@ public class RequestEntry {
         return recognitionID;
     }
 
-    public long getUnixTimeRequestSent() {
+    public String getUnixTimeRequestSent() {
         return unixTimeRequestSent;
     }
 

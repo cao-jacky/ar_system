@@ -6,179 +6,152 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ScrollView
-        android:id="@+id/scrollView"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#fafafa"
-        android:paddingLeft="20dp"
-        android:paddingRight="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="0dp">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
-        <LinearLayout
+        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="30dp"
+                android:paddingBottom="5dp"
+                android:text="Server Details"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:text="Currently set as:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout2"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:paddingBottom="3dp"
+                app:layout_constraintTop_toBottomOf="@+id/textView2">
 
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/textView"
+                    android:layout_width="144dp"
+                    android:layout_height="24dp"
+                    android:text="Server IP"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/serverIPText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:paddingTop="30dp"
-                    android:paddingBottom="5dp"
-                    android:text="Server Details"
+                    android:text="generic.ip"
                     android:textColor="#000000"
-                    android:textSize="24sp"
-                    app:layout_constraintStart_toStartOf="parent"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView"
                     app:layout_constraintTop_toTopOf="parent" />
-
-                <TextView
-                    android:id="@+id/textView2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="5dp"
-                    android:text="Currently set as:"
-                    android:textColor="#000000"
-                    android:textSize="18sp"
-                    app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/constraintLayout2"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:paddingBottom="3dp"
-                    app:layout_constraintTop_toBottomOf="@+id/textView2">
-
-                    <TextView
-                        android:id="@+id/textView"
-                        android:layout_width="144dp"
-                        android:layout_height="24dp"
-                        android:text="Server IP"
-                        android:textSize="18sp"
-                        android:textStyle="italic"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/serverIPText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="generic.ip"
-                        android:textColor="#000000"
-                        android:textSize="15sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/textView"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:id="@+id/constraintLayout"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:paddingBottom="3dp"
-                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
-
-                    <TextView
-                        android:id="@+id/textView"
-                        android:layout_width="144dp"
-                        android:layout_height="24dp"
-                        android:text="Server Port"
-                        android:textSize="18sp"
-                        android:textStyle="italic"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                    <TextView
-                        android:id="@+id/serverPortText"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="generic.port"
-                        android:textColor="#000000"
-                        android:textSize="15sp"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintStart_toEndOf="@+id/textView"
-                        app:layout_constraintTop_toTopOf="parent" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-                <Button
-                    android:id="@+id/editServerDetails"
-                    android:layout_width="368dp"
-                    android:layout_height="44dp"
-                    android:layout_marginTop="2dp"
-                    android:backgroundTint="#E0E0E0 "
-                    android:text="Edit Details"
-                    android:textColor="#000000"
-                    app:layout_constraintBottom_toTopOf="@+id/textView5"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintLayout"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:paddingBottom="3dp"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
 
                 <TextView
-                    android:id="@+id/textView5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:paddingTop="20dp"
-                    android:text="Select from previous"
-                    android:textColor="#000000"
-                    android:textSize="17sp"
+                    android:id="@+id/textView"
+                    android:layout_width="144dp"
+                    android:layout_height="24dp"
+                    android:text="Server Port"
+                    android:textSize="18sp"
+                    android:textStyle="italic"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <Button
-                    android:id="@+id/editPresets"
-                    android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/serverPortText"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:backgroundTint="#E0E0E0 "
-                    android:text="Edit history"
+                    android:text="generic.port"
                     android:textColor="#000000"
-                    app:layout_constraintTop_toBottomOf="@+id/presetsGroup" />
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/textView"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-                <RadioGroup
-                    android:id="@+id/presetsGroup"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    app:layout_constraintTop_toBottomOf="@+id/textView5">
-
-                    <RadioButton
-                        android:id="@+id/presetServer1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="generic.ip1 and generic.port1"
-                        android:textColor="#000000" />
-
-                    <RadioButton
-                        android:id="@+id/presetServer2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="generic.ip2 and generic.port2"
-                        android:textColor="#000000" />
-
-                    <RadioButton
-                        android:id="@+id/presetServer3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:text="generic.ip3 and generic.port3"
-                        android:textColor="#000000" />
-
-                </RadioGroup>
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-        </LinearLayout>
-    </ScrollView>
+            <Button
+                android:id="@+id/editServerDetails"
+                android:layout_width="368dp"
+                android:layout_height="44dp"
+                android:layout_marginTop="2dp"
+                android:backgroundTint="#E0E0E0 "
+                android:text="Edit Details"
+                android:textColor="#000000"
+                app:layout_constraintBottom_toTopOf="@+id/textView5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:text="Previous servers"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:id="@+id/previousServersTable"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:stretchColumns="*"></TableLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

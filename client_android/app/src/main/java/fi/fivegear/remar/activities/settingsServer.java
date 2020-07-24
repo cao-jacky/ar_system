@@ -3,9 +3,14 @@ package fi.fivegear.remar.activities;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
+import android.graphics.Color;
+import android.icu.text.SimpleDateFormat;
+import android.icu.util.TimeZone;
+import android.location.Location;
 import android.net.InetAddresses;
 import android.os.Bundle;
 import android.text.InputType;
@@ -17,23 +22,33 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.TableLayout;
+import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.time.Instant;
+import java.time.LocalDateTime;
+import java.util.Date;
+import java.util.List;
+
 import fi.fivegear.remar.R;
 import fi.fivegear.remar.helpers.DatabaseHelper;
+import fi.fivegear.remar.helpers.ServerInfoData;
 import fi.fivegear.remar.models.ServerInfo;
 
 public class settingsServer extends Activity {
     public static final String currServerSettings = "currServerSettings";
 
     SharedPreferences sharedPreferences;
-    DatabaseHelper db;
+    DatabaseHelper serverDatabase;
 
     Button editServerDetails;
 
     String serverIP;
     int serverPort;
+
+    private TableLayout serverTableLayout;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -52,16 +67,6 @@ public class settingsServer extends Activity {
         TextView currServerPortTV = (TextView)findViewById(R.id.serverPortText);
         currServerPortTV.setText(Integer.toString(serverPort));
 
-        db = new DatabaseHelper(getApplicationContext());
-
-//        long currUnix = System.currentTimeMillis();
-//        ServerInfo si1 = new ServerInfo(currUnix, "0.0.0.0", 12345);
-//        long si1_id = db.createServerInfo(si1);
-
-        //Log.d("Tag Count", "Tag Count: " + db.getAllServerInfo().get(0).getServerPort());
-
-        db.closeDB();
-
         editServerDetails = (Button)findViewById(R.id.editServerDetails);
         editServerDetails.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -70,6 +75,8 @@ public class settingsServer extends Activity {
             }
         });
 
+        serverTableLayout = (TableLayout)findViewById(R.id.previousServersTable);
+        populateServerTable(serverTableLayout);
 
     }
 
@@ -83,6 +90,13 @@ public class settingsServer extends Activity {
             return false;
         }
         return true;
+    }
+
+    public static String getUTCstring(String dateString) {
+        long dv = Long.valueOf(dateString);
+        Date df = new java.util.Date(dv);
+        String date = new SimpleDateFormat("yyyy/MM/dd HH:mm:ss").format(df);
+        return date;
     }
 
     public void editServerDetailsModal() {
@@ -133,6 +147,35 @@ public class settingsServer extends Activity {
                     TextView currServerPortTV = (TextView)findViewById(R.id.serverPortText);
                     currServerPortTV.setText(Integer.toString(setServerPort));
 
+                    // adding entry into the Database
+                    serverDatabase = new DatabaseHelper(getApplicationContext());
+                    String currUnix = String.valueOf(System.currentTimeMillis());
+                    ServerInfo newServerEntry = new ServerInfo(currUnix, setServerIP, setServerPort);
+                    long newServerEntry_id = serverDatabase.createServerInfo(newServerEntry);
+                    serverDatabase.closeDB();
+
+                    // add row to the table
+                    serverTableLayout = (TableLayout)findViewById(R.id.previousServersTable);
+                    TableRow tableRow = new TableRow(settingsServer.this);
+
+                    TextView dateAdded = new TextView(settingsServer.this);
+                    dateAdded.setText(getUTCstring(currUnix));
+                    dateAdded.setPadding(5, 5, 5, 5);
+                    tableRow.addView(dateAdded);// add the column to the table row here
+
+                    TextView serverIP = new TextView(settingsServer.this);
+                    serverIP.setText(setServerIP);
+                    serverIP.setPadding(5, 5, 5, 5);
+                    tableRow.addView(serverIP);// add the column to the table row here
+
+                    TextView serverPort = new TextView(settingsServer.this);
+                    String currServerPort = String.valueOf(setServerPort);
+                    serverPort.setText(currServerPort);
+                    serverPort.setPadding(5, 5, 5, 5);
+                    tableRow.addView(serverPort);// add the column to the table row here
+
+                    serverTableLayout.addView(tableRow, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+
                     // Refereshing the activity to show new changes
 //                finish();
 //                startActivity(getIntent());
@@ -144,4 +187,58 @@ public class settingsServer extends Activity {
         builder.create();
         builder.show();
     }
+
+    private void populateServerTable(TableLayout tableLayout){
+        serverDatabase = new DatabaseHelper(getApplicationContext());
+        List<ServerInfo> serverDatabaseData = serverDatabase.getAllServerInfo();
+
+        // Setting header row
+        TableRow headerTableRow = new TableRow(this);
+
+        TextView headerDateAdded = new TextView(this);
+        headerDateAdded.setText("Time added");
+        headerDateAdded.setPadding(5, 5, 5, 5);
+        headerTableRow.addView(headerDateAdded);// add the column to the table row here
+
+        TextView headerServerIP = new TextView(this);
+        headerServerIP.setText("Server IP");
+        headerServerIP.setPadding(5, 5, 5, 5);
+        headerTableRow.addView(headerServerIP);// add the column to the table row here
+
+        TextView headerServerPort = new TextView(this);
+        headerServerPort.setText("Server Port");
+        headerServerPort.setPadding(5, 5, 5, 5);
+        headerTableRow.addView(headerServerPort);// add the column to the table row here
+
+        tableLayout.addView(headerTableRow, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+
+        for (int i = 0; i < serverDatabaseData.size(); i++) {
+            ServerInfo currServerInfo = serverDatabaseData.get(i);
+
+            TableRow tableRow = new TableRow(this);
+
+            TextView dateAdded = new TextView(this);
+            String unixTime = getUTCstring(currServerInfo.getUnixTimeAdded());
+            dateAdded.setText(unixTime);
+            dateAdded.setPadding(5, 5, 5, 5);
+            tableRow.addView(dateAdded);// add the column to the table row here
+
+            TextView serverIP = new TextView(this);
+            serverIP.setText(currServerInfo.getServerIP());
+            serverIP.setPadding(5, 5, 5, 5);
+            tableRow.addView(serverIP);// add the column to the table row here
+
+            TextView serverPort = new TextView(this);
+            String currServerPort = String.valueOf(currServerInfo.getServerPort());
+            serverPort.setText(currServerPort);
+            serverPort.setPadding(5, 5, 5, 5);
+            tableRow.addView(serverPort);// add the column to the table row here
+
+            tableLayout.addView(tableRow, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+
+        }
+
+        serverDatabase.closeDB();
+    }
+
 }

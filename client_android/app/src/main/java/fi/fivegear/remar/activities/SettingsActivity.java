@@ -13,7 +13,7 @@ import fi.fivegear.remar.R;
 import fi.fivegear.remar.activities.settingsServer;
 
 public class SettingsActivity extends Activity {
-    TextView activityServer;
+    TextView activityServer, activityAbout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,10 +28,23 @@ public class SettingsActivity extends Activity {
             }
         });
 
+        activityAbout = (TextView) findViewById(R.id.settingAbout);
+        activityAbout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openSettingsAbout();
+            }
+        });
+
     }
 
     public void openSettingsServer(){
         Intent intent = new Intent(this, settingsServer.class);
+        startActivity(intent);
+    }
+
+    public void openSettingsAbout(){
+        Intent intent = new Intent(this, settingsAbout.class);
         startActivity(intent);
     }
 }

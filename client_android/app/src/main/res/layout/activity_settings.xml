@@ -27,20 +27,30 @@
         <TextView
             android:id="@+id/settingServer"
             android:layout_width="match_parent"
-            android:layout_height="37dp"
+            android:layout_height="wrap_content"
             android:alpha="1"
             android:clickable="true"
             android:focusable="true"
             android:onClick="onClick"
             android:paddingBottom="10dp"
             android:text="Server Details"
-            android:textColor="@drawable/selector_grey_black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/settingAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="About"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onClick"
             android:textSize="18sp" />
 
         <TextView
             android:id="@+id/settingProtocolSending"
             android:layout_width="match_parent"
-            android:layout_height="37dp"
+            android:layout_height="wrap_content"
             android:alpha="1"
             android:clickable="true"
             android:focusable="true"
@@ -48,7 +58,9 @@
             android:paddingBottom="10dp"
             android:text="Protocol and Sending Rate"
             android:textColor="@drawable/selector_grey_black"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:visibility="invisible"
+            tools:visibility="invisible" />
 
     </LinearLayout>
 

@@ -1,6 +1,11 @@
 <resources>
     <string name="app_name">ReMAR</string>
 
-    <string name="hello_world">Hello world!</string>
+    <string name="author_name">Jacky Cao</string>
+    <string name="author_email">jacky.cao@oulu.fi</string>
+    <string name="author_institution">University of Oulu, Finland</string>
+
     <string name="action_settings">Settings</string>
+
+
 </resources>

@@ -93,6 +93,12 @@ public class TransmissionTask extends Activity implements Runnable {
         else dataType = IMAGE_DETECT;
     }
 
+    public static byte[] toBytes(String data, int length) {
+        byte[] result = new byte[length];
+        System.arraycopy(data.getBytes(), 0, result, length - data.length(), data.length());
+        return result;
+    }
+
     @Override
     public void run() {
         File sdcard = Environment.getExternalStorageDirectory();

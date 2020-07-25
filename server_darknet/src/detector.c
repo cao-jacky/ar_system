@@ -1775,7 +1775,7 @@ struct result* detect()
 
     int j;
     float nms = .45;    // 0.4F
-    float thresh = .25;
+    float thresh = .5;
     float hier_thresh = .5;
     int letter_box = 0;
     int ext_output = 0;

@@ -2,8 +2,12 @@ package fi.fivegear.remar;
 
 import android.Manifest;
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -14,30 +18,44 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.net.ConnectivityManager;
+import android.net.InetAddresses;
 import android.net.NetworkInfo;
 import android.os.Build;
 import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.multidex.MultiDex;
 import androidx.core.app.ActivityCompat;
+
+import android.provider.Settings;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Display;
+import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
+import android.widget.TableLayout;
+import android.widget.TableRow;
 import android.widget.TextView;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
+import android.widget.Toast;
+
+import org.w3c.dom.Text;
 
 import fi.fivegear.remar.activities.SettingsActivity;
+import fi.fivegear.remar.activities.settingsServer;
+import fi.fivegear.remar.helpers.DatabaseHelper;
+import fi.fivegear.remar.models.ServerInfo;
 
 import static fi.fivegear.remar.Constants.previewHeight;
 import static fi.fivegear.remar.Constants.previewWidth;
@@ -85,6 +103,12 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
 
     FrameLayout settingsButton;
 
+    SharedPreferences sharedPreferencesSession;
+
+    public TextView sessionController;
+    String currSessionNumber;
+    TextView sessionGlanceString, modalCurrSessionNumber;
+
     String TAG = "DBG";
 
     @Override
@@ -100,6 +124,19 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         uploadStatus = (ImageView)findViewById(R.id.statusUpload);
         downloadStatus = (ImageView)findViewById(R.id.statusDownload);
 
+        sharedPreferencesSession = getSharedPreferences("currSessionSetting", Context.MODE_PRIVATE);
+        currSessionNumber = sharedPreferencesSession.getString("currSessionNumber", "0");
+        sessionGlanceString = (TextView)findViewById(R.id.sessionGlance);
+        sessionGlanceString.setText("Session " + currSessionNumber);
+
+        sessionController = (TextView)findViewById(R.id.sessionGlance);
+        sessionController.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openSessionGlanceModal();
+            }
+        });
+
         // Settings button
         settingsButton = (FrameLayout)findViewById(R.id.settingsButton);
         settingsButton.setOnClickListener(new View.OnClickListener() {
@@ -110,6 +147,14 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         });
 
         getScreenResolution(this);
+
+//        String deviceName = android.os.Build.MODEL;
+//        String android_id = Settings.Secure.getString(this.getContentResolver(),
+//                Settings.Secure.ANDROID_ID);
+//
+//        Log.d("TEST", String.valueOf(deviceName.getBytes().length));
+//        Log.d("TEST", String.valueOf(android_id.getBytes().length));
+        //byte[] sample = toBytes(deviceName, 256);
 
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         //mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
@@ -184,6 +229,45 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         }
     }
 
+    public void openSessionGlanceModal() {
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        LayoutInflater inflater = this.getLayoutInflater();
+        builder.setTitle("Session details");
+//        builder.setMessage("AlertDialog");
+//        builder.setView(R.layout.popup_server_details);
+//        builder.setView(inflater.inflate(R.layout.popup_session_glance, null));
+        View content =  inflater.inflate(R.layout.popup_session_glance, null);
+        builder.setView(content);
+
+        currSessionNumber = sharedPreferencesSession.getString("currSessionNumber", "0");
+        modalCurrSessionNumber = (TextView)content.findViewById(R.id.currSessionNumber);
+        modalCurrSessionNumber.setText(currSessionNumber);
+
+        builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                Dialog d = (Dialog) dialog;
+                EditText sessionNumber;
+
+                sessionNumber = (EditText)d.findViewById(R.id.editSessionNumber);
+
+                String sessionNumberString = sessionNumber.getText().toString();
+
+                SharedPreferences.Editor editor = sharedPreferencesSession.edit();
+                editor.putString("currSessionNumber", sessionNumberString);
+                editor.apply();
+
+                // changing text of the currently set server details
+                sessionGlanceString.setText("Session " + sessionNumberString);
+
+                Toast.makeText(MainActivity.this, "Successfully set new session number", Toast.LENGTH_SHORT).show();
+                dialog.cancel();
+            }
+        });
+        builder.create();
+        builder.show();
+    }
+
     public void openSettingsActivity(){
         Intent intent = new Intent(this, SettingsActivity.class);
         startActivity(intent);
@@ -250,6 +334,12 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
 
         if (checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
             mCamera = Camera.open();
+
+            if (Constants.Show2DView) {
+                mDraw = new DrawOnTop(this);
+                addContentView(mDraw, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+            }
+
             ARManager.getInstance().init(this, true);
             ARManager.getInstance().setCallback(new ARManager.Callback() {
                 @Override

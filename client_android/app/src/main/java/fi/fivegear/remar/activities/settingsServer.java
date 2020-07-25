@@ -100,20 +100,30 @@ public class settingsServer extends Activity {
     }
 
     public void editServerDetailsModal() {
+        final EditText serverIPET, serverPortET;
+
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         LayoutInflater inflater = this.getLayoutInflater();
         builder.setTitle("Set server details");
 //        builder.setMessage("AlertDialog");
 //        builder.setView(R.layout.popup_server_details);
-        builder.setView(inflater.inflate(R.layout.popup_server_details, null));
+
+        View content =  inflater.inflate(R.layout.popup_server_details, null);
+        builder.setView(content);
+
+        sharedPreferences = getSharedPreferences(currServerSettings, Context.MODE_PRIVATE);
+
+        serverIPET = (EditText)content.findViewById(R.id.setServerIP);
+        serverPortET = (EditText)content.findViewById(R.id.setServerPort);
+
+        serverIPET.setHint(serverIP);
+        serverPortET.setHint(String.valueOf(serverPort));
+
+//        builder.setView(inflater.inflate(R.layout.popup_server_details, null));
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 Dialog d = (Dialog) dialog;
-                EditText serverIPET, serverPortET;
-
-                serverIPET = (EditText)d.findViewById(R.id.setServerIP);
-                serverPortET = (EditText)d.findViewById(R.id.setServerPort);
 
                 String setServerIP = serverIPET.getText().toString();
                 String setServerPortString = serverPortET.getText().toString();
@@ -131,7 +141,6 @@ public class settingsServer extends Activity {
                     int setServerPort = Integer.parseInt(serverPortET.getText().toString());
 
                     // setting new SharedPreferences variables
-                    sharedPreferences = getSharedPreferences(currServerSettings, Context.MODE_PRIVATE);
                     SharedPreferences.Editor editor = sharedPreferences.edit();
                     editor.putString("currServerIP", setServerIP);
                     editor.putInt("currServerPort", setServerPort);

@@ -103,7 +103,7 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
 
     FrameLayout settingsButton;
 
-    SharedPreferences sharedPreferencesSession;
+    public SharedPreferences sharedPreferencesSession;
 
     public TextView sessionController;
     String currSessionNumber;

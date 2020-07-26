@@ -1,6 +1,9 @@
 package fi.fivegear.remar.network;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Environment;
+import android.util.Log;
 
 import org.opencv.core.Point;
 
@@ -47,9 +50,13 @@ public class ReceivingTask implements Runnable{
     private double resultdelay;
     private double timeReceived;
 
+    private Context context;
+    private SharedPreferences sharedPreferencesSession;
+    private String currSessionNumber;
 
-    public ReceivingTask(DatagramChannel datagramChannel){
+    public ReceivingTask(DatagramChannel datagramChannel, Context context){
         this.datagramChannel = datagramChannel;
+        this.context = context;
     }
 
     public void updateLatestSentID(int lastSentID){
@@ -58,9 +65,9 @@ public class ReceivingTask implements Runnable{
 
     @Override
     public void run() {
-        //pengzhou : record result transmission delay
-        File sdcard = Environment.getExternalStorageDirectory();
-        File file = new File(sdcard,"CloudAR/receive.txt");
+        // pulling session number
+        sharedPreferencesSession = context.getSharedPreferences("currSessionSetting", Context.MODE_PRIVATE);
+        currSessionNumber = sharedPreferencesSession.getString("currSessionNumber", "0");
 
         resPacket.clear();
         try {
@@ -68,7 +75,6 @@ public class ReceivingTask implements Runnable{
             timeReceived = (double)time;
             if (datagramChannel.receive(resPacket) != null) {
                 res = resPacket.array();
-                //Log.v(Constants.TAG, "something received");
             } else {
                 res = null;
             }
@@ -77,51 +83,17 @@ public class ReceivingTask implements Runnable{
         }
 
         if (res != null) {
-//            MainActivity.downloadStatus.setImageResource(R.drawable.status_download_coloured);
             MainActivity.downloadStatus.setImageAlpha(0);
 
             System.arraycopy(res, 0, tmp, 0, 4);
             int resultID = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
 
-            //System.arraycopy(res, 8, Tmp, 0, 8);
-            //resultLat = ByteBuffer.wrap(Tmp).order(ByteOrder.LITTLE_ENDIAN).getDouble();
-            //resultTimecap = ByteBuffer.wrap(Tmp).order(ByteOrder.LITTLE_ENDIAN).getDouble();
-
-            //System.arraycopy(res, 16, Tmp, 0, 8);
-            //resultLong = ByteBuffer.wrap(Tmp).order(ByteOrder.LITTLE_ENDIAN).getDouble();
-            //resultTimesend = ByteBuffer.wrap(Tmp).order(ByteOrder.LITTLE_ENDIAN).getDouble();
-
             System.arraycopy(res, 8, tmp, 0, 4);
             newMarkerNum = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
 
-            //resultdelay = time - resultTimesend;
-            //Log.d(Constants.Eval, resultID + " " + time + " " + String.valueOf(resultTimesend) + " " + String.valueOf(resultdelay));
-            try{BufferedWriter bw =
-                    new BufferedWriter(new FileWriter(file, true));
-                bw.write(Integer.toString(resultID));
-                bw.write(",");
-                bw.write(Double.toString(true_time));
-                bw.newLine();
-                bw.flush();}
-            catch (Exception e){
-                e.printStackTrace();
-
-            }
 
             if (newMarkerNum >= 0) {
-//                Log.d(Constants.Eval, "" + newMarkerNum + " res " + resultID + " received ");
-//                Log.d(Constants.TAG, "true time received for " + resultID + " is " + true_time + " and system time is " + time);
                 Detected detected[] = new Detected[newMarkerNum];
-
-                /*try{BufferedWriter bw =
-                        new BufferedWriter(new FileWriter(file, true));
-                        bw.write(Double.toString(resultdelay));
-                        bw.newLine();
-                        bw.flush();}
-                catch (Exception e){
-                    e.printStackTrace();
-
-                }*/
 
                 int i = 0;
                 while (i < newMarkerNum) {

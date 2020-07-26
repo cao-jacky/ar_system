@@ -1,6 +1,8 @@
 package fi.fivegear.remar.network;
 
 import android.app.Activity;
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Environment;
 import android.util.Log;
 
@@ -57,25 +59,21 @@ public class TransmissionTask extends Activity implements Runnable {
     private long time;
     private long true_time;
 
+    private Context context;
+    private SharedPreferences sharedPreferencesSession;
+    private String currSessionNumber;
 
-    public TransmissionTask(DatagramChannel datagramChannel, SocketAddress serverAddress) {
+    public TransmissionTask(DatagramChannel datagramChannel, SocketAddress serverAddress, Context context) {
         this.datagramChannel = datagramChannel;
         this.serverAddress = serverAddress;
+        this.context = context;
 
         YUVMatTrans = new Mat(Constants.previewHeight + Constants.previewHeight / 2, Constants.previewWidth, CvType.CV_8UC1);
         YUVMatScaled = new Mat((Constants.previewHeight + Constants.previewHeight / 2) / Constants.recoScale, Constants.previewWidth / Constants.recoScale, CvType.CV_8UC1);
         GrayScaled = new Mat(Constants.previewHeight / Constants.recoScale, Constants.previewWidth / Constants.recoScale, CvType.CV_8UC1);
     }
 
-    /*public void setData(int frmID, byte[] frameData, double latitude, double longtitude){
-        this.frmID = frmID;
-        this.frameData = frameData;
-        this.latitude = latitude;
-        this.longtitude = longtitude;
 
-        if (this.frmID <= 5) dataType = MESSAGE_META;
-        else dataType = IMAGE_DETECT;
-    }*/
     public void setData(int frmID, byte[] frameData, double timeCaptured, double timeSend){
         this.frmID = frmID;
         this.frameData = frameData;
@@ -101,11 +99,11 @@ public class TransmissionTask extends Activity implements Runnable {
 
     @Override
     public void run() {
-        File sdcard = Environment.getExternalStorageDirectory();
-        File file = new File(sdcard,"CloudAR/send.txt");
-
+        // pulling session number
+        sharedPreferencesSession = context.getSharedPreferences("currSessionSetting", Context.MODE_PRIVATE);
+        currSessionNumber = sharedPreferencesSession.getString("currSessionNumber", "0");
+        
         MainActivity.uploadStatus.setImageAlpha(0);
-
         if (dataType == IMAGE_DETECT) {
             YUVMatTrans.put(0, 0, frameData);
 
@@ -129,13 +127,10 @@ public class TransmissionTask extends Activity implements Runnable {
 
         frmid = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(frmID).array();
         datatype = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(dataType).array();
-        //TimeCaptured = ByteBuffer.allocate(8).order(ByteOrder.LITTLE_ENDIAN).putDouble(timeCaptured).array();
-        //TimeSend = ByteBuffer.allocate(8).order(ByteOrder.LITTLE_ENDIAN).putDouble(timeSend).array();
         frmsize = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(datasize).array();
+
         System.arraycopy(frmid, 0, packetContent, 0, 4);
         System.arraycopy(datatype, 0, packetContent, 4, 4);
-        //System.arraycopy(TimeCaptured, 0, packetContent, 8, 8);
-        //System.arraycopy(TimeSend, 0, packetContent, 16, 8);
         System.arraycopy(frmsize, 0, packetContent, 8, 4);
 
         if (frmdataToSend != null)
@@ -145,32 +140,8 @@ public class TransmissionTask extends Activity implements Runnable {
             ByteBuffer buffer = ByteBuffer.allocate(packetContent.length).put(packetContent);
             buffer.flip();
             datagramChannel.send(buffer, serverAddress);
-            //time = System.currentTimeMillis();
-            //timeSend = (double)time;
-            //Log.d(Constants.TAG, "true time sent for " + frmID + " is " + true_time + " and system time is " + time);
-
-//            Log.d(Constants.Eval, frmID + " sent to " + serverAddress);
-
-            //if (dataType == MESSAGE_META)
-            //    Log.d(Constants.Eval, "metadata " + frmID + " sent ");
-            //else
-                //Log.d(Constants.Eval, frmID + " sent at " +  timeSend );
-
-//            MainActivity.uploadStatus.setImageResource(R.drawable.status_upload_coloured);
             MainActivity.uploadStatus.setImageAlpha(255);
 
-            try{
-                BufferedWriter bw =
-                    new BufferedWriter(new FileWriter(file, true));
-                bw.write(Integer.toString(frmID));
-                bw.write(",");
-                bw.write(Double.toString(true_time));
-                bw.newLine();
-                bw.flush();}
-            catch (Exception e){
-                e.printStackTrace();
-
-            }
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -92,11 +92,11 @@ public class ARManager {
         this.handlerNetwork = createAndStartThread("network thread", 1);
 
         if(isCloudBased) {
-            taskTransmission = new TransmissionTask(dataChannel, serverAddr);
+            taskTransmission = new TransmissionTask(dataChannel, serverAddr, context);
 	        //pengzhou
             taskTransmission.setData(0,"a".getBytes());
             handlerNetwork.post(taskTransmission);
-            taskReceiving = new ReceivingTask(dataChannel);
+            taskReceiving = new ReceivingTask(dataChannel, context);
             taskReceiving.setCallback(new ReceivingTask.Callback() {
                 @Override
                 public void onReceive(int resultID, Detected[] detected) {

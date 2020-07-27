@@ -2,7 +2,6 @@ package fi.fivegear.remar.network;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.os.Environment;
 import android.util.Log;
 
 import org.opencv.core.Point;
@@ -11,20 +10,15 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.channels.DatagramChannel;
-
-import java.io.File;
-import java.io.FileWriter;
-import java.io.BufferedWriter;
+import java.util.ArrayList;
+import java.util.List;
 
 import fi.fivegear.remar.MainActivity;
 import fi.fivegear.remar.Constants;
 import fi.fivegear.remar.Detected;
-import fi.fivegear.remar.R;
-
-
-/**
- * Created by st0rm23 on 2017/2/20.
- */
+import fi.fivegear.remar.helpers.DatabaseHelper;
+import fi.fivegear.remar.models.RequestEntry;
+import fi.fivegear.remar.models.ResultsEntry;
 
 public class ReceivingTask implements Runnable{
 
@@ -36,8 +30,6 @@ public class ReceivingTask implements Runnable{
     private byte[] tmp = new byte[4];
     private byte[] Tmp = new byte[8];
     private byte[] name = new byte[56];
-    private double resultLat;
-    private double resultLong;
     private double resultTimecap;
     private double resultTimesend;
     private int newMarkerNum;
@@ -54,9 +46,17 @@ public class ReceivingTask implements Runnable{
     private SharedPreferences sharedPreferencesSession;
     private String currSessionNumber;
 
-    public ReceivingTask(DatagramChannel datagramChannel, Context context){
+    private DatabaseHelper resultsDatabase;
+    private String serverIP;
+    private int serverPort;
+    private String resultItems;
+
+    public ReceivingTask(DatagramChannel datagramChannel, Context context, DatabaseHelper resultsDatabase, String serverIP, int serverPort){
         this.datagramChannel = datagramChannel;
         this.context = context;
+        this.resultsDatabase = resultsDatabase;
+        this.serverIP = serverIP;
+        this.serverPort = serverPort;
     }
 
     public void updateLatestSentID(int lastSentID){
@@ -94,12 +94,12 @@ public class ReceivingTask implements Runnable{
 
             if (newMarkerNum >= 0) {
                 Detected detected[] = new Detected[newMarkerNum];
+                ArrayList<String> detectedStrings = new ArrayList<String>();
 
                 int i = 0;
                 while (i < newMarkerNum) {
                     detected[i] = new Detected();
-                    //detected[i].lati = resultLat;
-                    //detected[i].longti = resultLong;
+
                     detected[i].tcap = resultTimecap;
                     detected[i].tsend = resultTimesend;
                     System.arraycopy(res, 12 + i * 100, tmp, 0, 4);
@@ -115,10 +115,22 @@ public class ReceivingTask implements Runnable{
                     detected[i].bot = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
 
                     System.arraycopy(res, 32 + i * 100, name, 0, 20);
+
                     String nname = new String(name);
-                    detected[i].name = nname.substring(0, nname.indexOf("."));
+                    String objectName = nname.substring(0, nname.indexOf("."));
+                    detected[i].name = objectName;
+
+                    detectedStrings.add(objectName);
+
                     i++;
                 }
+
+                resultItems = String.join(",", detectedStrings);
+
+                // submit results item into table
+                ResultsEntry newResultsEntry = new ResultsEntry("", Integer.parseInt(currSessionNumber),
+                        resultID, String.valueOf(time), serverIP, serverPort, resultItems);
+                long newResultsEntry_id = resultsDatabase.createResultsEntry(newResultsEntry);
 
                 if (callback != null){
                     callback.onReceive(resultID, detected);

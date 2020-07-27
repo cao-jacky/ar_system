@@ -3,10 +3,8 @@ package fi.fivegear.remar.network;
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.os.Environment;
+import android.provider.ContactsContract;
 import android.util.Log;
-
-import androidx.core.content.ContextCompat;
 
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;
@@ -14,21 +12,18 @@ import org.opencv.core.MatOfByte;
 import org.opencv.highgui.Highgui;
 import org.opencv.imgproc.Imgproc;
 
-import java.io.BufferedWriter;
-import java.io.File;
-import java.io.FileWriter;
 import java.io.IOException;
 import java.net.SocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.channels.DatagramChannel;
+import java.util.List;
 
 import fi.fivegear.remar.MainActivity;
 import fi.fivegear.remar.Constants;
-
-/**
- * Created by st0rm23 on 2017/2/20.
- */
+import fi.fivegear.remar.helpers.DatabaseHelper;
+import fi.fivegear.remar.models.RequestEntry;
+import fi.fivegear.remar.models.ServerInfo;
 
 public class TransmissionTask extends Activity implements Runnable {
 
@@ -63,10 +58,17 @@ public class TransmissionTask extends Activity implements Runnable {
     private SharedPreferences sharedPreferencesSession;
     private String currSessionNumber;
 
-    public TransmissionTask(DatagramChannel datagramChannel, SocketAddress serverAddress, Context context) {
+    private DatabaseHelper requestsDatabase;
+    private String serverIP;
+    private int serverPort;
+
+    public TransmissionTask(DatagramChannel datagramChannel, SocketAddress serverAddress, Context context, DatabaseHelper requestsDatabase, String serverIP, int serverPort) {
         this.datagramChannel = datagramChannel;
         this.serverAddress = serverAddress;
         this.context = context;
+        this.requestsDatabase = requestsDatabase;
+        this.serverIP = serverIP;
+        this.serverPort = serverPort;
 
         YUVMatTrans = new Mat(Constants.previewHeight + Constants.previewHeight / 2, Constants.previewWidth, CvType.CV_8UC1);
         YUVMatScaled = new Mat((Constants.previewHeight + Constants.previewHeight / 2) / Constants.recoScale, Constants.previewWidth / Constants.recoScale, CvType.CV_8UC1);
@@ -102,7 +104,7 @@ public class TransmissionTask extends Activity implements Runnable {
         // pulling session number
         sharedPreferencesSession = context.getSharedPreferences("currSessionSetting", Context.MODE_PRIVATE);
         currSessionNumber = sharedPreferencesSession.getString("currSessionNumber", "0");
-        
+
         MainActivity.uploadStatus.setImageAlpha(0);
         if (dataType == IMAGE_DETECT) {
             YUVMatTrans.put(0, 0, frameData);
@@ -140,6 +142,14 @@ public class TransmissionTask extends Activity implements Runnable {
             ByteBuffer buffer = ByteBuffer.allocate(packetContent.length).put(packetContent);
             buffer.flip();
             datagramChannel.send(buffer, serverAddress);
+            time = System.currentTimeMillis();
+
+            // Appending the sent information into the database table
+            RequestEntry newRequestEntry = new RequestEntry("", Integer.parseInt(currSessionNumber),
+                    frmID, String.valueOf(time), serverIP, serverPort, datasize+12,
+                    "", "");
+            long newRequestsEntry_id = requestsDatabase.createRequestEntry(newRequestEntry);
+
             MainActivity.uploadStatus.setImageAlpha(255);
 
         } catch (IOException e) {

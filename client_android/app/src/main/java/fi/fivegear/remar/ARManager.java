@@ -15,8 +15,12 @@ import java.net.InetSocketAddress;
 import java.net.SocketAddress;
 import java.nio.channels.DatagramChannel;
 
+import fi.fivegear.remar.helpers.DatabaseHelper;
+import fi.fivegear.remar.models.RequestEntry;
+import fi.fivegear.remar.models.ServerInfo;
 import fi.fivegear.remar.network.ReceivingTask;
 import fi.fivegear.remar.network.TransmissionTask;
+
 
 import static fi.fivegear.remar.activities.settingsServer.currServerSettings;
 
@@ -36,6 +40,7 @@ public class ARManager {
     private static boolean isCloudBased;
 
     SharedPreferences sharedPreferences;
+    DatabaseHelper requestsDatabase, resultsDatabase;
 
     private ARManager(){ super(); }
 
@@ -72,6 +77,10 @@ public class ARManager {
         String serverIP = sharedPreferences.getString("currServerIP", "0.0.0.0");
         int serverPort = sharedPreferences.getInt("currServerPort", 0);
 
+        // load database tables to pass to the threads dealing with requests and results
+        requestsDatabase = new DatabaseHelper(context.getApplicationContext());
+        resultsDatabase = new DatabaseHelper(context.getApplicationContext());
+
         // validating whether IP address is valid, if not, default to 0.0.0.0 and change preferences
         boolean isValid = InetAddresses.isNumericAddress(serverIP);
         if(isValid == false) {
@@ -92,11 +101,13 @@ public class ARManager {
         this.handlerNetwork = createAndStartThread("network thread", 1);
 
         if(isCloudBased) {
-            taskTransmission = new TransmissionTask(dataChannel, serverAddr, context);
+            taskTransmission = new TransmissionTask(dataChannel, serverAddr, context, requestsDatabase,
+                    serverIP, serverPort);
 	        //pengzhou
             taskTransmission.setData(0,"a".getBytes());
             handlerNetwork.post(taskTransmission);
-            taskReceiving = new ReceivingTask(dataChannel, context);
+            taskReceiving = new ReceivingTask(dataChannel, context, resultsDatabase, serverIP,
+                    serverPort);
             taskReceiving.setCallback(new ReceivingTask.Callback() {
                 @Override
                 public void onReceive(int resultID, Detected[] detected) {

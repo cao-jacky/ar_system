@@ -19,7 +19,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String LOG = "DatabaseHelper";
 
     // Database version
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 2;
 
     // Database name
     private static final String DATABASE_NAME = "remarManager";
@@ -33,6 +33,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String KEY_RECOGNITION_ID = "recognitionID";
     private static final String KEY_SERVER_IP = "serverIP";
     private static final String KEY_SERVER_PORT = "serverPort";
+    private static final String KEY_SESSION_ID = "sessionID";
+    private static final String KEY_FRAME_ID = "frameID";
 
     // server_info table - column names
     private static final String KEY_SERVER_ID = "serverID";
@@ -60,17 +62,17 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     // request_items
     private static final String CREATE_TABLE_REQUEST_ITEMS = "CREATE TABLE "
             + TABLE_REQUEST + "(" + KEY_REQUEST_ID + " INTEGER PRIMARY KEY," + KEY_RECOGNITION_ID
-            + " TEXT," + KEY_UNIX_TIME_REQUEST_SENT + " INTEGER," + KEY_SERVER_IP
-            + " TEXT," + KEY_SERVER_PORT + " INTEGER," + KEY_REQUEST_ARRAY_LENGTH
-            + " INTEGER," + KEY_REQUEST_GPS_COORD + " TEXT," + KEY_PROTOCOL
-            + " TEXT" + ")";
+            + " TEXT," + KEY_SESSION_ID + " INTEGER," + KEY_FRAME_ID + " INTEGER,"
+            + KEY_UNIX_TIME_REQUEST_SENT + " INTEGER," + KEY_SERVER_IP + " TEXT," + KEY_SERVER_PORT
+            + " INTEGER," + KEY_REQUEST_ARRAY_LENGTH + " INTEGER," + KEY_REQUEST_GPS_COORD +
+            " TEXT," + KEY_PROTOCOL + " TEXT" + ")";
 
     // result_items
     private static final String CREATE_TABLE_RESULT_ITEMS = "CREATE TABLE "
             + TABLE_RESULTS + "(" + KEY_RESULTS_ID + " INTEGER PRIMARY KEY," + KEY_RECOGNITION_ID
-            + " TEXT," + KEY_UNIX_TIME_RESULTS_REC + " INTEGER," + KEY_SERVER_IP
-            + " TEXT," + KEY_SERVER_PORT + " INTEGER," + KEY_RECEIVED_RESULTS
-            + " TEXT" + ")";
+            + " TEXT," + KEY_SESSION_ID + " INTEGER," + KEY_FRAME_ID + " INTEGER,"
+            + KEY_UNIX_TIME_RESULTS_REC + " INTEGER," + KEY_SERVER_IP + " TEXT," + KEY_SERVER_PORT
+            + " INTEGER," + KEY_RECEIVED_RESULTS + " TEXT" + ")";
 
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -116,6 +118,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         ContentValues values = new ContentValues();
         values.put(KEY_RECOGNITION_ID, requestEntry.getRecognitionID());
+        values.put(KEY_SESSION_ID, requestEntry.getSessionID());
+        values.put(KEY_FRAME_ID, requestEntry.getFrameID());
         values.put(KEY_UNIX_TIME_REQUEST_SENT, requestEntry.getUnixTimeRequestSent());
         values.put(KEY_SERVER_IP, requestEntry.getServerIP());
         values.put(KEY_SERVER_PORT, requestEntry.getServerPort());
@@ -132,6 +136,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
         ContentValues values = new ContentValues();
         values.put(KEY_RECOGNITION_ID, resultsEntry.getRecognitionID());
+        values.put(KEY_SESSION_ID, resultsEntry.getSessionID());
+        values.put(KEY_FRAME_ID, resultsEntry.getFrameID());
         values.put(KEY_UNIX_TIME_RESULTS_REC, resultsEntry.getUnixTimeResultsRec());
         values.put(KEY_SERVER_IP, resultsEntry.getServerIP());
         values.put(KEY_SERVER_PORT, resultsEntry.getServerPort());
@@ -178,8 +184,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         if (c.moveToFirst()) {
             do {
                 RequestEntry re = new RequestEntry();
-                re.setRequestID(c.getInt(c.getColumnIndex(KEY_REQUEST_ID)));
                 re.setRecognitionID(c.getString(c.getColumnIndex(KEY_RECOGNITION_ID)));
+                re.setSessionID(c.getInt(c.getColumnIndex(KEY_SESSION_ID)));
+                re.setFrameID(c.getInt(c.getColumnIndex(KEY_FRAME_ID)));
                 re.setUnixTimeRequestSent(c.getString(c.getColumnIndex(KEY_UNIX_TIME_REQUEST_SENT)));
                 re.setServerIP(c.getString(c.getColumnIndex(KEY_SERVER_IP)));
                 re.setServerPort(c.getInt(c.getColumnIndex(KEY_SERVER_PORT)));
@@ -203,8 +210,9 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         if (c.moveToFirst()) {
             do {
                 ResultsEntry re = new ResultsEntry();
-                re.setResultsID(c.getInt(c.getColumnIndex(KEY_RESULTS_ID)));
                 re.setRecognitionID(c.getString(c.getColumnIndex(KEY_RECOGNITION_ID)));
+                re.setSessionID(c.getInt(c.getColumnIndex(KEY_SESSION_ID)));
+                re.setFrameID(c.getInt(c.getColumnIndex(KEY_FRAME_ID)));
                 re.setUnixTimeResultsRec(c.getString(c.getColumnIndex(KEY_UNIX_TIME_RESULTS_REC)));
                 re.setServerIP(c.getString(c.getColumnIndex(KEY_SERVER_IP)));
                 re.setServerPort(c.getInt(c.getColumnIndex(KEY_SERVER_PORT)));

@@ -3,6 +3,8 @@ package fi.fivegear.remar.models;
 public class ResultsEntry {
     int resultsID;
     String recognitionID;
+    int sessionID;
+    int frameID;
     String unixTimeResultsRec;
     String serverIP;
     int serverPort;
@@ -12,10 +14,11 @@ public class ResultsEntry {
     public ResultsEntry() {
     }
 
-    public ResultsEntry(int id, String recognitionID, String unixTimeResultsRec, String serverIP,
-                        int serverPort, String receivedResults) {
-        this.resultsID = id;
+    public ResultsEntry(String recognitionID, int sessionID, int frameID, String unixTimeResultsRec,
+                        String serverIP, int serverPort, String receivedResults) {
         this.recognitionID = recognitionID;
+        this.sessionID = sessionID;
+        this.frameID = frameID;
         this.unixTimeResultsRec = unixTimeResultsRec;
         this.serverIP = serverIP;
         this.serverPort = serverPort;
@@ -29,6 +32,14 @@ public class ResultsEntry {
 
     public void setRecognitionID(String recognitionID) {
         this.recognitionID = recognitionID;
+    }
+
+    public void setSessionID(int sessionID) {
+        this.sessionID = sessionID;
+    }
+
+    public void setFrameID(int frameID) {
+        this.frameID = frameID;
     }
 
     public void setUnixTimeResultsRec(String unixTimeResultsRec) {
@@ -54,6 +65,14 @@ public class ResultsEntry {
 
     public String getRecognitionID() {
         return recognitionID;
+    }
+
+    public int getSessionID() {
+        return sessionID;
+    }
+
+    public int getFrameID() {
+        return frameID;
     }
 
     public String getUnixTimeResultsRec() {

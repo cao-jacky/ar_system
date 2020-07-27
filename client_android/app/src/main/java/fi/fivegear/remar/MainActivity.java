@@ -30,6 +30,7 @@ import android.provider.Settings;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Display;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
@@ -53,6 +54,7 @@ import android.widget.Toast;
 import org.w3c.dom.Text;
 
 import fi.fivegear.remar.activities.SettingsActivity;
+import fi.fivegear.remar.activities.StatsActivity;
 import fi.fivegear.remar.activities.settingsServer;
 import fi.fivegear.remar.helpers.DatabaseHelper;
 import fi.fivegear.remar.models.ServerInfo;
@@ -101,7 +103,7 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
     public static int screenWidth;
     public static int screenHeight;
 
-    FrameLayout settingsButton;
+    FrameLayout settingsButton, statsButton;
 
     public SharedPreferences sharedPreferencesSession;
 
@@ -146,15 +148,14 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
             }
         });
 
-        getScreenResolution(this);
-
-//        String deviceName = android.os.Build.MODEL;
-//        String android_id = Settings.Secure.getString(this.getContentResolver(),
-//                Settings.Secure.ANDROID_ID);
-//
-//        Log.d("TEST", String.valueOf(deviceName.getBytes().length));
-//        Log.d("TEST", String.valueOf(android_id.getBytes().length));
-        //byte[] sample = toBytes(deviceName, 256);
+        // statistics button
+        statsButton = (FrameLayout)findViewById(R.id.statsButton);
+        statsButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openStatsActivity();
+            }
+        });
 
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         //mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
@@ -240,7 +241,8 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         builder.setView(content);
 
         currSessionNumber = sharedPreferencesSession.getString("currSessionNumber", "0");
-        modalCurrSessionNumber = (TextView)content.findViewById(R.id.currSessionNumber);
+        modalCurrSessionNumber = (TextView)content.findViewById(R.id.editSessionNumber);
+        modalCurrSessionNumber.setGravity(Gravity.CENTER_HORIZONTAL);
         modalCurrSessionNumber.setText(currSessionNumber);
 
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -270,6 +272,10 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
 
     public void openSettingsActivity(){
         Intent intent = new Intent(this, SettingsActivity.class);
+        startActivity(intent);
+    }
+    public void openStatsActivity(){
+        Intent intent = new Intent(this, StatsActivity.class);
         startActivity(intent);
     }
 

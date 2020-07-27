@@ -103,7 +103,6 @@ public class ARManager {
         if(isCloudBased) {
             taskTransmission = new TransmissionTask(dataChannel, serverAddr, context, requestsDatabase,
                     serverIP, serverPort);
-	        //pengzhou
             taskTransmission.setData(0,"a".getBytes());
             handlerNetwork.post(taskTransmission);
             taskReceiving = new ReceivingTask(dataChannel, context, resultsDatabase, serverIP,
@@ -152,7 +151,6 @@ public class ARManager {
             taskReceiving.updateLatestSentID(frameID);
         }
     }*/
-    //------------------pengzhou: timestamp-------------------
     public void recognizeTime(int frameID, byte[] frameData){// double timeCaptured, double timeSend) {
         if(ARManager.isCloudBased) {
             taskTransmission.setData(frameID, frameData);//, timeCaptured, timeSend);

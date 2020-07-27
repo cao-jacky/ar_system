@@ -78,9 +78,6 @@
                 android:paddingLeft="2dp"
                 android:text="Session ?"
                 android:textAlignment="textStart"
-                android:clickable="true"
-                android:focusable="true"
-                android:onClick="onClick"
                 surfaceview:layout_constraintBottom_toBottomOf="parent"
                 surfaceview:layout_constraintStart_toStartOf="parent"
                 surfaceview:layout_constraintTop_toTopOf="parent" />

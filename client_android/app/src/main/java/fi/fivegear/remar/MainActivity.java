@@ -132,15 +132,26 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         sharedPreferencesSession = getSharedPreferences("currSessionSetting", Context.MODE_PRIVATE);
         currSessionNumber = sharedPreferencesSession.getString("currSessionNumber", "0");
         sessionGlanceString = (TextView)findViewById(R.id.sessionGlance);
-        sessionGlanceString.setText("Session " + currSessionNumber);
 
-        sessionController = (TextView)findViewById(R.id.sessionGlance);
-        sessionController.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openSessionGlanceModal();
-            }
-        });
+        SharedPreferences.Editor editor = sharedPreferencesSession.edit();
+        String newSessionNumber = String.valueOf(Integer.parseInt(currSessionNumber)+1);
+        editor.putString("currSessionNumber", newSessionNumber);
+        editor.apply();
+
+        // changing session number to new increment
+        sessionGlanceString.setText("Session " + newSessionNumber);
+
+        Toast.makeText(MainActivity.this, "Session number increased from " + currSessionNumber
+                + " to " + newSessionNumber, Toast.LENGTH_LONG).show();
+
+
+
+//        sessionController.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                openSessionGlanceModal();
+//            }
+//        });
 
         // Settings button
         settingsButton = (FrameLayout)findViewById(R.id.settingsButton);
@@ -166,7 +177,6 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
             return;
         }
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, this);
-        //-----------------------------------pengzhou: location service-----------------------------
 
         mPreview = findViewById(R.id.cameraPreview);
         mPreview.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE
@@ -178,7 +188,6 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         mPreviewHolder = mPreview.getHolder();
         mPreviewHolder.addCallback(surfaceCallback);
         mPreview.setZOrderMediaOverlay(false);
-        // pengzhou: following command enable ontouch
         mPreview.setOnTouchListener(this);
 
         if (Constants.Show2DView) {
@@ -191,8 +200,6 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
             @Override
             public void onObjectsDetected(Detected[] detected) {
                 mDraw.updateData(detected);
-                //mDraw.updateData(frameID);
-                //mDraw.updateOrientationAngles();
             }
         });
     }
@@ -335,23 +342,9 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
 
         if (checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
             mCamera = Camera.open();
-
-            if (Constants.Show2DView) {
-                mDraw = new DrawOnTop(this);
-                addContentView(mDraw, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
-            }
-
-            ARManager.getInstance().init(this, true);
-            ARManager.getInstance().setCallback(new ARManager.Callback() {
-                @Override
-                public void onObjectsDetected(Detected[] detected) {
-                    mDraw.updateData(detected);
-                    //mDraw.updateData(frameID);
-                    //mDraw.updateOrientationAngles();
-                }
-            });
-            ARManager.getInstance().start();
         }
+
+//        recreate();
     }
 
     @Override
@@ -363,11 +356,12 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
             mCamera.stopPreview();
 
         mCamera.setPreviewCallbackWithBuffer(null);
+        mCamera.lock();
         mCamera.release();
         mCamera = null;
         mInPreview = false;
     //mSensorManager.unregisterListener(this);
-        //ARManager.getInstance().stop();
+//        ARManager.getInstance().stop();
 
     }
 
@@ -375,6 +369,8 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
     public void onStop() {
         Log.i(Constants.TAG, " onStop() called.");
         ARManager.getInstance().stop();
+        finish();
+//        System.exit(2);
         super.onStop();
 
     }
@@ -557,6 +553,7 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
 
             if(detecteds != null) {
                 for (Detected detected : detecteds) {
+                    Log.d("test", detected.name);
                     float scale_width = (previewWidth-screenWidth);
                     float scale_height = (previewHeight-screenHeight+screenHeight/2-screenHeight/6);
                     canvas.drawRect((detected.left)*dispScale-scale_width-5, (detected.top)*(dispScale)-scale_height-50,

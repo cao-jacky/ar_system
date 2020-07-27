@@ -6,6 +6,7 @@ import android.app.Dialog;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.icu.text.SimpleDateFormat;
@@ -32,10 +33,13 @@ import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.List;
 
+import fi.fivegear.remar.MainActivity;
 import fi.fivegear.remar.R;
 import fi.fivegear.remar.helpers.DatabaseHelper;
 import fi.fivegear.remar.helpers.ServerInfoData;
 import fi.fivegear.remar.models.ServerInfo;
+
+import static fi.fivegear.remar.Constants.TAG;
 
 public class settingsServer extends Activity {
     public static final String currServerSettings = "currServerSettings";
@@ -116,8 +120,8 @@ public class settingsServer extends Activity {
         serverIPET = (EditText)content.findViewById(R.id.setServerIP);
         serverPortET = (EditText)content.findViewById(R.id.setServerPort);
 
-        serverIPET.setHint(serverIP);
-        serverPortET.setHint(String.valueOf(serverPort));
+        serverIPET.setText(serverIP);
+        serverPortET.setText(String.valueOf(serverPort));
 
 //        builder.setView(inflater.inflate(R.layout.popup_server_details, null));
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
@@ -188,6 +192,8 @@ public class settingsServer extends Activity {
                     // Refereshing the activity to show new changes
 //                finish();
 //                startActivity(getIntent());
+                    finish();
+                    System.exit(2);
 
                 }
 

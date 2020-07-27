@@ -8,15 +8,11 @@ import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Gravity;
-import android.view.View;
 import android.widget.EditText;
-import android.widget.TextView;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 import fi.fivegear.remar.R;
-import fi.fivegear.remar.helpers.DatabaseHelper;
 
 public class StatsActivity extends Activity {
     EditText statsSessionNumber;
@@ -44,16 +40,32 @@ public class StatsActivity extends Activity {
 
     private void setStatsActivity(String sessionNumber, SQLiteDatabase db) {
         // query session, requests and results databases
-        Cursor requests = db.rawQuery("SELECT * FROM request_items WHERE recognitionID = ?; ",
+        Cursor requests = db.rawQuery("SELECT * FROM request_items WHERE sessionID = ?; ",
                 new String[]{currSessionNumber});
-        Cursor results = db.rawQuery("SELECT * FROM result_items WHERE recognitionID = ?; ",
+        Cursor results = db.rawQuery("SELECT * FROM result_items WHERE sessionID = ?; ",
                 new String[]{currSessionNumber});
 
-//        ArrayList<String> results = new ArrayList<String>();
-//        ArrayList<String> unixTimeSent = new
-        while (results.moveToNext()) {
-//            results.add(requests.getString(0)); // 0 is the first column
-            Log.d("test", results.getString(0)+" "+results.getString(1));
+        // Initialising array lists
+        ArrayList<String> unixTimeSent = new ArrayList<String>();
+        ArrayList<Integer> requestsFrameID = new ArrayList<>();
+
+        ArrayList<String> unixTimeReceived = new ArrayList<String>();
+        ArrayList<Integer> resultsFrameID = new ArrayList<>();
+
+        while (requests.moveToNext()) {
+            requestsFrameID.add(requests.getInt(3));
+            unixTimeSent.add(requests.getString(4));
         }
+
+        while (results.moveToNext()) {
+            resultsFrameID.add(results.getInt(3));
+            unixTimeReceived.add(results.getString(4));
+        }
+
+        // matching results to the requests
+        requestsFrameID.retainAll(resultsFrameID);
+        System.out.println(requestsFrameID);
+
+
     }
 }

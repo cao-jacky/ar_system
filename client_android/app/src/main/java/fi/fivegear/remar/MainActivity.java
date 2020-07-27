@@ -120,6 +120,9 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         // Check for user permissions before loading main activity
         checkPermission();
 
+        // required to draw annotations on screen
+        getScreenResolution(this);
+
         setContentView(R.layout.activity_main);
 
         // Status indicators for sending and receiving from server
@@ -223,8 +226,8 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
 
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        if (requestCode == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED && grantResults[1] == PackageManager.PERMISSION_GRANTED) {
-
+        if (requestCode == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED
+                && grantResults[1] == PackageManager.PERMISSION_GRANTED) {
         } else {
             checkPermission();
         }
@@ -279,15 +282,7 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         startActivity(intent);
     }
 
-    public static boolean isNetworkConnected(Context ctx) {
-        ConnectivityManager cm = (ConnectivityManager) ctx
-                .getSystemService (Context.CONNECTIVITY_SERVICE);
-        NetworkInfo ni = cm.getActiveNetworkInfo();
 
-        return ni != null && ni.isConnectedOrConnecting();
-    }
-
-    //-----------------------------------pengzhou: location service---------------------------------
     @Override
     protected void attachBaseContext(Context context) {
         super.attachBaseContext(context);

@@ -6,7 +6,6 @@ import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Gravity;
 import android.widget.EditText;
 
@@ -62,10 +61,34 @@ public class StatsActivity extends Activity {
             unixTimeReceived.add(results.getString(4));
         }
 
-        // matching results to the requests
-        requestsFrameID.retainAll(resultsFrameID);
-        System.out.println(requestsFrameID);
+        // matching results to the requests lists
+        ArrayList<Integer> matchedRequestsFrameID = new ArrayList<>(requestsFrameID);
+        matchedRequestsFrameID.retainAll(resultsFrameID);
 
+        // go through requestsFrameID and resultsFrameID and use indexOf on requestsFrameID
+//        System.out.println(matchedRequestsFrameID.size() + " " +  resultsFrameID.size());
+
+        ArrayList<Long> timeDifferences = new ArrayList<>();
+
+        // finding corresponding unix time values and working out the difference
+        for (int i = 0; i < matchedRequestsFrameID.size(); i++) {
+            int requestIndex = requestsFrameID.indexOf(matchedRequestsFrameID.get(i));
+            String timeSent = unixTimeSent.get(requestIndex);
+            String timeReceived = unixTimeReceived.get(i);
+
+            long timeDiff = Long.parseLong(timeReceived) - Long.parseLong(timeSent);
+            timeDifferences.add(timeDiff);
+
+        }
+
+        // calculating average time for this particular session
+        double sum = 0;
+        for (long i : timeDifferences) {
+            sum += i;
+        }
+        double avgCommTime = sum / timeDifferences.size();
+
+        
 
     }
 }

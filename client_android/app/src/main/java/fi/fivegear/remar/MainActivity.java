@@ -144,8 +144,6 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         Toast.makeText(MainActivity.this, "Session number increased from " + currSessionNumber
                 + " to " + newSessionNumber, Toast.LENGTH_LONG).show();
 
-
-
 //        sessionController.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {

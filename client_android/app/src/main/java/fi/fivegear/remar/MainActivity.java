@@ -18,15 +18,15 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.net.ConnectivityManager;
-import android.net.InetAddresses;
 import android.net.NetworkInfo;
 import android.os.Build;
 import android.os.Bundle;
+
 import androidx.annotation.NonNull;
 import androidx.multidex.MultiDex;
 import androidx.core.app.ActivityCompat;
 
-import android.provider.Settings;
+import android.telephony.TelephonyManager;
 import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Display;
@@ -38,12 +38,9 @@ import android.view.SurfaceView;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
-import android.widget.TableLayout;
-import android.widget.TableRow;
 import android.widget.TextView;
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;
@@ -51,13 +48,8 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.widget.Toast;
 
-import org.w3c.dom.Text;
-
 import fi.fivegear.remar.activities.SettingsActivity;
 import fi.fivegear.remar.activities.StatsActivity;
-import fi.fivegear.remar.activities.settingsServer;
-import fi.fivegear.remar.helpers.DatabaseHelper;
-import fi.fivegear.remar.models.ServerInfo;
 
 import static fi.fivegear.remar.Constants.previewHeight;
 import static fi.fivegear.remar.Constants.previewWidth;
@@ -76,19 +68,21 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
     private boolean recoFlag = false;
     private int frameID;
     public byte[] locationbyte;
-
     //-----------------------------------pengzhou: location service---------------------------------
     protected LocationManager locationManager;
     protected LocationListener locationListener;
+    Location gps_loc;
+    Location network_loc;
+    Location final_loc;
     protected Context context;
     protected double latitude;
     protected double longitude;
+    protected double altitude;
     protected double timeCaptured;
     protected double timeSend;
     protected float bearing;
     TextView txtLat;
 
-    //-----------------------------------pengzhou: orientation service------------------------------
     private SensorManager mSensorManager;
     private Sensor mProximity;
     private final float[] mAccelerometerReading = new float[3];
@@ -105,7 +99,7 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
 
     FrameLayout settingsButton, statsButton;
 
-    public SharedPreferences sharedPreferencesSession;
+    public SharedPreferences sharedPreferencesSession, sharedPreferencesLocation;
 
     public TextView sessionController;
     String currSessionNumber;
@@ -126,17 +120,17 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         setContentView(R.layout.activity_main);
 
         // Status indicators for sending and receiving from server
-        uploadStatus = (ImageView)findViewById(R.id.statusUpload);
-        downloadStatus = (ImageView)findViewById(R.id.statusDownload);
+        uploadStatus = (ImageView) findViewById(R.id.statusUpload);
+        downloadStatus = (ImageView) findViewById(R.id.statusDownload);
 
         sharedPreferencesSession = getSharedPreferences("currSessionSetting", Context.MODE_PRIVATE);
         currSessionNumber = sharedPreferencesSession.getString("currSessionNumber", "0");
-        sessionGlanceString = (TextView)findViewById(R.id.sessionGlance);
+        sessionGlanceString = (TextView) findViewById(R.id.sessionGlance);
 
-        SharedPreferences.Editor editor = sharedPreferencesSession.edit();
-        String newSessionNumber = String.valueOf(Integer.parseInt(currSessionNumber)+1);
-        editor.putString("currSessionNumber", newSessionNumber);
-        editor.apply();
+        SharedPreferences.Editor sessionEditor = sharedPreferencesSession.edit();
+        String newSessionNumber = String.valueOf(Integer.parseInt(currSessionNumber) + 1);
+        sessionEditor.putString("currSessionNumber", newSessionNumber);
+        sessionEditor.apply();
 
         // changing session number to new increment
         sessionGlanceString.setText("Session " + newSessionNumber);
@@ -152,7 +146,7 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
 //        });
 
         // Settings button
-        settingsButton = (FrameLayout)findViewById(R.id.settingsButton);
+        settingsButton = (FrameLayout) findViewById(R.id.settingsButton);
         settingsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -161,7 +155,7 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         });
 
         // statistics button
-        statsButton = (FrameLayout)findViewById(R.id.statsButton);
+        statsButton = (FrameLayout) findViewById(R.id.statsButton);
         statsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -170,11 +164,23 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         });
 
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
-        //mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            return;
-        }
         locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 0, 0, this);
+        locationManager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER, 0, 0, this);
+
+        // set the last location as the current variable in SharedPreferences
+        network_loc = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+        String lat_long_alt = String.valueOf(network_loc.getLatitude()) + ","
+                + String.valueOf(network_loc.getLongitude()) + ","
+                + String.valueOf(network_loc.getAltitude());
+
+        sharedPreferencesLocation = getSharedPreferences("currLocationSetting", Context.MODE_PRIVATE);
+        SharedPreferences.Editor locationEditor = sharedPreferencesLocation.edit();
+        locationEditor.putString("currLocation", lat_long_alt);
+        locationEditor.apply();
+
+        System.out.println(getNetworkClass(this));
+
+        mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
 
         mPreview = findViewById(R.id.cameraPreview);
         mPreview.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE
@@ -202,8 +208,7 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         });
     }
 
-    private void getScreenResolution(Context context)
-    {
+    private void getScreenResolution(Context context) {
         WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
         Display display = wm.getDefaultDisplay();
         DisplayMetrics metrics = new DisplayMetrics();
@@ -282,11 +287,52 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         Intent intent = new Intent(this, SettingsActivity.class);
         startActivity(intent);
     }
+
     public void openStatsActivity(){
         Intent intent = new Intent(this, StatsActivity.class);
         startActivity(intent);
     }
 
+    public static String getNetworkClass(Context context) {
+        ConnectivityManager cm = (ConnectivityManager) context.getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo info = cm.getActiveNetworkInfo();
+        if (info == null || !info.isConnected())
+            return "-"; // not connected
+        if (info.getType() == ConnectivityManager.TYPE_WIFI)
+            return "WiFi";
+        if (info.getType() == ConnectivityManager.TYPE_MOBILE) {
+            int networkType = info.getSubtype();
+            switch (networkType) {
+                case TelephonyManager.NETWORK_TYPE_GPRS:
+                case TelephonyManager.NETWORK_TYPE_EDGE:
+                case TelephonyManager.NETWORK_TYPE_CDMA:
+                case TelephonyManager.NETWORK_TYPE_1xRTT:
+                case TelephonyManager.NETWORK_TYPE_IDEN:     // api< 8: replace by 11
+                case TelephonyManager.NETWORK_TYPE_GSM:      // api<25: replace by 16
+                    return "2G";
+                case TelephonyManager.NETWORK_TYPE_UMTS:
+                case TelephonyManager.NETWORK_TYPE_EVDO_0:
+                case TelephonyManager.NETWORK_TYPE_EVDO_A:
+                case TelephonyManager.NETWORK_TYPE_HSDPA:
+                case TelephonyManager.NETWORK_TYPE_HSUPA:
+                case TelephonyManager.NETWORK_TYPE_HSPA:
+                case TelephonyManager.NETWORK_TYPE_EVDO_B:   // api< 9: replace by 12
+                case TelephonyManager.NETWORK_TYPE_EHRPD:    // api<11: replace by 14
+                case TelephonyManager.NETWORK_TYPE_HSPAP:    // api<13: replace by 15
+                case TelephonyManager.NETWORK_TYPE_TD_SCDMA: // api<25: replace by 17
+                    return "3G";
+                case TelephonyManager.NETWORK_TYPE_LTE:      // api<11: replace by 13
+                case TelephonyManager.NETWORK_TYPE_IWLAN:    // api<25: replace by 18
+                case 19: // LTE_CA
+                    return "4G";
+                case TelephonyManager.NETWORK_TYPE_NR:       // api<29: replace by 20
+                    return "5G";
+                default:
+                    return "?";
+            }
+        }
+        return "?";
+    }
 
     @Override
     protected void attachBaseContext(Context context) {
@@ -296,13 +342,16 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
 
     @Override
     public void onLocationChanged(Location location) {
-        //txtLat = findViewById(R.id.text1);
-        //txtLat.setText("Latitude:" + location.getLatitude() + ", Longitude:" + location.getLongitude());
-        //String locationstring = txtLat.getText().toString();
-//        locationbyte = locationstring.getBytes();
-//        latitude =  location.getLatitude();
-//        longitude = location.getLongitude();
-//        bearing = location.getBearing();
+        latitude =  location.getLatitude();
+        longitude = location.getLongitude();
+        altitude = location.getAltitude();
+        String lat_long_alt = latitude + ","  + longitude + "," + altitude;
+//        Toast.makeText(MainActivity.this, lat_long_alt, Toast.LENGTH_LONG).show();
+
+        sharedPreferencesLocation = getSharedPreferences("currLocationSetting", Context.MODE_PRIVATE);
+        SharedPreferences.Editor locationEditor = sharedPreferencesLocation.edit();
+        locationEditor.putString("currLocation", lat_long_alt);
+        locationEditor.apply();
     }
 
     @Override
@@ -319,7 +368,6 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
     public void onStatusChanged(String provider, int status, Bundle extras) {
         Log.d("Latitude","status");
     }
-    //-----------------------------------pengzhou: orientation service------------------------------
     @Override
     public void onAccuracyChanged(Sensor sensor, int accuracy) {
         // Do something here if sensor accuracy changes.

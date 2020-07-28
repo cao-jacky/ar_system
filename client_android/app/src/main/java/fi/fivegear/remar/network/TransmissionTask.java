@@ -3,6 +3,7 @@ package fi.fivegear.remar.network;
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.location.LocationManager;
 import android.provider.ContactsContract;
 import android.util.Log;
 
@@ -55,12 +56,16 @@ public class TransmissionTask extends Activity implements Runnable {
     private long true_time;
 
     private Context context;
-    private SharedPreferences sharedPreferencesSession;
+    private SharedPreferences sharedPreferencesSession, sharedPreferencesLocation;
     private String currSessionNumber;
 
     private DatabaseHelper requestsDatabase;
     private String serverIP;
     private int serverPort;
+
+    private String currLocation;
+
+    private MainActivity mainActivity = new MainActivity();
 
     public TransmissionTask(DatagramChannel datagramChannel, SocketAddress serverAddress, Context context, DatabaseHelper requestsDatabase, String serverIP, int serverPort) {
         this.datagramChannel = datagramChannel;
@@ -105,6 +110,9 @@ public class TransmissionTask extends Activity implements Runnable {
         sharedPreferencesSession = context.getSharedPreferences("currSessionSetting", Context.MODE_PRIVATE);
         currSessionNumber = sharedPreferencesSession.getString("currSessionNumber", "0");
 
+        sharedPreferencesLocation = context.getSharedPreferences("currLocationSetting", Context.MODE_PRIVATE);
+        currLocation = sharedPreferencesLocation.getString("currLocation", "0");
+
         MainActivity.uploadStatus.setImageAlpha(0);
         if (dataType == IMAGE_DETECT) {
             YUVMatTrans.put(0, 0, frameData);
@@ -147,7 +155,7 @@ public class TransmissionTask extends Activity implements Runnable {
             // Appending the sent information into the database table
             RequestEntry newRequestEntry = new RequestEntry("", Integer.parseInt(currSessionNumber),
                     frmID, String.valueOf(time), serverIP, serverPort, datasize+12,
-                    "", "");
+                    currLocation, "");
             long newRequestsEntry_id = requestsDatabase.createRequestEntry(newRequestEntry);
 
             MainActivity.uploadStatus.setImageAlpha(255);

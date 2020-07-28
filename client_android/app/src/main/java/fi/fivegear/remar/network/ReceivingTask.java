@@ -2,6 +2,7 @@ package fi.fivegear.remar.network;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.location.LocationManager;
 import android.util.Log;
 
 import org.opencv.core.Point;

@@ -2,6 +2,7 @@ package fi.fivegear.remar;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.location.LocationManager;
 import android.net.InetAddresses;
 import android.os.Build;
 import android.os.Environment;

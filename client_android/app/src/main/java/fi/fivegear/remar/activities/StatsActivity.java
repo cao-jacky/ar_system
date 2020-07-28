@@ -88,7 +88,7 @@ public class StatsActivity extends Activity {
         }
         double avgCommTime = sum / timeDifferences.size();
 
-        
+
 
     }
 }

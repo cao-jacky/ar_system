@@ -1,12 +1,18 @@
 package fi.fivegear.remar.activities;
 
+import android.Manifest;
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.icu.text.SimpleDateFormat;
+import android.os.AsyncTask;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.Environment;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
@@ -18,12 +24,19 @@ import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.core.app.ActivityCompat;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
+import fi.fivegear.remar.MainActivity;
 import fi.fivegear.remar.R;
+import fi.fivegear.remar.helpers.CSVWriter;
 import fi.fivegear.remar.helpers.DatabaseHelper;
 import fi.fivegear.remar.models.RequestEntry;
 import fi.fivegear.remar.models.ResultsEntry;
@@ -46,7 +59,7 @@ public class StatsActivity extends Activity {
     private String currType;
     private Integer currFrameID;
 
-    private Button setSession;
+    private Button setSession, statsExport;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -83,7 +96,22 @@ public class StatsActivity extends Activity {
             }
         });
 
+        statsExport = (Button)findViewById(R.id.statsExport);
+        statsExport.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String currSessionToExport = String.valueOf(statsSessionNumber.getText());
 
+                sharedPreferencesSession = getSharedPreferences("currSessionSetting", Context.MODE_PRIVATE);
+                SharedPreferences.Editor editor = sharedPreferencesSession.edit();
+                editor.putString("sessionToExport", currSessionToExport);
+                editor.apply();
+
+                statsExporter();
+
+
+            }
+        });
     }
 
     public static String getUTCstring(String dateString) {
@@ -274,4 +302,83 @@ public class StatsActivity extends Activity {
 
     }
 
+    public class ExportDatabaseCSVTask extends AsyncTask<String, Void, Boolean> {
+
+        private final ProgressDialog dialog = new ProgressDialog(StatsActivity.this);
+        DatabaseHelper dbhelper;
+        @Override
+        protected void onPreExecute() {
+            this.dialog.setMessage("Exporting database tables");
+            this.dialog.show();
+            dbhelper = new DatabaseHelper(StatsActivity.this);
+        }
+
+        protected Boolean doInBackground(final String... args) {
+
+            sharedPreferencesSession = getSharedPreferences("currSessionSetting", Context.MODE_PRIVATE);
+            String sessionToExport = sharedPreferencesSession.getString("sessionToExport", "0");
+
+            File exportDir = new File(Environment.getExternalStorageDirectory(), "/ReMAR/");
+            if (!exportDir.exists()) { exportDir.mkdirs(); }
+
+            File requestsFile = new File(exportDir, "remar_session_" + sessionToExport + "_requests.csv");
+            File resultsFile = new File(exportDir, "remar_session_" + sessionToExport + "_results.csv");
+
+            try {
+                // writing requests file
+                requestsFile.createNewFile();
+                CSVWriter csvWriteRequests = new CSVWriter(new FileWriter(requestsFile));
+                Cursor requests = db.rawQuery("SELECT * FROM request_items WHERE sessionID = ?; ",
+                        new String[]{sessionToExport});
+                csvWriteRequests.writeNext(requests.getColumnNames());
+                while(requests.moveToNext()) {
+                    String arrStr[]=null;
+                    String[] mySecondStringArray = new String[requests.getColumnNames().length];
+                    for(int i=0;i<requests.getColumnNames().length;i++)
+                    {
+                        mySecondStringArray[i] = requests.getString(i);
+                    }
+                    csvWriteRequests.writeNext(mySecondStringArray);
+                }
+                csvWriteRequests.close();
+                requests.close();
+
+                resultsFile.createNewFile();
+                CSVWriter csvWriteResults = new CSVWriter(new FileWriter(resultsFile));
+                Cursor results = db.rawQuery("SELECT * FROM result_items WHERE sessionID = ?; ",
+                        new String[]{sessionToExport});
+                csvWriteResults.writeNext(results.getColumnNames());
+                while(results.moveToNext()) {
+                    String arrStr[]=null;
+                    String[] mySecondStringArray = new String[results.getColumnNames().length];
+                    for(int i=0;i<results.getColumnNames().length;i++)
+                    {
+                        mySecondStringArray[i] = results.getString(i);
+                    }
+                    csvWriteResults.writeNext(mySecondStringArray);
+                }
+                csvWriteResults.close();
+                results.close();
+                return true;
+            } catch (IOException e) {
+                System.out.println(e);
+                return false;
+            }
+        }
+
+        protected void onPostExecute(final Boolean success) {
+            if (this.dialog.isShowing()) { this.dialog.dismiss(); }
+            if (success) {
+                Toast.makeText(StatsActivity.this, "Export successful", Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(StatsActivity.this, "Export failed", Toast.LENGTH_SHORT).show();
+            }
+        }
+    }
+
+    private void statsExporter() {
+        // exporting requests and results data into CSV file
+        ActivityCompat.requestPermissions(StatsActivity.this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE, Manifest.permission.CAMERA, Manifest.permission.READ_EXTERNAL_STORAGE}, 1);
+        new ExportDatabaseCSVTask().executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
+    }
 }

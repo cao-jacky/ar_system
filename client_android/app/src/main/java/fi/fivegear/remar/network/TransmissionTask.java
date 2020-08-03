@@ -53,7 +53,6 @@ public class TransmissionTask extends Activity implements Runnable {
 
     public Mat YUVMatTrans, YUVMatScaled, GrayScaled;
     private long time;
-    private long true_time;
 
     private Context context;
     private SharedPreferences sharedPreferencesSession, sharedPreferencesLocation;

@@ -1,13 +1,18 @@
 package fi.fivegear.remar;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.app.AppOpsManager;
 import android.app.Dialog;
+import android.app.usage.NetworkStats;
+import android.app.usage.NetworkStatsManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageManager;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -26,6 +31,9 @@ import androidx.annotation.NonNull;
 import androidx.multidex.MultiDex;
 import androidx.core.app.ActivityCompat;
 
+import android.os.RemoteException;
+import android.provider.ContactsContract;
+import android.provider.Settings;
 import android.telephony.TelephonyManager;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -50,11 +58,15 @@ import android.widget.Toast;
 
 import fi.fivegear.remar.activities.SettingsActivity;
 import fi.fivegear.remar.activities.StatsActivity;
+import fi.fivegear.remar.helpers.DatabaseHelper;
+import fi.fivegear.remar.models.RequestEntry;
+import fi.fivegear.remar.models.SessionInfo;
 
 import static fi.fivegear.remar.Constants.previewHeight;
 import static fi.fivegear.remar.Constants.previewWidth;
 
-public class MainActivity extends Activity implements LocationListener, SensorEventListener, View.OnTouchListener {
+public class MainActivity extends Activity implements LocationListener, SensorEventListener,
+        View.OnTouchListener {
 
     private SurfaceView mPreview;
     private SurfaceHolder mPreviewHolder;
@@ -105,19 +117,44 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
     String currSessionNumber;
     TextView sessionGlanceString, modalCurrSessionNumber;
 
+    private double sessionTimeInitiated;
+    private DatabaseHelper db;
+
     String TAG = "DBG";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        // Check for user permissions before loading main activity
-        checkPermission();
-
-        // required to draw annotations on screen
-        getScreenResolution(this);
-
+        checkPermission(); // Check for user permissions before loading main activity
+        getScreenResolution(this); // required to draw annotations on screen
         setContentView(R.layout.activity_main);
+
+        // obtain UID of application
+        int uid;
+        try {
+            ApplicationInfo info = this.getPackageManager().getApplicationInfo(this.getPackageName(), 0);
+            uid = info.uid;
+        } catch (PackageManager.NameNotFoundException e) {
+            uid = -1;
+        }
+
+//        NetworkStatsManager networkStatsManager = (NetworkStatsManager) getApplicationContext().getSystemService(Context.NETWORK_STATS_SERVICE);
+//
+//        NetworkStats networkStats = null;
+//
+//        TelephonyManager tm = (TelephonyManager)getSystemService(Context.TELEPHONY_SERVICE);
+//        String subscriberID = tm.getSubscriberId();
+//        networkStats = networkStatsManager.queryDetailsForUid(
+//                ConnectivityManager.TYPE_MOBILE,
+//                subscriberID,
+//                System.currentTimeMillis(),
+//                System.currentTimeMillis()+2,
+//                uid);
+//        NetworkStats.Bucket bucket = new NetworkStats.Bucket();
+//        System.out.print(uid+"\n");
+//        System.out.print(bucket.getTxBytes());
+//        networkStats.getNextBucket(bucket);
 
         // Status indicators for sending and receiving from server
         uploadStatus = (ImageView) findViewById(R.id.statusUpload);
@@ -132,11 +169,20 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         sessionEditor.putString("currSessionNumber", newSessionNumber);
         sessionEditor.apply();
 
+        sessionTimeInitiated = System.currentTimeMillis();
+
         // changing session number to new increment
         sessionGlanceString.setText("Session " + newSessionNumber);
 
         Toast.makeText(MainActivity.this, "Session number increased from " + currSessionNumber
                 + " to " + newSessionNumber, Toast.LENGTH_LONG).show();
+
+        // preparing new entry into sessions database
+        db = new DatabaseHelper(this);
+        SessionInfo newSessionInfo = new SessionInfo(Integer.parseInt(newSessionNumber),
+                String.valueOf(sessionTimeInitiated), "",
+                0, 0, 0, 0, 0, 0, 0);
+        long newSessionInfo_id = db.createSessionsEntry(newSessionInfo);
 
 //        sessionController.setOnClickListener(new View.OnClickListener() {
 //            @Override
@@ -222,16 +268,28 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
             if (checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED
                     && checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED
                     && checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED
-                    && checkSelfPermission(android.Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
+                    && checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED
+                    && checkSelfPermission(Manifest.permission.READ_PHONE_STATE) == PackageManager.PERMISSION_GRANTED) {
 
             } else {
                 ActivityCompat.requestPermissions(this, new String[]{
                         Manifest.permission.CAMERA,
                         Manifest.permission.WRITE_EXTERNAL_STORAGE,
                         Manifest.permission.ACCESS_FINE_LOCATION,
-                        Manifest.permission.ACCESS_COARSE_LOCATION,}, 1);
+                        Manifest.permission.ACCESS_COARSE_LOCATION,
+                        Manifest.permission.READ_PHONE_STATE}, 1);
             }
         }
+
+//        AppOpsManager appOps = (AppOpsManager) getSystemService(Context.APP_OPS_SERVICE);
+//        int mode = appOps.checkOpNoThrow(AppOpsManager.OPSTR_GET_USAGE_STATS,
+//                android.os.Process.myUid(), getPackageName());
+//        if (mode == AppOpsManager.MODE_ALLOWED) {
+//            return;
+//        } else {
+//            Intent intent = new Intent(Settings.ACTION_USAGE_ACCESS_SETTINGS);
+//            startActivity(intent);
+//        }
     }
 
     @Override
@@ -241,6 +299,17 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         } else {
             checkPermission();
         }
+    }
+
+    //Here Manifest.permission.READ_PHONE_STATS is needed
+    private String getSubscriberId(Context context, int networkType) {
+        if (ConnectivityManager.TYPE_MOBILE == networkType) {
+            TelephonyManager tm = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
+            if (ActivityCompat.checkSelfPermission(context, Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
+            }
+            return tm.getSubscriberId();
+        }
+        return "";
     }
 
     public void openSessionGlanceModal() {

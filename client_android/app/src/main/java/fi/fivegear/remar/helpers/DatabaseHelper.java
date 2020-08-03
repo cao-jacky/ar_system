@@ -13,13 +13,14 @@ import java.util.List;
 import fi.fivegear.remar.models.RequestEntry;
 import fi.fivegear.remar.models.ResultsEntry;
 import fi.fivegear.remar.models.ServerInfo;
+import fi.fivegear.remar.models.SessionInfo;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
     // Logcat tag
     private static final String LOG = "DatabaseHelper";
 
     // Database version
-    private static final int DATABASE_VERSION = 2;
+    private static final int DATABASE_VERSION = 1;
 
     // Database name
     private static final String DATABASE_NAME = "remarManager";
@@ -28,6 +29,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String TABLE_SERVER = "server_info";
     private static final String TABLE_REQUEST = "request_items";
     private static final String TABLE_RESULTS = "result_items";
+    private static final String TABLE_SESSIONS = "sessions";
 
     // Common column names
     private static final String KEY_RECOGNITION_ID = "recognitionID";
@@ -50,7 +52,20 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     // result_items table - column names
     private static final String KEY_RESULTS_ID = "resultsID";
     private static final String KEY_UNIX_TIME_RESULTS_REC = "unixTimeResultsRec";
+    private static final String KEY_RESULTS_GPS_COORD = "resultsGPSCoord";
     private static final String KEY_RECEIVED_RESULTS = "receivedResults";
+
+    // sessions table - column names
+    private static final String KEY_SESSION_TABLE_ID = "sessionTableID";
+    private static final String KEY_UNIX_TIME_INITIATED = "unixTimeInitiated";
+    private static final String KEY_UNIX_TIME_ENDED = "unixTimeEnded";
+    private static final String KEY_BYTES_RECEIVED = "bytesReceived";
+    private static final String KEY_PACKETS_RECEIVED = "packetsReceived";
+    private static final String KEY_BYTES_TRANSMITTED = "bytesTransmitted";
+    private static final String KEY_PACKETS_TRANSMITTED = "packetsTransmitted";
+    private static final String KEY_AVG_RTT = "avgRTT";
+    private static final String KEY_NUM_REQUESTS = "numRequests";
+    private static final String KEY_NUM_RESULTS = "numResults";
 
     // Table create statements
     // server_info
@@ -72,7 +87,17 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             + TABLE_RESULTS + "(" + KEY_RESULTS_ID + " INTEGER PRIMARY KEY," + KEY_RECOGNITION_ID
             + " TEXT," + KEY_SESSION_ID + " INTEGER," + KEY_FRAME_ID + " INTEGER,"
             + KEY_UNIX_TIME_RESULTS_REC + " INTEGER," + KEY_SERVER_IP + " TEXT," + KEY_SERVER_PORT
-            + " INTEGER," + KEY_RECEIVED_RESULTS + " TEXT" + ")";
+            + " INTEGER," + KEY_RESULTS_GPS_COORD + " TEXT," + KEY_RECEIVED_RESULTS + " TEXT" + ")";
+
+    private static final String CREATE_TABLE_SESSIONS = "CREATE TABLE "
+            + TABLE_SESSIONS + "(" + KEY_SESSION_TABLE_ID + " INTEGER PRIMARY KEY," + KEY_SESSION_ID
+            + " INTEGER," + KEY_UNIX_TIME_INITIATED + " INTEGER," + KEY_UNIX_TIME_ENDED
+            + " INTEGER," + KEY_BYTES_RECEIVED + " REAL," + KEY_PACKETS_RECEIVED
+            + " REAL," + KEY_BYTES_TRANSMITTED + " REAL," + KEY_PACKETS_TRANSMITTED
+            + " REAL," + KEY_AVG_RTT + " REAL," + KEY_NUM_REQUESTS + " INTEGER,"
+            + KEY_NUM_RESULTS + " INTEGER" + ")";
+
+    // sessions
 
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
@@ -84,6 +109,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL(CREATE_TABLE_SERVER_INFO);
         db.execSQL(CREATE_TABLE_REQUEST_ITEMS);
         db.execSQL(CREATE_TABLE_RESULT_ITEMS);
+        db.execSQL(CREATE_TABLE_SESSIONS);
     }
 
     @Override
@@ -92,6 +118,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_SERVER);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_REQUEST);
         db.execSQL("DROP TABLE IF EXISTS " + TABLE_RESULTS);
+        db.execSQL("DROP TABLE IF EXISTS " + TABLE_SESSIONS);
 
         // create new tables
         onCreate(db);
@@ -141,10 +168,31 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(KEY_UNIX_TIME_RESULTS_REC, resultsEntry.getUnixTimeResultsRec());
         values.put(KEY_SERVER_IP, resultsEntry.getServerIP());
         values.put(KEY_SERVER_PORT, resultsEntry.getServerPort());
+        values.put(KEY_RESULTS_GPS_COORD, resultsEntry.getResultsGPSCoord());
         values.put(KEY_RECEIVED_RESULTS, resultsEntry.getReceivedResults());
 
         long results_id = db.insert(TABLE_RESULTS, null, values);
         return results_id;
+    }
+
+    public long createSessionsEntry(SessionInfo sessionInfo) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(KEY_SESSION_ID, sessionInfo.getSessionID());
+        values.put(KEY_UNIX_TIME_INITIATED, sessionInfo.getUnixTimeInitiated());
+        values.put(KEY_UNIX_TIME_ENDED, sessionInfo.getUnixTimeEnded());
+        values.put(KEY_BYTES_RECEIVED, sessionInfo.getBytesReceived());
+        values.put(KEY_PACKETS_RECEIVED, sessionInfo.getPacketsReceived());
+        values.put(KEY_BYTES_TRANSMITTED, sessionInfo.getBytesTransmitted());
+        values.put(KEY_PACKETS_TRANSMITTED, sessionInfo.getPacketsTransmitted());
+        values.put(KEY_AVG_RTT, sessionInfo.getAvgRTT());
+        values.put(KEY_NUM_REQUESTS, sessionInfo.getNumRequests());
+        values.put(KEY_NUM_RESULTS, sessionInfo.getNumResults());
+
+        long sessions_id = db.insert(TABLE_SESSIONS, null, values);
+        return sessions_id;
+
     }
 
     /**

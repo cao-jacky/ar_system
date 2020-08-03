@@ -44,13 +44,15 @@ public class ReceivingTask implements Runnable{
     private double timeReceived;
 
     private Context context;
-    private SharedPreferences sharedPreferencesSession;
+    private SharedPreferences sharedPreferencesSession, sharedPreferencesLocation;
     private String currSessionNumber;
 
     private DatabaseHelper resultsDatabase;
     private String serverIP;
     private int serverPort;
     private String resultItems;
+
+    private String currLocation;
 
     public ReceivingTask(DatagramChannel datagramChannel, Context context, DatabaseHelper resultsDatabase, String serverIP, int serverPort){
         this.datagramChannel = datagramChannel;
@@ -69,6 +71,9 @@ public class ReceivingTask implements Runnable{
         // pulling session number
         sharedPreferencesSession = context.getSharedPreferences("currSessionSetting", Context.MODE_PRIVATE);
         currSessionNumber = sharedPreferencesSession.getString("currSessionNumber", "0");
+
+        sharedPreferencesLocation = context.getSharedPreferences("currLocationSetting", Context.MODE_PRIVATE);
+        currLocation = sharedPreferencesLocation.getString("currLocation", "0");
 
         resPacket.clear();
         try {
@@ -130,7 +135,7 @@ public class ReceivingTask implements Runnable{
 
                 // submit results item into table
                 ResultsEntry newResultsEntry = new ResultsEntry("", Integer.parseInt(currSessionNumber),
-                        resultID, String.valueOf(time), serverIP, serverPort, resultItems);
+                        resultID, String.valueOf(time), serverIP, serverPort, currLocation, resultItems);
                 long newResultsEntry_id = resultsDatabase.createResultsEntry(newResultsEntry);
 
                 if (callback != null){

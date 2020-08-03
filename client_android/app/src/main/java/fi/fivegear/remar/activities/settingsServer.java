@@ -192,8 +192,8 @@ public class settingsServer extends Activity {
                     // Refereshing the activity to show new changes
 //                finish();
 //                startActivity(getIntent());
-                    finish();
-                    System.exit(2);
+//                    finish();
+//                    System.exit(2);
 
                 }
 

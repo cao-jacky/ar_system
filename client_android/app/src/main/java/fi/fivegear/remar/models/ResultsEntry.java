@@ -8,6 +8,7 @@ public class ResultsEntry {
     String unixTimeResultsRec;
     String serverIP;
     int serverPort;
+    String resultsGPSCoord;
     String receivedResults;
 
     // constructors
@@ -15,13 +16,14 @@ public class ResultsEntry {
     }
 
     public ResultsEntry(String recognitionID, int sessionID, int frameID, String unixTimeResultsRec,
-                        String serverIP, int serverPort, String receivedResults) {
+                        String serverIP, int serverPort, String resultsGPSCoord, String receivedResults) {
         this.recognitionID = recognitionID;
         this.sessionID = sessionID;
         this.frameID = frameID;
         this.unixTimeResultsRec = unixTimeResultsRec;
         this.serverIP = serverIP;
         this.serverPort = serverPort;
+        this.resultsGPSCoord = resultsGPSCoord;
         this.receivedResults = receivedResults;
     }
 
@@ -52,6 +54,10 @@ public class ResultsEntry {
 
     public void setServerPort(int serverPort) {
         this.serverPort = serverPort;
+    }
+
+    public void setResultsGPSCoord(String resultsGPSCoord) {
+        this.resultsGPSCoord = resultsGPSCoord;
     }
 
     public void setReceivedResults(String receivedResults) {
@@ -85,6 +91,10 @@ public class ResultsEntry {
 
     public int getServerPort() {
         return serverPort;
+    }
+
+    public String getResultsGPSCoord() {
+        return resultsGPSCoord;
     }
 
     public String getReceivedResults() {

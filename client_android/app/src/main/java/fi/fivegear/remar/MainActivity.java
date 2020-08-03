@@ -105,6 +105,7 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
 
     public static ImageView uploadStatus;
     public static ImageView downloadStatus;
+    public static TextView currFrame;
 
     public static int screenWidth;
     public static int screenHeight;
@@ -160,6 +161,8 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         uploadStatus = (ImageView) findViewById(R.id.statusUpload);
         downloadStatus = (ImageView) findViewById(R.id.statusDownload);
 
+        currFrame = (TextView)findViewById(R.id.frameGlance);
+
         sharedPreferencesSession = getSharedPreferences("currSessionSetting", Context.MODE_PRIVATE);
         currSessionNumber = sharedPreferencesSession.getString("currSessionNumber", "0");
         sessionGlanceString = (TextView) findViewById(R.id.sessionGlance);
@@ -172,7 +175,7 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         sessionTimeInitiated = System.currentTimeMillis();
 
         // changing session number to new increment
-        sessionGlanceString.setText("Session " + newSessionNumber);
+        sessionGlanceString.setText("S" + newSessionNumber);
 
         Toast.makeText(MainActivity.this, "Session number increased from " + currSessionNumber
                 + " to " + newSessionNumber, Toast.LENGTH_LONG).show();
@@ -342,7 +345,7 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
                 editor.apply();
 
                 // changing text of the currently set server details
-                sessionGlanceString.setText("Session " + sessionNumberString);
+                sessionGlanceString.setText("S" + sessionNumberString);
 
                 Toast.makeText(MainActivity.this, "Successfully set new session number", Toast.LENGTH_SHORT).show();
                 dialog.cancel();

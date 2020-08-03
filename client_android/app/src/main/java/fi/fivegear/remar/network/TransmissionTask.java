@@ -26,6 +26,8 @@ import fi.fivegear.remar.helpers.DatabaseHelper;
 import fi.fivegear.remar.models.RequestEntry;
 import fi.fivegear.remar.models.ServerInfo;
 
+import static fi.fivegear.remar.MainActivity.currFrame;
+
 public class TransmissionTask extends Activity implements Runnable {
 
     private final int MESSAGE_META = 0;
@@ -158,9 +160,29 @@ public class TransmissionTask extends Activity implements Runnable {
             long newRequestsEntry_id = requestsDatabase.createRequestEntry(newRequestEntry);
 
             MainActivity.uploadStatus.setImageAlpha(255);
+            runThread();
 
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    private void runThread() {
+        new Thread() {
+            public void run() {
+                try {
+                    runOnUiThread(new Runnable() {
+
+                        @Override
+                        public void run() {
+                            currFrame.setText("F" + frmID);
+                        }
+                    });
+                    Thread.sleep(300);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }.start();
     }
 }

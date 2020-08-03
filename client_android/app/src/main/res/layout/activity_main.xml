@@ -63,8 +63,8 @@
         </FrameLayout>
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="131dp"
-            android:layout_height="31dp"
+            android:layout_width="175dp"
+            android:layout_height="30dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="16dp"
             android:background="@drawable/rounded_rectangle"
@@ -73,13 +73,47 @@
 
             <TextView
                 android:id="@+id/sessionGlance"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
                 android:paddingLeft="2dp"
-                android:text="Session ?"
+                android:text="S?"
                 android:textAlignment="textStart"
                 surfaceview:layout_constraintBottom_toBottomOf="parent"
+                surfaceview:layout_constraintEnd_toStartOf="@+id/divider2"
+                surfaceview:layout_constraintTop_toTopOf="parent"
+                surfaceview:layout_constraintVertical_bias="0.6" />
+
+            <TextView
+                android:id="@+id/frameGlance"
+                android:layout_width="75dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="2dp"
+                android:text="F?"
+                surfaceview:layout_constraintBottom_toBottomOf="parent"
                 surfaceview:layout_constraintStart_toStartOf="parent"
+                surfaceview:layout_constraintTop_toTopOf="parent"
+                surfaceview:layout_constraintVertical_bias="0.6" />
+
+            <ImageView
+                android:id="@+id/statusDownload"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:alpha="1.0"
+                android:src="@drawable/status_download_coloured"
+                surfaceview:layout_constraintBottom_toBottomOf="parent"
+                surfaceview:layout_constraintEnd_toEndOf="parent"
+                surfaceview:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/divider5"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="?android:attr/listDivider"
+                surfaceview:layout_constraintBottom_toBottomOf="parent"
+                surfaceview:layout_constraintEnd_toStartOf="@+id/sessionGlance"
                 surfaceview:layout_constraintTop_toTopOf="parent" />
 
             <View
@@ -87,31 +121,21 @@
                 android:layout_width="1dp"
                 android:layout_height="match_parent"
                 android:background="?android:attr/listDivider"
+                surfaceview:layout_constraintBottom_toBottomOf="parent"
                 surfaceview:layout_constraintEnd_toStartOf="@+id/statusUpload"
-                surfaceview:layout_constraintStart_toEndOf="@+id/sessionGlance"
-                tools:layout_editor_absoluteY="5dp" />
+                surfaceview:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:id="@+id/statusUpload"
-                android:layout_width="wrap_content"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="12dp"
                 android:layout_weight="1"
                 android:alpha="1.0"
                 android:src="@drawable/status_upload_coloured"
+                surfaceview:layout_constraintBottom_toBottomOf="parent"
                 surfaceview:layout_constraintEnd_toStartOf="@+id/statusDownload"
-                surfaceview:layout_constraintStart_toEndOf="@+id/sessionGlance"
                 surfaceview:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/statusDownload"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:alpha="1.0"
-                android:src="@drawable/status_download_coloured"
-                surfaceview:layout_constraintEnd_toEndOf="parent"
-                surfaceview:layout_constraintTop_toTopOf="parent" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

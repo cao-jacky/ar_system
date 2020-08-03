@@ -16,6 +16,7 @@ import android.widget.EditText;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -257,12 +258,19 @@ public class StatsActivity extends Activity {
         statsSessionNumber = (EditText)findViewById(R.id.statsSessionNumber);
         String selectedSession = String.valueOf(statsSessionNumber.getText());
 
-        int count = logTableLayout.getChildCount();
-        for (int i = 0; i < count; i++) {
-            View child = logTableLayout.getChildAt(i);
-            if (child instanceof TableRow) ((ViewGroup) child).removeAllViews();
+        sharedPreferencesSession = getSharedPreferences("currSessionSetting", Context.MODE_PRIVATE);
+        currSessionNumber = sharedPreferencesSession.getString("currSessionNumber", "0");
+
+        if (Integer.valueOf(selectedSession) <= Integer.valueOf(currSessionNumber)) {
+            int count = logTableLayout.getChildCount();
+            for (int i = 0; i < count; i++) {
+                View child = logTableLayout.getChildAt(i);
+                if (child instanceof TableRow) ((ViewGroup) child).removeAllViews();
+            }
+            setStatsActivity(selectedSession, db, logTableLayout);
+        } else {
+            Toast.makeText(this, "Session number invalid", Toast.LENGTH_SHORT).show();
         }
-        setStatsActivity(selectedSession, db, logTableLayout);
 
     }
 

@@ -38,6 +38,10 @@
             android:theme="@android:style/Theme.Material.Light.NoActionBar"
             android:screenOrientation="portrait"/>
         <activity
+            android:name="fi.fivegear.remar.activities.settingsProtocol"
+            android:theme="@android:style/Theme.Material.Light.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity
             android:name="fi.fivegear.remar.activities.settingsAbout"
             android:theme="@android:style/Theme.Material.Light.NoActionBar"
             android:screenOrientation="portrait"/>

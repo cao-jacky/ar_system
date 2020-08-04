@@ -32,19 +32,8 @@
             android:clickable="true"
             android:focusable="true"
             android:onClick="onClick"
-            android:paddingBottom="10dp"
+            android:paddingBottom="20dp"
             android:text="Server Details"
-            android:textSize="18sp" />
-
-        <TextView
-            android:id="@+id/settingAbout"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingBottom="10dp"
-            android:text="About"
-            android:clickable="true"
-            android:focusable="true"
-            android:onClick="onClick"
             android:textSize="18sp" />
 
         <TextView
@@ -55,12 +44,22 @@
             android:clickable="true"
             android:focusable="true"
             android:onClick="onClick"
-            android:paddingBottom="10dp"
+            android:paddingBottom="20dp"
             android:text="Protocol and Sending Rate"
-            android:textColor="@drawable/selector_grey_black"
             android:textSize="18sp"
-            android:visibility="invisible"
-            tools:visibility="invisible" />
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+        <TextView
+            android:id="@+id/settingAbout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:text="About"
+            android:clickable="true"
+            android:focusable="true"
+            android:onClick="onClick"
+            android:textSize="18sp" />
 
     </LinearLayout>
 

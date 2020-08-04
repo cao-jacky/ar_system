@@ -30,8 +30,6 @@ import fi.fivegear.remar.helpers.DatabaseHelper;
 import fi.fivegear.remar.models.ServerInfo;
 
 public class settingsServer extends Activity {
-    public static final String currServerSettings = "currServerSettings";
-
     SharedPreferences sharedPreferences;
     DatabaseHelper serverDatabase;
 
@@ -47,7 +45,7 @@ public class settingsServer extends Activity {
         setContentView(R.layout.activity_settings_server);
 
         // using SharedPreferences to set current server IP and port
-        sharedPreferences = getSharedPreferences(currServerSettings, Context.MODE_PRIVATE);
+        sharedPreferences = getSharedPreferences("currServerSettings", Context.MODE_PRIVATE);
 
         serverIP = sharedPreferences.getString("currServerIP", "0.0.0.0");
         serverPort = sharedPreferences.getInt("currServerPort", 0);
@@ -103,7 +101,7 @@ public class settingsServer extends Activity {
         View content =  inflater.inflate(R.layout.popup_server_details, null);
         builder.setView(content);
 
-        sharedPreferences = getSharedPreferences(currServerSettings, Context.MODE_PRIVATE);
+        sharedPreferences = getSharedPreferences("currServerSettings", Context.MODE_PRIVATE);
 
         serverIPET = (EditText)content.findViewById(R.id.setServerIP);
         serverPortET = (EditText)content.findViewById(R.id.setServerPort);

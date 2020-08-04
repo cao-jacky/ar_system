@@ -9,6 +9,7 @@ import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.channels.DatagramChannel;
+import java.nio.channels.SocketChannel;
 import java.util.ArrayList;
 
 import fi.fivegear.remar.MainActivity;
@@ -30,7 +31,10 @@ public class ReceivingTask implements Runnable{
     private int newMarkerNum;
     private int lastSentID;
 
+    private String selectedProtocol;
+    private SocketChannel socketChannel;
     private DatagramChannel datagramChannel;
+
     private long time;
     private double timeReceived;
 
@@ -45,8 +49,11 @@ public class ReceivingTask implements Runnable{
 
     private String currLocation;
 
-    public ReceivingTask(DatagramChannel datagramChannel, Context context, DatabaseHelper resultsDatabase, String serverIP, int serverPort){
+    public ReceivingTask(String selectedProtocol, DatagramChannel datagramChannel, SocketChannel socketChannel,
+                         Context context, DatabaseHelper resultsDatabase, String serverIP, int serverPort){
+        this.selectedProtocol = selectedProtocol;
         this.datagramChannel = datagramChannel;
+        this.socketChannel = socketChannel;
         this.context = context;
         this.resultsDatabase = resultsDatabase;
         this.serverIP = serverIP;
@@ -67,17 +74,31 @@ public class ReceivingTask implements Runnable{
         currLocation = sharedPreferencesLocation.getString("currLocation", "0");
 
         resPacket.clear();
-        try {
-            time = System.currentTimeMillis();
-            timeReceived = (double)time;
-            if (datagramChannel.receive(resPacket) != null) {
-                res = resPacket.array();
-            } else {
-                res = null;
+
+        if (selectedProtocol.contains("UDP")) {
+            try {
+                time = System.currentTimeMillis();
+                timeReceived = (double) time;
+                if (datagramChannel.receive(resPacket) != null) {
+                    res = resPacket.array();
+                } else {
+                    res = null;
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
             }
-        } catch (IOException e) {
-            e.printStackTrace();
         }
+//        if (selectedProtocol.contains("TCP")) {
+//            try {
+//                if (socketChannel.read(resPacket) != 0) {
+//                    res = resPacket.array();
+//                } else {
+//                    res = null;
+//                }
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+//        }
 
         if (res != null) {
             MainActivity.downloadStatus.setImageAlpha(0);

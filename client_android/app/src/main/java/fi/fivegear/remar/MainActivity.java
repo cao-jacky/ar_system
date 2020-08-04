@@ -20,9 +20,11 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.os.Build;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.multidex.MultiDex;
 import androidx.core.app.ActivityCompat;
 
@@ -105,6 +107,7 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
     private double sessionTimeInitiated;
     private DatabaseHelper db;
 
+    @RequiresApi(api = Build.VERSION_CODES.Q)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -229,7 +232,7 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
             addContentView(mDraw, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
         }
 
-        ARManager.getInstance().init(this, true);
+        ARManager.getInstance().init(this);
         ARManager.getInstance().setCallback(new ARManager.Callback() {
             @Override
             public void onObjectsDetected(Detected[] detected) {

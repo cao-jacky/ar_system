@@ -15,12 +15,11 @@ import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.SocketAddress;
 import java.nio.channels.DatagramChannel;
+import java.nio.channels.SocketChannel;
 
 import fi.fivegear.remar.helpers.DatabaseHelper;
 import fi.fivegear.remar.network.ReceivingTask;
 import fi.fivegear.remar.network.TransmissionTask;
-
-import static fi.fivegear.remar.activities.settingsServer.currServerSettings;
 
 public class ARManager {
 
@@ -33,11 +32,12 @@ public class ARManager {
     private ReceivingTask taskReceiving;
 
     private DatagramChannel dataChannel;
-    private SocketAddress serverAddr;
+    private SocketChannel socketChannel;
+    private SocketAddress serverAddress;
 
-    private static boolean isCloudBased;
+    private String selectedProtocol;
 
-    SharedPreferences sharedPreferences;
+    SharedPreferences sharedPreferencesServer, sharedPreferencesProtocol;
     DatabaseHelper requestsDatabase, resultsDatabase;
 
     private ARManager(){ super(); }
@@ -55,25 +55,35 @@ public class ARManager {
         return new Handler(handlerThread.getLooper());
     }
 
-    private void initConnection(String serverIP, int serverPort) {
+    private void initConnection(String selectedProtocol, String serverIP, int serverPort) {
         try {
-            serverAddr = new InetSocketAddress(serverIP, serverPort);
+            serverAddress = new InetSocketAddress(serverIP, serverPort);
+
+            // create UDP datagram channel
             dataChannel = DatagramChannel.open();
             dataChannel.configureBlocking(false);
             dataChannel.bind(new InetSocketAddress(51919));
+
+            // create TCP socket channel
+            socketChannel = SocketChannel.open();
+            socketChannel.connect(serverAddress);
+            socketChannel.configureBlocking(false);
+
         } catch (Exception e) {
             Log.d(Constants.TAG, "DataChannel creation error");
         }
     }
 
     @RequiresApi(api = Build.VERSION_CODES.Q)
-    public void init(Context context, boolean isCloudBased){
-        ARManager.isCloudBased = isCloudBased;
-
+    public void init(Context context){
         // using SharedPreferences to set current server IP and port
-        sharedPreferences = context.getSharedPreferences(currServerSettings, Context.MODE_PRIVATE);
-        String serverIP = sharedPreferences.getString("currServerIP", "0.0.0.0");
-        int serverPort = sharedPreferences.getInt("currServerPort", 0);
+        sharedPreferencesServer = context.getSharedPreferences("currServerSettings", Context.MODE_PRIVATE);
+        String serverIP = sharedPreferencesServer.getString("currServerIP", "0.0.0.0");
+        int serverPort = sharedPreferencesServer.getInt("currServerPort", 0);
+
+        // obtain selected protocol from settings
+        sharedPreferencesProtocol = context.getSharedPreferences("currProtocolSetting", Context.MODE_PRIVATE);
+        selectedProtocol = sharedPreferencesProtocol.getString("currProtocol", "UDP");
 
         // load database tables to pass to the threads dealing with requests and results
         requestsDatabase = new DatabaseHelper(context.getApplicationContext());
@@ -84,38 +94,37 @@ public class ARManager {
         if(isValid == false) {
             serverIP = "0.0.0.0";
 
-            SharedPreferences.Editor editor = sharedPreferences.edit();
+            SharedPreferences.Editor editor = sharedPreferencesServer.edit();
             editor.putString("currServerIP", serverIP);
             editor.apply();
         }
 
         System.loadLibrary("opencv_java");
-        if(isCloudBased) initConnection(serverIP, serverPort);
+        initConnection(selectedProtocol, serverIP, serverPort);
 
         this.handlerUtil = createAndStartThread("util thread", Process.THREAD_PRIORITY_DEFAULT); //start util thread
         this.handlerNetwork = createAndStartThread("network thread", 1);
 
-        if(isCloudBased) {
-            taskTransmission = new TransmissionTask(dataChannel, serverAddr, context, requestsDatabase,
-                    serverIP, serverPort);
-            taskTransmission.setData(0,"a".getBytes());
-            handlerNetwork.post(taskTransmission);
-            taskReceiving = new ReceivingTask(dataChannel, context, resultsDatabase, serverIP,
-                    serverPort);
-            taskReceiving.setCallback(new ReceivingTask.Callback() {
-                @Override
-                public void onReceive(int resultID, Detected[] detected) {
-                    callback.onObjectsDetected(detected);
-                }
-            });
-        }
+        taskTransmission = new TransmissionTask(selectedProtocol, dataChannel, socketChannel,
+                serverAddress, context, requestsDatabase, serverIP, serverPort);
+        taskTransmission.setData(0,"a".getBytes());
+        handlerNetwork.post(taskTransmission);
+        taskReceiving = new ReceivingTask(selectedProtocol, dataChannel, socketChannel, context,
+                resultsDatabase, serverIP, serverPort);
+        taskReceiving.setCallback(new ReceivingTask.Callback() {
+            @Override
+            public void onReceive(int resultID, Detected[] detected) {
+                callback.onObjectsDetected(detected);
+            }
+        });
+
     }
 
     public void start() {
     }
 
     public void stop() {
-        if(isCloudBased) handlerNetwork.post(new Runnable() {
+        handlerNetwork.post(new Runnable() {
             @Override
             public void run() {
                 try {
@@ -132,22 +141,18 @@ public class ARManager {
     }
 
     public void recognize(int frameID, byte[] frameData) {
-        if(ARManager.isCloudBased) {
-            taskTransmission.setData(frameID, frameData);
-            handlerNetwork.post(taskTransmission);
-            taskReceiving.updateLatestSentID(frameID);
-        }
+        taskTransmission.setData(frameID, frameData);
+        handlerNetwork.post(taskTransmission);
+        taskReceiving.updateLatestSentID(frameID);
     }
 
     public void recognizeTime(int frameID, byte[] frameData){
-        if(ARManager.isCloudBased) {
-            taskTransmission.setData(frameID, frameData);
-            handlerNetwork.post(taskTransmission);
-            taskReceiving.updateLatestSentID(frameID);
-        }
+        taskTransmission.setData(frameID, frameData);
+        handlerNetwork.post(taskTransmission);
+        taskReceiving.updateLatestSentID(frameID);
     }
     public void driveFrame(byte[] frameData) {
-        if(isCloudBased) handlerNetwork.post(taskReceiving);
+        handlerNetwork.post(taskReceiving);
     }
 
     private ARManager.Callback callback;

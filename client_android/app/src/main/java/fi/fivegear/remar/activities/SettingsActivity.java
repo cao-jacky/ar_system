@@ -9,7 +9,7 @@ import android.widget.TextView;
 import fi.fivegear.remar.R;
 
 public class SettingsActivity extends Activity {
-    TextView activityServer, activityAbout;
+    TextView activityServer, activityAbout, activityProtocol;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +21,14 @@ public class SettingsActivity extends Activity {
             @Override
             public void onClick(View v) {
                 openSettingsServer();
+            }
+        });
+
+        activityProtocol = (TextView) findViewById(R.id.settingProtocolSending);
+        activityProtocol.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openSettingsProtocol();
             }
         });
 
@@ -36,6 +44,11 @@ public class SettingsActivity extends Activity {
 
     public void openSettingsServer(){
         Intent intent = new Intent(this, settingsServer.class);
+        startActivity(intent);
+    }
+
+    public void openSettingsProtocol(){
+        Intent intent = new Intent(this, settingsProtocol.class);
         startActivity(intent);
     }
 

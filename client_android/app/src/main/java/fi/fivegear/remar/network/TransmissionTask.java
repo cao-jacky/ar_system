@@ -3,6 +3,9 @@ package fi.fivegear.remar.network;
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.view.Gravity;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;
@@ -11,10 +14,12 @@ import org.opencv.highgui.Highgui;
 import org.opencv.imgproc.Imgproc;
 
 import java.io.IOException;
+import java.net.Socket;
 import java.net.SocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.channels.DatagramChannel;
+import java.nio.channels.SocketChannel;
 
 import fi.fivegear.remar.MainActivity;
 import fi.fivegear.remar.Constants;
@@ -40,14 +45,16 @@ public class TransmissionTask extends Activity implements Runnable {
     private double timeCaptured;
     private double timeSend;
 
+    private String selectedProtocol;
     private DatagramChannel datagramChannel;
+    private SocketChannel socketChannel;
     private SocketAddress serverAddress;
 
     public Mat YUVMatTrans, YUVMatScaled, GrayScaled;
     private long time;
 
     private Context context;
-    private SharedPreferences sharedPreferencesSession, sharedPreferencesLocation;
+    private SharedPreferences sharedPreferencesSession, sharedPreferencesLocation, sharedPreferencesProtocol;
     private String currSessionNumber;
 
     private DatabaseHelper requestsDatabase;
@@ -58,8 +65,12 @@ public class TransmissionTask extends Activity implements Runnable {
 
     private MainActivity mainActivity = new MainActivity();
 
-    public TransmissionTask(DatagramChannel datagramChannel, SocketAddress serverAddress, Context context, DatabaseHelper requestsDatabase, String serverIP, int serverPort) {
+    public TransmissionTask(String selectedProtocol, DatagramChannel datagramChannel, SocketChannel socketChannel,
+                            SocketAddress serverAddress, Context context, DatabaseHelper requestsDatabase,
+                            String serverIP, int serverPort) {
+        this.selectedProtocol = selectedProtocol;
         this.datagramChannel = datagramChannel;
+        this.socketChannel = socketChannel;
         this.serverAddress = serverAddress;
         this.context = context;
         this.requestsDatabase = requestsDatabase;
@@ -130,7 +141,27 @@ public class TransmissionTask extends Activity implements Runnable {
         try {
             ByteBuffer buffer = ByteBuffer.allocate(packetContent.length).put(packetContent);
             buffer.flip();
-            datagramChannel.send(buffer, serverAddress);
+
+            if (selectedProtocol.contains("UDP")) {
+                datagramChannel.send(buffer, serverAddress);
+            }
+            if (selectedProtocol.contains("TCP")) {
+                // attempt TCP connection, if failure, change the selected protocol to UDP and declare to user
+                try {
+                    socketChannel.write(buffer);
+                } catch (Exception e) {
+                    sharedPreferencesProtocol = context.getSharedPreferences("currProtocolSetting", Context.MODE_PRIVATE);
+                    SharedPreferences.Editor sessionEditor = sharedPreferencesProtocol.edit();
+                    sessionEditor.putString("currProtocol", "UDP");
+                    sessionEditor.apply();
+
+                    Toast alertMessage = Toast.makeText(context, "TCP connection failed, reverted to UDP - please restart app", Toast.LENGTH_LONG);
+                    TextView v = alertMessage.getView().findViewById(android.R.id.message);
+                    if( v != null) v.setGravity(Gravity.CENTER);
+                    alertMessage.show();
+                }
+            }
+
             time = System.currentTimeMillis();
 
             // Appending the sent information into the database table

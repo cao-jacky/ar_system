@@ -32,14 +32,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Date;
-import java.util.List;
 
-import fi.fivegear.remar.MainActivity;
 import fi.fivegear.remar.R;
 import fi.fivegear.remar.helpers.CSVWriter;
 import fi.fivegear.remar.helpers.DatabaseHelper;
-import fi.fivegear.remar.models.RequestEntry;
-import fi.fivegear.remar.models.ResultsEntry;
 
 public class StatsActivity extends Activity {
     EditText statsSessionNumber;

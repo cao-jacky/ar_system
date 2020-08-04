@@ -3,9 +3,6 @@ package fi.fivegear.remar.network;
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.location.LocationManager;
-import android.provider.ContactsContract;
-import android.util.Log;
 
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;
@@ -18,13 +15,11 @@ import java.net.SocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.channels.DatagramChannel;
-import java.util.List;
 
 import fi.fivegear.remar.MainActivity;
 import fi.fivegear.remar.Constants;
 import fi.fivegear.remar.helpers.DatabaseHelper;
 import fi.fivegear.remar.models.RequestEntry;
-import fi.fivegear.remar.models.ServerInfo;
 
 import static fi.fivegear.remar.MainActivity.currFrame;
 
@@ -42,14 +37,9 @@ public class TransmissionTask extends Activity implements Runnable {
     private byte[] packetContent;
     private int datasize;
     private byte[] frameData;
-    private double latitude;
-    private double longtitude;
     private double timeCaptured;
     private double timeSend;
-    private byte[] Latitude;
-    private byte[] Longtitude;
-    private byte[] TimeCaptured;
-    private byte[] TimeSend;
+
     private DatagramChannel datagramChannel;
     private SocketAddress serverAddress;
 
@@ -81,16 +71,6 @@ public class TransmissionTask extends Activity implements Runnable {
         GrayScaled = new Mat(Constants.previewHeight / Constants.recoScale, Constants.previewWidth / Constants.recoScale, CvType.CV_8UC1);
     }
 
-
-    public void setData(int frmID, byte[] frameData, double timeCaptured, double timeSend){
-        this.frmID = frmID;
-        this.frameData = frameData;
-        this.timeCaptured = timeCaptured;
-        this.timeSend = timeSend;
-
-        if (this.frmID <= 5) dataType = MESSAGE_META;
-        else dataType = IMAGE_DETECT;
-    }
     public void setData(int frmID, byte[] frameData){
         this.frmID = frmID;
         this.frameData = frameData;

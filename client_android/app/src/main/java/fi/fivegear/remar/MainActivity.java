@@ -1,13 +1,9 @@
 package fi.fivegear.remar;
 
 import android.Manifest;
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
-import android.app.AppOpsManager;
 import android.app.Dialog;
-import android.app.usage.NetworkStats;
-import android.app.usage.NetworkStatsManager;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -24,16 +20,12 @@ import android.location.LocationListener;
 import android.location.LocationManager;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.os.Build;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.multidex.MultiDex;
 import androidx.core.app.ActivityCompat;
 
-import android.os.RemoteException;
-import android.provider.ContactsContract;
-import android.provider.Settings;
 import android.telephony.TelephonyManager;
 import android.util.DisplayMetrics;
 import android.util.Log;
@@ -59,7 +51,6 @@ import android.widget.Toast;
 import fi.fivegear.remar.activities.SettingsActivity;
 import fi.fivegear.remar.activities.StatsActivity;
 import fi.fivegear.remar.helpers.DatabaseHelper;
-import fi.fivegear.remar.models.RequestEntry;
 import fi.fivegear.remar.models.SessionInfo;
 
 import static fi.fivegear.remar.Constants.previewHeight;
@@ -79,21 +70,14 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
     private int time_o, time_n, fps;
     private boolean recoFlag = false;
     private int frameID;
-    public byte[] locationbyte;
-    //-----------------------------------pengzhou: location service---------------------------------
+
     protected LocationManager locationManager;
     protected LocationListener locationListener;
-    Location gps_loc;
     Location network_loc;
-    Location final_loc;
     protected Context context;
     protected double latitude;
     protected double longitude;
     protected double altitude;
-    protected double timeCaptured;
-    protected double timeSend;
-    protected float bearing;
-    TextView txtLat;
 
     private SensorManager mSensorManager;
     private Sensor mProximity;
@@ -120,8 +104,6 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
 
     private double sessionTimeInitiated;
     private DatabaseHelper db;
-
-    String TAG = "DBG";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -218,9 +200,8 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
 
         // set the last location as the current variable in SharedPreferences
         network_loc = locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
-        String lat_long_alt = String.valueOf(network_loc.getLatitude()) + ","
-                + String.valueOf(network_loc.getLongitude()) + ","
-                + String.valueOf(network_loc.getAltitude());
+        String lat_long_alt = network_loc.getLatitude() + "," + network_loc.getLongitude() + ","
+                + network_loc.getAltitude();
 
         sharedPreferencesLocation = getSharedPreferences("currLocationSetting", Context.MODE_PRIVATE);
         SharedPreferences.Editor locationEditor = sharedPreferencesLocation.edit();
@@ -301,17 +282,6 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         } else {
             checkPermission();
         }
-    }
-
-    //Here Manifest.permission.READ_PHONE_STATS is needed
-    private String getSubscriberId(Context context, int networkType) {
-        if (ConnectivityManager.TYPE_MOBILE == networkType) {
-            TelephonyManager tm = (TelephonyManager) context.getSystemService(Context.TELEPHONY_SERVICE);
-            if (ActivityCompat.checkSelfPermission(context, Manifest.permission.READ_PHONE_STATE) != PackageManager.PERMISSION_GRANTED) {
-            }
-            return tm.getSubscriberId();
-        }
-        return "";
     }
 
     public void openSessionGlanceModal() {
@@ -444,7 +414,6 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         // Do something here if sensor accuracy changes.
         // You must implement this callback in your code.
     }
-
 
     @Override
     public void onStart() {
@@ -579,20 +548,11 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
     class DrawOnTop extends View {
         Paint paintWord;
         Paint paintLine;
-        Paint paintAlarm;
-        Paint paintIcon;
         Paint paintBackground;
         private boolean ShowFPS = true;
-        private boolean ShowEdge = true;
-        private boolean ShowName = true;
         private int preFrameID;
         private float dispScale = Constants.dispScale;
-        private int axisShiftHorizontal = Constants.axisShiftHorizontal;
-        private int axisShiftVertical = Constants.axisShiftVertical;
         private Detected[] detecteds;
-        private double distance;
-        //private Drawable mCustomImage_pedestrian;
-        //private Drawable mCustomImage_cup;
 
         public DrawOnTop(Context context) {
             super(context);
@@ -670,7 +630,6 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
 
             if(detecteds != null) {
                 for (Detected detected : detecteds) {
-                    Log.d("test", detected.name);
                     float scale_width = (previewWidth-screenWidth);
                     float scale_height = (previewHeight-screenHeight+screenHeight/2-screenHeight/6);
                     canvas.drawRect((detected.left)*dispScale-scale_width-5, (detected.top)*(dispScale)-scale_height-50,
@@ -682,7 +641,6 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
                 }
 
             }
-            //canvas.drawText( ", o: " + bearing, 500,500, paintWord);
         }
     }
 }

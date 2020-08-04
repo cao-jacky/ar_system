@@ -2,14 +2,14 @@ package fi.fivegear.remar;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.location.LocationManager;
 import android.net.InetAddresses;
 import android.os.Build;
-import android.os.Environment;
 import android.os.Handler;
 import android.os.HandlerThread;
 import android.os.Process;
 import android.util.Log;
+
+import androidx.annotation.RequiresApi;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
@@ -17,11 +17,8 @@ import java.net.SocketAddress;
 import java.nio.channels.DatagramChannel;
 
 import fi.fivegear.remar.helpers.DatabaseHelper;
-import fi.fivegear.remar.models.RequestEntry;
-import fi.fivegear.remar.models.ServerInfo;
 import fi.fivegear.remar.network.ReceivingTask;
 import fi.fivegear.remar.network.TransmissionTask;
-
 
 import static fi.fivegear.remar.activities.settingsServer.currServerSettings;
 
@@ -64,12 +61,12 @@ public class ARManager {
             dataChannel = DatagramChannel.open();
             dataChannel.configureBlocking(false);
             dataChannel.bind(new InetSocketAddress(51919));
-            //dataChannel.socket().connect(serverAddr);
         } catch (Exception e) {
-            Log.d(Constants.TAG, "config file error");
+            Log.d(Constants.TAG, "DataChannel creation error");
         }
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.Q)
     public void init(Context context, boolean isCloudBased){
         ARManager.isCloudBased = isCloudBased;
 
@@ -90,9 +87,6 @@ public class ARManager {
             SharedPreferences.Editor editor = sharedPreferences.edit();
             editor.putString("currServerIP", serverIP);
             editor.apply();
-
-            // Add a message about this somewhere, in a log? Create another table for logging messages?
-            // could be easy as a text file log
         }
 
         System.loadLibrary("opencv_java");
@@ -144,17 +138,10 @@ public class ARManager {
             taskReceiving.updateLatestSentID(frameID);
         }
     }
-    //------------------pengzhou: location-------------------
-    /*public void recognizeLocation(int frameID, byte[] frameData, double latitude, double longtitude) {
+
+    public void recognizeTime(int frameID, byte[] frameData){
         if(ARManager.isCloudBased) {
-            taskTransmission.setData(frameID, frameData, latitude, longtitude);
-            handlerNetwork.post(taskTransmission);
-            taskReceiving.updateLatestSentID(frameID);
-        }
-    }*/
-    public void recognizeTime(int frameID, byte[] frameData){// double timeCaptured, double timeSend) {
-        if(ARManager.isCloudBased) {
-            taskTransmission.setData(frameID, frameData);//, timeCaptured, timeSend);
+            taskTransmission.setData(frameID, frameData);
             handlerNetwork.post(taskTransmission);
             taskReceiving.updateLatestSentID(frameID);
         }

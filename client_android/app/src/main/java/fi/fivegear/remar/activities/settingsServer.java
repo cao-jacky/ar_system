@@ -3,43 +3,31 @@ package fi.fivegear.remar.activities;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
-import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Color;
 import android.icu.text.SimpleDateFormat;
-import android.icu.util.TimeZone;
-import android.location.Location;
 import android.net.InetAddresses;
+import android.os.Build;
 import android.os.Bundle;
-import android.text.InputType;
-import android.util.Log;
-import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.LinearLayout;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.time.Instant;
-import java.time.LocalDateTime;
+import androidx.annotation.RequiresApi;
+
 import java.util.Date;
 import java.util.List;
 
-import fi.fivegear.remar.MainActivity;
 import fi.fivegear.remar.R;
 import fi.fivegear.remar.helpers.DatabaseHelper;
-import fi.fivegear.remar.helpers.ServerInfoData;
 import fi.fivegear.remar.models.ServerInfo;
-
-import static fi.fivegear.remar.Constants.TAG;
 
 public class settingsServer extends Activity {
     public static final String currServerSettings = "currServerSettings";
@@ -125,6 +113,7 @@ public class settingsServer extends Activity {
 
 //        builder.setView(inflater.inflate(R.layout.popup_server_details, null));
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+            @RequiresApi(api = Build.VERSION_CODES.Q)
             @Override
             public void onClick(DialogInterface dialog, int which) {
                 Dialog d = (Dialog) dialog;

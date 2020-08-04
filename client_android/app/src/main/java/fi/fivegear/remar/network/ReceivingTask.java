@@ -2,8 +2,6 @@ package fi.fivegear.remar.network;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.location.LocationManager;
-import android.util.Log;
 
 import org.opencv.core.Point;
 
@@ -12,13 +10,11 @@ import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.channels.DatagramChannel;
 import java.util.ArrayList;
-import java.util.List;
 
 import fi.fivegear.remar.MainActivity;
 import fi.fivegear.remar.Constants;
 import fi.fivegear.remar.Detected;
 import fi.fivegear.remar.helpers.DatabaseHelper;
-import fi.fivegear.remar.models.RequestEntry;
 import fi.fivegear.remar.models.ResultsEntry;
 
 public class ReceivingTask implements Runnable{
@@ -26,8 +22,6 @@ public class ReceivingTask implements Runnable{
     private ByteBuffer resPacket = ByteBuffer.allocate(Constants.RES_SIZE);
 
     private byte[] res;
-    private float[] floatres = new float[8];
-    private Point[] pointArray = new Point[4];
     private byte[] tmp = new byte[4];
     private byte[] Tmp = new byte[8];
     private byte[] name = new byte[56];
@@ -35,12 +29,9 @@ public class ReceivingTask implements Runnable{
     private double resultTimesend;
     private int newMarkerNum;
     private int lastSentID;
-    private int recoTrackRatio = Constants.scale / Constants.recoScale;
 
     private DatagramChannel datagramChannel;
     private long time;
-    private long true_time;
-    private double resultdelay;
     private double timeReceived;
 
     private Context context;
@@ -96,7 +87,6 @@ public class ReceivingTask implements Runnable{
 
             System.arraycopy(res, 8, tmp, 0, 4);
             newMarkerNum = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
-
 
             if (newMarkerNum >= 0) {
                 Detected detected[] = new Detected[newMarkerNum];

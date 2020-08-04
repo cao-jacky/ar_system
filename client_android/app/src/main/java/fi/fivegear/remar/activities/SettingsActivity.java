@@ -1,16 +1,12 @@
 package fi.fivegear.remar.activities;
 
 import android.app.Activity;
-import android.app.Fragment;
-import android.app.FragmentManager;
-import android.app.FragmentTransaction;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
 import fi.fivegear.remar.R;
-import fi.fivegear.remar.activities.settingsServer;
 
 public class SettingsActivity extends Activity {
     TextView activityServer, activityAbout;

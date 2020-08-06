@@ -41,7 +41,8 @@ typedef __compar_fn_t comparison_fn_t;
 #define EDGE 1
 #define IMAGE_DETECT 2
 #define BOUNDARY 3
-#define PORT 52727
+#define PORT_UDP 50000
+#define PORT_TCP 55000
 #define PACKET_SIZE 80000
 #define RES_SIZE 512
 #define TRAIN
@@ -49,16 +50,36 @@ typedef __compar_fn_t comparison_fn_t;
 using namespace std;
 using namespace cv;
 
-struct sockaddr_in localAddr;
-struct sockaddr_in remoteAddr;
-struct sockaddr_in frontAddr;
-socklen_t addrlen = sizeof(remoteAddr);
+struct sockaddr_in localUDPAddr;
+struct sockaddr_in localTCPAddr;
+
+struct sockaddr_in remoteUDPAddr;
+struct sockaddr_in remoteTCPAddr;
+
+struct sockaddr_in frontUDPAddr;
+
+socklen_t addrlenUDP = sizeof(remoteUDPAddr);
+socklen_t addrlenTCP = sizeof(remoteTCPAddr);
+
+bool isTCPClientAlive = false; // keeping track of TCP connection
 
 int recognizedMarkerID;
 
-queue<frameBuffer> frames;
-queue<resBuffer> resultss;
+// queues for UDP frames and results
+queue<frameBuffer> framesBufferUDP;
+queue<resBuffer> resultsBufferUDP;
+
+// queues for TCP frames and results
+queue<frameBuffer> framesBufferTCP;
+queue<resBuffer> resultsBufferTCP;
+
 map<string, int> mapOfDevices;
+
+// keeping track of frames sent to server from devices
+//vector<serverRequest> udp_frames;
+//vector<serverRequest> tcp_frames;
+vector<int> udp_frames;
+vector<int> tcp_frames;
 
 int check_mistakes = 0;
 
@@ -102,7 +123,7 @@ void train_detector(char *datacfg, char *cfgfile, char *weightfile, int *gpus, i
         char **names = get_labels_custom(name_list, &names_size);
         if (net_classes != names_size) {
             printf("\n Error: in the file %s number of names %d that isn't equal to classes=%d in the file %s \n",
-                name_list, names_size, net_classes, cfgfile);
+                   name_list, names_size, net_classes, cfgfile);
             if (net_classes > names_size) getchar();
         }
         free_ptrs((void**)names, net_map.layers[net_map.n - 1].classes);
@@ -525,7 +546,7 @@ void print_detector_detections(FILE **fps, char *id, detection *dets, int total,
 
         for (j = 0; j < classes; ++j) {
             if (dets[i].prob[j]) fprintf(fps[j], "%s %f %f %f %f %f\n", id, dets[i].prob[j],
-                xmin, ymin, xmax, ymax);
+                                         xmin, ymin, xmax, ymax);
         }
     }
 }
@@ -547,7 +568,7 @@ void print_imagenet_detections(FILE *fp, int id, detection *dets, int total, int
         for (j = 0; j < classes; ++j) {
             int myclass = j;
             if (dets[i].prob[myclass] > 0) fprintf(fp, "%d %d %f %f %f %f %f\n", id, j + 1, dets[i].prob[myclass],
-                xmin, ymin, xmax, ymax);
+                                                   xmin, ymin, xmax, ymax);
         }
     }
 }
@@ -972,7 +993,7 @@ float validate_detector_map(char *datacfg, char *cfgfile, char *weightfile, floa
     }
     if (net.layers[net.n - 1].classes != names_size) {
         printf("\n Error: in the file %s number of names %d that isn't equal to classes=%d in the file %s \n",
-            name_list, names_size, net.layers[net.n - 1].classes, cfgfile);
+               name_list, names_size, net.layers[net.n - 1].classes, cfgfile);
         getchar();
     }
     srand(time(0));
@@ -1266,7 +1287,7 @@ float validate_detector_map(char *datacfg, char *cfgfile, char *weightfile, floa
             else pr[i][rank].recall = 0;
 
             if (rank == (detections_count - 1) && detection_per_class_count[i] != (tp + fp)) {    // check for last rank
-                    printf(" class_id: %d - detections = %d, tp+fp = %d, tp = %d, fp = %d \n", i, detection_per_class_count[i], tp+fp, tp, fp);
+                printf(" class_id: %d - detections = %d, tp+fp = %d, tp = %d, fp = %d \n", i, detection_per_class_count[i], tp+fp, tp, fp);
             }
         }
     }
@@ -1301,7 +1322,7 @@ float validate_detector_map(char *datacfg, char *cfgfile, char *weightfile, floa
                 avg_precision += delta_recall * last_precision;
             }
         }
-        // MSCOCO - 101 Recall-points, PascalVOC - 11 Recall-points
+            // MSCOCO - 101 Recall-points, PascalVOC - 11 Recall-points
         else
         {
             int point;
@@ -1324,7 +1345,7 @@ float validate_detector_map(char *datacfg, char *cfgfile, char *weightfile, floa
         }
 
         printf("class_id = %d, name = %s, ap = %2.2f%%   \t (TP = %d, FP = %d) \n",
-            i, names[i], avg_precision * 100, tp_for_thresh_per_class[i], fp_for_thresh_per_class[i]);
+               i, names[i], avg_precision * 100, tp_for_thresh_per_class[i], fp_for_thresh_per_class[i]);
 
         float class_precision = (float)tp_for_thresh_per_class[i] / ((float)tp_for_thresh_per_class[i] + (float)fp_for_thresh_per_class[i]);
         float class_recall = (float)tp_for_thresh_per_class[i] / ((float)tp_for_thresh_per_class[i] + (float)(truth_classes_count[i] - tp_for_thresh_per_class[i]));
@@ -1337,10 +1358,10 @@ float validate_detector_map(char *datacfg, char *cfgfile, char *weightfile, floa
     const float cur_recall = (float)tp_for_thresh / ((float)tp_for_thresh + (float)(unique_truth_count - tp_for_thresh));
     const float f1_score = 2.F * cur_precision * cur_recall / (cur_precision + cur_recall);
     printf("\n for conf_thresh = %1.2f, precision = %1.2f, recall = %1.2f, F1-score = %1.2f \n",
-        thresh_calc_avg_iou, cur_precision, cur_recall, f1_score);
+           thresh_calc_avg_iou, cur_precision, cur_recall, f1_score);
 
     printf(" for conf_thresh = %0.2f, TP = %d, FP = %d, FN = %d, average IoU = %2.2f %% \n",
-        thresh_calc_avg_iou, tp_for_thresh, fp_for_thresh, unique_truth_count - tp_for_thresh, avg_iou * 100);
+           thresh_calc_avg_iou, tp_for_thresh, fp_for_thresh, unique_truth_count - tp_for_thresh, avg_iou * 100);
 
     mean_average_precision = mean_average_precision / classes;
     printf("\n IoU threshold = %2.0f %%, ", iou_thresh * 100);
@@ -1415,7 +1436,6 @@ int anchors_data_comparator(const float **pa, const float **pb)
     return 0;
 }
 
-
 void calc_anchors(char *datacfg, int num_of_clusters, int width, int height, int show)
 {
     printf("\n num_of_clusters = %d, width = %d, height = %d \n", num_of_clusters, width, height);
@@ -1458,9 +1478,9 @@ void calc_anchors(char *datacfg, int num_of_clusters, int width, int height, int
                 truth[j].w > 1 || truth[j].w <= 0 || truth[j].h > 1 || truth[j].h <= 0)
             {
                 printf("\n\nWrong label: %s - j = %d, x = %f, y = %f, width = %f, height = %f \n",
-                    labelpath, j, truth[j].x, truth[j].y, truth[j].w, truth[j].h);
+                       labelpath, j, truth[j].x, truth[j].y, truth[j].w, truth[j].h);
                 sprintf(buff, "echo \"Wrong label: %s - j = %d, x = %f, y = %f, width = %f, height = %f\" >> bad_label.list",
-                    labelpath, j, truth[j].x, truth[j].y, truth[j].w, truth[j].h);
+                        labelpath, j, truth[j].x, truth[j].y, truth[j].w, truth[j].h);
                 system(buff);
                 if (check_mistakes) getchar();
             }
@@ -1508,7 +1528,7 @@ void calc_anchors(char *datacfg, int num_of_clusters, int width, int height, int
     for (i = 0; i < number_of_boxes; ++i) {
         float box_w = rel_width_height_array[i * 2]; //points->data.fl[i * 2];
         float box_h = rel_width_height_array[i * 2 + 1]; //points->data.fl[i * 2 + 1];
-                                                         //int cluster_idx = labels->data.i[i];
+        //int cluster_idx = labels->data.i[i];
         int cluster_idx = 0;
         float min_dist = FLT_MAX;
         float best_iou = 0;
@@ -1522,9 +1542,9 @@ void calc_anchors(char *datacfg, int num_of_clusters, int width, int height, int
             float iou = box_intersect / box_union;
             float distance = 1 - iou;
             if (distance < min_dist) {
-              min_dist = distance;
-              cluster_idx = j;
-              best_iou = iou;
+                min_dist = distance;
+                cluster_idx = j;
+                best_iou = iou;
             }
         }
 
@@ -1532,7 +1552,7 @@ void calc_anchors(char *datacfg, int num_of_clusters, int width, int height, int
         float anchor_h = anchors_data.centers.vals[cluster_idx][1]; //centers->data.fl[cluster_idx * 2 + 1];
         if (best_iou > 1 || best_iou < 0) { // || box_w > width || box_h > height) {
             printf(" Wrong label: i = %d, box_w = %f, box_h = %f, anchor_w = %f, anchor_h = %f, iou = %f \n",
-                i, box_w, box_h, anchor_w, anchor_h, best_iou);
+                   i, box_w, box_h, anchor_w, anchor_h, best_iou);
         }
         else avg_iou += best_iou;
     }
@@ -1597,9 +1617,8 @@ void calc_anchors(char *datacfg, int num_of_clusters, int width, int height, int
     getchar();
 }
 
-
 void test_detector(char *datacfg, char *cfgfile, char *weightfile, char *filename, float thresh,
-    float hier_thresh, int dont_show, int ext_output, int save_labels, char *outfile, int letter_box, int benchmark_layers)
+                   float hier_thresh, int dont_show, int ext_output, int save_labels, char *outfile, int letter_box, int benchmark_layers)
 {
     list *options = read_data_cfg(datacfg);
     char *name_list = option_find_str(options, "names", "data/names.list");
@@ -1616,7 +1635,7 @@ void test_detector(char *datacfg, char *cfgfile, char *weightfile, char *filenam
     calculate_binary_weights(net);
     if (net.layers[net.n - 1].classes != names_size) {
         printf("\n Error: in the file %s number of names %d that isn't equal to classes=%d in the file %s \n",
-            name_list, names_size, net.layers[net.n - 1].classes, cfgfile);
+               name_list, names_size, net.layers[net.n - 1].classes, cfgfile);
         if (net.layers[net.n - 1].classes > names_size) getchar();
     }
     srand(2222222);
@@ -1628,7 +1647,7 @@ void test_detector(char *datacfg, char *cfgfile, char *weightfile, char *filenam
     if (outfile) {
         json_file = fopen(outfile, "wb");
         if(!json_file) {
-          error("fopen failed");
+            error("fopen failed");
         }
         char *tmp = "[\n";
         fwrite(tmp, sizeof(char), strlen(tmp), json_file);
@@ -1765,7 +1784,7 @@ void load_params() {
     alphabet = load_alphabet();
     net = parse_network_cfg_custom("cfg/yolov3-tiny.cfg", 1, 1); // set batch=1
     load_weights(&net, "yolov3-tiny.weights");
-    
+
 }
 
 struct result* detect()
@@ -1779,7 +1798,7 @@ struct result* detect()
     float hier_thresh = .5;
     int letter_box = 0;
     int ext_output = 0;
- 
+
     //image im;
     //image sized = load_image_resize(input, net.w, net.h, net.c, &im);
     image im_load = load_image("received.jpg", 0, 0, net.c);
@@ -1798,7 +1817,7 @@ struct result* detect()
     double time = get_time_point();
     network_predict(net, X);
     //network_predict_image(&net, im); letterbox = 1;
-    printf("[STATUS] Predicted in %lf milli-seconds.\n", ((double)get_time_point() - time) / 1000);
+    printf("[STATUS] Predicted in %lf milli-seconds.\n", ((double)get_time_point() - time) / 1000);
     //printf("%s: Predicted in %f seconds.\n", input, (what_time_is_it_now()-time));
 
     int nboxes = 0;
@@ -1817,7 +1836,7 @@ struct result* detect()
                 results.num++;
             }
         }
-    }   
+    }
 
     results.objects = (struct object*)malloc(sizeof(struct object)*results.num+128);
 
@@ -1829,7 +1848,7 @@ struct result* detect()
                 cur->name = names[j];
                 cur->prob = dets[i].prob[j];
                 box b = dets[i].bbox;
-                
+
                 int left = (b.x - b.w/2.0) * im.w;
                 int right = (b.x + b.w/2.0) * im.w;
                 int top = (b.y - b.h/2.0) * im.h;
@@ -1853,7 +1872,7 @@ struct result* detect()
 
     free_image(im);
     free_image(sized);
-    
+
     return &results;
 }
 
@@ -2014,7 +2033,7 @@ void draw_object(char *datacfg, char *cfgfile, char *weightfile, char *filename,
 }
 #else // defined(OPENCV) && defined(GPU)
 void draw_object(char *datacfg, char *cfgfile, char *weightfile, char *filename, float thresh, int dont_show, int it_num,
-    int letter_box, int benchmark_layers)
+                 int letter_box, int benchmark_layers)
 {
     printf(" ./darknet detector draw ... can't be used without OpenCV and CUDA! \n");
     getchar();
@@ -2113,7 +2132,7 @@ void run_detector(int argc, char **argv)
             if (strlen(filename) > 0)
                 if (filename[strlen(filename) - 1] == 0x0d) filename[strlen(filename) - 1] = 0;
         demo(cfg, weights, thresh, hier_thresh, cam_index, filename, names, classes, avgframes, frame_skip, prefix, out_filename,
-            mjpeg_port, dontdraw_bbox, json_port, dont_show, ext_output, letter_box, time_limit_sec, http_post_host, benchmark, benchmark_layers);
+             mjpeg_port, dontdraw_bbox, json_port, dont_show, ext_output, letter_box, time_limit_sec, http_post_host, benchmark, benchmark_layers);
 
         free_list_contents_kvp(options);
         free_list(options);
@@ -2123,14 +2142,14 @@ void run_detector(int argc, char **argv)
     if (gpus && gpu_list && ngpus > 1) free(gpus);
 }
 
-void *ThreadReceiverFunction(void *socket) {
-    printf("[STATUS] Receiver Thread Created!\n");
+void *ThreadUDPReceiverFunction(void *socket) {
+    printf("[STATUS] UDP Receiver Thread Created\n");
     char tmp[4];
     char buffer[PACKET_SIZE];
     int sock = *((int*)socket);
-    cout << " sock is  " << sock << "\n" ;
-    int device_ind = 1; 
-    int len =20;
+//    cout << " sock is  " << sock << "\n" ;
+    int device_ind = 1;
+    int len = 20;
     char str[len];
     char str_front[len];
     double time_register_start;
@@ -2142,38 +2161,55 @@ void *ThreadReceiverFunction(void *socket) {
     //ofstream output_delay ("test_imagedelay.txt");
     while (1) {
         memset(buffer, 0, sizeof(buffer));
-        recvfrom(sock, buffer, PACKET_SIZE, 0, (struct sockaddr *)&frontAddr, &addrlen);
+        recvfrom(sock, buffer, PACKET_SIZE, 0, (struct sockaddr *)&frontUDPAddr, &addrlenUDP);
         time_receivepic = what_time_is_it_now();
-        frameBuffer curFrame;    
+        frameBuffer curFrame;
+
+        // append frame ID into global list
         memcpy(tmp, buffer, 4);
-        curFrame.frmID = *(int*)tmp;        
+        curFrame.frmID = *(int*)tmp;
+
+//        serverRequest sR;
+//        sR.serverIP = " ";
+//        sR.serverPort = 1;
+//        sR.frameID = *(int*)tmp;
+//        udp_frames.push_back(sR);
+
+        // check if current frameID has been previously appended, if so, clear vector
+//        if (find(udp_frames.begin(), udp_frames.end(), receivedFrameID) != udp_frames.end()) {
+//            udp_frames.clear(); // clear vector
+//            udp_frames.push_back(receivedFrameID); // append into cleared vector
+//        }
+//        else {
+//            udp_frames.push_back(receivedFrameID);
+//        }
+
         memcpy(tmp, &(buffer[4]), 4);
         curFrame.dataType = *(int*)tmp;
         FILE *fd;
         if(curFrame.dataType == MESSAGE_ECHO) {
-            cout<<"echo message!"<<endl;
+            printf("[STATUS] Received echo message over UDP \n");
             charint echoID;
             echoID.i = curFrame.frmID;
             char echo[4];
             memcpy(echo, echoID.b, 4);
 
-            inet_ntop(AF_INET, &(frontAddr.sin_addr), str_front, len);
+            inet_ntop(AF_INET, &(frontUDPAddr.sin_addr), str_front, len);
             if (mapOfDevices.find(string(str_front)) != mapOfDevices.end()) {
                 //output_receive<<"receiving from an old " << (device_ind-1) << " device, whose ip is " << str_front << endl;
-                cout<<"receiving from an old  " << (device_ind-1) << " device, whose ip is " << str_front << endl;
+                cout<<"[STATUS] UDP receiving from an old  " << (device_ind-1) << " device, whose ip is " << str_front << endl;
                 continue;}
-            cout<<"receiving from the " << device_ind << " device, whose ip is " << str_front << endl;
+            cout<<"[STATUS] UDP receiving from the " << device_ind << " device, whose ip is " << str_front << endl;
             //pair<map<int, string>::iterator,bool> ret;
             mapOfDevices.insert(pair<string, int>(string(str_front), device_ind));
-            device_ind += 1; 
-            printf("[STATUS] device_ind now has increased to %d\n", device_ind); 
+            device_ind += 1;
+            printf("[STATUS] device_ind now has increased to %d\n", device_ind);
             map<string, int>::iterator it_device = mapOfDevices.begin();
             while(it_device != mapOfDevices.end()){
                 //output_receive << it_device->first << " "  << it_device->second << "\n" ;
                 cout << it_device->first << " "  << it_device->second << "\n" ;
                 it_device ++;}
             continue;
-
         }
         memcpy(tmp, &(buffer[8]), 4);
         curFrame.bufferSize = *(int*)tmp;
@@ -2182,11 +2218,87 @@ void *ThreadReceiverFunction(void *socket) {
         memset(curFrame.buffer, 0, curFrame.bufferSize);
         memcpy(curFrame.buffer, &(buffer[12]), curFrame.bufferSize);
 
-        frames.push(curFrame);
+        framesBufferUDP.push(curFrame);
     }
     //output_receive.close();
     //output_delay.close();
 
+}
+
+void *ThreadTCPReceiverFunction(void *socket) {
+    printf("[STATUS] TCP Receiver Thread Created\n");
+    char tmp[4];
+    char header[12];
+    char buffer[PACKET_SIZE];
+    int sock = *((int*)socket);
+    int device_ind = 1;
+    int len = 20;
+    char str[len];
+    char str_front[len];
+    
+    while (isTCPClientAlive) {
+        memset(buffer, 0, sizeof(buffer));
+        if(read(sock, header, 12) <= 0) {
+            printf("[STATUS] Client has disconnected from TCP connection\n");
+            isTCPClientAlive = false;
+            continue;
+        }
+
+        frameBuffer curFrame;
+        memcpy(tmp, header, 4);
+        int receivedFrameID = *(int*)tmp;
+        curFrame.frmID = receivedFrameID;
+
+        // check if current frameID has been previously appended, if so, clear vector
+        if (find(tcp_frames.begin(), tcp_frames.end(), receivedFrameID) != tcp_frames.end()) {
+            tcp_frames.clear(); // clear vector
+            tcp_frames.push_back(receivedFrameID); // append into cleared vector
+        }
+        else {
+            tcp_frames.push_back(receivedFrameID);
+        }
+
+        memcpy(tmp, &(header[4]), 4);
+        curFrame.dataType = *(int*)tmp;
+        if(curFrame.dataType == MESSAGE_ECHO) {
+            printf("[STATUS] Received echo message over UDP \n");
+            charint echoID;
+            echoID.i = curFrame.frmID;
+            char echo[4];
+            memcpy(echo, echoID.b, 4);
+
+            inet_ntop(AF_INET, &(frontUDPAddr.sin_addr), str_front, len);
+            if (mapOfDevices.find(string(str_front)) != mapOfDevices.end()) {
+                //output_receive<<"receiving from an old " << (device_ind-1) << " device, whose ip is " << str_front << endl;
+                cout<<"[STATUS] UDP receiving from an old  " << (device_ind-1) << " device, whose ip is " << str_front << endl;
+                continue;}
+            cout<<"[STATUS] UDP receiving from the " << device_ind << " device, whose ip is " << str_front << endl;
+            //pair<map<int, string>::iterator,bool> ret;
+            mapOfDevices.insert(pair<string, int>(string(str_front), device_ind));
+            device_ind += 1;
+            printf("[STATUS] device_ind now has increased to %d\n", device_ind);
+            map<string, int>::iterator it_device = mapOfDevices.begin();
+            while(it_device != mapOfDevices.end()){
+                //output_receive << it_device->first << " "  << it_device->second << "\n" ;
+                cout << it_device->first << " "  << it_device->second << "\n" ;
+                it_device ++;}
+            continue;
+        }
+        memcpy(tmp, &(header[8]), 4);
+        curFrame.bufferSize = *(int*)tmp;
+
+        int size = 0;
+        while(size < curFrame.bufferSize) {
+            size += read(sock, &(buffer[size]), curFrame.bufferSize-size);
+        }
+        curFrame.buffer = new char[curFrame.bufferSize];
+        memset(curFrame.buffer, 0, curFrame.bufferSize);
+        memcpy(curFrame.buffer, buffer, curFrame.bufferSize);
+
+        framesBufferTCP.push(curFrame);
+//        printf("[STATUS] TCP received data from a client\n");
+    }
+    printf("[STATUS] TCP Receiver Thread Finished\n");
 }
 
 void *ThreadProcessFunction(void *param) {
@@ -2196,6 +2308,9 @@ void *ThreadProcessFunction(void *param) {
     result* res;
     double time_process_start;
     double time_process;
+    frameBuffer curFrame;
+
+    char* protocolUsed;
 
     load_params();
 
@@ -2203,23 +2318,31 @@ void *ThreadProcessFunction(void *param) {
     //ofstream output_process_delay("test_processdelay.txt");
 
     while (1) {
-        if(frames.empty()) {
-            this_thread::sleep_for(chrono::milliseconds(1));
-            continue;
+        // if either buffers are empty, continue and wait until requests
+        if (framesBufferUDP.empty()) {
+            if (framesBufferTCP.empty()) {
+                this_thread::sleep_for(chrono::milliseconds(1));
+                continue;
+            } else {
+                curFrame = framesBufferTCP.front();
+                framesBufferTCP.pop();
+                protocolUsed = "TCP";
+            }
+        } else {
+            curFrame = framesBufferUDP.front();
+            framesBufferUDP.pop();
+            protocolUsed = "UDP";
         }
-
-        frameBuffer curFrame = frames.front();
-        frames.pop();
 
         int frmID = curFrame.frmID;
         int frmDataType = curFrame.dataType;
 
         int frmSize = curFrame.bufferSize;
         char* frmdata = curFrame.buffer;
-    
+
         if(frmDataType == IMAGE_DETECT) {
             ofstream file("received.jpg", ios::out | ios::binary);
- 
+
             if(file.is_open()) {
                 file.write(frmdata, frmSize);
                 file.close();
@@ -2229,10 +2352,10 @@ void *ThreadProcessFunction(void *param) {
 
                 output_process << "time_process_pic of frameid of: " << frmID << " takes: '" <<  what_time_is_it_now() - time_process_start<< "' milliseconds" << endl;
                 objectDetected = true;
-            } 
+            }
         } else if(frmDataType == EDGE) {
-             cout << frmdata << endl;
-             continue;
+            cout << frmdata << endl;
+            continue;
         }
         for(int i = 0; i < sizeof(curFrame.buffer); i++)
         {
@@ -2260,7 +2383,7 @@ void *ThreadProcessFunction(void *param) {
 
             for(int i = 0; i < curRes.markerNum.i; i++) {
                 int pointer = 100 * i;
-                struct object *cur = &(res->objects[i]); 
+                struct object *cur = &(res->objects[i]);
 
                 p.f = cur->prob;
                 memcpy(&(curRes.buffer[pointer]), p.b, 4);
@@ -2291,29 +2414,33 @@ void *ThreadProcessFunction(void *param) {
         delete res->objects;
         res->objects = NULL;
 
-        resultss.push(curRes);
+        if (protocolUsed == "UDP") {
+            resultsBufferUDP.push(curRes);
+        } else if (protocolUsed == "TCP") {
+            resultsBufferTCP.push(curRes);
+        }
     }
     output_process.close();
     //output_process_delay.close();
 }
 
-void *ThreadSenderFunction(void *socket) {
-    printf("[STATUS] Sender Thread Created!\n");
+void *ThreadUDPSenderFunction(void *socket) {
+    printf("[STATUS] UDP Sender Thread Created!\n");
     char buffer[RES_SIZE];
     int sock = *((int*)socket);
-    int len =20;
+    int len = 20;
     char str_buffer[len];
     //ofstream output_send ("test_send.txt");
 
     while (1) {
-        if(resultss.empty()) {
+        if(resultsBufferUDP.empty()) {
             this_thread::sleep_for(chrono::milliseconds(1));
             continue;
         }
 
-        resBuffer curRes = resultss.front();
-        resultss.pop();
-    
+        resBuffer curRes = resultsBufferUDP.front();
+        resultsBufferUDP.pop();
+
         memset(buffer, 0, sizeof(buffer));
         memcpy(buffer, curRes.resID.b, 4);
         memcpy(&(buffer[4]), curRes.resType.b, 4);
@@ -2323,80 +2450,124 @@ void *ThreadSenderFunction(void *socket) {
         map<string, int>::iterator it_device = mapOfDevices.begin();
 
         while(it_device != mapOfDevices.end()){
-            memset((char*)&remoteAddr, 0, sizeof(remoteAddr));
-            remoteAddr.sin_family = AF_INET;
-            remoteAddr.sin_addr.s_addr = inet_addr((it_device->first).c_str());
-            remoteAddr.sin_port = htons(51919);
-            sendto(sock, buffer, sizeof(buffer), 0, (struct sockaddr *)&frontAddr, addrlen);
-           it_device++;} 
-           //cout<<"[STATUS] Sent results to client"<<endl;
+            memset((char*)&remoteUDPAddr, 0, sizeof(remoteUDPAddr));
+            remoteUDPAddr.sin_family = AF_INET;
+            remoteUDPAddr.sin_addr.s_addr = inet_addr((it_device->first).c_str());
+            remoteUDPAddr.sin_port = htons(40000);
+            sendto(sock, buffer, sizeof(buffer), 0, (struct sockaddr *)&frontUDPAddr, addrlenUDP);
+            it_device++;}
+        //cout<<"[STATUS] Sent results to client"<<endl;
 
-    }    
+    }
     //output_send.close();
+}
+
+void *ThreadTCPSenderFunction(void *socket) {
+    printf("[STATUS] TCP Sender Thread Created\n");
+    char buffer[RES_SIZE];
+    int sock = *((int*)socket);
+
+    while (isTCPClientAlive) {
+        if(resultsBufferTCP.empty()) {
+            this_thread::sleep_for(chrono::milliseconds(1));
+            continue;
+        }
+
+        resBuffer curRes = resultsBufferTCP.front();
+        resultsBufferTCP.pop();
+
+        memset(buffer, 0, sizeof(buffer));
+        memcpy(buffer, curRes.resID.b, 4);
+        memcpy(&(buffer[4]), curRes.resType.b, 4);
+        memcpy(&(buffer[8]), curRes.markerNum.b, 4);
+        if(curRes.markerNum.i != 0)
+            memcpy(&(buffer[12]), curRes.buffer, 100 * curRes.markerNum.i);
+        write(sock, buffer, sizeof(buffer));
+    }
+    printf("[STATUS] TCP Sender Thread Finished\n");
+}
+
+void *ThreadTCPCreator(void *socket) {
+    pthread_t senderTCPThread, receiverTCPThread;
+    int ret5, ret6;
+    int sock = *((int*)socket);
+
+    int socketTCPClient;
+
+    while(1) {
+        listen(sock,5);
+        if ((socketTCPClient = accept(sock, (struct sockaddr *) &remoteTCPAddr, &addrlenTCP)) < 0)
+            cout<<"error accept"<<endl;
+
+        isTCPClientAlive = true;
+        ret5 = pthread_create(&receiverTCPThread, NULL, ThreadTCPReceiverFunction, (void *)&socketTCPClient);
+        ret6 = pthread_create(&senderTCPThread, NULL, ThreadTCPSenderFunction, (void *)&socketTCPClient);
+
+        pthread_join(receiverTCPThread, NULL);
+        pthread_join(senderTCPThread, NULL);
+    }
 }
 
 void run_detector_server(int argc, char **argv)
 {
     cout<<("[STATUS] Running detector code")<<endl;
 
-    pthread_t senderThread, receiverThread, processThread, annotationThread;
-    int ret1, ret2, ret3;
-    //char buffer[PACKET_SIZE];
+    pthread_t senderUDPThread, receiverUDPThread, processThread, creatorTCPThread;
+    int ret1, ret2, ret3, ret4;
     char fileid[4];
     int status = 0;
-    int sockUDP;
 
-    memset((char*)&localAddr, 0, sizeof(localAddr));
-    localAddr.sin_family = AF_INET;
-    localAddr.sin_addr.s_addr = htonl(INADDR_ANY);
-    localAddr.sin_port = htons(PORT);
+    // preparing UDP and TCP sockets
+    int socketUDP, socketTCP;
 
-    memset((char*)&remoteAddr, 0, sizeof(remoteAddr));
-    remoteAddr.sin_family = AF_INET;
-    remoteAddr.sin_addr.s_addr = inet_addr("INADDR_ANY");
-    remoteAddr.sin_port = htons(51919);
+    memset((char*)&localUDPAddr, 0, sizeof(localUDPAddr)); // local meaning the server
+    localUDPAddr.sin_family = AF_INET;
+    localUDPAddr.sin_addr.s_addr = htonl(INADDR_ANY);
+    localUDPAddr.sin_port = htons(PORT_UDP);
 
-    if((sockUDP = socket(AF_INET, SOCK_DGRAM, 0)) < 0) {
+    memset((char*)&remoteUDPAddr, 0, sizeof(remoteUDPAddr)); // remote meaning the client
+    remoteUDPAddr.sin_family = AF_INET;
+    remoteUDPAddr.sin_addr.s_addr = inet_addr("INADDR_ANY");
+    remoteUDPAddr.sin_port = htons(40000);
+
+    memset((char*)&localTCPAddr, 0, sizeof(localTCPAddr));
+    localTCPAddr.sin_family = AF_INET;
+    localTCPAddr.sin_addr.s_addr = htonl(INADDR_ANY);
+    localTCPAddr.sin_port = htons(PORT_TCP);
+
+    if((socketUDP = socket(AF_INET, SOCK_DGRAM, 0)) < 0) {
         printf("[ERROR] Opening UDP socket failed\n");
         exit(1);
     }
-    if(bind(sockUDP, (struct sockaddr *)&localAddr, sizeof(localAddr)) < 0) {
+    if(bind(socketUDP, (struct sockaddr *)&localUDPAddr, sizeof(localUDPAddr)) < 0) {
         printf("[ERROR] Binding UDP socket failed\n");
         exit(1);
     }
-    printf("[STATUS] Server started, waiting for incoming clients\n");
 
-    char *gpu_list = find_char_arg(argc, argv, "-gpus", 0);
-    int *gpus = 0;
-    int gpu = 0;
-    int ngpus = 0;
-    if (gpu_list) {
-        printf("%s\n", gpu_list);
-        int len = (int)strlen(gpu_list);
-        ngpus = 1;
-        int i;
-        for (i = 0; i < len; ++i) {
-            if (gpu_list[i] == ',') ++ngpus;
-        }
-        gpus = (int*)xcalloc(ngpus, sizeof(int));
-        for (i = 0; i < ngpus; ++i) {
-            gpus[i] = atoi(gpu_list);
-            gpu_list = strchr(gpu_list, ',') + 1;
-        }
+    if ((socketTCP = socket(AF_INET, SOCK_STREAM, 0)) < 0) {
+        printf("[ERROR] Opening TCP socket failed\n");
+        exit(1);
     }
-    else {
-        gpu = gpu_index;
-        gpus = &gpu;
-        ngpus = 1;
+    if (bind(socketTCP, (struct sockaddr *)&localTCPAddr, sizeof(localTCPAddr)) < 0) {
+        printf("[ERROR] Binding TCP socket failed\n");
+        exit(1);
     }
 
-    ret1 = pthread_create(&receiverThread, NULL, ThreadReceiverFunction, (void *)&sockUDP);
+    // have a listener for incoming TCP connections, and spawn the TCP receiver and sender threads as needed
+
+    printf("[STATUS] Server started with both UDP and TCP listeners/receivers, waiting for incoming clients\n");
+
+    ret1 = pthread_create(&receiverUDPThread, NULL, ThreadUDPReceiverFunction, (void *)&socketUDP);
     ret2 = pthread_create(&processThread, NULL, ThreadProcessFunction, NULL);
-    ret3 = pthread_create(&senderThread, NULL, ThreadSenderFunction, (void *)&sockUDP);
+    ret3 = pthread_create(&senderUDPThread, NULL, ThreadUDPSenderFunction, (void *)&socketUDP);
 
-    pthread_join(receiverThread, NULL);
+    ret4 = pthread_create(&creatorTCPThread, NULL, ThreadTCPCreator, (void *)&socketTCP);
+
+    pthread_join(receiverUDPThread, NULL);
+    pthread_join(senderUDPThread, NULL);
     pthread_join(processThread, NULL);
-    pthread_join(senderThread, NULL);
+
+    pthread_join(creatorTCPThread, NULL);
 
     //if (gpus && gpu_list && ngpus > 1) free(gpus);
 }

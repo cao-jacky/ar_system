@@ -13,6 +13,7 @@ import androidx.annotation.RequiresApi;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
+import java.net.Socket;
 import java.net.SocketAddress;
 import java.nio.channels.DatagramChannel;
 import java.nio.channels.SocketChannel;
@@ -27,13 +28,16 @@ public class ARManager {
 
     private Handler handlerUtil;
     private Handler handlerNetwork;
+    private Handler handlerTCPNetwork;
 
     private TransmissionTask taskTransmission;
     private ReceivingTask taskReceiving;
 
     private DatagramChannel dataChannel;
     private SocketChannel socketChannel;
-    private SocketAddress serverAddress;
+
+    private SocketAddress serverAddressUDP;
+    private SocketAddress serverAddressTCP;
 
     private String selectedProtocol;
 
@@ -57,20 +61,19 @@ public class ARManager {
 
     private void initConnection(String selectedProtocol, String serverIP, int serverPort) {
         try {
-            serverAddress = new InetSocketAddress(serverIP, serverPort);
+            serverAddressUDP = new InetSocketAddress(serverIP, 50000);
+            serverAddressTCP = new InetSocketAddress(serverIP, 55000);
 
             // create UDP datagram channel
             dataChannel = DatagramChannel.open();
             dataChannel.configureBlocking(false);
-            dataChannel.bind(new InetSocketAddress(51919));
+            dataChannel.bind(new InetSocketAddress(40000));
 
             // create TCP socket channel
             socketChannel = SocketChannel.open();
-            socketChannel.connect(serverAddress);
-            socketChannel.configureBlocking(false);
-
         } catch (Exception e) {
-            Log.d(Constants.TAG, "DataChannel creation error");
+            Log.d("DEBUG", "DataChannel creation error");
+            System.out.println(e);
         }
     }
 
@@ -102,13 +105,15 @@ public class ARManager {
         System.loadLibrary("opencv_java");
         initConnection(selectedProtocol, serverIP, serverPort);
 
+
         this.handlerUtil = createAndStartThread("util thread", Process.THREAD_PRIORITY_DEFAULT); //start util thread
         this.handlerNetwork = createAndStartThread("network thread", 1);
 
         taskTransmission = new TransmissionTask(selectedProtocol, dataChannel, socketChannel,
-                serverAddress, context, requestsDatabase, serverIP, serverPort);
+                serverAddressUDP, serverAddressTCP, context, requestsDatabase, serverIP, serverPort);
         taskTransmission.setData(0,"a".getBytes());
         handlerNetwork.post(taskTransmission);
+
         taskReceiving = new ReceivingTask(selectedProtocol, dataChannel, socketChannel, context,
                 resultsDatabase, serverIP, serverPort);
         taskReceiving.setCallback(new ReceivingTask.Callback() {

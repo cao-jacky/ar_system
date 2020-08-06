@@ -88,17 +88,17 @@ public class ReceivingTask implements Runnable{
                 e.printStackTrace();
             }
         }
-//        if (selectedProtocol.contains("TCP")) {
-//            try {
-//                if (socketChannel.read(resPacket) != 0) {
-//                    res = resPacket.array();
-//                } else {
-//                    res = null;
-//                }
-//            } catch (IOException e) {
-//                e.printStackTrace();
-//            }
-//        }
+        if (selectedProtocol.contains("TCP")) {
+            try {
+                if (socketChannel.read(resPacket) != 0) {
+                    res = resPacket.array();
+                } else {
+                    res = null;
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
 
         if (res != null) {
             MainActivity.downloadStatus.setImageAlpha(0);

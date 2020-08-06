@@ -95,4 +95,10 @@ struct recognizedMarker {
     std::string markername;
 };
 
+struct serverRequest {
+    std::string serverIP;
+    int serverPort;
+    int frameID;
+};
+
 #endif

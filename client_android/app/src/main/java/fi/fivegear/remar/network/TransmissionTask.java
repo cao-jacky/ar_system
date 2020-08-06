@@ -46,9 +46,11 @@ public class TransmissionTask extends Activity implements Runnable {
     private double timeSend;
 
     private String selectedProtocol;
-    private DatagramChannel datagramChannel;
-    private SocketChannel socketChannel;
-    private SocketAddress serverAddress;
+    private final DatagramChannel datagramChannel;
+    private final SocketChannel socketChannel;
+
+    private SocketAddress serverAddressUDP;
+    private SocketAddress serverAddressTCP;
 
     public Mat YUVMatTrans, YUVMatScaled, GrayScaled;
     private long time;
@@ -65,13 +67,16 @@ public class TransmissionTask extends Activity implements Runnable {
 
     private MainActivity mainActivity = new MainActivity();
 
+    private boolean isTCPConnectedServer = false;
+
     public TransmissionTask(String selectedProtocol, DatagramChannel datagramChannel, SocketChannel socketChannel,
-                            SocketAddress serverAddress, Context context, DatabaseHelper requestsDatabase,
+                            SocketAddress serverAddressUDP, SocketAddress serverAddressTCP, Context context, DatabaseHelper requestsDatabase,
                             String serverIP, int serverPort) {
         this.selectedProtocol = selectedProtocol;
         this.datagramChannel = datagramChannel;
         this.socketChannel = socketChannel;
-        this.serverAddress = serverAddress;
+        this.serverAddressUDP = serverAddressUDP;
+        this.serverAddressTCP = serverAddressTCP;
         this.context = context;
         this.requestsDatabase = requestsDatabase;
         this.serverIP = serverIP;
@@ -104,6 +109,17 @@ public class TransmissionTask extends Activity implements Runnable {
 
         sharedPreferencesLocation = context.getSharedPreferences("currLocationSetting", Context.MODE_PRIVATE);
         currLocation = sharedPreferencesLocation.getString("currLocation", "0");
+
+        if (!isTCPConnectedServer) {
+            try {
+                socketChannel.connect(serverAddressTCP);
+                socketChannel.configureBlocking(false);
+                isTCPConnectedServer = true;
+            } catch (IOException e) {
+                e.printStackTrace();
+                isTCPConnectedServer = false;
+            }
+        }
 
         MainActivity.uploadStatus.setImageAlpha(0);
         if (dataType == IMAGE_DETECT) {
@@ -143,7 +159,7 @@ public class TransmissionTask extends Activity implements Runnable {
             buffer.flip();
 
             if (selectedProtocol.contains("UDP")) {
-                datagramChannel.send(buffer, serverAddress);
+                datagramChannel.send(buffer, serverAddressUDP);
             }
             if (selectedProtocol.contains("TCP")) {
                 // attempt TCP connection, if failure, change the selected protocol to UDP and declare to user

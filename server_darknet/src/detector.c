@@ -2235,7 +2235,7 @@ void *ThreadTCPReceiverFunction(void *socket) {
     int len = 20;
     char str[len];
     char str_front[len];
-    
+
     while (isTCPClientAlive) {
         memset(buffer, 0, sizeof(buffer));
         if(read(sock, header, 12) <= 0) {
@@ -2261,7 +2261,7 @@ void *ThreadTCPReceiverFunction(void *socket) {
         memcpy(tmp, &(header[4]), 4);
         curFrame.dataType = *(int*)tmp;
         if(curFrame.dataType == MESSAGE_ECHO) {
-            printf("[STATUS] Received echo message over UDP \n");
+            printf("[STATUS] Received echo message over TCP \n");
             charint echoID;
             echoID.i = curFrame.frmID;
             char echo[4];
@@ -2270,9 +2270,9 @@ void *ThreadTCPReceiverFunction(void *socket) {
             inet_ntop(AF_INET, &(frontUDPAddr.sin_addr), str_front, len);
             if (mapOfDevices.find(string(str_front)) != mapOfDevices.end()) {
                 //output_receive<<"receiving from an old " << (device_ind-1) << " device, whose ip is " << str_front << endl;
-                cout<<"[STATUS] UDP receiving from an old  " << (device_ind-1) << " device, whose ip is " << str_front << endl;
+                cout<<"[STATUS] TCP receiving from an old  " << (device_ind-1) << " device, whose ip is " << str_front << endl;
                 continue;}
-            cout<<"[STATUS] UDP receiving from the " << device_ind << " device, whose ip is " << str_front << endl;
+            cout<<"[STATUS] TCP receiving from the " << device_ind << " device, whose ip is " << str_front << endl;
             //pair<map<int, string>::iterator,bool> ret;
             mapOfDevices.insert(pair<string, int>(string(str_front), device_ind));
             device_ind += 1;
@@ -2499,12 +2499,16 @@ void *ThreadTCPCreator(void *socket) {
         if ((socketTCPClient = accept(sock, (struct sockaddr *) &remoteTCPAddr, &addrlenTCP)) < 0)
             cout<<"error accept"<<endl;
 
+        cout<<("[STATUS] Attempting to form TCP connection with client")<<endl;
+
         isTCPClientAlive = true;
         ret5 = pthread_create(&receiverTCPThread, NULL, ThreadTCPReceiverFunction, (void *)&socketTCPClient);
         ret6 = pthread_create(&senderTCPThread, NULL, ThreadTCPSenderFunction, (void *)&socketTCPClient);
 
         pthread_join(receiverTCPThread, NULL);
         pthread_join(senderTCPThread, NULL);
+        cout<<("[STATUS] Created TCP connection threads and joined them to main process")<<endl;
+
     }
 }
 

@@ -134,6 +134,7 @@ public class ARManager {
             public void run() {
                 try {
                     dataChannel.close();
+                    socketChannel.close();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }

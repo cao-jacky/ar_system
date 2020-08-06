@@ -452,6 +452,8 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
     //mSensorManager.unregisterListener(this);
 //        ARManager.getInstance().stop();
 
+
+
     }
 
     @Override

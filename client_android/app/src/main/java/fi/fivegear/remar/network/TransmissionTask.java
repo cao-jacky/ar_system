@@ -51,7 +51,7 @@ public class TransmissionTask extends Activity implements Runnable {
     private byte[] frmsize;
     private byte[] packetContent;
     private int datasize;
-    private byte[] frameData;
+    private Mat frameData;
     private double timeCaptured;
     private double timeSend;
 
@@ -93,14 +93,15 @@ public class TransmissionTask extends Activity implements Runnable {
         this.serverIP = serverIP;
         this.serverPort = serverPort;
 
-        convertedData = new Mat(Constants.previewHeight + Constants.previewHeight / 2, Constants.previewWidth, CvType.CV_8UC3);
-
-        YUVMatTrans = new Mat(Constants.previewHeight + Constants.previewHeight / 2, Constants.previewWidth, CvType.CV_8UC1);
-        YUVMatScaled = new Mat((Constants.previewHeight + Constants.previewHeight / 2), Constants.previewWidth, CvType.CV_8UC1);
+        convertedData = new Mat(Constants.previewHeight , Constants.previewWidth, CvType.CV_8UC3);
+//        YUVMatTrans = new Mat(Constants.previewHeight + Constants.previewHeight / 2, Constants.previewWidth, CvType.CV_8UC1);
+        YUVMatTrans = new Mat(Constants.previewHeight * 3 / 2, Constants.previewWidth, CvType.CV_8UC1);
+//        YUVMatScaled = new Mat((Constants.previewHeight + Constants.previewHeight / 2), Constants.previewWidth, CvType.CV_8UC1);
+        YUVMatScaled = new Mat((Constants.previewHeight + Constants.previewHeight / 2) / Constants.recoScale, Constants.previewWidth / Constants.recoScale, CvType.CV_8UC1);
         GrayScaled = new Mat(Constants.previewHeight / Constants.recoScale, Constants.previewWidth / Constants.recoScale, CvType.CV_8UC1);
     }
 
-    public void setData(int frmID, byte[] frameData){
+    public void setData(int frmID, Mat frameData){
         this.frmID = frmID;
         this.frameData = frameData;
 
@@ -136,14 +137,18 @@ public class TransmissionTask extends Activity implements Runnable {
 
         MainActivity.uploadStatus.setImageAlpha(0);
         if (dataType == IMAGE_DETECT) {
-            YUVMatTrans.put(0, 0, frameData);
+//            YUVMatTrans.put(0, 0, frameData);
 
-            Log.d("TEST", String.valueOf(YUVMatScaled.size()));
+            YUVMatTrans = frameData;
 
-            Size imageSize = new Size(4000,3000);//the dst image size,e.g.100x100
+//            Log.d("TEST", String.valueOf(YUVMatScaled.size()));
 
-            Imgproc.resize(YUVMatTrans, YUVMatScaled, imageSize, 0, 0, Imgproc.INTER_LINEAR);
+//            Size imageSize = new Size(4000,3000);//the dst image size,e.g.100x100
+//            Imgproc.resize(YUVMatTrans, YUVMatScaled, imageSize, 0, 0, Imgproc.INTER_LINEAR);
+
+            Imgproc.resize(YUVMatTrans, YUVMatScaled, YUVMatScaled.size(), 0, 0, Imgproc.INTER_LINEAR);
             Imgproc.cvtColor(YUVMatScaled, GrayScaled, Imgproc.COLOR_YUV420sp2GRAY);
+            Core.flip(GrayScaled.t(), GrayScaled, 1); // rotate 90 deg clockwise
         }
 
         if (dataType == IMAGE_DETECT) {

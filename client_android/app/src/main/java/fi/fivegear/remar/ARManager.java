@@ -11,6 +11,8 @@ import android.util.Log;
 
 import androidx.annotation.RequiresApi;
 
+import org.opencv.core.Mat;
+
 import java.io.IOException;
 import java.net.InetSocketAddress;
 import java.net.Socket;
@@ -111,7 +113,7 @@ public class ARManager {
 
         taskTransmission = new TransmissionTask(selectedProtocol, dataChannel, socketChannel,
                 serverAddressUDP, serverAddressTCP, context, requestsDatabase, serverIP, serverPort);
-        taskTransmission.setData(0,"a".getBytes());
+        taskTransmission.setData(0, new Mat());
         handlerNetwork.post(taskTransmission);
 
         taskReceiving = new ReceivingTask(selectedProtocol, dataChannel, socketChannel, context,
@@ -146,18 +148,18 @@ public class ARManager {
         }
     }
 
-    public void recognize(int frameID, byte[] frameData) {
+    public void recognize(int frameID, Mat frameData) {
         taskTransmission.setData(frameID, frameData);
         handlerNetwork.post(taskTransmission);
         taskReceiving.updateLatestSentID(frameID);
     }
 
-    public void recognizeTime(int frameID, byte[] frameData){
+    public void recognizeTime(int frameID, Mat frameData){
         taskTransmission.setData(frameID, frameData);
         handlerNetwork.post(taskTransmission);
         taskReceiving.updateLatestSentID(frameID);
     }
-    public void driveFrame(byte[] frameData) {
+    public void driveFrame(Mat frameData) {
         handlerNetwork.post(taskReceiving);
     }
 

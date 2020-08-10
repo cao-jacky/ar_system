@@ -13,10 +13,21 @@
             android:id="@+id/cameraPreview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:visibility="gone"
             surfaceview:layout_constraintBottom_toBottomOf="parent"
             surfaceview:layout_constraintEnd_toEndOf="parent"
             surfaceview:layout_constraintStart_toStartOf="parent"
             surfaceview:layout_constraintTop_toTopOf="parent"></SurfaceView>
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#000"
+            surfaceview:layout_constraintStart_toStartOf="parent"
+            surfaceview:layout_constraintTop_toTopOf="parent"
+            tools:context="fi.fivegear.remar.MainActivity" />
+
 
         <FrameLayout
             android:id="@+id/settingsButton"

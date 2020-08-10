@@ -1801,8 +1801,7 @@ struct result* detect()
 
     //image im;
     //image sized = load_image_resize(input, net.w, net.h, net.c, &im);
-    image im_load = load_image("received.jpg", 0, 0, net.c);
-    image im = rotate_image(im_load, -1.57079632679);
+    image im = load_image("received.jpg", 0, 0, net.c);
     image sized = letterbox_image(im, net.w, net.h);
     //else sized = resize_image(im, net.w, net.h);
     layer l = net.layers[net.n - 1];
@@ -2505,12 +2504,13 @@ void *ThreadTCPCreator(void *socket) {
         cout<<("[STATUS] Attempting to form TCP connection with client")<<endl;
 
         isTCPClientAlive = true;
+        cout<<("[STATUS] Created TCP connection threads and joined them to main process")<<endl;
+
         ret5 = pthread_create(&receiverTCPThread, NULL, ThreadTCPReceiverFunction, (void *)&socketTCPClient);
         ret6 = pthread_create(&senderTCPThread, NULL, ThreadTCPSenderFunction, (void *)&socketTCPClient);
 
         pthread_join(receiverTCPThread, NULL);
         pthread_join(senderTCPThread, NULL);
-        cout<<("[STATUS] Created TCP connection threads and joined them to main process")<<endl;
 
     }
 }

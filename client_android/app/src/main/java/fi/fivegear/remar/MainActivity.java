@@ -1,7 +1,6 @@
 package fi.fivegear.remar;
 
 import android.Manifest;
-import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
@@ -25,6 +24,7 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.multidex.MultiDex;
 import androidx.core.app.ActivityCompat;
 
@@ -50,17 +50,16 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.widget.Toast;
 
-import java.util.List;
-
 import fi.fivegear.remar.activities.SettingsActivity;
 import fi.fivegear.remar.activities.StatsActivity;
+import fi.fivegear.remar.fragments.fragmentCamera;
 import fi.fivegear.remar.helpers.DatabaseHelper;
 import fi.fivegear.remar.models.SessionInfo;
 
 import static fi.fivegear.remar.Constants.previewHeight;
 import static fi.fivegear.remar.Constants.previewWidth;
 
-public class MainActivity extends Activity implements LocationListener, SensorEventListener,
+public class MainActivity extends AppCompatActivity implements LocationListener, SensorEventListener,
         View.OnTouchListener {
 
     private SurfaceView mPreview;
@@ -73,7 +72,6 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
     private byte[] callbackBuffer;
     private int time_o, time_n, fps;
     private boolean recoFlag = false;
-    private int frameID;
 
     protected LocationManager locationManager;
     protected LocationListener locationListener;
@@ -117,6 +115,11 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         checkPermission(); // Check for user permissions before loading main activity
         getScreenResolution(this); // required to draw annotations on screen
         setContentView(R.layout.activity_main);
+        if (null == savedInstanceState) {
+            getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.container, fragmentCamera.newInstance())
+                    .commit();
+        }
 
         // obtain UID of application
         int uid;
@@ -217,18 +220,6 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
 
         mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
 
-        mPreview = findViewById(R.id.cameraPreview);
-        mPreview.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE
-                | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
-                | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
-                | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
-                | View.SYSTEM_UI_FLAG_FULLSCREEN
-                | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
-        mPreviewHolder = mPreview.getHolder();
-        mPreviewHolder.addCallback(surfaceCallback);
-        mPreview.setZOrderMediaOverlay(false);
-        mPreview.setOnTouchListener(this);
-
         if (Constants.Show2DView) {
             mDraw = new DrawOnTop(this);
             addContentView(mDraw, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
@@ -238,6 +229,7 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         ARManager.getInstance().setCallback(new ARManager.Callback() {
             @Override
             public void onObjectsDetected(Detected[] detected) {
+                mDraw.invalidate();
                 mDraw.updateData(detected);
             }
         });
@@ -439,24 +431,6 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
     }
 
     @Override
-    public void onPause() {
-        Log.i(Constants.TAG, " onPause() called.");
-        super.onPause();
-
-        if (mInPreview)
-            mCamera.stopPreview();
-
-        mCamera.setPreviewCallbackWithBuffer(null);
-        mCamera.lock();
-        mCamera.release();
-        mCamera = null;
-        mInPreview = false;
-    //mSensorManager.unregisterListener(this);
-//        ARManager.getInstance().stop();
-
-    }
-
-    @Override
     public void onStop() {
         Log.i(Constants.TAG, " onStop() called.");
         ARManager.getInstance().stop();
@@ -490,73 +464,6 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
         recoFlag = true;
         return this.onTouchEvent(event);
     }
-
-    private void initPreview(int width, int height) {
-        Log.i(Constants.TAG, "initPreview() called");
-        if (mCamera != null && mPreviewHolder.getSurface() != null) {
-            if (!mCameraConfigured) {
-                Camera.Parameters params = mCamera.getParameters();
-                params.setPreviewSize(width, height);
-
-//                List<Camera.Size> sizes = params.getSupportedPictureSizes();
-//                Camera.Size mSize;
-//                for (Camera.Size size : sizes) {
-//                    Log.i("TEST", "Available resolution: "+size.width+" "+size.height);
-//                    mSize = size;
-//                }
-//                params.setPictureSize(4000, 3000);
-
-                callbackBuffer = new byte[(height + height / 2) * width];
-                params.setFocusMode(Camera.Parameters.FOCUS_MODE_AUTO);
-                params.set("camera-id", 2);
-                mCamera.setParameters(params);
-                mCameraConfigured = true;
-            }
-
-            try {
-                mCamera.setPreviewDisplay(mPreviewHolder);
-                mCamera.addCallbackBuffer(callbackBuffer);
-                mCamera.setPreviewCallbackWithBuffer(frameIMGProcCallback);
-            } catch (Throwable t) {
-                Log.e(Constants.TAG, "Exception in initPreview()", t);
-            }
-        }
-    }
-
-    SurfaceHolder.Callback surfaceCallback = new SurfaceHolder.Callback() {
-        public void surfaceCreated(SurfaceHolder holder) {
-            Log.i(Constants.TAG, " surfaceCreated() called.");
-            initPreview(previewWidth, previewHeight);
-            if (mCameraConfigured && mCamera != null) {
-                mCamera.setDisplayOrientation(90);
-                mCamera.startPreview();
-                mCamera.autoFocus(null);
-                mInPreview = true;
-            }
-        }
-
-        public void surfaceChanged(SurfaceHolder holder, int format, int width, int height) {
-            Log.i(Constants.TAG, " surfaceChanged() called.");
-        }
-
-        public void surfaceDestroyed(SurfaceHolder holder) {
-            Log.i(Constants.TAG, " surfaceDestroyed() called.");
-        }
-    };
-
-    Camera.PreviewCallback frameIMGProcCallback = new Camera.PreviewCallback() {
-        @Override
-        public void onPreviewFrame(byte[] data, Camera camera) {
-            mCamera.addCallbackBuffer(callbackBuffer);
-
-            frameID++;
-
-            ARManager.getInstance().recognizeTime(frameID, data);
-            ARManager.getInstance().driveFrame(data);
-            mDraw.invalidate();
-        }
-    };
-
 
     class DrawOnTop extends View {
         Paint paintWord;
@@ -644,7 +551,7 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
             if(detecteds != null) {
                 for (Detected detected : detecteds) {
                     float scale_width = (previewWidth-screenWidth);
-                    float scale_height = (previewHeight-screenHeight+screenHeight/2-screenHeight/6);
+                    float scale_height = (previewHeight-screenHeight+screenHeight/2-screenHeight);
                     canvas.drawRect((detected.left)*dispScale-scale_width-5, (detected.top)*(dispScale)-scale_height-50,
                             (detected.right)*dispScale-scale_width, (detected.top)*(dispScale)-scale_height, paintBackground);
                     canvas.drawText(detected.name +  " " + detected.prob,

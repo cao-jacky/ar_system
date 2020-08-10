@@ -550,8 +550,8 @@ public class MainActivity extends AppCompatActivity implements LocationListener,
 
             if(detecteds != null) {
                 for (Detected detected : detecteds) {
-                    float scale_width = (previewWidth-screenWidth);
-                    float scale_height = (previewHeight-screenHeight+screenHeight/2-screenHeight);
+                    float scale_width = 0; // (previewWidth-screenWidth);
+                    float scale_height = -200; //(previewHeight-screenHeight+screenHeight/2-screenHeight/6);
                     canvas.drawRect((detected.left)*dispScale-scale_width-5, (detected.top)*(dispScale)-scale_height-50,
                             (detected.right)*dispScale-scale_width, (detected.top)*(dispScale)-scale_height, paintBackground);
                     canvas.drawText(detected.name +  " " + detected.prob,

@@ -3,16 +3,26 @@ package fi.fivegear.remar.network;
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.graphics.Bitmap;
+import android.os.Environment;
+import android.util.Log;
 import android.view.Gravity;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import org.opencv.android.Utils;
+import org.opencv.core.Core;
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfByte;
+import org.opencv.core.Size;
 import org.opencv.highgui.Highgui;
 import org.opencv.imgproc.Imgproc;
 
+import java.io.ByteArrayOutputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
 import java.net.Socket;
 import java.net.SocketAddress;
@@ -53,6 +63,7 @@ public class TransmissionTask extends Activity implements Runnable {
     private SocketAddress serverAddressTCP;
 
     public Mat YUVMatTrans, YUVMatScaled, GrayScaled;
+    public Mat convertedData;
     private long time;
 
     private Context context;
@@ -82,8 +93,10 @@ public class TransmissionTask extends Activity implements Runnable {
         this.serverIP = serverIP;
         this.serverPort = serverPort;
 
+        convertedData = new Mat(Constants.previewHeight + Constants.previewHeight / 2, Constants.previewWidth, CvType.CV_8UC3);
+
         YUVMatTrans = new Mat(Constants.previewHeight + Constants.previewHeight / 2, Constants.previewWidth, CvType.CV_8UC1);
-        YUVMatScaled = new Mat((Constants.previewHeight + Constants.previewHeight / 2) / Constants.recoScale, Constants.previewWidth / Constants.recoScale, CvType.CV_8UC1);
+        YUVMatScaled = new Mat((Constants.previewHeight + Constants.previewHeight / 2), Constants.previewWidth, CvType.CV_8UC1);
         GrayScaled = new Mat(Constants.previewHeight / Constants.recoScale, Constants.previewWidth / Constants.recoScale, CvType.CV_8UC1);
     }
 
@@ -125,7 +138,11 @@ public class TransmissionTask extends Activity implements Runnable {
         if (dataType == IMAGE_DETECT) {
             YUVMatTrans.put(0, 0, frameData);
 
-            Imgproc.resize(YUVMatTrans, YUVMatScaled, YUVMatScaled.size(), 0, 0, Imgproc.INTER_LINEAR);
+            Log.d("TEST", String.valueOf(YUVMatScaled.size()));
+
+            Size imageSize = new Size(4000,3000);//the dst image size,e.g.100x100
+
+            Imgproc.resize(YUVMatTrans, YUVMatScaled, imageSize, 0, 0, Imgproc.INTER_LINEAR);
             Imgproc.cvtColor(YUVMatScaled, GrayScaled, Imgproc.COLOR_YUV420sp2GRAY);
         }
 
@@ -183,7 +200,7 @@ public class TransmissionTask extends Activity implements Runnable {
             // Appending the sent information into the database table
             RequestEntry newRequestEntry = new RequestEntry("", Integer.parseInt(currSessionNumber),
                     frmID, String.valueOf(time), serverIP, serverPort, datasize+12,
-                    currLocation, "");
+                    currLocation, selectedProtocol);
             long newRequestsEntry_id = requestsDatabase.createRequestEntry(newRequestEntry);
 
             MainActivity.uploadStatus.setImageAlpha(255);

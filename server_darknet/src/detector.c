@@ -2414,6 +2414,9 @@ void *ThreadProcessFunction(void *param) {
         delete res->objects;
         res->objects = NULL;
 
+        // sleep for 15 ms
+        sleep(15/1000);
+
         if (protocolUsed == "UDP") {
             resultsBufferUDP.push(curRes);
         } else if (protocolUsed == "TCP") {

@@ -50,6 +50,8 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.widget.Toast;
 
+import java.util.List;
+
 import fi.fivegear.remar.activities.SettingsActivity;
 import fi.fivegear.remar.activities.StatsActivity;
 import fi.fivegear.remar.helpers.DatabaseHelper;
@@ -452,8 +454,6 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
     //mSensorManager.unregisterListener(this);
 //        ARManager.getInstance().stop();
 
-
-
     }
 
     @Override
@@ -498,6 +498,14 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
                 Camera.Parameters params = mCamera.getParameters();
                 params.setPreviewSize(width, height);
 
+//                List<Camera.Size> sizes = params.getSupportedPictureSizes();
+//                Camera.Size mSize;
+//                for (Camera.Size size : sizes) {
+//                    Log.i("TEST", "Available resolution: "+size.width+" "+size.height);
+//                    mSize = size;
+//                }
+//                params.setPictureSize(4000, 3000);
+
                 callbackBuffer = new byte[(height + height / 2) * width];
                 params.setFocusMode(Camera.Parameters.FOCUS_MODE_AUTO);
                 params.set("camera-id", 2);
@@ -518,7 +526,7 @@ public class MainActivity extends Activity implements LocationListener, SensorEv
     SurfaceHolder.Callback surfaceCallback = new SurfaceHolder.Callback() {
         public void surfaceCreated(SurfaceHolder holder) {
             Log.i(Constants.TAG, " surfaceCreated() called.");
-            initPreview(previewWidth, Constants.previewHeight);
+            initPreview(previewWidth, previewHeight);
             if (mCameraConfigured && mCamera != null) {
                 mCamera.setDisplayOrientation(90);
                 mCamera.startPreview();

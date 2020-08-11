@@ -38,12 +38,16 @@ typedef __compar_fn_t comparison_fn_t;
 #endif
 
 #define MESSAGE_ECHO 0
-#define EDGE 1
-#define IMAGE_DETECT 2
+#define IMAGE_DETECT_SEGMENTED 1
+#define IMAGE_DETECT_COMPLETE 2
+#define PACKET_STATUS 4
+
+#define MAX_UDP_LENGTH 50000
+
 #define BOUNDARY 3
 #define PORT_UDP 50000
 #define PORT_TCP 55000
-#define PACKET_SIZE 80000
+#define PACKET_SIZE 200000
 #define RES_SIZE 512
 #define TRAIN
 
@@ -2156,6 +2160,13 @@ void *ThreadUDPReceiverFunction(void *socket) {
     double time_receivepic;
     double imageDelay;
 
+    int totalSegments = 0;
+    int currSegment = 0;
+    int lastSegment = 0;
+    char totalSegmentBuffer[PACKET_SIZE];
+
+    int currBufferLength = 0;
+
     //ofstream output_receive ("test_receive.txt");
     //ofstream output_delay ("test_imagedelay.txt");
     while (1) {
@@ -2166,29 +2177,14 @@ void *ThreadUDPReceiverFunction(void *socket) {
 
         // append frame ID into global list
         memcpy(tmp, buffer, 4);
-        curFrame.frmID = *(int*)tmp;
-
-//        serverRequest sR;
-//        sR.serverIP = " ";
-//        sR.serverPort = 1;
-//        sR.frameID = *(int*)tmp;
-//        udp_frames.push_back(sR);
-
-        // check if current frameID has been previously appended, if so, clear vector
-//        if (find(udp_frames.begin(), udp_frames.end(), receivedFrameID) != udp_frames.end()) {
-//            udp_frames.clear(); // clear vector
-//            udp_frames.push_back(receivedFrameID); // append into cleared vector
-//        }
-//        else {
-//            udp_frames.push_back(receivedFrameID);
-//        }
-
-        memcpy(tmp, &(buffer[4]), 4);
         curFrame.dataType = *(int*)tmp;
+
         FILE *fd;
-        if(curFrame.dataType == MESSAGE_ECHO) {
+        if (curFrame.dataType == MESSAGE_ECHO) {
             printf("[STATUS] Received echo message over UDP \n");
             charint echoID;
+            memcpy(tmp, &(buffer[12]), 4);
+            curFrame.frmID = *(int*)tmp;
             echoID.i = curFrame.frmID;
             char echo[4];
             memcpy(echo, echoID.b, 4);
@@ -2210,14 +2206,54 @@ void *ThreadUDPReceiverFunction(void *socket) {
                 it_device ++;}
             continue;
         }
-        memcpy(tmp, &(buffer[8]), 4);
-        curFrame.bufferSize = *(int*)tmp;
-        if (curFrame.bufferSize==0) { continue;}
-        curFrame.buffer = new char[curFrame.bufferSize];
-        memset(curFrame.buffer, 0, curFrame.bufferSize);
-        memcpy(curFrame.buffer, &(buffer[12]), curFrame.bufferSize);
+        if (curFrame.dataType == IMAGE_DETECT_SEGMENTED) {
+            memcpy(tmp, &(buffer[4]), 4); // total number of segments
+            totalSegments = *(int*)tmp;
 
-        framesBufferUDP.push(curFrame);
+            memcpy(tmp, &(buffer[8]), 4); // current segment number
+            currSegment = *(int*)tmp;
+
+            cout << totalSegments << " " << currSegment << endl;
+
+            memcpy(tmp, &(buffer[12]), 4);
+            curFrame.bufferSize = *(int*)tmp;
+
+            if (currSegment == 0) {
+                // if current segment is the first one, select out total packet length
+                memcpy(tmp, &(buffer[16]), 4);
+                curFrame.bufferSize = *(int*)tmp;
+
+                cout << "total request size is supposed to be " << *(int*)tmp << endl;
+                curFrame.buffer = new char[curFrame.bufferSize];
+
+                memset(curFrame.buffer, 0, curFrame.bufferSize);
+                memcpy(curFrame.buffer, &(buffer[12]), MAX_UDP_LENGTH);
+                currBufferLength += sizeof(&(buffer[12]));
+
+            } if (currSegment > 0) {
+                // check whether last segment was chronologically correct
+
+//                memcpy(&(curFrame.buffer[currBufferLength]), &(buffer[12]), MAX_UDP_LENGTH);
+                currBufferLength += sizeof(&(buffer[12]));
+                cout << "received segment " << currSegment << " " << currBufferLength << endl;
+            } if (currSegment == totalSegments) {
+                // check whether all packets were sent
+            }
+
+//            lastSegment = currSegment;
+
+
+
+        }
+
+//        memcpy(tmp, &(buffer[8]), 4);
+//        curFrame.bufferSize = *(int*)tmp;
+//        if (curFrame.bufferSize==0) { continue;}
+//        curFrame.buffer = new char[curFrame.bufferSize];
+//        memset(curFrame.buffer, 0, curFrame.bufferSize);
+//        memcpy(curFrame.buffer, &(buffer[12]), curFrame.bufferSize);
+
+//        framesBufferUDP.push(curFrame);
     }
     //output_receive.close();
     //output_delay.close();
@@ -2339,7 +2375,7 @@ void *ThreadProcessFunction(void *param) {
         int frmSize = curFrame.bufferSize;
         char* frmdata = curFrame.buffer;
 
-        if(frmDataType == IMAGE_DETECT) {
+        if(frmDataType == IMAGE_DETECT_COMPLETE) {
             ofstream file("received.jpg", ios::out | ios::binary);
 
             if(file.is_open()) {
@@ -2352,9 +2388,6 @@ void *ThreadProcessFunction(void *param) {
                 output_process << "time_process_pic of frameid of: " << frmID << " takes: '" <<  what_time_is_it_now() - time_process_start<< "' milliseconds" << endl;
                 objectDetected = true;
             }
-        } else if(frmDataType == EDGE) {
-            cout << frmdata << endl;
-            continue;
         }
         for(int i = 0; i < sizeof(curFrame.buffer); i++)
         {

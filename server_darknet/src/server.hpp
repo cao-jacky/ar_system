@@ -71,8 +71,6 @@ struct detector_arguments {
 struct frameBuffer {
     int frmID;
     int dataType;
-    //double latitude;
-    //double longtitude;
     double timeCaptured;
     double timeSend;
     int bufferSize;

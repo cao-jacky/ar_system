@@ -56,25 +56,14 @@ import fi.fivegear.remar.fragments.fragmentCamera;
 import fi.fivegear.remar.helpers.DatabaseHelper;
 import fi.fivegear.remar.models.SessionInfo;
 
-import static fi.fivegear.remar.Constants.previewHeight;
-import static fi.fivegear.remar.Constants.previewWidth;
-
 public class MainActivity extends AppCompatActivity implements LocationListener, SensorEventListener,
         View.OnTouchListener {
 
-    private SurfaceView mPreview;
-    private SurfaceHolder mPreviewHolder;
-
-    private Camera mCamera;
-    private boolean mInPreview = false;
-    private boolean mCameraConfigured = false;
     private DrawOnTop mDraw;
-    private byte[] callbackBuffer;
     private int time_o, time_n, fps;
     private boolean recoFlag = false;
 
     protected LocationManager locationManager;
-    protected LocationListener locationListener;
     Location network_loc;
     protected Context context;
     protected double latitude;
@@ -422,11 +411,6 @@ public class MainActivity extends AppCompatActivity implements LocationListener,
     public void onResume() {
         Log.i(Constants.TAG, " onResume() called.");
         super.onResume();
-
-        if (checkSelfPermission(Manifest.permission.CAMERA) == PackageManager.PERMISSION_GRANTED) {
-            mCamera = Camera.open();
-        }
-
 //        recreate();
     }
 

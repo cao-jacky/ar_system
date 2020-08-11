@@ -107,7 +107,6 @@ public class ARManager {
         System.loadLibrary("opencv_java");
         initConnection(selectedProtocol, serverIP, serverPort);
 
-
         this.handlerUtil = createAndStartThread("util thread", Process.THREAD_PRIORITY_DEFAULT); //start util thread
         this.handlerNetwork = createAndStartThread("network thread", 1);
 

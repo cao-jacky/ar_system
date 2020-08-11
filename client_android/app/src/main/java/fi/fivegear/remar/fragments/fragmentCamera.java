@@ -323,12 +323,6 @@ public class fragmentCamera extends Fragment
             Image image = reader.acquireNextImage();
             Mat matOfImage = imageToMat(image);
 
-//            ByteBuffer buffer = image.getPlanes()[0].getBuffer();
-//            byte[] bytes = new byte[buffer.capacity()];
-////            byte[] bytes = new byte[(MAX_PREVIEW_HEIGHT+MAX_PREVIEW_HEIGHT/2)*MAX_PREVIEW_WIDTH];
-//
-//            buffer.get(bytes);
-
             frameID++; // incrementing frameID up
             ARManager.getInstance().recognizeTime(frameID, matOfImage);
             ARManager.getInstance().driveFrame(matOfImage);

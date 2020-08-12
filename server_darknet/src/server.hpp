@@ -71,8 +71,6 @@ struct detector_arguments {
 struct frameBuffer {
     int frmID;
     int dataType;
-    double timeCaptured;
-    double timeSend;
     int bufferSize;
     char* buffer;
 };
@@ -80,8 +78,6 @@ struct frameBuffer {
 struct resBuffer {
     charint resID;
     charint resType;
-    chardouble resLatitude;
-    chardouble resLongtitude;
     charint markerNum;
     char* buffer;
 };

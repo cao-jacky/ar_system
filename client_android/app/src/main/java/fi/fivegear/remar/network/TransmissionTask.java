@@ -55,7 +55,6 @@ public class TransmissionTask extends Activity implements Runnable {
     private Mat frameData;
     private double timeCaptured;
     private double timeSend;
-
     private String selectedProtocol;
     private final DatagramChannel datagramChannel;
     private final SocketChannel socketChannel;
@@ -149,6 +148,7 @@ public class TransmissionTask extends Activity implements Runnable {
             imageResolution = originalDataShape.size(); // this is the maximum possible size
 
             imageSize = new Size(imageResolution.width,imageResolution.height); //the dst image size
+            imageSize = new Size(1366,768);
 
 //            Log.d(TAG, String.valueOf(imageSize));
 //            Imgproc.resize(YUVMatTrans, YUVMatScaled, imageSize, 0, 0, Imgproc.INTER_LINEAR);
@@ -190,7 +190,7 @@ public class TransmissionTask extends Activity implements Runnable {
                     int numPackets = (int)Math.ceil(currByteBufferLength / MAX_UDP_LENGTH);
 
                     int currOffset = 0;
-                    int currSegmentNumber = 0;
+                    int currSegmentNumber = 1;
                     byte[] totalSegments = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(numPackets).array();
 
                     messageType = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(IMAGE_DETECT_SEGMENTED).array();
@@ -198,13 +198,33 @@ public class TransmissionTask extends Activity implements Runnable {
                     while (currOffset < currByteBufferLength) {
                         byte[] currPacketSegment = Arrays.copyOfRange(packetContent, currOffset, (int)(currOffset+MAX_UDP_LENGTH));
                         byte[] currSegmentNumberInBytes = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(currSegmentNumber).array();
+                        byte[] currSegmentContent = new byte[20 + currPacketSegment.length];
 
-                        byte[] currSegmentContent = new byte[12 + currPacketSegment.length];
+                        byte[] segmentPacketLength;
+
+                        if (numPackets == currSegmentNumber) {
+//                            Log.d(TAG, String.valueOf((currByteBufferLength-currOffset)));
+                            segmentPacketLength = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt((int)(currByteBufferLength-currOffset)).array();
+                        } else {
+                            segmentPacketLength = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(currPacketSegment.length).array();
+                        }
+//                        segmentPacketLength = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(currPacketSegment.length).array();
 
                         System.arraycopy(messageType, 0, currSegmentContent, 0, 4);
-                        System.arraycopy(totalSegments, 0, currSegmentContent, 4, 4);
-                        System.arraycopy(currSegmentNumberInBytes, 0, currSegmentContent, 8, 4);
-                        System.arraycopy(currPacketSegment, 0, currSegmentContent, 12,(int)MAX_UDP_LENGTH);
+                        System.arraycopy(segmentPacketLength, 0, currSegmentContent, 4,4);
+                        System.arraycopy(totalSegments, 0, currSegmentContent, 8, 4);
+                        System.arraycopy(currSegmentNumberInBytes, 0, currSegmentContent, 12, 4);
+                        System.arraycopy(currPacketSegment, 0, currSegmentContent, 16, (int)MAX_UDP_LENGTH);
+
+                        // add integer to end of segment to verify on server whether full segment received
+                        byte[] endInteger = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(33).array();
+
+                        // change location of end byte depending on if final packet
+                        if (numPackets == currSegmentNumber) {
+                            System.arraycopy(endInteger, 0, currSegmentContent, (int)(currByteBufferLength-currOffset)+16, 4);
+                        } else {
+                            System.arraycopy(endInteger, 0, currSegmentContent, (int)MAX_UDP_LENGTH+16, 4);
+                        }
 
                         ByteBuffer buffer = ByteBuffer.allocate(currSegmentContent.length).put(currSegmentContent);
                         buffer.flip();

@@ -148,7 +148,7 @@ public class TransmissionTask extends Activity implements Runnable {
             imageResolution = originalDataShape.size(); // this is the maximum possible size
 
             imageSize = new Size(imageResolution.width,imageResolution.height); //the dst image size
-            imageSize = new Size(1366,768);
+//            imageSize = new Size(1366,768);
 
 //            Log.d(TAG, String.valueOf(imageSize));
 //            Imgproc.resize(YUVMatTrans, YUVMatScaled, imageSize, 0, 0, Imgproc.INTER_LINEAR);

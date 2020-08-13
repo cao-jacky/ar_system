@@ -813,10 +813,10 @@ public class fragmentCamera extends Fragment
                                 // Flash is automatically enabled when necessary.
                                 setAutoFlash(mPreviewRequestBuilder);
 
-                                Range<Integer>[] fps = new Range[1];
-                                fps[0] = Range.create(2,3);
+                                Range<Integer>[] fps = new Range[2];
+                                fps[0] = Range.create(1,1);
 
-                                mPreviewRequestBuilder.set(CaptureRequest.CONTROL_AE_TARGET_FPS_RANGE,fps[0]);
+                                mPreviewRequestBuilder.set(CaptureRequest.CONTROL_AE_TARGET_FPS_RANGE, fps[0]);
 
                                 // Finally, we start displaying the camera preview.
                                 mPreviewRequest = mPreviewRequestBuilder.build();

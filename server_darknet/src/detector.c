@@ -2180,7 +2180,7 @@ void *ThreadUDPReceiverFunction(void *socket) {
         time_receivepic = what_time_is_it_now();
         frameBuffer curFrame;
 
-        // append frame ID into global list
+        // obtaining what type of message is being sent
         memcpy(tmp, buffer, 4);
         curFrame.dataType = *(int*)tmp;
 
@@ -2221,98 +2221,58 @@ void *ThreadUDPReceiverFunction(void *socket) {
             memcpy(tmp, &(buffer[12]), 4); // current segment number
             currSegment = *(int*)tmp;
 
-            cout << "current segment is " << currSegment << " out of " << totalSegments << " ";
-            cout << "current segment length is " << segmentLength << endl;
-
             memcpy(tmp, &(buffer[segmentLength+16]), 4);
             endCharacter = *(int*)tmp;
 
             if (endCharacter == END_INTEGER) {
-//                cout << "complete segment received" << endl;
-//                cout << "current segment is " << currSegment << " out of " << totalSegments << endl;
                 if (currSegment == 1) {
+                    // check whether last request had complete number of segments
+                    if (totalSegments != lastSegment) {
+                        cout << "[ERROR] Last request did not receive all segments, missing " << totalSegments-lastSegment << endl;
+                    }
+
                     // if current segment is the first one, select out total packet length
                     memcpy(tmp, &(buffer[20]), 4);
                     curFrame.bufferSize = *(int*)tmp;
                     totalRequestLength = *(int*)tmp;
-                    cout << "total request size is supposed to be " << *(int*)tmp << endl;
+                    cout << "[STATUS] Total request size is supposed to be " << totalRequestLength;
+                    cout << " and requires " << totalSegments << " segments" << endl;
 
                     memcpy(tmp, &(buffer[16]), 4);
                     curFrame.frmID = *(int*)tmp;
-//                    cout << "frame id is " << *(int*)tmp << endl;
 
                     if (curFrame.bufferSize==0) {continue;}
                     curFrame.buffer = new char[curFrame.bufferSize];
                     memset(curFrame.buffer, 0, curFrame.bufferSize);
-//                    memcpy(curFrame.buffer, &(buffer[24]), segmentLength+12);
-
-//                    cout << "current segment is " << currSegment << endl;
-
                     memcpy(curFrame.buffer, &(buffer[24]), segmentLength-8); // -8 ommits the frame ID and frame size
-//                    memcpy(tmp, &(curFrame.buffer[segmentLength-8]), 4);
-//                    int endCharacter = *(int*)tmp;
-//                    cout<< " first packet end character " << endCharacter << endl;
 
                     currBufferLength = 0; // reset the counter for buffer length
                     currBufferLength += (segmentLength-8);
-                    cout << "length at first segment " << currBufferLength << endl;
+                    cout << ""; // do not remove, otherwise there's a segmentation fault for whatever reason
 
                     lastSegment = currSegment;
                 }
                 if (currSegment > 1) {
                     if (currSegment-lastSegment == 1) {
-//                        // check whether last segment was chronologically correct
-//                        memcpy(&(curFrame.buffer[currBufferLength]), &(buffer[20]), segmentLength+16);
+//                        // check whether current segment is chronologically correct
 
                         memcpy(&(curFrame.buffer[currBufferLength]), &(buffer[16]), segmentLength);
                         currBufferLength += (segmentLength);
 
-//                        memcpy(tmp, &(curFrame.buffer[currBufferLength]), 4);
-//                        int endCharacter = *(int*)tmp;
-//                        cout<<"end character for segment " << currSegment << " is "<<endCharacter<<endl;
-//
-//                        cout << "current buffer length " << currBufferLength << endl;
-
                         if (totalSegments == currSegment) {
-                            // behaviour for final segment
-
-                            // check if payload length is correct
-                            framesBufferUDP.push(curFrame);
-
-//                            int frmSize = curFrame.bufferSize;
-//                            char* frmdata = curFrame.buffer;
-//                            result* res;
-//                            bool objectDetected = false;
-//
-//
-//                            ofstream file("received.jpg", ios::out | ios::binary);
-//
-//                            if(file.is_open()) {
-//                                file.write(frmdata, frmSize);
-//                                file.close();
-//
-//                                res = detect();
-//
-//                                objectDetected = true;
-//                            }
+                            // behaviour for final segment - check if payload length is correct
+                            cout << "[STATUS] Received all packets, adding to processing buffer" << endl;
+                            if (currBufferLength == totalRequestLength) {framesBufferUDP.push(curFrame);}
                         }
                         lastSegment = currSegment;
                     } else {
-                        cout << "segments not received in order " << totalSegments << " " << currSegment << endl;
+                        cout << "[ERROR] Current segment has not been received in order " << totalSegments << " " << currSegment << endl;
                     }
                 }
 
             }
 
         }
-
-//        memcpy(tmp, &(buffer[8]), 4);
-//        curFrame.bufferSize = *(int*)tmp;
-//        if (curFrame.bufferSize==0) { continue;}
-//        curFrame.buffer = new char[curFrame.bufferSize];
-//        memset(curFrame.buffer, 0, curFrame.bufferSize);
-//        memcpy(curFrame.buffer, &(buffer[12]), curFrame.bufferSize);
-
 
     }
     //output_receive.close();
@@ -2551,7 +2511,7 @@ void *ThreadUDPSenderFunction(void *socket) {
             remoteUDPAddr.sin_port = htons(40000);
             sendto(sock, buffer, sizeof(buffer), 0, (struct sockaddr *)&frontUDPAddr, addrlenUDP);
             it_device++;}
-            cout<<"[STATUS] Sent results to client"<<endl;
+        cout<<"[STATUS] Sent results to client"<<endl;
 
     }
     //output_send.close();

@@ -19,13 +19,18 @@ import fi.fivegear.remar.Detected;
 import fi.fivegear.remar.helpers.DatabaseHelper;
 import fi.fivegear.remar.models.ResultsEntry;
 
+import static fi.fivegear.remar.Constants.ACK_SIZE;
+import static fi.fivegear.remar.Constants.PACKET_STATUS;
+import static fi.fivegear.remar.Constants.RESULTS_STATUS;
+import static fi.fivegear.remar.Constants.RES_SIZE;
+import static fi.fivegear.remar.Constants.TAG;
+
 public class ReceivingTask implements Runnable{
 
-    private ByteBuffer resPacket = ByteBuffer.allocate(Constants.RES_SIZE);
+    private ByteBuffer resPacket = ByteBuffer.allocate(RES_SIZE);
 
     private byte[] res;
     private byte[] tmp = new byte[4];
-    private byte[] Tmp = new byte[8];
     private byte[] name = new byte[56];
     private double resultTimecap;
     private double resultTimesend;
@@ -105,57 +110,82 @@ public class ReceivingTask implements Runnable{
             MainActivity.downloadStatus.setImageAlpha(0);
 
             System.arraycopy(res, 0, tmp, 0, 4);
-            int resultID = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
+            int messageType = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
 
-            System.arraycopy(res, 8, tmp, 0, 4);
-            newMarkerNum = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
+//            SharedPreferences udpAckSP = context.getSharedPreferences("udpAckSP", Context.MODE_PRIVATE);
+//            Boolean udpAckStatus = udpAckSP.getBoolean("currUDPAck", false);
+//            Log.d(TAG, "ack status " + udpAckStatus);
 
-            if (newMarkerNum >= 0) {
-                Detected detected[] = new Detected[newMarkerNum];
-                ArrayList<String> detectedStrings = new ArrayList<String>();
+            if (messageType == RESULTS_STATUS) {
+                System.arraycopy(res, 4, tmp, 0, 4);
+                int resultID = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
 
-                int i = 0;
-                while (i < newMarkerNum) {
-                    detected[i] = new Detected();
+                System.arraycopy(res, 12, tmp, 0, 4);
+                newMarkerNum = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
 
-                    detected[i].tcap = resultTimecap;
-                    detected[i].tsend = resultTimesend;
-                    System.arraycopy(res, 12 + i * 100, tmp, 0, 4);
-                    detected[i].prob = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getFloat();
+                if (newMarkerNum >= 0) {
+                    Detected detected[] = new Detected[newMarkerNum];
+                    ArrayList<String> detectedStrings = new ArrayList<String>();
 
-                    System.arraycopy(res, 16 + i * 100, tmp, 0, 4);
-                    detected[i].left = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
-                    System.arraycopy(res, 20 + i * 100, tmp, 0, 4);
-                    detected[i].right = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
-                    System.arraycopy(res, 24 + i * 100, tmp, 0, 4);
-                    detected[i].top = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
-                    System.arraycopy(res, 28 + i * 100, tmp, 0, 4);
-                    detected[i].bot = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
+                    int i = 0;
+                    while (i < newMarkerNum) {
+                        detected[i] = new Detected();
 
-                    System.arraycopy(res, 32 + i * 100, name, 0, 20);
+                        detected[i].tcap = resultTimecap;
+                        detected[i].tsend = resultTimesend;
+                        System.arraycopy(res, 16 + i * 100, tmp, 0, 4);
+                        detected[i].prob = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getFloat();
 
-                    String nname = new String(name);
-                    String objectName = nname.substring(0, nname.indexOf("."));
-                    detected[i].name = objectName;
+                        System.arraycopy(res, 20 + i * 100, tmp, 0, 4);
+                        detected[i].left = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
+                        System.arraycopy(res, 24 + i * 100, tmp, 0, 4);
+                        detected[i].right = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
+                        System.arraycopy(res, 28 + i * 100, tmp, 0, 4);
+                        detected[i].top = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
+                        System.arraycopy(res, 32 + i * 100, tmp, 0, 4);
+                        detected[i].bot = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
 
-                    detectedStrings.add(objectName);
+                        System.arraycopy(res, 36 + i * 100, name, 0, 20);
 
-                    i++;
+                        String nname = new String(name);
+                        String objectName = nname.substring(0, nname.indexOf("."));
+                        detected[i].name = objectName;
+
+                        detectedStrings.add(objectName);
+
+                        i++;
+                    }
+
+                    resultItems = String.join(",", detectedStrings);
+
+                    // submit results item into table
+                    ResultsEntry newResultsEntry = new ResultsEntry("", Integer.parseInt(currSessionNumber),
+                            resultID, String.valueOf(time), serverIP, serverPort, currLocation, resultItems);
+                    long newResultsEntry_id = resultsDatabase.createResultsEntry(newResultsEntry);
+
+                    if (callback != null){
+                        callback.onReceive(resultID, detected);
+                    }
                 }
 
-                resultItems = String.join(",", detectedStrings);
-
-                // submit results item into table
-                ResultsEntry newResultsEntry = new ResultsEntry("", Integer.parseInt(currSessionNumber),
-                        resultID, String.valueOf(time), serverIP, serverPort, currLocation, resultItems);
-                long newResultsEntry_id = resultsDatabase.createResultsEntry(newResultsEntry);
-
-                if (callback != null){
-                    callback.onReceive(resultID, detected);
-                }
+                MainActivity.downloadStatus.setImageAlpha(255);
             }
 
-            MainActivity.downloadStatus.setImageAlpha(255);
+            if (messageType == PACKET_STATUS) {
+                System.arraycopy(res, 4, tmp, 0, 4);
+                int frameID = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
+
+                System.arraycopy(res, 12, tmp, 0, 4);
+                int packetStatus = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
+
+                if (packetStatus == 1) {
+                    SharedPreferences udpAckSP = context.getSharedPreferences("udpAckSP", Context.MODE_PRIVATE);
+                    udpAckSP.edit().putBoolean("currUDPAck", true).apply();
+                }
+
+            }
+
+
         }
     }
 

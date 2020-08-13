@@ -41,6 +41,7 @@ typedef __compar_fn_t comparison_fn_t;
 #define IMAGE_DETECT_SEGMENTED 1
 #define IMAGE_DETECT_COMPLETE 2
 #define PACKET_STATUS 4
+#define RESULTS_STATUS 5
 
 #define MAX_UDP_LENGTH 50000
 
@@ -74,6 +75,8 @@ int recognizedMarkerID;
 // queues for UDP frames and results
 queue<frameBuffer> framesBufferUDP;
 queue<resBuffer> resultsBufferUDP;
+
+queue<ackUDP> ackBufferUDP;
 
 // queues for TCP frames and results
 queue<frameBuffer> framesBufferTCP;
@@ -2169,6 +2172,7 @@ void *ThreadUDPReceiverFunction(void *socket) {
     int segmentLength = 0;
     int totalRequestLength = 0;
     int currBufferLength = 0;
+    int currFrameID = 0;
 
     int endCharacter;
 
@@ -2212,16 +2216,19 @@ void *ThreadUDPReceiverFunction(void *socket) {
             continue;
         }
         if (curFrame.dataType == IMAGE_DETECT_SEGMENTED) {
-            memcpy(tmp, &(buffer[4]), 4); // current segment length
+            memcpy(tmp, &(buffer[4]), 4); // frame ID
+            currFrameID = *(int*)tmp;
+
+            memcpy(tmp, &(buffer[8]), 4); // current segment length
             segmentLength = *(int*)tmp;
 
-            memcpy(tmp, &(buffer[8]), 4); // total number of segments
+            memcpy(tmp, &(buffer[12]), 4); // total number of segments
             totalSegments = *(int*)tmp;
 
-            memcpy(tmp, &(buffer[12]), 4); // current segment number
+            memcpy(tmp, &(buffer[16]), 4); // current segment number
             currSegment = *(int*)tmp;
 
-            memcpy(tmp, &(buffer[segmentLength+16]), 4);
+            memcpy(tmp, &(buffer[segmentLength+20]), 4);
             endCharacter = *(int*)tmp;
 
             if (endCharacter == END_INTEGER) {
@@ -2232,19 +2239,19 @@ void *ThreadUDPReceiverFunction(void *socket) {
                     }
 
                     // if current segment is the first one, select out total packet length
-                    memcpy(tmp, &(buffer[20]), 4);
+                    memcpy(tmp, &(buffer[24]), 4);
                     curFrame.bufferSize = *(int*)tmp;
                     totalRequestLength = *(int*)tmp;
                     cout << "[STATUS] Total request size is supposed to be " << totalRequestLength;
                     cout << " and requires " << totalSegments << " segments" << endl;
 
-                    memcpy(tmp, &(buffer[16]), 4);
+                    memcpy(tmp, &(buffer[20]), 4);
                     curFrame.frmID = *(int*)tmp;
 
                     if (curFrame.bufferSize==0) {continue;}
                     curFrame.buffer = new char[curFrame.bufferSize];
                     memset(curFrame.buffer, 0, curFrame.bufferSize);
-                    memcpy(curFrame.buffer, &(buffer[24]), segmentLength-8); // -8 ommits the frame ID and frame size
+                    memcpy(curFrame.buffer, &(buffer[28]), segmentLength-8); // -8 ommits the frame ID and frame size
 
                     currBufferLength = 0; // reset the counter for buffer length
                     currBufferLength += (segmentLength-8);
@@ -2256,7 +2263,7 @@ void *ThreadUDPReceiverFunction(void *socket) {
                     if (currSegment-lastSegment == 1) {
 //                        // check whether current segment is chronologically correct
 
-                        memcpy(&(curFrame.buffer[currBufferLength]), &(buffer[16]), segmentLength);
+                        memcpy(&(curFrame.buffer[currBufferLength]), &(buffer[20]), segmentLength);
                         currBufferLength += (segmentLength);
 
                         if (totalSegments == currSegment) {
@@ -2269,6 +2276,15 @@ void *ThreadUDPReceiverFunction(void *socket) {
                         cout << "[ERROR] Current segment has not been received in order " << totalSegments << " " << currSegment << endl;
                     }
                 }
+
+                // upon successfully appending data into the buffer, send an acknowledgement packet to client
+                ackUDP currAck;
+                currAck.messageType.i = 4;
+                currAck.frameID.i = currFrameID;
+                currAck.segmentID.i = currSegment;
+                currAck.statusNumber.i = 1; // status of 1, acknowledged packet
+
+                ackBufferUDP.push(currAck); // adding acknowledgement to buffer
 
             }
 
@@ -2425,6 +2441,7 @@ void *ThreadProcessFunction(void *param) {
         if(objectDetected) {
             charfloat p;
             charint ci;
+            curRes.messageType.i = RESULTS_STATUS;
             curRes.resID.i = frmID;
             curRes.resType.i = BOUNDARY;
             if(res->num <= 5)
@@ -2466,9 +2483,6 @@ void *ThreadProcessFunction(void *param) {
         delete res->objects;
         res->objects = NULL;
 
-        // sleep for 15 ms
-        sleep(15/1000);
-
         if (protocolUsed == "UDP") {
             resultsBufferUDP.push(curRes);
         } else if (protocolUsed == "TCP") {
@@ -2482,6 +2496,7 @@ void *ThreadProcessFunction(void *param) {
 void *ThreadUDPSenderFunction(void *socket) {
     printf("[STATUS] UDP Sender Thread Created!\n");
     char buffer[RES_SIZE];
+    char ackBuffer[16];
     int sock = *((int*)socket);
     int len = 20;
     char str_buffer[len];
@@ -2489,30 +2504,53 @@ void *ThreadUDPSenderFunction(void *socket) {
 
     while (1) {
         if(resultsBufferUDP.empty()) {
-            this_thread::sleep_for(chrono::milliseconds(1));
-            continue;
+            if (ackBufferUDP.empty()) {
+                this_thread::sleep_for(chrono::milliseconds(1));
+                continue;
+            } else {
+                ackUDP currAck = ackBufferUDP.front();
+                ackBufferUDP.pop();
+
+                memset(ackBuffer, 0, sizeof(ackBuffer));
+                memcpy(ackBuffer, currAck.messageType.b, 4);
+                memcpy(&(ackBuffer[4]), currAck.frameID.b, 4);
+                memcpy(&(ackBuffer[8]), currAck.segmentID.b, 4);
+                memcpy(&(ackBuffer[12]), currAck.statusNumber.b, 4);
+
+                map<string, int>::iterator it_device = mapOfDevices.begin();
+                while(it_device != mapOfDevices.end()){
+                    memset((char*)&remoteUDPAddr, 0, sizeof(remoteUDPAddr));
+                    remoteUDPAddr.sin_family = AF_INET;
+                    remoteUDPAddr.sin_addr.s_addr = inet_addr((it_device->first).c_str());
+                    remoteUDPAddr.sin_port = htons(40000);
+                    sendto(sock, ackBuffer, sizeof(ackBuffer), 0, (struct sockaddr *)&frontUDPAddr, addrlenUDP);
+                    it_device++;}
+                    cout<<"[STATUS] Sent acknowledgement to client"<<endl;
+
+            }
+
+        } else {
+            resBuffer curRes = resultsBufferUDP.front();
+            resultsBufferUDP.pop();
+
+            memset(buffer, 0, sizeof(buffer));
+            memcpy(buffer, curRes.messageType.b, 4);
+            memcpy(&(buffer[4]), curRes.resID.b, 4);
+            memcpy(&(buffer[8]), curRes.resType.b, 4);
+            memcpy(&(buffer[12]), curRes.markerNum.b, 4);
+            if(curRes.markerNum.i != 0)
+                memcpy(&(buffer[16]), curRes.buffer, 100 * curRes.markerNum.i);
+            map<string, int>::iterator it_device = mapOfDevices.begin();
+
+            while(it_device != mapOfDevices.end()){
+                memset((char*)&remoteUDPAddr, 0, sizeof(remoteUDPAddr));
+                remoteUDPAddr.sin_family = AF_INET;
+                remoteUDPAddr.sin_addr.s_addr = inet_addr((it_device->first).c_str());
+                remoteUDPAddr.sin_port = htons(40000);
+                sendto(sock, buffer, sizeof(buffer), 0, (struct sockaddr *)&frontUDPAddr, addrlenUDP);
+                it_device++;}
+            cout<<"[STATUS] Sent results to client"<<endl;
         }
-
-        resBuffer curRes = resultsBufferUDP.front();
-        resultsBufferUDP.pop();
-
-        memset(buffer, 0, sizeof(buffer));
-        memcpy(buffer, curRes.resID.b, 4);
-        memcpy(&(buffer[4]), curRes.resType.b, 4);
-        memcpy(&(buffer[8]), curRes.markerNum.b, 4);
-        if(curRes.markerNum.i != 0)
-            memcpy(&(buffer[12]), curRes.buffer, 100 * curRes.markerNum.i);
-        map<string, int>::iterator it_device = mapOfDevices.begin();
-
-        while(it_device != mapOfDevices.end()){
-            memset((char*)&remoteUDPAddr, 0, sizeof(remoteUDPAddr));
-            remoteUDPAddr.sin_family = AF_INET;
-            remoteUDPAddr.sin_addr.s_addr = inet_addr((it_device->first).c_str());
-            remoteUDPAddr.sin_port = htons(40000);
-            sendto(sock, buffer, sizeof(buffer), 0, (struct sockaddr *)&frontUDPAddr, addrlenUDP);
-            it_device++;}
-        cout<<"[STATUS] Sent results to client"<<endl;
-
     }
     //output_send.close();
 }

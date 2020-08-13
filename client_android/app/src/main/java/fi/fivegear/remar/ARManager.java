@@ -117,12 +117,7 @@ public class ARManager {
 
         taskReceiving = new ReceivingTask(selectedProtocol, dataChannel, socketChannel, context,
                 resultsDatabase, serverIP, serverPort);
-        taskReceiving.setCallback(new ReceivingTask.Callback() {
-            @Override
-            public void onReceive(int resultID, Detected[] detected) {
-                callback.onObjectsDetected(detected);
-            }
-        });
+        taskReceiving.setCallback((resultID, detected) -> callback.onObjectsDetected(detected));
 
     }
 

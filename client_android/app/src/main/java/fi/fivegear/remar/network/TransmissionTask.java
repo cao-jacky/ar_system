@@ -3,6 +3,7 @@ package fi.fivegear.remar.network;
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.preference.PreferenceManager;
 import android.util.Log;
 import android.view.Gravity;
 import android.widget.TextView;
@@ -24,25 +25,27 @@ import java.nio.ByteOrder;
 import java.nio.channels.DatagramChannel;
 import java.nio.channels.SocketChannel;
 import java.util.Arrays;
+import java.util.List;
+import java.util.stream.IntStream;
 
 import fi.fivegear.remar.MainActivity;
 import fi.fivegear.remar.Constants;
 import fi.fivegear.remar.helpers.DatabaseHelper;
 import fi.fivegear.remar.models.RequestEntry;
 
+import static fi.fivegear.remar.Constants.ACK_SIZE;
+import static fi.fivegear.remar.Constants.IMAGE_DETECT;
+import static fi.fivegear.remar.Constants.IMAGE_DETECT_COMPLETE;
+import static fi.fivegear.remar.Constants.IMAGE_DETECT_SEGMENTED;
+import static fi.fivegear.remar.Constants.MESSAGE_META;
+import static fi.fivegear.remar.Constants.PACKET_STATUS;
 import static fi.fivegear.remar.Constants.TAG;
 import static fi.fivegear.remar.MainActivity.currFrame;
 
 public class TransmissionTask extends Activity implements Runnable {
-
-    private final int MESSAGE_META = 0;
-    private final int IMAGE_DETECT_SEGMENTED = 1;
-    private final int IMAGE_DETECT_COMPLETE = 2;
-    private final int IMAGE_DETECT = 3;
-    private final int PACKET_STATUS = 4;
-
     private final float MAX_UDP_LENGTH = 50000;
     private float currByteBufferLength;
+    private boolean segmentAck;
 
     private int dataType;
     private int frmID;
@@ -78,6 +81,10 @@ public class TransmissionTask extends Activity implements Runnable {
 
     private Size imageResolution;
     private Size imageSize;
+
+    private ByteBuffer ackPacket = ByteBuffer.allocate(ACK_SIZE);
+    private byte[] ack;
+    private byte[] tmp = new byte[4];
 
     private MainActivity mainActivity = new MainActivity();
 
@@ -189,6 +196,9 @@ public class TransmissionTask extends Activity implements Runnable {
                 if (currByteBufferLength >= MAX_UDP_LENGTH) {
                     int numPackets = (int)Math.ceil(currByteBufferLength / MAX_UDP_LENGTH);
 
+                    int[] indivPacketsList = IntStream.rangeClosed(1, numPackets).toArray();
+//                    Log.d("TAG", String.valueOf(indivPacketsList[numPackets-1]));
+
                     int currOffset = 0;
                     int currSegmentNumber = 1;
                     byte[] totalSegments = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(numPackets).array();
@@ -196,39 +206,79 @@ public class TransmissionTask extends Activity implements Runnable {
                     messageType = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(IMAGE_DETECT_SEGMENTED).array();
 
                     while (currOffset < currByteBufferLength) {
+                        if (currOffset == 0) {
+                            // if first segment, set SharedPreferences boolean to false, i.e., not acknowledged
+                            SharedPreferences udpAckSP = context.getSharedPreferences("udpAckSP", Context.MODE_PRIVATE);
+                            udpAckSP.edit().putBoolean("currUDPAck", false).apply();
+                        }
+
                         byte[] currPacketSegment = Arrays.copyOfRange(packetContent, currOffset, (int)(currOffset+MAX_UDP_LENGTH));
                         byte[] currSegmentNumberInBytes = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(currSegmentNumber).array();
-                        byte[] currSegmentContent = new byte[20 + currPacketSegment.length];
+                        byte[] currSegmentContent = new byte[24 + currPacketSegment.length];
 
                         byte[] segmentPacketLength;
 
                         if (numPackets == currSegmentNumber) {
-//                            Log.d(TAG, String.valueOf((currByteBufferLength-currOffset)));
                             segmentPacketLength = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt((int)(currByteBufferLength-currOffset)).array();
                         } else {
                             segmentPacketLength = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(currPacketSegment.length).array();
                         }
-//                        segmentPacketLength = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(currPacketSegment.length).array();
 
                         System.arraycopy(messageType, 0, currSegmentContent, 0, 4);
-                        System.arraycopy(segmentPacketLength, 0, currSegmentContent, 4,4);
-                        System.arraycopy(totalSegments, 0, currSegmentContent, 8, 4);
-                        System.arraycopy(currSegmentNumberInBytes, 0, currSegmentContent, 12, 4);
-                        System.arraycopy(currPacketSegment, 0, currSegmentContent, 16, (int)MAX_UDP_LENGTH);
+                        System.arraycopy(frmid, 0, packetContent, 4, 4);
+                        System.arraycopy(segmentPacketLength, 0, currSegmentContent, 8,4);
+                        System.arraycopy(totalSegments, 0, currSegmentContent, 12, 4);
+                        System.arraycopy(currSegmentNumberInBytes, 0, currSegmentContent, 16, 4);
+                        System.arraycopy(currPacketSegment, 0, currSegmentContent, 20, (int)MAX_UDP_LENGTH);
 
                         // add integer to end of segment to verify on server whether full segment received
                         byte[] endInteger = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(33).array();
 
                         // change location of end byte depending on if final packet
                         if (numPackets == currSegmentNumber) {
-                            System.arraycopy(endInteger, 0, currSegmentContent, (int)(currByteBufferLength-currOffset)+16, 4);
+                            System.arraycopy(endInteger, 0, currSegmentContent, (int)(currByteBufferLength-currOffset)+20, 4);
                         } else {
-                            System.arraycopy(endInteger, 0, currSegmentContent, (int)MAX_UDP_LENGTH+16, 4);
+                            System.arraycopy(endInteger, 0, currSegmentContent, (int)MAX_UDP_LENGTH+20, 4);
                         }
 
                         ByteBuffer buffer = ByteBuffer.allocate(currSegmentContent.length).put(currSegmentContent);
                         buffer.flip();
                         datagramChannel.send(buffer, serverAddressUDP);
+                        Log.d(TAG, "transmitting segment");
+                        SharedPreferences udpAckSP = context.getSharedPreferences("udpAckSP", Context.MODE_PRIVATE);
+                        Boolean udpAckStatus = udpAckSP.getBoolean("currUDPAck", false);
+                        while(!udpAckStatus) {
+                            // constantly checking the variable and prevents new data from being sent
+                            SharedPreferences checkUdpAck = context.getSharedPreferences("udpAckSP", Context.MODE_PRIVATE);
+                            udpAckStatus = checkUdpAck.getBoolean("currUDPAck", false);
+//                            Log.d(TAG, "ack status in transmission thread is " + udpAckStatus);
+                            ;
+
+                            try {
+
+                                if (datagramChannel.receive(ackPacket) != null) {
+                                    ack = ackPacket.array();
+
+                                    System.arraycopy(ack, 0, tmp, 0, 4);
+                                    int messageType = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
+                                    if (messageType == PACKET_STATUS) {
+                                        System.arraycopy(ack, 4, tmp, 0, 4);
+                                        int frameID = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
+
+                                        System.arraycopy(ack, 12, tmp, 0, 4);
+                                        int packetStatus = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
+
+                                        if (packetStatus == 1) {
+//                                            SharedPreferences udpAckSetting = context.getSharedPreferences("udpAckSP", Context.MODE_PRIVATE);
+                                            udpAckSP.edit().putBoolean("currUDPAck", true).apply();
+                                        }
+
+                                    }
+                                }
+                            } catch (IOException e) {
+                                e.printStackTrace();
+                            }
+                        }
 //                        Log.d(TAG, "sent segment " + currSegmentNumber);
 
                         currOffset += MAX_UDP_LENGTH;

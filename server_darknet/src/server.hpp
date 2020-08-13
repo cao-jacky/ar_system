@@ -76,10 +76,18 @@ struct frameBuffer {
 };
 
 struct resBuffer {
+    charint messageType;
     charint resID;
     charint resType;
     charint markerNum;
     char* buffer;
+};
+
+struct ackUDP {
+    charint messageType;
+    charint frameID;
+    charint segmentID;
+    charint statusNumber;
 };
 
 struct recognizedMarker {

@@ -45,7 +45,6 @@ import static fi.fivegear.remar.MainActivity.currFrame;
 public class TransmissionTask extends Activity implements Runnable {
     private final float MAX_UDP_LENGTH = 50000;
     private float currByteBufferLength;
-    private boolean segmentAck;
 
     private int dataType;
     private int frmID;
@@ -56,8 +55,6 @@ public class TransmissionTask extends Activity implements Runnable {
     private byte[] messageType;
     private int datasize;
     private Mat frameData;
-    private double timeCaptured;
-    private double timeSend;
     private String selectedProtocol;
     private final DatagramChannel datagramChannel;
     private final SocketChannel socketChannel;
@@ -116,7 +113,9 @@ public class TransmissionTask extends Activity implements Runnable {
         this.frmID = frmID;
         this.frameData = frameData;
 
-        if (this.frmID <= 5) dataType = MESSAGE_META;
+        if (this.frmID <= 5) {
+            dataType = MESSAGE_META;
+        }
         else dataType = IMAGE_DETECT;
     }
 
@@ -148,17 +147,13 @@ public class TransmissionTask extends Activity implements Runnable {
 
         MainActivity.uploadStatus.setImageAlpha(0);
         if (dataType == IMAGE_DETECT) {
-//            YUVMatTrans.put(0, 0, frameData);
-
             YUVMatTrans = frameData; // setting new mat array with the data from mat from camera data
 
             imageResolution = originalDataShape.size(); // this is the maximum possible size
 
             imageSize = new Size(imageResolution.width,imageResolution.height); //the dst image size
 //            imageSize = new Size(1366,768);
-
-//            Log.d(TAG, String.valueOf(imageSize));
-//            Imgproc.resize(YUVMatTrans, YUVMatScaled, imageSize, 0, 0, Imgproc.INTER_LINEAR);
+            imageSize = new Size(256,144);
 
 //            Imgproc.resize(YUVMatTrans, YUVMatScaled, YUVMatScaled.size(), 0, 0, Imgproc.INTER_LINEAR);
             Imgproc.resize(YUVMatTrans, YUVMatScaled, imageSize, 0, 0, Imgproc.INTER_LINEAR);
@@ -166,7 +161,10 @@ public class TransmissionTask extends Activity implements Runnable {
             Core.flip(GrayScaled.t(), GrayScaled, 1); // rotate 90 deg clockwise
         }
 
-        if (dataType == IMAGE_DETECT) {
+        if (dataType == MESSAGE_META) {
+            datasize = 0;
+            frmdataToSend = null;
+        } else if (dataType == IMAGE_DETECT) {
             MatOfByte imgbuff = new MatOfByte();
             Highgui.imencode(".jpg", GrayScaled, imgbuff, Constants.Image_Params);
 
@@ -174,30 +172,33 @@ public class TransmissionTask extends Activity implements Runnable {
             frmdataToSend = new byte[datasize];
 
             imgbuff.get(0, 0, frmdataToSend);
-        } else if (dataType == MESSAGE_META) {
-            datasize = 0;
-            frmdataToSend = null;
         }
-        packetContent = new byte[8 + datasize];
+
+        packetContent = new byte[12 + datasize];
 
         frmid = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(frmID).array();
         frmsize = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(datasize).array();
 
-        System.arraycopy(frmid, 0, packetContent, 0, 4);
-        System.arraycopy(frmsize, 0, packetContent, 4, 4);
+        System.arraycopy(frmid, 0, packetContent, 4, 4);
+        System.arraycopy(frmsize, 0, packetContent, 8, 4);
 
         if (frmdataToSend != null)
-            System.arraycopy(frmdataToSend, 0, packetContent, 8, datasize);
+            System.arraycopy(frmdataToSend, 0, packetContent, 12, datasize);
 
         try {
             currByteBufferLength = packetContent.length; //buffer.remaining();
             if (selectedProtocol.contains("UDP")) {
+                if (dataType == MESSAGE_META) {
+                    messageType = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(MESSAGE_META).array();
+                    System.arraycopy(messageType, 0, packetContent, 0, 4);
+
+                    ByteBuffer buffer = ByteBuffer.allocate(packetContent.length).put(packetContent);
+                    buffer.flip();
+                    datagramChannel.send(buffer, serverAddressUDP);
+                }
 
                 if (currByteBufferLength >= MAX_UDP_LENGTH) {
                     int numPackets = (int)Math.ceil(currByteBufferLength / MAX_UDP_LENGTH);
-
-                    int[] indivPacketsList = IntStream.rangeClosed(1, numPackets).toArray();
-//                    Log.d("TAG", String.valueOf(indivPacketsList[numPackets-1]));
 
                     int currOffset = 0;
                     int currSegmentNumber = 1;
@@ -225,7 +226,7 @@ public class TransmissionTask extends Activity implements Runnable {
                         }
 
                         System.arraycopy(messageType, 0, currSegmentContent, 0, 4);
-                        System.arraycopy(frmid, 0, packetContent, 4, 4);
+                        System.arraycopy(frmid, 0, currSegmentContent, 4, 4);
                         System.arraycopy(segmentPacketLength, 0, currSegmentContent, 8,4);
                         System.arraycopy(totalSegments, 0, currSegmentContent, 12, 4);
                         System.arraycopy(currSegmentNumberInBytes, 0, currSegmentContent, 16, 4);
@@ -244,26 +245,21 @@ public class TransmissionTask extends Activity implements Runnable {
                         ByteBuffer buffer = ByteBuffer.allocate(currSegmentContent.length).put(currSegmentContent);
                         buffer.flip();
                         datagramChannel.send(buffer, serverAddressUDP);
-                        Log.d(TAG, "transmitting segment");
+
                         SharedPreferences udpAckSP = context.getSharedPreferences("udpAckSP", Context.MODE_PRIVATE);
                         Boolean udpAckStatus = udpAckSP.getBoolean("currUDPAck", false);
                         while(!udpAckStatus) {
                             // constantly checking the variable and prevents new data from being sent
-                            SharedPreferences checkUdpAck = context.getSharedPreferences("udpAckSP", Context.MODE_PRIVATE);
-                            udpAckStatus = checkUdpAck.getBoolean("currUDPAck", false);
-//                            Log.d(TAG, "ack status in transmission thread is " + udpAckStatus);
-                            ;
-
+                            udpAckStatus = udpAckSP.getBoolean("currUDPAck", false);
                             try {
-
                                 if (datagramChannel.receive(ackPacket) != null) {
                                     ack = ackPacket.array();
 
                                     System.arraycopy(ack, 0, tmp, 0, 4);
                                     int messageType = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
                                     if (messageType == PACKET_STATUS) {
-                                        System.arraycopy(ack, 4, tmp, 0, 4);
-                                        int frameID = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
+//                                        System.arraycopy(ack, 4, tmp, 0, 4);
+//                                        int frameID = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
 
                                         System.arraycopy(ack, 12, tmp, 0, 4);
                                         int packetStatus = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
@@ -272,24 +268,54 @@ public class TransmissionTask extends Activity implements Runnable {
 //                                            SharedPreferences udpAckSetting = context.getSharedPreferences("udpAckSP", Context.MODE_PRIVATE);
                                             udpAckSP.edit().putBoolean("currUDPAck", true).apply();
                                         }
-
                                     }
                                 }
                             } catch (IOException e) {
                                 e.printStackTrace();
                             }
                         }
-//                        Log.d(TAG, "sent segment " + currSegmentNumber);
 
                         currOffset += MAX_UDP_LENGTH;
                         currSegmentNumber ++;
                     }
-                } else {
+                } else if (dataType != MESSAGE_META) {
                     messageType = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(IMAGE_DETECT_COMPLETE).array();
+
+                    System.arraycopy(messageType, 0, packetContent, 0, 4);
 
                     ByteBuffer buffer = ByteBuffer.allocate(packetContent.length).put(packetContent);
                     buffer.flip();
                     datagramChannel.send(buffer, serverAddressUDP);
+
+                    SharedPreferences udpAckSP = context.getSharedPreferences("udpAckSP", Context.MODE_PRIVATE);
+                    Boolean udpAckStatus = udpAckSP.getBoolean("currUDPAck", false);
+                    while(!udpAckStatus) {
+                        // constantly checking the variable and prevents new data from being sent
+                        udpAckStatus = udpAckSP.getBoolean("currUDPAck", false);
+
+                        try {
+                            if (datagramChannel.receive(ackPacket) != null) {
+                                ack = ackPacket.array();
+
+                                System.arraycopy(ack, 0, tmp, 0, 4);
+                                int messageType = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
+                                if (messageType == PACKET_STATUS) {
+//                                    System.arraycopy(ack, 4, tmp, 0, 4);
+//                                    int frameID = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
+
+                                    System.arraycopy(ack, 12, tmp, 0, 4);
+                                    int packetStatus = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
+
+                                    if (packetStatus == 1) {
+                                        udpAckSP.edit().putBoolean("currUDPAck", true).apply();
+                                    }
+                                }
+                            }
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+                    }
+
                 }
             }
 

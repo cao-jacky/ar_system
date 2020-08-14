@@ -2190,7 +2190,7 @@ void *ThreadUDPReceiverFunction(void *socket) {
 
         FILE *fd;
         if (curFrame.dataType == MESSAGE_ECHO) {
-            printf("[STATUS] Received echo message over UDP \n");
+//            printf("[STATUS] Received echo message over UDP \n");
             charint echoID;
             memcpy(tmp, &(buffer[12]), 4);
             curFrame.frmID = *(int*)tmp;
@@ -2201,7 +2201,7 @@ void *ThreadUDPReceiverFunction(void *socket) {
             inet_ntop(AF_INET, &(frontUDPAddr.sin_addr), str_front, len);
             if (mapOfDevices.find(string(str_front)) != mapOfDevices.end()) {
                 //output_receive<<"receiving from an old " << (device_ind-1) << " device, whose ip is " << str_front << endl;
-                cout<<"[STATUS] UDP receiving from an old  " << (device_ind-1) << " device, whose ip is " << str_front << endl;
+                cout<<"[STATUS] UDP receiving from an old " << (device_ind-1) << " device, whose ip is " << str_front << endl;
                 continue;}
             cout<<"[STATUS] UDP receiving from the " << device_ind << " device, whose ip is " << str_front << endl;
             //pair<map<int, string>::iterator,bool> ret;
@@ -2276,7 +2276,6 @@ void *ThreadUDPReceiverFunction(void *socket) {
                         cout << "[ERROR] Current segment has not been received in order " << totalSegments << " " << currSegment << endl;
                     }
                 }
-
                 // upon successfully appending data into the buffer, send an acknowledgement packet to client
                 ackUDP currAck;
                 currAck.messageType.i = 4;
@@ -2285,11 +2284,32 @@ void *ThreadUDPReceiverFunction(void *socket) {
                 currAck.statusNumber.i = 1; // status of 1, acknowledged packet
 
                 ackBufferUDP.push(currAck); // adding acknowledgement to buffer
-
             }
+        }
+        if (curFrame.dataType == IMAGE_DETECT_COMPLETE) {
+            memcpy(tmp, &(buffer[4]), 4); // frame ID
+            curFrame.frmID = *(int*)tmp;
+
+            memcpy(tmp, &(buffer[8]), 4); // frame length
+            curFrame.bufferSize = *(int*)tmp;
+
+            if (curFrame.bufferSize==0) { continue;}
+            curFrame.buffer = new char[curFrame.bufferSize];
+            memset(curFrame.buffer, 0, curFrame.bufferSize);
+            memcpy(curFrame.buffer, &(buffer[12]), curFrame.bufferSize);
+
+            framesBufferUDP.push(curFrame);
+
+            // upon successfully appending data into the buffer, send an acknowledgement packet to client
+            ackUDP currAck;
+            currAck.messageType.i = 4;
+            currAck.frameID.i = currFrameID;
+            currAck.segmentID.i = currSegment;
+            currAck.statusNumber.i = 1; // status of 1, acknowledged packet
+
+            ackBufferUDP.push(currAck); // adding acknowledgement to buffer
 
         }
-
     }
     //output_receive.close();
     //output_delay.close();
@@ -2549,7 +2569,7 @@ void *ThreadUDPSenderFunction(void *socket) {
                 remoteUDPAddr.sin_port = htons(40000);
                 sendto(sock, buffer, sizeof(buffer), 0, (struct sockaddr *)&frontUDPAddr, addrlenUDP);
                 it_device++;}
-            cout<<"[STATUS] Sent results to client"<<endl;
+                cout<<"[STATUS] Sent results to client" << endl;
         }
     }
     //output_send.close();

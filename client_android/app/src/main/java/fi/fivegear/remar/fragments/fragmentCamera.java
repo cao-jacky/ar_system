@@ -814,7 +814,7 @@ public class fragmentCamera extends Fragment
                                 setAutoFlash(mPreviewRequestBuilder);
 
                                 Range<Integer>[] fps = new Range[2];
-                                fps[0] = Range.create(1,1);
+                                fps[0] = Range.create(23,25);
 
                                 mPreviewRequestBuilder.set(CaptureRequest.CONTROL_AE_TARGET_FPS_RANGE, fps[0]);
 

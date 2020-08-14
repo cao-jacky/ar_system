@@ -129,6 +129,7 @@ public class ReceivingTask implements Runnable{
 
                     int i = 0;
                     while (i < newMarkerNum) {
+                        Log.d(TAG, "results received");
                         detected[i] = new Detected();
 
                         detected[i].tcap = resultTimecap;
@@ -170,21 +171,6 @@ public class ReceivingTask implements Runnable{
 
                 MainActivity.downloadStatus.setImageAlpha(255);
             }
-
-            if (messageType == PACKET_STATUS) {
-                System.arraycopy(res, 4, tmp, 0, 4);
-                int frameID = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
-
-                System.arraycopy(res, 12, tmp, 0, 4);
-                int packetStatus = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
-
-                if (packetStatus == 1) {
-                    SharedPreferences udpAckSP = context.getSharedPreferences("udpAckSP", Context.MODE_PRIVATE);
-                    udpAckSP.edit().putBoolean("currUDPAck", true).apply();
-                }
-
-            }
-
 
         }
     }

@@ -37,7 +37,7 @@ public class Constants {
     static public final Mat cameraMatrix = new Mat(3, 3, CvType.CV_64FC1);
     static public final Mat cvToGl = new Mat(4, 4, CvType.CV_64FC1);
 
-    static public final int RES_SIZE = 512;
+    static public final int RES_SIZE = 516;
     static public final int ACK_SIZE = 16;
 
     static {

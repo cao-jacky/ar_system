@@ -1005,7 +1005,6 @@ public class fragmentCamera extends Fragment
                 Activity activity = getActivity();
                 if (null != activity) {
                     new AlertDialog.Builder(activity)
-                            .setMessage(R.string.intro_message)
                             .setPositiveButton(android.R.string.ok, null)
                             .show();
                 }

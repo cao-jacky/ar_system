@@ -16,6 +16,7 @@ import java.util.ArrayList;
 import fi.fivegear.remar.MainActivity;
 import fi.fivegear.remar.Constants;
 import fi.fivegear.remar.Detected;
+import fi.fivegear.remar.activities.AugmentedRealityActivity;
 import fi.fivegear.remar.helpers.DatabaseHelper;
 import fi.fivegear.remar.models.ResultsEntry;
 
@@ -107,7 +108,7 @@ public class ReceivingTask implements Runnable{
         }
 
         if (res != null) {
-            MainActivity.downloadStatus.setImageAlpha(0);
+            AugmentedRealityActivity.downloadStatus.setImageAlpha(0);
 
             System.arraycopy(res, 0, tmp, 0, 4);
             int messageType = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
@@ -169,7 +170,7 @@ public class ReceivingTask implements Runnable{
                     }
                 }
 
-                MainActivity.downloadStatus.setImageAlpha(255);
+                AugmentedRealityActivity.downloadStatus.setImageAlpha(255);
             }
 
         }

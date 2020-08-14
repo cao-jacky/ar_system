@@ -30,6 +30,7 @@ import java.util.stream.IntStream;
 
 import fi.fivegear.remar.MainActivity;
 import fi.fivegear.remar.Constants;
+import fi.fivegear.remar.activities.AugmentedRealityActivity;
 import fi.fivegear.remar.helpers.DatabaseHelper;
 import fi.fivegear.remar.models.RequestEntry;
 
@@ -40,7 +41,7 @@ import static fi.fivegear.remar.Constants.IMAGE_DETECT_SEGMENTED;
 import static fi.fivegear.remar.Constants.MESSAGE_META;
 import static fi.fivegear.remar.Constants.PACKET_STATUS;
 import static fi.fivegear.remar.Constants.TAG;
-import static fi.fivegear.remar.MainActivity.currFrame;
+import static fi.fivegear.remar.activities.AugmentedRealityActivity.currFrame;
 
 public class TransmissionTask extends Activity implements Runnable {
     private final float MAX_UDP_LENGTH = 50000;
@@ -145,7 +146,7 @@ public class TransmissionTask extends Activity implements Runnable {
             }
         }
 
-        MainActivity.uploadStatus.setImageAlpha(0);
+        AugmentedRealityActivity.uploadStatus.setImageAlpha(0);
         if (dataType == IMAGE_DETECT) {
             YUVMatTrans = frameData; // setting new mat array with the data from mat from camera data
 
@@ -346,7 +347,7 @@ public class TransmissionTask extends Activity implements Runnable {
                     currLocation, selectedProtocol);
             long newRequestsEntry_id = requestsDatabase.createRequestEntry(newRequestEntry);
 
-            MainActivity.uploadStatus.setImageAlpha(255);
+            AugmentedRealityActivity.uploadStatus.setImageAlpha(255);
             runThread();
 
         } catch (IOException e) {

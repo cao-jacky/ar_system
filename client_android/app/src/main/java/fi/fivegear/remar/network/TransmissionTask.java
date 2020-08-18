@@ -3,8 +3,6 @@ package fi.fivegear.remar.network;
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
-import android.util.Log;
 import android.view.Gravity;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -18,18 +16,15 @@ import org.opencv.highgui.Highgui;
 import org.opencv.imgproc.Imgproc;
 
 import java.io.IOException;
-import java.lang.reflect.Array;
 import java.net.SocketAddress;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
 import java.nio.channels.DatagramChannel;
 import java.nio.channels.SocketChannel;
 import java.util.Arrays;
-import java.util.List;
-import java.util.stream.IntStream;
 
-import fi.fivegear.remar.MainActivity;
 import fi.fivegear.remar.Constants;
+import fi.fivegear.remar.MainActivity;
 import fi.fivegear.remar.activities.AugmentedRealityActivity;
 import fi.fivegear.remar.helpers.DatabaseHelper;
 import fi.fivegear.remar.models.RequestEntry;
@@ -40,11 +35,10 @@ import static fi.fivegear.remar.Constants.IMAGE_DETECT_COMPLETE;
 import static fi.fivegear.remar.Constants.IMAGE_DETECT_SEGMENTED;
 import static fi.fivegear.remar.Constants.MESSAGE_META;
 import static fi.fivegear.remar.Constants.PACKET_STATUS;
-import static fi.fivegear.remar.Constants.TAG;
 import static fi.fivegear.remar.activities.AugmentedRealityActivity.currFrame;
 
 public class TransmissionTask extends Activity implements Runnable {
-    private final float MAX_UDP_LENGTH = 50000;
+    private float MAX_UDP_LENGTH = 50000;
     private float currByteBufferLength;
 
     private int dataType;
@@ -68,7 +62,7 @@ public class TransmissionTask extends Activity implements Runnable {
     private long time;
 
     private Context context;
-    private SharedPreferences sharedPreferencesSession, sharedPreferencesLocation, sharedPreferencesProtocol;
+    private SharedPreferences sharedPreferencesSetup;
     private String currSessionNumber;
 
     private DatabaseHelper requestsDatabase;
@@ -77,6 +71,7 @@ public class TransmissionTask extends Activity implements Runnable {
 
     private String currLocation;
 
+    private int currHeight, currWidth;
     private Size imageResolution;
     private Size imageSize;
 
@@ -129,11 +124,16 @@ public class TransmissionTask extends Activity implements Runnable {
     @Override
     public void run() {
         // pulling session number
-        sharedPreferencesSession = context.getSharedPreferences("currSessionSetting", Context.MODE_PRIVATE);
-        currSessionNumber = sharedPreferencesSession.getString("currSessionNumber", "0");
+        sharedPreferencesSetup = context.getSharedPreferences("currSetupSettings", Context.MODE_PRIVATE);
+        currSessionNumber = sharedPreferencesSetup.getString("currSessionNumber", "0");
+        currLocation = sharedPreferencesSetup.getString("currLocation", "0");
 
-        sharedPreferencesLocation = context.getSharedPreferences("currLocationSetting", Context.MODE_PRIVATE);
-        currLocation = sharedPreferencesLocation.getString("currLocation", "0");
+        // obtaining the user selected resolutions
+        currHeight = sharedPreferencesSetup.getInt("currHeight", 1920);
+        currWidth = sharedPreferencesSetup.getInt("currWidth", 1080);
+
+        // set MAX_UDP_LENGTH with user selected variable
+        MAX_UDP_LENGTH = Float.parseFloat(sharedPreferencesSetup.getString("currUDPPayload", "50000"));
 
         if (!isTCPConnectedServer) {
             try {
@@ -152,9 +152,8 @@ public class TransmissionTask extends Activity implements Runnable {
 
             imageResolution = originalDataShape.size(); // this is the maximum possible size
 
-            imageSize = new Size(imageResolution.width,imageResolution.height); //the dst image size
-//            imageSize = new Size(1366,768);
-            imageSize = new Size(256,144);
+//            imageSize = new Size(imageResolution.width,imageResolution.height); //the dst image size
+            imageSize = new Size(currHeight,currWidth);
 
 //            Imgproc.resize(YUVMatTrans, YUVMatScaled, YUVMatScaled.size(), 0, 0, Imgproc.INTER_LINEAR);
             Imgproc.resize(YUVMatTrans, YUVMatScaled, imageSize, 0, 0, Imgproc.INTER_LINEAR);
@@ -327,8 +326,8 @@ public class TransmissionTask extends Activity implements Runnable {
                     buffer.flip();
                     socketChannel.write(buffer);
                 } catch (Exception e) {
-                    sharedPreferencesProtocol = context.getSharedPreferences("currProtocolSetting", Context.MODE_PRIVATE);
-                    SharedPreferences.Editor sessionEditor = sharedPreferencesProtocol.edit();
+                    sharedPreferencesSetup = context.getSharedPreferences("currSetupSettings", Context.MODE_PRIVATE);
+                    SharedPreferences.Editor sessionEditor = sharedPreferencesSetup.edit();
                     sessionEditor.putString("currProtocol", "UDP");
                     sessionEditor.apply();
 

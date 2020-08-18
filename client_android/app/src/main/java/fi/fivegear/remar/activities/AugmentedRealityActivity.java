@@ -49,11 +49,10 @@ public class AugmentedRealityActivity extends AppCompatActivity implements Locat
     public static ImageView downloadStatus;
     public static TextView currFrame;
 
-    public SharedPreferences sharedPreferencesSession;
-    public SharedPreferences sharedPreferencesLocation;
+    public SharedPreferences sharedPreferencesSetup;
 
     String currSessionNumber;
-    TextView sessionGlanceString, modalCurrSessionNumber;
+    TextView sessionGlanceString;
 
     FrameLayout settingsButton, statsButton;
 
@@ -78,35 +77,25 @@ public class AugmentedRealityActivity extends AppCompatActivity implements Locat
         }
 
         // Status indicators for sending and receiving from server
-        uploadStatus = (ImageView) findViewById(R.id.statusUpload);
-        downloadStatus = (ImageView) findViewById(R.id.statusDownload);
+        uploadStatus = findViewById(R.id.statusUpload);
+        downloadStatus = findViewById(R.id.statusDownload);
 
-        currFrame = (TextView) findViewById(R.id.frameGlance);
+        currFrame = findViewById(R.id.frameGlance);
 
-        sharedPreferencesSession = getSharedPreferences("currSessionSetting", Context.MODE_PRIVATE);
-        currSessionNumber = sharedPreferencesSession.getString("currSessionNumber", "0");
-        sessionGlanceString = (TextView) findViewById(R.id.sessionGlance);
+        sharedPreferencesSetup = getSharedPreferences("currSetupSettings", Context.MODE_PRIVATE);
+        currSessionNumber = sharedPreferencesSetup.getString("currSessionNumber", "0");
+        sessionGlanceString = findViewById(R.id.sessionGlance);
 
         // changing session number to new increment
 //        sessionGlanceString.setText("S" + newSessionNumber);
 
         // Settings button
-        settingsButton = (FrameLayout) findViewById(R.id.settingsButton);
-        settingsButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openSettingsActivity();
-            }
-        });
+        settingsButton = findViewById(R.id.settingsButton);
+        settingsButton.setOnClickListener(v -> openSettingsActivity());
 
         // statistics button
-        statsButton = (FrameLayout) findViewById(R.id.statsButton);
-        statsButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openStatsActivity();
-            }
-        });
+        statsButton = findViewById(R.id.statsButton);
+        statsButton.setOnClickListener(v -> openStatsActivity());
 
         locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -123,8 +112,7 @@ public class AugmentedRealityActivity extends AppCompatActivity implements Locat
         String lat_long_alt = network_loc.getLatitude() + "," + network_loc.getLongitude() + ","
                 + network_loc.getAltitude();
 
-        sharedPreferencesLocation = getSharedPreferences("currLocationSetting", Context.MODE_PRIVATE);
-        SharedPreferences.Editor locationEditor = sharedPreferencesLocation.edit();
+        SharedPreferences.Editor locationEditor = sharedPreferencesSetup.edit();
         locationEditor.putString("currLocation", lat_long_alt);
         locationEditor.apply();
 
@@ -170,8 +158,8 @@ public class AugmentedRealityActivity extends AppCompatActivity implements Locat
         String lat_long_alt = latitude + ","  + longitude + "," + altitude;
 //        Toast.makeText(MainActivity.this, lat_long_alt, Toast.LENGTH_LONG).show();
 
-        sharedPreferencesLocation = getSharedPreferences("currLocationSetting", Context.MODE_PRIVATE);
-        SharedPreferences.Editor locationEditor = sharedPreferencesLocation.edit();
+        sharedPreferencesSetup = getSharedPreferences("currSetupSettings", Context.MODE_PRIVATE);
+        SharedPreferences.Editor locationEditor = sharedPreferencesSetup.edit();
         locationEditor.putString("currLocation", lat_long_alt);
         locationEditor.apply();
     }

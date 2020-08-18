@@ -16,29 +16,14 @@ public class SettingsActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        activityServer = (TextView) findViewById(R.id.settingServer);
-        activityServer.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openSettingsServer();
-            }
-        });
+        activityServer = findViewById(R.id.settingServer);
+        activityServer.setOnClickListener(v -> openSettingsServer());
 
-        activityProtocol = (TextView) findViewById(R.id.settingProtocolSending);
-        activityProtocol.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openSettingsProtocol();
-            }
-        });
+        activityProtocol = findViewById(R.id.settingProtocolSending);
+        activityProtocol.setOnClickListener(v -> openSettingsProtocol());
 
-        activityAbout = (TextView) findViewById(R.id.settingAbout);
-        activityAbout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openSettingsAbout();
-            }
-        });
+        activityAbout = findViewById(R.id.settingAbout);
+        activityAbout.setOnClickListener(v -> openSettingsAbout());
 
     }
 

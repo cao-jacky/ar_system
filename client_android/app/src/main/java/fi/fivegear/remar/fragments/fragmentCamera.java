@@ -1,20 +1,3 @@
-
-/*
- * Copyright 2017 The Android Open Source Project
- *
- * Licensed under the Apache License, Version 2.0 (the "License");
- * you may not use this file except in compliance with the License.
- * You may obtain a copy of the License at
- *
- *       http://www.apache.org/licenses/LICENSE-2.0
- *
- * Unless required by applicable law or agreed to in writing, software
- * distributed under the License is distributed on an "AS IS" BASIS,
- * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- * See the License for the specific language governing permissions and
- * limitations under the License.
- */
-
 package fi.fivegear.remar.fragments;
 
 import android.Manifest;
@@ -23,6 +6,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.content.res.Configuration;
 import android.graphics.ImageFormat;
@@ -78,7 +62,6 @@ import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
 
 import fi.fivegear.remar.ARManager;
-import fi.fivegear.remar.Constants;
 import fi.fivegear.remar.R;
 import fi.fivegear.remar.helpers.AutoFitTextureView;
 
@@ -86,6 +69,7 @@ public class fragmentCamera extends Fragment
         implements View.OnClickListener, ActivityCompat.OnRequestPermissionsResultCallback {
 
     private int frameID;
+    private SharedPreferences sharedPreferencesSetup;
 
     /**
      * Conversion from screen rotation to JPEG orientation.
@@ -325,8 +309,8 @@ public class fragmentCamera extends Fragment
             Mat matOfImage = imageToMat(image);
 
             frameID++; // incrementing frameID up
-            ARManager.getInstance().recognizeTime(frameID, matOfImage);
-            ARManager.getInstance().driveFrame(matOfImage);
+            ARManager.getInstance().recognise(frameID, matOfImage);
+            ARManager.getInstance().driveFrame();
 
             if (image != null)
                 image.close();
@@ -813,8 +797,13 @@ public class fragmentCamera extends Fragment
                                 // Flash is automatically enabled when necessary.
                                 setAutoFlash(mPreviewRequestBuilder);
 
+                                // obtaining FPS from user preferences and setting it as the used values
+                                sharedPreferencesSetup = getActivity().getSharedPreferences("currSetupSettings", Context.MODE_PRIVATE);
+                                int lowerFPS = sharedPreferencesSetup.getInt("currLowerFPS", 25);
+                                int upperFPS = sharedPreferencesSetup.getInt("currUpperFPS", 30);
+
                                 Range<Integer>[] fps = new Range[2];
-                                fps[0] = Range.create(23,25);
+                                fps[0] = Range.create(lowerFPS, upperFPS);
 
                                 mPreviewRequestBuilder.set(CaptureRequest.CONTROL_AE_TARGET_FPS_RANGE, fps[0]);
 

@@ -62,7 +62,7 @@ public class StatsActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_stats);
 
-        sharedPreferencesSession = getSharedPreferences("currSessionSetting", Context.MODE_PRIVATE);
+        sharedPreferencesSession = getSharedPreferences("currSetupSettings", Context.MODE_PRIVATE);
         currSessionNumber = sharedPreferencesSession.getString("currSessionNumber", "0");
 
         db = this.openOrCreateDatabase("remarManager", MODE_PRIVATE, null);
@@ -98,7 +98,7 @@ public class StatsActivity extends Activity {
             public void onClick(View v) {
                 String currSessionToExport = String.valueOf(statsSessionNumber.getText());
 
-                sharedPreferencesSession = getSharedPreferences("currSessionSetting", Context.MODE_PRIVATE);
+                sharedPreferencesSession = getSharedPreferences("currSetupSettings", Context.MODE_PRIVATE);
                 SharedPreferences.Editor editor = sharedPreferencesSession.edit();
                 editor.putString("sessionToExport", currSessionToExport);
                 editor.apply();
@@ -282,7 +282,7 @@ public class StatsActivity extends Activity {
         statsSessionNumber = (EditText)findViewById(R.id.statsSessionNumber);
         String selectedSession = String.valueOf(statsSessionNumber.getText());
 
-        sharedPreferencesSession = getSharedPreferences("currSessionSetting", Context.MODE_PRIVATE);
+        sharedPreferencesSession = getSharedPreferences("currSetupSettings", Context.MODE_PRIVATE);
         currSessionNumber = sharedPreferencesSession.getString("currSessionNumber", "0");
 
         if (Integer.valueOf(selectedSession) <= Integer.valueOf(currSessionNumber)) {
@@ -310,8 +310,7 @@ public class StatsActivity extends Activity {
         }
 
         protected Boolean doInBackground(final String... args) {
-
-            sharedPreferencesSession = getSharedPreferences("currSessionSetting", Context.MODE_PRIVATE);
+            sharedPreferencesSession = getSharedPreferences("currSetupSettings", Context.MODE_PRIVATE);
             String sessionToExport = sharedPreferencesSession.getString("sessionToExport", "0");
 
             File exportDir = new File(Environment.getExternalStorageDirectory(), "/ReMAR/");

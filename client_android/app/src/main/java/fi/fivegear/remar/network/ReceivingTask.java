@@ -4,8 +4,6 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.util.Log;
 
-import org.opencv.core.Point;
-
 import java.io.IOException;
 import java.nio.ByteBuffer;
 import java.nio.ByteOrder;
@@ -13,20 +11,16 @@ import java.nio.channels.DatagramChannel;
 import java.nio.channels.SocketChannel;
 import java.util.ArrayList;
 
-import fi.fivegear.remar.MainActivity;
-import fi.fivegear.remar.Constants;
 import fi.fivegear.remar.Detected;
 import fi.fivegear.remar.activities.AugmentedRealityActivity;
 import fi.fivegear.remar.helpers.DatabaseHelper;
 import fi.fivegear.remar.models.ResultsEntry;
 
-import static fi.fivegear.remar.Constants.ACK_SIZE;
-import static fi.fivegear.remar.Constants.PACKET_STATUS;
 import static fi.fivegear.remar.Constants.RESULTS_STATUS;
 import static fi.fivegear.remar.Constants.RES_SIZE;
 import static fi.fivegear.remar.Constants.TAG;
 
-public class ReceivingTask implements Runnable{
+public class ReceivingTask implements Runnable {
 
     private ByteBuffer resPacket = ByteBuffer.allocate(RES_SIZE);
 
@@ -46,7 +40,7 @@ public class ReceivingTask implements Runnable{
     private double timeReceived;
 
     private Context context;
-    private SharedPreferences sharedPreferencesSession, sharedPreferencesLocation;
+    private SharedPreferences sharedPreferencesSetup;
     private String currSessionNumber;
 
     private DatabaseHelper resultsDatabase;
@@ -74,11 +68,9 @@ public class ReceivingTask implements Runnable{
     @Override
     public void run() {
         // pulling session number
-        sharedPreferencesSession = context.getSharedPreferences("currSessionSetting", Context.MODE_PRIVATE);
-        currSessionNumber = sharedPreferencesSession.getString("currSessionNumber", "0");
-
-        sharedPreferencesLocation = context.getSharedPreferences("currLocationSetting", Context.MODE_PRIVATE);
-        currLocation = sharedPreferencesLocation.getString("currLocation", "0");
+        sharedPreferencesSetup = context.getSharedPreferences("currSetupSettings", Context.MODE_PRIVATE);
+        currSessionNumber = sharedPreferencesSetup.getString("currSessionNumber", "0");
+        currLocation = sharedPreferencesSetup.getString("currLocation", "0");
 
         resPacket.clear();
 

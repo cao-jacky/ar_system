@@ -23,9 +23,9 @@ public class settingsProtocol extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings_protocol);
 
-        RadioGroup protocolRadioGroup = (RadioGroup)findViewById(R.id.protocolSelection);
+        RadioGroup protocolRadioGroup = findViewById(R.id.protocolSelection);
 
-        sharedPreferencesProtocol = getSharedPreferences("currProtocolSetting", Context.MODE_PRIVATE);
+        sharedPreferencesProtocol = getSharedPreferences("currSetupSettings", Context.MODE_PRIVATE);
 
         // obtain currently selected string and set the radio group button to match that
         currProtocol = sharedPreferencesProtocol.getString("currProtocol", "UDP");
@@ -43,20 +43,15 @@ public class settingsProtocol extends Activity {
             }
         }
 
+        protocolRadioGroup.setOnCheckedChangeListener((radioGroup, checkedId) -> {
+            int radioButtonID = radioGroup.getCheckedRadioButtonId();
+            RadioButton radioButton = radioGroup.findViewById(radioButtonID);
+            String selectedText = (String)radioButton.getText();
 
-
-        protocolRadioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
-            @Override
-            public void onCheckedChanged(RadioGroup radioGroup, int checkedId) {
-                int radioButtonID = radioGroup.getCheckedRadioButtonId();
-                RadioButton radioButton = (RadioButton)radioGroup.findViewById(radioButtonID);
-                String selectedText = (String)radioButton.getText();
-
-                // change selected protocol variable
-                SharedPreferences.Editor sessionEditor = sharedPreferencesProtocol.edit();
-                sessionEditor.putString("currProtocol", selectedText);
-                sessionEditor.apply();
-            }
+            // change selected protocol variable
+            SharedPreferences.Editor sessionEditor = sharedPreferencesProtocol.edit();
+            sessionEditor.putString("currProtocol", selectedText);
+            sessionEditor.apply();
         });
 
 

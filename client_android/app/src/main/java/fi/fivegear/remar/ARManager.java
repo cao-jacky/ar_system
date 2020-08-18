@@ -43,7 +43,7 @@ public class ARManager {
 
     private String selectedProtocol;
 
-    SharedPreferences sharedPreferencesServer, sharedPreferencesProtocol;
+    SharedPreferences sharedPreferencesSetup;
     DatabaseHelper requestsDatabase, resultsDatabase;
 
     private ARManager(){ super(); }
@@ -82,13 +82,12 @@ public class ARManager {
     @RequiresApi(api = Build.VERSION_CODES.Q)
     public void init(Context context){
         // using SharedPreferences to set current server IP and port
-        sharedPreferencesServer = context.getSharedPreferences("currServerSettings", Context.MODE_PRIVATE);
-        String serverIP = sharedPreferencesServer.getString("currServerIP", "0.0.0.0");
-        int serverPort = sharedPreferencesServer.getInt("currServerPort", 0);
+        sharedPreferencesSetup = context.getSharedPreferences("currSetupSettings", Context.MODE_PRIVATE);
+        String serverIP = sharedPreferencesSetup.getString("currServerIP", "0.0.0.0");
+        int serverPort = sharedPreferencesSetup.getInt("currServerPort", 0);
 
         // obtain selected protocol from settings
-        sharedPreferencesProtocol = context.getSharedPreferences("currProtocolSetting", Context.MODE_PRIVATE);
-        selectedProtocol = sharedPreferencesProtocol.getString("currProtocol", "UDP");
+        selectedProtocol = sharedPreferencesSetup.getString("currProtocol", "UDP");
 
         // load database tables to pass to the threads dealing with requests and results
         requestsDatabase = new DatabaseHelper(context.getApplicationContext());
@@ -99,7 +98,7 @@ public class ARManager {
         if(isValid == false) {
             serverIP = "0.0.0.0";
 
-            SharedPreferences.Editor editor = sharedPreferencesServer.edit();
+            SharedPreferences.Editor editor = sharedPreferencesSetup.edit();
             editor.putString("currServerIP", serverIP);
             editor.apply();
         }
@@ -107,8 +106,8 @@ public class ARManager {
         System.loadLibrary("opencv_java");
         initConnection(selectedProtocol, serverIP, serverPort);
 
-        this.handlerUtil = createAndStartThread("util thread", Process.THREAD_PRIORITY_DEFAULT); //start util thread
-        this.handlerNetwork = createAndStartThread("network thread", 1);
+        this.handlerUtil = createAndStartThread("Utility thread", Process.THREAD_PRIORITY_DEFAULT); //start util thread
+        this.handlerNetwork = createAndStartThread("Network thread", 1);
 
         taskTransmission = new TransmissionTask(selectedProtocol, dataChannel, socketChannel,
                 serverAddressUDP, serverAddressTCP, context, requestsDatabase, serverIP, serverPort);
@@ -121,19 +120,13 @@ public class ARManager {
 
     }
 
-    public void start() {
-    }
-
     public void stop() {
-        handlerNetwork.post(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    dataChannel.close();
-                    socketChannel.close();
-                } catch (IOException e) {
-                    e.printStackTrace();
-                }
+        handlerNetwork.post(() -> {
+            try {
+                dataChannel.close();
+                socketChannel.close();
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         });
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN_MR2) {
@@ -142,18 +135,12 @@ public class ARManager {
         }
     }
 
-    public void recognize(int frameID, Mat frameData) {
+    public void recognise(int frameID, Mat frameData){
         taskTransmission.setData(frameID, frameData);
         handlerNetwork.post(taskTransmission);
         taskReceiving.updateLatestSentID(frameID);
     }
-
-    public void recognizeTime(int frameID, Mat frameData){
-        taskTransmission.setData(frameID, frameData);
-        handlerNetwork.post(taskTransmission);
-        taskReceiving.updateLatestSentID(frameID);
-    }
-    public void driveFrame(Mat frameData) {
+    public void driveFrame() {
         handlerNetwork.post(taskReceiving);
     }
 

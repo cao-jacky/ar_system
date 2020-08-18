@@ -45,27 +45,22 @@ public class settingsServer extends Activity {
         setContentView(R.layout.activity_settings_server);
 
         // using SharedPreferences to set current server IP and port
-        sharedPreferences = getSharedPreferences("currServerSettings", Context.MODE_PRIVATE);
+        sharedPreferences = getSharedPreferences("currSetupSettings", Context.MODE_PRIVATE);
 
         serverIP = sharedPreferences.getString("currServerIP", "0.0.0.0");
         serverPort = sharedPreferences.getInt("currServerPort", 0);
 
         // setting displayed current values to that of which is found in shared values
-        TextView currServerIPTV = (TextView)findViewById(R.id.serverIPText);
+        TextView currServerIPTV = findViewById(R.id.serverIPText);
         currServerIPTV.setText(serverIP);
 
-        TextView currServerPortTV = (TextView)findViewById(R.id.serverPortText);
+        TextView currServerPortTV = findViewById(R.id.serverPortText);
         currServerPortTV.setText(Integer.toString(serverPort));
 
-        editServerDetails = (Button)findViewById(R.id.editServerDetails);
-        editServerDetails.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                editServerDetailsModal();
-            }
-        });
+        editServerDetails = findViewById(R.id.editServerDetails);
+        editServerDetails.setOnClickListener(v -> editServerDetailsModal());
 
-        serverTableLayout = (TableLayout)findViewById(R.id.previousServersTable);
+        serverTableLayout = findViewById(R.id.previousServersTable);
         populateServerTable(serverTableLayout);
 
     }
@@ -101,10 +96,10 @@ public class settingsServer extends Activity {
         View content =  inflater.inflate(R.layout.popup_server_details, null);
         builder.setView(content);
 
-        sharedPreferences = getSharedPreferences("currServerSettings", Context.MODE_PRIVATE);
+        sharedPreferences = getSharedPreferences("currSetupSettings", Context.MODE_PRIVATE);
 
-        serverIPET = (EditText)content.findViewById(R.id.setServerIP);
-        serverPortET = (EditText)content.findViewById(R.id.setServerPort);
+        serverIPET = content.findViewById(R.id.setServerIP);
+        serverPortET = content.findViewById(R.id.setServerPort);
 
         serverIPET.setText(serverIP);
         serverPortET.setText(String.valueOf(serverPort));
@@ -141,10 +136,10 @@ public class settingsServer extends Activity {
                     dialog.cancel();
 
                     // changing text of the currently set server details
-                    TextView currServerIPTV = (TextView)findViewById(R.id.serverIPText);
+                    TextView currServerIPTV = findViewById(R.id.serverIPText);
                     currServerIPTV.setText(setServerIP);
 
-                    TextView currServerPortTV = (TextView)findViewById(R.id.serverPortText);
+                    TextView currServerPortTV = findViewById(R.id.serverPortText);
                     currServerPortTV.setText(Integer.toString(setServerPort));
 
                     // adding entry into the Database
@@ -155,7 +150,7 @@ public class settingsServer extends Activity {
                     serverDatabase.closeDB();
 
                     // add row to the table
-                    serverTableLayout = (TableLayout)findViewById(R.id.previousServersTable);
+                    serverTableLayout = findViewById(R.id.previousServersTable);
                     TableRow tableRow = new TableRow(settingsServer.this);
 
                     TextView dateAdded = new TextView(settingsServer.this);

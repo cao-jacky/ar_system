@@ -98,9 +98,7 @@ public class TransmissionTask extends Activity implements Runnable {
 
         originalDataShape = new Mat(Constants.previewHeight * 3 / 2, Constants.previewWidth, CvType.CV_8UC1);
 
-//        YUVMatTrans = new Mat(Constants.previewHeight + Constants.previewHeight / 2, Constants.previewWidth, CvType.CV_8UC1);
         YUVMatTrans = new Mat(Constants.previewHeight * 3 / 2, Constants.previewWidth, CvType.CV_8UC1);
-//        YUVMatScaled = new Mat((Constants.previewHeight + Constants.previewHeight / 2), Constants.previewWidth, CvType.CV_8UC1);
         YUVMatScaled = new Mat((Constants.previewHeight * 3 / 2) / Constants.recoScale, Constants.previewWidth / Constants.recoScale, CvType.CV_8UC1);
         GrayScaled = new Mat(Constants.previewHeight / Constants.recoScale, Constants.previewWidth / Constants.recoScale, CvType.CV_8UC1);
     }
@@ -155,7 +153,6 @@ public class TransmissionTask extends Activity implements Runnable {
 //            imageSize = new Size(imageResolution.width,imageResolution.height); //the dst image size
             imageSize = new Size(currHeight,currWidth);
 
-//            Imgproc.resize(YUVMatTrans, YUVMatScaled, YUVMatScaled.size(), 0, 0, Imgproc.INTER_LINEAR);
             Imgproc.resize(YUVMatTrans, YUVMatScaled, imageSize, 0, 0, Imgproc.INTER_LINEAR);
             Imgproc.cvtColor(YUVMatScaled, GrayScaled, Imgproc.COLOR_YUV420sp2GRAY);
             Core.flip(GrayScaled.t(), GrayScaled, 1); // rotate 90 deg clockwise
@@ -186,7 +183,7 @@ public class TransmissionTask extends Activity implements Runnable {
             System.arraycopy(frmdataToSend, 0, packetContent, 12, datasize);
 
         try {
-            currByteBufferLength = packetContent.length; //buffer.remaining();
+            currByteBufferLength = packetContent.length;
             if (selectedProtocol.contains("UDP")) {
                 if (dataType == MESSAGE_META) {
                     messageType = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(MESSAGE_META).array();
@@ -258,14 +255,10 @@ public class TransmissionTask extends Activity implements Runnable {
                                     System.arraycopy(ack, 0, tmp, 0, 4);
                                     int messageType = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
                                     if (messageType == PACKET_STATUS) {
-//                                        System.arraycopy(ack, 4, tmp, 0, 4);
-//                                        int frameID = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
-
                                         System.arraycopy(ack, 12, tmp, 0, 4);
                                         int packetStatus = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
 
                                         if (packetStatus == 1) {
-//                                            SharedPreferences udpAckSetting = context.getSharedPreferences("udpAckSP", Context.MODE_PRIVATE);
                                             udpAckSP.edit().putBoolean("currUDPAck", true).apply();
                                         }
                                     }
@@ -300,9 +293,6 @@ public class TransmissionTask extends Activity implements Runnable {
                                 System.arraycopy(ack, 0, tmp, 0, 4);
                                 int messageType = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
                                 if (messageType == PACKET_STATUS) {
-//                                    System.arraycopy(ack, 4, tmp, 0, 4);
-//                                    int frameID = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
-
                                     System.arraycopy(ack, 12, tmp, 0, 4);
                                     int packetStatus = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
 
@@ -358,13 +348,7 @@ public class TransmissionTask extends Activity implements Runnable {
         new Thread() {
             public void run() {
                 try {
-                    runOnUiThread(new Runnable() {
-
-                        @Override
-                        public void run() {
-                            currFrame.setText("F" + frmID);
-                        }
-                    });
+                    runOnUiThread(() -> currFrame.setText("F" + frmID));
                     Thread.sleep(300);
                 } catch (InterruptedException e) {
                     e.printStackTrace();

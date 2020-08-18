@@ -7,6 +7,4 @@ public class Detected {
     public int right;
     public int top;
     public int bot;
-    public double tcap;
-    public double tsend;
 }

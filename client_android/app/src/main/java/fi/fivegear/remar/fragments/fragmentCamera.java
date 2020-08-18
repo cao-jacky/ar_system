@@ -65,6 +65,8 @@ import fi.fivegear.remar.ARManager;
 import fi.fivegear.remar.R;
 import fi.fivegear.remar.helpers.AutoFitTextureView;
 
+import static fi.fivegear.remar.Constants.TAG;
+
 public class fragmentCamera extends Fragment
         implements View.OnClickListener, ActivityCompat.OnRequestPermissionsResultCallback {
 
@@ -84,11 +86,6 @@ public class fragmentCamera extends Fragment
         ORIENTATIONS.append(Surface.ROTATION_180, 270);
         ORIENTATIONS.append(Surface.ROTATION_270, 180);
     }
-
-    /**
-     * Tag for the {@link Log}.
-     */
-    private static final String TAG = "Camera2BasicFragment";
 
     /**
      * Camera state: Showing camera preview.
@@ -303,7 +300,6 @@ public class fragmentCamera extends Fragment
         @Override
         public void onImageAvailable(ImageReader reader) {
 //            mBackgroundHandler.post(new ImageSaver(reader.acquireNextImage(), mFile));
-//            Log.d(TAG, "I'm an image frame!");
 
             Image image = reader.acquireNextImage();
             Mat matOfImage = imageToMat(image);
@@ -759,18 +755,12 @@ public class fragmentCamera extends Fragment
             // We configure the size of default buffer to be the size of camera preview we want.
             texture.setDefaultBufferSize(mPreviewSize.getWidth(), mPreviewSize.getHeight());
 
-//            Surface surface = new Surface(texture); // Output surface for preview
-//            Surface mImageSurface = mImageReader.getSurface(); // New output surface
-
             // We set up a CaptureRequest.Builder with the output Surface.
             mPreviewRequestBuilder
                     = mCameraDevice.createCaptureRequest(CameraDevice.TEMPLATE_PREVIEW);
 
             mPreviewRequestBuilder.set(CaptureRequest.CONTROL_AF_MODE, CaptureRequest.CONTROL_AF_MODE_CONTINUOUS_PICTURE);
             mPreviewRequestBuilder.set(CaptureRequest.CONTROL_AE_MODE, CaptureRequest.CONTROL_AE_MODE_ON_AUTO_FLASH);
-
-//            mPreviewRequestBuilder.addTarget(mImageSurface); // new target to our CaptureRequest.Builder
-//            mPreviewRequestBuilder.addTarget(surface);
 
             Surface readerSurface = mImageReader.getSurface();
             Surface surface = new Surface(texture);

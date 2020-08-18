@@ -29,6 +29,12 @@
     <string name="_25">25</string>
     <string name="upper">Upper:</string>
     <string name="set_settings">Set Settings</string>
+    <string name="currently_set_as">Currently set as:</string>
+    <string name="server_details">Server Details</string>
+    <string name="settings_button_for_application">Settings button for application</string>
+    <string name="statistics_for_application">Statistics for application</string>
+    <string name="f">F?</string>
+    <string name="s">S?</string>
 
     <string-array name="resolutions_array">
         <item>1920 x 1080</item>

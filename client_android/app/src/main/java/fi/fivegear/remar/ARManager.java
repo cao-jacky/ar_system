@@ -15,7 +15,6 @@ import org.opencv.core.Mat;
 
 import java.io.IOException;
 import java.net.InetSocketAddress;
-import java.net.Socket;
 import java.net.SocketAddress;
 import java.nio.channels.DatagramChannel;
 import java.nio.channels.SocketChannel;
@@ -23,6 +22,8 @@ import java.nio.channels.SocketChannel;
 import fi.fivegear.remar.helpers.DatabaseHelper;
 import fi.fivegear.remar.network.ReceivingTask;
 import fi.fivegear.remar.network.TransmissionTask;
+
+import static fi.fivegear.remar.Constants.TAG;
 
 public class ARManager {
 
@@ -61,7 +62,7 @@ public class ARManager {
         return new Handler(handlerThread.getLooper());
     }
 
-    private void initConnection(String selectedProtocol, String serverIP, int serverPort) {
+    private void initConnection(String serverIP) {
         try {
             serverAddressUDP = new InetSocketAddress(serverIP, 50000);
             serverAddressTCP = new InetSocketAddress(serverIP, 55000);
@@ -74,7 +75,7 @@ public class ARManager {
             // create TCP socket channel
             socketChannel = SocketChannel.open();
         } catch (Exception e) {
-            Log.d("DEBUG", "DataChannel creation error");
+            Log.d(TAG, "DataChannel creation error");
             System.out.println(e);
         }
     }
@@ -104,7 +105,7 @@ public class ARManager {
         }
 
         System.loadLibrary("opencv_java");
-        initConnection(selectedProtocol, serverIP, serverPort);
+        initConnection(serverIP);
 
         this.handlerUtil = createAndStartThread("Utility thread", Process.THREAD_PRIORITY_DEFAULT); //start util thread
         this.handlerNetwork = createAndStartThread("Network thread", 1);

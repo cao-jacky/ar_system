@@ -90,8 +90,6 @@ public class settingsServer extends Activity {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         LayoutInflater inflater = this.getLayoutInflater();
         builder.setTitle("Set server details");
-//        builder.setMessage("AlertDialog");
-//        builder.setView(R.layout.popup_server_details);
 
         View content =  inflater.inflate(R.layout.popup_server_details, null);
         builder.setView(content);
@@ -104,7 +102,6 @@ public class settingsServer extends Activity {
         serverIPET.setText(serverIP);
         serverPortET.setText(String.valueOf(serverPort));
 
-//        builder.setView(inflater.inflate(R.layout.popup_server_details, null));
         builder.setPositiveButton("OK", new DialogInterface.OnClickListener() {
             @RequiresApi(api = Build.VERSION_CODES.Q)
             @Override
@@ -170,13 +167,6 @@ public class settingsServer extends Activity {
                     tableRow.addView(serverPort);// add the column to the table row here
 
                     serverTableLayout.addView(tableRow, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
-
-                    // Refereshing the activity to show new changes
-//                finish();
-//                startActivity(getIntent());
-//                    finish();
-//                    System.exit(2);
-
                 }
 
             }

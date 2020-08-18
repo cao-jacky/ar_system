@@ -2,7 +2,6 @@ package fi.fivegear.remar.network;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.util.Log;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -18,7 +17,6 @@ import fi.fivegear.remar.models.ResultsEntry;
 
 import static fi.fivegear.remar.Constants.RESULTS_STATUS;
 import static fi.fivegear.remar.Constants.RES_SIZE;
-import static fi.fivegear.remar.Constants.TAG;
 
 public class ReceivingTask implements Runnable {
 
@@ -27,8 +25,6 @@ public class ReceivingTask implements Runnable {
     private byte[] res;
     private byte[] tmp = new byte[4];
     private byte[] name = new byte[56];
-    private double resultTimecap;
-    private double resultTimesend;
     private int newMarkerNum;
     private int lastSentID;
 
@@ -105,10 +101,6 @@ public class ReceivingTask implements Runnable {
             System.arraycopy(res, 0, tmp, 0, 4);
             int messageType = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
 
-//            SharedPreferences udpAckSP = context.getSharedPreferences("udpAckSP", Context.MODE_PRIVATE);
-//            Boolean udpAckStatus = udpAckSP.getBoolean("currUDPAck", false);
-//            Log.d(TAG, "ack status " + udpAckStatus);
-
             if (messageType == RESULTS_STATUS) {
                 System.arraycopy(res, 4, tmp, 0, 4);
                 int resultID = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getInt();
@@ -122,11 +114,8 @@ public class ReceivingTask implements Runnable {
 
                     int i = 0;
                     while (i < newMarkerNum) {
-                        Log.d(TAG, "results received");
                         detected[i] = new Detected();
 
-                        detected[i].tcap = resultTimecap;
-                        detected[i].tsend = resultTimesend;
                         System.arraycopy(res, 16 + i * 100, tmp, 0, 4);
                         detected[i].prob = ByteBuffer.wrap(tmp).order(ByteOrder.LITTLE_ENDIAN).getFloat();
 

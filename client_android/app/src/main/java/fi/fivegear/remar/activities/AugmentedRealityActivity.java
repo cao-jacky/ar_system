@@ -41,15 +41,15 @@ import fi.fivegear.remar.fragments.fragmentCamera;
 
 public class AugmentedRealityActivity extends AppCompatActivity implements LocationListener {
 
-    private static final String TAG = "ReMAR";
-    public static int screenWidth;
-    public static int screenHeight;
+    private static int screenWidth;
+    private static int screenHeight;
 
+    // public to be accessible in other classes
     public static ImageView uploadStatus;
     public static ImageView downloadStatus;
     public static TextView currFrame;
 
-    public SharedPreferences sharedPreferencesSetup;
+    private SharedPreferences sharedPreferencesSetup;
 
     String currSessionNumber;
     TextView sessionGlanceString;
@@ -68,6 +68,9 @@ public class AugmentedRealityActivity extends AppCompatActivity implements Locat
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        // prevent screen from sleeping
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
+
         getScreenResolution(this); // required to draw annotations on screen
         setContentView(R.layout.activity_augmented_reality);
         if (null == savedInstanceState) {
@@ -85,9 +88,7 @@ public class AugmentedRealityActivity extends AppCompatActivity implements Locat
         sharedPreferencesSetup = getSharedPreferences("currSetupSettings", Context.MODE_PRIVATE);
         currSessionNumber = sharedPreferencesSetup.getString("currSessionNumber", "0");
         sessionGlanceString = findViewById(R.id.sessionGlance);
-
-        // changing session number to new increment
-//        sessionGlanceString.setText("S" + newSessionNumber);
+        sessionGlanceString.setText("S"+currSessionNumber);
 
         // Settings button
         settingsButton = findViewById(R.id.settingsButton);
@@ -122,12 +123,9 @@ public class AugmentedRealityActivity extends AppCompatActivity implements Locat
         }
 
         ARManager.getInstance().init(this);
-        ARManager.getInstance().setCallback(new ARManager.Callback() {
-            @Override
-            public void onObjectsDetected(Detected[] detected) {
-                mDraw.invalidate();
-                mDraw.updateData(detected);
-            }
+        ARManager.getInstance().setCallback(detected -> {
+            mDraw.invalidate();
+            mDraw.updateData(detected);
         });
 
     }

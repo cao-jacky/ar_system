@@ -47,6 +47,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/settings_button_for_application"
                 android:src="@drawable/settings_icon" />
 
         </FrameLayout>
@@ -69,6 +70,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:contentDescription="@string/statistics_for_application"
                 android:src="@drawable/info_icon" />
 
         </FrameLayout>
@@ -88,7 +90,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:paddingLeft="2dp"
-                android:text="S?"
+                android:text="@string/s"
                 android:textAlignment="textStart"
                 surfaceview:layout_constraintBottom_toBottomOf="parent"
                 surfaceview:layout_constraintEnd_toStartOf="@+id/divider2"
@@ -100,8 +102,8 @@
                 android:layout_width="75dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:paddingLeft="2dp"
-                android:text="F?"
+                android:paddingStart="2dp"
+                android:text="@string/f"
                 surfaceview:layout_constraintBottom_toBottomOf="parent"
                 surfaceview:layout_constraintStart_toStartOf="parent"
                 surfaceview:layout_constraintTop_toTopOf="parent"
@@ -145,7 +147,8 @@
                 android:src="@drawable/status_upload_coloured"
                 surfaceview:layout_constraintBottom_toBottomOf="parent"
                 surfaceview:layout_constraintEnd_toStartOf="@+id/statusDownload"
-                surfaceview:layout_constraintTop_toTopOf="parent" />
+                surfaceview:layout_constraintTop_toTopOf="parent"
+                android:contentDescription="TODO" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

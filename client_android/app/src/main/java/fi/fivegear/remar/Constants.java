@@ -19,8 +19,8 @@ public class Constants {
     static public final int PACKET_STATUS = 4;
     static public final int RESULTS_STATUS = 5;
 
-    static public final int previewWidth = 1920; //1920;
-    static public final int previewHeight = 1080; //1080;
+    static public final int previewWidth = 1920;
+    static public final int previewHeight = 1080;
     static public final int scale = 4;
     static public final int recoScale = 7;
     static public final int dispScale = 9;

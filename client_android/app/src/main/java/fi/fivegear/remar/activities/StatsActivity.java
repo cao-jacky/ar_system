@@ -4,13 +4,11 @@ import android.Manifest;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Context;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.icu.text.SimpleDateFormat;
 import android.os.AsyncTask;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.view.Gravity;
@@ -43,7 +41,6 @@ public class StatsActivity extends Activity {
     String currSessionNumber;
 
     private static SQLiteDatabase db;
-    DatabaseHelper logDatabase;
 
     private TableLayout logTableLayout;
 
@@ -66,47 +63,35 @@ public class StatsActivity extends Activity {
         currSessionNumber = sharedPreferencesSession.getString("currSessionNumber", "0");
 
         db = this.openOrCreateDatabase("remarManager", MODE_PRIVATE, null);
-        logTableLayout = (TableLayout)findViewById(R.id.statsLog);
+        logTableLayout = findViewById(R.id.statsLog);
 
-        statsSessionNumber = (EditText)findViewById(R.id.statsSessionNumber);
+        statsSessionNumber = findViewById(R.id.statsSessionNumber);
         statsSessionNumber.setGravity(Gravity.CENTER_HORIZONTAL);
         statsSessionNumber.setText(currSessionNumber);
 
-        statsSessionNumber.setOnKeyListener(new View.OnKeyListener() {
-            public boolean onKey(View v, int keyCode, KeyEvent event) {
-                if (event.getAction() == KeyEvent.ACTION_DOWN && keyCode == KeyEvent.KEYCODE_ENTER) {
-                    changeSessionStats(db, logTableLayout);
-                    return true;
-                }
-                return false;
+        statsSessionNumber.setOnKeyListener((v, keyCode, event) -> {
+            if (event.getAction() == KeyEvent.ACTION_DOWN && keyCode == KeyEvent.KEYCODE_ENTER) {
+                changeSessionStats(db, logTableLayout);
+                return true;
             }
+            return false;
         });
 
         setStatsActivity(currSessionNumber, db, logTableLayout);
 
-        setSession = (Button)findViewById(R.id.statsSessionConfirm);
-        setSession.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                changeSessionStats(db, logTableLayout);
-            }
-        });
+        setSession = findViewById(R.id.statsSessionConfirm);
+        setSession.setOnClickListener(v -> changeSessionStats(db, logTableLayout));
 
-        statsExport = (Button)findViewById(R.id.statsExport);
-        statsExport.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                String currSessionToExport = String.valueOf(statsSessionNumber.getText());
+        statsExport = findViewById(R.id.statsExport);
+        statsExport.setOnClickListener(v -> {
+            String currSessionToExport = String.valueOf(statsSessionNumber.getText());
 
-                sharedPreferencesSession = getSharedPreferences("currSetupSettings", Context.MODE_PRIVATE);
-                SharedPreferences.Editor editor = sharedPreferencesSession.edit();
-                editor.putString("sessionToExport", currSessionToExport);
-                editor.apply();
+            sharedPreferencesSession = getSharedPreferences("currSetupSettings", Context.MODE_PRIVATE);
+            SharedPreferences.Editor editor = sharedPreferencesSession.edit();
+            editor.putString("sessionToExport", currSessionToExport);
+            editor.apply();
 
-                statsExporter();
-
-
-            }
+            statsExporter();
         });
     }
 
@@ -136,150 +121,154 @@ public class StatsActivity extends Activity {
             unixTimeSent.add(requests.getString(4));
         }
 
-        while (results.moveToNext()) {
-            resultsFrameID.add(results.getInt(3));
-            unixTimeReceived.add(results.getString(4));
-        }
+        if (requestsFrameID.size() > 500) {
+            TextView statusText = findViewById(R.id.textView13);
+            statusText.setText(">500 requests, not calculating stats on device");
+        } else {
 
-        // matching results to the requests lists
-        ArrayList<Integer> matchedRequestsFrameID = new ArrayList<>(requestsFrameID);
-        matchedRequestsFrameID.retainAll(resultsFrameID);
-
-        // go through requestsFrameID and resultsFrameID and use indexOf on requestsFrameID
-//        System.out.println(matchedRequestsFrameID.size() + " " +  resultsFrameID.size());
-
-        ArrayList<Long> timeDifferences = new ArrayList<>();
-
-        // finding corresponding unix time values and working out the difference
-        for (int i = 0; i < matchedRequestsFrameID.size(); i++) {
-            int requestIndex = requestsFrameID.indexOf(matchedRequestsFrameID.get(i));
-            String timeSent = unixTimeSent.get(requestIndex);
-            String timeReceived = unixTimeReceived.get(i);
-
-            long timeDiff = Long.parseLong(timeReceived) - Long.parseLong(timeSent);
-            timeDifferences.add(timeDiff);
-        }
-
-        // calculating average time for this particular session
-        double sum = 0;
-        for (long i : timeDifferences) {
-            sum += i;
-        }
-        double avgCommTime = sum / timeDifferences.size();
-
-        // SETTING STATS INTO THE CORRESPONDING FIELDS ON ACTIVITY
-        statsRTT = (TextView)findViewById(R.id.statsRTT);
-        statsRTT.setText(String.valueOf(avgCommTime));
-
-        statsRequests = (TextView)findViewById(R.id.statsRequests);
-        numRequests = unixTimeSent.size();
-        statsRequests.setText(String.valueOf(numRequests));
-
-        statsResults = (TextView)findViewById(R.id.statsResults);
-        statsResults.setText(String.valueOf(unixTimeReceived.size()));
-
-        // DEALING WITH THE SIMPLE LOG TABLE
-
-        // Setting header row
-        TableRow headerTableRow = new TableRow(this);
-
-        TextView headerTime = new TextView(this);
-        headerTime.setText("Time");
-        headerTime.setPadding(0, 5, 0, 5);
-        headerTableRow.addView(headerTime);// add the column to the table row here
-
-        TextView headerLogItemType = new TextView(this);
-        headerLogItemType.setText("Type");
-        headerLogItemType.setPadding(5, 5, 0, 5);
-        headerTableRow.addView(headerLogItemType);// add the column to the table row here
-
-        TextView headerFrameId = new TextView(this);
-        headerFrameId.setText("Frame ID");
-        headerFrameId.setPadding(5, 5, 0, 5);
-        headerTableRow.addView(headerFrameId);// add the column to the table row here
-
-        TextView headerInfo = new TextView(this);
-        headerInfo.setText("Info");
-        headerInfo.setPadding(5, 5, 0, 5);
-        headerTableRow.addView(headerInfo);// add the column to the table row here
-
-        tableLayout.addView(headerTableRow, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
-
-        // join unix time lists together
-        ArrayList<String> combinedTimes = new ArrayList<>();
-        combinedTimes.addAll(unixTimeSent);
-        combinedTimes.addAll(unixTimeReceived);
-
-        // join frameID  lists together
-        ArrayList<Integer> combinedFrameIds = new ArrayList<>();
-        combinedFrameIds.addAll(requestsFrameID);
-        combinedFrameIds.addAll(resultsFrameID);
-
-        // duplicating joined unix time lists and then sorting
-        ArrayList<String> sortedCombinedTimes = new ArrayList<>(combinedTimes);
-        matchedRequestsFrameID.retainAll(combinedTimes);
-
-        Collections.sort(sortedCombinedTimes); // sort combined list
-
-        // calculating total period
-        String periodBegin = sortedCombinedTimes.get(0);
-        String periodEnd = sortedCombinedTimes.get(sortedCombinedTimes.size()-1);
-
-        double totalPeriodTime = Double.valueOf(periodEnd) - Double.valueOf(periodBegin);
-        totalPeriodTime = totalPeriodTime / 1000;
-        statsTotalPeriod = (TextView)findViewById(R.id.statsTotalPeriod);
-        statsTotalPeriod.setText(String.valueOf(totalPeriodTime));
-
-        statsMeasurementBegin = (TextView)findViewById(R.id.statsMeasurementBegin);
-        statsMeasurementBegin.setText(String.valueOf(getUTCstring(periodBegin)));
-
-        statsMeasurementEnd = (TextView)findViewById(R.id.statsMeasurementEnd);
-        statsMeasurementEnd.setText(String.valueOf(getUTCstring(periodEnd)));
-
-        for (String timeItem : sortedCombinedTimes) {
-            int indexInCombinedTimes = combinedTimes.indexOf(timeItem);
-
-            // checking if a request of result item
-            if (indexInCombinedTimes <= numRequests) {
-                currType = "RQ";
-            } else {
-                currType = "RS";
+            while (results.moveToNext()) {
+                resultsFrameID.add(results.getInt(3));
+                unixTimeReceived.add(results.getString(4));
             }
 
-            currTimeString = getUTCstring(timeItem);
+            // matching results to the requests lists
+            ArrayList<Integer> matchedRequestsFrameID = new ArrayList<>(requestsFrameID);
+            matchedRequestsFrameID.retainAll(resultsFrameID);
 
-            currFrameID = combinedFrameIds.get(indexInCombinedTimes);
+            // go through requestsFrameID and resultsFrameID and use indexOf on requestsFrameID
+            ArrayList<Long> timeDifferences = new ArrayList<>();
 
-            TableRow tableRow = new TableRow(this);
+            // finding corresponding unix time values and working out the difference
+            for (int i = 0; i < matchedRequestsFrameID.size(); i++) {
+                int requestIndex = requestsFrameID.indexOf(matchedRequestsFrameID.get(i));
+                String timeSent = unixTimeSent.get(requestIndex);
+                String timeReceived = unixTimeReceived.get(i);
 
-            TextView itemTime = new TextView(this);
-            itemTime.setText(currTimeString);
-            itemTime.setPadding(5, 0, 0, 5);
-            tableRow.addView(itemTime);// add the column to the table row here
+                long timeDiff = Long.parseLong(timeReceived) - Long.parseLong(timeSent);
+                timeDifferences.add(timeDiff);
+            }
 
-            TextView itemType = new TextView(this);
-            itemType.setText(currType);
-            itemType.setPadding(5, 5, 0, 5);
-            tableRow.addView(itemType);// add the column to the table row here
+            // calculating average time for this particular session
+            double sum = 0;
+            for (long i : timeDifferences) {
+                sum += i;
+            }
+            double avgCommTime = sum / timeDifferences.size();
 
-            TextView itemFrameId = new TextView(this);
-            String currServerPort = String.valueOf(currFrameID);
-            itemFrameId.setText(currServerPort);
-            itemFrameId.setPadding(5, 5, 0, 5);
-            tableRow.addView(itemFrameId);// add the column to the table row here
+            // SETTING STATS INTO THE CORRESPONDING FIELDS ON ACTIVITY
+            statsRTT = findViewById(R.id.statsRTT);
+            statsRTT.setText(String.valueOf(avgCommTime));
 
-            TextView itemInfo = new TextView(this);
+            statsRequests = findViewById(R.id.statsRequests);
+            numRequests = unixTimeSent.size();
+            statsRequests.setText(String.valueOf(numRequests));
+
+            statsResults = findViewById(R.id.statsResults);
+            statsResults.setText(String.valueOf(unixTimeReceived.size()));
+
+            // DEALING WITH THE SIMPLE LOG TABLE
+
+            // Setting header row
+            TableRow headerTableRow = new TableRow(this);
+
+            TextView headerTime = new TextView(this);
+            headerTime.setText("Time");
+            headerTime.setPadding(0, 5, 0, 5);
+            headerTableRow.addView(headerTime);// add the column to the table row here
+
+            TextView headerLogItemType = new TextView(this);
+            headerLogItemType.setText("Type");
+            headerLogItemType.setPadding(5, 5, 0, 5);
+            headerTableRow.addView(headerLogItemType);// add the column to the table row here
+
+            TextView headerFrameId = new TextView(this);
+            headerFrameId.setText("Frame ID");
+            headerFrameId.setPadding(5, 5, 0, 5);
+            headerTableRow.addView(headerFrameId);// add the column to the table row here
+
+            TextView headerInfo = new TextView(this);
+            headerInfo.setText("Info");
+            headerInfo.setPadding(5, 5, 0, 5);
+            headerTableRow.addView(headerInfo);// add the column to the table row here
+
+            tableLayout.addView(headerTableRow, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+
+            // join unix time lists together
+            ArrayList<String> combinedTimes = new ArrayList<>();
+            combinedTimes.addAll(unixTimeSent);
+            combinedTimes.addAll(unixTimeReceived);
+
+            // join frameID  lists together
+            ArrayList<Integer> combinedFrameIds = new ArrayList<>();
+            combinedFrameIds.addAll(requestsFrameID);
+            combinedFrameIds.addAll(resultsFrameID);
+
+            // duplicating joined unix time lists and then sorting
+            ArrayList<String> sortedCombinedTimes = new ArrayList<>(combinedTimes);
+            matchedRequestsFrameID.retainAll(combinedTimes);
+
+            Collections.sort(sortedCombinedTimes); // sort combined list
+
+            // calculating total period
+            String periodBegin = sortedCombinedTimes.get(0);
+            String periodEnd = sortedCombinedTimes.get(sortedCombinedTimes.size() - 1);
+
+            double totalPeriodTime = Double.valueOf(periodEnd) - Double.valueOf(periodBegin);
+            totalPeriodTime = totalPeriodTime / 1000;
+            statsTotalPeriod = findViewById(R.id.statsTotalPeriod);
+            statsTotalPeriod.setText(String.valueOf(totalPeriodTime));
+
+            statsMeasurementBegin = findViewById(R.id.statsMeasurementBegin);
+            statsMeasurementBegin.setText(String.valueOf(getUTCstring(periodBegin)));
+
+            statsMeasurementEnd = findViewById(R.id.statsMeasurementEnd);
+            statsMeasurementEnd.setText(String.valueOf(getUTCstring(periodEnd)));
+
+            for (String timeItem : sortedCombinedTimes) {
+                int indexInCombinedTimes = combinedTimes.indexOf(timeItem);
+
+                // checking if a request of result item
+                if (indexInCombinedTimes <= numRequests) {
+                    currType = "RQ";
+                } else {
+                    currType = "RS";
+                }
+
+                currTimeString = getUTCstring(timeItem);
+
+                currFrameID = combinedFrameIds.get(indexInCombinedTimes);
+
+                TableRow tableRow = new TableRow(this);
+
+                TextView itemTime = new TextView(this);
+                itemTime.setText(currTimeString);
+                itemTime.setPadding(5, 0, 0, 5);
+                tableRow.addView(itemTime);// add the column to the table row here
+
+                TextView itemType = new TextView(this);
+                itemType.setText(currType);
+                itemType.setPadding(5, 5, 0, 5);
+                tableRow.addView(itemType);// add the column to the table row here
+
+                TextView itemFrameId = new TextView(this);
+                String currServerPort = String.valueOf(currFrameID);
+                itemFrameId.setText(currServerPort);
+                itemFrameId.setPadding(5, 5, 0, 5);
+                tableRow.addView(itemFrameId);// add the column to the table row here
+
+                TextView itemInfo = new TextView(this);
 //            itemFrameId.setText(currServerPort);
-            itemFrameId.setPadding(5, 5, 0, 5);
-            tableRow.addView(itemInfo);// add the column to the table row here
+                itemFrameId.setPadding(5, 5, 0, 5);
+                tableRow.addView(itemInfo);// add the column to the table row here
 
-            tableLayout.addView(tableRow, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+                tableLayout.addView(tableRow, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+            }
         }
 
     }
 
     private void changeSessionStats(SQLiteDatabase db, TableLayout logTableLayout) {
-        statsSessionNumber = (EditText)findViewById(R.id.statsSessionNumber);
+        statsSessionNumber = findViewById(R.id.statsSessionNumber);
         String selectedSession = String.valueOf(statsSessionNumber.getText());
 
         sharedPreferencesSession = getSharedPreferences("currSetupSettings", Context.MODE_PRIVATE);

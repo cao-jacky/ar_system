@@ -8,8 +8,6 @@ import android.view.View;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 
-import java.util.ArrayList;
-
 import fi.fivegear.remar.R;
 
 public class settingsProtocol extends Activity {

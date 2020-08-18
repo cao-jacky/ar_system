@@ -26,7 +26,7 @@
                 android:layout_centerHorizontal="true"
                 android:paddingTop="30dp"
                 android:paddingBottom="5dp"
-                android:text="Server Details"
+                android:text="@string/server_details"
                 android:textColor="#000000"
                 android:textSize="24sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +37,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:paddingBottom="5dp"
-                android:text="Currently set as:"
+                android:text="@string/currently_set_as"
                 android:textColor="#000000"
                 android:textSize="18sp"
                 app:layout_constraintTop_toBottomOf="@+id/textView4" />
@@ -78,7 +78,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:paddingBottom="3dp"
-                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2">
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout2"
+                tools:visibility="gone">
 
                 <TextView
                     android:id="@+id/textView"
@@ -115,7 +116,8 @@
                 app:layout_constraintBottom_toTopOf="@+id/textView5"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+                app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+                tools:visibility="gone" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 

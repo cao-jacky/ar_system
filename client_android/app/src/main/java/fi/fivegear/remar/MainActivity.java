@@ -33,10 +33,6 @@ import fi.fivegear.remar.helpers.DatabaseHelper;
 import fi.fivegear.remar.models.ServerInfo;
 
 public class MainActivity extends AppCompatActivity implements OnItemSelectedListener {
-
-    private static final String TAG = "ReMAR";
-    private double sessionTimeInitiated;
-
     private SharedPreferences sharedPreferencesSetup;
 
     private String currSessionNumber;
@@ -52,9 +48,6 @@ public class MainActivity extends AppCompatActivity implements OnItemSelectedLis
 
     protected Context context;
 
-    public TextView sessionController;
-
-    private DatabaseHelper db;
     private DatabaseHelper serverDatabase;
 
     @RequiresApi(api = Build.VERSION_CODES.Q)
@@ -120,16 +113,6 @@ public class MainActivity extends AppCompatActivity implements OnItemSelectedLis
         // settings confirmation button
         setARSettingsButton = findViewById(R.id.setARSettings);
         setARSettingsButton.setOnClickListener(v -> openARActivity());
-
-//        sessionTimeInitiated = System.currentTimeMillis();
-
-//        // preparing new entry into sessions database
-//        db = new DatabaseHelper(this);
-//        SessionInfo newSessionInfo = new SessionInfo(Integer.parseInt(newSessionNumber),
-//                String.valueOf(sessionTimeInitiated), "",
-//                0, 0, 0, 0, 0, 0, 0);
-//        long newSessionInfo_id = db.createSessionsEntry(newSessionInfo);
-
     }
 
     public void checkPermission() {

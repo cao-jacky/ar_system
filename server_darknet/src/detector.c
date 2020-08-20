@@ -2193,7 +2193,7 @@ void *ThreadUDPReceiverFunction(void *socket) {
         if (curFrame.dataType == MESSAGE_ECHO) {
 //            printf("[STATUS] Received echo message over UDP \n");
             charint echoID;
-            memcpy(tmp, &(buffer[4]), 4);
+            memcpy(tmp, buffer+4, 4);
             curFrame.frmID = *(int*)tmp;
             echoID.i = curFrame.frmID;
             char echo[4];
@@ -2217,19 +2217,19 @@ void *ThreadUDPReceiverFunction(void *socket) {
             continue;
         }
         if (curFrame.dataType == IMAGE_DETECT_SEGMENTED) {
-            memcpy(tmp, &(buffer[4]), 4); // frame ID
+            memcpy(tmp, buffer+4, 4); // frame ID
             currFrameID = *(int*)tmp;
 
-            memcpy(tmp, &(buffer[8]), 4); // current segment length
+            memcpy(tmp, buffer+8, 4); // current segment length
             segmentLength = *(int*)tmp;
 
-            memcpy(tmp, &(buffer[12]), 4); // total number of segments
+            memcpy(tmp, buffer+12, 4); // total number of segments
             totalSegments = *(int*)tmp;
 
-            memcpy(tmp, &(buffer[16]), 4); // current segment number
+            memcpy(tmp, buffer+16, 4); // current segment number
             currSegment = *(int*)tmp;
 
-            memcpy(tmp, &(buffer[segmentLength+20]), 4);
+            memcpy(tmp, buffer+segmentLength+20, 4);
             endCharacter = *(int*)tmp;
 
             if (endCharacter == END_INTEGER) {
@@ -2240,19 +2240,19 @@ void *ThreadUDPReceiverFunction(void *socket) {
                     }
 
                     // if current segment is the first one, select out total packet length
-                    memcpy(tmp, &(buffer[28]), 4);
+                    memcpy(tmp, buffer+28, 4);
                     curFrame.bufferSize = *(int*)tmp;
                     totalRequestLength = *(int*)tmp;
                     cout << "[STATUS] Total request size is supposed to be " << totalRequestLength;
                     cout << " and requires " << totalSegments << " segments" << endl;
 
-                    memcpy(tmp, &(buffer[24]), 4);
+                    memcpy(tmp, buffer+24, 4);
                     curFrame.frmID = *(int*)tmp;
 
                     if (curFrame.bufferSize==0) {continue;}
                     curFrame.buffer = new char[curFrame.bufferSize];
                     memset(curFrame.buffer, 0, curFrame.bufferSize);
-                    memcpy(curFrame.buffer, &(buffer[32]), segmentLength-12); // -8 ommits the frame ID and frame size
+                    memcpy(curFrame.buffer, buffer+32, segmentLength-12); // -12 ommits the frame ID and frame size
 
                     currBufferLength = 0; // reset the counter for buffer length
                     currBufferLength += (segmentLength-12);
@@ -2265,9 +2265,10 @@ void *ThreadUDPReceiverFunction(void *socket) {
                     if (currSegment-lastSegment == 1) {
                         // check whether current segment is chronologically correct
 
-                        memcpy(&(curFrame.buffer[currBufferLength]), &(buffer[20]), segmentLength);
+                        cout << currBufferLength << " " << 20 << " " <<  segmentLength << " " << totalRequestLength << endl;
+                        memcpy(curFrame.buffer+currBufferLength, buffer+20, segmentLength);
                         currBufferLength += (segmentLength);
-
+//
                         if (totalSegments == currSegment) {
                             // behaviour for final segment - check if payload length is correct
                             cout << "[STATUS] Received all packets, adding to processing buffer" << endl;

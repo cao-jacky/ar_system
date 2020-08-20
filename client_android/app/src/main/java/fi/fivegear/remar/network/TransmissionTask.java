@@ -3,6 +3,7 @@ package fi.fivegear.remar.network;
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.util.Log;
 import android.view.Gravity;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -22,9 +23,9 @@ import java.nio.ByteOrder;
 import java.nio.channels.DatagramChannel;
 import java.nio.channels.SocketChannel;
 import java.util.Arrays;
+import java.util.Objects;
 
 import fi.fivegear.remar.Constants;
-import fi.fivegear.remar.MainActivity;
 import fi.fivegear.remar.activities.AugmentedRealityActivity;
 import fi.fivegear.remar.helpers.DatabaseHelper;
 import fi.fivegear.remar.models.RequestEntry;
@@ -35,6 +36,7 @@ import static fi.fivegear.remar.Constants.IMAGE_DETECT_COMPLETE;
 import static fi.fivegear.remar.Constants.IMAGE_DETECT_SEGMENTED;
 import static fi.fivegear.remar.Constants.MESSAGE_META;
 import static fi.fivegear.remar.Constants.PACKET_STATUS;
+import static fi.fivegear.remar.Constants.TAG;
 import static fi.fivegear.remar.activities.AugmentedRealityActivity.currFrame;
 
 public class TransmissionTask extends Activity implements Runnable {
@@ -79,8 +81,6 @@ public class TransmissionTask extends Activity implements Runnable {
     private byte[] ack;
     private boolean ackBool;
     private byte[] tmp = new byte[4];
-
-    private MainActivity mainActivity = new MainActivity();
 
     private boolean isTCPConnectedServer = false;
 
@@ -132,7 +132,7 @@ public class TransmissionTask extends Activity implements Runnable {
         currWidth = sharedPreferencesSetup.getInt("currWidth", 1080);
 
         // set MAX_UDP_LENGTH with user selected variable
-        MAX_UDP_LENGTH = Float.parseFloat(sharedPreferencesSetup.getString("currUDPPayload", "50000"));
+        MAX_UDP_LENGTH = Float.parseFloat(Objects.requireNonNull(sharedPreferencesSetup.getString("currUDPPayload", "50000")));
 
         if (!isTCPConnectedServer) {
             try {

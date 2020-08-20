@@ -2183,6 +2183,7 @@ void *ThreadUDPReceiverFunction(void *socket) {
         recvfrom(sock, buffer, PACKET_SIZE, 0, (struct sockaddr *)&frontUDPAddr, &addrlenUDP);
         time_receivepic = what_time_is_it_now();
         frameBuffer curFrame;
+        ackUDP currAck;
 
         // obtaining what type of message is being sent
         memcpy(tmp, buffer, 4);
@@ -2192,7 +2193,7 @@ void *ThreadUDPReceiverFunction(void *socket) {
         if (curFrame.dataType == MESSAGE_ECHO) {
 //            printf("[STATUS] Received echo message over UDP \n");
             charint echoID;
-            memcpy(tmp, &(buffer[12]), 4);
+            memcpy(tmp, &(buffer[4]), 4);
             curFrame.frmID = *(int*)tmp;
             echoID.i = curFrame.frmID;
             char echo[4];
@@ -2239,29 +2240,30 @@ void *ThreadUDPReceiverFunction(void *socket) {
                     }
 
                     // if current segment is the first one, select out total packet length
-                    memcpy(tmp, &(buffer[24]), 4);
+                    memcpy(tmp, &(buffer[28]), 4);
                     curFrame.bufferSize = *(int*)tmp;
                     totalRequestLength = *(int*)tmp;
                     cout << "[STATUS] Total request size is supposed to be " << totalRequestLength;
                     cout << " and requires " << totalSegments << " segments" << endl;
 
-                    memcpy(tmp, &(buffer[20]), 4);
+                    memcpy(tmp, &(buffer[24]), 4);
                     curFrame.frmID = *(int*)tmp;
 
                     if (curFrame.bufferSize==0) {continue;}
                     curFrame.buffer = new char[curFrame.bufferSize];
                     memset(curFrame.buffer, 0, curFrame.bufferSize);
-                    memcpy(curFrame.buffer, &(buffer[28]), segmentLength-8); // -8 ommits the frame ID and frame size
+                    memcpy(curFrame.buffer, &(buffer[32]), segmentLength-12); // -8 ommits the frame ID and frame size
 
                     currBufferLength = 0; // reset the counter for buffer length
-                    currBufferLength += (segmentLength-8);
+                    currBufferLength += (segmentLength-12);
                     cout << ""; // do not remove, otherwise there's a segmentation fault for whatever reason
 
                     lastSegment = currSegment;
+                    currAck.statusNumber.i = 1; // status of 1, acknowledged packet
                 }
                 if (currSegment > 1) {
                     if (currSegment-lastSegment == 1) {
-//                        // check whether current segment is chronologically correct
+                        // check whether current segment is chronologically correct
 
                         memcpy(&(curFrame.buffer[currBufferLength]), &(buffer[20]), segmentLength);
                         currBufferLength += (segmentLength);
@@ -2272,16 +2274,16 @@ void *ThreadUDPReceiverFunction(void *socket) {
                             if (currBufferLength == totalRequestLength) {framesBufferUDP.push(curFrame);}
                         }
                         lastSegment = currSegment;
+                        currAck.statusNumber.i = 1; // status of 1, acknowledged packet
                     } else {
                         cout << "[ERROR] Current segment has not been received in order " << totalSegments << " " << currSegment << endl;
+                        currAck.statusNumber.i = 2; // status of 2, error with received segments, nuke this request
                     }
                 }
                 // upon successfully appending data into the buffer, send an acknowledgement packet to client
-                ackUDP currAck;
                 currAck.messageType.i = 4;
                 currAck.frameID.i = currFrameID;
                 currAck.segmentID.i = currSegment;
-                currAck.statusNumber.i = 1; // status of 1, acknowledged packet
 
                 ackBufferUDP.push(currAck); // adding acknowledgement to buffer
             }
@@ -2545,7 +2547,7 @@ void *ThreadUDPSenderFunction(void *socket) {
                     remoteUDPAddr.sin_port = htons(40000);
                     sendto(sock, ackBuffer, sizeof(ackBuffer), 0, (struct sockaddr *)&frontUDPAddr, addrlenUDP);
                     it_device++;}
-                    cout<<"[STATUS] Sent acknowledgement to client"<<endl;
+                    cout<<"[STATUS] Sent acknowledgement to client for segment "<<*(int*)&(ackBuffer[8])<<endl;
 
             }
 

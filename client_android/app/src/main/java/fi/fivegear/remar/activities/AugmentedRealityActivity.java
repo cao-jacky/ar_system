@@ -98,7 +98,7 @@ public class AugmentedRealityActivity extends AppCompatActivity implements Locat
         statsButton = findViewById(R.id.statsButton);
         statsButton.setOnClickListener(v -> openStatsActivity());
 
-        locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+        locationManager = (LocationManager)getSystemService(this.LOCATION_SERVICE);
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             return;
         }
@@ -201,6 +201,14 @@ public class AugmentedRealityActivity extends AppCompatActivity implements Locat
             }
         }
         return "?";
+    }
+
+    public void onStop() {
+        Log.i(Constants.TAG, " onStop() called.");
+        ARManager.getInstance().stop();
+        finish();
+        super.onStop();
+
     }
 
     class DrawOnTop extends View {

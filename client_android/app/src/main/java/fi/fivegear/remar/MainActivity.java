@@ -243,18 +243,6 @@ public class MainActivity extends AppCompatActivity implements OnItemSelectedLis
         MultiDex.install(this);
     }
 
-    public void onStop() {
-        Log.i(Constants.TAG, " onStop() called.");
-        ARManager.getInstance().stop();
-        finish();
-        super.onStop();
-
-    }
-
-    protected void onDestroy() {
-        super.onDestroy();
-    }
-
     @Override
     public void onPointerCaptureChanged(boolean hasCapture) {
 

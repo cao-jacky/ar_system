@@ -11,3 +11,5 @@ server_darknet/results/
 server_darknet/received.jpg
 
 *.o
+
+python/__pycache__/

@@ -84,6 +84,9 @@ public class TransmissionTask extends Activity implements Runnable {
 
     private boolean isTCPConnectedServer = false;
 
+    private double preprocessingBegin;
+    private double preprocessingEnd;
+
     public TransmissionTask(String selectedProtocol, DatagramChannel datagramChannel, SocketChannel socketChannel,
                             SocketAddress serverAddressUDP, SocketAddress serverAddressTCP, Context context, DatabaseHelper requestsDatabase,
                             String serverIP, int serverPort) {

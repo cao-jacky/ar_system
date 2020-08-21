@@ -2250,13 +2250,12 @@ void *ThreadUDPReceiverFunction(void *socket) {
                     curFrame.frmID = *(int*)tmp;
 
                     if (curFrame.bufferSize==0) {continue;}
-                    curFrame.buffer = new char[curFrame.bufferSize];
+                    curFrame.buffer = new char[PACKET_SIZE];
                     memset(curFrame.buffer, 0, curFrame.bufferSize);
                     memcpy(curFrame.buffer, buffer+32, segmentLength-12); // -12 ommits the frame ID and frame size
 
                     currBufferLength = 0; // reset the counter for buffer length
                     currBufferLength += (segmentLength-12);
-                    cout << ""; // do not remove, otherwise there's a segmentation fault for whatever reason
 
                     lastSegment = currSegment;
                     currAck.statusNumber.i = 1; // status of 1, acknowledged packet
@@ -2265,13 +2264,13 @@ void *ThreadUDPReceiverFunction(void *socket) {
                     if (currSegment-lastSegment == 1) {
                         // check whether current segment is chronologically correct
 
-                        cout << currBufferLength << " " << 20 << " " <<  segmentLength << " " << totalRequestLength << endl;
                         memcpy(curFrame.buffer+currBufferLength, buffer+20, segmentLength);
                         currBufferLength += (segmentLength);
-//
+
                         if (totalSegments == currSegment) {
                             // behaviour for final segment - check if payload length is correct
                             cout << "[STATUS] Received all packets, adding to processing buffer" << endl;
+
                             if (currBufferLength == totalRequestLength) {framesBufferUDP.push(curFrame);}
                         }
                         lastSegment = currSegment;

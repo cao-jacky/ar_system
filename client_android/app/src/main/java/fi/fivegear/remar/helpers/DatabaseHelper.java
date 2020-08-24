@@ -48,12 +48,15 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String KEY_REQUEST_ARRAY_LENGTH = "requestArrayLength";
     private static final String KEY_REQUEST_GPS_COORD = "requestGPSCoord";
     private static final String KEY_PROTOCOL = "protocol";
+    private static final String KEY_RESOLUTION = "resolution";
+    private static final String KEY_PRE_PROCESSING_TIME = "preProcessingTime";
 
     // result_items table - column names
     private static final String KEY_RESULTS_ID = "resultsID";
     private static final String KEY_UNIX_TIME_RESULTS_REC = "unixTimeResultsRec";
     private static final String KEY_RESULTS_GPS_COORD = "resultsGPSCoord";
     private static final String KEY_RECEIVED_RESULTS = "receivedResults";
+    private static final String KEY_POST_PROCESSING_TIME = "postProcessingTime";
 
     // sessions table - column names
     private static final String KEY_SESSION_TABLE_ID = "sessionTableID";
@@ -79,15 +82,17 @@ public class DatabaseHelper extends SQLiteOpenHelper {
             + TABLE_REQUEST + "(" + KEY_REQUEST_ID + " INTEGER PRIMARY KEY," + KEY_RECOGNITION_ID
             + " TEXT," + KEY_SESSION_ID + " INTEGER," + KEY_FRAME_ID + " INTEGER,"
             + KEY_UNIX_TIME_REQUEST_SENT + " INTEGER," + KEY_SERVER_IP + " TEXT," + KEY_SERVER_PORT
-            + " INTEGER," + KEY_REQUEST_ARRAY_LENGTH + " INTEGER," + KEY_REQUEST_GPS_COORD +
-            " TEXT," + KEY_PROTOCOL + " TEXT" + ")";
+            + " INTEGER," + KEY_REQUEST_ARRAY_LENGTH + " INTEGER," + KEY_REQUEST_GPS_COORD
+            + " TEXT," + KEY_PROTOCOL + " TEXT," + KEY_RESOLUTION  + " TEXT," + KEY_PRE_PROCESSING_TIME
+            + " TEXT" + ")";
 
     // result_items
     private static final String CREATE_TABLE_RESULT_ITEMS = "CREATE TABLE "
             + TABLE_RESULTS + "(" + KEY_RESULTS_ID + " INTEGER PRIMARY KEY," + KEY_RECOGNITION_ID
             + " TEXT," + KEY_SESSION_ID + " INTEGER," + KEY_FRAME_ID + " INTEGER,"
             + KEY_UNIX_TIME_RESULTS_REC + " INTEGER," + KEY_SERVER_IP + " TEXT," + KEY_SERVER_PORT
-            + " INTEGER," + KEY_RESULTS_GPS_COORD + " TEXT," + KEY_RECEIVED_RESULTS + " TEXT" + ")";
+            + " INTEGER," + KEY_RESULTS_GPS_COORD + " TEXT," + KEY_RECEIVED_RESULTS + " TEXT,"
+            + KEY_POST_PROCESSING_TIME + " TEXT" + ")";
 
     private static final String CREATE_TABLE_SESSIONS = "CREATE TABLE "
             + TABLE_SESSIONS + "(" + KEY_SESSION_TABLE_ID + " INTEGER PRIMARY KEY," + KEY_SESSION_ID
@@ -153,6 +158,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(KEY_REQUEST_ARRAY_LENGTH, requestEntry.getRequestArrayLength());
         values.put(KEY_REQUEST_GPS_COORD, requestEntry.getRequestGPSCoord());
         values.put(KEY_PROTOCOL, requestEntry.getProtocol());
+        values.put(KEY_RESOLUTION, requestEntry.getResolution());
+        values.put(KEY_PRE_PROCESSING_TIME, requestEntry.getPreProcessingTime());
 
         long request_id = db.insert(TABLE_REQUEST, null, values);
         return request_id;
@@ -170,6 +177,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         values.put(KEY_SERVER_PORT, resultsEntry.getServerPort());
         values.put(KEY_RESULTS_GPS_COORD, resultsEntry.getResultsGPSCoord());
         values.put(KEY_RECEIVED_RESULTS, resultsEntry.getReceivedResults());
+        values.put(KEY_POST_PROCESSING_TIME, resultsEntry.getPostProcessingTime());
 
         long results_id = db.insert(TABLE_RESULTS, null, values);
         return results_id;
@@ -241,6 +249,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 re.setRequestArrayLength(c.getInt(c.getColumnIndex(KEY_REQUEST_ARRAY_LENGTH)));
                 re.setRequestGPSCoord(c.getString(c.getColumnIndex(KEY_REQUEST_GPS_COORD)));
                 re.setProtocol(c.getString(c.getColumnIndex(KEY_PROTOCOL)));
+                re.setResolution(c.getString(c.getColumnIndex(KEY_RESOLUTION)));
+                re.setPreProcessingTime(c.getString(c.getColumnIndex(KEY_PRE_PROCESSING_TIME)));
 
                 requests.add(re);
             } while (c.moveToNext());
@@ -265,6 +275,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
                 re.setServerIP(c.getString(c.getColumnIndex(KEY_SERVER_IP)));
                 re.setServerPort(c.getInt(c.getColumnIndex(KEY_SERVER_PORT)));
                 re.setReceivedResults(c.getString(c.getColumnIndex(KEY_RECEIVED_RESULTS)));
+                re.setPostProcessingTime(c.getString(c.getColumnIndex(KEY_POST_PROCESSING_TIME)));
 
                 results.add(re);
             } while (c.moveToNext());

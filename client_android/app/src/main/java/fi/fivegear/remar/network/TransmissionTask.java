@@ -84,12 +84,12 @@ public class TransmissionTask extends Activity implements Runnable {
 
     private boolean isTCPConnectedServer = false;
 
-    private double preprocessingBegin;
-    private double preprocessingEnd;
+    private double preProcessingBegin;
+    private double preProcessingEnd;
 
     public TransmissionTask(String selectedProtocol, DatagramChannel datagramChannel, SocketChannel socketChannel,
-                            SocketAddress serverAddressUDP, SocketAddress serverAddressTCP, Context context, DatabaseHelper requestsDatabase,
-                            String serverIP, int serverPort) {
+                            SocketAddress serverAddressUDP, SocketAddress serverAddressTCP,
+                            Context context, DatabaseHelper requestsDatabase, String serverIP, int serverPort) {
         this.selectedProtocol = selectedProtocol;
         this.datagramChannel = datagramChannel;
         this.socketChannel = socketChannel;
@@ -150,6 +150,9 @@ public class TransmissionTask extends Activity implements Runnable {
 
         AugmentedRealityActivity.uploadStatus.setImageAlpha(0);
         if (dataType == IMAGE_DETECT) {
+            // start of client preprocessing
+            preProcessingBegin = System.currentTimeMillis();
+
             YUVMatTrans = frameData; // setting new mat array with the data from mat from camera data
 
             imageResolution = originalDataShape.size(); // this is the maximum possible size
@@ -208,7 +211,6 @@ public class TransmissionTask extends Activity implements Runnable {
                     messageType = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(IMAGE_DETECT_SEGMENTED).array();
 
                     ackBool = true; // set bool to true, allow segments to be sent
-
                     while (currOffset < currByteBufferLength) {
                         if (ackBool) {
                             if (currOffset == 0) {
@@ -249,12 +251,14 @@ public class TransmissionTask extends Activity implements Runnable {
                             ByteBuffer buffer = ByteBuffer.allocate(currSegmentContent.length).put(currSegmentContent);
                             buffer.flip();
                             datagramChannel.send(buffer, serverAddressUDP);
+                            if (numPackets == currSegmentNumber) {
+                                preProcessingEnd = System.currentTimeMillis();
+                            }
 
                             SharedPreferences udpAckSP = context.getSharedPreferences("udpAckSP", Context.MODE_PRIVATE);
                             Boolean udpAckStatus = udpAckSP.getBoolean("currUDPAck", false);
 
                             // release the lock
-
                             while(!udpAckStatus) {
                                 // constantly checking the variable and prevents new data from being sent
                                 udpAckStatus = udpAckSP.getBoolean("currUDPAck", false);
@@ -293,6 +297,7 @@ public class TransmissionTask extends Activity implements Runnable {
                     ByteBuffer buffer = ByteBuffer.allocate(packetContent.length).put(packetContent);
                     buffer.flip();
                     datagramChannel.send(buffer, serverAddressUDP);
+                    preProcessingEnd = System.currentTimeMillis();
 
                     SharedPreferences udpAckSP = context.getSharedPreferences("udpAckSP", Context.MODE_PRIVATE);
                     Boolean udpAckStatus = udpAckSP.getBoolean("currUDPAck", false);
@@ -329,6 +334,7 @@ public class TransmissionTask extends Activity implements Runnable {
                     ByteBuffer buffer = ByteBuffer.allocate(packetContent.length).put(packetContent);
                     buffer.flip();
                     socketChannel.write(buffer);
+                    preProcessingEnd = System.currentTimeMillis();
                 } catch (Exception e) {
                     sharedPreferencesSetup = context.getSharedPreferences("currSetupSettings", Context.MODE_PRIVATE);
                     SharedPreferences.Editor sessionEditor = sharedPreferencesSetup.edit();
@@ -344,10 +350,14 @@ public class TransmissionTask extends Activity implements Runnable {
 
             time = System.currentTimeMillis();
 
+            String currSelectedResolution = currHeight + "x" + currWidth;
+            float totalPreProcessingTime = (float) (preProcessingEnd-preProcessingBegin);
+            String totalPreProcessingTimeString = String.valueOf(totalPreProcessingTime);
+
             // Appending the sent information into the database table
             RequestEntry newRequestEntry = new RequestEntry("", Integer.parseInt(currSessionNumber),
                     frmID, String.valueOf(time), serverIP, serverPort, datasize+12,
-                    currLocation, selectedProtocol);
+                    currLocation, selectedProtocol, currSelectedResolution, totalPreProcessingTimeString);
             long newRequestsEntry_id = requestsDatabase.createRequestEntry(newRequestEntry);
 
             AugmentedRealityActivity.uploadStatus.setImageAlpha(255);

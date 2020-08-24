@@ -11,6 +11,8 @@ public class RequestEntry {
     int requestArrayLength;
     String requestGPSCoord;
     String protocol;
+    String resolution;
+    String preProcessingTime;
 
     // constructors
     public RequestEntry() {
@@ -18,7 +20,7 @@ public class RequestEntry {
 
     public RequestEntry(String recognitionID, int sessionID, int frameID, String unixTimeRequestSent,
                         String serverIP, int serverPort, int requestArrayLength, String requestGPSCoord,
-                        String protocol) {
+                        String protocol, String resolution, String preProcessingTime) {
         this.recognitionID = recognitionID;
         this.sessionID = sessionID;
         this.frameID = frameID;
@@ -28,6 +30,8 @@ public class RequestEntry {
         this.requestArrayLength = requestArrayLength;
         this.requestGPSCoord = requestGPSCoord;
         this.protocol = protocol;
+        this.resolution = resolution;
+        this.preProcessingTime = preProcessingTime;
     }
 
     // setter
@@ -71,6 +75,14 @@ public class RequestEntry {
         this.protocol = protocol;
     }
 
+    public void setResolution(String resolution) {
+        this.resolution = resolution;
+    }
+
+    public void setPreProcessingTime(String preProcessingTime) {
+        this.preProcessingTime = preProcessingTime;
+    }
+
     // getter
     public int getRequestID() {
         return requestID;
@@ -110,5 +122,13 @@ public class RequestEntry {
 
     public String getProtocol() {
         return protocol;
+    }
+
+    public String getResolution() {
+        return resolution;
+    }
+
+    public String getPreProcessingTime() {
+        return preProcessingTime;
     }
 }

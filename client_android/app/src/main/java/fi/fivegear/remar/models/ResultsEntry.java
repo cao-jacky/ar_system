@@ -10,13 +10,15 @@ public class ResultsEntry {
     int serverPort;
     String resultsGPSCoord;
     String receivedResults;
+    String postProcessingTime;
 
     // constructors
     public ResultsEntry() {
     }
 
     public ResultsEntry(String recognitionID, int sessionID, int frameID, String unixTimeResultsRec,
-                        String serverIP, int serverPort, String resultsGPSCoord, String receivedResults) {
+                        String serverIP, int serverPort, String resultsGPSCoord, String receivedResults,
+                        String postProcessingTime) {
         this.recognitionID = recognitionID;
         this.sessionID = sessionID;
         this.frameID = frameID;
@@ -25,6 +27,7 @@ public class ResultsEntry {
         this.serverPort = serverPort;
         this.resultsGPSCoord = resultsGPSCoord;
         this.receivedResults = receivedResults;
+        this.postProcessingTime = postProcessingTime;
     }
 
     // setter
@@ -64,6 +67,10 @@ public class ResultsEntry {
         this.receivedResults = receivedResults;
     }
 
+    public void setPostProcessingTime(String postProcessingTime) {
+        this.postProcessingTime = postProcessingTime;
+    }
+
     // getter
     public int getResultsID() {
         return resultsID;
@@ -99,5 +106,9 @@ public class ResultsEntry {
 
     public String getReceivedResults() {
         return receivedResults;
+    }
+
+    public String getPostProcessingTime() {
+        return postProcessingTime;
     }
 }

@@ -2,6 +2,7 @@ package fi.fivegear.remar.network;
 
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.util.Log;
 
 import java.io.IOException;
 import java.nio.ByteBuffer;
@@ -17,6 +18,7 @@ import fi.fivegear.remar.models.ResultsEntry;
 
 import static fi.fivegear.remar.Constants.RESULTS_STATUS;
 import static fi.fivegear.remar.Constants.RES_SIZE;
+import static fi.fivegear.remar.Constants.TAG;
 
 public class ReceivingTask implements Runnable {
 
@@ -45,6 +47,10 @@ public class ReceivingTask implements Runnable {
     private String resultItems;
 
     private String currLocation;
+
+    private double postProcessingBegin;
+    private double postProcessingEnd;
+
 
     public ReceivingTask(String selectedProtocol, DatagramChannel datagramChannel, SocketChannel socketChannel,
                          Context context, DatabaseHelper resultsDatabase, String serverIP, int serverPort){
@@ -76,6 +82,7 @@ public class ReceivingTask implements Runnable {
                 timeReceived = (double) time;
                 if (datagramChannel.receive(resPacket) != null) {
                     res = resPacket.array();
+                    postProcessingBegin = System.currentTimeMillis();
                 } else {
                     res = null;
                 }
@@ -87,6 +94,7 @@ public class ReceivingTask implements Runnable {
             try {
                 if (socketChannel.read(resPacket) != 0) {
                     res = resPacket.array();
+                    postProcessingBegin = System.currentTimeMillis();
                 } else {
                     res = null;
                 }
@@ -140,10 +148,15 @@ public class ReceivingTask implements Runnable {
                     }
 
                     resultItems = String.join(",", detectedStrings);
+                    postProcessingEnd = System.currentTimeMillis();
+
+                    float totalPostProcessingTime = (float) (postProcessingEnd-postProcessingBegin);
+                    String totalPostProcessingTimeString = String.valueOf(totalPostProcessingTime);
 
                     // submit results item into table
                     ResultsEntry newResultsEntry = new ResultsEntry("", Integer.parseInt(currSessionNumber),
-                            resultID, String.valueOf(time), serverIP, serverPort, currLocation, resultItems);
+                            resultID, String.valueOf(time), serverIP, serverPort, currLocation, resultItems,
+                            totalPostProcessingTimeString);
                     long newResultsEntry_id = resultsDatabase.createResultsEntry(newResultsEntry);
 
                     if (callback != null){

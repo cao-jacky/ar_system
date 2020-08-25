@@ -168,6 +168,7 @@ public class AugmentedRealityActivity extends AppCompatActivity implements Locat
         Log.i(Constants.TAG, " onStop() called.");
         ARManager.getInstance().stop();
         finish();
+        finishAndRemoveTask();
         super.onStop();
 
     }

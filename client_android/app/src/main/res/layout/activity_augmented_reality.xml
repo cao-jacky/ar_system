@@ -26,7 +26,9 @@
             android:background="#000"
             surfaceview:layout_constraintStart_toStartOf="parent"
             surfaceview:layout_constraintTop_toTopOf="parent"
-            tools:context="fi.fivegear.remar.activities.AugmentedRealityActivity" />
+            tools:context="fi.fivegear.remar.activities.AugmentedRealityActivity" >
+
+        </FrameLayout>
 
 
         <FrameLayout
@@ -72,6 +74,30 @@
                 android:layout_height="wrap_content"
                 android:contentDescription="@string/statistics_for_application"
                 android:src="@drawable/info_icon" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/killButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+
+            android:layout_marginTop="16dp"
+            android:background="@drawable/round_shape"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:padding="5dp"
+            android:visibility="visible"
+            surfaceview:layout_constraintStart_toEndOf="@+id/statsButton"
+            surfaceview:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/statistics_for_application"
+                android:src="@drawable/baseline_clear_24" />
 
         </FrameLayout>
 

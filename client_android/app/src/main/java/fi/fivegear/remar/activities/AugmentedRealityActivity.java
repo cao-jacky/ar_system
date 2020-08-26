@@ -9,17 +9,12 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Typeface;
-import android.hardware.SensorManager;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
-import android.net.ConnectivityManager;
-import android.net.NetworkInfo;
 import android.os.Build;
 import android.os.Bundle;
-import android.telephony.TelephonyManager;
 import android.util.DisplayMetrics;
-import android.util.Log;
 import android.view.Display;
 import android.view.View;
 import android.view.ViewGroup;
@@ -31,8 +26,6 @@ import android.widget.TextView;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
-
-import java.lang.reflect.Method;
 
 import fi.fivegear.remar.ARManager;
 import fi.fivegear.remar.Constants;
@@ -56,7 +49,7 @@ public class AugmentedRealityActivity extends AppCompatActivity implements Locat
     String currSessionNumber;
     TextView sessionGlanceString;
 
-    FrameLayout settingsButton, statsButton;
+    FrameLayout settingsButton, statsButton, killButton;
 
     protected LocationManager locationManager;
     Location network_loc;
@@ -99,6 +92,10 @@ public class AugmentedRealityActivity extends AppCompatActivity implements Locat
         // statistics button
         statsButton = findViewById(R.id.statsButton);
         statsButton.setOnClickListener(v -> openStatsActivity());
+
+        // kill app button
+        killButton = findViewById(R.id.killButton);
+        killButton.setOnClickListener(v -> killApp());
 
         locationManager = (LocationManager)getSystemService(this.LOCATION_SERVICE);
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
@@ -151,6 +148,10 @@ public class AugmentedRealityActivity extends AppCompatActivity implements Locat
         startActivity(intent);
     }
 
+    public void killApp(){
+        finishAffinity();
+    }
+
     public void onLocationChanged(Location location) {
         latitude =  location.getLatitude();
         longitude = location.getLongitude();
@@ -164,13 +165,33 @@ public class AugmentedRealityActivity extends AppCompatActivity implements Locat
         locationEditor.apply();
     }
 
-    public void onStop() {
-        Log.i(Constants.TAG, " onStop() called.");
-        ARManager.getInstance().stop();
-        finish();
-        finishAndRemoveTask();
-        super.onStop();
+    public void onResume() {
+//        setContentView(R.layout.activity_main);
+        super.onResume();
+    }
 
+    public void onStop() {
+        ARManager.getInstance().stop();
+//        finishAffinity();
+//        System.exit(0); // brute force exiting app
+//        finishAndRemoveTask();
+
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.putExtra("EXIT", true);
+        startActivity(intent);
+        super.onStop();
+    }
+
+    public void onDestroy() {
+//        finishAndRemoveTask();
+
+        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+        intent.putExtra("EXIT", true);
+        startActivity(intent);
+
+        super.onDestroy();
     }
 
     class DrawOnTop extends View {

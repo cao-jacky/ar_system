@@ -172,14 +172,7 @@ public class AugmentedRealityActivity extends AppCompatActivity implements Locat
 
     public void onStop() {
         ARManager.getInstance().stop();
-//        finishAffinity();
-//        System.exit(0); // brute force exiting app
-//        finishAndRemoveTask();
-
-        Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-        intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        intent.putExtra("EXIT", true);
-        startActivity(intent);
+        finishAffinity();
         super.onStop();
     }
 

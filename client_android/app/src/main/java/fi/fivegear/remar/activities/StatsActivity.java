@@ -11,6 +11,7 @@ import android.icu.text.SimpleDateFormat;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Environment;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.KeyEvent;
 import android.view.View;
@@ -34,6 +35,8 @@ import java.util.Date;
 import fi.fivegear.remar.R;
 import fi.fivegear.remar.helpers.CSVWriter;
 import fi.fivegear.remar.helpers.DatabaseHelper;
+
+import static fi.fivegear.remar.Constants.TAG;
 
 public class StatsActivity extends Activity {
     EditText statsSessionNumber;
@@ -124,8 +127,8 @@ public class StatsActivity extends Activity {
         if (requestsFrameID.size() > 500) {
             TextView statusText = findViewById(R.id.textView13);
             statusText.setText(">500 requests, not calculating stats on device");
-        } else {
-
+        }
+        if (requestsFrameID.size() != 0 && requestsFrameID.size() <= 500 ) {
             while (results.moveToNext()) {
                 resultsFrameID.add(results.getInt(3));
                 unixTimeReceived.add(results.getString(4));
@@ -264,6 +267,11 @@ public class StatsActivity extends Activity {
                 tableLayout.addView(tableRow, new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT, ViewGroup.LayoutParams.WRAP_CONTENT));
             }
         }
+        else {
+            TextView statusText = findViewById(R.id.textView13);
+            statusText.setText("No requests or result entries");
+        }
+
 
     }
 

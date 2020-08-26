@@ -96,7 +96,6 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:contentDescription="@string/statistics_for_application"
                 android:src="@drawable/baseline_clear_24" />
 
         </FrameLayout>

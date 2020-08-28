@@ -20,6 +20,7 @@ import org.opencv.core.Size;
 import org.opencv.highgui.Highgui;
 import org.opencv.highgui.VideoCapture;
 import org.opencv.imgproc.Imgproc;
+import org.opencv.videoio.VideoWriter;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -224,7 +225,7 @@ public class TransmissionTask extends Activity implements Runnable {
                 File mp4File = new File(mp4Image);
                 int mp4Size = (int) mp4File.length();
                 byte[] mp4Bytes = new byte[mp4Size];
-                
+
                 try {
                     BufferedInputStream buf = new BufferedInputStream(new FileInputStream(mp4File));
                     buf.read(mp4Bytes, 0, mp4Bytes.length);

@@ -29,8 +29,6 @@ public class Constants {
     static private final double[] distCoeffsData = new double[]{0, 0, 0, 0, 0};
     static private final double[][] cvToGlData = new double[][]{{1.0, 0, 0, 0}, {0, -1.0, 0, 0}, {0, 0, -1.0, 0}, {0, 0, 0, 1.0}};
 
-    static public final MatOfInt Image_Params = new MatOfInt(Highgui.IMWRITE_JPEG_QUALITY, 70);
-
     static public final boolean Show2DView = true;
 
     static public final MatOfDouble distCoeffs = new MatOfDouble();

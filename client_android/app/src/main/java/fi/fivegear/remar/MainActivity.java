@@ -8,6 +8,9 @@ import android.content.pm.PackageManager;
 import android.net.InetAddresses;
 import android.os.Build;
 import android.os.Bundle;
+import android.text.InputFilter;
+import android.text.Spanned;
+import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
 import android.widget.AdapterView;
@@ -18,6 +21,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -36,11 +40,15 @@ public class MainActivity extends AppCompatActivity implements OnItemSelectedLis
     private String currSessionNumber;
     private String lastServerIP;
     private String currProtocol;
+    private String currEncodingJPEG;
+    private String currEncodingPNG;
 
     private EditText setLowerFPS, setUpperFPS;
 
     private String selectedProtocol;
-    private String selectedResolution;
+    private String selectedItem;
+    private String jpegCompression;
+    private String pngCompression;
 
     private Button setARSettingsButton;
 
@@ -93,13 +101,22 @@ public class MainActivity extends AppCompatActivity implements OnItemSelectedLis
         });
 
         // creating the list of resolutions
-        Spinner staticSpinner = findViewById(R.id.setResolutionSpinner);
-        staticSpinner.setOnItemSelectedListener(this);
+        Spinner staticSpinnerResolutions = findViewById(R.id.setResolutionSpinner);
+        staticSpinnerResolutions.setOnItemSelectedListener(this);
 
-        ArrayAdapter<CharSequence> staticAdapter = ArrayAdapter.createFromResource(this,
+        ArrayAdapter<CharSequence> staticAdapterResolutions = ArrayAdapter.createFromResource(this,
                 R.array.resolutions_array, android.R.layout.simple_spinner_item);
-        staticAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        staticSpinner.setAdapter(staticAdapter);
+        staticAdapterResolutions.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        staticSpinnerResolutions.setAdapter(staticAdapterResolutions);
+
+        // creating the list of encodings
+        Spinner staticSpinnerEncodings = findViewById(R.id.setEncodingSpinner);
+        staticSpinnerEncodings.setOnItemSelectedListener(this);
+
+        ArrayAdapter<CharSequence> staticAdapterEncodings = ArrayAdapter.createFromResource(this,
+                R.array.encodings_array, android.R.layout.simple_spinner_item);
+        staticAdapterEncodings.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        staticSpinnerEncodings.setAdapter(staticAdapterEncodings);
 
         // centering the text of the FPS setting edit fields
         setLowerFPS = findViewById(R.id.setFPSLower);
@@ -197,12 +214,41 @@ public class MainActivity extends AppCompatActivity implements OnItemSelectedLis
         protocolEditor.putString("currProtocol", selectedProtocol);
         protocolEditor.apply();
 
-        // set selected resolution
-        String[] separatedResolution = selectedResolution.split(" x ");
-        SharedPreferences.Editor resolutionEditor = sharedPreferencesSetup.edit();
-        resolutionEditor.putInt("currHeight", Integer.parseInt(separatedResolution[0]));
-        resolutionEditor.putInt("currWidth", Integer.parseInt(separatedResolution[1]));
-        resolutionEditor.apply();
+        Log.d("ASD", selectedItem);
+
+        if (selectedItem.contains("x")) {
+            // set selected resolution if contains an "x"
+            String[] separatedResolution = selectedItem.split(" x ");
+            SharedPreferences.Editor resolutionEditor = sharedPreferencesSetup.edit();
+            resolutionEditor.putInt("currHeight", Integer.parseInt(separatedResolution[0]));
+            resolutionEditor.putInt("currWidth", Integer.parseInt(separatedResolution[1]));
+            resolutionEditor.apply();
+        }
+        if (selectedItem.contains("JPEG")) {
+            EditText encodingEditText = findViewById(R.id.setEncodingExtraSetting);
+            jpegCompression = String.valueOf(encodingEditText.getText());
+
+            // storing the encoding type selected and the compress percentage
+            SharedPreferences.Editor encodingEditor = sharedPreferencesSetup.edit();
+            encodingEditor.putString("currEncoding", selectedItem);
+            encodingEditor.putString("currEncodingJPEG", jpegCompression);
+            encodingEditor.apply();
+        }
+        if (selectedItem.contains("PNG")) {
+            EditText encodingEditText = findViewById(R.id.setEncodingExtraSetting);
+            pngCompression = String.valueOf(encodingEditText.getText());
+
+            SharedPreferences.Editor encodingEditor = sharedPreferencesSetup.edit();
+            encodingEditor.putString("currEncoding", selectedItem);
+            encodingEditor.putString("currEncodingPNG", pngCompression);
+            encodingEditor.apply();
+        }
+        if (selectedItem.contains("MP4") || selectedItem.contains("MPEG-TS")) {
+            // else, assume it is an encoding to deal with
+            SharedPreferences.Editor encodingEditor = sharedPreferencesSetup.edit();
+            encodingEditor.putString("currEncoding", selectedItem);
+            encodingEditor.apply();
+        }
 
         // set the sending rate
         EditText setLowerFPSEditText = findViewById(R.id.setFPSLower);
@@ -231,8 +277,47 @@ public class MainActivity extends AppCompatActivity implements OnItemSelectedLis
 
     //Performing action onItemSelected and onNothing selected
     @Override
-    public void onItemSelected(AdapterView<?> parent, View arg1, int position,long id) {
-        selectedResolution = String.valueOf(parent.getItemAtPosition(position));
+    public void onItemSelected(AdapterView<?> parent, View arg1, int position, long id) {
+        selectedItem = String.valueOf(parent.getItemAtPosition(position));
+
+        if (!selectedItem.contains("x")) {
+            if (selectedItem.contains("JPEG")) {
+                TextView encodingHelpText = findViewById(R.id.setEncodingExtraSettingHelpText);
+                encodingHelpText.setText(R.string.encoding_jpeg_help_text);
+                encodingHelpText.setVisibility(View.VISIBLE);
+
+                EditText encodingEditText = findViewById(R.id.setEncodingExtraSetting);
+
+                // pull last set quality from sharedPreferences
+                currEncodingJPEG = sharedPreferencesSetup.getString("currEncodingJPEG", "70");
+                encodingEditText.setText(currEncodingJPEG);
+                encodingEditText.setFilters(new InputFilter[]{new InputFilterMinMax("0", "100")});
+                encodingEditText.setVisibility(View.VISIBLE);
+            }
+            if (selectedItem.contains("PNG")) {
+                TextView encodingHelpText = findViewById(R.id.setEncodingExtraSettingHelpText);
+                encodingHelpText.setText(R.string.encoding_png_help_text);
+                encodingHelpText.setVisibility(View.VISIBLE);
+
+                EditText encodingEditText = findViewById(R.id.setEncodingExtraSetting);
+
+                // pull last set quality from sharedPreferences
+                currEncodingPNG = sharedPreferencesSetup.getString("currEncodingPNG", "3");
+                encodingEditText.setText(currEncodingPNG);
+                encodingEditText.setFilters(new InputFilter[]{new InputFilterMinMax("0", "9")});
+                encodingEditText.setVisibility(View.VISIBLE);
+            }
+            if (selectedItem.contains("MPEG-TS") || selectedItem.contains("MP4")) {
+                // hiding if the encoding is "standard"
+                TextView encodingHelpText = findViewById(R.id.setEncodingExtraSettingHelpText);
+                encodingHelpText.setVisibility(View.GONE);
+
+                EditText encodingEditText = findViewById(R.id.setEncodingExtraSetting);
+                encodingEditText.setVisibility(View.GONE);
+            }
+
+
+        }
     }
 
     @Override
@@ -247,6 +332,38 @@ public class MainActivity extends AppCompatActivity implements OnItemSelectedLis
 
     @Override
     public void onPointerCaptureChanged(boolean hasCapture) {
+    }
+
+    public class InputFilterMinMax implements InputFilter {
+
+        private int min, max;
+
+        public InputFilterMinMax(int min, int max) {
+            this.min = min;
+            this.max = max;
+        }
+
+        public InputFilterMinMax(String min, String max) {
+            this.min = Integer.parseInt(min);
+            this.max = Integer.parseInt(max);
+        }
+
+        @Override
+        public CharSequence filter(CharSequence source, int start, int end, Spanned dest, int dstart, int dend) {
+            try {
+                // Remove the string out of destination that is to be replaced
+                String newVal = dest.toString().substring(0, dstart) + dest.toString().substring(dend, dest.toString().length());
+                // Add the new string in
+                newVal = newVal.substring(0, dstart) + source.toString() + newVal.substring(dstart, newVal.length());
+                int input = Integer.parseInt(newVal);
+                if (isInRange(min, max, input))
+                    return null;
+            } catch (NumberFormatException nfe) { }
+            return "";
+        }
+        private boolean isInRange(int a, int b, int c) {
+            return b > a ? c >= a && c <= b : c >= b && c <= a;
+        }
     }
 
 }

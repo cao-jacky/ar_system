@@ -50,7 +50,7 @@ typedef __compar_fn_t comparison_fn_t;
 #define BOUNDARY 3
 #define PORT_UDP 50000
 #define PORT_TCP 55000
-#define PACKET_SIZE 200000
+#define PACKET_SIZE 1000000
 #define RES_SIZE 512
 #define TRAIN
 
@@ -70,6 +70,7 @@ socklen_t addrlenTCP = sizeof(remoteTCPAddr);
 
 bool isTCPClientAlive = false; // keeping track of TCP connection
 
+int receivedImageEncoding;
 int recognizedMarkerID;
 
 // queues for UDP frames and results
@@ -2239,8 +2240,12 @@ void *ThreadUDPReceiverFunction(void *socket) {
                         cout << "[ERROR] Last request did not receive all segments, missing " << totalSegments-lastSegment << endl;
                     }
 
-                    // if current segment is the first one, select out total packet length
+                    // select out the encoding of the image
                     memcpy(tmp, buffer+28, 4);
+                    receivedImageEncoding = *(int*)tmp;
+
+                    // if current segment is the first one, select out total packet length
+                    memcpy(tmp, buffer+32, 4);
                     curFrame.bufferSize = *(int*)tmp;
                     totalRequestLength = *(int*)tmp;
                     cout << "[STATUS] Total request size is supposed to be " << totalRequestLength;
@@ -2252,10 +2257,10 @@ void *ThreadUDPReceiverFunction(void *socket) {
                     if (curFrame.bufferSize==0) {continue;}
                     curFrame.buffer = new char[PACKET_SIZE];
                     memset(curFrame.buffer, 0, curFrame.bufferSize);
-                    memcpy(curFrame.buffer, buffer+32, segmentLength-12); // -12 ommits the frame ID and frame size
+                    memcpy(curFrame.buffer, buffer+36, segmentLength-16); // -12 ommits the frame ID and frame size
 
                     currBufferLength = 0; // reset the counter for buffer length
-                    currBufferLength += (segmentLength-12);
+                    currBufferLength += (segmentLength-16);
 
                     lastSegment = currSegment;
                     currAck.statusNumber.i = 1; // status of 1, acknowledged packet
@@ -2405,6 +2410,11 @@ void *ThreadProcessFunction(void *param) {
 
     char* protocolUsed;
 
+    Mat image_jpg;
+    vector<int> jpeg_params;
+    jpeg_params.push_back(cv::IMWRITE_JPEG_QUALITY);
+    jpeg_params.push_back(100);
+
     load_params();
 
     ofstream output_process("test_process.txt");
@@ -2433,19 +2443,74 @@ void *ThreadProcessFunction(void *param) {
         int frmSize = curFrame.bufferSize;
         char* frmdata = curFrame.buffer;
 
+        char* fileName;
+
         if(frmDataType != MESSAGE_ECHO) {
-            ofstream file("received.jpg", ios::out | ios::binary);
+            if (receivedImageEncoding == 0) {
+                // behaviour for if JPEG image
+                fileName = "received.jpg";
+                ofstream file(fileName, ios::out | ios::binary);
 
-            if(file.is_open()) {
-                file.write(frmdata, frmSize);
-                file.close();
+                if(file.is_open()) {
+                    file.write(frmdata, frmSize);
+                    file.close();
 
-                time_process_start = what_time_is_it_now();
-                res = detect();
+                    time_process_start = what_time_is_it_now();
+                    res = detect();
 
-                output_process << "time_process_pic of frameid of: " << frmID << " takes: '" <<  what_time_is_it_now() - time_process_start<< "' milliseconds" << endl;
-                objectDetected = true;
+                    output_process << "time_process_pic of frameid of: " << frmID << " takes: '" <<  what_time_is_it_now() - time_process_start<< "' milliseconds" << endl;
+                    objectDetected = true;
+                }
             }
+            if (receivedImageEncoding == 1) {
+                // behaviour for if PNG image
+                fileName = "received.png";
+                ofstream file(fileName, ios::out | ios::binary);
+
+                if(file.is_open()) {
+                    file.write(frmdata, frmSize);
+                    file.close();
+
+                    // convert to JPG from PNG
+                    Mat image = imread(fileName, -1);
+
+                    image.convertTo(image_jpg, CV_8UC3);
+                    imwrite("received.jpg", image_jpg);
+
+                    time_process_start = what_time_is_it_now();
+                    res = detect();
+
+                    output_process << "time_process_pic of frameid of: " << frmID << " takes: '" <<  what_time_is_it_now() - time_process_start<< "' milliseconds" << endl;
+                    objectDetected = true;
+                }
+
+            }
+            if (receivedImageEncoding == 2) {
+                // if mp4 file
+                fileName = "received.mp4";
+                ofstream file(fileName, ios::out | ios::binary);
+
+                if(file.is_open()) {
+                    file.write(frmdata, frmSize);
+                    file.close();
+
+                    // convert to JPG from MP4
+                    VideoCapture vid(fileName);
+
+                    Mat singleMP4Frame;
+                    vid.read(singleMP4Frame);
+                    imwrite("received.jpg", singleMP4Frame, jpeg_params);
+
+                    time_process_start = what_time_is_it_now();
+                    res = detect();
+
+                    output_process << "time_process_pic of frameid of: " << frmID << " takes: '" <<  what_time_is_it_now() - time_process_start<< "' milliseconds" << endl;
+                    objectDetected = true;
+                }
+            }
+
+
+
         }
         for(int i = 0; i < sizeof(curFrame.buffer); i++)
         {

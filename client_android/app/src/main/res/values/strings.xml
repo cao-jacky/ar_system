@@ -15,7 +15,7 @@
     <string name="remar_settings">ReMAR Client Setup</string>
     <string name="server">Server IP</string>
     <string name="server_ip">0.0.0.0</string>
-    <string name="protocol">Protocol</string>
+    <string name="protocol">Transport Layer Protocol</string>
     <string name="tcp">TCP</string>
     <string name="udp">UDP</string>
     <string name="resolution">Resolution (Height x Width)</string>
@@ -35,6 +35,9 @@
     <string name="statistics_for_application">Statistics for application</string>
     <string name="f">F?</string>
     <string name="s">S?</string>
+    <string name="image_encoding">Image Encoding</string>
+    <string name="encoding_png_help_text">PNG Compression Level (0–9, higher means smaller size and also longer compression time)</string>
+    <string name="encoding_jpeg_help_text">JPEG Quality (0–100, higher value means better quality)</string>
 
     <string-array name="resolutions_array">
         <item>1920 x 1080</item>
@@ -50,6 +53,13 @@
         <item>640 x 360</item>
         <item>426 x 240</item>
         <item>256 x 144</item>
+    </string-array>
+
+    <string-array name="encodings_array">
+        <item>JPEG</item>
+        <item>PNG</item>
+        <item>MP4</item>
+        <item>MPEG-TS</item>
     </string-array>
 
 </resources>

@@ -3,19 +3,28 @@ package fi.fivegear.remar.network;
 import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.os.Environment;
 import android.util.Log;
 import android.view.Gravity;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.arthenica.mobileffmpeg.FFmpeg;
+
 import org.opencv.core.Core;
 import org.opencv.core.CvType;
 import org.opencv.core.Mat;
 import org.opencv.core.MatOfByte;
+import org.opencv.core.MatOfInt;
 import org.opencv.core.Size;
 import org.opencv.highgui.Highgui;
+import org.opencv.highgui.VideoCapture;
 import org.opencv.imgproc.Imgproc;
 
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.net.SocketAddress;
 import java.nio.ByteBuffer;
@@ -45,6 +54,8 @@ public class TransmissionTask extends Activity implements Runnable {
 
     private int dataType;
     private int frmID;
+    private int encodingType;
+    private byte[] encodingTypeByte;
     private byte[] frmdataToSend;
     private byte[] frmid;
     private byte[] frmsize;
@@ -66,6 +77,7 @@ public class TransmissionTask extends Activity implements Runnable {
     private Context context;
     private SharedPreferences sharedPreferencesSetup;
     private String currSessionNumber;
+    private String currEncoding;
 
     private DatabaseHelper requestsDatabase;
     private String serverIP;
@@ -76,6 +88,8 @@ public class TransmissionTask extends Activity implements Runnable {
     private int currHeight, currWidth;
     private Size imageResolution;
     private Size imageSize;
+    private String imageExtension;
+    private MatOfInt imageParams;
 
     private ByteBuffer ackPacket = ByteBuffer.allocate(ACK_SIZE);
     private byte[] ack;
@@ -129,6 +143,7 @@ public class TransmissionTask extends Activity implements Runnable {
         sharedPreferencesSetup = context.getSharedPreferences("currSetupSettings", Context.MODE_PRIVATE);
         currSessionNumber = sharedPreferencesSetup.getString("currSessionNumber", "0");
         currLocation = sharedPreferencesSetup.getString("currLocation", "0");
+        currEncoding = sharedPreferencesSetup.getString("currEncoding", "JPEG");
 
         // obtaining the user selected resolutions
         currHeight = sharedPreferencesSetup.getInt("currHeight", 1920);
@@ -170,24 +185,74 @@ public class TransmissionTask extends Activity implements Runnable {
             frmdataToSend = null;
         } else if (dataType == IMAGE_DETECT) {
             MatOfByte imgbuff = new MatOfByte();
-            Highgui.imencode(".jpg", GrayScaled, imgbuff, Constants.Image_Params);
 
+            // dealing with the selected encoding
+            if (currEncoding.contains("JPEG") || currEncoding.contains("MP4")) {
+                encodingType = 0; // setting encodingType as JPEG, will be rewritten later on as needed
+                imageExtension = ".jpg";
+                int jpegQuality = Integer.parseInt(Objects.requireNonNull(sharedPreferencesSetup.getString("currEncodingJPEG", "70")));
+                imageParams = new MatOfInt(Highgui.IMWRITE_JPEG_QUALITY, jpegQuality);
+            }
+            if (currEncoding.contains("PNG")) {
+                encodingType = 1;
+                imageExtension = ".png";
+                int pngQuality = Integer.parseInt(Objects.requireNonNull(sharedPreferencesSetup.getString("currEncodingPNG", "3")));
+                imageParams = new MatOfInt(Highgui.IMWRITE_PNG_COMPRESSION, pngQuality);
+            }
+
+            Highgui.imencode(imageExtension, GrayScaled, imgbuff, imageParams);
             datasize = (int) (imgbuff.total() * imgbuff.channels());
             frmdataToSend = new byte[datasize];
 
             imgbuff.get(0, 0, frmdataToSend);
+
+            if (currEncoding.contains("MP4")) {
+                encodingType = 2;
+                // saving image as jpg then converting to mp4
+                File sdcard = new File(Environment.getExternalStorageDirectory(), "/ReMAR/image_transmission/");
+                if (!sdcard.exists()) { sdcard.mkdirs(); }
+
+                String jpgImage = sdcard + "/requestImage.jpg";
+                String mp4Image = sdcard + "/requestImage.mp4";
+
+                // writing JPEG image to storage, then convert to mp4
+                Highgui.imwrite(jpgImage, GrayScaled);
+                int convertJpgMp4 = FFmpeg.execute(new String[]{"-loglevel", "panic", "-loop", "1",
+                        "-y", "-i", jpgImage, "-codec:v", "libx264", "-t", "1", "-pix_fmt", "yuv420p",
+                        mp4Image});
+
+                File mp4File = new File(mp4Image);
+                int mp4Size = (int) mp4File.length();
+                byte[] mp4Bytes = new byte[mp4Size];
+                
+                try {
+                    BufferedInputStream buf = new BufferedInputStream(new FileInputStream(mp4File));
+                    buf.read(mp4Bytes, 0, mp4Bytes.length);
+                    buf.close();
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                datasize = mp4Size;
+                frmdataToSend = mp4Bytes;
+            }
         }
 
-        packetContent = new byte[12 + datasize];
+        packetContent = new byte[16 + datasize];
 
         frmid = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(frmID).array();
+        encodingTypeByte = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(encodingType).array();
         frmsize = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(datasize).array();
 
         System.arraycopy(frmid, 0, packetContent, 4, 4);
-        System.arraycopy(frmsize, 0, packetContent, 8, 4);
+        System.arraycopy(frmsize, 0, packetContent, 12, 4);
 
-        if (frmdataToSend != null)
-            System.arraycopy(frmdataToSend, 0, packetContent, 12, datasize);
+        if (frmdataToSend != null) {
+            System.arraycopy(frmdataToSend, 0, packetContent, 16, datasize);
+            System.arraycopy(encodingTypeByte, 0, packetContent, 8, 4);
+        }
 
         try {
             currByteBufferLength = packetContent.length;

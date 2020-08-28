@@ -2487,7 +2487,6 @@ void *ThreadProcessFunction(void *param) {
             }
             if (receivedImageEncoding == 2) {
                 // if mp4 file
-                fileName = "received.mp4";
                 ofstream file(fileName, ios::out | ios::binary);
 
                 if(file.is_open()) {

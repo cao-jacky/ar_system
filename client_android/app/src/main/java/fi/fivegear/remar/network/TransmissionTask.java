@@ -20,6 +20,7 @@ import org.opencv.core.Size;
 import org.opencv.highgui.Highgui;
 import org.opencv.highgui.VideoCapture;
 import org.opencv.imgproc.Imgproc;
+import org.opencv.video.Video;
 import org.opencv.videoio.VideoWriter;
 
 import java.io.BufferedInputStream;
@@ -48,6 +49,7 @@ import static fi.fivegear.remar.Constants.MESSAGE_META;
 import static fi.fivegear.remar.Constants.PACKET_STATUS;
 import static fi.fivegear.remar.Constants.TAG;
 import static fi.fivegear.remar.activities.AugmentedRealityActivity.currFrame;
+import static org.opencv.imgcodecs.Imgcodecs.imencode;
 
 public class TransmissionTask extends Activity implements Runnable {
     private float MAX_UDP_LENGTH = 50000;
@@ -201,7 +203,7 @@ public class TransmissionTask extends Activity implements Runnable {
                 imageParams = new MatOfInt(Highgui.IMWRITE_PNG_COMPRESSION, pngQuality);
             }
 
-            Highgui.imencode(imageExtension, GrayScaled, imgbuff, imageParams);
+            imencode(imageExtension, GrayScaled, imgbuff, imageParams);
             datasize = (int) (imgbuff.total() * imgbuff.channels());
             frmdataToSend = new byte[datasize];
 
@@ -213,14 +215,11 @@ public class TransmissionTask extends Activity implements Runnable {
                 File sdcard = new File(Environment.getExternalStorageDirectory(), "/ReMAR/image_transmission/");
                 if (!sdcard.exists()) { sdcard.mkdirs(); }
 
-                String jpgImage = sdcard + "/requestImage.jpg";
                 String mp4Image = sdcard + "/requestImage.mp4";
-
-                // writing JPEG image to storage, then convert to mp4
-                Highgui.imwrite(jpgImage, GrayScaled);
-                int convertJpgMp4 = FFmpeg.execute(new String[]{"-loglevel", "panic", "-loop", "1",
-                        "-y", "-i", jpgImage, "-codec:v", "libx264", "-t", "1", "-pix_fmt", "yuv420p",
-                        mp4Image});
+                
+                VideoWriter mp4Video = new VideoWriter(mp4Image, VideoWriter.fourcc('M', 'P', '4', '2'), 1, imageSize);
+                mp4Video.write(imgbuff);
+                mp4Video.release();
 
                 File mp4File = new File(mp4Image);
                 int mp4Size = (int) mp4File.length();

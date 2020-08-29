@@ -9,6 +9,9 @@ server_darknet/results/
 .ipynb_checkpoints
 
 server_darknet/received.jpg
+server_darknet/received.png
+server_darknet/received.mp4
+server_darknet/received.ts
 
 *.o
 

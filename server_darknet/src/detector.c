@@ -2487,6 +2487,7 @@ void *ThreadProcessFunction(void *param) {
             }
             if (receivedImageEncoding == 2) {
                 // if mp4 file
+                fileName = "received.mp4";
                 ofstream file(fileName, ios::out | ios::binary);
 
                 if(file.is_open()) {
@@ -2499,6 +2500,7 @@ void *ThreadProcessFunction(void *param) {
                     Mat singleMP4Frame;
                     vid.read(singleMP4Frame);
                     imwrite("received.jpg", singleMP4Frame, jpeg_params);
+                    vid.release();
 
                     time_process_start = what_time_is_it_now();
                     res = detect();
@@ -2507,8 +2509,30 @@ void *ThreadProcessFunction(void *param) {
                     objectDetected = true;
                 }
             }
+            if (receivedImageEncoding == 3) {
+                // if ts file
+                fileName = "received.ts";
+                ofstream file(fileName, ios::out | ios::binary);
 
+                if(file.is_open()) {
+                    file.write(frmdata, frmSize);
+                    file.close();
 
+                    // convert to JPG from MPEG-2 (.ts)
+                    VideoCapture vid(fileName);
+
+                    Mat singleTSFrame;
+                    vid.read(singleTSFrame);
+                    imwrite("received.jpg", singleTSFrame, jpeg_params);
+                    vid.release();
+
+                    time_process_start = what_time_is_it_now();
+                    res = detect();
+
+                    output_process << "time_process_pic of frameid of: " << frmID << " takes: '" <<  what_time_is_it_now() - time_process_start<< "' milliseconds" << endl;
+                    objectDetected = true;
+                }
+            }
 
         }
         for(int i = 0; i < sizeof(curFrame.buffer); i++)

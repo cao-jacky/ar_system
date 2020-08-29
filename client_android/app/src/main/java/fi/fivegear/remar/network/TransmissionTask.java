@@ -4,7 +4,6 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Environment;
-import android.util.Log;
 import android.view.Gravity;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -17,11 +16,7 @@ import org.opencv.core.Mat;
 import org.opencv.core.MatOfByte;
 import org.opencv.core.MatOfInt;
 import org.opencv.core.Size;
-import org.opencv.highgui.Highgui;
-import org.opencv.highgui.VideoCapture;
 import org.opencv.imgproc.Imgproc;
-import org.opencv.video.Video;
-import org.opencv.videoio.VideoWriter;
 
 import java.io.BufferedInputStream;
 import java.io.File;
@@ -47,9 +42,11 @@ import static fi.fivegear.remar.Constants.IMAGE_DETECT_COMPLETE;
 import static fi.fivegear.remar.Constants.IMAGE_DETECT_SEGMENTED;
 import static fi.fivegear.remar.Constants.MESSAGE_META;
 import static fi.fivegear.remar.Constants.PACKET_STATUS;
-import static fi.fivegear.remar.Constants.TAG;
 import static fi.fivegear.remar.activities.AugmentedRealityActivity.currFrame;
+import static org.opencv.imgcodecs.Imgcodecs.IMWRITE_JPEG_QUALITY;
+import static org.opencv.imgcodecs.Imgcodecs.IMWRITE_PNG_COMPRESSION;
 import static org.opencv.imgcodecs.Imgcodecs.imencode;
+import static org.opencv.imgcodecs.Imgcodecs.imwrite;
 
 public class TransmissionTask extends Activity implements Runnable {
     private float MAX_UDP_LENGTH = 50000;
@@ -190,17 +187,17 @@ public class TransmissionTask extends Activity implements Runnable {
             MatOfByte imgbuff = new MatOfByte();
 
             // dealing with the selected encoding
-            if (currEncoding.contains("JPEG") || currEncoding.contains("MP4")) {
+            if (currEncoding.contains("JPEG") || currEncoding.contains("MP4") || currEncoding.contains("MPEG-TS")) {
                 encodingType = 0; // setting encodingType as JPEG, will be rewritten later on as needed
                 imageExtension = ".jpg";
                 int jpegQuality = Integer.parseInt(Objects.requireNonNull(sharedPreferencesSetup.getString("currEncodingJPEG", "70")));
-                imageParams = new MatOfInt(Highgui.IMWRITE_JPEG_QUALITY, jpegQuality);
+                imageParams = new MatOfInt(IMWRITE_JPEG_QUALITY, jpegQuality);
             }
             if (currEncoding.contains("PNG")) {
                 encodingType = 1;
                 imageExtension = ".png";
                 int pngQuality = Integer.parseInt(Objects.requireNonNull(sharedPreferencesSetup.getString("currEncodingPNG", "3")));
-                imageParams = new MatOfInt(Highgui.IMWRITE_PNG_COMPRESSION, pngQuality);
+                imageParams = new MatOfInt(IMWRITE_PNG_COMPRESSION, pngQuality);
             }
 
             imencode(imageExtension, GrayScaled, imgbuff, imageParams);
@@ -211,15 +208,17 @@ public class TransmissionTask extends Activity implements Runnable {
 
             if (currEncoding.contains("MP4")) {
                 encodingType = 2;
-                // saving image as jpg then converting to mp4
                 File sdcard = new File(Environment.getExternalStorageDirectory(), "/ReMAR/image_transmission/");
                 if (!sdcard.exists()) { sdcard.mkdirs(); }
 
+                // saving image as jpg then converting to mp4
+                String jpgImage = sdcard + "/requestImage.jpg";
+                imwrite(jpgImage, GrayScaled);
+
                 String mp4Image = sdcard + "/requestImage.mp4";
-                
-                VideoWriter mp4Video = new VideoWriter(mp4Image, VideoWriter.fourcc('M', 'P', '4', '2'), 1, imageSize);
-                mp4Video.write(imgbuff);
-                mp4Video.release();
+                int convertJpgMp4 = FFmpeg.execute(new String[]{"-loglevel", "panic", "-loop", "1",
+                        "-y", "-i", jpgImage, "-codec:v", "libx264", "-preset", "ultrafast", "-t", "1", "-pix_fmt", "yuv420p",
+                        mp4Image});
 
                 File mp4File = new File(mp4Image);
                 int mp4Size = (int) mp4File.length();
@@ -237,6 +236,41 @@ public class TransmissionTask extends Activity implements Runnable {
 
                 datasize = mp4Size;
                 frmdataToSend = mp4Bytes;
+            }
+            if (currEncoding.contains("MPEG-TS")) {
+                encodingType = 3;
+                File sdcard = new File(Environment.getExternalStorageDirectory(), "/ReMAR/image_transmission/");
+                if (!sdcard.exists()) { sdcard.mkdirs(); }
+
+                // saving image as jpg then converting to mpeg-ts
+                String jpgImage = sdcard + "/requestImage.jpg";
+                imwrite(jpgImage, GrayScaled);
+
+                String mp4Image = sdcard + "/requestImage.mp4";
+                String tsImage = sdcard + "/requestImage.ts";
+
+                int convertJpgMp4 = FFmpeg.execute(new String[]{"-loglevel", "panic", "-loop", "1",
+                        "-y", "-i", jpgImage, "-codec:v", "libx264", "-t", "1", "-pix_fmt", "yuv420p",
+                        mp4Image});
+                int convertMp4Ts = FFmpeg.execute(new String[]{"-loglevel", "panic", "-i", mp4Image,
+                        "-c", "copy", "-bsf", "h264_mp4toannexb", tsImage});
+
+                File tsFile = new File(tsImage);
+                int tsSize = (int) tsFile.length();
+                byte[] tsBytes = new byte[tsSize];
+
+                try {
+                    BufferedInputStream buf = new BufferedInputStream(new FileInputStream(tsFile));
+                    buf.read(tsBytes, 0, tsBytes.length);
+                    buf.close();
+                } catch (FileNotFoundException e) {
+                    e.printStackTrace();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+
+                datasize = tsSize;
+                frmdataToSend = tsBytes;
             }
         }
 

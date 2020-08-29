@@ -69,6 +69,7 @@ struct detector_arguments {
 };
 
 struct frameBuffer {
+    int sessionID;
     int frmID;
     int dataType;
     int bufferSize;

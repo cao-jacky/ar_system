@@ -40,15 +40,15 @@
     <string name="encoding_jpeg_help_text">JPEG Quality (0–100, higher value means better quality)</string>
 
     <string-array name="resolutions_array">
-        <item>1920 x 1080</item>
-        <item>1600 x 900</item>
-        <item>1366 x 768</item>
-        <item>1280 x 720</item>
+<!--        <item>1920 x 1080</item>-->
+<!--        <item>1600 x 900</item>-->
+<!--        <item>1366 x 768</item>-->
+<!--        <item>1280 x 720</item>-->
         <item>1024 x 576</item>
         <item>960 x 540</item>
         <item>854 x 480</item>
-        <item>848 x 480</item>
-        <item>800 x 450</item>
+<!--        <item>848 x 480</item>-->
+<!--        <item>800 x 450</item>-->
         <item>768 x 432</item>
         <item>640 x 360</item>
         <item>426 x 240</item>

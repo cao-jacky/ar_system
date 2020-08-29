@@ -2529,7 +2529,7 @@ void *ThreadProcessFunction(void *param) {
                     time_process_start = what_time_is_it_now();
                     res = detect();
 
-                    output_process << "time_process_pic of frameid of: " << frmID << " takes: '" <<  what_time_is_it_now() - time_process_start<< "' milliseconds" << endl;
+                    output_process << "time_process_pic of frameid of: " << frmID << " takes: '" <<  what_time_is_it_now() - time_process_start<< "' seconds" << endl;
                     objectDetected = true;
                 }
             }

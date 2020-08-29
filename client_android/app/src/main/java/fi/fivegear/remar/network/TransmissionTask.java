@@ -250,10 +250,10 @@ public class TransmissionTask extends Activity implements Runnable {
                 String tsImage = sdcard + "/requestImage.ts";
 
                 int convertJpgMp4 = FFmpeg.execute(new String[]{"-loglevel", "panic", "-loop", "1",
-                        "-y", "-i", jpgImage, "-codec:v", "libx264", "-t", "1", "-pix_fmt", "yuv420p",
-                        mp4Image});
+                        "-y", "-i", jpgImage, "-codec:v", "libx264", "-preset", "ultrafast", "-t",
+                        "1", "-pix_fmt", "yuv420p", mp4Image});
                 int convertMp4Ts = FFmpeg.execute(new String[]{"-loglevel", "panic", "-i", mp4Image,
-                        "-c", "copy", "-bsf", "h264_mp4toannexb", tsImage});
+                        "-c", "copy", "-preset", "ultrafast", "-bsf", "h264_mp4toannexb", tsImage});
 
                 File tsFile = new File(tsImage);
                 int tsSize = (int) tsFile.length();

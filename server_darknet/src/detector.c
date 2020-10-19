@@ -28,6 +28,7 @@
 #include <iostream>
 #include <string>
 #include <curl/curl.h>
+#include <sstream>
 
 #ifndef __COMPAR_FN_T
 #define __COMPAR_FN_T
@@ -53,6 +54,9 @@ typedef __compar_fn_t comparison_fn_t;
 #define PACKET_SIZE 1000000
 #define RES_SIZE 512
 #define TRAIN
+
+std::stringstream log_file_name;
+std::ofstream output_log;
 
 using namespace std;
 using namespace cv;
@@ -2152,7 +2156,9 @@ void run_detector(int argc, char **argv)
 }
 
 void *ThreadUDPReceiverFunction(void *socket) {
-    printf("[STATUS] UDP Receiver Thread Created\n");
+    output_log << "[STATUS] UDP Receiver Thread Created\n";
+    cout << log_file_name.str() << endl;
+
     char tmp[4];
     char buffer[PACKET_SIZE];
     int sock = *((int*)socket);
@@ -2400,7 +2406,7 @@ void *ThreadTCPReceiverFunction(void *socket) {
 }
 
 void *ThreadProcessFunction(void *param) {
-    printf("[STATUS] Process Thread Created!\n");
+    output_log << "[STATUS] Process Thread Created!\n";
     recognizedMarker marker;
     bool objectDetected = false;
     result* res;
@@ -2718,7 +2724,17 @@ void *ThreadTCPCreator(void *socket) {
 
 void run_detector_server(int argc, char **argv)
 {
-    cout<<("[STATUS] Running detector code")<<endl;
+    std::time_t temp = std::time(0);
+    std::tm* t = std::gmtime(&temp);
+    std::stringstream ss; // or if you're going to print, just input directly into the output stream
+    ss << std::put_time(t, "%Y-%m-%d %I:%M:%S %p");
+    std::string output = ss.str();
+
+    log_file_name << "logs/" << output << ".txt";
+    ofstream output_log(log_file_name.str());
+    output_log.open(log_file_name.str());
+
+    output_log << "[STATUS] Running detector code\n";
 
     pthread_t senderUDPThread, receiverUDPThread, processThread, creatorTCPThread;
     int ret1, ret2, ret3, ret4;
@@ -2763,7 +2779,7 @@ void run_detector_server(int argc, char **argv)
 
     // have a listener for incoming TCP connections, and spawn the TCP receiver and sender threads as needed
 
-    printf("[STATUS] Server started with both UDP and TCP listeners/receivers, waiting for incoming clients\n");
+    output_log << "[STATUS] Server started with both UDP and TCP listeners/receivers, waiting for incoming clients"<<endl;
 
     ret1 = pthread_create(&receiverUDPThread, NULL, ThreadUDPReceiverFunction, (void *)&socketUDP);
     ret2 = pthread_create(&processThread, NULL, ThreadProcessFunction, NULL);

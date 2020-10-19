@@ -51,7 +51,9 @@
 <!--        <item>800 x 450</item>-->
         <item>768 x 432</item>
         <item>640 x 360</item>
+        <item>512 x 288</item>
         <item>426 x 240</item>
+        <item>384 x 216</item>
         <item>256 x 144</item>
     </string-array>
 

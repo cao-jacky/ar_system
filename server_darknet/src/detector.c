@@ -2156,8 +2156,8 @@ void run_detector(int argc, char **argv)
 }
 
 void *ThreadUDPReceiverFunction(void *socket) {
-    output_log << "[STATUS] UDP Receiver Thread Created\n";
-    cout << log_file_name.str() << endl;
+    cout << "[STATUS] UDP Receiver Thread Created\n";
+    // cout << log_file_name.str() << endl;
 
     char tmp[4];
     char buffer[PACKET_SIZE];
@@ -2192,13 +2192,17 @@ void *ThreadUDPReceiverFunction(void *socket) {
         frameBuffer curFrame;
         ackUDP currAck;
 
+        cout << "received something" << endl;
+
         // obtaining what type of message is being sent
         memcpy(tmp, buffer, 4);
         curFrame.dataType = *(int*)tmp;
 
+        cout << *(int*)tmp << endl;
+
         FILE *fd;
         if (curFrame.dataType == MESSAGE_ECHO) {
-//            printf("[STATUS] Received echo message over UDP \n");
+            cout << "[STATUS] Received echo message over UDP \n";
             charint echoID;
             memcpy(tmp, buffer+4, 4);
             curFrame.frmID = *(int*)tmp;
@@ -2406,7 +2410,7 @@ void *ThreadTCPReceiverFunction(void *socket) {
 }
 
 void *ThreadProcessFunction(void *param) {
-    output_log << "[STATUS] Process Thread Created!\n";
+    cout << "[STATUS] Process Thread Created!\n";
     recognizedMarker marker;
     bool objectDetected = false;
     result* res;
@@ -2703,6 +2707,7 @@ void *ThreadTCPCreator(void *socket) {
 
     int socketTCPClient;
 
+    cout<<("[STATUS] Waiting for incoming TCP connections")<<endl;
     while(1) {
         listen(sock,5);
         if ((socketTCPClient = accept(sock, (struct sockaddr *) &remoteTCPAddr, &addrlenTCP)) < 0)
@@ -2734,7 +2739,7 @@ void run_detector_server(int argc, char **argv)
     ofstream output_log(log_file_name.str());
     output_log.open(log_file_name.str());
 
-    output_log << "[STATUS] Running detector code\n";
+    cout << "[STATUS] Running detector code\n";
 
     pthread_t senderUDPThread, receiverUDPThread, processThread, creatorTCPThread;
     int ret1, ret2, ret3, ret4;
@@ -2779,19 +2784,19 @@ void run_detector_server(int argc, char **argv)
 
     // have a listener for incoming TCP connections, and spawn the TCP receiver and sender threads as needed
 
-    output_log << "[STATUS] Server started with both UDP and TCP listeners/receivers, waiting for incoming clients"<<endl;
+    cout << "[STATUS] Server started with both UDP and TCP listeners/receivers, waiting for incoming clients"<<endl;
 
     ret1 = pthread_create(&receiverUDPThread, NULL, ThreadUDPReceiverFunction, (void *)&socketUDP);
-    ret2 = pthread_create(&processThread, NULL, ThreadProcessFunction, NULL);
-    ret3 = pthread_create(&senderUDPThread, NULL, ThreadUDPSenderFunction, (void *)&socketUDP);
+    // ret2 = pthread_create(&processThread, NULL, ThreadProcessFunction, NULL);
+    // ret3 = pthread_create(&senderUDPThread, NULL, ThreadUDPSenderFunction, (void *)&socketUDP);
 
-    ret4 = pthread_create(&creatorTCPThread, NULL, ThreadTCPCreator, (void *)&socketTCP);
+    // ret4 = pthread_create(&creatorTCPThread, NULL, ThreadTCPCreator, (void *)&socketTCP);
 
     pthread_join(receiverUDPThread, NULL);
-    pthread_join(senderUDPThread, NULL);
-    pthread_join(processThread, NULL);
+    // pthread_join(senderUDPThread, NULL);
+    // pthread_join(processThread, NULL);
 
-    pthread_join(creatorTCPThread, NULL);
+    // pthread_join(creatorTCPThread, NULL);
 
     //if (gpus && gpu_list && ngpus > 1) free(gpus);
 }

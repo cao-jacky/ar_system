@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Environment;
+import android.util.Log;
 import android.view.Gravity;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -152,17 +153,6 @@ public class TransmissionTask extends Activity implements Runnable {
         // set MAX_UDP_LENGTH with user selected variable
         MAX_UDP_LENGTH = Float.parseFloat(Objects.requireNonNull(sharedPreferencesSetup.getString("currUDPPayload", "50000")));
 
-        if (!isTCPConnectedServer) {
-            try {
-                socketChannel.connect(serverAddressTCP);
-                socketChannel.configureBlocking(false);
-                isTCPConnectedServer = true;
-            } catch (IOException e) {
-                e.printStackTrace();
-                isTCPConnectedServer = false;
-            }
-        }
-
         AugmentedRealityActivity.uploadStatus.setImageAlpha(0);
         if (dataType == IMAGE_DETECT) {
             // start of client preprocessing
@@ -183,7 +173,8 @@ public class TransmissionTask extends Activity implements Runnable {
         if (dataType == MESSAGE_META) {
             datasize = 0;
             frmdataToSend = null;
-        } else if (dataType == IMAGE_DETECT) {
+        }
+        else if (dataType == IMAGE_DETECT) {
             MatOfByte imgbuff = new MatOfByte();
 
             // dealing with the selected encoding
@@ -429,6 +420,18 @@ public class TransmissionTask extends Activity implements Runnable {
 
             if (selectedProtocol.contains("TCP")) {
                 // attempt TCP connection, if failure, change the selected protocol to UDP and declare to user
+
+                if (!isTCPConnectedServer) {
+                    try {
+                        socketChannel.connect(serverAddressTCP);
+                        socketChannel.configureBlocking(false);
+                        isTCPConnectedServer = true;
+                    } catch (IOException e) {
+                        e.printStackTrace();
+                        isTCPConnectedServer = false;
+                    }
+                }
+
                 try {
                     ByteBuffer buffer = ByteBuffer.allocate(packetContent.length).put(packetContent);
                     buffer.flip();

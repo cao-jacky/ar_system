@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="client_android/app" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/client_android.iml" filepath="$PROJECT_DIR$/.idea/modules/client_android.iml" group="client_android" />
-      <module fileurl="file://$PROJECT_DIR$/opencv/opencv.iml" filepath="$PROJECT_DIR$/opencv/opencv.iml" group="client_android/opencv" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/client_android.iml" filepath="$PROJECT_DIR$/.idea/modules/client_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/client_android.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/client_android.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/opencv/client_android.opencv.iml" filepath="$PROJECT_DIR$/.idea/modules/opencv/client_android.opencv.iml" />
     </modules>
   </component>
 </project>

@@ -2198,7 +2198,7 @@ void *ThreadUDPReceiverFunction(void *socket) {
         memcpy(tmp, buffer, 4);
         curFrame.dataType = *(int*)tmp;
 
-        cout << *(int*)tmp << endl;
+        // cout << *(int*)tmp << endl;
 
         FILE *fd;
         if (curFrame.dataType == MESSAGE_ECHO) {
@@ -2304,18 +2304,25 @@ void *ThreadUDPReceiverFunction(void *socket) {
             }
         }
         if (curFrame.dataType == IMAGE_DETECT_COMPLETE) {
+            cout<<"received full image??"<<endl;
             memcpy(tmp, &(buffer[4]), 4); // frame ID
             curFrame.frmID = *(int*)tmp;
 
-            memcpy(tmp, &(buffer[8]), 4); // frame length
+            memcpy(tmp, &(buffer[12]), 4); // frame length
             curFrame.bufferSize = *(int*)tmp;
+
+            // select out the encoding of the image
+            memcpy(tmp, &(buffer[8]), 4);
+            receivedImageEncoding = *(int*)tmp;
 
             if (curFrame.bufferSize==0) { continue;}
             curFrame.buffer = new char[curFrame.bufferSize];
             memset(curFrame.buffer, 0, curFrame.bufferSize);
-            memcpy(curFrame.buffer, &(buffer[12]), curFrame.bufferSize);
+            memcpy(curFrame.buffer, &(buffer[16]), curFrame.bufferSize);
 
             framesBufferUDP.push(curFrame);
+
+            cout<<"pushed to frame buffer"<<endl;
 
             // upon successfully appending data into the buffer, send an acknowledgement packet to client
             ackUDP currAck;
@@ -2325,6 +2332,7 @@ void *ThreadUDPReceiverFunction(void *socket) {
             currAck.statusNumber.i = 1; // status of 1, acknowledged packet
 
             ackBufferUDP.push(currAck); // adding acknowledgement to buffer
+            cout<<"pushed to ack buffer"<<endl;
 
         }
     }
@@ -2787,16 +2795,16 @@ void run_detector_server(int argc, char **argv)
     cout << "[STATUS] Server started with both UDP and TCP listeners/receivers, waiting for incoming clients"<<endl;
 
     ret1 = pthread_create(&receiverUDPThread, NULL, ThreadUDPReceiverFunction, (void *)&socketUDP);
-    // ret2 = pthread_create(&processThread, NULL, ThreadProcessFunction, NULL);
-    // ret3 = pthread_create(&senderUDPThread, NULL, ThreadUDPSenderFunction, (void *)&socketUDP);
+    ret2 = pthread_create(&processThread, NULL, ThreadProcessFunction, NULL);
+    ret3 = pthread_create(&senderUDPThread, NULL, ThreadUDPSenderFunction, (void *)&socketUDP);
 
-    // ret4 = pthread_create(&creatorTCPThread, NULL, ThreadTCPCreator, (void *)&socketTCP);
+    ret4 = pthread_create(&creatorTCPThread, NULL, ThreadTCPCreator, (void *)&socketTCP);
 
     pthread_join(receiverUDPThread, NULL);
-    // pthread_join(senderUDPThread, NULL);
-    // pthread_join(processThread, NULL);
+    pthread_join(senderUDPThread, NULL);
+    pthread_join(processThread, NULL);
 
-    // pthread_join(creatorTCPThread, NULL);
+    pthread_join(creatorTCPThread, NULL);
 
     //if (gpus && gpu_list && ngpus > 1) free(gpus);
 }

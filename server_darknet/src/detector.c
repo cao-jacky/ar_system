@@ -2740,7 +2740,7 @@ void run_detector_server(int argc, char **argv)
     std::time_t temp = std::time(0);
     std::tm* t = std::gmtime(&temp);
     std::stringstream ss; // or if you're going to print, just input directly into the output stream
-    ss << std::put_time(t, "%Y-%m-%d %I:%M:%S %p");
+    ss << std::put_time(t, "%Y%m%d%I%M%S%p");
     std::string output = ss.str();
 
     log_file_name << "logs/" << output << ".txt";

@@ -77,6 +77,7 @@ struct frameBuffer {
 };
 
 struct resBuffer {
+    charint sessionID;
     charint messageType;
     charint resID;
     charint resType;
@@ -85,6 +86,7 @@ struct resBuffer {
 };
 
 struct ackUDP {
+    charint sessionID;
     charint messageType;
     charint frameID;
     charint segmentID;

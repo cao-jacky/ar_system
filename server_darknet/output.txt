@@ -1,0 +1,3798 @@
+write in file[STATUS] Server started with both UDP and TCP listeners/receivers, waiting for incoming clients
+[STATUS] UDP Receiver Thread Created
+[STATUS] UDP Sender Thread Created!
+[STATUS] Waiting for incoming TCP connections
+[STATUS] Process Thread Created!
+net.optimized_memory = 0 
+mini_batch = 1, batch = 1, time_steps = 1, train = 0 
+
+ seen 64, trained: 32013 K-images (500 Kilo-batches_64) 
+received something
+[STATUS] Received echo message over UDP 
+[STATUS] UDP receiving from the 1 device, whose ip is 192.168.1.155
+[STATUS] device_ind now has increased to 2
+192.168.1.155 1
+received something
+[STATUS] Received echo message over UDP 
+[STATUS] UDP receiving from an old 1 device, whose ip is 192.168.1.155
+received something
+[STATUS] Received echo message over UDP 
+[STATUS] UDP receiving from an old 1 device, whose ip is 192.168.1.155
+received something
+[STATUS] Received echo message over UDP 
+[STATUS] UDP receiving from an old 1 device, whose ip is 192.168.1.155
+received something
+[STATUS] Received echo message over UDP 
+[STATUS] UDP receiving from an old 1 device, whose ip is 192.168.1.155
+received something
+[STATUS] Received echo message over UDP 
+[STATUS] UDP receiving from an old 1 device, whose ip is 192.168.1.155
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 0
+received something
+[ERROR] Current segment has not been received in order 2 2
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.263000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.872000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.311000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.432000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.991000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.256000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+[STATUS] Sent acknowledgement to client for segment 2
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.135000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.110000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.919000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.136000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.223000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.389000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.660000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.253000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.147000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.728000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.901000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.738000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.988000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.742000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.740000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.079000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.985000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.716000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.048000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.750000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.981000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+[STATUS] Sent acknowledgement to client for segment 2
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Predicted in 3.557000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.423000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.287000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.670000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.734000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.197000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.847000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.269000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.184000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.658000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.409000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.633000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.836000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.577000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.574000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.598000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.609000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.591000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.594000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.620000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.605000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.580000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.195000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.900000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.637000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.602000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.582000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.592000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.585000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.566000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.565000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.602000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.615000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.582000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.631000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.174000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.616000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.439000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+[STATUS] Sent acknowledgement to client for segment 2pushed to frame buffer
+
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.151000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.719000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.649000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.595000 milli-seconds.
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent results to client
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.597000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.588000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.589000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.607000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.594000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.604000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.607000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.601000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.624000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.616000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.599000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.116000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.787000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.657000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Predicted in 2.632000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.588000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.584000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.616000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.593000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.575000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.608000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.622000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.574000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.599000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.572000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.592000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.610000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.597000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.599000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.954000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Predicted in 2.774000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.654000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.605000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.609000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.595000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.908000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.740000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.582000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.593000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Predicted in 2.592000 milli-seconds.
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.567000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.619000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.612000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+received something[STATUS] Sent acknowledgement to client for segment 2
+
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.633000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.080000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.840000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.611000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.597000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.567000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Predicted in 2.618000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.624000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.609000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.628000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.593000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.586000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.616000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.597000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.604000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.629000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.597000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+[STATUS] Sent acknowledgement to client for segment pushed to frame buffer2
+pushed to ack buffer
+
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.316000 milli-seconds.
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent results to client
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.894000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.681000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.617000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.599000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.602000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.629000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.592000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.572000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.633000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.634000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.581000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.020000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.589000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.775000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+[STATUS] Sent acknowledgement to client for segment pushed to frame buffer
+pushed to ack buffer
+2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+[STATUS] Sent acknowledgement to client for segment 2
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Predicted in 3.152000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.829000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.763000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.970000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.789000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.612000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.584000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.592000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.584000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.040000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.916000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.742000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.577000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.659000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.589000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.591000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.195000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.819000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.669000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.628000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.638000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.580000 milli-seconds.
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent results to client
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.130000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.836000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 2.692000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 2.706000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 4.003000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.584000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.465000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.492000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.423000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.480000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.495000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.504000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.820000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.484000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.475000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.436000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.453000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.491000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.520000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.459000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.449000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.462000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.498000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.842000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.631000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.549000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.523000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.529000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.525000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+[STATUS] Sent acknowledgement to client for segment 2pushed to frame buffer
+
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+[STATUS] Sent acknowledgement to client for segment 2
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.912000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.518000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.457000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.518000 milli-seconds.
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent results to client
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.520000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.525000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.586000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.630000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.616000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.644000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.969000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.645000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.971000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.596000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.620000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 4.202000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.977000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.620000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.563000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.668000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.581000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.574000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.615000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.630000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.925000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.947000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.618000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.628000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.626000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.437000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.413000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.415000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.428000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.399000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.449000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.437000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.445000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 4.012000 milli-seconds.
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent results to client
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.502000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.489000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.440000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.440000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.399000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.412000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.439000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.567000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Predicted in 3.438000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.418000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.410000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.437000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.389000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.439000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.889000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Predicted in 3.592000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.450000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.468000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.432000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.392000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.438000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.476000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.474000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.368000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.431000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.686000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.505000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Predicted in 3.430000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.433000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.409000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.438000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.541000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.483000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.390000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 4.175000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.817000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.486000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.435000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.398000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Predicted in 3.435000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.410000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.397000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.447000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.433000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.850000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.456000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.465000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.408000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.431000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.396000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.438000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.435000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.419000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.401000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.844000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.439000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.651000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.451000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.382000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.417000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.636000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.776000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.460000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.434000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.443000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.435000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.428000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.431000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 4.214000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.466000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.427000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.445000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.449000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.432000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.397000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Predicted in 3.424000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.456000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Predicted in 3.439000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.393000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.890000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.532000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.462000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.394000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.440000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.459000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.463000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.458000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.591000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.481000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.456000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.428000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.396000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.407000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.403000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.567000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.442000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.440000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.453000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.574000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.480000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.702000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 4.173000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.571000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.794000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.443000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.398000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.443000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.395000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.458000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.404000 milli-seconds.
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent results to client
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.425000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.372000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.397000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.401000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.435000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.436000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.379000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Predicted in 3.397000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.432000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.551000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.507000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.388000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.498000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.451000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.500000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.435000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.462000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 4.011000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.608000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 4.032000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.626000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.538000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.398000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.413000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.808000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.825000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.895000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.847000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Predicted in 3.854000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.966000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.880000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 4.576000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 4.006000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.788000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.812000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.830000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.790000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.811000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.782000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.820000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Predicted in 4.680000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 4.425000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.845000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.767000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.837000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.844000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.832000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.771000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.792000 milli-seconds.
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent results to client
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.875000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 4.480000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 4.142000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.838000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.841000 milli-seconds.
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent results to client
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.834000 milli-seconds.
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent results to client
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.837000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.796000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.865000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.797000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.841000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.835000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.815000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.839000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.797000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.858000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.836000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.842000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.834000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.843000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.767000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.850000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 4.011000 milli-seconds.
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent results to client
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.861000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.843000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 4.417000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.849000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.814000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.843000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.892000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.842000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 4.669000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.852000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.816000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.851000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.793000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.847000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.846000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.865000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.849000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.817000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.848000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 4.121000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.867000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.769000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.848000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.847000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.803000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.837000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.847000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 4.239000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Predicted in 3.837000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 4.015000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.816000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.800000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.810000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.880000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 4.132000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.921000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 4.085000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 4.124000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.933000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Predicted in 3.836000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.782000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.838000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.849000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.867000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.872000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.847000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 4.093000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.845000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Predicted in 3.824000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.807000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.846000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.851000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.848000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.827000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.813000 milli-seconds.
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent results to client
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.847000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.790000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.798000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.838000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.860000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.818000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.795000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 4.826000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.850000 milli-seconds.
+received something
+received full image??
+[STATUS] Sent results to client
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.846000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.826000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.852000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.798000 milli-seconds.
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent results to client
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 4.177000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.818000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.870000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 4.231000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 4.081000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.819000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.840000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.776000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.822000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.835000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.850000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.818000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.780000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.840000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.840000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.888000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.841000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 4.149000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.821000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.841000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.794000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.829000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.866000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.852000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.806000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 4.307000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.971000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.908000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.846000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.857000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.847000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.843000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.849000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Predicted in 3.769000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 4.308000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 4.425000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.842000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.797000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.843000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.780000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.843000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.855000 milli-seconds.
+[STATUS] Sent results to client
+[STATUS] Predicted in 3.895000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.847000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 4.007000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.844000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.797000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.864000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.825000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.777000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.807000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.841000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.841000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.853000 milli-seconds.
+[STATUS] Sent results to client
+received something
+received full image??
+pushed to frame buffer
+pushed to ack buffer
+[STATUS] Sent acknowledgement to client for segment 2
+[STATUS] Predicted in 3.846000 milli-seconds.
+[STATUS] Sent results to client

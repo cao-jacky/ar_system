@@ -1,0 +1,357 @@
+1610962813938: [STATUS] Running detector code
+1610962813938: [STATUS] Server started with both UDP and TCP listeners/receivers, waiting for incoming clients
+1610962813938: [STATUS] Process Thread Created!
+[STATUS] UDP Sender Thread Created!
+1610962813938: [STATUS] UDP Receiver Thread Created[STATUS] Waiting for incoming TCP connections
+
+net.optimized_memory = 0 
+mini_batch = 1, batch = 1, time_steps = 1, train = 0 
+
+ seen 64, trained: 32013 K-images (500 Kilo-batches_64) 
+1610962820528: [STATUS] Received echo message over UDP for session 111
+1610962820528: [STATUS] Receiving over UDP from the 1 device, whose ip is 192.168.1.155 for session 111
+1610962820528: [STATUS] device_ind now has increased to 2
+1610962821215: [STATUS] Received echo message over UDP for session 111
+1610962821215: [STATUS] Receiving over UDP from an previous 1 device, whose ip is 192.168.1.155 for session 111
+1610962821215: [STATUS] Received echo message over UDP for session 111
+1610962821215: [STATUS] Receiving over UDP from an previous 1 device, whose ip is 192.168.1.155 for session 111
+1610962821225: [STATUS] Received echo message over UDP for session 111
+1610962821225: [STATUS] Receiving over UDP from an previous 1 device, whose ip is 192.168.1.155 for session 111
+1610962821420: [STATUS] Received echo message over UDP for session 111
+1610962821420: [STATUS] Receiving over UDP from an previous 1 device, whose ip is 192.168.1.155 for session 111
+1610962821420: [STATUS] Received echo message over UDP for session 111
+1610962821420: [STATUS] Receiving over UDP from an previous 1 device, whose ip is 192.168.1.155 for session 111
+1610962821421: [STATUS] Received full image of size 25712 and encoding 0 for session 111
+1610962821421: [STATUS] Pushed frame 6 to frame buffer for session 111
+1610962821421: [STATUS] Pushed frame 6 to ack buffer for session 111
+1610962821421: [STATUS] Received full image of size 25787 and encoding 0 for session 111
+1610962821421: [STATUS] Pushed frame 7 to frame buffer for session 111
+1610962821421: [STATUS] Pushed frame 7 to ack buffer for session 111
+1610962821422: [STATUS] Received full image of size 25839 and encoding 0 for session 111
+1610962821422: [STATUS] Pushed frame 8 to frame buffer for session 111
+1610962821422: [STATUS] Pushed frame 8 to ack buffer for session 111
+1610962821422: [STATUS] Received full image of size 26655 and encoding 0 for session 111
+1610962821422: [STATUS] Pushed frame 9 to frame buffer for session 111
+1610962821422: [STATUS] Pushed frame 9 to ack buffer for session 111
+1610962821422: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962821422: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962821422: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962821422: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962821437: [STATUS] Received full image of size 26730 and encoding 0 for session 111
+1610962821437: [STATUS] Pushed frame 10 to frame buffer for session 111
+1610962821437: [STATUS] Pushed frame 10 to ack buffer for session 111
+1610962821438: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962821467: [STATUS] Received full image of size 33149 and encoding 0 for session 111
+1610962821467: [STATUS] Pushed frame 11 to frame buffer for session 111
+1610962821467: [STATUS] Pushed frame 11 to ack buffer for session 111
+1610962821468: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962821497: [STATUS] Predicted in3.812milli-seconds.
+1610962821497: [STATUS] Frame 6 from session 111 processed in 74.2412 ms
+1610962821498: [STATUS] Sent results to client for frame 6
+1610962821505: [STATUS] Predicted in3.875milli-seconds.
+1610962821505: [STATUS] Frame 7 from session 111 processed in 7.864 ms
+1610962821505: [STATUS] Sent results to client for frame 7
+1610962821513: [STATUS] Predicted in3.863milli-seconds.
+1610962821513: [STATUS] Frame 8 from session 111 processed in 7.85208 ms
+1610962821513: [STATUS] Sent results to client for frame 8
+1610962821521: [STATUS] Predicted in3.811milli-seconds.
+1610962821521: [STATUS] Frame 9 from session 111 processed in 7.85422 ms
+1610962821522: [STATUS] Sent results to client for frame 9
+1610962821529: [STATUS] Predicted in3.836milli-seconds.
+1610962821529: [STATUS] Frame 10 from session 111 processed in 7.87497 ms
+1610962821529: [STATUS] Sent results to client for frame 10
+1610962821537: [STATUS] Predicted in3.791milli-seconds.
+1610962821537: [STATUS] Frame 11 from session 111 processed in 7.85303 ms
+1610962821537: [STATUS] Sent results to client for frame 11
+1610962821598: [STATUS] Received full image of size 33636 and encoding 0 for session 111
+1610962821598: [STATUS] Pushed frame 12 to frame buffer for session 111
+1610962821598: [STATUS] Pushed frame 12 to ack buffer for session 111
+1610962821598: [STATUS] Received full image of size 40593 and encoding 0 for session 111
+1610962821598: [STATUS] Pushed frame 13 to frame buffer for session 111
+1610962821598: [STATUS] Pushed frame 13 to ack buffer for session 111
+1610962821599: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962821599: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962821602: [STATUS] Received full image of size 40528 and encoding 0 for session 111
+1610962821602: [STATUS] Pushed frame 14 to frame buffer for session 111
+1610962821602: [STATUS] Pushed frame 14 to ack buffer for session 111
+1610962821603: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962821608: [STATUS] Received full image of size 42380 and encoding 0 for session 111
+1610962821609: [STATUS] Pushed frame 15 to frame buffer for session 111
+1610962821609: [STATUS] Pushed frame 15 to ack buffer for session 111
+1610962821609: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962821610: [STATUS] Predicted in3.917milli-seconds.
+1610962821610: [STATUS] Frame 12 from session 111 processed in 10.8831 ms
+1610962821611: [STATUS] Sent results to client for frame 12
+1610962821622: [STATUS] Predicted in3.932milli-seconds.
+1610962821622: [STATUS] Frame 13 from session 111 processed in 11.7929 ms
+1610962821622: [STATUS] Sent results to client for frame 13
+1610962821634: [STATUS] Predicted in3.891milli-seconds.
+1610962821634: [STATUS] Frame 14 from session 111 processed in 11.729 ms
+1610962821634: [STATUS] Sent results to client for frame 14
+1610962821643: [STATUS] Predicted in3.853milli-seconds.
+1610962821643: [STATUS] Frame 15 from session 111 processed in 9.76682 ms
+1610962821644: [STATUS] Sent results to client for frame 15
+1610962821644: [STATUS] Received full image of size 42887 and encoding 0 for session 111
+1610962821644: [STATUS] Pushed frame 16 to frame buffer for session 111
+1610962821644: [STATUS] Pushed frame 16 to ack buffer for session 111
+1610962821645: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962821653: [STATUS] Predicted in3.867milli-seconds.
+1610962821653: [STATUS] Frame 16 from session 111 processed in 8.47101 ms
+1610962821653: [STATUS] Sent results to client for frame 16
+1610962821671: [STATUS] Received full image of size 44481 and encoding 0 for session 111
+1610962821671: [STATUS] Pushed frame 17 to frame buffer for session 111
+1610962821671: [STATUS] Pushed frame 17 to ack buffer for session 111
+1610962821673: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962821681: [STATUS] Predicted in4.427milli-seconds.
+1610962821681: [STATUS] Frame 17 from session 111 processed in 8.79407 ms
+1610962821681: [STATUS] Sent results to client for frame 17
+1610962821821: [STATUS] Received full image of size 44495 and encoding 0 for session 111
+1610962821822: [STATUS] Pushed frame 18 to frame buffer for session 111
+1610962821822: [STATUS] Pushed frame 18 to ack buffer for session 111
+1610962821822: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962821833: [STATUS] Received full image of size 45700 and encoding 0 for session 111
+1610962821834: [STATUS] Pushed frame 19 to frame buffer for session 111
+1610962821834: [STATUS] Pushed frame 19 to ack buffer for session 111
+1610962821834: [STATUS] Received full image of size 47798 and encoding 0 for session 111
+1610962821834: [STATUS] Pushed frame 20 to frame buffer for session 111
+1610962821834: [STATUS] Pushed frame 20 to ack buffer for session 111
+1610962821835: [STATUS] Received full image of size 46389 and encoding 0 for session 111
+1610962821835: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962821835: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962821835: [STATUS] Pushed frame 21 to frame buffer for session 111
+1610962821835: [STATUS] Pushed frame 21 to ack buffer for session 111
+1610962821836: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962821841: [STATUS] Received full image of size 47123 and encoding 0 for session 111
+1610962821841: [STATUS] Pushed frame 22 to frame buffer for session 111
+1610962821841: [STATUS] Pushed frame 22 to ack buffer for session 111
+1610962821843: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962821848: [STATUS] Predicted in4.173milli-seconds.
+1610962821848: [STATUS] Frame 18 from session 111 processed in 24.8311 ms
+1610962821848: [STATUS] Sent results to client for frame 18
+1610962821867: [STATUS] Predicted in3.979milli-seconds.
+1610962821867: [STATUS] Frame 19 from session 111 processed in 18.755 ms
+1610962821867: [STATUS] Sent results to client for frame 19
+1610962821874: [STATUS] Received full image of size 48243 and encoding 0 for session 111
+1610962821874: [STATUS] Pushed frame 23 to frame buffer for session 111
+1610962821874: [STATUS] Pushed frame 23 to ack buffer for session 111
+1610962821874: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962821878: [STATUS] Predicted in3.888milli-seconds.
+1610962821878: [STATUS] Frame 20 from session 111 processed in 11.373 ms
+1610962821879: [STATUS] Sent results to client for frame 20
+1610962821888: [STATUS] Predicted in3.867milli-seconds.
+1610962821888: [STATUS] Frame 21 from session 111 processed in 9.32789 ms
+1610962821888: [STATUS] Sent results to client for frame 21
+1610962821896: [STATUS] Predicted in3.807milli-seconds.
+1610962821896: [STATUS] Frame 22 from session 111 processed in 8.34203 ms
+1610962821897: [STATUS] Sent results to client for frame 22
+1610962821905: [STATUS] Predicted in3.86milli-seconds.
+1610962821905: [STATUS] Frame 23 from session 111 processed in 8.20112 ms
+1610962821906: [STATUS] Sent results to client for frame 23
+1610962821906: [STATUS] Received full image of size 47907 and encoding 0 for session 111
+1610962821906: [STATUS] Pushed frame 24 to frame buffer for session 111
+1610962821906: [STATUS] Pushed frame 24 to ack buffer for session 111
+1610962821907: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962821915: [STATUS] Predicted in3.843milli-seconds.
+1610962821915: [STATUS] Frame 24 from session 111 processed in 8.11815 ms
+1610962821915: [STATUS] Sent results to client for frame 24
+1610962822031: [STATUS] Received full image of size 47882 and encoding 0 for session 111
+1610962822031: [STATUS] Pushed frame 25 to frame buffer for session 111
+1610962822031: [STATUS] Pushed frame 25 to ack buffer for session 111
+1610962822031: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962822036: [STATUS] Received full image of size 48770 and encoding 0 for session 111
+1610962822036: [STATUS] Pushed frame 26 to frame buffer for session 111
+1610962822036: [STATUS] Pushed frame 26 to ack buffer for session 111
+1610962822037: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962822044: [STATUS] Received full image of size 46807 and encoding 0 for session 111
+1610962822044: [STATUS] Pushed frame 27 to frame buffer for session 111
+1610962822044: [STATUS] Pushed frame 27 to ack buffer for session 111
+1610962822045: [STATUS] Received full image of size 45505 and encoding 0 for session 111
+1610962822045: [STATUS] Pushed frame 28 to frame buffer for session 111
+1610962822045: [STATUS] Pushed frame 28 to ack buffer for session 111
+1610962822045: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962822045: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962822058: [STATUS] Predicted in4.222milli-seconds.
+1610962822058: [STATUS] Frame 25 from session 111 processed in 26.2001 ms
+1610962822058: [STATUS] Sent results to client for frame 25
+1610962822072: [STATUS] Predicted in3.865milli-seconds.
+1610962822072: [STATUS] Frame 26 from session 111 processed in 14.3831 ms
+1610962822073: [STATUS] Sent results to client for frame 26
+1610962822073: [STATUS] Received full image of size 45194 and encoding 0 for session 111
+1610962822073: [STATUS] Pushed frame 29 to frame buffer for session 111
+1610962822073: [STATUS] Pushed frame 29 to ack buffer for session 111
+1610962822074: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962822083: [STATUS] Predicted in3.809milli-seconds.
+1610962822083: [STATUS] Frame 27 from session 111 processed in 10.448 ms
+1610962822084: [STATUS] Sent results to client for frame 27
+1610962822092: [STATUS] Predicted in3.841milli-seconds.
+1610962822092: [STATUS] Frame 28 from session 111 processed in 8.89492 ms
+1610962822092: [STATUS] Sent results to client for frame 28
+1610962822100: [STATUS] Predicted in3.814milli-seconds.
+1610962822100: [STATUS] Frame 29 from session 111 processed in 8.15797 ms
+1610962822101: [STATUS] Sent results to client for frame 29
+1610962822109: [STATUS] Received full image of size 46399 and encoding 0 for session 111
+1610962822109: [STATUS] Pushed frame 30 to frame buffer for session 111
+1610962822109: [STATUS] Pushed frame 30 to ack buffer for session 111
+1610962822109: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962822118: [STATUS] Predicted in3.837milli-seconds.
+1610962822118: [STATUS] Frame 30 from session 111 processed in 8.14605 ms
+1610962822118: [STATUS] Sent results to client for frame 30
+1610962822282: [STATUS] Received full image of size 45486 and encoding 0 for session 111
+1610962822282: [STATUS] Pushed frame 31 to frame buffer for session 111
+1610962822282: [STATUS] Pushed frame 31 to ack buffer for session 111
+1610962822283: [STATUS] Received full image of size 46566 and encoding 0 for session 111
+1610962822283: [STATUS] Pushed frame 32 to frame buffer for session 111
+1610962822283: [STATUS] Pushed frame 32 to ack buffer for session 111
+1610962822283: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962822283: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962822283: [STATUS] Received full image of size 45318 and encoding 0 for session 111
+1610962822284: [STATUS] Pushed frame 33 to frame buffer for session 111
+1610962822284: [STATUS] Pushed frame 33 to ack buffer for session 111
+1610962822284: [STATUS] Received full image of size 46006 and encoding 0 for session 111
+1610962822284: [STATUS] Pushed frame 34 to frame buffer for session 111
+1610962822284: [STATUS] Pushed frame 34 to ack buffer for session 111
+1610962822284: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962822284: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962822308: [STATUS] Received full image of size 45006 and encoding 0 for session 111
+1610962822308: [STATUS] Pushed frame 36 to frame buffer for session 111
+1610962822308: [STATUS] Pushed frame 36 to ack buffer for session 111
+1610962822309: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962822310: [STATUS] Predicted in4.235milli-seconds.
+1610962822310: [STATUS] Frame 31 from session 111 processed in 26.5238 ms
+1610962822311: [STATUS] Sent results to client for frame 31
+1610962822329: [STATUS] Predicted in3.933milli-seconds.
+1610962822329: [STATUS] Frame 32 from session 111 processed in 18.4979 ms
+1610962822330: [STATUS] Sent results to client for frame 32
+1610962822340: [STATUS] Predicted in3.84milli-seconds.
+1610962822340: [STATUS] Frame 33 from session 111 processed in 11.0221 ms
+1610962822340: [STATUS] Received full image of size 40285 and encoding 0 for session 111
+1610962822340: [STATUS] Pushed frame 37 to frame buffer for session 111
+1610962822340: [STATUS] Pushed frame 37 to ack buffer for session 111
+1610962822341: [STATUS] Sent results to client for frame 33
+1610962822341: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962822349: [STATUS] Predicted in3.808milli-seconds.
+1610962822349: [STATUS] Frame 34 from session 111 processed in 9.27901 ms
+1610962822350: [STATUS] Sent results to client for frame 34
+1610962822358: [STATUS] Predicted in3.794milli-seconds.
+1610962822358: [STATUS] Frame 36 from session 111 processed in 8.1861 ms
+1610962822358: [STATUS] Sent results to client for frame 36
+1610962822366: [STATUS] Predicted in3.856milli-seconds.
+1610962822366: [STATUS] Frame 37 from session 111 processed in 8.12697 ms
+1610962822367: [STATUS] Sent results to client for frame 37
+1610962822375: [STATUS] Received full image of size 35977 and encoding 0 for session 111
+1610962822375: [STATUS] Pushed frame 38 to frame buffer for session 111
+1610962822375: [STATUS] Pushed frame 38 to ack buffer for session 111
+1610962822375: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962822383: [STATUS] Predicted in3.854milli-seconds.
+1610962822384: [STATUS] Frame 38 from session 111 processed in 8.10194 ms
+1610962822384: [STATUS] Sent results to client for frame 38
+1610962822403: [STATUS] Received full image of size 34729 and encoding 0 for session 111
+1610962822403: [STATUS] Pushed frame 39 to frame buffer for session 111
+1610962822403: [STATUS] Pushed frame 39 to ack buffer for session 111
+1610962822403: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962822412: [STATUS] Predicted in3.783milli-seconds.
+1610962822412: [STATUS] Frame 39 from session 111 processed in 8.08096 ms
+1610962822412: [STATUS] Sent results to client for frame 39
+1610962822432: [STATUS] Received full image of size 34789 and encoding 0 for session 111
+1610962822432: [STATUS] Pushed frame 40 to frame buffer for session 111
+1610962822432: [STATUS] Pushed frame 40 to ack buffer for session 111
+1610962822432: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962822443: [STATUS] Predicted in3.861milli-seconds.
+1610962822443: [STATUS] Frame 40 from session 111 processed in 10.421 ms
+1610962822444: [STATUS] Sent results to client for frame 40
+1610962822469: [STATUS] Received full image of size 37413 and encoding 0 for session 111
+1610962822469: [STATUS] Pushed frame 41 to frame buffer for session 111
+1610962822469: [STATUS] Pushed frame 41 to ack buffer for session 111
+1610962822470: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962822490: [STATUS] Predicted in4.216milli-seconds.
+1610962822490: [STATUS] Frame 41 from session 111 processed in 20.4601 ms
+1610962822491: [STATUS] Sent results to client for frame 41
+1610962822512: [STATUS] Received full image of size 38979 and encoding 0 for session 111
+1610962822512: [STATUS] Pushed frame 42 to frame buffer for session 111
+1610962822512: [STATUS] Pushed frame 42 to ack buffer for session 111
+1610962822512: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962822532: [STATUS] Predicted in4.21milli-seconds.
+1610962822532: [STATUS] Frame 42 from session 111 processed in 20.334 ms
+1610962822533: [STATUS] Sent results to client for frame 42
+1610962822539: [STATUS] Received full image of size 39475 and encoding 0 for session 111
+1610962822539: [STATUS] Pushed frame 43 to frame buffer for session 111
+1610962822539: [STATUS] Pushed frame 43 to ack buffer for session 111
+1610962822539: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962822562: [STATUS] Predicted in3.992milli-seconds.
+1610962822562: [STATUS] Frame 43 from session 111 processed in 22.8159 ms
+1610962822563: [STATUS] Sent results to client for frame 43
+1610962822570: [STATUS] Received full image of size 43424 and encoding 0 for session 111
+1610962822570: [STATUS] Pushed frame 44 to frame buffer for session 111
+1610962822570: [STATUS] Pushed frame 44 to ack buffer for session 111
+1610962822571: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962822582: [STATUS] Predicted in3.812milli-seconds.
+1610962822582: [STATUS] Frame 44 from session 111 processed in 10.952 ms
+1610962822583: [STATUS] Sent results to client for frame 44
+1610962822603: [STATUS] Received full image of size 46525 and encoding 0 for session 111
+1610962822603: [STATUS] Pushed frame 45 to frame buffer for session 111
+1610962822603: [STATUS] Pushed frame 45 to ack buffer for session 111
+1610962822604: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962822612: [STATUS] Predicted in3.915milli-seconds.
+1610962822612: [STATUS] Frame 45 from session 111 processed in 8.36301 ms
+1610962822612: [STATUS] Sent results to client for frame 45
+1610962822638: [STATUS] Received full image of size 45558 and encoding 0 for session 111
+1610962822638: [STATUS] Pushed frame 46 to frame buffer for session 111
+1610962822638: [STATUS] Pushed frame 46 to ack buffer for session 111
+1610962822638: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962822647: [STATUS] Predicted in3.849milli-seconds.
+1610962822647: [STATUS] Frame 46 from session 111 processed in 8.34298 ms
+1610962822647: [STATUS] Sent results to client for frame 46
+1610962822673: [STATUS] Received full image of size 48562 and encoding 0 for session 111
+1610962822673: [STATUS] Pushed frame 47 to frame buffer for session 111
+1610962822673: [STATUS] Pushed frame 47 to ack buffer for session 111
+1610962822674: [STATUS] Sent acknowledgement to client for segment 0 from frame 
+1610962822682: [STATUS] Predicted in3.827milli-seconds.
+1610962822682: [STATUS] Frame 47 from session 111 processed in 8.27003 ms
+1610962822683: [STATUS] Sent results to client for frame 47
+1610962822706: [STATUS] Received segment 1/2 for session 111
+1610962822709: [STATUS] Received segment 2/2 for session 111
+1610962822740: [STATUS] Received segment 1/2 for session 111
+1610962822741: [STATUS] Received segment 2/2 for session 111
+1610962822776: [STATUS] Received segment 1/2 for session 111
+1610962822779: [STATUS] Received segment 2/2 for session 111
+1610962822808: [STATUS] Received segment 1/2 for session 111
+1610962822808: [STATUS] Received segment 2/2 for session 111
+1610962822843: [STATUS] Received segment 1/2 for session 111
+1610962822844: [STATUS] Received segment 2/2 for session 111
+1610962822872: [STATUS] Received segment 1/2 for session 111
+1610962822875: [STATUS] Received segment 2/2 for session 111
+1610962822900: [STATUS] Received full image of size 49494 and encoding 0 for session 111
+1610962822900: [STATUS] Pushed frame 54 to frame buffer for session 111
+1610962822900: [STATUS] Pushed frame 54 to ack buffer for session 111
+1610962822901: [STATUS] Sent acknowledgement to client for segment 2 from frame 5
+1610962822928: [STATUS] Predicted in4.277milli-seconds.
+1610962822928: [STATUS] Frame 54 from session 111 processed in 26.7601 ms
+1610962822929: [STATUS] Sent results to client for frame 54
+1610962822934: [STATUS] Received segment 1/2 for session 111
+1610962822939: [STATUS] Received segment 2/2 for session 111
+1610962822967: [STATUS] Received full image of size 49014 and encoding 0 for session 111
+1610962822967: [STATUS] Pushed frame 56 to frame buffer for session 111
+1610962822967: [STATUS] Pushed frame 56 to ack buffer for session 111
+1610962822968: [STATUS] Sent acknowledgement to client for segment 2 from frame 7
+1610962822994: [STATUS] Predicted in4.24milli-seconds.
+1610962822994: [STATUS] Frame 56 from session 111 processed in 25.4691 ms
+1610962822995: [STATUS] Sent results to client for frame 56
+1610962822999: [STATUS] Received segment 1/2 for session 111
+1610962823005: [STATUS] Received segment 2/2 for session 111
+1610962823037: [STATUS] Received segment 1/2 for session 111
+1610962823039: [STATUS] Received segment 2/2 for session 111
+1610962823072: [STATUS] Received segment 1/2 for session 111
+1610962823073: [STATUS] Received segment 2/2 for session 111
+1610962823100: [STATUS] Received segment 1/2 for session 111
+1610962823101: [STATUS] Received segment 2/2 for session 111
+1610962823137: [STATUS] Received segment 1/2 for session 111
+1610962823139: [STATUS] Received segment 2/2 for session 111
+1610962823169: [STATUS] Received segment 1/2 for session 111
+1610962823172: [STATUS] Received segment 2/2 for session 111
+1610962823198: [STATUS] Received segment 1/2 for session 111
+1610962823200: [STATUS] Received segment 2/2 for session 111
+1610962823234: [STATUS] Received segment 1/2 for session 111
+1610962823236: [STATUS] Received segment 2/2 for session 111
+1610962823276: [STATUS] Received segment 1/2 for session 111
+1610962823276: [STATUS] Received segment 2/2 for session 111
+1610962823301: [STATUS] Received segment 1/2 for session 111

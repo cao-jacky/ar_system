@@ -60,6 +60,7 @@ std::ofstream output_log;
 
 using namespace std;
 using namespace cv;
+using namespace chrono;
 
 struct sockaddr_in localUDPAddr;
 struct sockaddr_in localTCPAddr;
@@ -1830,8 +1831,14 @@ struct result* detect()
     double time = get_time_point();
     network_predict(net, X);
     //network_predict_image(&net, im); letterbox = 1;
-    printf("[STATUS] Predicted in %lf milli-seconds.\n", ((double)get_time_point() - time) / 1000);
+
+    string ct19 = to_string(duration_cast< milliseconds >(
+        system_clock::now().time_since_epoch()
+    ).count());
+    // printf("[STATUS] Predicted in %lf milli-seconds.\n", ((double)get_time_point() - time) / 1000);
     //printf("%s: Predicted in %f seconds.\n", input, (what_time_is_it_now()-time));
+
+    cout << ct19 + ": [STATUS] Predicted in " << ((double)get_time_point() - time) / 1000 << " ms\n";
 
     int nboxes = 0;
     detection *dets = get_network_boxes(&net, im.w, im.h, thresh, hier_thresh, 0, 1, &nboxes, letter_box);
@@ -2156,13 +2163,14 @@ void run_detector(int argc, char **argv)
 }
 
 void *ThreadUDPReceiverFunction(void *socket) {
-    cout << "[STATUS] UDP Receiver Thread Created\n";
-    // cout << log_file_name.str() << endl;
+    string curr_time = to_string(duration_cast< milliseconds >(
+        system_clock::now().time_since_epoch()
+    ).count());
+    cout << curr_time + ": [STATUS] UDP Receiver Thread Created" << endl;
 
     char tmp[4];
     char buffer[PACKET_SIZE];
     int sock = *((int*)socket);
-//    cout << " sock is  " << sock << "\n" ;
     int device_ind = 1;
     int len = 20;
     char str[len];
@@ -2181,6 +2189,8 @@ void *ThreadUDPReceiverFunction(void *socket) {
     int currBufferLength = 0;
     int currFrameID = 0;
 
+    int currSessionID = 0;
+
     int endCharacter;
 
     //ofstream output_receive ("test_receive.txt");
@@ -2192,19 +2202,30 @@ void *ThreadUDPReceiverFunction(void *socket) {
         frameBuffer curFrame;
         ackUDP currAck;
 
-        cout << "received something" << endl;
-
         // obtaining what type of message is being sent
         memcpy(tmp, buffer, 4);
         curFrame.dataType = *(int*)tmp;
+
+        // session ID
+        memcpy(tmp, buffer+4, 4);
+        currSessionID = *(int*)tmp;
+        curFrame.sessionID = currSessionID;
+
+        // string ct14 = to_string(duration_cast< milliseconds >(
+        //     system_clock::now().time_since_epoch()
+        // ).count());
+        // cout << ct14 + ": [STATUS] Received echo message over UDP" << endl;
 
         // cout << *(int*)tmp << endl;
 
         FILE *fd;
         if (curFrame.dataType == MESSAGE_ECHO) {
-            cout << "[STATUS] Received echo message over UDP \n";
+            string ct1 = to_string(duration_cast< milliseconds >(
+                system_clock::now().time_since_epoch()
+            ).count());
+            cout << ct1 + ": [STATUS] Received echo message over UDP for session " << currSessionID << endl;
             charint echoID;
-            memcpy(tmp, buffer+4, 4);
+            memcpy(tmp, buffer+8, 4);
             curFrame.frmID = *(int*)tmp;
             echoID.i = curFrame.frmID;
             char echo[4];
@@ -2213,61 +2234,81 @@ void *ThreadUDPReceiverFunction(void *socket) {
             inet_ntop(AF_INET, &(frontUDPAddr.sin_addr), str_front, len);
             if (mapOfDevices.find(string(str_front)) != mapOfDevices.end()) {
                 //output_receive<<"receiving from an old " << (device_ind-1) << " device, whose ip is " << str_front << endl;
-                cout<<"[STATUS] UDP receiving from an old " << (device_ind-1) << " device, whose ip is " << str_front << endl;
+                string ct2 = to_string(duration_cast< milliseconds >(
+                    system_clock::now().time_since_epoch()
+                ).count());
+                cout << ct2 + ": [STATUS] Receiving over UDP from an previous " << (device_ind-1) << " device, whose ip is " << str_front << " for session " << currSessionID << endl;
                 continue;}
-            cout<<"[STATUS] UDP receiving from the " << device_ind << " device, whose ip is " << str_front << endl;
+            string ct3 = to_string(duration_cast< milliseconds >(
+                system_clock::now().time_since_epoch()
+            ).count());
+            cout << ct3 + ": [STATUS] Receiving over UDP from the " << device_ind << " device, whose ip is " << str_front << " for session " << currSessionID << endl;
             //pair<map<int, string>::iterator,bool> ret;
             mapOfDevices.insert(pair<string, int>(string(str_front), device_ind));
             device_ind += 1;
-            printf("[STATUS] device_ind now has increased to %d\n", device_ind);
+            string ct4 = to_string(duration_cast< milliseconds >(
+                system_clock::now().time_since_epoch()
+            ).count());
+            cout << ct4 + ": [STATUS] device_ind now has increased to " << device_ind << endl;
             map<string, int>::iterator it_device = mapOfDevices.begin();
             while(it_device != mapOfDevices.end()){
                 //output_receive << it_device->first << " "  << it_device->second << "\n" ;
-                cout << it_device->first << " "  << it_device->second << "\n" ;
+                // cout << it_device->first << " "  << it_device->second << "\n" ;
                 it_device ++;}
             continue;
         }
         if (curFrame.dataType == IMAGE_DETECT_SEGMENTED) {
-            memcpy(tmp, buffer+4, 4); // frame ID
+            memcpy(tmp, buffer+8, 4); // frame ID
             currFrameID = *(int*)tmp;
 
-            memcpy(tmp, buffer+8, 4); // current segment length
+            memcpy(tmp, buffer+12, 4); // current segment length
             segmentLength = *(int*)tmp;
 
-            memcpy(tmp, buffer+12, 4); // total number of segments
+            memcpy(tmp, buffer+16, 4); // total number of segments
             totalSegments = *(int*)tmp;
 
-            memcpy(tmp, buffer+16, 4); // current segment number
+            memcpy(tmp, buffer+20, 4); // current segment number
             currSegment = *(int*)tmp;
 
-            memcpy(tmp, buffer+segmentLength+20, 4);
+            memcpy(tmp, buffer+segmentLength+24, 4);
             endCharacter = *(int*)tmp;
+
+            string ct9 = to_string(duration_cast< milliseconds >(
+                system_clock::now().time_since_epoch()
+            ).count());
+            cout << ct9 + ": [STATUS] Received segment " << currSegment << "/" << totalSegments << " for session " << currSessionID << endl; 
 
             if (endCharacter == END_INTEGER) {
                 if (currSegment == 1) {
                     // check whether last request had complete number of segments
                     if (totalSegments != lastSegment) {
-                        cout << "[ERROR] Last request did not receive all segments, missing " << totalSegments-lastSegment << endl;
+                        string ct5 = to_string(duration_cast< milliseconds >(
+                            system_clock::now().time_since_epoch()
+                        ).count());
+                        cout << ct5 + ": [ERROR] Last request did not receive all segments, missing " << totalSegments-lastSegment << " for session " << currSessionID << endl;
                     }
 
                     // select out the encoding of the image
-                    memcpy(tmp, buffer+28, 4);
+                    memcpy(tmp, buffer+32, 4);
                     receivedImageEncoding = *(int*)tmp;
 
                     // if current segment is the first one, select out total packet length
-                    memcpy(tmp, buffer+32, 4);
+                    memcpy(tmp, buffer+36, 4);
                     curFrame.bufferSize = *(int*)tmp;
                     totalRequestLength = *(int*)tmp;
-                    cout << "[STATUS] Total request size is supposed to be " << totalRequestLength;
+                    string ct6 = to_string(duration_cast< milliseconds >(
+                        system_clock::now().time_since_epoch()
+                    ).count());
+                    cout << ct6 + ": [STATUS] Total request size is supposed to be " << totalRequestLength;
                     cout << " and requires " << totalSegments << " segments" << endl;
 
-                    memcpy(tmp, buffer+24, 4);
+                    memcpy(tmp, buffer+28, 4);
                     curFrame.frmID = *(int*)tmp;
 
                     if (curFrame.bufferSize==0) {continue;}
                     curFrame.buffer = new char[PACKET_SIZE];
                     memset(curFrame.buffer, 0, curFrame.bufferSize);
-                    memcpy(curFrame.buffer, buffer+36, segmentLength-16); // -12 ommits the frame ID and frame size
+                    memcpy(curFrame.buffer, buffer+40, segmentLength-20); // -12 ommits the frame ID and frame size
 
                     currBufferLength = 0; // reset the counter for buffer length
                     currBufferLength += (segmentLength-16);
@@ -2284,14 +2325,20 @@ void *ThreadUDPReceiverFunction(void *socket) {
 
                         if (totalSegments == currSegment) {
                             // behaviour for final segment - check if payload length is correct
-                            cout << "[STATUS] Received all packets, adding to processing buffer" << endl;
+                            string ct7 = to_string(duration_cast< milliseconds >(
+                                system_clock::now().time_since_epoch()
+                            ).count());
+                            cout << ct7 + ": [STATUS] Received all packets, adding to processing buffer" << endl;
 
                             if (currBufferLength == totalRequestLength) {framesBufferUDP.push(curFrame);}
                         }
                         lastSegment = currSegment;
                         currAck.statusNumber.i = 1; // status of 1, acknowledged packet
                     } else {
-                        cout << "[ERROR] Current segment has not been received in order " << totalSegments << " " << currSegment << endl;
+                        string ct8 = to_string(duration_cast< milliseconds >(
+                            system_clock::now().time_since_epoch()
+                        ).count());
+                        cout << ct8 + ": [ERROR] Current segment has not been received in order " << totalSegments << " " << currSegment << endl;
                         currAck.statusNumber.i = 2; // status of 2, error with received segments, nuke this request
                     }
                 }
@@ -2304,25 +2351,32 @@ void *ThreadUDPReceiverFunction(void *socket) {
             }
         }
         if (curFrame.dataType == IMAGE_DETECT_COMPLETE) {
-            cout<<"received full image??"<<endl;
-            memcpy(tmp, &(buffer[4]), 4); // frame ID
+            memcpy(tmp, &(buffer[8]), 4); // frame ID
             curFrame.frmID = *(int*)tmp;
 
-            memcpy(tmp, &(buffer[12]), 4); // frame length
+            memcpy(tmp, &(buffer[16]), 4); // frame length
             curFrame.bufferSize = *(int*)tmp;
 
             // select out the encoding of the image
-            memcpy(tmp, &(buffer[8]), 4);
+            memcpy(tmp, &(buffer[12]), 4);
             receivedImageEncoding = *(int*)tmp;
+            
+            string ct11 = to_string(duration_cast< milliseconds >(
+                system_clock::now().time_since_epoch()
+            ).count());
+            cout << ct11 + ": [STATUS] Received full image of size " << curFrame.bufferSize << " and encoding " << receivedImageEncoding << " for session " << currSessionID << endl;
 
             if (curFrame.bufferSize==0) { continue;}
             curFrame.buffer = new char[curFrame.bufferSize];
             memset(curFrame.buffer, 0, curFrame.bufferSize);
-            memcpy(curFrame.buffer, &(buffer[16]), curFrame.bufferSize);
+            memcpy(curFrame.buffer, &(buffer[20]), curFrame.bufferSize);
 
             framesBufferUDP.push(curFrame);
 
-            cout<<"pushed to frame buffer"<<endl;
+            string ct12 = to_string(duration_cast< milliseconds >(
+                system_clock::now().time_since_epoch()
+            ).count());
+            cout << ct12 + ": [STATUS] Pushed frame " << curFrame.frmID << " to frame buffer" << " for session " << currSessionID << endl;
 
             // upon successfully appending data into the buffer, send an acknowledgement packet to client
             ackUDP currAck;
@@ -2332,8 +2386,10 @@ void *ThreadUDPReceiverFunction(void *socket) {
             currAck.statusNumber.i = 1; // status of 1, acknowledged packet
 
             ackBufferUDP.push(currAck); // adding acknowledgement to buffer
-            cout<<"pushed to ack buffer"<<endl;
-
+            string ct13 = to_string(duration_cast< milliseconds >(
+                system_clock::now().time_since_epoch()
+            ).count());
+            cout << ct13 + ": [STATUS] Pushed frame " << curFrame.frmID << " to ack buffer" << " for session " << currSessionID << endl;
         }
     }
     //output_receive.close();
@@ -2418,7 +2474,10 @@ void *ThreadTCPReceiverFunction(void *socket) {
 }
 
 void *ThreadProcessFunction(void *param) {
-    cout << "[STATUS] Process Thread Created!\n";
+    string ct15 = to_string(duration_cast< milliseconds >(
+        system_clock::now().time_since_epoch()
+    ).count());
+    cout << ct15 + ": [STATUS] Process Thread Created!" << endl;
     recognizedMarker marker;
     bool objectDetected = false;
     result* res;
@@ -2455,6 +2514,7 @@ void *ThreadProcessFunction(void *param) {
             protocolUsed = "UDP";
         }
 
+        int sessionID = curFrame.sessionID;
         int frmID = curFrame.frmID;
         int frmDataType = curFrame.dataType;
 
@@ -2476,7 +2536,10 @@ void *ThreadProcessFunction(void *param) {
                     time_process_start = what_time_is_it_now();
                     res = detect();
 
-                    output_process << "time_process_pic of frameid of: " << frmID << " takes: '" <<  what_time_is_it_now() - time_process_start<< "' milliseconds" << endl;
+                    string ct16 = to_string(duration_cast< milliseconds >(
+                        system_clock::now().time_since_epoch()
+                    ).count());
+                    cout << ct16 + ": [STATUS] Frame " << frmID << " from session " << sessionID << " processed in " <<  (what_time_is_it_now() - time_process_start)*1000<< " ms" << endl;
                     objectDetected = true;
                 }
             }
@@ -2653,7 +2716,10 @@ void *ThreadUDPSenderFunction(void *socket) {
                     remoteUDPAddr.sin_port = htons(40000);
                     sendto(sock, ackBuffer, sizeof(ackBuffer), 0, (struct sockaddr *)&frontUDPAddr, addrlenUDP);
                     it_device++;}
-                    cout<<"[STATUS] Sent acknowledgement to client for segment "<<*(int*)&(ackBuffer[8])<<endl;
+                    string ct17 = to_string(duration_cast< milliseconds >(
+                        system_clock::now().time_since_epoch()
+                    ).count());
+                    cout << ct17 + ": [STATUS] Sent acknowledgement to client for segment "<<*(int*)&(ackBuffer[8])<<" from frame "<<*(int*)&(buffer[8])<<endl;
 
             }
 
@@ -2677,7 +2743,10 @@ void *ThreadUDPSenderFunction(void *socket) {
                 remoteUDPAddr.sin_port = htons(40000);
                 sendto(sock, buffer, sizeof(buffer), 0, (struct sockaddr *)&frontUDPAddr, addrlenUDP);
                 it_device++;}
-                cout<<"[STATUS] Sent results to client" << endl;
+                string ct18 = to_string(duration_cast< milliseconds >(
+                    system_clock::now().time_since_epoch()
+                ).count());
+                cout<<ct18+": [STATUS] Sent results to client for frame "<<*(int*)&(buffer[4])<< endl;
         }
     }
     //output_send.close();
@@ -2737,17 +2806,22 @@ void *ThreadTCPCreator(void *socket) {
 
 void run_detector_server(int argc, char **argv)
 {
-    std::time_t temp = std::time(0);
-    std::tm* t = std::gmtime(&temp);
-    std::stringstream ss; // or if you're going to print, just input directly into the output stream
-    ss << std::put_time(t, "%Y%m%d%I%M%S%p");
-    std::string output = ss.str();
-
+    time_t temp = time(0);
+    tm* t = gmtime(&temp);
+    stringstream ss; 
+    ss << put_time(t, "%Y%m%d_%H%M%S");
+    string output = ss.str();
     log_file_name << "logs/" << output << ".txt";
-    ofstream output_log(log_file_name.str());
-    output_log.open(log_file_name.str());
+    // ofstream output_log(log_file_name.str());
+    // output_log.open(log_file_name.str());
+    // output_log.close();
 
-    cout << "[STATUS] Running detector code\n";
+    freopen(log_file_name.str().c_str(),"w",stdout);
+
+    string curr_time = to_string(duration_cast< milliseconds >(
+        system_clock::now().time_since_epoch()
+    ).count());
+    cout << curr_time + ": [STATUS] Running detector code" << endl;
 
     pthread_t senderUDPThread, receiverUDPThread, processThread, creatorTCPThread;
     int ret1, ret2, ret3, ret4;
@@ -2773,6 +2847,9 @@ void run_detector_server(int argc, char **argv)
     localTCPAddr.sin_port = htons(PORT_TCP);
 
     if((socketUDP = socket(AF_INET, SOCK_DGRAM, 0)) < 0) {
+        string curr_time = to_string(duration_cast< milliseconds >(
+            system_clock::now().time_since_epoch()
+        ).count());
         printf("[ERROR] Opening UDP socket failed\n");
         exit(1);
     }
@@ -2792,7 +2869,10 @@ void run_detector_server(int argc, char **argv)
 
     // have a listener for incoming TCP connections, and spawn the TCP receiver and sender threads as needed
 
-    cout << "[STATUS] Server started with both UDP and TCP listeners/receivers, waiting for incoming clients"<<endl;
+    string ct10 = to_string(duration_cast< milliseconds >(
+        system_clock::now().time_since_epoch()
+    ).count());
+    cout << ct10 + ": [STATUS] Server started with both UDP and TCP listeners/receivers, waiting for incoming clients" << endl;
 
     ret1 = pthread_create(&receiverUDPThread, NULL, ThreadUDPReceiverFunction, (void *)&socketUDP);
     ret2 = pthread_create(&processThread, NULL, ThreadProcessFunction, NULL);

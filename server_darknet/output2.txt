@@ -1,0 +1,8 @@
+1610956168594: [STATUS] Running detector code
+[STATUS] Server started with both UDP and TCP listeners/receivers, waiting for incoming clients
+[STATUS] UDP Receiver Thread Created
+[STATUS] Process Thread Created!
+[STATUS] Waiting for incoming TCP connections
+[STATUS] UDP Sender Thread Created!
+net.optimized_memory = 0 
+mini_batch = 1, batch = 1, time_steps = 1, train = 0 

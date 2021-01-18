@@ -16,3 +16,5 @@ server_darknet/received.ts
 *.o
 
 python/__pycache__/
+
+client_android/.idea/

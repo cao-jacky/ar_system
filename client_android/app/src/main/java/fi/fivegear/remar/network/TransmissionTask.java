@@ -62,6 +62,7 @@ public class TransmissionTask extends Activity implements Runnable {
     private byte[] frmsize;
     private byte[] packetContent;
     private byte[] messageType;
+    private byte[] sessionNumber;
     private int datasize;
     private Mat frameData;
     private String selectedProtocol;
@@ -265,18 +266,20 @@ public class TransmissionTask extends Activity implements Runnable {
             }
         }
 
-        packetContent = new byte[16 + datasize];
+        packetContent = new byte[20 + datasize];
 
         frmid = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(frmID).array();
         encodingTypeByte = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(encodingType).array();
         frmsize = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(datasize).array();
+        sessionNumber = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(Integer.parseInt(currSessionNumber)).array();
 
-        System.arraycopy(frmid, 0, packetContent, 4, 4);
-        System.arraycopy(frmsize, 0, packetContent, 12, 4);
+        System.arraycopy(sessionNumber, 0, packetContent, 4, 4);
+        System.arraycopy(frmid, 0, packetContent, 8, 4);
+        System.arraycopy(frmsize, 0, packetContent, 16, 4);
 
         if (frmdataToSend != null) {
-            System.arraycopy(frmdataToSend, 0, packetContent, 16, datasize);
-            System.arraycopy(encodingTypeByte, 0, packetContent, 8, 4);
+            System.arraycopy(frmdataToSend, 0, packetContent, 20, datasize);
+            System.arraycopy(encodingTypeByte, 0, packetContent, 12, 4);
         }
 
         try {
@@ -322,11 +325,12 @@ public class TransmissionTask extends Activity implements Runnable {
                             }
 
                             System.arraycopy(messageType, 0, currSegmentContent, 0, 4);
-                            System.arraycopy(frmid, 0, currSegmentContent, 4, 4);
-                            System.arraycopy(segmentPacketLength, 0, currSegmentContent, 8,4);
-                            System.arraycopy(totalSegments, 0, currSegmentContent, 12, 4);
-                            System.arraycopy(currSegmentNumberInBytes, 0, currSegmentContent, 16, 4);
-                            System.arraycopy(currPacketSegment, 0, currSegmentContent, 20, (int)MAX_UDP_LENGTH);
+                            System.arraycopy(sessionNumber, 0, currSegmentContent, 4, 4);
+                            System.arraycopy(frmid, 0, currSegmentContent, 8, 4);
+                            System.arraycopy(segmentPacketLength, 0, currSegmentContent, 12,4);
+                            System.arraycopy(totalSegments, 0, currSegmentContent, 16, 4);
+                            System.arraycopy(currSegmentNumberInBytes, 0, currSegmentContent, 20, 4);
+                            System.arraycopy(currPacketSegment, 0, currSegmentContent, 24, (int)MAX_UDP_LENGTH);
 
                             // add integer to end of segment to verify on server whether full segment received
                             byte[] endInteger = ByteBuffer.allocate(4).order(ByteOrder.LITTLE_ENDIAN).putInt(33).array();
@@ -471,15 +475,13 @@ public class TransmissionTask extends Activity implements Runnable {
     }
 
     private void runThread() {
-        new Thread() {
-            public void run() {
-                try {
-                    runOnUiThread(() -> currFrame.setText("F" + frmID));
-                    Thread.sleep(300);
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
+        new Thread(() -> {
+            try {
+                runOnUiThread(() -> currFrame.setText("F" + frmID));
+                Thread.sleep(300);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
-        }.start();
+        }).start();
     }
 }

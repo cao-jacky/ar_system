@@ -2276,7 +2276,7 @@ void *ThreadUDPReceiverFunction(void *socket) {
             string ct9 = to_string(duration_cast< milliseconds >(
                 system_clock::now().time_since_epoch()
             ).count());
-            cout << ct9 + ": [STATUS] Received segment " << currSegment << "/" << totalSegments << " for session " << currSessionID << endl; 
+            cout << ct9 + ": [STATUS] Received segment " << currSegment << "/" << totalSegments << " for frame " << currFrameID << "for session " << currSessionID << endl; 
 
             if (endCharacter == END_INTEGER) {
                 if (currSegment == 1) {

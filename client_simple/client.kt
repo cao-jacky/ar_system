@@ -13,8 +13,8 @@ import java.nio.ByteOrder
 
 // Server details
 class ServerDetails {
-    var ServerIP: String = "10.42.0.1"
-    var ServerPort: Int = 52727
+    var ServerIP: String = "192.168.1.101"
+    var ServerPort: Int = 50001
 
     constructor()
     init{}

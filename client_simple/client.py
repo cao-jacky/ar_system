@@ -1,3 +1,4 @@
+from http import client
 import sys
 import getopt
 
@@ -19,7 +20,15 @@ def print_json(client_id, frame_no, message):
 def listen_data(sock):
     while True:
         data, addr = sock.recvfrom(60000)  # buffer size is 1024 bytes
-        print("received message: %s" % data)
+        
+        client_id = data[0:4].decode("utf-8")
+        frame_id = int.from_bytes(data[4:8], "little")
+        results_size = int.from_bytes(data[12:16], "little")
+        
+        print_json(
+            client_id, frame_id, f'Received results for frame {frame_id} that has a size of {results_size} marker(s)')
+        
+        # print("received message: %s" % data)
 
 
 def send_data(client_id, frame_type, frame_no, frame_buffer, sock, main_ip, main_port):
@@ -145,8 +154,8 @@ def main(argv):
                         if frame_count < 10:
                             cv2.imwrite(
                                 f'frame{frame_count}.jpg', frame_resized)
-                        else:
-                            break
+                        # else:
+                        #     break
                         time_end = time.time_ns()/1000/1000
                         print_json(
                             client_id, frame_count, f'Preprocessing of Frame {frame_count} took {time_end-time_start} ms')

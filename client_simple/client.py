@@ -163,8 +163,6 @@ def main(argv):
                         send_data(client_id, 2, frame_count, frame_buffer,
                                   sock, server_ip, server_port)
 
-                        print(server_ip, server_port)
-
                         frame_count += 1
                 elif mimestart == "image":
                     pass

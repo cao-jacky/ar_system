@@ -43,11 +43,18 @@ def send_data(client_id, frame_type, frame_no, frame_buffer, sock, main_ip, main
     payload_size = frame_len + 16
     frame_array = bytearray(payload_size)
 
-    frame_array[0:4] = bytearray(client_id, 'utf-8')       # client_id
-    frame_array[4:8] = (frame_no).to_bytes(4, 'little')    # frame_id
-    frame_array[8:12] = (frame_type).to_bytes(4, 'little')  # frame_type
-    frame_array[12:16] = frame_len.to_bytes(4, 'little')   # frame_len
-    frame_array[16:frame_len+16] = frame_bytes             # frame_data
+    # distributed system
+    frame_array[0:4]              = bytearray(client_id, 'utf-8')       # client_id
+    frame_array[4:8]              = (frame_no).to_bytes(4, 'little')    # frame_id
+    frame_array[8:12]             = (frame_type).to_bytes(4, 'little')  # frame_type
+    frame_array[12:16]            = frame_len.to_bytes(4, 'little')   # frame_len
+    frame_array[16:frame_len+16]  = frame_bytes             # frame_data
+    
+    # single process system
+    # frame_array[0:4] = (frame_no).to_bytes(4, 'little')    # frame_id
+    # frame_array[4:8] = (frame_type).to_bytes(4, 'little') # frame_type
+    # frame_array[8:12] = (frame_len).to_bytes(4, 'little')   # frame_len
+    # frame_array[12:frame_len+16] = frame_bytes             # frame_data
 
     if (frame_type == 2) & (frame_len < 2000):
         return
@@ -151,17 +158,18 @@ def main(argv):
                         encoding_params = [int(cv2.IMWRITE_JPEG_QUALITY), 90]
                         retval, frame_buffer = cv2.imencode(
                             '.jpg', frame_resized, encoding_params)
-                        if frame_count < 10:
-                            cv2.imwrite(
-                                f'frame{frame_count}.jpg', frame_resized)
+                        # if frame_count < 3:
+                        #     cv2.imwrite(
+                        #         f'frame{frame_count}.jpg', frame_resized)
                         # else:
                         #     break
                         time_end = time.time_ns()/1000/1000
                         print_json(
                             client_id, frame_count, f'Preprocessing of Frame {frame_count} took {time_end-time_start} ms')
 
+                        # if frame_count < 2:
                         send_data(client_id, 2, frame_count, frame_buffer,
-                                  sock, server_ip, server_port)
+                                sock, server_ip, server_port)
 
                         frame_count += 1
                 elif mimestart == "image":

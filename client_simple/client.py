@@ -64,33 +64,38 @@ def send_data(client_id, frame_type, frame_no, frame_buffer, sock, main_ip, main
         client_id, frame_no, f'Sent Frame {frame_no} of total payload length {payload_size} to main service for processing')
 
 
-def main(argv):
+def main():
     # defining server details
-    server_ip = ''
-    server_port = 0
+    # server_ip = ''
+    # server_port = 0
 
-    input_file = ''
-    try:
-        options = "h:s:p:f:"
-        long_options = ["help", "server_ip", "server_port", "input_file"]
+    # input_file = ''
+    # try:
+    #     options = "h:s:p:f:"
+    #     long_options = ["help", "server_ip", "server_port", "input_file"]
 
-        opts, args = getopt.getopt(argv, options, long_options)
-    except getopt.GetoptError:
-        print("client.py -s <main_ip> -p <main_port> -f <input_file>")
-        sys.exit(2)
+    #     opts, args = getopt.getopt(argv, options, long_options)
+    # except getopt.GetoptError:
+    #     print("client.py -s <main_ip> -p <main_port> -f <input_file>")
+    #     sys.exit(2)
 
-    for opt, arg in opts:
-        if opt == "-h":
-            print("client.py -s <main_ip> -p <main_port> -f <input_file>")
-            sys.exit()
-        elif opt in ("-s", "--server_ip"):
-            server_ip = arg
-        elif opt in ("-p", "--server_port"):
-            server_port = arg
-        elif opt in ("-f", "--input_file"):
-            input_file = arg
+    # for opt, arg in opts:
+    #     if opt == "-h":
+    #         print("client.py -s <main_ip> -p <main_port> -f <input_file>")
+    #         sys.exit()
+    #     elif opt in ("-s", "--server_ip"):
+    #         server_ip = arg
+    #     elif opt in ("-p", "--server_port"):
+    #         server_port = arg
+    #     elif opt in ("-f", "--input_file"):
+    #         input_file = arg
 
-    # print(server_ip, server_port, input_file)
+    # # print(server_ip, server_port, input_file)
+    
+    # hardcoding the server IP and port, and the input file 
+    server_ip = "10.30.100.1"
+    server_port = 50001
+    input_file = "input.mp4"
 
     if (server_ip and server_port and input_file):
         client_id = ''.join(random.choices(
@@ -177,4 +182,5 @@ def main(argv):
 
 
 if __name__ == "__main__":
-    main(sys.argv[1:])
+    # main(sys.argv[1:])
+    main()

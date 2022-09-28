@@ -93,7 +93,7 @@ def main():
     # # print(server_ip, server_port, input_file)
     
     # hardcoding the server IP and port, and the input file 
-    server_ip = "10.30.100.1"
+    server_ip = "192.168.1.102"
     server_port = 50001
     input_file = "input.mp4"
 
@@ -138,12 +138,14 @@ def main():
                 # Loading data to be sent
                 if mimestart == "video":
                     cap = cv2.VideoCapture(input_file)
+                    fps = cap.get(cv2.CAP_PROP_FPS)
                     # total_frames = cap.get(cv2.CAP_PROP_FRAME_COUNT)
                     # print_json(
                     #     client_id, f'Video file has {total_frames} frames')
 
                     frame_count = 1  # frames are not zero-indexed
                     while True:
+                        now = time.time()
                         ret, frame = cap.read()
                         if not ret:
                             break  # break if no next frame
@@ -172,11 +174,15 @@ def main():
                         print_json(
                             client_id, frame_count, f'Preprocessing of Frame {frame_count} took {time_end-time_start} ms')
 
-                        # if frame_count < 2:
+                        # if frame_count < 200:
                         send_data(client_id, 2, frame_count, frame_buffer,
                                 sock, server_ip, server_port)
 
                         frame_count += 1
+                        
+                        timeDiff = time.time() - now
+                        if (timeDiff < 1.0/(fps)):
+                            time.sleep(1.0/(fps) - timeDiff)
                 elif mimestart == "image":
                     pass
 

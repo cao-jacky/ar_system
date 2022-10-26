@@ -13,6 +13,7 @@ import cv2
 
 from threading import Thread
 
+
 def print_json(client_id, frame_no, message):
     print(f'{{\\"service_name\\": \\"client\\", \\"id\\": \\"{client_id}\\", \\"frame_no\\": \\"{frame_no}\\", \\"timestamp\\": \\"{time.time_ns()/1000/1000}\\", \\"message\\": \\"{message}\\"}}')
 
@@ -20,14 +21,14 @@ def print_json(client_id, frame_no, message):
 def listen_data(sock):
     while True:
         data, addr = sock.recvfrom(60000)  # buffer size is 1024 bytes
-        
+
         client_id = data[0:4].decode("utf-8")
         frame_id = int.from_bytes(data[4:8], "little")
         results_size = int.from_bytes(data[12:16], "little")
-        
+
         print_json(
             client_id, frame_id, f'Received results for frame {frame_id} that has a size of {results_size} marker(s)')
-        
+
         # print("received message: %s" % data)
 
 
@@ -44,12 +45,12 @@ def send_data(client_id, frame_type, frame_no, frame_buffer, sock, main_ip, main
     frame_array = bytearray(payload_size)
 
     # distributed system
-    frame_array[0:4]              = bytearray(client_id, 'utf-8')       # client_id
-    frame_array[4:8]              = (frame_no).to_bytes(4, 'little')    # frame_id
-    frame_array[8:12]             = (frame_type).to_bytes(4, 'little')  # frame_type
-    frame_array[12:16]            = frame_len.to_bytes(4, 'little')   # frame_len
-    frame_array[16:frame_len+16]  = frame_bytes             # frame_data
-    
+    frame_array[0:4] = bytearray(client_id, 'utf-8')       # client_id
+    frame_array[4:8] = (frame_no).to_bytes(4, 'little')    # frame_id
+    frame_array[8:12] = (frame_type).to_bytes(4, 'little')  # frame_type
+    frame_array[12:16] = frame_len.to_bytes(4, 'little')   # frame_len
+    frame_array[16:frame_len+16] = frame_bytes             # frame_data
+
     # single process system
     # frame_array[0:4] = (frame_no).to_bytes(4, 'little')    # frame_id
     # frame_array[4:8] = (frame_type).to_bytes(4, 'little') # frame_type
@@ -91,9 +92,10 @@ def main():
     #         input_file = arg
 
     # # print(server_ip, server_port, input_file)
-    
-    # hardcoding the server IP and port, and the input file 
+
+    # hardcoding the server IP and port, and the input file
     server_ip = "192.168.1.102"
+    # server_ip = "10.30.100.1"
     server_port = 50001
     input_file = "input.mp4"
 
@@ -135,56 +137,63 @@ def main():
                 print_json(
                     client_id, 0, f'Provided file is of filetype: {mimestart}')
 
-                # Loading data to be sent
-                if mimestart == "video":
-                    cap = cv2.VideoCapture(input_file)
-                    fps = cap.get(cv2.CAP_PROP_FPS)
-                    # total_frames = cap.get(cv2.CAP_PROP_FRAME_COUNT)
-                    # print_json(
-                    #     client_id, f'Video file has {total_frames} frames')
+                frame_count = 1  # frames are not zero-indexed
 
-                    frame_count = 1  # frames are not zero-indexed
-                    while True:
-                        now = time.time()
-                        ret, frame = cap.read()
-                        if not ret:
-                            break  # break if no next frame
+                while True:
+                    # Loading data to be sent
+                    if mimestart == "video":
+                        cap = cv2.VideoCapture(input_file)
+                        fps = cap.get(cv2.CAP_PROP_FPS)
+                        print_json(client_id, 0, f'Sending video at {fps} FPS')
 
-                        # preprocess the frame by greyscaling and resizing the resolution
-                        scale_percent = 60  # percent of original size
-                        # int(frame.shape[1] * scale_percent / 100)
-                        width = 480
-                        # int(frame.shape[0] * scale_percent / 100)
-                        height = 270
-                        dim = (width, height)
+                        # total_frames = cap.get(cv2.CAP_PROP_FRAME_COUNT)
+                        # print_json(
+                        #     client_id, f'Video file has {total_frames} frames')
 
-                        time_start = time.time_ns()/1000/1000
-                        frame_grey = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-                        frame_resized = cv2.resize(
-                            frame_grey, dim, interpolation=cv2.INTER_AREA)
-                        encoding_params = [int(cv2.IMWRITE_JPEG_QUALITY), 90]
-                        retval, frame_buffer = cv2.imencode(
-                            '.jpg', frame_resized, encoding_params)
-                        # if frame_count < 3:
-                        #     cv2.imwrite(
-                        #         f'frame{frame_count}.jpg', frame_resized)
-                        # else:
-                        #     break
-                        time_end = time.time_ns()/1000/1000
-                        print_json(
-                            client_id, frame_count, f'Preprocessing of Frame {frame_count} took {time_end-time_start} ms')
+                        while True:
+                            now = time.time()
+                            ret, frame = cap.read()
+                            if not ret:
+                                break  # break if no next frame
 
-                        # if frame_count < 200:
-                        send_data(client_id, 2, frame_count, frame_buffer,
-                                sock, server_ip, server_port)
+                            # preprocess the frame by greyscaling and resizing the resolution
+                            scale_percent = 60  # percent of original size
+                            # int(frame.shape[1] * scale_percent / 100)
+                            width = 480
+                            # int(frame.shape[0] * scale_percent / 100)
+                            height = 270
+                            dim = (width, height)
 
-                        frame_count += 1
-                        
-                        timeDiff = time.time() - now
-                        if (timeDiff < 1.0/(fps)):
-                            time.sleep(1.0/(fps) - timeDiff)
-                elif mimestart == "image":
-                    pass
+                            time_start = time.time_ns()/1000/1000
+                            frame_grey = cv2.cvtColor(
+                                frame, cv2.COLOR_BGR2GRAY)
+                            frame_resized = cv2.resize(
+                                frame_grey, dim, interpolation=cv2.INTER_AREA)
+                            encoding_params = [
+                                int(cv2.IMWRITE_JPEG_QUALITY), 90]
+                            retval, frame_buffer = cv2.imencode(
+                                '.jpg', frame_resized, encoding_params)
+                            # if frame_count < 3:
+                            #     cv2.imwrite(
+                            #         f'frame{frame_count}.jpg', frame_resized)
+                            # else:
+                            #     break
+                            time_end = time.time_ns()/1000/1000
+                            print_json(
+                                client_id, frame_count, f'Preprocessing of Frame {frame_count} took {time_end-time_start} ms')
+
+                            # if frame_count < 3:
+                            send_data(client_id, 2, frame_count, frame_buffer,
+                                      sock, server_ip, server_port)
+
+                            frame_count += 1
+
+                            timeDiff = time.time() - now
+                            if (timeDiff < 1.0/(fps)):
+                                time.sleep(1.0/(fps) - timeDiff)
+
+                    elif mimestart == "image":
+                        pass
 
 
 if __name__ == "__main__":

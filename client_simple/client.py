@@ -69,7 +69,7 @@ def main():
     # hardcoding the server IP and port, and the input file
     server_ip = "192.168.1.102"
     # server_ip = "10.30.100.1"
-    server_ip = "172.21.215.149"
+    server_ip = "172.21.209.103"
     server_port = 50001
     input_file = "input.mp4"
 

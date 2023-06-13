@@ -21,13 +21,14 @@ def print_json(client_id, frame_no, message):
 def listen_data(sock):
     while True:
         data, addr = sock.recvfrom(60000)  # buffer size is 1024 bytes
+        # print(data, addr)
 
         client_id = data[0:4].decode("utf-8")
         frame_id = int.from_bytes(data[4:8], "little")
         results_size = int.from_bytes(data[12:16], "little")
 
         print_json(
-            client_id, frame_id, f'Received results for frame {frame_id} that has a size of {results_size} marker(s)')
+            client_id, frame_id, f'Received results for Frame {frame_id} that has a size of {results_size} marker(s)')
 
         # print("received message: %s" % data)
 
@@ -38,7 +39,7 @@ def send_data(client_id, frame_type, frame_no, frame_buffer, sock, main_ip, main
     if len(frame_buffer) == 0:
         frame_bytes = (0).to_bytes(4, 'big')
     else:
-        frame_bytes = frame_buffer.tostring()
+        frame_bytes = frame_buffer.tobytes()
     frame_len = len(frame_bytes)
 
     payload_size = frame_len + 16
@@ -70,7 +71,8 @@ def main():
     server_ip = "192.168.1.102"
     # server_ip = "10.30.100.1"
     server_ip = "172.21.209.103"
-    server_port = 50001
+    server_ip = "0.0.0.0"
+    server_port = 50501
     input_file = "input.mp4"
 
     if (server_ip and server_port and input_file):
@@ -156,9 +158,9 @@ def main():
                             print_json(
                                 client_id, frame_count, f'Preprocessing of Frame {frame_count} took {time_end-time_start} ms')
 
-                            # if frame_count < 3:
-                            send_data(client_id, 2, frame_count, frame_buffer,
-                                      sock, server_ip, server_port)
+                            # if frame_count < 2:
+                            send_data(client_id, 1, frame_count, frame_buffer, sock, server_ip, server_port)
+                                # exit()
 
                             frame_count += 1
 

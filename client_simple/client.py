@@ -98,12 +98,12 @@ def main():
         client_assigned_port = sock.getsockname()[1]
         print_json(client_id, 0, f"Port {client_assigned_port} is bound to the client")
 
-        send_data(client_id, 0, 0, "", sock, server_ip, server_port)
-        print_json(
-            client_id,
-            0,
-            f"Sending initial echo message to main to self-register client details",
-        )
+        # send_data(client_id, 0, 0, "", sock, server_ip, server_port)
+        # print_json(
+        #     client_id,
+        #     0,
+        #     f"Sending initial echo message to main to self-register client details",
+        # )
 
         # create separate thread to listen for messages
         # create threads

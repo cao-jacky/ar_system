@@ -47,7 +47,7 @@ def send_data(client_id, frame_type, frame_no, frame_buffer, sock, main_ip, main
         frame_bytes = frame_buffer.tobytes()
     frame_len = len(frame_bytes)
 
-    payload_size = frame_len + 16
+    payload_size = frame_len + 44
     frame_array = bytearray(payload_size)
 
     # distributed system
@@ -55,7 +55,7 @@ def send_data(client_id, frame_type, frame_no, frame_buffer, sock, main_ip, main
     frame_array[4:8] = (frame_no).to_bytes(4, "little")  # frame_id
     frame_array[8:12] = (frame_type).to_bytes(4, "little")  # frame_type
     frame_array[12:16] = frame_len.to_bytes(4, "little")  # frame_len
-    frame_array[40:44] = frame_len.to_bytes(0, "little")  # frame_len
+    frame_array[40:44] = (0).to_bytes(4, "big")  # sift_len
     frame_array[44 : frame_len + 44] = frame_bytes  # frame_data
 
     # single process system

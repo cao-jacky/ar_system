@@ -170,16 +170,16 @@ def main():
                                 f"Preprocessing of Frame {frame_count} took {time_end-time_start} ms",
                             )
 
-                            if frame_count < 2:
-                                send_data(
-                                    client_id,
-                                    1,
-                                    frame_count,
-                                    frame_buffer,
-                                    sock,
-                                    server_ip,
-                                    server_port,
-                                )
+                            # if frame_count < 2:
+                            send_data(
+                                client_id,
+                                1,
+                                frame_count,
+                                frame_buffer,
+                                sock,
+                                server_ip,
+                                server_port,
+                            )
                                 # exit()
 
                             frame_count += 1

@@ -13,6 +13,9 @@ import cv2
 
 from threading import Thread
 
+import grpc
+import frame_pb2
+import frame_pb2_grpc
 
 def print_json(client_id, frame_no, message):
     print(
@@ -66,7 +69,11 @@ def send_data(client_id, frame_type, frame_no, frame_buffer, sock, main_ip, main
 
     if (frame_type == 2) & (frame_len < 2000):
         return
-    sock.sendto(frame_array, (main_ip, int(main_port)))
+    # sock.sendto(frame_array, (main_ip, int(main_port)))
+
+    with grpc.insecure_channel(f'{main_ip}:{main_port}') as channel:
+        stub = frame_pb2_grpc.QueueServiceStub(channel)
+        response = stub.NextFrame(frame_pb2.Frame(data=bytes(frame_array)))
 
     print_json(
         client_id,
@@ -81,7 +88,7 @@ def main():
     # server_ip = "10.30.100.1"
     server_ip = "172.21.209.103"
     server_ip = "0.0.0.0"
-    server_port = 50501
+    server_port = 50001
     input_file = "input.mp4"
 
     if server_ip and server_port and input_file:
